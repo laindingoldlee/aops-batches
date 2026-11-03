@@ -15,8 +15,8 @@ draw(G--H,blue+linewidth(0.8));draw(B--H,blue+dashed);draw(C--H,dashed+gray);
 draw(B--G,blue+linewidth(0.8));
 dot(G);dot(D);dot(H);
 label("$A$",A,N);label("$B$",B,W);label("$C$",C,E);
-label("$G$",G,dir(150));label("$D$",D,dir(-60));label("$H$",H,S);
-label("$17$",(A+B)/2,NW);label("$25$",(A+C)/2,NE);'''
+label("$G$",G,dir(70));label("$D$",D,dir(-25));label("$H$",H,S);
+label("$17$",A+0.3*(B-A),W);label("$25$",A+0.3*(C-A),NE);'''
 b.add(1764322,1,r'''In triangle $ABC$, $AB=17$, $AC=25$ and $BC=26$. What is the area of the triangle whose side lengths are equal to the lengths of the three medians of triangle $ABC$?''',
 r'''\textbf{Area of $ABC$.} By Heron's formula with $s=\dfrac{17+25+26}{2}=34$,
 \[
@@ -279,11 +279,12 @@ filldraw(V[4]--V[3]--arc(V[4],R,ph,90)--cycle,palegreen,gray);
 pair X=V[2]+R*dir(180-ph);
 filldraw(hex,white,black+linewidth(1));
 draw(V[0]--(0,-L-s),dashed);draw(V[3]--X,dashed);
+draw(V[0]--V[0]+L*dir(-60),dashed+gray);draw(V[1]--V[1]+(L-s)*dir(60),dashed+gray);
 dot(V[0]);dot(X);
-label("$V_0$",V[0],N);label("$V_1$",V[1],dir(150));label("$V_5$",V[5],dir(30));
-label("$V_2$",V[2],dir(210));label("$V_4$",V[4],dir(-30));label("$V_3$",V[3],S);label("$X$",X,N);
-label("$600$",V[0]+3.2*dir(-60),dir(30));
-label("$480$",V[1]+2.6*dir(45),dir(-45));label("$360$",V[2]+2.2*dir(80),E);'''
+label("$V_0$",V[0],dir(-60));label("$V_1$",V[1],dir(-45));label("$V_5$",V[5],dir(225));
+label("$V_2$",V[2],E);label("$V_4$",V[4],W);label("$V_3$",V[3],dir(35));label("$X$",X,N);
+label("$600$",V[0]+3.5*dir(-60),dir(30));
+label("$480$",V[1]+2.6*dir(60),dir(-30));label("$360$",V[2]+(0,2.4),E);'''
 b.add(1763286,1,r'''A goat keeps a pet human on a leash. One end of the leash is tied to the human and the other end to one vertex of the goat's barn, which is a regular hexagon of side length $120$. The leash has length $600$, it cannot pass through the barn, and the human must stay outside the barn. What is the area of the region the human can reach?''',
 r'''Label the vertices $V_0,\dots,V_5$ in order, with the leash tied at $V_0$; $V_3$ is the opposite vertex. A point $P$ outside the barn is reachable when the shortest path from $V_0$ to $P$ that goes around the barn has length at most $600$. Such a path runs along the boundary, clockwise or counterclockwise, to some vertex $V_k$ and then straight to $P$.
 
@@ -321,7 +322,7 @@ draw(Ep--F,linewidth(0.8));draw(A--F--B,linewidth(0.8));
 draw(Ep+(0.05,0)--Ep+(0.05,0.05)--Ep+(0,0.05));
 label("$A$",A,NW);label("$B$",B,NE);label("$C$",C,SE);label("$D$",D,SW);
 label("$E$",Ep,S);label("$F$",F,dir(-20));
-label("$y$",(Ep+F)/2,W);label("$y$",(A+F)/2,SW);label("$1-y$",(0.5,0.81),E);
+label("$y$",(Ep+F)/2,W);label("$y$",(A+F)/2,SW);
 label("$\dfrac12$",(0.25,0),S);'''
 b.add(1764207,1,r'''Square $ABCD$ has side length $1$. Point $E$ lies on $\overline{CD}$ and point $F$ lies inside the square so that $\overline{EF}\perp\overline{DC}$ and $AF=BF=EF$. Find the area of quadrilateral $ADEF$.''',
 r'''Put $D=(0,0)$, $C=(1,0)$, $B=(1,1)$, $A=(0,1)$. Since $AF=BF$, the point $F$ is on the perpendicular bisector $x=\dfrac12$ of $AB$; as $EF\perp DC$, also $E=\left(\dfrac12,0\right)$. Let $F=\left(\dfrac12,y\right)$, so $EF=y$.
@@ -400,13 +401,13 @@ draw(D--C--B--A--cycle,linewidth(0.9));
 draw(A--Ep,dashed);draw(B--Ep,blue);
 draw(Ep+(0,0.15)--Ep+(0.15,0.15)--Ep+(0.15,0));
 label("$D$",D,SW);label("$E$",Ep,S);label("$C$",C,SE);label("$A$",A,N);label("$B$",B,N);
-label("$1$",(D+Ep)/2,S);label("$2$",(D+A)/2,W);label("$2$",(C+B)/2,E);label("$AB=2$",(A+B)/2,N);'''
+label("$1$",(D+Ep)/2,S);label("$2$",(D+A)/2,W);label("$2$",(C+B)/2,E);label("$2$",(A+B)/2,S);'''
 fig2=r'''pair D=(0,0),Ep=(1,0),A=(1,sqrt(3)),B=(5,sqrt(3)),C=(6,0);
 draw(D--C--B--A--cycle,linewidth(0.9));
 draw(A--Ep,dashed);draw(B--Ep,blue);
 draw(Ep+(0,0.15)--Ep+(0.15,0.15)--Ep+(0.15,0));
 label("$D$",D,SW);label("$E$",Ep,S);label("$C$",C,SE);label("$A$",A,N);label("$B$",B,N);
-label("$1$",(D+Ep)/2,S);label("$2$",(D+A)/2,W);label("$2$",(C+B)/2,E);label("$AB=4$",(A+B)/2,N);'''
+label("$1$",(D+Ep)/2,S);label("$2$",(D+A)/2,W);label("$2$",(C+B)/2,E);label("$4$",(A+B)/2,S);'''
 b.add(1763215,1,r'''In an isosceles trapezoid $ABCD$ with $AB\parallel DC$ and $AB<DC$, an altitude is dropped from $A$ to the point $E$ on the longer base $DC$. The legs $AD$ and $BC$ are $2$ cm long and $DE=1$ cm, and segment $BE$ is drawn. Show that the length of the shorter base $AB$ is not determined by this information. (A student argues that $AB$ must be $2$ cm, because ``$BE$ is an altitude, so triangle $EAB$ has a right angle at $A$, and the figure splits into three equilateral triangles''. Find the error.)''',
 r'''Let $AB=x$ for any $x>0$, and put $D=(0,0)$, $E=(1,0)$, $A=(1,\sqrt3)$, $B=(1+x,\sqrt3)$, $C=(2+x,0)$. Then $AD=\sqrt{1+3}=2$, $BC=2$, $AE\perp DC$ with $DE=1$, $AB\parallel DC$ and $AB=x<DC=x+2$. So every $x>0$ gives a trapezoid with all the stated properties; drawing $BE$ adds no condition. Two of them:
 '''+asy(fig1,'4.5cm')+asy(fig2,'5.5cm')+r'''

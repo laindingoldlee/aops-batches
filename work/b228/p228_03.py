@@ -43,7 +43,7 @@ draw(O--A2,blue);draw(O--B2,blue);dot(O);
 draw((0,2.25)--(0.3,2.25)--(0.3,1.95)--(0,1.95),linewidth(0.5));
 draw((0,-3.75)--(0.3,-3.75)--(0.3,-3.45)--(0,-3.45),linewidth(0.5));
 label("$O$",O,W);
-label("$5$",(-2.5,2.25),N);label("$4$",(-2,-3.75),S);
+label("$5$",(2.5,2.25),N);label("$4$",(2,-3.75),S);
 label("$d$",(0,1.1),W);label("$6-d$",(0,-1.9),W);
 label("$r$",(A2+O)/2+(0,0.1),N,blue);label("$r$",(B2+O)/2+(0.25,0),E,blue);'''
 b.add(1748217,1,r'''A circle has two parallel chords of lengths $10$ and $8$ that are $6$ units apart. Find the radius of the circle.''',
@@ -341,8 +341,8 @@ draw(A--C,blue+linewidth(0.8));draw(B--D,blue+linewidth(0.8));
 draw(arc(O,0.5,0,th),linewidth(0.6));label("$\theta$",0.8*dir(th/2));
 dot(O);
 label("$A$",A,W);label("$B$",B,SW);label("$C$",C,E);label("$D$",D,NE);label("$O$",O,dir(-60));
-label("$\dfrac{d_1}{2}$",(A+O)/2,N,blue);label("$\dfrac{d_1}{2}$",(C+O)/2+(0.4,0),N,blue);
-label("$\dfrac{d_2}{2}$",(B+O)/2,dir(th+90),blue);label("$\dfrac{d_2}{2}$",0.4*D,dir(th+90),blue);'''
+label("$\dfrac{d_1}{2}$",A+0.38*(O-A),S,blue);label("$\dfrac{d_1}{2}$",(C+O)/2+(0.4,0),N,blue);
+label("$\dfrac{d_2}{2}$",0.68*B,dir(th+90),blue);label("$\dfrac{d_2}{2}$",0.4*D,dir(th+90),blue);'''
 b.add(1746837,1,r'''True or false: a parallelogram is determined uniquely (up to congruence) if the lengths of both diagonals and the angle between them are given. Give reasons, including a construction.''',
 r'''\textbf{True}, for diagonal lengths $d_1,d_2>0$ and an angle $\theta$ with $0^\circ<\theta<180^\circ$.
 

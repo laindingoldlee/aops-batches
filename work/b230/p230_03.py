@@ -72,7 +72,7 @@ draw(T1--T2,blue+linewidth(0.9));draw(U1--U2,red+linewidth(0.9));
 draw(O--T1,gray(0.5));draw(A--T2,gray(0.5));draw(O--U1,gray(0.5));draw(A--U2,gray(0.5));
 dot(O);dot(A);
 label("$O$",O,W);label("$A$",A,E);label("$26$",(19,0),S);
-label("$6\sqrt{17}$",(T1+T2)/2,dir(100),blue);label("$4\sqrt{22}$",(6.6,-3.2),red);'''
+label("$6\sqrt{17}$",(T1+T2)/2,dir(100),blue);label("$4\sqrt{22}$",(8.6,-3.0),red);'''
 b.add(1734443,5,r'''A circle with centre $O$ has radius $5$, and a circle with centre $A$ has radius $13$, with $OA=26$. Find the sum of the lengths of one common external tangent segment and one common internal tangent segment of the two circles (each segment running between its two points of tangency).''',
 r'''For a common tangent segment $T_1T_2$, the radii $OT_1$ and $AT_2$ are both perpendicular to it:
 '''+asy(fig,'7cm')+r'''
@@ -121,7 +121,7 @@ pair M=(P[0]+P[1])/2;
 draw(O--M,blue+dashed);draw(O--P[0],gray(0.5));draw(O--P[1],gray(0.5));
 dot(O);label("$O$",O,N);
 label("$10$",M,S);label("$a$",(O+M)/2,E,blue);
-label("$36^\circ$",O+2.4*dir(252),fontsize(8pt));draw(arc(O,1.4,234,270));'''
+label("$36^\circ$",O+3.8*dir(252),fontsize(7pt));draw(arc(O,2.0,234,270));'''
 b.add(1734443,8,r'''Find the total surface area of a regular dodecahedron with edge length $10$.''',
 r'''A regular dodecahedron has $12$ faces, each a regular pentagon with side $10$. Split a face into $5$ isosceles triangles from its centre $O$; each has apex angle $72^\circ$, base $10$ and height equal to the apothem $a$:
 '''+asy(fig,'4.5cm')+r'''

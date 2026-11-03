@@ -24,7 +24,7 @@ Claude did all of the work in this batch, with no DeepSeek or other external mod
   - `aops-topic-1782185-q01` -> `aops-topic-3200999-q04` (sum of y over integer solutions of 1/x + 1/y = 1/7, 42)
   - `aops-topic-1781399-q01` -> `aops-topic-2398382-q01` (2014 Chapter Target #7, cubes with two faces of each of three colours, 6)
 - Duplicate only: 1784100, 1783256, 1781399.
-- Cross-batch notes (appended to `work/xnotes.md`): b222 `1777432-q01` (cube colourings with 6 colours, 230) repeats the b223 draft `1777424-q01`, so b223 should alias to b222; and the b225 draft `1765675-q01` (Heronian, 17) repeats the prior record `aops-topic-1945887-q01`, to which b222 also aliases. Nothing in xnotes.md was addressed to batch 222.
+- Cross-batch notes (appended to `work/xnotes.md`): b222 `1777432-q01` (cube colourings with 6 colours, 230) repeats the b223 draft `1777424-q01`, so b223 should alias to b222; and the b225 draft `1765675-q01` (Heronian, 17) repeats the prior record `aops-topic-1945887-q01`, to which b222 also aliases; and b222 `1777350-q01` (Yu's 12 coins, 23/2048) is the b225 draft `1765713-q01` without its extra part, so b225 should alias to b222 unless the extra part justifies exporting it. Nothing in xnotes.md was addressed to batch 222.
 - Near misses kept (same idea, different numbers or target):
   - `1780934-q01` (20 board members, 6 enemies each, 360 monochromatic triples) vs `aops-topic-1845402-q04` (30 members, 6 friends each).
   - `1782537-q01` (integer right triangle with leg 11, perimeter 132) vs the b224 draft `1770602-q01` (leg 2017).

@@ -7,3 +7,4 @@
 - b225 draft 1765675-q01 (least Heronian area, longest side 17) repeats prior aops-topic-1945887-q01 (b222 1784100-q01 is aliased to it): b225 should alias to aops-topic-1945887-q01
 - b226 1759713-q03 (MATHCOUNTS handbook, five-term AP with mean 18 and mean of squares 374, answer 28) repeats b227 draft 1757353-q01: b227 should alias to b226
 - b225 1762366-q149 (MATHCOUNTS Handbook #149, Vida's guppies, mean+median+mode = range, 48) repeats b227 draft 1757353-q02: b227 should alias to b225
+- b222 1777350-q01 (2017 Chapter Sprint #29, Yu's 12 coins, 23/2048) is the same problem as b225 draft 1765713-q01, which adds a part (explain a wrong argument): b225 should alias to b222 unless it keeps the extra part as the reason to export

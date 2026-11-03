@@ -109,7 +109,7 @@ draw((-3.3,-3.3)--(3.3,3.3),gray+dashed);draw((-3.3,3.3)--(3.3,-3.3),gray+dashed
 draw(graph(hp,-1.15,1.15),blue+linewidth(0.9));draw(graph(hm,-1.15,1.15),blue+linewidth(0.9));
 pair[] P={(2,0),(-2,0),(2.5,1.5),(2.5,-1.5),(-2.5,1.5),(-2.5,-1.5)};
 for(pair z:P) dot(z);
-label("$2000$",(2,0),dir(-140),fontsize(8pt));label("$-2000$",(-2,0),dir(-40),fontsize(8pt));
+label("$2000$",(1.25,-0.3),fontsize(8pt));label("$-2000$",(-1.2,-0.3),fontsize(8pt));
 label("$(2500,1500)$",(2.5,1.5),E);label("$(2500,-1500)$",(2.5,-1.5),E);'''
 b.add(1748211,1,r'''How many lattice points lie on the hyperbola $x^2-y^2=2000^2$?''',
 r'''Write $(x-y)(x+y)=2000^2=2^8\cdot5^6$. The factors $x-y$ and $x+y$ have the same parity (their sum is $2x$); their product is even, so both are even. Put $x-y=2m$ and $x+y=2n$; then
@@ -306,7 +306,7 @@ pair n=(sin(pi/6),-cos(pi/6));pair p=O-2.6*u;
 draw(p--p+2n,Arrows(4));label("$2$",p+n,-1.5*u);
 draw((-2,0)--(-2,2),Arrows(4));label("$2$",(-2,1),W);
 label("$4$",(2,0),S);label("$4$",(O+D)/2,dir(120));
-label("$A$",O,dir(250));label("$B$",B,dir(-60));label("$C$",C,dir(60));label("$D$",D,dir(110));'''
+label("$A$",O,1.6*dir(-70));label("$B$",B,dir(-60));label("$C$",C,1.5*dir(125));label("$D$",D,1.5*dir(125));'''
 b.add(1749331,1,r'''Two long strips of paper are each $2$ inches wide, and they overlap so that the angle between the strips is $30^\circ$. What is the number of square inches in the area of the parallelogram formed by the overlap?''',
 r'''Let the overlap be $ABCD$, with $AB$ along an edge of the first strip and $AD$ along an edge of the second. The distance between the parallel sides $AB$ and $DC$ is the width $2$ of the first strip, and the angle at $A$ is $30^\circ$. Side $AD$ crosses the first strip, so its length satisfies $AD\sin30^\circ=2$, giving $AD=4$. In the same way, $AB$ crosses the second strip: $AB\sin30^\circ=2$ and $AB=4$. (So the overlap is a rhombus.)
 '''+asy(fig,'7cm')+r'''

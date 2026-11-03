@@ -311,8 +311,7 @@ draw(A--B,dashed);
 draw(Ep+0.3*dir(-45)--Ep+0.3*dir(-45)+0.3*dir(-135)--Ep+0.3*dir(-135));
 dot(A);dot(B);
 label("$A$",A+(-0.5,0));label("$B$",B,E);label("$E$",Ep,N);label("$F$",F,S);
-label("$45^\circ$",A+1.2*dir(21),fontsize(8pt));
-draw(arc(A,0.6,0,45));'''
+'''
 b.add(1735512,82,r'''Circles $A$ and $B$ (centred at points $A$ and $B$) intersect, and points $E$ and $F$ lie on circle $B$ so that quadrilateral $AEBF$ is a square. What is the probability that a randomly chosen line through point $A$ intersects both circles? Express your answer as a common fraction.''',
 r'''Every line through $A$ meets circle $A$, since $A$ is its centre. So we need the probability that the line meets circle $B$.
 
