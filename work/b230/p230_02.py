@@ -122,7 +122,7 @@ draw(arc(Q[1],0.45,0,90));label("$90^\circ$",Q[1]+0.8*dir(45),fontsize(8pt));
 pair c=(5.6,1); real R=1.08; pair[] G; for(int i=0;i<8;++i) G.push(c+R*dir(-112.5+45*i));
 draw(G[0]--G[1]--G[2]--G[3]--G[4]--G[5]--G[6]--G[7]--cycle,linewidth(0.9));
 pair e=G[1]+0.95*unit(G[1]-G[0]); draw(G[1]--e,dashed);
-draw(arc(G[1],0.45,degrees(G[1]-G[0]),degrees(G[2]-G[1])));label("$45^\circ$",G[1]+0.85*dir((degrees(G[1]-G[0])+degrees(G[2]-G[1]))/2),fontsize(8pt));'''
+draw(arc(G[1],0.45,degrees(G[1]-G[0]),degrees(G[2]-G[1])));label("$45^\circ$",G[1]+0.85*dir((degrees(G[1]-G[0])+degrees(G[2]-G[1]))/2)+(0.08,0),fontsize(7pt));'''
 b.add(1736178,3,r'''For positive integers $n$ and $m$, each exterior angle of a regular $n$-sided polygon is $45$ degrees larger than each exterior angle of a regular $m$-sided polygon. One example is $n=4$ and $m=8$, because the exterior angles of a square and a regular octagon are $90^\circ$ and $45^\circ$. What is the greatest possible value of $m$?''',
 r'''The exterior angle of a regular $k$-gon is $\dfrac{360^\circ}{k}$, so
 \[

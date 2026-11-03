@@ -15,3 +15,4 @@
 - b222 figs reviewed (18). FIXED 1782694-q01 (both figs): '6' sat beside FC/GC (read as that segment); now a dimension arrow under BC. FIXED 1780203-q04: radius '3' sat on back base ellipse.
 - b224 figs reviewed (23): OK (frustum contour checked: tangent construction is correct).
 - b226 figs reviewed (20). FIXED: 1762490 22.5deg label touched circle; 1761304 P on AB; 1762011 P1-P4 labels in arc cusps pushed out; 1759331 P on dashed bisector; 1759220 A(1,2) overlapped y-axis -> label A only.
+- xnotes acted: b223 1777424-q01 -> b222 1777432-q01; b227 1757353-q01 -> b226 1759713-q03, q02 -> b225 1762366-q149 (all verified identical).

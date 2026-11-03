@@ -62,3 +62,6 @@ Excluded (36):
 - `python3 finalize.py 227`: checks passed, no review lines left (three geometry tags without sketches were removed or given a sketch).
 - `python3 pdfcheck.py`: 0 LaTeX errors, 0 Asymptote failures, 0 figures whose last label colour is not black: OK.
 - Batches 76-80 are still missing from the registry.
+
+## Orchestrator addendum (cross-batch)
+- 1757353-q01 (five-term AP, 28) is aliased to b226 aops-topic-1759713-q03, and 1757353-q02 (Vida's guppies, 48) to b225 aops-topic-1762366-q149: same problems in earlier batches of this run. Topic 1757353 is now a duplicate.

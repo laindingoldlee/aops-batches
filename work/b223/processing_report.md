@@ -96,3 +96,6 @@ Fixes after viewing the contact sheets:
 - `precheck.py 223`: `PRECHECK OK`. 74 records exported, 9 aliases, 100 topics accounted for, 13 diagrams.
 - `finalize.py 223` (pre-check mode): 74 question records, 13 previews (0 missing, all compiled), `checks_passed: true`. The only slash review lines are the unit "km/h" in 1775342-q01 (text, not maths); there are no "GEOMETRY WITHOUT SKETCH" lines.
 - `pdfcheck.py`: `records=74 asy_files=13 asy_failures=0 pages=74`, `warnings: 0`, no colour leak, `OK`.
+
+## Orchestrator addendum (cross-batch)
+- 1777424-q01 (cube colourings, 230) is aliased to b222 aops-topic-1777432-q01 (same problem, earlier batch of this run).
