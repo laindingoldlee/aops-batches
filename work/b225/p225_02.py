@@ -15,7 +15,7 @@ draw(G--H,blue+linewidth(0.8));draw(B--H,blue+dashed);draw(C--H,dashed+gray);
 draw(B--G,blue+linewidth(0.8));
 dot(G);dot(D);dot(H);
 label("$A$",A,N);label("$B$",B,W);label("$C$",C,E);
-label("$G$",G,dir(70));label("$D$",D,dir(-25));label("$H$",H,S);
+label("$G$",G,dir(70));label("$D$",D,dir(-125));label("$H$",H,S);
 label("$17$",A+0.3*(B-A),W);label("$25$",A+0.3*(C-A),NE);'''
 b.add(1764322,1,r'''In triangle $ABC$, $AB=17$, $AC=25$ and $BC=26$. What is the area of the triangle whose side lengths are equal to the lengths of the three medians of triangle $ABC$?''',
 r'''\textbf{Area of $ABC$.} By Heron's formula with $s=\dfrac{17+25+26}{2}=34$,
@@ -279,12 +279,12 @@ filldraw(V[4]--V[3]--arc(V[4],R,ph,90)--cycle,palegreen,gray);
 pair X=V[2]+R*dir(180-ph);
 filldraw(hex,white,black+linewidth(1));
 draw(V[0]--(0,-L-s),dashed);draw(V[3]--X,dashed);
-draw(V[0]--V[0]+L*dir(-60),dashed+gray);draw(V[1]--V[1]+(L-s)*dir(60),dashed+gray);
+draw(V[0]--V[0]+L*dir(-60),dashed+gray);draw(V[1]--V[1]+(L-s)*dir(45),dashed+gray);
 dot(V[0]);dot(X);
-label("$V_0$",V[0],dir(-60));label("$V_1$",V[1],dir(-45));label("$V_5$",V[5],dir(225));
+label("$V_0$",V[0],dir(210));label("$V_1$",V[1],dir(-45));label("$V_5$",V[5],dir(225));
 label("$V_2$",V[2],E);label("$V_4$",V[4],W);label("$V_3$",V[3],dir(35));label("$X$",X,N);
 label("$600$",V[0]+3.5*dir(-60),dir(30));
-label("$480$",V[1]+2.6*dir(60),dir(-30));label("$360$",V[2]+(0,2.4),E);'''
+label("$480$",V[1]+2.6*dir(45),dir(-45));label("$360$",V[2]+(0,2.4),E);'''
 b.add(1763286,1,r'''A goat keeps a pet human on a leash. One end of the leash is tied to the human and the other end to one vertex of the goat's barn, which is a regular hexagon of side length $120$. The leash has length $600$, it cannot pass through the barn, and the human must stay outside the barn. What is the area of the region the human can reach?''',
 r'''Label the vertices $V_0,\dots,V_5$ in order, with the leash tied at $V_0$; $V_3$ is the opposite vertex. A point $P$ outside the barn is reachable when the shortest path from $V_0$ to $P$ that goes around the barn has length at most $600$. Such a path runs along the boundary, clockwise or counterclockwise, to some vertex $V_k$ and then straight to $P$.
 

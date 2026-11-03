@@ -12,3 +12,4 @@
 - b224 done: 81 rec, 10 al (1 to b223 1605801), 23 diag; 68/2/21/9. Check 1772698 P6 Monty Hall reading, 1771791 answer 3sqrt3+pi.
 - b226 done: 80 rec, 8 al, 20 diag; 58/1/34/7. xnotes: b227 1757353-q01 should alias to b226 1759713-q03 (b227 finished - do in xdup step).
 - b228 figs reviewed (18). FIXED: 1748217-q01 half-chord labels moved to the halves used in the right triangles; 1748211 vertex labels off axis/curve; 1749331 A,C,D labels off strip lines; 1746837 d1/2,d2/2 labels off sides AD/BC.
+- b222 figs reviewed (18). FIXED 1782694-q01 (both figs): '6' sat beside FC/GC (read as that segment); now a dimension arrow under BC. FIXED 1780203-q04: radius '3' sat on back base ellipse.

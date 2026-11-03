@@ -57,7 +57,7 @@ draw((-110,0)--(135,0),Arrow);draw((0,-110)--(0,130),Arrow);
 label("$x$",(135,0),E);label("$y$",(0,130),N);
 dot(Cc);
 label("$(10,5)$",Cc,dir(45));
-label("$(110,5)$",P1,dir(60));label("$(10,105)$",P2,E);label("$(-90,5)$",P3,dir(120));label("$(10,-95)$",P4,E);'''
+label("$(110,5)$",P1,2*dir(35));label("$(10,105)$",P2,E);label("$(-90,5)$",P3,2*dir(145));label("$(10,-95)$",P4,E);'''
 b.add(1763615,1,r'''What is the area of the region of points $(x,y)$ in the coordinate plane with $|x-10|+|y-5|\le100$?''',
 r'''Put $u=x-10$, $v=y-5$; this translation does not change areas, and the region becomes $|u|+|v|\le100$. In each quadrant this is a right triangle with legs $100$, for instance $u,v\ge0$, $u+v\le100$. So the region is a square (a ``diamond'') centred at $(10,5)$ with vertices $(110,5)$, $(10,105)$, $(-90,5)$, $(10,-95)$.
 '''+asy(fig,'6cm')+r'''
@@ -187,7 +187,7 @@ draw(T1--H,dashed);draw(O1--T2,dashed);
 draw(O2--O3,heavygreen+linewidth(1));
 draw(arc(H,1.1,150,180));label("$30^\circ$",H+2.0*dir(165));
 dot(O1);dot(O2);dot(O3);dot(T1);dot(T2);
-label("$O_1$",O1,S);label("$O_2$",O2,dir(250));label("$O_3$",O3,E);label("$T_1$",T1,W);label("$T_2$",T2+0.25*dir(-40),dir(-40));
+label("$O_1$",O1,dir(15));label("$O_2$",O2,dir(250));label("$O_3$",O3,E);label("$T_1$",T1,W);label("$T_2$",T2+0.25*dir(-40),dir(-40));
 label("$\sqrt7$",(-1.15,4.85),heavygreen);'''
 b.add(1763561,1,r'''Planes $\mathbf{P}_1$ and $\mathbf{P}_2$ are perpendicular and meet along the line $\ell$. Circle $\omega_1$ with radius $2$ and centre $O_1$ lies in $\mathbf{P}_1$. Unit circle $\omega_2$, centred at $O_2\in\mathbf{P}_1$, is internally tangent to $\omega_1$ at $T_1$, where the ray $\overrightarrow{T_1O_1}$ meets $\ell$ at an acute angle of $30^\circ$. Unit circle $\omega_3$, centred at $O_3\in\mathbf{P}_1$, is externally tangent to $\omega_1$ at $T_2$, where the ray $\overrightarrow{T_2O_1}$ is perpendicular to $\ell$. The minimum possible length of $\overline{O_2O_3}$ is $\sqrt m$ for a positive integer $m$. Compute $m$.''',
 r'''Everything happens in the plane $\mathbf{P}_1$, which contains $\ell$; the plane $\mathbf{P}_2$ plays no role. Tangency puts the centres on the radii: $O_2$ is the midpoint of $O_1T_1$, so $O_1O_2=1$ in the direction of $T_1$, and $O_3$ lies beyond $T_2$ on ray $O_1T_2$ with $O_1O_3=3$.
@@ -304,12 +304,12 @@ note='The conditions x, y > 0 and y not equal to 1 (needed for log base y) are s
 
 # ---------------- 1762366 Handbook 148, 149
 fig=r'''import graph;
-pair W=(2,1),X=(6,3),Y=(4,7),Z=(0,5),M=(3,4);
+pair Wp=(2,1),X=(6,3),Y=(4,7),Z=(0,5),M=(3,4);
 draw((-0.8,0)--(7.2,0),Arrow);draw((0,-0.5)--(0,8),Arrow);
 label("$x$",(7.2,0),S);label("$y$",(0,8),W);
-draw(W--X--Y--Z--cycle,linewidth(0.9));draw(W--Y,dashed);draw(X--Z,dashed);
-dot(W);dot(X);dot(Y);dot(Z);dot(M);
-label("$W(2,1)$",W,S);label("$X(6,3)$",X,E);label("$Y(4,7)$",Y,N);label("$Z(0,5)$",Z,W);label("$(3,4)$",M,dir(27));'''
+draw(Wp--X--Y--Z--cycle,linewidth(0.9));draw(Wp--Y,dashed);draw(X--Z,dashed);
+dot(Wp);dot(X);dot(Y);dot(Z);dot(M);
+label("$W(2,1)$",Wp,dir(-40));label("$X(6,3)$",X,E);label("$Y(4,7)$",Y,N);label("$Z(0,5)$",Z,W);label("$(3,4)$",M,1.5*dir(27));'''
 b.add(1762366,148,r'''Square $WXYZ$ has vertices $W(2,1)$, $X(a,b)$, $Y(4,7)$ and $Z(c,d)$, in this order. What is the value of $|ab-cd|$?''',
 r'''In the order $W,X,Y,Z$, the vertices $W$ and $Y$ are opposite, so $WY$ is a diagonal. (They need not be adjacent, which is why ``$W$ and $Y$ do not form a side'' is no obstacle.) The centre is the midpoint $M=(3,4)$, and $\overrightarrow{MW}=(-1,-3)$. The other two vertices are obtained by rotating this vector through $\pm90^\circ$: $(3,-1)$ and $(-3,1)$. So $X$ and $Z$ are $(6,3)$ and $(0,5)$ in some order.
 '''+asy(fig,'5cm')+r'''
@@ -364,8 +364,8 @@ pair A=extension(B,B+dir(Bb),C,C+dir(180-Cg));
 pair P=extension(B,B+dir(Bb-20),C,C+dir(180-Cg+15));
 draw(A--B--C--cycle,linewidth(0.9));
 draw(B--P--C,blue+linewidth(0.8));
-draw(arc(B,1.5,Bb-20,Bb),red);label("$20^\circ$",B+2.6*dir(Bb-10),red);
-draw(arc(C,2.0,180-Cg,180-Cg+15),red);label("$15^\circ$",C+3.6*dir(180-Cg+7.5),red);
+draw(arc(B,2.2,Bb-20,Bb),red);label("$20^\circ$",B+2.95*dir(Bb-10),red);
+draw(arc(C,2.9,180-Cg,180-Cg+15),red);label("$15^\circ$",C+3.75*dir(180-Cg+7.5),red);
 label("$A$",A,N);label("$B$",B,SW);label("$C$",C,SE);label("$P$",P,S);'''
 b.add(1762187,1,r'''Let $ABC$ be a triangle. Point $P$ lies in the interior of $ABC$ such that $\angle ABP=20^\circ$ and $\angle ACP=15^\circ$. Compute $\angle BPC-\angle BAC$.''',
 r'''In triangle $BPC$, $\angle BPC=180^\circ-\angle PBC-\angle PCB$. Since $P$ is inside the triangle,
@@ -417,9 +417,9 @@ draw(A--B--C,linewidth(0.9));
 draw(O--A,dashed);draw(O--C,dashed);draw(O--B,dashed);
 pair u=unit(B-A),w=unit(O-A);draw(A+1.4*u--A+1.4*u+1.4*w--A+1.4*w);
 pair u2=unit(B-C),w2=unit(O-C);draw(C+1.4*u2--C+1.4*u2+1.4*w2--C+1.4*w2);
-draw(arc(B,2.2,-60,60));label("$120^\circ$",B+3.6*dir(28));
+draw(arc(B,1.4,-60,60));label("$\angle ABC=120^\circ$",(-16,-15));
 dot(O);
-label("$O$",O,E);label("$A$",A,N);label("$C$",C,S);label("$B$",B,W);
+label("$O$",O,E);label("$A$",A,dir(150));label("$C$",C,dir(210));label("$B$",B,W);
 label("$8$",(A+B)/2,NW);label("$r$",(O+A)/2,NE);'''
 b.add(1762944,1,r'''$\overline{AB}$ and $\overline{BC}$ are tangent to circle $O$ at $A$ and $C$, respectively. The measure of $\angle ABC$ is $120^\circ$ and $AB=8$. What is the area of the circle?''',
 r'''A radius to a point of tangency is perpendicular to the tangent, so $OA\perp AB$ and $OC\perp CB$. Triangles $OAB$ and $OCB$ are congruent (hypotenuse $OB$ common, $OA=OC$), so $OB$ bisects $\angle ABC$ and $\angle ABO=60^\circ$.

@@ -32,7 +32,7 @@ pair D=(1.875,1.5),Ep=(3.375,1.5),F=(3.375,0),G=(1.875,0);
 draw(D--Ep--F--G--cycle,blue+linewidth(0.9));
 label("$A$",A,N);label("$B$",B,SW);label("$C$",C,SE);
 label("$D$",D,NW);label("$E$",Ep,NE);label("$F$",F,S);label("$G$",G,S);
-label("$2$",(-0.6,1),W);label("$6$",(4.7,0),S);label("(i)",(3,-1.1));'''
+label("$2$",(-0.6,1),W);draw((0,-0.7)--(6,-0.7),Arrows(4));label("$6$",(3,-0.7),S);label("(i)",(3,-1.9));'''
 fig2=r'''pair B=(0,0),C=(6,0),A=(2.5,2);
 pair D=(3.75,3),Ep=(0.75,3),F=(0.75,0),G=(3.75,0);
 draw(A--B--C--cycle,linewidth(0.9));
@@ -40,7 +40,7 @@ draw(A--D,dashed);draw(A--Ep,dashed);
 draw(D--Ep--F--G--cycle,blue+linewidth(0.9));
 label("$A$",A,S);label("$B$",B,SW);label("$C$",C,SE);
 label("$D$",D,NE);label("$E$",Ep,NW);label("$F$",F,S);label("$G$",G,S);
-label("$3$",(D+Ep)/2,N);label("$6$",(4.9,0),S);label("(ii)",(3,-1.1));'''
+label("$3$",(D+Ep)/2,N);draw((0,-0.7)--(6,-0.7),Arrows(4));label("$6$",(3,-0.7),S);label("(ii)",(3,-1.9));'''
 b.add(1782694,1,r'''$ABC$ is a triangle in which the altitude from $A$ to $BC$ has length $2$ and $BC=6$. $DEFG$ is a square with $D$ on line $AB$ and $E$ on line $AC$ (on the sides or their extensions), and $F$, $G$ on line $BC$. Find all possible values of the perimeter of $DEFG$.''',
 r'''Let the square have side $s$. Since $F$ and $G$ lie on $BC$, the side $DE$ is parallel to $BC$ at distance $s$ from it. Triangle $ADE$ is then similar to triangle $ABC$ (with $D\in AB$, $E\in AC$), and the ratio of similarity is the ratio of the distances from $A$ to the lines $DE$ and $BC$. So
 \[
