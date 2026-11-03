@@ -18,3 +18,4 @@
 - xnotes acted: b223 1777424-q01 -> b222 1777432-q01; b227 1757353-q01 -> b226 1759713-q03, q02 -> b225 1762366-q149 (all verified identical).
 - b225 done: 93 rec, 10 al (1 to b222 1777350), 22 diag; 68/0/25/7. Check 1757873-q02 reading (180/7), 1764326 reading, 1763286 leash answer.
 - b230 done: 97 rec, 7 al (2 to b229/b227 per xnotes), 36 diag; 64/2/30/4. Check 1736176 (11 vs 50), 1735595-q02, 1729625-q01 readings.
+- b225 figs reviewed (22). FIXED 1763561-q01: sqrt7 label touched red circle.

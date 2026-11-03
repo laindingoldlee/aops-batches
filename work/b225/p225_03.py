@@ -194,7 +194,7 @@ draw(O2--O3,heavygreen+linewidth(1));
 draw(arc(H,1.1,150,180));label("$30^\circ$",H+2.0*dir(165));
 dot(O1);dot(O2);dot(O3);dot(T1);dot(T2);
 label("$O_1$",O1,dir(15));label("$O_2$",O2,dir(250));label("$O_3$",O3,E);label("$T_1$",T1,W);label("$T_2$",T2+0.25*dir(-40),dir(-40));
-label("$\sqrt7$",(-1.15,4.85),heavygreen);'''
+label("$\sqrt7$",(-1.5,4.95),heavygreen);'''
 b.add(1763561,1,r'''Planes $\mathbf{P}_1$ and $\mathbf{P}_2$ are perpendicular and meet along the line $\ell$. Circle $\omega_1$ with radius $2$ and centre $O_1$ lies in $\mathbf{P}_1$. Unit circle $\omega_2$, centred at $O_2\in\mathbf{P}_1$, is internally tangent to $\omega_1$ at $T_1$, where the ray $\overrightarrow{T_1O_1}$ meets $\ell$ at an acute angle of $30^\circ$. Unit circle $\omega_3$, centred at $O_3\in\mathbf{P}_1$, is externally tangent to $\omega_1$ at $T_2$, where the ray $\overrightarrow{T_2O_1}$ is perpendicular to $\ell$. The minimum possible length of $\overline{O_2O_3}$ is $\sqrt m$ for a positive integer $m$. Compute $m$.''',
 r'''Everything happens in the plane $\mathbf{P}_1$, which contains $\ell$; the plane $\mathbf{P}_2$ plays no role. Tangency puts the centres on the radii: $O_2$ is the midpoint of $O_1T_1$, so $O_1O_2=1$ in the direction of $T_1$, and $O_3$ lies beyond $T_2$ on ray $O_1T_2$ with $O_1O_3=3$.
 
