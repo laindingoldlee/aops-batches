@@ -1,0 +1,1011 @@
+{
+  "format": "aops-topic-previews-v1",
+  "scope": "Loaded topic previews, not full replies or screened questions",
+  "source_archive_sha256": "15978407a01483794e215aef89ec1c105caa4e7154d91211c94bd95ef7186726",
+  "batch_number": 310,
+  "source_row_start": 30901,
+  "source_row_end": 31000,
+  "topic_count": 100,
+  "topics": [
+    {
+      "topic_id": "1277394",
+      "title": "Functions",
+      "text": "This is a problem based off an ARML problem. Do not post if you have seen it.\n\n\n\nLet $f(x)$ be a function such that $f(x)=(1+x)(1+x^8)(1+x^{64})...(1+x^{2^{3k}})...$ and is defined for $x \\epsilon [0, 1)$ Calculate $\\frac{1}{f^{-1}(\\frac{5}{3\\cdot f(2/5)f(4/25)})}$",
+      "url": "https://artofproblemsolving.com/community/c3h1277394_functions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1277331",
+      "title": "Can you count a member of a set twice?",
+      "text": "I have a problem that I need to solve (since it is from one of my classes, I have hidden most of it):\n\n\n\n(Question phrase) (thingie) have at least (number) of (something) in the set {sample1, sample2, sample3}?\n\n\n\nI'm wondering if in my final list of somethings can include sample1 twice?",
+      "url": "https://artofproblemsolving.com/community/c3h1277331_can_you_count_a_member_of_a_set_twice",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1277313",
+      "title": "Weird Math Problem",
+      "text": "What is the smallest integer value of $n$ such that $n < 100$.\n\n\n\nI'm a bit confused on how to approach this problem because lets say the answer is $k$. That would imply a contradiction because $k-1$ is a smaller integer value that is less than $100$ so $k$ is not the smallest.\n\n\n\nSo does this mean the answer cannot be in the form of $k$?!?!?!",
+      "url": "https://artofproblemsolving.com/community/c3h1277313_weird_math_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1277223",
+      "title": "Link Help",
+      "text": "A traveler as a straight gold chain with 7 links. She plans to stay at an inn that is willing to accept one link as payment for one night's lodging. She doesn't know when she'll want to leave, so she wants to pay on a daily basis. She'll have to cut some of the links in her chain of course; the inn is perfectly willing to accept cut links as payment. What is the smallest number of links she is forced to cut in order that she is able to pay for every night (possibly getting change in the form of links paid earlier) for up to a week? Which link(s) should she break?\n\n\n\nThanks, and show your work!",
+      "url": "https://artofproblemsolving.com/community/c3h1277223_link_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1277141",
+      "title": "Easy little infinite sequence I made :)",
+      "text": "Find the value of:$$ \\frac{3}{4} \\cdot \\frac{8}{9} \\cdot \\frac{15}{16} \\cdot \\frac{24}{25} \\cdot \\cdot \\cdot \\cdot$$\n\nIf you have seen it somewhere before, tell me (since plagarizing is most definitely illegal)",
+      "url": "https://artofproblemsolving.com/community/c3h1277141_easy_little_infinite_sequence_i_made_",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1277124",
+      "title": "Centipede Help",
+      "text": "A centipede climbs a 40-foot tree. Each day he climbs 5 feet, and each night he slides down 2 feet. In how many days will the centipede reach the top of the tree?\n\n\n\nI know how to do it. I can't explain it, though.\n\nThank you, and show your work!",
+      "url": "https://artofproblemsolving.com/community/c3h1277124_centipede_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1276999",
+      "title": "Clarification",
+      "text": "THIS POST'S ISSUE IS RESOLVED\n\nSorry, I should have checked my solution further before making such an obvious post. Apologies\n\n\n\n\n\nHey guys, just wanted to clarify radical stuff:\n\n\n\nCan we simplify \\[2+\\sqrt{6}+\\sqrt{10}\\]divided by \\[2\\sqrt{6}+2\\sqrt{10}\\]?\n\n\n\nMy idea was that, since all the radicals, and integers are identical on both the numerator, and denominator, we can at least simplify it to the point where it is no longer a fraction, right? Thx, guys.",
+      "url": "https://artofproblemsolving.com/community/c3h1276999_clarification",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1277118",
+      "title": "Children Help",
+      "text": "What is the least number of children in a family in which each child has at least one brother and two sisters?\n\nThanks, and show your work!",
+      "url": "https://artofproblemsolving.com/community/c3h1277118_children_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1277081",
+      "title": "SHSAT Suggestions?",
+      "text": "Hey guys! Just wondering if any of you guys took the SHSAT, or have any tips for it. Thx!\n\n\n\nBTW, Do you guys think I can get into Bronx Science, if I get an average score of 24/25 (Math Section ONLY) on Barron's SHSAT Mini tests?",
+      "url": "https://artofproblemsolving.com/community/c3h1277081_shsat_suggestions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1276534",
+      "title": "problem from mathcounts",
+      "text": "A class of 20 students is going to form groups of 2. How many different groups are possible?",
+      "url": "https://artofproblemsolving.com/community/c3h1276534_problem_from_mathcounts",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1276896",
+      "title": "Logic Help",
+      "text": "The teacher whispers positive integer A to Anna, B to Brett, and C to Chris. The students don't know one's number but they know that the sum of their numbers is 14. Anna says, \"I know that Brett and Chris have different numbers\" . Then Brett says, \"I already knew all three of our numbers are different\" . Finally, Chris announces, \"Now I know all three of our numbers\" . What is the product ABC?\n\n\n\nThanks, and show your work !",
+      "url": "https://artofproblemsolving.com/community/c3h1276896_logic_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275380",
+      "title": "Mystery Ages",
+      "text": "In a group of five friends, the sums of each group of four of them is 58, 59, 61, 62, and 64. What is the age of the oldest of the five friends?",
+      "url": "https://artofproblemsolving.com/community/c3h1275380_mystery_ages",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1276317",
+      "title": "k A very hard expanding problem",
+      "text": "Expand $(x-a) (x-b)^2 (x-c)^3 \\cdots (x-z)^{26} $ where $x \\in \\mathbb{R}$.",
+      "url": "https://artofproblemsolving.com/community/c3h1276317_a_very_hard_expanding_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1180435",
+      "title": "Share Good Math Resources With Others!",
+      "text": "Happy New Year, everyone! :-D Hope you have a great 2016!!!! :clap: :wow:\n\n\n\nI'm really excited making this post. :welcomeani:  In this post, I want YOU to share your favorite, and importantly good, math resources! Other people reading this topic will see the math resource you said, then check it out, then probably use it for a while! Then those people can tell others their favorite math resource, and everyone (also me) will learn some good math resources!\n\n\n\nHere are my favorite math websites:\n\nartofproblemsolving.com\n\nmathsisfun.com\n\nmathplayground.com\n\n\n\nMath Playground\n\n\n\nMath Playground is too easy for me, and most likely too easy for other users on AoPS.\n\n\n\nMath is Fun\n\n\n\nMath is Fun (Be careful, Math is Fun has maths is fun in the website link rather than math is fun.) has lots of interesting tools I like to use. It has some advanced math pages I read here and there. Check it out!\n\n\n\nArt of Problem Solving\n\n\n\nArt of Problem Solving, which is the website we're on right now by far is my favorite math website. You probably know about it if you're an experienced user.\n\n\n\nNot stopping with websites, math YouTube channels can have good videos.\n\n\n\nArt of Problem Solving channel\n\n\n\nArt of Problem Solving has a YouTube channel, but I watch them in the videos section in Resources above, and not very often.\n\n\n\nNumberphile channel\n\n\n\nThere's also Numberphile. Numberphile is another math channel. You don't really learn much math from it, it has lots of recreational maths. But I've been subscribed for about 1 1/4 years.\n\n\n\nmathematicsonline channel\n\n\n\nThere's also mathematicsonline, it has lots of math proofs and I learned from it, I think you should check it out.\n\n\n\nMath programs include\n\n\n\nGeoGebra,\n\n\n\nMaple and\n\n\n\nMathematica (although I'm not using Maple and Mathematica).\n\n\n\nAn awesome book is called 100 Math Brainteasers. It has 100 fun math problems that will challenge your brain. I got it at Amazon.\n\n\n\nI've said my favorite math resources that I know. Now it's your turn. Thank you for reading this and posting your favorite math resources! It helps a lot! And if you know a post a lot like this post, give the link to it.\n\n\n\nFifth edit: You are free to post your favorite math competitions now! Go ahead!",
+      "url": "https://artofproblemsolving.com/community/c3h1180435_share_good_math_resources_with_others",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1276577",
+      "title": "Geometry Question",
+      "text": "Let ABCD be a rectangle with area of 609 units squared, and side lengths x - 4, and x + 4. Find the sum of the lengths of the diagonals in simplest radical form.",
+      "url": "https://artofproblemsolving.com/community/c3h1276577_geometry_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1276578",
+      "title": "Algebra Question",
+      "text": "Let A, B, and C be positive numbers such that AB = 7, BC = 5, and A + C = 4. Find A + B + C.",
+      "url": "https://artofproblemsolving.com/community/c3h1276578_algebra_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1137815",
+      "title": "k Challenging Middle School Math Marathon",
+      "text": "Hey everybody, I just wanted to start a marathon in which each person post a medium or hard or hardest prob/em they know. rules:Click to reveal hidden textchoose a hard or medium problem and label medium, hard  NO HARD CALCULUS PROBLEMS or ANY problem beyond mathcounts and other middle school math. Then the next person will post their answer and solution and post another problem.\nSince I'm starting I will make a problem. P1 hardClick to reveal hidden textRight Triangle ABC has one leg of 6cm, on leg of 8cm, and a right angle of A. A square has one side on the hypotenuse of the triangle ABC. What is the length of one side of the square? Express answer as common fraction.",
+      "url": "https://artofproblemsolving.com/community/c3h1137815_challenging_middle_school_math_marathon",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275913",
+      "title": "Probability",
+      "text": "5 balls are placed in an empty urn, the color of the balls being determined by tossing a coin. If a head appears then a red ball is placed into the urn & if a tail appears then a white ball is placed into it.If a ball is drawn at random from the urn & found to be red, what's the probability that all balls in the urn are red?",
+      "url": "https://artofproblemsolving.com/community/c3h1275913_probability",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "570958",
+      "title": "Middle School Counting & Probability Marathon",
+      "text": "Hello! Welcome to the Middle School Counting and Probability Marathon! This marathon is based on both the Middle School Counting Marathon and the Beginning Probability Marathon, both of which have long been dead.\n\n\n\nThe rules are: Rules[list=1]\n\n[*]Hide your problems and solutions. To hide a segment of your post, encase it in [hide][/hide] tags, like this:\n\n\n\n[code]Problem!This is a problem; figure it out.\n[/code]\n\nThis is parsed into Problem!This is a problem; figure it out.\n.\n\n[*]Problems should be of reasonable difficulty and should match the difficulty of the forum. Acceptable problems include the starter I have posted below; unacceptable problems include late-AIME problems and the like.\n\n[*]Provide full, written solutions using $\\LaTeX$ when necessary. Not only are written solutions easy to understand, they help you as a writer catch mistakes and provide a good exercise for the left side of your brain. Win-win!\n\n[*]Have fun! :)[/list]\n\n\n\n\nP1Kim Chan Lee's noodle house sells the following combinations of noodles:\n\n\n\n[list]\n\n[*]2 choices for meal style: noodles in soup, noodles and soup separate\n\n[*]3 choices for noodles: Rice, Egg, Buckwheat\n\n[*]3 choices for meat: Shrimp wonton, Beef, Fish balls\n\n[*]2 choices for veggies: no veggies or veggies[/list]\n\n\n\nYou must pick exactly one of the choices in each category. How many possible noodle combinations can we make?",
+      "url": "https://artofproblemsolving.com/community/c3h570958_middle_school_counting__probability_marathon",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "590895",
+      "title": "Middle School PIE Marathon",
+      "text": "Hi, this is just another marathon just for PIE and Venn Diagrams in Counting and Probability.\n\nProblem #1How many 6 digit numbers contain at least one 2, one 0, one 1, and one 4 as their digits?",
+      "url": "https://artofproblemsolving.com/community/c3h590895_middle_school_pie_marathon",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1276278",
+      "title": "Coin Help",
+      "text": "Five coins look the same, but one is a counterfeit coin with a different weight than each of the four genuine coins. Using a balance scale, what is the least number of weighings to ensure that, in every case, the counterfeit coin is found and is shown to be heavier or lighter?\n\n\n\nThank you, and show your work!",
+      "url": "https://artofproblemsolving.com/community/c3h1276278_coin_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275279",
+      "title": "Two Queens",
+      "text": "You are a queen on a $4\\times4$ chessboard at point A4. There is an enemy queen located on D4.  The enemy queen's moves are totally random, except when it can eat you, at which point it does.  Assuming you take alternating turns, and you cannot eat the enemy queen, but you know the coordinates of the enemy queen and yourself, what is the best strategy for moving to keep yourself alive?",
+      "url": "https://artofproblemsolving.com/community/c3h1275279_two_queens",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275814",
+      "title": "Simple number theory",
+      "text": "Compare \\[ \\begin{aligned} A&=1\\cdot 3\\cdot 5\\cdot 7\\cdots 99\\\\ B&=\\frac{51}{2}\\cdot\\frac{52}{2}\\cdots\\frac{100}{2} \\end{aligned} \\]",
+      "url": "https://artofproblemsolving.com/community/c3h1275814_simple_number_theory",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275633",
+      "title": "Functions",
+      "text": "A function is defined as $f(x, y)=(x+y, x-y)$.  What is its inverse?",
+      "url": "https://artofproblemsolving.com/community/c3h1275633_functions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275975",
+      "title": "Ball Help",
+      "text": "Problem: There are 9 apparently identical balls, except one is heavier than the other 8.  What is the smallest number of balance scale weighings required to ensure identification of the \"odd\" ball?\n\n\n\nPlease show your work and thank you!",
+      "url": "https://artofproblemsolving.com/community/c3h1275975_ball_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275111",
+      "title": "Number Theory Problem",
+      "text": "Find the last two digits of $2^{2013}$ using Euler's Totient Theorem.",
+      "url": "https://artofproblemsolving.com/community/c3h1275111_number_theory_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275908",
+      "title": "I need helps",
+      "text": "Give two integers a,b (b>0) . Prove that exsists only one pair (q;r) (q and r are integers and $2b \\leq r <3b$) so that a=qb+r",
+      "url": "https://artofproblemsolving.com/community/c3h1275908_i_need_helps",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275363",
+      "title": "Problem Set # 1",
+      "text": "1. If ( a + 1 ) satisfies 2 ( x + 1 ) = 3 ( x - 1 ), find the solution to 2 [ 3 ( 2 + x ) - 2 ( a - x ) ] = 4a.\n\n\n\n\n\n\n\n2. What is the value of x in $\\dfrac{x}{1*2}$ + $\\dfrac{x}{2*3}$ + $\\dfrac{x}{3*4}$ +...+ $\\dfrac{x}{1999*2000}$ = 1?",
+      "url": "https://artofproblemsolving.com/community/c3h1275363_problem_set__1",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275294",
+      "title": "complex number graphing",
+      "text": "how do you graph in complex numbers?",
+      "url": "https://artofproblemsolving.com/community/c3h1275294_complex_number_graphing",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275008",
+      "title": "Mathcounts -Divisiblity",
+      "text": "Hi All,\n\nI have a question on divisibility. Below is the question.\n\n\n\nThe digits 2, 3, 4, 7, 8 will be put in random order to make a positive five-digit integer. What is the probability that the resulting integer will be divisible by 11? Express your answer as a common fraction.\n\n-State MATHCOUNTS Trainer Problem\n\nThanks and I hope for a quick reply!\n\nRegards,\n\nRS428848",
+      "url": "https://artofproblemsolving.com/community/c3h1275008_mathcounts_divisiblity",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1264882",
+      "title": "Complementary Counting",
+      "text": "There are 9 parking spaces in a row which must be assigned to 5 co-workers. How many ways can the spaces be assigned if at least two of the assigned spaces must be adjacent?\n\nSolutionIn total there are 9x8x7x6x5=15,120 ways that the workers can choose there spots. Out of these, there is one combination where the spaces are not adjacent. There are 5! ways to arrange the workers in that combination. Subtract this from the total 15,120 to get 15,000 ways. Correct me if I'm wrong.",
+      "url": "https://artofproblemsolving.com/community/c3h1264882_complementary_counting",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1261492",
+      "title": "PIE (Principle of Inclusion & Exclusion)",
+      "text": "Does anyone have any suggestions on formulas for these types of problems?  :)",
+      "url": "https://artofproblemsolving.com/community/c3h1261492_pie_principle_of_inclusion__exclusion",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275527",
+      "title": "Riddle Help",
+      "text": "Imagine you're on a game show, and you're given the choice of three doors: Behind one door is a million dollars, and behind the other two, nothing. You pick door #1, and the host, who knows what's behind the doors, opens another door, say #3, and it has nothing behind it. He then says to you, \"Do you want to stick with your choice or switch?\"\n\n\n\nSo, is it to your best advantage to stick with your original choice or switch your choice?\n\nCan you also help me with this question: http://artofproblemsolving.com/community/c164h1275522_fossil_fuel",
+      "url": "https://artofproblemsolving.com/community/c3h1275527_riddle_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275594",
+      "title": "Integers as Squares",
+      "text": "Here is an interesting problem:\n\n\n\nHow many integers between 1 and 1000 (inclusive) can be expressed as the difference of two squares?",
+      "url": "https://artofproblemsolving.com/community/c3h1275594_integers_as_squares",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1274737",
+      "title": "prime and perfect square",
+      "text": "Find $p$ is a prime number such that $p^4+p^3+p^2+p+1$ is a perfect square.",
+      "url": "https://artofproblemsolving.com/community/c3h1274737_prime_and_perfect_square",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273765",
+      "title": "Probability Problem",
+      "text": "Assume there is a cube where the vertices are labled $A, B, C, D, E, F, G$, and $H$, where $A$ and $B$ are adjacent to each other. Suppose the animal $x$ starts on $A$ and travels to any random point that is adjacent to it. $x$ stops when it reaches $B$. What is the probability that $x$ reaches $B$ by coming from $A$?",
+      "url": "https://artofproblemsolving.com/community/c3h1273765_probability_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275539",
+      "title": "Tricky Geometric Question",
+      "text": "In triangle ABC, angles A, B, and C are in an arithmetic progression. What is the measure of angle B?",
+      "url": "https://artofproblemsolving.com/community/c3h1275539_tricky_geometric_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273497",
+      "title": "Collatz Conjecture Generalizations",
+      "text": "So some of you may have heard of Collatz Conjecture:\n\n\n\nStart with any number $n$. Then, \\begin{align*} n \\to 3n+1 & \\text{ if n is odd} \\\\ n \\to \\frac{n}{2} & \\text{ if n is even} \\end{align*}\n\nCollatz Conjecture states that no matter what $n$ is, the above formula will result in $1$.\n\n\n\nHere are a few things I noticed:\n\n\n\nFirst off, why $3n+1$? Why not $5n+7$ or any general formula of the form $(2x-1)\\cdot n + (2y-1)$ (The goal of the expression to change the odd number is to convert it to an even number, thus the odd coefficients) And furthermore, how will we know if an expression works or not if the sequence goes on for a long time?\n\n\n\nFor a more articulate description of this problem go to http://mathworld.wolfram.com/CollatzProblem.html\n\n\n\nWell, I noticed that we will $always$ reach 1 if we reach a power of 2 (since it is even and we will keep dividing by 2 until we reach $2^0$).\n\n\n\nAs for seeing how things pan out if we replace $3n + 1$ with $xn + y$, if we ever reach a number we have seen before, we are stuck in an infinite loop, and will never reach 1.\n\n\n\nOne example of this:\n\n\n\nSay we adopt $5n + 3$ instead of $3n + 1$, and choose our $n$ to be 3. Then, $5\\cdot 3 + 3 = 18, \\frac{18}{2} = 9, 9\\cdot 5 + 3 = 48$, and since 48 is a multiple of $2^4$, we can take that out. We are left now with $\\frac{48}{16} = 3$, which is the number we started with! Thus 1 can never be reached and we have proved this doesn't work.\n\n\n\nPlease let me know what you think of this interesting problem. If you have noticed or thought of explorations of this problem please reply/comment.",
+      "url": "https://artofproblemsolving.com/community/c3h1273497_collatz_conjecture_generalizations",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275207",
+      "title": "k intriguing question",
+      "text": "How many divisor for 36?",
+      "url": "https://artofproblemsolving.com/community/c3h1275207_intriguing_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1274683",
+      "title": "A geometry problem",
+      "text": "Given an equilateral triangle $ABC$, $AH$ is the altitude of $ABC$. Let $D$ lies on ray $HC$ such that $HA=HD$. Let $E$ be a point on the opposite ray of ray $BA$ such that $\\angle{BDE}=15^{\\circ}$. Prove that $HED$ is isoceles triangle",
+      "url": "https://artofproblemsolving.com/community/c3h1274683_a_geometry_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1275280",
+      "title": "SHSAT Tips/Comments",
+      "text": "Hey guys! It's dark!\n\nSo! Next year, in October, I'm taking the SHSAT. If you guys haven't heard, it's the Specialized High Schools Admissions Test. So, I was wondering:\n\n\n\n1) Do you guys have any tips for the SHSAT? I'm aiming for Bronx Science, and any tips or explanations would be useful. BTW, I'm not a newbie to this, so I know most of the basic information (scrambled paragraph pronoun searching, making logical reasoning diagrams, etc.), but any info is appreciated :-D\n\n\n\n2) Right now, I'm reading Art of Problem Solving : Volume I. I know, the content there is much more advanced than the SHSAT, but do you think, at least the strategies will be useful, and can be applied to even basic math like that in the SHSAT?\n\n\n\n3) I don't want to sound like I'm concietous, or whatnot, but the math in the SHSAT is extremely boring, but I still have to study for it, because the test starts on Oct. 1st. Any thoughts on that?\n\n\n\nThanks, guys!",
+      "url": "https://artofproblemsolving.com/community/c3h1275280_shsat_tipscomments",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1274747",
+      "title": "Digits Arrangements",
+      "text": "I have 7 of each of the digits 1-7. I want to make 2-digit and 1-digit numbers, and each digit may not be used more than once. What is the greatest number of numbers I can make?\n\n\n\nI was thinking that maybe I should count 49 digits, exclude all the one digit ones, then move on to the two digit ones. But I don't know how to deal with that. Any ideas? Please help. Thanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1274747_digits_arrangements",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1274261",
+      "title": "Mock MathCounts State (TEST RELEASED)",
+      "text": "Take the test, PDFs below. Good luck. Winners will be posted Aug. 1",
+      "url": "https://artofproblemsolving.com/community/c3h1274261_mock_mathcounts_state_test_released",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1274902",
+      "title": "Algebra Question",
+      "text": "Consider the functions f(x) = $\\sqrt{x}$ and g(x) = 7x + b. In the standard coordinate plane, y = f(g(x)) passes through the point (4,6) Find b.",
+      "url": "https://artofproblemsolving.com/community/c3h1274902_algebra_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1274940",
+      "title": "prime Pythag triples",
+      "text": "Why can prime pythag triples only end in odd numbers?",
+      "url": "https://artofproblemsolving.com/community/c3h1274940_prime_pythag_triples",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1274898",
+      "title": "Number Theory Question",
+      "text": "I'm studying number theory right now. What are some important beginner/intermediate topics, principles, or theorems I should look at?",
+      "url": "https://artofproblemsolving.com/community/c3h1274898_number_theory_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1274510",
+      "title": "How to find triples of numbers?",
+      "text": "So recently I came across this post about finding ordered (a,b,c) such that abc=k for some integer k and a,b,c in the integers.\n\nFor small values, it usually suffices to list all such triples, but is there a fast way to do this?",
+      "url": "https://artofproblemsolving.com/community/c3h1274510_how_to_find_triples_of_numbers",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273017",
+      "title": "MathCounts",
+      "text": "In rectangle ABCD, H is the midpoint of BC , E lies on AD , and F lies on AB . In rectangle CEFG, H lies on FG and HG  3 in . mDEC = 45°. What is the number of square inches in the positive difference between the areas of the two rectangles?\n\nAnswer is 27 Square Inches but need help in solving it. Thank you!",
+      "url": "https://artofproblemsolving.com/community/c3h1273017_mathcounts",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1274256",
+      "title": "collinearity on circle",
+      "text": "consider a circle with radius of 1. prove That there are no 3 points on circumference of circle so they are all on a same line",
+      "url": "https://artofproblemsolving.com/community/c3h1274256_collinearity_on_circle",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1274398",
+      "title": "Divisors",
+      "text": "Let $N=1890*1930*1970$, find the number of divisors of N which are not divisors of $45$",
+      "url": "https://artofproblemsolving.com/community/c3h1274398_divisors",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1274292",
+      "title": "Interesting equation",
+      "text": "Let x,y be natural numbers with x>y.Solve the equation:\n\n$x^2+y^2+(xy)^2=504^4+3$\n\n\n\nHint:I found the solution x=505 and y=503 but I am not able to prove its unicity.Can anyone please help me?",
+      "url": "https://artofproblemsolving.com/community/c3h1274292_interesting_equation",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1272192",
+      "title": "Triangle area problem",
+      "text": "Construct triangle ABC such that BC is of length 1 centimetre, A=100degrees, B=60degrees, C=20degrees. Let D be the midpoint of AC and let E be the point in BC such that angle EDC is of 80 degrees.\n\n\n\nFind the sum of the area of ABC and twice the area of CDE.",
+      "url": "https://artofproblemsolving.com/community/c3h1272192_triangle_area_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1274255",
+      "title": "Yuuuuge Radicals",
+      "text": "Hey guys! It's Dark. I'm on Exercise £1-4 in AoPS:Vol.1, and one of the problems is a huge radical (image attached). I was wondering how we can simplify it without doing a huge Prime Factorization tree. Thanks.",
+      "url": "https://artofproblemsolving.com/community/c3h1274255_yuuuuge_radicals",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273797",
+      "title": "Counting with Symmetry",
+      "text": "I have mastered all the topics in CP in Alcumus, EXCEPT Counting with Symmetry. I am getting the Intro to CP book, but can anyone recommend some resources having to do with Counting with Symmetry? Thanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1273797_counting_with_symmetry",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1274134",
+      "title": "Stumped with those Radicals!",
+      "text": "Sup guys! So, the solution for the example:\n\n6sqrt6912\n\nIt would be great if someone could  explain these steps:\n\nThx!!",
+      "url": "https://artofproblemsolving.com/community/c3h1274134_stumped_with_those_radicals",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1274237",
+      "title": "Clarification w/ Radicals",
+      "text": "Hey guys! So, I'm reading the book, \"Art of Problem Solving Volume 1\". Great book so far, but now I'm kind of confused. The book uses 2 methods, known as the \"Inspection Method\", and \"Our method\". Can someone please elaborate the difference between both, or their purposes, because I thought there was only one way to simplify Radicals, and that was through rewriting the radical by factoring out perfect roots.Thanks for the help, guys!\n\n\n\nI attached a photo of both methods used in the book, in example 1-11.",
+      "url": "https://artofproblemsolving.com/community/c3h1274237_clarification_w_radicals",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273905",
+      "title": "Sqrt Help",
+      "text": "Simplify: ...\n\nHow do you type a square root sign in AOPS?\n\n:-D  :oops_sign:",
+      "url": "https://artofproblemsolving.com/community/c3h1273905_sqrt_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273881",
+      "title": "Tricky Algebra Question",
+      "text": "Given that A and B are the zeroes to the equation\n\n\n\n$(2x^3 - 4x^2 - 85x + 66)/(x + 6)$\n\n\n\nfind the value of AB.\n\n\n\nChallenge: If you could solve this problem, try finding a second method to complete it.",
+      "url": "https://artofproblemsolving.com/community/c3h1273881_tricky_algebra_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273872",
+      "title": "k Clarifications",
+      "text": "One last time!\n\n\n\n$0!=1$\n\n$1+2+\\cdots \\ne -\\frac{1}{12}$\n\n$\\frac{0}{0}$ IS UNDEFINED\n\n$0.\\overline{9}=1$\n\n\n\nNOW PLEASE STOP MAKING THREADS EVERY 2 DAYS ASKING ABOUT THESE EXACT SAME QUESTIONS",
+      "url": "https://artofproblemsolving.com/community/c3h1273872_clarifications",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273852",
+      "title": "Vieta's Formulas!",
+      "text": "Let $f(x) = x^{4}-4x^{3}-4x^{2}-8x+14$\n\n\n\nFind the sum of the cubes of the roots of $f$.",
+      "url": "https://artofproblemsolving.com/community/c3h1273852_vietas_formulas",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273885",
+      "title": "Digits Help",
+      "text": "22. How many digits are in the number 25^21 * 2^48.\n\n25. How many digits are in the value of the following expression? (2^2001 * 5^1950) / 4^27.\n\nThank you, and show your work!",
+      "url": "https://artofproblemsolving.com/community/c3h1273885_digits_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1271787",
+      "title": "Trig Question",
+      "text": "Let A and B be positive integers, and sin (A) = cos (B). Given that B can be expressed as $X^Y$ = $Y^X$ where X and Y are both positive integers, what is the value of $a^2$?",
+      "url": "https://artofproblemsolving.com/community/c3h1271787_trig_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273804",
+      "title": "Box Help",
+      "text": "How many rolls of paper will it take to wrap a box with dimensions half the dimensions of a box that requires two rolls of wrapping paper to wrap it? Express your answer as a common fraction.\n\nThanks, and please show your work.",
+      "url": "https://artofproblemsolving.com/community/c3h1273804_box_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273626",
+      "title": "Chinese Remainder Theorem",
+      "text": "Can someone explain to me the Chinese Remainder Theorem?",
+      "url": "https://artofproblemsolving.com/community/c3h1273626_chinese_remainder_theorem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273644",
+      "title": "Sequences and Some Maths",
+      "text": "1. The sum of the first ten terms of an arithmetic sequence is 160. The sum of the next ten terms of the sequence is 340. What is the first term of the sequence?\n\n\n\n\n\n\n\n2. By how much does the sum of the first 15 positive odd integers exceed the sum of the first 10 positive even integers?\n\n\n\n\n\n\n\n\n\n3.  Find the smallest positive integer x such that the sum of x, x+3, x+6, x+9, and x+12 is a perfect cube.",
+      "url": "https://artofproblemsolving.com/community/c3h1273644_sequences_and_some_maths",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273601",
+      "title": "Intermediate Number Theory Pretest questions",
+      "text": "How many of the first 1000 natural numbers have a remainder of 1 when divided by 5, a\n\nremainder of 2 when divided by 6, and a remainder of 5 when divided by 7?",
+      "url": "https://artofproblemsolving.com/community/c3h1273601_intermediate_number_theory_pretest_questions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1272621",
+      "title": "Question I thought of",
+      "text": "A spinner has 8 sections. Each section can either be red or blue. If rotatons are considered to be the same, how many colorings are there?",
+      "url": "https://artofproblemsolving.com/community/c3h1272621_question_i_thought_of",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273564",
+      "title": "Exponents",
+      "text": "PROBLEM RESOLVED : THANK YOU FOR ALL WHO CONTRIBUTED\n\n\n\nSo, the problem is 5^2+5^2/5. What I did was simplify that into 5^2/5+5^2/5, which should be 5^2-1+5^2-1, which is 5+5, and ultimately 10. However, the solution, whose picture is attached, seems to disagree. Please help. Thx!",
+      "url": "https://artofproblemsolving.com/community/c3h1273564_exponents",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1204283",
+      "title": "Trig Ratios",
+      "text": "Could someone give me some trig ratios I can study?",
+      "url": "https://artofproblemsolving.com/community/c3h1204283_trig_ratios",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273407",
+      "title": "Weird digits problem",
+      "text": "Find the last two digits of 17^(17).\n\n\n\nI tried using modular arithmetic, but that might take a while. Would using the euler phi property help? Maybe the recursion method?\n\nAny help is appreciated.",
+      "url": "https://artofproblemsolving.com/community/c3h1273407_weird_digits_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273331",
+      "title": "9 \"Sleep on it!\" It works! (Poll)",
+      "text": "It's funny how many solutions you can think of when you wake up...\n\n\n\nFor instance, I just thought of something for a problem that stumped me yesterday and I was working on it for a while...then I woke up today and figured it out.  I think there's a scientific reason (maybe not), but I'm too lazy to search it up (I'll wake up tomorrow and realize how, lol).  Anyway....",
+      "url": "https://artofproblemsolving.com/community/c3h1273331_sleep_on_it_it_works_poll",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273236",
+      "title": "Triangle area problem 2",
+      "text": "Triangle ABC is an acute angle triangle (where all angles are less than 90 degrees). D, E and F lies in BC, CA and AB, respectively such that AD is an altitude of a triangle, BE is a median, and CF is an angle bisector of C. Let M be a point where CF meets AD and let N be a point where CF meets BE. MN is of length 1 unit, FM is of length 2 units and NC is of length 3 units.\n\n\n\nFind the area of triangle ABC.\n\nI'm drawing a blank here, all i know is that CF 5 units long, because M is farther to F than N, else N would be a midpoint and the triangle would be impossible to construct. Ceva's theorem doesn't help, angle bisector theorem doesn't help.\n\n\n\n(Triangle area problem 1 is here: https://www.artofproblemsolving.com/community/q1h1272192p6663552)",
+      "url": "https://artofproblemsolving.com/community/c3h1273236_triangle_area_problem_2",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1271946",
+      "title": "Proof Theory?",
+      "text": "So I was daydreaming one day and came to this weird conclusion.\n\n\n\nSuppose that I have a true statement P. It doesn't matter whether mankind accepts P as true, just that P is true, but mankind doesn't know it is yet. Now how do we show mankind P is true? We prove it of course!\n\n\n\nLet Q be the VALID proof that P is true. Now let R be the proof that Q exists. Now, mankind doesn't physically need to see Q in order to accept P is true. If mankind accepts R, then they accept Q exists, and since Q exists, P must be true, otherwise Q would not exist.\n\n\n\nNow, mankind doesn't need to physically see R. All mankind needs to see is S, where S shows that R exists. BUT WAIT! Mankind doesn't even need to see that! Take T! T shows that S exists, then U, then V, ad infinitum.\n\n\n\nSo there are infinite \"proofs\" of true statements.\n\n\n\nHere's where it gets even stranger. Since if R exists, P is true, then R must be a proof of P. Since Q is a proof of P, R=Q could be a possible end. So if R=Q, and by construction, R could be Q, then all R has to do to prove P is to prove R exists! So any statement proving itself exists would prove every single true statement at the same time!\n\n\n\nJust a little something next time your math teacher asks you to prove Fermat's Last Theorem...",
+      "url": "https://artofproblemsolving.com/community/c3h1271946_proof_theory",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1272438",
+      "title": "Mock Chapter Competition :D Test Writer/Solver sign-ups(ish)",
+      "text": "Hi,\n\nramarnath2 and I are planning to write a Mock Chapter Competition. We might need a few more test writers, as well as solvers after we finish the test. Please PM me or ramarnath2 if you want to be a test writer or test solver. We will reply to you shortly.\n\n\n\nNOTE: These are not signups for DOING the competition yet. We are only asking for people who want to be Test Writers or Solvers.\n\n\n\nEdit: We have enough Test Writers, but we still need more test solvers! If you PMed us for test solver and haven't received a PM from me or ramarnath2 yet, then that means you are still pending.",
+      "url": "https://artofproblemsolving.com/community/c3h1272438_mock_chapter_competition_d_test_writersolver_signupsish",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273171",
+      "title": "Remainder of a Power",
+      "text": "What is the remainder when $3^{2008}$ is divided by $80$?",
+      "url": "https://artofproblemsolving.com/community/c3h1273171_remainder_of_a_power",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1272889",
+      "title": "Coordinate Reflection Problem",
+      "text": "There is a point (5, 7). Reflect the point across the line with equation y = 1/2x-7/4. As an ordered pair (x, y), what are the coordinates of the reflected point?",
+      "url": "https://artofproblemsolving.com/community/c3h1272889_coordinate_reflection_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1271467",
+      "title": "Every number is complex?!",
+      "text": "Mrs. Joals, who is a math teacher, proves to her students every number is complex:\n\n\n\n\"Complex numbers are in the form $b+ai$. $b$ and $a$ are both variables.\"\n\n\n\nMrs. Joals is correct on this.\n\n\n\n\"Set $a$ to $0$\"\n\n\n\nVariables can be anything.\n\n\n\n\"This gives us $b+0.$\"\n\n\n\nWait... Is $0i=0$ true?\n\n\n\n\"$b$ can be anything\"\n\n\n\nThis is true. We didn't say what it was.\n\n\n\n\"Since $b$ can be anything, and adding $0$ doesn't change anything, $b$ is complex.\"\n\n\n\nYes, $b$ can be whatever you like.\n\n\n\n\"So, every number is complex.\"\n\n\n\nIs there anything wrong with this proof? Why?",
+      "url": "https://artofproblemsolving.com/community/c3h1271467_every_number_is_complex",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1272292",
+      "title": "Counting past infinity",
+      "text": "I saw a cool vsauce video, so I thought I would put the stuff on here.\n\n\n\nFirst of all, a little on cardinality. If I have 4 bananas, the cardinality of the set of bananas is 4. Simple. Natural numbers are also called cardinal numbers.\n\n\n\nThe set of all natural numbers is alpha null ( I think that's how you spell it). Obviously, alpha null has infinite elements.\n\n\n\nWhat if I take a set of bananas with cardinality alpha null and label each one with a natural number. Obviously, every banana would have a number, since this set of bananas and the set of natural numbers have the same cardinality: alpha null.\n\n\n\nIf I add one banana to the set, I still have alpha null bananas. Same thing if I subtract one banana. Even if I add another alpha null bananas, I'll still have alpha null bananas. Infinity is weird that way.\n\n\n\nBut what if I wanted to label the bananas in the order I got them in? If I had alpha null bananas and than added one banana, what would I call the extra banana? The label would have to be a number bigger than alpha null, or bigger than this type of infinity.\n\n\n\nThe extra banana would be called omega, an ordinal number. Ordinal numbers aren't used to add or subtract from infinity. As I said earlier, adding one banana to alpha null bananas is still alpha null bananas. Ordinal numbers just label things.\n\n\n\nSo, if I have two sets of alpha null lines, I could label 1 set with the natural numbers and the other set with omega, omega + 1, omega + 2, etc.\n\n\n\nAnd eventually, we reach omega times 2, omega times 3, up to omega times omega. However, this is just omega squared. Then comes omega cubed, then omega to the fourth, etc.\n\n\n\nWhen we reach omega to the omega to the omega to the omega....(going on forever), it seems like we can't continue. But we can. This number is Epsilon naught. We can go on from there.\n\n\n\nNow, how can we construct new ordinal numbers like omega + 1? Through the axiom of replacement. Here, we see that if we replace a set of, say, 5 bananas with 5 apples, we still have a set. This is useful.\n\n\n\nSo, if we have a set of alpha null things up to omega, we can replace each number with omega + x, where x is a number in the first set of alpha null things.\n\n\n\nNow, a little bit on order type of a set. The order type of a set is the first ordinal number not needed to label the things in the set. For cardinal numbers, order type = cardinality. The order type of alpha null is omega. So, if a set is well ordered, as in every part of the set contains a beginning element, than the set describes a new ordinal number.\n\n\n\nMoving back to epsilon naught, we can see that all these ordinal numbers have an order type, as they are well ordered. This order type must be bigger than all these ordinals. This is called Omega 1.\n\n\n\nThe cardinality of omega 1 is alpha 1. This means that this ordinal has to describe more things than the last alpha. If it didn't, it would be part of that set.\n\n\n\nUsing the axiom of replacement, we can continue jumping to higher ordinals. Omega 2, Omega 3, even Omega Omega. In fact, we can go up to omega omega omega omega....., where there are alpha null omegas describing the ordinal.\n\n\n\nNow, we could keep going with replacement, even if we had no way to write the numbers.\n\n\n\nOn a side note, a little bit about axioms. An axiom is a definition. An assumption. We can create axioms. We assume axioms are true so math can make sense. So, why not make an axiom that there is a number so big that you can't reach it, no matter how many times you use replacement.\n\n\n\nThis is called an inaccessible cardinal. And we have already seen one. Alpha null.\n\n\n\nEvery number below alpha null is finite. No matter how you add, subtract, multiply, divide, or exponentiate finite numbers, you cannot reach an infinite like alpha null.\n\n\n\nSo, jumping from alpha null to the next inaccessible is like jumping from 0 to alpha null. Cool!\n\n\n\nTheorists have made axioms describing infinite bigger than inaccessible as well. It goes on and on. It's infinity, after all.\n\n\n\nThanks if you made it this far :P! Make sure you check out VSauce's video on this, \"How to count past infinity\", which is where I got this info from.",
+      "url": "https://artofproblemsolving.com/community/c3h1272292_counting_past_infinity",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1271827",
+      "title": "MathCounts Oplet Question",
+      "text": "Model rocket motors are rated according to their total impulse, where impulse equals force (Newtons) multiplied by time (seconds). A type 1 motor has impulse up to 2.5 Newton-seconds, a type 2 motor has impulse from 2.5 up to 5 Newton-seconds, and so on, with each motor type having a maximum impulse of twice the previous type. The Space Shuttle Solid Rocket Booster has a force of 12 million Newtons for 120 seconds. To what type model rocket motor would this correspond?",
+      "url": "https://artofproblemsolving.com/community/c3h1271827_mathcounts_oplet_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1272227",
+      "title": "Troll Problem",
+      "text": "If $a=1$, $b=2$, $c=3$, and so on until $z=26$, then solve or simplify\n\n$(a-x)(b-x)(c-x)\\cdots(y-x)(z-x).$",
+      "url": "https://artofproblemsolving.com/community/c3h1272227_troll_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1272313",
+      "title": "Mathcounts handbook Problem",
+      "text": "IMAGE\n\nIMAGE\n\nAs usual, the Mathcounts solution is bashy.\n\nI guessed that it was a multiple of 6 or 28 and then bashed from there. Does anyone have a better idea?",
+      "url": "https://artofproblemsolving.com/community/c3h1272313_mathcounts_handbook_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1271325",
+      "title": "Circumradius Problem",
+      "text": "(This is from the AOPS Intro Geo BTW)\n\nProve for any triangle ABC, the area of ABC is equal to the product of its sides divided by 4 times its circumradius.",
+      "url": "https://artofproblemsolving.com/community/c3h1271325_circumradius_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1262968",
+      "title": "The Number Circle",
+      "text": "Okay, lets take a step back for a moment. I don't care how far your education in mathematics goes, one thing that has never changed in your entire mathematical career is the idea of the number line: that is, that cardinal numbers come one after another on the scale: 1, 2, 3, 4, 5, and so on.\n\nThat's about to change.\n\nNow imagine taking the two ends of the number line and pulling them together into a number circle Of course, since the line is infinite, you'll clearly have to shrink the line, especially when I tell you that the number circle has a radius of 1 unit. Clearly, this number circle has some interesting properties. The easiest and simplest property is that infinity equals negative infinity. therefore, we can now define infinity: for simplicity's sake we'll call it as alpha. alpha equals negative alpha. Now, try to determine where 1 is on the number circle: as it turns out, the point marking 1 is the same point as the one marking zero: that is, 1=0. Trying a couple other numbers gives us a surprising result: any finite number equals zero. So, we'll really have to work with just alpha as our basic unit: the finite numbers are too small. If we go halfway between zero and infinity, we get alpha divided by two, a quarter would be alpha divided by 4, and so on.\n\nI'll finish this intriguing post by saying that the so-called Cartesian plane is now a Cartesian sphere. Try draw some graphs: both in terms of alpha and not in terms of alpha. See what you find. Maybe there's more to be explored in this new direction, maybe not.",
+      "url": "https://artofproblemsolving.com/community/c3h1262968_the_number_circle",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1271347",
+      "title": "Target Round Etymology",
+      "text": "Does anyone know why the Target Round is named as such? This topic came up in a discussion I had today—Sprint and Countdown make sense, as does Target to some extent, but is there a specific reason why it's named \"Target\" but not \"Pair Round\" or \"Challenge Round\" or something of that nature?",
+      "url": "https://artofproblemsolving.com/community/c3h1271347_target_round_etymology",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1271474",
+      "title": "k Wait, its different right?",
+      "text": "So, a math teacher in my school said that if you bend a rectangle, keeping the side length the same and not increasing the base either, it would turn into a parallelogram, but it would have the same area even though the height is different and through the formula(b*h), it would be different. If the areas are the same, please explain.",
+      "url": "https://artofproblemsolving.com/community/c3h1271474_wait_its_different_right",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1271160",
+      "title": "Right Triangles",
+      "text": "Proof that there are infinitely many right triangles with integer side lengths.",
+      "url": "https://artofproblemsolving.com/community/c3h1271160_right_triangles",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1263793",
+      "title": "Problem Help",
+      "text": "Compute $\\sqrt{1 + 1995\\sqrt{4 + 1995 \\cdot 1999}}$ without calculating.",
+      "url": "https://artofproblemsolving.com/community/c3h1263793_problem_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1271508",
+      "title": "9 Tmc math contest ideas",
+      "text": "Please chose an idea FOR TMC math contest users only",
+      "url": "https://artofproblemsolving.com/community/c3h1271508_tmc_math_contest_ideas",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1271465",
+      "title": "Help....Easy.",
+      "text": "A bAg CoNtAins 10 red marbles and 6 blue marbles.\n\nThree marbles are selected at random and without replacement.\n\nWhat is the probability that one marble is red and two are blue?\n\nAnswer as a common fraction.",
+      "url": "https://artofproblemsolving.com/community/c3h1271465_helpeasy",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1270142",
+      "title": "Math Problem",
+      "text": "What is the sum of the digits of the numbers from 1 to 1,000,000 inclusive? Remember we are adding up the digits, not the numbers themselves.",
+      "url": "https://artofproblemsolving.com/community/c3h1270142_math_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1270336",
+      "title": "Help me!",
+      "text": "What is the first time after 1 PM at which the minute hand and hour hand of a clock point exactly in opposite directions?\n\nCan you also help with these questions:\n\nhttp://artofproblemsolving.com/community/c3h1270319_racing_and_barn_help\n\nHintAt what minute is the hour hand pointing when the time is m minutes after 1 o' clock?\n\n\nThanks.",
+      "url": "https://artofproblemsolving.com/community/c3h1270336_help_me",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1271303",
+      "title": "Binomial Theorem Proof marathon",
+      "text": "Prove that $(a+b)^n = \\sum_{k=0}^{n}\\binom{n}{k}a^{n-k}b^k$ or $\\sum_{k=0}^{n}{{n \\choose k}}=2^n$ is true using a different proof each time that's fundamentally different from the previous ones.",
+      "url": "https://artofproblemsolving.com/community/c3h1271303_binomial_theorem_proof_marathon",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1268268",
+      "title": "This wierd AMC 10 problem that I can't solve",
+      "text": "Bricklayer Brenda would take nine hours to build a chimney alone while Bricklayer Brandon would take 10 hours to build it alone. When they work together, they talk a lot and their combined output decreases by 10 bricks per hour. Working together, they build the chimney in 5 hours. How many bricks are in the chimney?",
+      "url": "https://artofproblemsolving.com/community/c3h1268268_this_wierd_amc_10_problem_that_i_cant_solve",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1199408",
+      "title": "Mathcounts 2010 sprint #30",
+      "text": "Is there an easy way to do this problem without trig I know it is $\\frac{\\sin 15}{\\sin 45}$\n\n\n\n30.\tPoint D lies on side AC of equilateral triangle ABC such that\n\nthe measure of angle DBC is 45 degrees. What is the ratio of\n\nthe area of triangle ADB to the area of triangle CDB? Express\n\nyour answer as a common fraction in simplest radical form.",
+      "url": "https://artofproblemsolving.com/community/c3h1199408_mathcounts_2010_sprint_30",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1271173",
+      "title": "Algebra Question",
+      "text": "What is the least possible value of X^2 if A^B = B^A = X, A and B are distinct positive integers in descending order respectively, and X itself is also a positive integer. Provide the values for A and B in your answer.",
+      "url": "https://artofproblemsolving.com/community/c3h1271173_algebra_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1271056",
+      "title": "Diophantus Equations",
+      "text": "How do you solve Diophantine equations of the form: ax^2+by^2+cab=0\n\na,b, and c are not necessarily distinct\n\n\n\nSomeone fix the Latex!",
+      "url": "https://artofproblemsolving.com/community/c3h1271056_diophantus_equations",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1271177",
+      "title": "Powers Question",
+      "text": "If A^3 = B^5, and A^5 = B^X, what is the value of X? Express your answer as a common fraction if necessary.",
+      "url": "https://artofproblemsolving.com/community/c3h1271177_powers_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1270312",
+      "title": "It's that time again... 3D geometry!",
+      "text": "The solid figure shown has six faces that are squares and eight faces that are equilateral triangles. Each of the 24 edges has length 2 cm. What is the volume of the solid? (MATHCOUNTS Mini #27)\n\n\n\nWhat I've done so far (spoilers):I found that it is a cube with the corners chopped up, but how do I find the volume of the pyramids and the side lengths of the cube? I know Richard explains it, but I didn't really get it. Confessionsdun dun dunnnnnI don't like geometry. DON'T CAUSE CONTROVERSY BECAUSE OF THIS, IT'S JUST MY OPINION. Thank you :).\n\n\n\n\n\n\nThanks,\n\npopcorn1",
+      "url": "https://artofproblemsolving.com/community/c3h1270312_its_that_time_again_3d_geometry",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255861",
+      "title": "Letter arrangements",
+      "text": "How many ways are there to arrange the letters in LABELLER such that no two of the exact same letters are next to each other? (I.e. No two Ls can be next to each other)",
+      "url": "https://artofproblemsolving.com/community/c3h1255861_letter_arrangements",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1270654",
+      "title": "Geometry Question",
+      "text": "A right triangle's side lengths are 4, 4√3, and 8.What is the measure of the smallest angle in degrees?",
+      "url": "https://artofproblemsolving.com/community/c3h1270654_geometry_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    }
+  ]
+}

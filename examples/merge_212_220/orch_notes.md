@@ -1,0 +1,20 @@
+# orchestrator notes 212-220
+- b220 done: 61 rec, 11 al (1 to b219 draft 1794543-q01 - verify), 11 diag; 51/2/37/10.
+- b220 figs reviewed (11): all OK.
+- b212 done: 71 rec, 8 al, 10 diag; 55/1/38/6.
+- b212 figs reviewed (10). FIXED 1828797-q01: C label sat on line IH; moved SE.
+- b219 done: 60 rec, 8 al (1 to b215 1819690), 10 diag; 52/1/39/8.
+- b219 figs reviewed (10): OK.
+- b217 done: 61 rec, 7 al, 8 diag; 55/1/38/6.
+- b217 figs reviewed (8): OK.
+- b215 done: 100 rec, 9 al, 12 diag; 53/3/38/6.
+- b215 figs reviewed (12): OK.
+- b214 done: 68 rec, 7 al, 16 diag; 63/1/30/6.
+- b214 figs reviewed (16): OK.
+- b213 done: 83 rec, 4 al, 16 diag; 70/1/27/2. Check 1827140, 1830376.
+- b213 figs reviewed (16): OK. 1827140 (perimeter 13) and 1830376 readings accepted.
+- b216 done: 58 rec, 14 al, 21 diag; 53/1/32/14.
+- b216 figs reviewed (21): OK. 1811943/1813320 same config, triangles vs quadrilaterals: kept both.
+- b218 done: 79 rec, 11 al, 28 diag; 64/1/24/11.
+- b218 figs reviewed (28). FIXED 1799787-q01: schematic figure now says (not to scale).
+- Cross-batch scan (206 pairs >0.35) and within-batch scan (>0.5): no further repeats (closest: b217 1804185/1800039 share one part, kept; b216 1811943/1813320 different targets).

@@ -1,0 +1,6 @@
+__pycache__/
+work/*/figs/
+work/*/svgtest/
+work/*/pdfcheck/
+work/*/out/
+*.pyc

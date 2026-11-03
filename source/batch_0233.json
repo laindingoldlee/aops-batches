@@ -1,0 +1,1011 @@
+{
+  "format": "aops-topic-previews-v1",
+  "scope": "Loaded topic previews, not full replies or screened questions",
+  "source_archive_sha256": "15978407a01483794e215aef89ec1c105caa4e7154d91211c94bd95ef7186726",
+  "batch_number": 233,
+  "source_row_start": 23201,
+  "source_row_end": 23300,
+  "topic_count": 100,
+  "topics": [
+    {
+      "topic_id": "1722465",
+      "title": "500th post problem",
+      "text": "Source: unsolved problem from AMC 8 prep group\n\nIn the math dinner, every meal consists of 4-6 dishes out of all possible 15 (5 veggies, 4 proteins, 3 snacks, 2 drinks and ice cream). How many possible meals are there if each meal must consist of at least 1 veggie, at most 2 protein and can not have coke (drink) and mentos (snack) at the same time?",
+      "url": "https://artofproblemsolving.com/community/c3h1722465_500th_post_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1710142",
+      "title": "Junior Regional Olympiad - FBH 2017 Grade 7 Problem 5",
+      "text": "Find all positive integers $a$ and $b$ such that number $p=\\frac{\\sqrt{2}+\\sqrt{a}}{\\sqrt{3}+\\sqrt{b}}$ is rational  number",
+      "url": "https://artofproblemsolving.com/community/c3h1710142_junior_regional_olympiad__fbh_2017_grade_7_problem_5",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1710127",
+      "title": "Junior Regional Olympiad - FBH 2017 Grade 6 Problem 4",
+      "text": "If we divide number $19250$ with one number, we get remainder $11$. If we divide number $20302$ with the same number, we get the reamainder $3$. Which number is that?",
+      "url": "https://artofproblemsolving.com/community/c3h1710127_junior_regional_olympiad__fbh_2017_grade_6_problem_4",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721702",
+      "title": "Just wondering",
+      "text": "To me, this seems overly simple, but I was just wondering:\n\n\n\nIf I have a number $x$, and I have any amount of positive real numbers that sum up to $x$, what is the maximum possible product of all those terms (that sum up to $x$)?",
+      "url": "https://artofproblemsolving.com/community/c3h1721702_just_wondering",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1722254",
+      "title": "quadratic equation",
+      "text": "dear all, need your help on the following problem,\n\n\n\n\n\n12. Consider the quadratic equation, x2 + bx + c = 0, where b + c = 298.\n\nLet (u – v) (u + v) = x2 + bx + c, where u and v are integer solutions to the quadratic\n\nequation and u < v. Find the smallest possible value of v – u.\n\n\n\nThis is from 2015 MMC test. I feel the problem itself has some flaws. What does it mean \"(u-v)(u+v)=x2+bx+c\"?\n\n\n\nanybody has solved this problem ever?\n\n\n\nthanks again\n\n\n\ndavid",
+      "url": "https://artofproblemsolving.com/community/c3h1722254_quadratic_equation",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720977",
+      "title": "probability problem",
+      "text": "dear guys, can you please take a look at the following problem,\n\nProblem 12. Jar A contains 50 balls, 15 are green and 35 are red. Jar B also contains 50 balls, 20 are\n\ngreen and 30 are red. Three balls are chosen at random from jar A and placed in jar B. Jar B is then\n\nturned and shaken to mix up the balls. Then a ball is chosen at random from jar B. What is the probability\n\nthat it is red?\n\n\n\nit is from 2017 test. here is what I did.\n\nI tried to break down 4 scenarios:\n\n(1). no red from jar A, the probability is then equal to 65/100 x 30/103,\n\n(2). one red from jar A, the probability is then equal to 35/100x31/103,\n\n(3). two red from jar A, the probability is then equal to 35/100x34/100x 32/103\n\n(4). three red from jar A, the probability is then equal to 35/100x34/100x33/100x33/103,\n\n\n\nthen I added the above values together. But I found the answer significantly low the value in answer sheet - the answer in answer sheet is 321/530.\n\n\n\ncan anybody explain?\n\nthanks\n\ndavid",
+      "url": "https://artofproblemsolving.com/community/c3h1720977_probability_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721820",
+      "title": "Modular Arithmetic Bonanza",
+      "text": "For the below problems, a standard understanding of contest modular arithmetic should suffice, such as the one provided in AoPS books. Particularly, I have written a thorough handout of this with many examples (12 pages long), available for free download in this thread.\n\n\n\nFor each round of the bonanza, there will be four starting problems. After all of them have been answered, whoever answers the most correct gets to post the next four bonanza problems for the next round in their own subsequent reply, and so on!\n\n\n\nWithout further ado, let's begin... (none of the problems require a solution that is too computational, as all of them can be solved with clever thinking; no calculators allowed)\n\n\n\nBonanza: Round 1\n\n\n\nBased on standard mathematical notation, recall that $a^{b^c}=a^{(b^c)}$.\n\n\n\n1. What is the units digit of $1^{2^3}+2^{3^4}+...+2018^{2019^{2020}}$?\n\n\n\n2. The number $N$ is formed by listing the integers from $1$ to $2018$ (inclusive) from left to right, appending a zero to separate each one, so that $N=102030405060708090100110...020160201702018$. What is the remainder when $N$ is divided by $36$?\n\n\n\n3. What is the sum of the rightmost two digits in the decimal representation of $2018^{2019^{2020}}+2021^{2022^{2023}}$?\n\n\n\n4. The respected scrabbler94 has just written a high-quality Mock AMC 8, where all standard rules apply. Users ilovemath and ihatemath take the test, submit their answers, and receive their scores promptly. As expected, ilovemath scores higher than ihatemath because he/she is willing to spend more time practicing math for fun. Together, they note that the sum of their scores leaves a remainder of $0$ when divided by $9$ and the product of their scores leaves remainder $4$ when divided by $7$. How many possible pairs of scores could they have gotten?",
+      "url": "https://artofproblemsolving.com/community/c3h1721820_modular_arithmetic_bonanza",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1722305",
+      "title": "Geometry problem",
+      "text": "In quadrilateral $ABCD$, $X$ is the intersection of the two diagonals. Given that $[AXB]=8$, $[BXC]=15$, and $[CXD]=5$, what is the value of $[DXA]$\n\nNote: $[ABC]$ denotes the area of $\\triangle ABC$.",
+      "url": "https://artofproblemsolving.com/community/c3h1722305_geometry_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1709579",
+      "title": "Junior Regional Olympiad - FBH 2018 Grade 8 Problem 2",
+      "text": "Find all integers $m$ such that $\\frac{2m^2+7m-9}{m^2+m+1}$ is integer",
+      "url": "https://artofproblemsolving.com/community/c3h1709579_junior_regional_olympiad__fbh_2018_grade_8_problem_2",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1709572",
+      "title": "Junior Regional Olympiad - FBH 2018 Grade 7 Problem 3",
+      "text": "Let $a$, $b$ and $m$ be three positive real numbers  and $a>b$. Which of the numbers $A=\\sqrt{a+m}-\\sqrt{a}$ and $B=\\sqrt{b+m}-\\sqrt{b}$ is bigger:",
+      "url": "https://artofproblemsolving.com/community/c3h1709572_junior_regional_olympiad__fbh_2018_grade_7_problem_3",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1709564",
+      "title": "Junior Regional Olympiad - FBH 2018 Grade 6 Problem 5",
+      "text": "In triangle $ABC$ length of altitude $CH$, with $H \\in AB$, is equal to half of side $AB$. If $\\angle BAC = 45^{\\circ}$ find $\\angle ABC$",
+      "url": "https://artofproblemsolving.com/community/c3h1709564_junior_regional_olympiad__fbh_2018_grade_6_problem_5",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1709557",
+      "title": "Junior Regional Olympiad - FBH 2018 Grade 6 Problem 4",
+      "text": "Determine the last digit of number $18^1+18^2+...+18^{19}+18^{20}$",
+      "url": "https://artofproblemsolving.com/community/c3h1709557_junior_regional_olympiad__fbh_2018_grade_6_problem_4",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720902",
+      "title": "combi help3",
+      "text": "how many 5 letter words can be formed using just A,B and C ?\n\n\n\nhelp",
+      "url": "https://artofproblemsolving.com/community/c3h1720902_combi_help3",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721937",
+      "title": "Geometry problem",
+      "text": "In quadrilateral $ABCD$, $\\angle A=90^{\\circ}$, $\\angle B=90^{\\circ}$, and the four angle bisectors meet at one point. If $AB=9$ and $AD=5$, what is the length of $BC$?",
+      "url": "https://artofproblemsolving.com/community/c3h1721937_geometry_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721792",
+      "title": "Homework Help",
+      "text": "This was a math question I saw in my Algebra class. The class argued over the answer.\n\nSolve + Graph\n\n2/(x+1) > -1\n\nI decided to try to solve it.\n\nI added 1 to both sides.\n\n2/(x+1) +1 > 0\n\nThen, I changed 1 to (x+1)/(x+1)\n\n2/(x+1) + (x+1)/(x+1) > 0\n\nI simplified.\n\n(x+3) / (x+1) > 0\n\nNow I am stuck.\n\nPlease Help.",
+      "url": "https://artofproblemsolving.com/community/c3h1721792_homework_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1719666",
+      "title": "Geometry",
+      "text": "Find the number of non-congruent scalene triangles whose sides all have integral length, and the longest side has length 11..",
+      "url": "https://artofproblemsolving.com/community/c3h1719666_geometry",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721633",
+      "title": "k How do I get in to SDMC",
+      "text": "Hello, I have been wanting to join the San Diego MATHCOUNTS and I was wondering how to get. I am homeschooled so I was wondering if there were any homeschooling programs for MATHCOUNTS.\n\n\n\nThank You\n\n\n\n--UnevenRocket",
+      "url": "https://artofproblemsolving.com/community/c3h1721633_how_do_i_get_in_to_sdmc",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721676",
+      "title": "clarification function question",
+      "text": "Given that $f(x)=1-x$ and $g(x)=\\frac{1}{x}$:\n\n\n\n$f(f(x))$ wouldn't be the same function as $g(g(x))$, since the domain is restricted, right?",
+      "url": "https://artofproblemsolving.com/community/c3h1721676_clarification_function_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721671",
+      "title": "1995 AIME #5",
+      "text": "For certain real values of $a, b, c,$ and $d_{},$ the equation $x^4+ax^3+bx^2+cx+d=0$ has four non-real roots. The product of two of these roots is $13+i$ and the sum of the other two roots is $3+4i,$ where $i=\\sqrt{-1}.$ Find $b.$\n\n\n\nI was doing this problem and read the solution. Why does the product of the other two roots have to be 13-i, shouldn't it be (13-i)K where K is a constant?",
+      "url": "https://artofproblemsolving.com/community/c3h1721671_1995_aime_5",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721631",
+      "title": "k Vieta's Properties",
+      "text": "THX for the replies",
+      "url": "https://artofproblemsolving.com/community/c3h1721631_vietas_properties",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721580",
+      "title": "Probability Help",
+      "text": "Alexio has 100 cards numbered 1-100, inclusive, and places them in a box. Alexio then chooses a card from the box at random. What is the probability that the number on the card he chooses is a multiple of 2,3,5?",
+      "url": "https://artofproblemsolving.com/community/c3h1721580_probability_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721577",
+      "title": "induction",
+      "text": "Please solve! Thnx...\n\nProve by induction that the following statement is true:\n\nn/2 ≤ 1/2 + 1/3 + ... + 1/2^n",
+      "url": "https://artofproblemsolving.com/community/c3h1721577_induction",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721514",
+      "title": "k Cool equations",
+      "text": "Equations in this topic can have no solutions, infinite solutions, or one solution. Solve $$\\frac{x^{2}+x^{3}}{8}\\cdot(6^{3})^{2}=9x^{5}+6$$\n\nPlease write a solution.",
+      "url": "https://artofproblemsolving.com/community/c3h1721514_cool_equations",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721429",
+      "title": "k Algebra.",
+      "text": "Prove that: (n+2)^(n+1)>=(n+1)^(n+1) × 2 where n is a natural number.",
+      "url": "https://artofproblemsolving.com/community/c3h1721429_algebra",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720678",
+      "title": "Mathcounts Last year team round question.",
+      "text": "Does anyone know how to solve this question? I have found the answer online, but not the solution. (Just going over some questions from last year before tryout test.)\n\n\n\nhttps://www.mathcounts.org/sites/default/files/u5328/2018%20School%20Competition%20Team%20Round.pdf\n\nQuestion 9.",
+      "url": "https://artofproblemsolving.com/community/c3h1720678_mathcounts_last_year_team_round_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721378",
+      "title": "Magic Circle triangle",
+      "text": "The digits 1, 2, 3 . . . 9 are arranged, one per circle, in a 4 circle per side triangle (magic circle configuration) so that the sum of the numbers on each side of the triangle arc the same. What is positive difference between the greatest and least sums possible?",
+      "url": "https://artofproblemsolving.com/community/c3h1721378_magic_circle_triangle",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720979",
+      "title": "Probability problem",
+      "text": "guys, can you please also take a look at the following probability problem?\n\n11. Three different integers are selected from the set of integers 1 to 12 inclusive.\n\nWhat is the probability that the sum is divisible by 3?\n\n\n\nthanks",
+      "url": "https://artofproblemsolving.com/community/c3h1720979_probability_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721021",
+      "title": "need help on problem",
+      "text": "Solve the system of inequalities: Without graphing.\n\n$6+6.2x\\geq12-1.8x$\n\n$2-x\\geq3.5-2x$",
+      "url": "https://artofproblemsolving.com/community/c3h1721021_need_help_on_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720900",
+      "title": "combi help1",
+      "text": "max how many 5 letter words can be formed using just A,B,C  such that no letter is more than thrice",
+      "url": "https://artofproblemsolving.com/community/c3h1720900_combi_help1",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1721035",
+      "title": "I need latex help",
+      "text": "I'm trying to make a tree diagram for a solution to some problems in a private forum. Do any of you guys know how  to make one in latex?(I can't post in Latex&Asymptote Forum as I'm on a deadline of tomorrow)",
+      "url": "https://artofproblemsolving.com/community/c3h1721035_i_need_latex_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720901",
+      "title": "combi help2",
+      "text": "how to prove that :\n\nthe summation of a row of pascal's triangle is always an integer of 2^b form?\n\n\n\nhelp",
+      "url": "https://artofproblemsolving.com/community/c3h1720901_combi_help2",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720200",
+      "title": "Vocabulary Definition",
+      "text": "Can anyone define integer?\n\n\n\nI have it asked in my quiz and I don't know how to correct it afterward.",
+      "url": "https://artofproblemsolving.com/community/c3h1720200_vocabulary_definition",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720835",
+      "title": "2019 MATHCOUNTS Handbook Transformations Stretch #2",
+      "text": "ProblemA segment has endpoints $A(0,0)$ and B$(-3, 4)$. Point C is the image of point B translated down 4 units and left 3 units. What is the perimeter of $\\triangle{ABC}$?\n\n\nAnswer16\n\n\n\n\nI first found Point C. Using the information they gave us, I got $(0,-6)$. I then tried finding the side lengths of the triangle that I had created on the coordinate plane, by using the distance formula, but that didn't really work out.\n\n\n\nCan someone help?\n\n\n\nThank you!",
+      "url": "https://artofproblemsolving.com/community/c3h1720835_2019_mathcounts_handbook_transformations_stretch_2",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720781",
+      "title": "Geometry/Counting Problem",
+      "text": "I have this problem that I have been thinking about for a while. I'm sure it's been shared before, but I don't know the best way to solve it.\n\n\n\nSuppose I mark $n$ points around a circle. Then, for every possible pair of points, I choose whether to connect them with a red or blue line. What's the smallest value of $n$ I need so that there will always be a subset of $4$ points such that all possible pairs are connected with a red line, or a blue line?\n\n\n\nI know if we needed a subset of $3$ points, the answer is $6$. With a subset of $4$ points, however, the answer is at least $13$. I also know that the answer is finite based on another problem I have seen which is similar, but not exactly the same. Does anyone know the solution to this?",
+      "url": "https://artofproblemsolving.com/community/c3h1720781_geometrycounting_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720756",
+      "title": "Couple of Problems that tripped me up V2",
+      "text": "1.) The foci of an ellipse are the origin and the point $(-8, 8)$ and the point $(3, 4)$ lies on the ellipse. Let the two y-intercept of the ellipse be y1 and y2. Let $\\frac{m}{n} = \\frac{y1}{y2}$ be a reduced fraction, what is the absolute value of m + n?\n\nAnswer8\n\n\n\n\nI just learned chapter 5, and I'm still having trouble with hyperbola and ellipse subchapters. :(\n\n\n\n2.) Consider the rectangle region with vertices at $(0,1), (0,6), (5,1), (5,6)$. If a point is randomly chosen from this region, what is the probability, as a percent that it is closer to the origin than the point $(4,4)$?\n\nAnswer18%\n\n\n\n\nThe rectangle is a 5*5 square, though how would you find the area that is closer to the origin?",
+      "url": "https://artofproblemsolving.com/community/c3h1720756_couple_of_problems_that_tripped_me_up_v2",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720445",
+      "title": "Tough problem",
+      "text": "Please some help!",
+      "url": "https://artofproblemsolving.com/community/c3h1720445_tough_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720520",
+      "title": "Post your CAASPP scores",
+      "text": "If you live in California, post your CAASPP scores.\n\n\n\nMine: in 5th grade, but full score in math and english.",
+      "url": "https://artofproblemsolving.com/community/c3h1720520_post_your_caaspp_scores",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720332",
+      "title": "Economics Problem",
+      "text": "Hi all,\n\n\n\nSorry, but I did not know where else to post there as the economics forum is not very active.\n\n\n\nAnyways, I got stuck on this question. Any ideas?\n\n\n\nThanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1720332_economics_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720251",
+      "title": "Why Slither.io is going to replace and outlast Agar.io",
+      "text": "If you have never played Slither io, or just known Agar io, our article absolutely is devoted to you. Probably you will add Slither io to your favorite game collec ion right before reading our witting below. Let’s get started to know the reasons why Agar io is going to be replaced by Slither io.\n\n\n\nIMAGE\n\nSlither io is going to replace and outlast Agar io.\n\n\n\nSlither io one of online games that you can play with friends, allowing everyone to control his snake to avoid colli ions with larger snakes. This is a game with a combina ion of more modern graphics with classic Snake that attracts a lot of fans. In a short time, it became one of the most popular games thanks to the dynamics of the gameplay.\n\n\n\n1. Slither io and Agar io - which is faster?\n\n\n\nPerhaps due to the birth of Agar io, Slither io can draw more lessons than Agar io. It is designed to run smoothly on any browser. In addi ion to each movement, you can apply a variety of strategies.\n\n\n\nMeanwhile, you will find it sometimes annoying to plan or locate in advance to separate the cell in Agar io.\n\n\n\nOn the other hand, in snake games, you will feel very interesting when planning to manipulate other players to reach your expected results. The quicker and more sophisticated pace in Slither io will actually bring you more excitement.\n\n\n\n2.  Slither io has better graphics\n\n\n\nIMAGE\n\nSimple graphics in Agar io sometimes instil a boring sense.\n\n\n\nAgar io has simple graphics not as attractive as Slither io. The images in Agar io bring a sense of clarity. However, the player will soon feel it is very boring. In contrast, Slither io has colorful snakes, bright spots; all the details are harmo iously combined and evoke excitement for the player. When we look at the screens of this snake game, we really feel delighted and excited. To experience the high-end graphics like in Slither io, you can refer some best action games of all time that entirely satisfy your demand.\n\n\n\n3. Slither io has a dynamic gameplay\n\n\n\nIMAGE\n\nSlither io has colorful snakes, bright spots.\n\n\n\nEach player will have to change many things to get the giant cells in Agar io. Repeating cell divi ion with the virus will be boring, and with smart people, they will not have the patience to repeat a few ac ions for a final result.\n\n\n\nSlither io is completely different. It allows the appearance of snakes in many different sizes. All you have to do is eat small dots to get bigger size like larger snakes. At the same time, players must avoid larger ones because they will threaten their survival. Because of this, players feel more challenging to conquer.\n\n\n\nFinal thought:\n\nDespite having the same style and ac ion, slithers io deserves to be the successful successor of Agar io. It has many outstanding images, dynamic gameplay; Agar io is not able to do better. However, we all still consider both products as the valuable entertainment after stressful study and work. In case these above games provide not enough challenges, check the list of most amazing free online games you can find on Google right now!",
+      "url": "https://artofproblemsolving.com/community/c3h1720251_why_slitherio_is_going_to_replace_and_outlast_agario",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1720039",
+      "title": "k 9 MAP scores poll",
+      "text": "My math score was 288 (SILLIES) and reading was 251 last time i took it",
+      "url": "https://artofproblemsolving.com/community/c3h1720039_map_scores_poll",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1719974",
+      "title": "Need help",
+      "text": "Solve a system.\n\n\n\n|x−5|>3\n\n(x−5)^2<25\n\n\n\n(Hint:\n\n1. x^2 < a^2   =    |x| < a (when a >= zero )\n\n2. Use Geometric representation of absolute value)",
+      "url": "https://artofproblemsolving.com/community/c3h1719974_need_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1719786",
+      "title": "2018 School Sprint Round",
+      "text": "Please help me with solution for: in cents, what is the least total amount that cannot be obtained by using a combination of fewer than eight coins from a collection of pennies, nickels, dimes, and quarters?",
+      "url": "https://artofproblemsolving.com/community/c3h1719786_2018_school_sprint_round",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1706509",
+      "title": "NT on AMC 8",
+      "text": "What are all the number theory skills needed for the AMC 8 that are not taught in elementary school? Please list as many as you can, and in as much detail as possible.",
+      "url": "https://artofproblemsolving.com/community/c3h1706509_nt_on_amc_8",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1719723",
+      "title": "PreAlgebra and Algebra books to se",
+      "text": "Does anybody have PreAlgebra and Algebra books to sell? Thanks",
+      "url": "https://artofproblemsolving.com/community/c3h1719723_prealgebra_and_algebra_books_to_se",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1719663",
+      "title": "Counting numbers",
+      "text": "We write down the numbers from 1 to 30000 one after the other to form a long string of digits:\n\n1234567891011121314..............................30000.\n\nHow many times does 2013 occur in this sequence?",
+      "url": "https://artofproblemsolving.com/community/c3h1719663_counting_numbers",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1640117",
+      "title": "Counting principles and permutations",
+      "text": "a) How many 3 digit even numbers can be written in such a way that all the numbers are different?\n\n\n\nb) How many 3 digit even numbers can be written with 0,1,2,3,4,5,6?",
+      "url": "https://artofproblemsolving.com/community/c3h1640117_counting_principles_and_permutations",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1603119",
+      "title": "Counting Marathon",
+      "text": "Hello everyone,\n\n\n\nI have decided to make a counting marathon. The instructions are the same as any other marathon: post a counting problem and wait for someone else to answer you're problem. Then, you MUST post a problem after you're solution. Also, please hide your solutions.\n\n\n\nPlease keep the problems Middle School Math level.\n\nI will start us off with a problem:\n\n\n\nP1How many arrangements are there for the word BANANA?",
+      "url": "https://artofproblemsolving.com/community/c3h1603119_counting_marathon",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1707844",
+      "title": "Problem about Counting",
+      "text": "If you draw the 5 diagonals of a pentagon, there are 10 intersections (Not including intersections with the original pentagon, but including where 2 diagonals intersect at vertices). 5 of the dots are marked with a symbol. On each of the 5 diagonals, there are 2 marked dots. How many ways are there to do this?",
+      "url": "https://artofproblemsolving.com/community/c3h1707844_problem_about_counting",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1601848",
+      "title": "Factorial Problem",
+      "text": "Find the last two digits of the following expression:\n\n1! + 2! + 3! + 4! + 5! + 6! + ...... +66!",
+      "url": "https://artofproblemsolving.com/community/c3h1601848_factorial_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1630167",
+      "title": "Sets of Digits",
+      "text": "How many different positive 7-digit integers can be formed if each digit in the set {0,1,2,3,4,5,6} is used exactly once in that 7−digit integer?",
+      "url": "https://artofproblemsolving.com/community/c3h1630167_sets_of_digits",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717997",
+      "title": "AHSME #13 Problem Geometry & Weird Diagram",
+      "text": "https://artofproblemsolving.com/wiki/index.php?title=1993_AHSME_Problems/Problem_13\n\n\n\nCan someone plz give me a diagram as I can't find a diagram that actually works.\n\n\n\nEdit: I figured out my mistake and solved it.",
+      "url": "https://artofproblemsolving.com/community/c3h1717997_ahsme_13_problem_geometry__weird_diagram",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1719597",
+      "title": "Probability problem",
+      "text": "Hi, can you guys help me the following mathworks problem?\n\n\n\nAn integer n is chosen at random from the range 1000<=n<=9999, what is the probability that the product of its digits is even?\n\n\n\nI thought about the case when the ones position has all 5 possible even numbers (0,2,4,6,8), and then tens can have 10 choices and so does the hundred. The thousand has 9 choices. so totally for this case, we will have 5x10x10x9.\n\n\n\nhow can I include other possible scenarios??\n\n\n\nnot sure what is the easiest way??",
+      "url": "https://artofproblemsolving.com/community/c3h1719597_probability_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1719598",
+      "title": "My geometry book ?",
+      "text": "I was looking through my geometry book the other day, and it talked about Euclidean's $5$ Axioms in the beginning. (Remember that axioms cannot be proved, only regarded as facts!) Specifically, this is the $4$th axiom)",
+      "url": "https://artofproblemsolving.com/community/c3h1719598_my_geometry_book_",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1719574",
+      "title": "k Mistake in AMC Solutions??",
+      "text": "I was doing the 2017 AMC10A today as practice in order to prepare for the AMC10 this year. However, I noticed a mistake with the solution of Problem 17. Here's the solution and problem:\n\nProblemDistinct points $P, Q, R, S$ lie on the circle $x^2+y^2=25$ and have integer coordinates. The distances $PQ$ and $RS$ are irrational numbers. What is the greatest possible value of the ratio $\\frac{PQ}{RS}?$\n\n(A) $3$    (B) $5$    (C) $3\\sqrt{5}$     (D) $7$    (E) $5\\sqrt{2}$\n\n\nSolutionBecause $P$, $Q$, $R$, and $S$ are lattice points, there are only a few coordinates that actually satisfy the equation. The coordinates are $(\\pm 3,\\pm 4), (\\pm 4, \\pm 3), (0,\\pm 5),$ and $(\\pm 5,0).$ We want to maximize $PQ$ and minimize $RS.$ They also have to be the square root of something, because they are both irrational. The greatest value of $PQ$ happens when it $P$ and $Q$ are almost directly across from each other and are in different quadrants. For example, the endpoints of the segment could be $(-4,3)$ and $(3,-4)$ because the two points are almost across from each other. The least value of $RS$ is when the two endpoints are in the same quadrant and are very close to each other. This can occur when, for example, $R$ is $(3,4)$ and $S$ is $(4,3).$ They are in the same quadrant and no other point on the circle with integer coordinates is closer to the point $(3,4)$ than $(4,3).$ Using the distance formula, we get that $PQ$ is $\\sqrt{98}$ and that $RS$ is $\\sqrt{2}.$ $\\frac{\\sqrt{98}}{\\sqrt{2}}=\\sqrt{49}=\\boxed{\\mathrm{\\textbf{(D)}}\\ 7}$\n\n\n\n\nIn the solution, I have bolded a certain part, because I believe that it is wrong. The distance between $(-4, 3)$ and $(3, -4)$ is $\\sqrt{98}$. However, that is not the greatest value that $PQ$ can be. The point $(4, -3)$ is also on the circle $x^2 + y^2 = 25$, and the distance between $(-4, 3)$ and $(4, -3)$ is $10$, which is greater than $\\sqrt{98}$. If we go on with my \"fix\", we get that $\\frac{PQ}{RS} = \\frac{10}{\\sqrt2}$, and rationalizing the denominator, we get $5\\sqrt{2}$, answer choice $E$. Have I made a mistake?",
+      "url": "https://artofproblemsolving.com/community/c3h1719574_mistake_in_amc_solutions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1719242",
+      "title": "Help in Transformations",
+      "text": "Someone please send the solution of this problem:\n\n\n\nShow that if a line I is rotated about any point O through an angle with measure a\n\nto a new line l', then lines I and l' intersect in an angle with measure a.",
+      "url": "https://artofproblemsolving.com/community/c3h1719242_help_in_transformations",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1719384",
+      "title": "Need help",
+      "text": "Find a natural number x which satisfies the following two conditions:\n\n(i)x has exactly two prime factors which are 3 and 5,\n\n(ii) φ(x)=24.",
+      "url": "https://artofproblemsolving.com/community/c3h1719384_need_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1719274",
+      "title": "Geometric Series",
+      "text": "Find: $\\frac{1}{1 \\cdot 2 \\cdot 3}+\\frac{1}{2 \\cdot 3 \\cdot 4}+\\frac{1}{3 \\cdot 4 \\cdot 5}+\\frac{1}{4 \\cdot 5 \\cdot 6}+ ... \\frac{1}{98 \\cdot 99 \\cdot 100}$\n\n\n\nHow would you use telescoping in this case? I don't know how to simplify this.",
+      "url": "https://artofproblemsolving.com/community/c3h1719274_geometric_series",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1703862",
+      "title": "AoPS class",
+      "text": "After Introduction to Algebra A, what course should I take?",
+      "url": "https://artofproblemsolving.com/community/c3h1703862_aops_class",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1718720",
+      "title": "Combinatorics",
+      "text": "How many ways can the letters of the word 'MAXIMUM' be arranged such that no two M are together?",
+      "url": "https://artofproblemsolving.com/community/c3h1718720_combinatorics",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717989",
+      "title": "Expected Value in a range",
+      "text": "Find the expected value of $\\frac{2 + 3x}{4 - 7x}$ where $0 \\le x \\le 10$.",
+      "url": "https://artofproblemsolving.com/community/c3h1717989_expected_value_in_a_range",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1718176",
+      "title": "Choice Function",
+      "text": "I have recently heard of a thing called Choice Function, could someone describe it to me, and how to use it?",
+      "url": "https://artofproblemsolving.com/community/c3h1718176_choice_function",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1718086",
+      "title": "Interesting Rate-Distance Problem",
+      "text": "A train 1000 feet long, is going east at 20 mph. On a parallel track going west is another train going 40 mph. If the trains take 30 seconds to pass each other completely, how many feet long is the second train?",
+      "url": "https://artofproblemsolving.com/community/c3h1718086_interesting_ratedistance_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1718128",
+      "title": "Coordinate Bashing 2016 AMC 10A #11",
+      "text": "Recently I have been learning about Coordinate Bashing.\n\nCan someone give a solution for this problem that includes coordinate bashing.\n\n\n\nProblemFind the area of the shaded region.\n\nIMAGE\n\n$\\textbf{(A)}\\ 4\\dfrac{3}{5} \\qquad \\textbf{(B)}\\ 5\\qquad \\textbf{(C)}\\ 5\\dfrac{1}{4} \\qquad \\textbf{(D)}\\ 6\\dfrac{1}{2} \\qquad \\textbf{(E)}\\ 8$\n\n\n\n\nThank you!",
+      "url": "https://artofproblemsolving.com/community/c3h1718128_coordinate_bashing_2016_amc_10a_11",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717642",
+      "title": "Next number in sequence?",
+      "text": "a) -2 3 27 69 129\n\n\n\nb) 144 73 14 8 236\n\n\n\nc) 144 73 14 8 236\n\n\n\nd) 1, 3, 7, 11, 13",
+      "url": "https://artofproblemsolving.com/community/c3h1717642_next_number_in_sequence",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1718605",
+      "title": "k New ABMC Online Contest",
+      "text": "Hello AoPSers,\n\n\n\n\n\nIn addition to annual Acton Boxborough Math Competition onsite event (which will be held on April 27, 2019), we're excited to introduce our new ABMC Online Contests! There will be 3 rounds of tests (1 per month) beginning with the first round on October 20th. No pre-registration is necessary, and participation is free! Once the problems are released, an answer submission form will also be posted on our website where all you will need to do is provide your name, grade, school and email. We highly encourage everyone to participate! For all information about the contest, please visit https://abmathcompetition.org/online-contest/.\n\n\n\n\n\nAaron Zhang\n\nABMC Coordinator",
+      "url": "https://artofproblemsolving.com/community/c3h1718605_new_abmc_online_contest",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1718146",
+      "title": "Mathcounts Help ......",
+      "text": "I literally don’t know what to do for like all of these lol. There’s a lot of words so... I just screenshot the questions. Please help! Thankyou\n\n\n\nThankyou\n\n\n\nThankyou",
+      "url": "https://artofproblemsolving.com/community/c3h1718146_mathcounts_help_",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1711163",
+      "title": "Mathcounts",
+      "text": "If the letters of the word ELEMENT are randomly arranged, what is the probability that the three E’s are consecutive? Express answer in common fraction.\n\n\n\nPlease help again x",
+      "url": "https://artofproblemsolving.com/community/c3h1711163_mathcounts",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717423",
+      "title": "Junior Regional Olympiad - FBH 2014 Grade 8 Problem 2",
+      "text": "Find value of $$\\frac{1}{1+x+xy}+\\frac{1}{1+y+yz}+\\frac{1}{1+z+zx}$$if $x$, $y$ and $z$ are real numbers usch that $xyz=1$",
+      "url": "https://artofproblemsolving.com/community/c3h1717423_junior_regional_olympiad__fbh_2014_grade_8_problem_2",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717407",
+      "title": "Junior Regional Olympiad - FBH 2014 Grade 6 Problem 5",
+      "text": "Let $ABCDEF$ be a hexagon. Sides and diagonals of hexagon are colored in two colors: blue and yellow. Prove that there exist a triangle with vertices from set $\\{A,B,C,D,E,F\\}$ which sides are all same colour",
+      "url": "https://artofproblemsolving.com/community/c3h1717407_junior_regional_olympiad__fbh_2014_grade_6_problem_5",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717974",
+      "title": "Proving the Euclidean Algorithm",
+      "text": "The title is self explanatory. Can someone prove the Euclidean Algorithm for me? Thanks in advance!\n\n\n\n@below I said proving it.",
+      "url": "https://artofproblemsolving.com/community/c3h1717974_proving_the_euclidean_algorithm",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717400",
+      "title": "Junior Regional Olympiad - FBH 2014 Grade 6 Problem 1",
+      "text": "If $a$ and $b$ are digits, how many are there $4$ digit numbers $\\overline{3ab4}$ divisible with $9$ . Which numbers are they ($4$ digit numbers)?",
+      "url": "https://artofproblemsolving.com/community/c3h1717400_junior_regional_olympiad__fbh_2014_grade_6_problem_1",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717445",
+      "title": "Help me I need advice",
+      "text": "So, my school is acting weird this year and the PTA chose their kids to go in AMC 8!\n\nIt's not fair because they don't even check the grade.\n\nExampleSo if John's mom is in the PTA and even if John is bad at math, John is in AMC 8\n\nand I'm good at math but my parents aren't in the PTA so I'm not selected.\n\n\nAnd they shouldn't force my mom or my dad to be in the PTA.\n\nI guess this relates because this is about a middle school mathematics contest?",
+      "url": "https://artofproblemsolving.com/community/c3h1717445_help_me_i_need_advice",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1638793",
+      "title": "k how to make a poll",
+      "text": "I want to make a poll, but I'm not sure how. Can someone please help me?",
+      "url": "https://artofproblemsolving.com/community/c3h1638793_how_to_make_a_poll",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717405",
+      "title": "Junior Regional Olympiad - FBH 2014 Grade 6 Problem 4",
+      "text": "Find all prime numbers $p$ and $q$ such that $3p^2q+2pq^2=483$",
+      "url": "https://artofproblemsolving.com/community/c3h1717405_junior_regional_olympiad__fbh_2014_grade_6_problem_4",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717720",
+      "title": "Probability!",
+      "text": "Find the probability of having a sum of prime or an even number in throwing a $3$ fair $\\text{6-sided}$ dice.",
+      "url": "https://artofproblemsolving.com/community/c3h1717720_probability",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717424",
+      "title": "Junior Regional Olympiad - FBH 2014 Grade 8 Problem 3",
+      "text": "If $BK$ is an angle bisector of $\\angle ABC$ in triangle $ABC$. Find angles of triangle $ABC$ if $BK=KC=2AK$",
+      "url": "https://artofproblemsolving.com/community/c3h1717424_junior_regional_olympiad__fbh_2014_grade_8_problem_3",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1235662",
+      "title": "k The New Mock AMC 8!",
+      "text": "Hello AOPSers, I have decided to host a Mock AMC 8!  The rules and scoring have been disclosed below.  This is written by my Problem writing group! (Which only includes me.  :( ) If you want to join my problem writing group, Do it this way: Problem Group(CLOSED)1. TopNotchMath\n. If you want to testsolve, do it this way: Testsolve(CLOSED)\n.\n\nTo sign up, obviously use the signup format! (100th post special.)\n\nA test will be finished and released on May 14th.\n\nThe test will be due on May 21th.\n\n\n\nRules and GradingThis test follows the AMC 8 guidelines.  This test has $25$ multiple choice questions and you are given $55$ minutes to complete them.  Each correct answer is worth $1$ point and each incorrect answer is worth $0$ points.  Answers left blank will be counted as incorrect.  No calculators are allowed.\n\n\n\n\nTo Problem Writers and TestsolversBasically we meet at the private forum I made, which is called \"Mock Test Writing Group.\"\n\nTo get there, just use the link.http://artofproblemsolving.com/community/c264135\n\n\n\n\nBasically we meet at 6:30 PM EST every day.\n\nIf you have any problems or scheduling conflicts, please PM me.\n\nWe also chat on the Google Doc that's on the forum.\n\n\n\n\nThanks,\n\nTopNotchMath  :-D\n\n\n\nNEW DEADLINE: May 29th\n\n\n\nTest:  https://docs.google.com/document/d/1Ud-lxQEQBnWzhhZwQ720mUfIGYyqp8AoFXL6TY-8rYk/edit?usp=sharing",
+      "url": "https://artofproblemsolving.com/community/c3h1235662_the_new_mock_amc_8",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1716595",
+      "title": "Similar Triangles",
+      "text": "A man is 1.5 meters tall. He stands 6 meters in front of a tree and casts a shadow 1.2 meters long. What is the height of the tree?",
+      "url": "https://artofproblemsolving.com/community/c3h1716595_similar_triangles",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717421",
+      "title": "Junior Regional Olympiad - FBH 2014 Grade 8 Problem 1",
+      "text": "Compare numbers $A=5+2\\sqrt{5}$  and $B=\\sqrt{45+20\\sqrt{5}}$",
+      "url": "https://artofproblemsolving.com/community/c3h1717421_junior_regional_olympiad__fbh_2014_grade_8_problem_1",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717426",
+      "title": "Junior Regional Olympiad - FBH 2014 Grade 8 Problem 5",
+      "text": "How many are there $4$ digit numbers such that they have two odd digits and two even digits",
+      "url": "https://artofproblemsolving.com/community/c3h1717426_junior_regional_olympiad__fbh_2014_grade_8_problem_5",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717419",
+      "title": "Junior Regional Olympiad - FBH 2014 Grade 7 Problem 5",
+      "text": "From digits $0$, $1$, $3$, $4$, $7$ and $9$ were written $5$ digit numbers which all digits are different. How many numbers from them are divisible with $5$",
+      "url": "https://artofproblemsolving.com/community/c3h1717419_junior_regional_olympiad__fbh_2014_grade_7_problem_5",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717412",
+      "title": "Junior Regional Olympiad - FBH 2014 Grade 7 Problem 3",
+      "text": "Let $ABCD$ be a trapezoid with base sides $AB$ and $CD$ and let $AB=a$, $BC=b$, $CD=c$, $DA=d$, $AC=m$ and $BD=n$. We know that $m^2+n^2=(a+c)^2$\n\n$a)$ Prove that lines $AC$ and $BD$ are perpendicular\n\n$b)$ Prove that $ac<bd$",
+      "url": "https://artofproblemsolving.com/community/c3h1717412_junior_regional_olympiad__fbh_2014_grade_7_problem_3",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717410",
+      "title": "Junior Regional Olympiad - FBH 2014 Grade 7 Problem 2",
+      "text": "We know that raw wheat has $70\\%$ moisture and dry wheat has $10\\%$ moisture. One miller bought $3$ tons of raw wheat with price of $0.4 \\$$ per kilo. At which price miller has to sell dry wheat, so he gets $80\\%$ profit?",
+      "url": "https://artofproblemsolving.com/community/c3h1717410_junior_regional_olympiad__fbh_2014_grade_7_problem_2",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717408",
+      "title": "Junior Regional Olympiad - FBH 2014 Grade 7 Problem 1",
+      "text": "If for numbers $a$, $b$ and $c$ holds $a : b=4:3$ and $b : c=2:5$, find the value $$(3a-2b):(b+2c)$$",
+      "url": "https://artofproblemsolving.com/community/c3h1717408_junior_regional_olympiad__fbh_2014_grade_7_problem_1",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717403",
+      "title": "Junior Regional Olympiad - FBH 2014 Grade 6 Problem 2",
+      "text": "In one class in the school, number of abscent students is $\\frac{1}{6}$ of number of students who were present. When teacher sent one student to bring chalk, number of abscent students was $\\frac{1}{5}$ of number of students who were present. How many students are in that class?",
+      "url": "https://artofproblemsolving.com/community/c3h1717403_junior_regional_olympiad__fbh_2014_grade_6_problem_2",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717404",
+      "title": "Junior Regional Olympiad - FBH 2014 Grade 6 Problem 3",
+      "text": "Let $ABC$ be a right angled triangle. Prove that angle bisector of right angle is simultaneously an angle bisector of angle between median and altitude to hypotenuse.",
+      "url": "https://artofproblemsolving.com/community/c3h1717404_junior_regional_olympiad__fbh_2014_grade_6_problem_3",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717359",
+      "title": "k Kootrapali's Easy Problems",
+      "text": "Introducing the KEP!!!!\n\nSee title\n\nRound Eight released!\n\nNO SPAM!! ALL SPAMMERS WILL BE INSTANTLY REPORTED!\n\nSo I’m gonna be posting problems for you to solve, six problems at a time, and whoever solves each problem With a full understandable solution!! first will get a shoutout in the form of a quote beneath the problem that they solved.\n\nNo use of any online thingies, only your brain, writing aids, testing materials, and Absolutely no calculators.\n\nThe difficulty will range from mid AMC 10 to mid AIME (this may vary).\n\nThe person who gets the most points in the round is invited to suggest a problem for the next round. In the case of a tie, whoever solves the problem closer to the end wins.\n\nPoint System\n\n1&2-1 points each\n\n3&4-2 points each\n\n5&6-3 points each\n\nStatus\n\nAll problems written\n\nPrevious winners\n\n$1\\rightarrow$math1108\n\n$2\\rightarrow$imaginary_number\n\n$3\\rightarrow$franchester\n\n$4\\rightarrow$cosmicgenius and kvedula2004\n\n$5\\rightarrow$Martin007B\n\n$6\\rightarrow$Martin007B\n\n$7\\rightarrow$kvedula2004\n\nLeaderboard\n\nkevinmathz$\\rightarrow2$\n\nRound Eight\n\nProblem 1\n\nIn isosceles $\\triangle ABC$, $AB=AC$. $D$ and $E$ are placed on $BC$ such that $AD$ and $AE$ trisect $\\angle A$, and $F$ and $G$ are placed on $AB$ such that $CF$ and $CG$ trisect $\\angle C$. If $CD=5$, $DE=1$, and $AE=9$, what is the value of $AC$?\n\nProblem 2\n\nThe minimum $y$ value of $y=\\sqrt{2x^2-3}+\\sqrt{3x+5}$ can be expressed as $\\sqrt{a-\\frac{b\\sqrt{c}}{d}}$, where $a,b,c$, and $d$ are integers and the expression is in simplest form. Find the value of $a+b+c+d$.\n\nProblem 3\n\nFind the sum of all primes numbers $p$, such that $\\frac{1}{p}$ has a repetend length of $4$.\n\n[quote=kevinmathz]Solution 3All repeating numbers with a repetend of 4 can be written in form of $\\frac{n}{9999}$. Thus, $\\frac{9999}{n}$ is prime, and it cannot be simplified into a fraction over $99$. By simple case checking, $p=101, 11, 3$. Only $101$ satisfies the case.[/quote]\n\nProblem 4\n\nAll functions that have their only asymptotes at $x=-4$ and $y=2x-2$ can be expressed as $\\frac{ax^2+bx+\\frac{c}{f}}{dx+e}$ where $a,b,c,d,e,f$ are positive integers and $c$ and $f$ can be varied but don’t change the asymptotes of the function. What is the value of $a+b+d+e$?\n\nProblem 5\n\n$\\triangle ABC$ exists such that $AB=3$, $BC=4$, and $AC=5$. Point $E$ is on segment $\\overline{BC}$ such that $\\overline{AE}$ bisects $\\angle BAC$. Point $D$ lies on segment $\\overline{AC}$ and point $F$ is the intersection of segments $\\overline{BD}$ and $\\overline{AE}$. Points $C$, $D$, $E$, and $F$ lie on a circle, and the center of this circle is $O$. The numerical value of $OA+OB$ can be expressed as\n\n$$\\dfrac{\\sqrt{a}+\\sqrt{b}}{c}$$where $a$ and $b$ are both relatively prime to $c$. Evaluate $a+b+c$.\n\nProposed by kvedula2004\n\nProblem 6\n\nI have a stack of cards labeled $1-1000$. From those cards, I take out all cards that satisfy at least one of the following conditions:\n\n$n \\text{(mod 3)}$\n\n$2n \\text{(mod 7)}$\n\n$3n \\text{(mod 11)}$\n\nwhere $n$ is a positive integer. Let $f(n)$ represent the number of cards left in the deck after all such cards have been pulled out. What is the smallest value of $n$ such that $f(n)=523$?",
+      "url": "https://artofproblemsolving.com/community/c3h1717359_kootrapalis_easy_problems",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1710109",
+      "title": "k Kootrapali's Easy Problems (KEP)",
+      "text": "Introducing the KEP!!!!\n\nSee title\n\nRound Seven released!\n\nSo I’m gonna be posting problems for you to solve, six problems at a time, and whoever solves each problem With a full understandable solution!! first will get a shoutout in the form of a quote beneath the problem that they solved.\n\nNo use of any online thingies, only your brain, writing aids, testing materials, and Absolutely no calculators.\n\nThe difficulty will range from mid AMC 10 to mid AIME (this may vary).\n\nThe person who gets the most points in the round is invited to suggest a problem for the next round. In the case of a tie, whoever solves the problem closer to the end wins.\n\nPoint System\n\n1&2-1 points each\n\n3&4-2 points each\n\n5&6-3 points each\n\nStatus\n\nAll problems written\n\nPrevious winners\n\n$1\\rightarrow$math1108\n\n$2\\rightarrow$imaginary_number\n\n$3\\rightarrow$franchester\n\n$4\\rightarrow$cosmicgenius and kvedula2004\n\n$5\\rightarrow$Martin007B\n\n$6\\rightarrow$Martin007B\n\n$7\\rightarrow$kvedula2004\n\nLeaderboard\n\nkvedula2004$\\rightarrow8$\n\nszhu7927$\\rightarrow4$\n\nRound Seven\n\nProblem 1\n\nDefine $F_n$ to be the $n$th Fibonacci number where $n>0$. What is the greatest possible value of $GCF(F_n,F_{n+1})$?\n\n[quote=kvedula2004]Solution 1By the Euclidean Algorithm, we see that\n\n$$GCF(F_n,F_{n+1})=GCF(F_{n-1},F_{n})$$Therefore using this enough times means that all possible values of this are $GCF(1,1)=\\boxed{1}$.\n[/quote]\n\nProblem 2\n\nThe function $3xy=x^2+2y$ has two asymptotes. If these asymptotes can be expressed as $x=ay+b$ and $x=cy+d$, what is the value of $a+b+c+d$?\n\n[quote=szhu7927]Solution 2Rearranging, we get $y=\\frac{x^2}{3x-2}$, and through polynomial division we get $y=\\frac{1}{3}x+\\frac{2}{9}+\\frac{4}{9(3x-2)}$. This tells us that there is a slant asymptote at $y=\\frac{1}{3}x+\\frac{2}{9}$, or $x=3y-\\frac{2}{3}$, and a vertical asymptote at $x=\\frac{2}{3}$, so the answer is $3+\\left(-\\frac{2}{3}\\right)+\\frac{2}{3}=\\boxed{3}$.\n[/quote]\n\nProblem 3\n\nIn $\\triangle ABC$, $AB=9$ and $AC=6$. $D$ is the midpoint of $BC$, and $F$ is located on $AB$ such that $CF$ bisects $\\angle C$. $AD$ and $CF$ intersect at point $P$ in the interior of the triangle. $BP$ intersects $AC$ at $E$. The sum of the minimum and maximum possible values of $AE$ can be expressed in simplest form as $\\frac{m}{n}$. What is the value of $m+n$?\n\n[quote=kvedula2004]Solution 3Let BC=x, AE=y. By Ceva's Theorem, AE/EC * 1/1 * x/6 = 1 => y/(6-y) = 6/x => 6/(6-y) = (x+6)/x => y = 6 - 6x/(x+6).\n\nNow we know $y=6-\\dfrac{6x}{x+6}=6-\\dfrac{6}{1+\\dfrac{6}x}$. And by triangle inequality, $3\\leq x\\leq 15$. And to clearly min and max the expression, we need to min and max $x$, which gives 12/7 for min and 4 for max, so ans is $\\boxed{47}$.\n[/quote]\n\nProblem 4\n\nAn $n$-simplex is the $n$ dimensional analogue of a triangle. A $0$-simplex is a point, a $1$-simplex is a line segment, a $2$-simplex is a triangle, and a $3$-simplex is a tetrahedron. Find the circumradius of a regular $5$-simplex with edge length $5$.\n\nProposed by Martin007B\n\n[quote=kvedula2004]Solution 4It is well known that a n-simplex can be put on the Cartesian graph as the set of points in $R^{n+1}$ as the set of all points that have $n$ of the coordinates be $0$ and one of them is $1$. Because the circumcenter is the same as centroid in regular simplex , the circumcenter is\n\n$$C=\\left(\\dfrac{1}{6}, \\dfrac{1}{6}, \\dfrac{1}{6}, \\dfrac{1}{6}, \\dfrac{1}{6}, \\dfrac{1}{6}\\right)$$Using the distance formula from one of the points to this circumcenter gives our circumradius as $\\sqrt{\\dfrac{30}{36}}=\\dfrac{\\sqrt{30}}{6}$, but scaling by $\\dfrac{5}{\\sqrt{2}}$, because the side length of the original simplex is $\\sqrt{2}$, we get our final answer of\n\n$$\\boxed{R=\\dfrac{5\\sqrt{15}}{6}}$$\n[/quote]\n\nProblem 5\n\nWhat is the sum of all three-digit solutions to $\\phi(\\phi(N))=20$?\n\n[quote=szhu7927]Problem 5$\\phi(\\phi(N))=20=2^2\\cdot 5$. The divisors of $20$ are $1,2,4,5,10,$ and $20$. Knowing that Euler's Phi Function reduces the power of each prime $p_i$ by $1$ in the prime factorization of $N$ and replaces it with $p_i-1$ (eg. $\\phi((2^2)\\cdot (5^1))=(1\\cdot 2^1)\\cdot (4\\cdot 5^0)$), we must find divisors $d$ of $20$ where $d+1$ is a prime. These are $1,2,4,$ and $10$.\n\n\n\nSolving $M=\\phi(N)$\n\n\n\nStarting with $10$, this tells us that if $11$ is a prime factor of $N$, it will reduce to $10$ under the function, so we need another factor of $2$. We can get this from either $3$ or $2^2$, so this gives us two possibilities: $3\\cdot 11$ and $2^2\\cdot 11$.\n\n\n\nNext, if $5$ is a prime factor of $N$, it will reduce to $4$ under the function, so we need another factor of $5$. We can get this through multiplying by another $5$, so this gives us one possibility: $5^2$.\n\n\n\nFollowing the same logic for $3$ reducing to $2$, we need another factor of $10$, so this will be identical to the case with $10$, so there are no more solutions here.\n\n\n\nFinally, the $2$ reducing to $1$ just tells us that we can append a $2$ to any prime factorization that does not already have a $2$, so we get two more possibilities: $2\\cdot 5^2$ and $2\\cdot 2\\cdot 11$.\n\n\n\nSolving $\\phi(M)=20$\n\n\n\nNow we need to solve $\\phi(M)=25,33,44,50,66$.\n\n\n\nFor $25$, the divisors are $1,5,25$. Since for each divisor $d$ besides $1$, $d+1$ is not prime, there are no solutions.\n\n\n\nFor $33$, the divisors are $1,3,11,33$. By the same logic, there are no solutions.\n\n\n\nFor $44$, the divisors are $1,2,4,11,22,44$. Possible divisors to reduce to are $2,4,22$. Using casework again starting with $23$ reducing to $22$, we need another factor of $2$. We can get this from multiplying by $3$ or $2^2$, so two possibilities are $\\boxed{3\\cdot 23}$ and $\\boxed{2^2\\cdot 23}$. Next, on $5$ reducing to $4$, we need another factor of $11$, which is impossible because the factors of $11$ are only $1$ and $11$, and $11+1$ is not prime. Finally, $3$ reducing to $2$ is the same case as the first one. As noted before, we can multiply solutions by $2$ that do not already contain a $2$, so the last possibility is $\\boxed{2\\cdot 3\\cdot 23}$.\n\n\n\nFor $50$, the divisors are $1,2,5,10,25,50$. Possible divisors to reduce to are $2,10$. Starting with $11$ reducing to $10$, we need another factor of $5$, which is impossible to get. With $3$ reducing to $2$, we need another factor of $25$, which is also impossible to get, by prior reasoning.\n\n\n\nFor $66$, the divisors are $1,2,3,6,11,22,33,66$. Possible divisors to reduce to are $2,6,22,66$. Starting with $67$ reducing to $66$, the answer is obvious: $\\boxed{67}$. Next, with $23$ reducing to $22$, we need another factor of $3$, which is impossible. With $7$ reducing to $6$, we need another factor of $11$, which is impossible. $3$ reducing to $2$ is the same case as the first, so we can only get one more possibility: $\\boxed{2\\cdot 67}$.\n\n\n\nFrom all these, the only possibilities that are three-digit are $138$ and $134$, so the answer is $138+134=\\boxed{272}$.\n[/quote]\n\nProblem 6\n\nJohn eats an average of $4$ donuts a day. Given that he can only eat a whole number amount of donuts, what is the probability that he eats $5$ donuts tomorrow?\n\n[quote=kvedula2004]Solution 6Using the formula for finding probability of events in Poisson distribution, found here, we see that substituting $4$ for lambda and $5$ for $k$, using their variables gives our answer of\n\n$$\\dfrac{4^5}{5!}e^{-4} = \\boxed{\\dfrac{128}{15e^4}}$$where $e\\approx 2.71828\\cdots$.\n[/quote]",
+      "url": "https://artofproblemsolving.com/community/c3h1710109_kootrapalis_easy_problems_kep",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717292",
+      "title": "Math Madness Question",
+      "text": "Let a, b, and c be values chosen from {0,1,2,3,…,100}. They need not be distinct, but a≥b. How many ordered triples (a,b,c) are there satisfying both |a−b|=c and |b−c|=a?\n\n\n\n\n\nCan anybody help me on this?",
+      "url": "https://artofproblemsolving.com/community/c3h1717292_math_madness_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1715899",
+      "title": "Junior Regional Olympiad - FBH 2015 Grade 6 Problem 3",
+      "text": "Let $AD$ be a median of $ABC$ and $S$ its midpoint. Let $E$ be a intersection point of $AB$ and $CS$. Prove that $BE=2AE$",
+      "url": "https://artofproblemsolving.com/community/c3h1715899_junior_regional_olympiad__fbh_2015_grade_6_problem_3",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1363136",
+      "title": "MATHCOUNTS State Problem",
+      "text": "IMAGE\n\n\n\nI'm having trouble visualizing this.  The given answer is 52, but I need help finding the largest and smallest surface areas.  Thanks!\n\n\n\nEDIT: The image isn't showing up for me, but the image link is here.\n\n\n\nEDIT: Also, some help with a solution to this problem would be much appreciated.",
+      "url": "https://artofproblemsolving.com/community/c3h1363136_mathcounts_state_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1717277",
+      "title": "Study for AMC something marathon questions",
+      "text": "This is just a marathon of AMC questions to help you study for the test.\n\n\n\nI'll start\n\nClick to reveal hidden textOn the dart board shown in the figure below, the outer circle has radius $6$ and the inner circle has radius $3$. Three radii divide each circle into three congruent regions, with point values shown. The probability that a dart will hit a given region is proportional to the area of the region. When two darts hit this board, the score is the sum of the point values in the regions. What is the probability that the score is odd?\n\n\n\nIMAGE\n\n\n\n\nHide the anwsers\n\nand make sure your solutions are detailed",
+      "url": "https://artofproblemsolving.com/community/c3h1717277_study_for_amc_something_marathon_questions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1715029",
+      "title": "Junior Regional Olympiad - FBH 2016 Grade 6 Problem 2",
+      "text": "Which fraction is bigger: $\\frac{5553}{5557}$ or $\\frac{6664}{6669}$ ?",
+      "url": "https://artofproblemsolving.com/community/c3h1715029_junior_regional_olympiad__fbh_2016_grade_6_problem_2",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1715574",
+      "title": "k Math HW Help!",
+      "text": "HALP ME PLZ :oops_sign: \n\n\n\nIm in 5th grade and got this problem on my math hw:\n\n\n\nN is a multiple of 12 and has 14 divisors. Compute N\n\n\n\nAll I can do is trial and error but that isnt working\n\n\n\nCan someone please give me a method that works and the answer with an explanation\n\n\n\nthx :D",
+      "url": "https://artofproblemsolving.com/community/c3h1715574_math_hw_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1716607",
+      "title": "Algebra Hearth",
+      "text": "İftar point E(5,h) is on the line that contains A(0,1) and B(-2,-1), what is the value of h?",
+      "url": "https://artofproblemsolving.com/community/c3h1716607_algebra_hearth",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1716924",
+      "title": "Inequality",
+      "text": "Let a, b, c  be non negative real numbers  such that a+b+c=1.Find  maximum value for                    s=ab+bc+ca-3abc",
+      "url": "https://artofproblemsolving.com/community/c3h1716924_inequality",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1716396",
+      "title": "This is a Middle School Math Problem",
+      "text": "Graph $f(x) = \\begin{cases}\nx^2 & x \\ge 0 \\\\\n-x & x < 0\n\\end{cases}$\n\nand then find the average rate of change.",
+      "url": "https://artofproblemsolving.com/community/c3h1716396_this_is_a_middle_school_math_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1716792",
+      "title": "a geometry problem",
+      "text": "just a problem\n\nA square of side length 5 has squares of side length 1 cut out of the corners. What is the biggest square you can fit in the resulting cross?",
+      "url": "https://artofproblemsolving.com/community/c3h1716792_a_geometry_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1716960",
+      "title": "AHSME 1980 #21",
+      "text": "In triangle $ABC$, $\\measuredangle CBA=72^\\circ$, $E$ is the midpoint of side $AC$, and $D$ is a point on side $BC$ such that $2BD=DC$; $AD$ and $BE$ intersect at $F$. The ratio of the area of triangle $BDF$ to the area of quadrilateral $FDCE$ is....\n\n\n\nI'm kinda confused as to what approach to use. I'm thinking of similar triangles or something that has to do with the fact that the median is in a 2:1 ratio.",
+      "url": "https://artofproblemsolving.com/community/c3h1716960_ahsme_1980_21",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1715535",
+      "title": "Need help",
+      "text": "In a right triangle ABC, CD is an altitude, such that AD=BC. Find AC, if AB=3 cm, and CD= sqrt2  cm.",
+      "url": "https://artofproblemsolving.com/community/c3h1715535_need_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    }
+  ]
+}

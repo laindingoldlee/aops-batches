@@ -1,0 +1,1011 @@
+{
+  "format": "aops-topic-previews-v1",
+  "scope": "Loaded topic previews, not full replies or screened questions",
+  "source_archive_sha256": "15978407a01483794e215aef89ec1c105caa4e7154d91211c94bd95ef7186726",
+  "batch_number": 307,
+  "source_row_start": 30601,
+  "source_row_end": 30700,
+  "topic_count": 100,
+  "topics": [
+    {
+      "topic_id": "1296795",
+      "title": "Math Marathon",
+      "text": "I have sensed that the time is right. (Because I have a math placement test to study for...)\n\nTime to start a math marathon.\n\n\n\nHere are some rules:\n\n\n\nHide problems and solutions like this\n\nP#\n\n\nS#\n\n\nby using the crossed out eye tool.\n\n\n\nDon't be a troll...\n\n\n\nAnd... Yeah.\n\n\n\nI'll start off:\n\nP1Given that a,b,c are the roots of the cubic $x^3$-$6x^2$+$8x$+$12$, find a/bc+b/ca+c/ab.\n\n\n\n(I cannot LaTeX)",
+      "url": "https://artofproblemsolving.com/community/c3h1296795_math_marathon",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296458",
+      "title": "Exponent Question(easy)",
+      "text": "Which of the following is greater, $2^{100}$ or $10^{30}$ ?",
+      "url": "https://artofproblemsolving.com/community/c3h1296458_exponent_questioneasy",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296787",
+      "title": "2014 Mathcounts Probability Problem",
+      "text": "A code consists of four different digits from 1 to 9, inclusive. What is the probability of selecting a code that consists of four consecutive digits but not necessarily in order? Express your answer as a common fraction.",
+      "url": "https://artofproblemsolving.com/community/c3h1296787_2014_mathcounts_probability_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296369",
+      "title": "2016 Purple Comet HS #2 Geometry",
+      "text": "The trapezoid ABCD has bases with lengths 7 and 17 and area 120. Find the diﬀerence of the areas of $\\triangle$ACD and $\\triangle$CDB.\n\nIMAGE",
+      "url": "https://artofproblemsolving.com/community/c3h1296369_2016_purple_comet_hs_2_geometry",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296372",
+      "title": "2016 Purple Comet HS #5 Mean and Median Problem",
+      "text": "Julius has a set of ﬁve positive integers whose mean is 100. If Julius removes the median of the set of ﬁve\n\nnumbers, the mean of the set increases by 5, and the median of the set decreases by 5. Find the maximum\n\npossible value of the largest of the ﬁve numbers Julius has.",
+      "url": "https://artofproblemsolving.com/community/c3h1296372_2016_purple_comet_hs_5_mean_and_median_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295863",
+      "title": "Standard Average Problem",
+      "text": "The ﬁve numbers $17$, $98$, $39$, $54$, and $n$ have a mean equal to $n$. Find $n$.",
+      "url": "https://artofproblemsolving.com/community/c3h1295863_standard_average_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296378",
+      "title": "2016 Purple Comet HS #7 LCM and",
+      "text": "Positive integers m and n are both greater 50, have a least common multiple equal to 480, and have a\n\ngreatest common divisor equal to 12. Find $m + n$.",
+      "url": "https://artofproblemsolving.com/community/c3h1296378_2016_purple_comet_hs_7_lcm_and",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296465",
+      "title": "Coordinate Geometry Question(medium)",
+      "text": "A triangle plotted in the Cartesian Coordinate plane has vertices $(12,37)$, $(18,64)$, and $(21,43)$. Find its centroid.",
+      "url": "https://artofproblemsolving.com/community/c3h1296465_coordinate_geometry_questionmedium",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296370",
+      "title": "2016 Purple Comet HS #3 Exponents",
+      "text": "Find the positive integer n such that $10^n$ cubic centimeters is the same as 1 cubic kilometer.",
+      "url": "https://artofproblemsolving.com/community/c3h1296370_2016_purple_comet_hs_3_exponents",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296385",
+      "title": "2016 Purple Comet HS #11",
+      "text": "Find the number of three-digit positive integers which have three distinct digits where the sum of the digits\n\nis an even number such as 925 and 824.",
+      "url": "https://artofproblemsolving.com/community/c3h1296385_2016_purple_comet_hs_11",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296418",
+      "title": "Fun Counting and Probability",
+      "text": "The Knight has four pens, one in red, one in blue, one in green and one in black. He also has 4 boxes one red, one blue, one green and one black. What is the total number of ways in which The Knight can place pens in the boxes such that the pen and the box are not of the same colour and there can only be one pen in one box ?",
+      "url": "https://artofproblemsolving.com/community/c3h1296418_fun_counting_and_probability",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296371",
+      "title": "2016 Purple Comet HS #4 Algebra",
+      "text": "One side of a rectangle has length 18. The area plus the perimeter of the rectangle is 2016. Find the\n\nperimeter of the rectangle.",
+      "url": "https://artofproblemsolving.com/community/c3h1296371_2016_purple_comet_hs_4_algebra",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296382",
+      "title": "2016 Purple Comet HS #10",
+      "text": "Jeremy wrote all the three-digit integers from $100$ to $999$ on a blackboard. Then Allison erased each of the\n\n$2700$ digits Jeremy wrote and replaced each digit with the square of that digit. Thus, Allison replaced every\n\n1 with a 1, every 2 with a 4, every 3 with a 9, every 4 with a 16, and so forth. The proportion of all the digits Allison wrote that were ones is $\\frac{m}{n}$ , where m and n are relatively prime positive integers. Find $m + n.$",
+      "url": "https://artofproblemsolving.com/community/c3h1296382_2016_purple_comet_hs_10",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296381",
+      "title": "2016 Purple Comet HS #9 NT",
+      "text": "Find the sum of all perfect squares that divide 2016.",
+      "url": "https://artofproblemsolving.com/community/c3h1296381_2016_purple_comet_hs_9_nt",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296380",
+      "title": "2016 Purple Comet HS #8 DRT Problem",
+      "text": "The map below shows an east/west road connecting the towns of Acorn, Centerville, and Midland, and a\n\nnorth/south road from Centerville to Drake. The distances from Acorn to Centerville, from Centerville to\n\nMidland, and from Centerville to Drake are each 60 kilometers. At noon Aaron starts at Acorn and\n\nbicycles east at 17 kilometers per hour, Michael starts at Midland and bicycles west at 7 kilometers per\n\nhour, and David starts at Drake and bicycles at a constant rate in a straight line across an open ﬁeld. All\n\nthree bicyclists arrive at exactly the same time at a point along the road from Centerville to Midland. Find\n\nthe number of kilometers that David bicycles. For the map go to http://www.purplecomet.org/welcome/practice",
+      "url": "https://artofproblemsolving.com/community/c3h1296380_2016_purple_comet_hs_8_drt_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296377",
+      "title": "2016 Purple Comet HS #6 Geometry",
+      "text": "The following diagram shows a square where each side has seven dots that divide the side into six equal segments. All the line segments that connect these dots that form a 45 degree angle with a side of the square are\n\ndrawn as shown. The area of the shaded region is 75. Find the area of the original square.\n\nFor diagram go to http://www.purplecomet.org/welcome/practice",
+      "url": "https://artofproblemsolving.com/community/c3h1296377_2016_purple_comet_hs_6_geometry",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296273",
+      "title": "Number Theory Question",
+      "text": "For how many integers is $2304/n$ also an integer?",
+      "url": "https://artofproblemsolving.com/community/c3h1296273_number_theory_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296106",
+      "title": "Easy problem",
+      "text": "$C=5/9(F-32)$\n\n\n\nThe equation above shows how a temperature $F$, measured in degrees Fahrenheit, relates to a temperature $C$, measured in degrees Celsius. Based on the equation, which of the following must be true? (answer can be both, all three, or none of they)\n\n\n\n1. A temperature increase of $1$ degree Fahrenheit is equivalent to a temperature increase of $5/9$ degree Celsius.\n\n\n\n2. A temperature increase of $1$ degree Celsius is equivalent to a temperature increase of $1.8$ degrees Fahrenheit\n\n\n\n3. A temperature increase of $5/9$ degree Celsius is equivalent to a temperature increase of $1$ degree Celsius",
+      "url": "https://artofproblemsolving.com/community/c3h1296106_easy_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296235",
+      "title": "Op mathcounts",
+      "text": "I was just wondering out of curiosity if more than one person got 46 on a mathcounts do they (the judges or graders) determine who got a better rank on the written round. Does it have to do with tie breakers?",
+      "url": "https://artofproblemsolving.com/community/c3h1296235_op_mathcounts",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296066",
+      "title": "Largest Figure That Can be Fit into Another",
+      "text": "So I have come across these questions in the classroom where it would ask for example, what is the area of the largest circle that can fit in a square 5 long. Usually I set up an equation. $\\pi(r^2)=25$ Of course I would use a calculator or 3.14 for $\\pi$. Then I would pick the answer that provided the closest result. If I got r=3.564 and the closest to it was 3.5 then that was probably the answer. If you haven;t figured out by now this doesn't really work in competition. So how would you solve these types of questions which calculators?\n\nThanks in advance.",
+      "url": "https://artofproblemsolving.com/community/c3h1296066_largest_figure_that_can_be_fit_into_another",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296090",
+      "title": "Greatest area Slightly troll problem",
+      "text": "A gardener has 23 feet of fencing for the perimeter of his garden. What is the greatest possible area of the garden that he can enclose? Round your answer to the nearest whole number.",
+      "url": "https://artofproblemsolving.com/community/c3h1296090_greatest_area_slightly_troll_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295869",
+      "title": "Say Hi to 11 and 9 when you go to Divisibility-ville",
+      "text": "There are digits a and b so that the 15-digit number 7a7ba7ab7ba7b77 is divisible by 99.\n\nFind 10a + b.",
+      "url": "https://artofproblemsolving.com/community/c3h1295869_say_hi_to_11_and_9_when_you_go_to_divisibilityville",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296256",
+      "title": "Line to Line formula",
+      "text": "I know that there is a point to line formula if you know the equation of the line and the points coordinates ($\\frac{Ax+By+C}{\\sqrt{a^2+b^2}}=d$). Does there exist a \"line to line\" formula? So if there was parallel lines A and B, is there an equation to determine the distance from A and B?",
+      "url": "https://artofproblemsolving.com/community/c3h1296256_line_to_line_formula",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1296257",
+      "title": "k Cube equation",
+      "text": "Find the solutions to 2x^3+8x^2-13x+3",
+      "url": "https://artofproblemsolving.com/community/c3h1296257_cube_equation",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295874",
+      "title": "Algebra with Vieta #10 on the 2015 Purple Comet High School",
+      "text": "Find the sum of all the real values of x satisfying $(x+\\frac{1}{x}-17)^2$ $= x + \\frac{1}{x} + 17.$",
+      "url": "https://artofproblemsolving.com/community/c3h1295874_algebra_with_vieta_10_on_the_2015_purple_comet_high_school",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295233",
+      "title": "Getting Faster at Playing a Song",
+      "text": "Janet played a song on her clarinet in 3 minutes and 20 seconds. Janet’s goal is to play the song at a 25%\n\nfaster rate. Find the number of seconds it will take Janet to play the song when she reaches her goal.",
+      "url": "https://artofproblemsolving.com/community/c3h1295233_getting_faster_at_playing_a_song",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295867",
+      "title": "Let's Play With Geometry (Purple Comet 2015 High School #5)",
+      "text": "The two diagonals of a quadrilateral have lengths $12$ and $9$, and the two diagonals are perpendicular to each other. Find the area of the quadrilateral.",
+      "url": "https://artofproblemsolving.com/community/c3h1295867_lets_play_with_geometry_purple_comet_2015_high_school_5",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295933",
+      "title": "Target Shooting",
+      "text": "You are playing a target shooting game where there are (from left to right in each row) 2 targets in the top row, 3 targets in the middle row, and 3 targets in the bottom row. You can only shoot the bottom target of one of the columns, and once you shoot a target, it is gone, and there is a new bottom target in that column. Find the number of ways to shoot all the targets, where order matters.",
+      "url": "https://artofproblemsolving.com/community/c3h1295933_target_shooting",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295917",
+      "title": "geo problem",
+      "text": "Square $ABCD$ has side length 2. A semicircle with diameter $\\overline{AB}$ is constructed inside the square, and the tangent to the semicircle from $C$ intersects side $\\overline{AD}$ at $E$. What is the length of $\\overline{CE}$?",
+      "url": "https://artofproblemsolving.com/community/c3h1295917_geo_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295871",
+      "title": "Standard DRT Problem #7 on the 2015 Purple Comet HS",
+      "text": "Talya went for a 6 kilometer run. She ran 2 kilometers at 12 kilometers per hour followed by 2 kilometers\n\nat 10 kilometers per hour followed by 2 kilometers at 8 kilometers per hour. Talya’s average speed for the 6 kilometer run was $\\frac{m}{n}$ kilometers per hour, where m and n are relatively prime positive integers. Find m + n.",
+      "url": "https://artofproblemsolving.com/community/c3h1295871_standard_drt_problem_7_on_the_2015_purple_comet_hs",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295866",
+      "title": "Let's Play with Pigeons",
+      "text": "Six boxes are numbered $1$, $2$, $3$, $4$, $5$, and $6$. Suppose that there are $N$ balls distributed among these six boxes. Find the least $N$ for which it is guaranteed that for at least one $k$, box number $k$ contains at least $k^2$ balls.",
+      "url": "https://artofproblemsolving.com/community/c3h1295866_lets_play_with_pigeons",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295864",
+      "title": "Prime's adding up to 100",
+      "text": "How many sets of two positive prime numbers $\\{p,q\\}$ have the property that $p + q = 100$?",
+      "url": "https://artofproblemsolving.com/community/c3h1295864_primes_adding_up_to_100",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295865",
+      "title": "Is it getting cold in here? Must be this problem",
+      "text": "The Fahrenheit temperature ($F$) is related to the Celsius temperature ($C$) by $F = \\tfrac{9}{5} \\cdot C + 32$. What is the temperature in Fahrenheit degrees that is one-ﬁfth as large if measured in Celsius degrees?",
+      "url": "https://artofproblemsolving.com/community/c3h1295865_is_it_getting_cold_in_here_must_be_this_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295232",
+      "title": "Repeating Decimals",
+      "text": "The repeating decimal $2.0151515\\ldots$ can be expressed as $\\tfrac{m}{n}$, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.",
+      "url": "https://artofproblemsolving.com/community/c3h1295232_repeating_decimals",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1294108",
+      "title": "k It's seems confusing, doesn't it!",
+      "text": "Pete's cat sneezes before it rains. She sneezed today.\n\n\" This means it will be raining.\" Pete thinks. Is he right?",
+      "url": "https://artofproblemsolving.com/community/c3h1294108_its_seems_confusing_doesnt_it",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295482",
+      "title": "Remainder",
+      "text": "Prove that $x-a | f(x)-f(a)$",
+      "url": "https://artofproblemsolving.com/community/c3h1295482_remainder",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295236",
+      "title": "k Divisibility by 27",
+      "text": "Find the least positive integer whose digits add to a multiple of 27 yet the number itself is not a multiple\n\nof 27. For example, 87999921 is one such number.",
+      "url": "https://artofproblemsolving.com/community/c3h1295236_divisibility_by_27",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295256",
+      "title": "Painting Cubes and Using Them",
+      "text": "You have many identical cube-shaped wooden blocks. You have four colors of paint to use, and you paint\n\neach face of each block a solid color so that each block has at least one face painted with each of the four\n\ncolors. Find the number of distinguishable ways you could paint the blocks. (Two blocks are\n\ndistinguishable if you cannot rotate one block so that it looks identical to the other block.)",
+      "url": "https://artofproblemsolving.com/community/c3h1295256_painting_cubes_and_using_them",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295250",
+      "title": "Algebraic Manipulations",
+      "text": "Given that x, y, and z are real numbers satisfying $x+y +z = 10$ and $x^2 +y^2 +z^2 = 50$, ﬁnd the maximum possible value of $(x + 2y + 3z)^2 + (y + 2z + 3x)^2 + (z + 2x + 3y)^2$.",
+      "url": "https://artofproblemsolving.com/community/c3h1295250_algebraic_manipulations",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295255",
+      "title": "Geometry",
+      "text": "A courtyard has the shape of a parallelogram ABCD. At the corners of the courtyard there stand poles AA', BB', CC', and DD', each of which is perpendicular to the ground. The heights of these poles are AA' = 68 centimeters, BB' = 75 centimeters, CC' = 112 centimeters, and DD' = 133 centimeters. Find the distance in centimeters between the midpoints of A'C' and B'D'.",
+      "url": "https://artofproblemsolving.com/community/c3h1295255_geometry",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295251",
+      "title": "Standard Factorial Problem",
+      "text": "Find the greatest positive integer $n$ so that $3^n$ divides $70! + 71! + 72!.$",
+      "url": "https://artofproblemsolving.com/community/c3h1295251_standard_factorial_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295253",
+      "title": "Standard Divisor Problem",
+      "text": "How many positive integers less than 2015 have exactly 9 positive integer divisors?",
+      "url": "https://artofproblemsolving.com/community/c3h1295253_standard_divisor_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295246",
+      "title": "A Standard Fraction Problem Disguised",
+      "text": "The Purple Plant Garden Store sells grass seed in ten-pound bags and ﬁfteen-pound bags. Yesterday half\n\nof the grass seed they had was in ten-pound bags. This morning the store received a shipment of 27 more\n\nten-pound bags, and now they have twice as many ten-pound bags as ﬁfteen-pound bags. Find the total\n\nweight in pounds of grass seed the store now has.",
+      "url": "https://artofproblemsolving.com/community/c3h1295246_a_standard_fraction_problem_disguised",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295240",
+      "title": "Too many pigeons, seriously!",
+      "text": "Gwendoline rolls a pair of six-sided dice and records the product of the two values rolled. Gwendoline\n\nrepeatedly rolls the two dice and records the product of the two values until one of the values she records\n\nappears for a third time. What is the maximum number of times Gwendoline will need to roll the two dice?",
+      "url": "https://artofproblemsolving.com/community/c3h1295240_too_many_pigeons_seriously",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1295230",
+      "title": "Easy Fraction Problem",
+      "text": "Arvin ate 11 halves of tarts, Bernice ate 12 quarters of tarts, Chrisandra ate 13 eighths of tarts, and Drake ate 14 sixteenths of tarts. How many tarts were eaten?",
+      "url": "https://artofproblemsolving.com/community/c3h1295230_easy_fraction_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1284137",
+      "title": "Number of Times a Digit Shows Up",
+      "text": "The natural numbers 1, 2, 3…998, 999 are written down in one long string. The string looks like this: 12345678910111213…998999. How many 1s appear in this string?\n\nVery standard problem good for beginners.\n\nhintUse PIE I you don't know what that is look up Principle of Inclusion-Exclusion in aopswiki",
+      "url": "https://artofproblemsolving.com/community/c3h1284137_number_of_times_a_digit_shows_up",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1293339",
+      "title": "Candle problem",
+      "text": "Two candles are of same height.They are lit at the same time.One candle burns completely in 4 hrs other in 5 hrs.When is one candle twice the height of the other candle?",
+      "url": "https://artofproblemsolving.com/community/c3h1293339_candle_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1249128",
+      "title": "Mathematical Paradoxes",
+      "text": "These paradoxes I'm gonna be showing you have boggled the minds of the world's greatest mathematicians. I did not come up with these paradoxes, but merely am presenting them to those who don't know.\n\n\n\nParadox- a statement or proposition that, despite sound (or apparently sound) reasoning from acceptable premises, leads to a conclusion that seems senseless, logically unacceptable, or self-contradictory\n\n\n\nZeno's Paradoxes\n\nDichotomy ParadoxSuppose a person wants to walk down the end of a plank. But before he can get to the end, he must get halfway there. But before he can get halfway there, he must get a quarter of the way there. But before he can get a quarter of the way there, he must get an eighth of the way there. And so on.\n\nThis means a person would have to complete an infinite amount of tasks, and therefore would never get to the end of the plank.\n\n\nArrow ParadoxIf everything when it occupies an equal space is at rest, and if that which is in locomotion is always occupying such a space at any moment, the flying arrow is therefore motionless.\n\n-Aristotle\n\nAn arrow is in flight. At any one instant of time, the arrow is motionless in the air. At the next instant of time, the arrow is still motionless, frozen in flight. The arrow does not move, but motion is entirely composed of instants. Therefore there is no motion, but only instants of time where the arrow is at different locations.\n\n\nPut your opinion and countering arguments in the comments section. I know there are many paradoxes, famous ones like 0.999.... = 1, etc. These you may not have heard of.",
+      "url": "https://artofproblemsolving.com/community/c3h1249128_mathematical_paradoxes",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1294571",
+      "title": "Algebra factoring question",
+      "text": "Let a,b,c be roots of $x^3+4x^2-3x-3.$ What is $a^3+b^3+c^3?$",
+      "url": "https://artofproblemsolving.com/community/c3h1294571_algebra_factoring_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1294719",
+      "title": "Counting and Probability marathon",
+      "text": "Let's start a marathon with counting and probability. Try to make the problems middle school level. Also, geometric probability problems are prefer\n\n\n\nProblem 1: What is the probability of drawing an ace, than a 3, than another ace without replacement in a standard deck of cards?",
+      "url": "https://artofproblemsolving.com/community/c3h1294719_counting_and_probability_marathon",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "609363",
+      "title": "problem of the week",
+      "text": "Tom and Huck paint a fence for four hours, after which Jim helps and they finish 2 hours later. If Jim had not helped them , it would have taken them 5 more hours to pain the fence. How long would it take Jim to paint the fence alone?",
+      "url": "https://artofproblemsolving.com/community/c3h609363_problem_of_the_week",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1293185",
+      "title": "A Contrived NT proof problem",
+      "text": "Prove that there exist infinitely many integers $n$ such that $4033$ is a factor of $n^2+n+1$.\n\n\n\nhint$4033=2*2016+1$",
+      "url": "https://artofproblemsolving.com/community/c3h1293185_a_contrived_nt_proof_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1294700",
+      "title": "Half and Half fraction problem (i guess????)",
+      "text": "For the continue fraction line:\n\n$1/2016, 2/2016, 3/2016, 4/2016 ...... 2014/2016, 2015/2016$\n\nHow many simplest fractions are there? What is the sum of all of them add up?",
+      "url": "https://artofproblemsolving.com/community/c3h1294700_half_and_half_fraction_problem_i_guess",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1294513",
+      "title": "Lattice Points",
+      "text": "Two lattice points are said to be adjacent if the distance between them is 1. If 100 lattice points are marked, what is maximum number of adjacent pairs of points possible?",
+      "url": "https://artofproblemsolving.com/community/c3h1294513_lattice_points",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1294290",
+      "title": "Fraction problem (2)",
+      "text": "$1-1/2+1/3-1/4+ ........ +1/17-1/18+1/19$ Divide by\n\n$(1/(1+19))$   $+$   $(1/(2+20))$   $+$ $(1/(3+21))$ $+ .... +$   $(1/(9+27))$   $+$   $(1/(10+28))$",
+      "url": "https://artofproblemsolving.com/community/c3h1294290_fraction_problem_2",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1294591",
+      "title": "Is it possible to evaluate?",
+      "text": "Evaluate : $\\sqrt{2\\sqrt{4\\sqrt{8\\sqrt{16\\sqrt{32....}}}}}$",
+      "url": "https://artofproblemsolving.com/community/c3h1294591_is_it_possible_to_evaluate",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1288931",
+      "title": "k Math Competition History: 4-6th grade (3141th post)",
+      "text": "Here goes... (I've laid off posting this for 2 weeks at this point...)\n\n\n\nFor my 3141th post, I will be writing a story about all of the math competitions I have ever done.\n\nThere will also be a TL;DR for each competition, in case you don't like reading, or maybe don't want to read all the competitions.\n\n\n\nFirst of all, I don't really deserve 3141 posts. I mean, almost 3/4 of my posts were because of games in Intro to Geo (1044). More than 4/5 of my posts were in classes. But I mean, I have them, right?\n\n\n\nAnd second, why 3141? Obviously it's because of $\\pi$, but why not 3000 or something?\n\nThe first reason is that everyone else does it on multiples of 100... So I decided to do another number.\n\nThe second (and 10x stronger) reason is that I wasted my 3000th post. :( (In a game in Intro to Geo, by the way.)\n\n\n\nSo, without further ado, let's get on to the competitions!\n\n\n\nTL;DR happiness emojis:wow: Very Happy\n\n:-D Happy\n\n:| Okay\n\n:mad: Mad\n\n:bomb: Very Mad\n\n\n\n\n4th GradeMath KangarooTL;DRScore: 24/24\n\nPlace: First in Nation\n\nHappiness: :wow:\n\n\nFull StoryThis was my first ever math competition!\n\nWell, \"math\" competition. I guess.\n\nIt's more of a logic competition... it's half logic and half simple math.\n\n\n\nAnyways, I had done like 5 practice tests. The tests really weren't hard. There was simple math, like finding the area of shapes on a grid, and simple operations. I was easily getting a perfect score almost every time, and if I didn't perfect it, it was an easy silly. I was very confident in this competition.\n\n\n\nIt was a reasonably long drive. I remember it as being at least an hour long, but some Google Mapsing shows that it was closer to half an hour. Good job, memory. You have failed me.\n\n\n\nEventually, we got to the library where it took place. The library was not that big, and after a bit of waiting, I went into the testing room. I sat down at my spot. There were not many people - about 100. And the thing is, those were the only competitors in the state! After a few minutes of waiting, I got the test.\n\n\n\nIt was a standard test - not harder or easier than normal. I still remember two questions from the test, however. One of the problems basically showed half of a vase, and asked what the reflection would look like (explaining how this is a logic test...). Another problem gave us an array of dots, and we had to count how many there were. Simple math gave me the answer. Like my practice tests, I finished 30-40 minutes early. This was probably because there were 24 problems in 75 minutes. That's more time per problem than an AMC10/12! But since this test is way easier, I had lots of time. Since I had 30 minutes left, I checked... and checked... a total of four times. Then, I really got bored with checking these problems, and ended my test 10 minutes early.\n\n\n\nI was given the test back immediately, and decided not to check it at home. I was very confident that I would get a perfect score, and after a few weeks, it turns out that I did. Fun fact: There was some sort of a program there that trained people for these tests, and I think the people who got first were celebrated. However, none of them got first; I took it away.\n\n\n\nAlso, I was supposed to get a $25 Best Buy gift card, but I never did. That's why I never did this competition again.\n\n\n\nNote: mathisawesome2169 says that when it's your first time, a good rule of thumb is that you get 7% off what you normally get. So, since I got 24 in the real test, that means I would have normally got a 25.68 if it wasn't my first time. That's totally going to happen. (By the way, this rule of thumb is normally accurate, but not if the test is too easy...)\n\n\n\n\n5th GradeMath LeagueTL;DRScore: 33/35\n\nPlace: 8th in State\n\nHappiness: :mad:\n\n\nFull StoryThis was my second math competition ever. Now, this was supposed to be a test for 6th graders, but since I was taking math 6/7, I was able to take the test. Again, I had lots of prior training to this. Same as last time, I had been getting perfect scores every time.\n\n\n\nThis was a 35 problem, 40 minute test. The problems were actually math, unlike Math Kangaroo. However, it was very simple math. It shouldn't be too hard, right?\n\n\n\nThe test was taken in my school, in the cafeteria. When we were called down to take the test, I was confident to get a 35. The problems were easy, and I checked over the problems about once. When the test was over, I was sure to get a 35.\n\n\n\nOr I might have failed. Which is what it turns out to have happened, when I got the test back the next day. How did I make two sillies? I don't know. Both of them were misreads, and I remember one of them was because I forgot the word \"remainder\" in \"someone sleeps 50% of the time, and eats for 30% of the remainder of the time\" (or something similar).\n\n\n\nmathisawesome2169's rule of thumb says that I would have gotten 7% off, which is 32.55. Pretty accurate!\n\n\n\nPurple CometTL;DRScore: 7/20\n\nPlace: Unplaced\n\nHappiness: :bomb:\n\n\nFull StoryThe Purple Comet is a 20-problem, 60-minute international team test. My team consisted of me, Hello7, another AoPSer, and another person who does not have an AoPS account.\n\n\n\nThe test was given right after my middle school ends; however, my elementary school ended later, so we had to get out in the middle of school to do the competition. The person without an AoPS account forgot and didn't end up going, so it was just me, Hello7, and the other AoPSer.\n\n\n\nI really didn't practice this, at all. I didn't know that the test was very hard. I thought it was just a normal test...\n\n\n\nWhen we were given the test, the first few problems were reasonably easy. We should have had a strategy to solving the problems, but we really didn't. We just went in order, assigning people to problems as we went. The first five-ish were easy. Then it got hard. Near the end, it was insane. We couldn't even touch the problems...\n\n\n\nWe literally failed. We got 7/20, and that didn't even place. We had to guess like 8 problems, and the other 5 were solved wrongly. Basically, we failed.\n\n\n\nInto 6th grade we go!\n\n\n\n\n6th GradeSchool MATHCOUNTSTL;DRScore: 67/92\n\nPlace: 3rd in School\n\nHappiness: :mad:\n\n\nFull StoryThis was a computer-based test that chose the top 12 people that will be the MATHCOUNTS team. However, this was not just the School MATHCOUNTS test.\n\n\n\nThe test was over two days. Both days, it was formatted like a MATHCOUNTS test - 30 sprint, 8 target, with target problems worth 2 points each. So, the whole thing was worth $46 \\cdot 2 = 92$ points.\n\n\n\nThe first day was similar to a School test in level. It was actually very easy. How did I fail sprint? I don't know. I even failed a problem that asked to find the sum of factors of 18. Yes. I failed that. I ended up getting a 22 on sprint. Literally everyone on AoPS could do better...\n\n\n\nI think I really concentrated after seeing the score (it was an online test that told you your score immediately), so I perfected the target.\n\n\n\nThe targets weren't timed the same way; instead of doing 4 pairs of problems with 6 minutes each, we got all 8 problems to do in 24 minutes. So, we could rush past the easy ones and take more time on the hard ones. That's probably a small part in why I perfected target.\n\n\n\nI expected other people to get a lot more in sprint, and so I was worried I would not make the team. I had the second day, however.\n\n\n\nThe second day, the difficulty was a lot harder. I remember one of the targets being an AIME problem. I didn't make many mistakes on the sprint or target, but ended up getting a 21 on sprint, and 8 on target (4 problems). Summing, my total score became a 67.\n\n\n\nI was anxiously waiting for the scores, still wondering if I had made the team. The results were a surprise. I had gotten third place in my school. I was 1 point behind idomath12345 and 11 points behind mathisawesome2169. I don't know if my school was really that bad, or if everyone sillied that much. (I guess it's part of both.)\n\n\n\nI still wasn't happy because of the first sprint. All of the problems were easy. However, it was fine, because my score was clean over the cutoff for the team. The cutoff was 42 points. Like, seriously? If I had gotten a few more points on the first sprint, I wouldn't have needed to take the second test. (I definitely would have taken it, but I didn't need to.)\n\n\n\nAMC 8TL;DRScore: 24/25\n\nPlace: 95th in Nation, 1st in State\n\nHappiness: :|\n\n\nFull StoryThe AMC 8 was taken during my Algebra I class. I was also taking practice tests, and had an average of about 24.7 as my score, every time. I was nervous, however. My goal was to get a 25, like normal.\n\n\n\nWhen I got the booklet, I first noticed that it was very small. I was not used to this. There was also a bubbling sheet - I did not know about this. Like normal, I went through the first 23 problems reasonably quickly. #18 was worded weirdly, and took a minute, but it wasn't too bad. However, after 22 problems, I noticed that there were about 3 minutes left. I took 2 minutes on #23, and then I was very panicked. I had to do two problems in 1 minute - or guess. #24 looked like a reasonably long algebra thing, so I went on to #25. After drawing some things, I noticed that this was also pretty long (and I didn't notice the simple way to do it). I had to guess on both of them.\n\n\n\nAfter eliminating two choices for each one, I guessed the most reasonable choice. I felt like I had gotten a 23.\n\n\n\nThe answers partly relieved me. I had guessed D for 24 and C for 25 - and it turns out I had gotten #25 correct! Number 24 was B, so I had gotten that wrong, but I was almost sure I had gotten a score of 24. That isn't too bad, but I wasn't too happy about the score. This gave me first in the state (RIP 3 24s in our school), but I still wanted a perfect 25. (Sidenote: I had gotten rid of the correct answer for #24. I read waaaay too quickly - not that I could have done anything else, but still.)\n\n\n\nmathisawesome2169's rule of thumb again: 7% off 25 is 23.25. Not that accurate, but not bad.\n\n\n\nChapter MATHCOUNTSTL;DRScore: 41/46\n\nPlace: 5th in Chapter\n\nHappiness: :|\n\n\nFull StoryAt first, I was really worried about this competition. I had thought, like state, that only the top 4 people get picked. A week before the competition, I was relieved when I had found out that the top two teams and 6 individuals make State; our team was very OP, so I should make it.\n\n\n\nThe competition took place at a university. It wasn't too far from home. I want to say 30 minutes, but again, since my memory is bad, it turns out it's closer to 15 minutes. (Message to self: Divide the time you expect by 2.)\n\n\n\nWe got the target first, because grading is faster. On the target, we had to write down the digits from 0-9 in case one of our numbers looks weird, and the graders could look at the list to see which number we meant. Since the target section had no boxes (it was on the sprint), we just wrote down the digits on the side of the paper. I accidentally started to write \"10\", and said \"oops, I almost wrote 10\" to the people around me. idomath12345 replied by saying \"10's not a digit.\" Then, we flipped over our paper when the time started. Problem 2, however, asked for the 50th digit in the sequence \"1223334444...\". The 45th digit is 9, and that almost made me think that 10 was the 50th digit. Then, I noticed that 10 was not a digit, so the answer was 1. Yes, idomath12345 foreshadowed the trick in Problem 2 (that 10 was not a digit) before we flipped the test over. Nice.\n\n\n\nAfter the third set (getting everything right until then), I was given the fourth set. Number 7 wasn't too hard, and then came number 8. I thought I could make a tree diagram to find the answer; but I screwed up somewhere. I had the same (incorrect) answer as idomath12345, but it ends up that mathisawesome2169 got the right answer anyways.\n\n\n\nThe sprint was sort of bad. I didn't get too terrible of a score (27/30), but it wasn't that good. This means I had gotten 41/46 as my total score.\n\n\n\nAfter lunch and boring waiting, the countdown people started to get called. I was called second-to-last (phew). Then, the ladder-style countdown began. I was called as 6th place. That wasn't that good. I was determined to CD up. My first opponent got the first problem right, but I came back to win the round. I won the second round as well, and then idomath12345 beat me in an intense comeback. I was winning 3-0... then he somehow managed to come back to win 3-4. Dang. (I have to give him the win, though, because in all three problems that I won, he buzzed in before me, and gave the problem that he clearly miscomputed in.)\n\n\n\nI ended up getting 5th after Countdown. Our team got first. I was easily making State, but I really didn't get too good of a score. In fact, my goal was to make Nationals; I really needed to up my game.\n\n\n\nState MATHCOUNTSTL;DRScore: 42/46\n\nPlace: 3rd in State\n\nHappiness: :wow:\n\n\nFull StoryHere it was. State. This decides whether I reach my goal or not.\n\n\n\nI had driven 3 hours the previous day to get here. (I don't want to divide by 2 this time, I'm pretty sure it was 3 hours. Google Maps says it was 2 hours and 30 minutes. Good enough. Finally, memory.)\n\n\n\nThe competition was, again, at a university. I was very nervous for the test to come out. After a while, the target came out first, again. I ripped through the first 3 sets, and was on the last one. My answer matched the rest of the team, so I was fairly certain I had all 12 so far.\n\n\n\nNumber 7 was easy enough; however Number 8 looked hard. However, making just one good diagram (which I managed to do on my first try) showed me that this was just two pyramids. I solved it - with a computational mistake.\n\n\n\nThankfully, I fixed the mistake a few seconds before time was up. The answer to number 7 matched the rest of the team, but number 8 didn't.\n\n\n\nI mean, two members of our team didn't even solve it. However, me and mathisawesome2169 had conflicting answers. Soon, we checked with other people in the room, and most of the people that solved the problem had my answer. So was it correct?\n\n\n\nPeople were really not sure, so we ended up literally ripping out the shape (the problem, by the way, was to find the volume of a solid from its net) from scratch paper and folding it. It didn't work out perfectly, but it seemed like I solved it correctly. mathisawesome2169 said that there was some space in the middle you had to subtract, but the folding showed that there wasn't. After mathisawesome2169 started facepalming, I was mostly sure that I had gotten a perfect score on the Target. This was a very relieving moment in the day, but a few more were to come.\n\n\n\nThen came sprint. The problems seemed normal, and #30 was phet. However, this sprint of normal difficulty gave me hope. I expected to get around 24-25 for sprint, after comparing answers.\n\n\n\nAgain, after lunch, we had countdown. The first names were called. Name after name, it wasn't mine. They called the ninth name. Guess what? Not mine. My heart was thumping\n\n\n\nI guess I'm pessimistic, because I kept expecting to be called next. However, name after name, I wasn't called. At #5, idomath12345 was called. This surprised me, because I would have never expected to beat him. idomath12345 won his first round. Then, #4 was to be called. If it was me, then I would probably not make nationals, because idomath12345 is good at CD. It wasn't me.\n\n\n\nThis guaranteed me nationals. This was, by far, the best moment of the day. With lots of relief, I watched idomath12345 win the next round, also guaranteeing him nationals. This meant that me, mathisawesome2169, and idomath12345 were guaranteed nationals, along with the other guy (who was srg12) that was sitting at the table.\n\n\n\nThen, mathisawesome2169 was called. I had somehow beaten him individually. He beat idomath12345, and THEN I was called. 2nd individually. Now, the OP mathisawesome2169 demolished me in CD, but I still had the best feeling of my life - making nationals.\n\n\n\nsrg12 got called as first individually, and he beat mathisawesome2169, but I really didn't care about who won. I was going to nationals. I would be in Washington DC from May 7 to 10.\n\n\n\nThen, after the awards, the scores came out. I had beaten mathisawesome2169 by 2 points, and I had beaten idomath12345 by 4 points! I had gotten 26 on sprint, with a total score of 42, tied with srg12. (He had gotten 26/16 as well, but had #30 correct, so he beat me in tiebreakers.)\n\n\n\nMath LeagueTL;DRScore: 35/35\n\nPlace: 1st in State\n\nHappiness: :wow:\n\n\nFull StoryThis is the first competition that I have done twice. You can see the plot in the previous Math League in 5th grade; if you don't want to go back, basically my grade got called down to a large cafeteria in my school.\n\n\n\nI hadn't done any practice tests since last year, but like last year, it should be easy. I had made no sillies at state, so I had definitely learned to not make sillies as much. This should be an easy perfect.\n\n\n\nAfter 35 laughable problems and a few more double-checks, I got an easy 35. I really don't have anything much to say here about my emotions. When I got my test back, I just looked at the score of 35, and put it in my math folder. I mean, I would rather put :-D as my TL;DR happiness, but if a perfect doesn't get a :wow: , then what will?\n\n\n\nPurple CometTL;DRScore: 19/20\n\nPlace: 1st in World\n\nHappiness: :wow:\n\n\nFull StoryThis time, our team was better. It consisted of me, idomath12345, mathisawesome2169, The_Donger, RareCandy, and another AoPSer - the six best people in the school.\n\n\n\nSome of the other people decided to bring their AoPS books, which we didn't need. idomath12345 even brung his Calculus book... definitely did not need that. This time, we had a strategy. I was to do the multiples of 3 backwards. Number 18 was hard, so I barely finished #12 when people needed help on other ones. #16 I think was a reasonably easy 3-D volume finding, but we needed help on #20. Me, idomath12345, and someone else (I forgot) spent the rest of the time on #20 - idomath12345 getting the wrong answer, and the other two (including me) didn't get anything. We had to put down the wrong answer, which I figured out was wrong soon afterwards. There went the perfect 20 dream...\n\n\n\nIt turns out we got 19/20. However, that was first internationally. Seriously, nobody had gotten 20 in the whole world! I heard that some teams had gotten #20 correct, but sillied something else. That was a hard test, then. We still managed to get first in the world.\n\n\n\n(By the way, our team name was the 7 Idiotic Snorlaxes.)\n\n\n\nNational MATHCOUNTSTL;DRScore: 30/46\n\nPlace: 42nd in Nation\n\nHappiness: :-D\n\n\nFull StoryThis was Nationals, at Washington DC.\n\nOn the day that we were going there, I left at... I'm really bad at memory, okay? I think I left at like 6, met with the other MI natsers at 8 (at the airport), and got to DC at 10. After registration and going in our room (with mathisawesome2169), in a bit, it was lunch. (I don't remember too much... sadly...) Lunch was standard lunch (obviously) food.\n\n\n\nI don't remember who we [MI team] sat with every meal. Like, I think we sat with SC once? I don't pay attention to these things... After the meal, we went to our room, and since neither of us had our phones, we played with our trashy school iPads that had many websites blocked. I found a website that was unblocked and all we could play was games that people programmed on Khan Academy (but it was enough, I guess...)\n\n\n\nThere was pin trading at dinner, but idomath12345 and srg12 had traded so much that 60% of the people I asked had already gotten a MI pin. idomath12345 had gotten all the pins except for Tennessee (out of the states that had pins). Getting pins was hard. I ended up getting about half (27-29ish), after all 3 days.\n\n\n\nThen, after more waiting and games on the internet and stuff, we slept.\n\n\n\nThe competition was in a large room, with all 56 states getting a table. Each table was divided in four. After the roll call thing (some states had clever ideas, some didn't *cough cough* us *cough cough*), we got the sprint test.\n\n\n\nIt was way too hard. Number four was too hard for a question that early, and the last ten were just trashily hard. I had to guess on like 5 problems at the end. Ugh. This... like, really? I got a 20 on sprint... nobody even wanted to talk about it.\n\n\n\nThe target was fine... up to number 4. I somehow managed to fail both #5 and 6. They weren't even insanely hard. I managed to get number 8, but that was another 10 on target. 20/10=2 30. I later learned that I had gotten 42nd when the results were posted online. Team round was even worse; number 3 was bash, number 5 was troll, number 8 was another counting bash problem... We got 6 (12 points).\n\n\n\nHey, at least everyone thought it was hard. I went over to Luke who said he got a 44 on the test. How, though? I thought Luke would dominate at individuals.\n\n\n\nAfter getting to my room, I immediately got on AoPS and posted and stuff. The rest of the day, we toured the city a bit, etc, and then we slept, whatever. The time between competitions and stuff is boring.\n\n\n\nSo at countdown, I expected mathisawesome2169 to get in and nobody else from our team to. Obviously, I was right. the run-in was fun, and then, we were waiting for the states. We were called as the 10th place team - at least we made the top 10! Texas dominated every other team. I was surprised when Luke was called 2nd... and it turns out someone PERFECTED the test. (Note to MATHCOUNTS: give Edward an AIME-level test next year.)\n\n\n\nI was mainly going for mathisawesome2169, but when he lost, I was rooting for Luke (second sixth grader ever to win if he won). The finals were so intense, and the last problem was so easy. It should have been an instabuzz, but whatever. Congrats, Edward Wan!\n\n\n\nThen came the video challenge. Four videos on very easy problems... the first one was very easy, the second was easier, the third was harder but still easy, and the last had computations but was still easy. Why can't anyone use harder problems?\n\n\n\nThen came the banquet. The food was nice, I don't like cheesecakes, but the chocolate calculator was cool.\n\nI somehow managed to sit next to fwbrmath2, one of the few spammers (at least formerly) in the MC nats forum. Yay, spamming is awesome! The awards ceremony wasn't really that fun on its own... it was probably made 5x more fun because I tried to make fwbrmath2 fail the game Dumb Ways to Die that she was playing [by reaching over and tapping the screen]. I tried like 20 times and was successful only half the time. (I'm bad D:)\n\n\n\nOkay, so then after that, all of the MI people went to me and mathisawesome2169's room to play cards. I got last place... I'm bad (like always).\n\n\n\nAfter that we slept again, and we were leaving the hotel. This was the end of Nationals. As far as my score goes, it wasn't bad, but wasn't insanely good, either. After getting to the airport, we played cards there, too. I managed to pull off 2nd place... I have learnt from the day before. (idomath12345 won.)\n\n\n\n\n\n\nSo that's it! All the competitions I've done so far. I also plan to do this every year unless everyone hates the style or whatever. Give feedback below if you want.",
+      "url": "https://artofproblemsolving.com/community/c3h1288931_math_competition_history_46th_grade_3141th_post",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1291022",
+      "title": "k Algebra 1 Final",
+      "text": "What is the best way to study for a common core algebra 1 final? Resources would be awesome :blush:",
+      "url": "https://artofproblemsolving.com/community/c3h1291022_algebra_1_final",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1293996",
+      "title": "algebric equation",
+      "text": "x and y are integers such that -4<x and y<4.Also x(x-3) = y(y-3). Then the no. of possible values of x+y is:\n\noptions\n\n(A)7    (B)8      (C)9     (D)None",
+      "url": "https://artofproblemsolving.com/community/c3h1293996_algebric_equation",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1294465",
+      "title": "k Posting in msm",
+      "text": "I'm going into 9th grade, so does that mean after this summer ends I will be banned from posting in middle school math",
+      "url": "https://artofproblemsolving.com/community/c3h1294465_posting_in_msm",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1294275",
+      "title": "Fraction problem",
+      "text": "$1/20 + 1/22 + 1/24 + ...... 1/36 + 1/38$",
+      "url": "https://artofproblemsolving.com/community/c3h1294275_fraction_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1291819",
+      "title": "k Can you solve this?",
+      "text": "If you are really intelligent, try to solve this tricky problem:\n\n\n\nA bacteria is put in a beaker. It is said that the bacteria multiplies twice every second.The beaker was full after a minute.\n\nWhen was the beaker half full?\n\n\n\nTry and solve this.",
+      "url": "https://artofproblemsolving.com/community/c3h1291819_can_you_solve_this",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1294001",
+      "title": "triangles",
+      "text": "Two triangles ABC and PQR are congrurent . They are joined along an equal edge to form a new triangle XYZ. Also,angles of XYZ and ABC are same.If one of the sides of triangle PQR is 2 units,the possible area of triangle PQR",
+      "url": "https://artofproblemsolving.com/community/c3h1294001_triangles",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1291037",
+      "title": "Lattice Point Probability",
+      "text": "A triangle $ABC$ is plotted in a $10$ by $10$ coordinate plane. If $A, B, C$ are lattice points, what is the probability that the area of the triangle is of an integer value?",
+      "url": "https://artofproblemsolving.com/community/c3h1291037_lattice_point_probability",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1292777",
+      "title": "Inequality",
+      "text": "Prove $\\sum_{k=1}^n \\frac{1}{k^2} < 2$\n\n\n\nI have a solution using telescoping, but is there a quicker way with induction?\n\n\n\nEDIT: Fixed  :blush:",
+      "url": "https://artofproblemsolving.com/community/c3h1292777_inequality",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1284371",
+      "title": "Euler's method",
+      "text": "Hi guys\n\nCan someone plz explain to me in what is the Euler's method and also the slope function???\n\nThx :)",
+      "url": "https://artofproblemsolving.com/community/c3h1284371_eulers_method",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1225611",
+      "title": "Hard Question",
+      "text": "When I took a test yesterday (and is only conducted yesterday), there was a question that seemed hard. After the test, I found a trig\n\nsolution (using sin(a+b)), but I wanted to know a simpler solution. Here is the question.\n\n_____________________________________________________________________________________________________________________\n\nConsider the following rectangle, $ADEH$ (they typoed and meant ADHE), that contains three congruent squares. Prove that the sum of the angles $\\angle BEF, \\angle CEF,$ and $\\angle DEF$ is a right angle.",
+      "url": "https://artofproblemsolving.com/community/c3h1225611_hard_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1292373",
+      "title": "A win-lose game",
+      "text": "There are a pile of 100 face-down cards. Forty of them are marked lose; 60 are marked win. In the game, you choose 90 cards, randomly, without replacement, from the stack. If you pick up a win card, then you increase the amount of money in your hand by 50%, while a lose card takes away 50%. If you start with $100, then what is the expected amount of money you have at the end of the game?\n\n\n\nExample:\n\nYou get WLLW....\n\n\n\n100 --> 150 --> 75 --> 37.5 --> 56.25 --> ...",
+      "url": "https://artofproblemsolving.com/community/c3h1292373_a_winlose_game",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1292928",
+      "title": "k Register for competition",
+      "text": "Since I can't reply to the old topic I made, and no one answered my question, how do you register for AMC?",
+      "url": "https://artofproblemsolving.com/community/c3h1292928_register_for_competition",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1270157",
+      "title": "k Series Question",
+      "text": "What is the sum of the infinite series 1 + 2/3 + 4/9 + 8/27. . .?",
+      "url": "https://artofproblemsolving.com/community/c3h1270157_series_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1292563",
+      "title": "clock question",
+      "text": "its now between 10 and 11 and 6 min from now the minute hand of a clock will be opposite the place where the hour hand was 3 min ago what is time now?\n\ni got the answer but i need aops geniuses to verify",
+      "url": "https://artofproblemsolving.com/community/c3h1292563_clock_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1292813",
+      "title": "Mathcounts Formatting",
+      "text": "So I wanted to make a Mock Mathcounts Competiton (sprint, target, and team) for my school to help them prepapre for this years competition. I want it to look as close as possible to what the actual test would look like so I need to place the formatting on it. Does anyone know how to get/make the formatting for the Mathcounts tests?",
+      "url": "https://artofproblemsolving.com/community/c3h1292813_mathcounts_formatting",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1291551",
+      "title": "Countdown Question",
+      "text": "Compute the value of expression:\n\n(2011^3 - 2000^3 - 11^3) / (2011)(2000)(11)\n\n\n\nIs there a quick way to do this question?",
+      "url": "https://artofproblemsolving.com/community/c3h1291551_countdown_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1290515",
+      "title": "MATHCOUNTS 2014 National Sprint #28",
+      "text": "If $f(x)=\\frac{ax+b}{cx+d},$ $abcd \\neq 0$ and $f(f(x))=x$ for all $x$ in the domain of $f$, what is the value of $a+d$?\n\nAnswer0\n\n\n\n\nOn a side-note, I have a question regarding the speed needed for the sprint round. In general, should I go slow without sillies or fast with sillies? If I go slow I won't stress out as much and won't have a lot of sillies (about 1-4) but will likely miss a total of 4-7 problems (on practically any level except School) and if I go fast I will stress and miss only 1-3 problems but will also have a lot of sillies (about 5-7).\n\n\n\nThanks in advance!\n\nfatant",
+      "url": "https://artofproblemsolving.com/community/c3h1290515_mathcounts_2014_national_sprint_28",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1292730",
+      "title": "Quadratic Polynomial Linear System Bash",
+      "text": "There exists polynomials $P$ and $Q$ where, let $R = P-Q,$\n\n\n\n$$R(10) = 6,$$$$R(9) = 7,$$$$R(8) = 8.$$\n\n1. Prove the infinity of satisfactory functions $P,Q.$\n\n\n\n2. Let $Q(x) = x^2 + x + 1.$  What is $P$?",
+      "url": "https://artofproblemsolving.com/community/c3h1292730_quadratic_polynomial_linear_system_bash",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1285033",
+      "title": "Geometry Problem inscribed cube in sphere",
+      "text": "A sphere has a volume of 27pi cubic inches. What is the number of cubic inches in the\n\nvolume of the largest cube that fits inside of the sphere?",
+      "url": "https://artofproblemsolving.com/community/c3h1285033_geometry_problem_inscribed_cube_in_sphere",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1291534",
+      "title": "k Popular contests",
+      "text": "Hi everyone, I am from norway and I am moving to USA soon. I am 13, what are some popular math tests around the USA? Thank you!!!",
+      "url": "https://artofproblemsolving.com/community/c3h1291534_popular_contests",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1292527",
+      "title": "Weird fractions",
+      "text": "Find the number of ordered pairs a,b,c,d of positive integers such that the sum of the reciprocals of a b c and d is 1.\n\na is less than b which is less than which is less than d.\n\n\n\nSorry for no latex",
+      "url": "https://artofproblemsolving.com/community/c3h1292527_weird_fractions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1292462",
+      "title": "300! Calculation Error",
+      "text": "I stumbled in the HSO a question like this. Prove that $300! < 100^(300)$.(false)\n\n\n\nThere is an error in the below \"solution\"; please help me resolve it.\n\n\n\nRESOLVED\n\n\n\n300!\n\n$1\\cdot299=(150-149)(150+149)=150^2-149^2 $\n\n$2\\cdot298=(150-148)(150+148)=150^2-148^2$\n\n...\n\n$149\\cdot151=(150-1)(150+1)=150^2-1^2$\n\n$= ((150^2-149^2)(150^2-148^2)...)\\cdot300\\cdot150$\n\n\n\n\n\nAnd help me with 100^300 in latex please",
+      "url": "https://artofproblemsolving.com/community/c3h1292462_300_calculation_error",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1292640",
+      "title": "Prove the basic formula of sequence level 2",
+      "text": "We know that if we want to make a formula of $U_n$ of a sequence level 2 , we always use the basic fomula of $$an^2+bn+c$$Is anybody can prove the basic formula, why we use it , and where it come from?",
+      "url": "https://artofproblemsolving.com/community/c3h1292640_prove_the_basic_formula_of_sequence_level_2",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1257611",
+      "title": "Math Warm-up Competition",
+      "text": "This competition will be a warm-up for Mathcounts. It won't be a real warm-up (I'll just make warm-up problems), but I think it will be a relaxing and fun competition. I will need a few test-solvers (5 at the most), and, if you want, you can PM me to help make problems.",
+      "url": "https://artofproblemsolving.com/community/c3h1257611_math_warmup_competition",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1292349",
+      "title": "2009 Mathcounts CDR",
+      "text": "$a$ and $b$ are randomly taken from the set $\\{0,1,2,3,4,5,6,7,8,9\\}$. What is the probability that the equation $x^2+2ax+b=0$ has two real roots?\n\n\n\nVery nice problem, in my opinion.\n\n\n\n@below: Ok, $a$ and $b$ are distinct.",
+      "url": "https://artofproblemsolving.com/community/c3h1292349_2009_mathcounts_cdr",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1229609",
+      "title": "Mods of Fractions",
+      "text": "Why is $$11/36 \\equiv 11 (mod 36)$$:|\n\nOr did I read that FTW question wrong",
+      "url": "https://artofproblemsolving.com/community/c3h1229609_mods_of_fractions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1290188",
+      "title": "Annoying Sequence",
+      "text": "Look at the sequence bellow:\n\n1,1,1,2,2,3,3,4,5,5,8,6,13,7,21,x,y,z,.........\n\nQuestion:\n\nX=......\n\nY=......\n\nZ=......",
+      "url": "https://artofproblemsolving.com/community/c3h1290188_annoying_sequence",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1291348",
+      "title": "decimal expansion",
+      "text": "Find the smallest positive integer n such that the decimal expansion of 1/n has just 4 non-recurring digits and is non-terminating. Any idea.",
+      "url": "https://artofproblemsolving.com/community/c3h1291348_decimal_expansion",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1276575",
+      "title": "Tricky Geometry Question",
+      "text": "Equilateral triangle ABC is inscribed in circle O with radius 3. Find the area of triangle ABC.",
+      "url": "https://artofproblemsolving.com/community/c3h1276575_tricky_geometry_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1281318",
+      "title": "Math Question",
+      "text": "If a > b, is 1/a always less than 1/b?",
+      "url": "https://artofproblemsolving.com/community/c3h1281318_math_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1279309",
+      "title": "multi variable equation",
+      "text": "1.) if x=y^2+12, what is the value of y in terms of x?\n\n2.) if x=y+|-4|-|-5|+6 what is the value of y in terms of x?\n\n3.) 2/5 * 1/2y = 1/100 what is the value of y? is the answer 1/20 or 20?",
+      "url": "https://artofproblemsolving.com/community/c3h1279309_multi_variable_equation",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1284498",
+      "title": "k Sum of Cubes = Specific Squares",
+      "text": "Hello guys! I stumbled upon a very interesting fact today. I noticed that the following is true:\n\n\n\n\n\n$1^3$=$1^2$\n\n$1=1$\n\n\n\n\n\nEverybody knows that though.... here is where it gets strange...\n\n\n\n$1^3+2^3$=$(1+2)^2$\n\n$9$=$3^2$\n\n\n\n\n\n\n\nAnd it keeps going.....\n\n\n\n\n\n$1^3+2^3+3^3$=$(1+2+3)^2$\n\n$36$=$6^2$\n\n\n\n\n\nAnd going.....\n\n\n\n\n\n$1^3+2^3+3^3+4^3$=$(1+2+3+4)^2$\n\n$100$=$10^2$\n\n\n\nAND GOING\n\n\n\n\n\n$1^3+2^3+3^3+4^3+5^3$=$(1+2+3+4+5)^2$\n\n$225$=$15^2$\n\n\n\n\n\n\n\nAnd so on....\n\n\n\nI need somebody to help me prove this.\n\n\n\nThank you!",
+      "url": "https://artofproblemsolving.com/community/c3h1284498_sum_of_cubes__specific_squares",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1291466",
+      "title": "Highest point of a quadratic",
+      "text": "Joey the kangaroo jumps from his bench at a trajectory of $-16t^{2} + 20t + 1$\n\n\n\nWhat is the highest distance Joey got off the ground and how long did that take?",
+      "url": "https://artofproblemsolving.com/community/c3h1291466_highest_point_of_a_quadratic",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1178511",
+      "title": "Stars and Bars",
+      "text": "I was looking at an explanation of the Stars and Bars technique with combinations, but I wasn't able to grasp exactly how to use this based on the example. Does anyone know how to explain?",
+      "url": "https://artofproblemsolving.com/community/c3h1178511_stars_and_bars",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1264638",
+      "title": "Latex...or is it LaTex?",
+      "text": "Not exactly a math problem, but still pretty important...\n\nCan somebody show me how to use Latex? I have no idea.\n\nThanks  :showoff:",
+      "url": "https://artofproblemsolving.com/community/c3h1264638_latexor_is_it_latex",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1291321",
+      "title": "Very nice problem",
+      "text": "Some students stand in a circle. The teacher asked the students standing next to each other to shake each other hands. Let $b$ be the number of boys, $g$ be the number of girls, $B$ be the number of pairs of boys shake each other hands, $G$ be the number of pairs of girls shake each other hands. Prove that $b-g=B-G$",
+      "url": "https://artofproblemsolving.com/community/c3h1291321_very_nice_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1273799",
+      "title": "k Sum of all positive integers up to infinity equal to -1/12?",
+      "text": "What is the value of $\\sum_{k=1}^{\\infty} k$, in other words what is the value of $1+2+3+4+5+\\cdots+\\infty$?\n\n\n\nhttps://www.youtube.com/watch?v=w-I6XTVZXww\n\n\n\nSequence 1: $S_1 = 1-1+1-1+\\cdots$\n\nSequence 2: $S_2 = 1-2+3-4+\\cdots$\n\nSequence 3 (the answer, $\\sum_{k=1}^{\\infty} k$ ): $S_3 = 1+2+3+4+\\cdots$\n\n\n\nTo start things off, what is the value of Sequence 1? If we stop at an odd element (such as element $1$, $3$, $5$, $\\cdots$), we get the value of $1$, however if we stop at an even element (such as element $2$, $4$, $6$, $\\cdots$), we get the value of $0$. So which is it? The problem is that we never stop, then using string theory, the answer is the average of the two:\n\n\n\n$\\frac{1+0}{2}=\\frac{1}{2}$\n\nDon't believe me? Check this link out thenhttps://www.youtube.com/watch?v=PCu_BNNI5x4\n\n\n\n\nNow to find the value of Sequence 2, but before that, what is the value of $2$ times the value of Sequence 2?\n\n\n\n$2S_2$\n\n$S_2+S_2$\n\n$[1-2+3-4+5-6+7+\\cdots]+[1-2+3-4+5-6+7+\\cdots]=$\n\n$1-2+3-4+5-6+7+\\cdots+1-2+3-4+5-6+7+\\cdots=$\n\nNotice carefully in the next step how we are going to add:\n\n$1+(-2+1)+(3-2)+(-4+3)+(5-4)+(-6+7)+\\cdots=$\n\n$1-1+1-1+1-1+\\cdots=$\n\n\n\nRemember this sequence? The value of this sequence is $\\frac{1}{2}$ as I stated earlier so:\n\n\n\n$2S_2=S_1$\n\n$2S_2=\\frac{1}{2}$\n\n$S_2=\\frac{\\frac{1}{2}}{2}$\n\n$S_2=\\frac{1}{4}$\n\n\n\nWe now move onto the final sequence, $S_3$, the difference of $S_3$ and $S_2$ must be then:\n\n\n\n$S_3 - S_2$\n\n$[1+2+3+4+5+6+7+\\cdots] - [1-2+3-4+5-6+7+\\cdots]$\n\n$1+2+3+4+5+6+7+\\cdots-1+2-3+4-5+6-7+\\cdots$\n\n$(1-1)+(2+2)+(3-3)+(4+4)+(5-5)+(6+6)+(7-7)+\\cdots$\n\n$0+4+0+8+0+12+0+\\cdots$\n\n$4(1+2+3+4+5+6+7+\\cdots)$\n\n\n\nIf you look closely, you'll see $S_3$ in the end result! This brings us to our next step:\n\n\n\n$S_3-S_2=4S_3$\n\n$S_3-\\frac{1}{4}=4S_3$\n\n$-\\frac{1}{4}=3S_3$\n\n$-\\frac{1}{12}=S_3$\n\n\n\nSo the value of $\\sum_{k=1}^{\\infty} k$ is $-\\frac{1}{12}$!!!\n\n\n\n:w00t:   :w00t:   :w00t:   :w00t:   :w00t:",
+      "url": "https://artofproblemsolving.com/community/c3h1273799_sum_of_all_positive_integers_up_to_infinity_equal_to_112",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1289761",
+      "title": "Question",
+      "text": "In a quadrilateral, if the diagonals are equal, is there anything we can conclude about the figure?",
+      "url": "https://artofproblemsolving.com/community/c3h1289761_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1286505",
+      "title": "7th Grade Word Problem About a Rhombus",
+      "text": "A rhombus has an area of 5 square meters and a side length of 3 meters. In another similar rhombus, the length of a side is 9 meters. What is the area of the second rhombus?",
+      "url": "https://artofproblemsolving.com/community/c3h1286505_7th_grade_word_problem_about_a_rhombus",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1291250",
+      "title": "Aops books",
+      "text": "What would be the most common order to do the AOPS books.\n\n\n\n-Volume 1: The Basics\n\n-Volume 2: Beyond\n\n-Prealgebra\n\n-Introduction to Algebra\n\n-Introduction to Counting and Probability\n\n-Introduction to Geometry\n\n-Introduction to Number Theory\n\n-Intermediate Algebra\n\n-Intermediate Counting and Probability\n\n-Precalculus\n\n-Calculus\n\n\n\nAny help would be appreciated.",
+      "url": "https://artofproblemsolving.com/community/c3h1291250_aops_books",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1291029",
+      "title": "Math Help",
+      "text": "Hi All,\n\nPlease answer the question because I need help. Thanks!\n\nWhat is the largest value of x such that 100! is divisible by 2 to the power of x.\n\nThanks again,\n\nRS428848",
+      "url": "https://artofproblemsolving.com/community/c3h1291029_math_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1290931",
+      "title": "Slope Proof",
+      "text": "Let there be a point $(x,y)$ on line $l$ with slope $m$. Find the equation of line $l$ in terms of $m,x,y$. Prove your answer.",
+      "url": "https://artofproblemsolving.com/community/c3h1290931_slope_proof",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1291025",
+      "title": "k How Do I post with Gamebot?",
+      "text": "Hi, I was wondering how to post with gamebot. I know im not allowed to post alcumus questions in other forums besides the Alcumus forum. If anyone knows thanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1291025_how_do_i_post_with_gamebot",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    }
+  ]
+}

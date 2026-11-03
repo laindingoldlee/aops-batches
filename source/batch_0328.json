@@ -1,0 +1,501 @@
+{
+  "format": "aops-topic-previews-v1",
+  "scope": "Loaded topic previews, not full replies or screened questions",
+  "source_archive_sha256": "15978407a01483794e215aef89ec1c105caa4e7154d91211c94bd95ef7186726",
+  "batch_number": 328,
+  "source_row_start": 32701,
+  "source_row_end": 32749,
+  "topic_count": 49,
+  "topics": [
+    {
+      "topic_id": "1197133",
+      "title": "AXG 420: Lights Blinking",
+      "text": "The AXG 420 is an unsinkable ship with three types of lights: A, X, and G. The A light begins blinking at the 3rd second, and blinks every 11 seconds. The X light begins blinking at the 5th second, and blinks every 13 seconds. The G light begins blinking at the 1st second, and blinks every 9 second. Find the first time all three lights will blink together, making the ship strong.",
+      "url": "https://artofproblemsolving.com/community/c3h1197133_axg_420_lights_blinking",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1197126",
+      "title": "geo prob",
+      "text": "Magda told Sam that an isosceles trapezoid must also be a parallelogram because there is a pair of congruent sides in an isosceles trapezoid. Is Magda correct? Explain.",
+      "url": "https://artofproblemsolving.com/community/c3h1197126_geo_prob",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1197381",
+      "title": "Finding Domain and Range",
+      "text": "Ok so I was asked to find the domain and range of $f(x)=\\dfrac{1}{\\sqrt{x+1}+3}$ and I decided to get rid of the nasty radicals in the denominator by multiplying by the conjugate, $\\sqrt{x+1}-3$. So now we have $\\dfrac{\\sqrt{x+1}-3}{x-8}$. So I thought, \"well since $x-8\\neq0$ obviously $8$ can't be in the domain\" but when I plugged it into the original expression I got a valid, defined output $\\big{(}\\dfrac{1}{6}\\big{)}$. So what did I do? :o\n\n\n\nAlso anyone else get $\\big{(}0,\\dfrac{1}{3}\\big{]}$ for the range?",
+      "url": "https://artofproblemsolving.com/community/c3h1197381_finding_domain_and_range",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1197214",
+      "title": "Help on Geometry Problem",
+      "text": "I currently can't find any smart moves or anything, what is the key to solving this problem?\n\n\n\nIsosceles triangle $ABC$ has a right angle at $C$. Point $P$ is inside triangle $ABC$, such that $PA = 11$, $PB = 7$, and $PC = 6$. Legs $\\overline{AC}$ and $\\overline{BC}$ have length $s = \\sqrt{a + b \\sqrt{2}}$, where $a$ and $b$ are positive integers. What is $a + b$?\n\n\n\nAsymptote code below\n\nIMAGE",
+      "url": "https://artofproblemsolving.com/community/c3h1197214_help_on_geometry_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1197069",
+      "title": "Any Better Solution?",
+      "text": "Is there any better solution than just trying to find the answer with the distance formula for this question?\n\n\n\nA circle passes through the points $(6,7),(-6,-5),(2,11).$ Find the radius of the circle.",
+      "url": "https://artofproblemsolving.com/community/c3h1197069_any_better_solution",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1197127",
+      "title": "Nicer way for large distinguishability problems",
+      "text": "Suppose I have 10 indistinguishable things I want to distribute among 5 distinguishable containers. Am I just supposed to list it all out? Is there a nicer solution? Thanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1197127_nicer_way_for_large_distinguishability_problems",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1197359",
+      "title": "Counting Techniques",
+      "text": "So how would you solve questions such as, \"How many ways can $3$ positive integers be chosen so that they sum to $10$? Cases such as $4$, $3$, $3$ and $3$, $4$, $3$ are counted as the same.\" (I solved it by bashing)\n\n\n\nI tried stars and bars, however the containers are indistinguishable, so that technique does not work. I remember there was a formula but I can't find it oops so can anyone help? Thanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1197359_counting_techniques",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196791",
+      "title": "Vieta's Problem",
+      "text": "If $a$ and $b$ are the roots of the equation $x^2+5x+3$, then what is the value of $(\\sqrt{a}+\\sqrt{b})$$(\\sqrt{a}+\\sqrt{b})$?\n\n\n\n\n\n\n\n\n\nEdit :\n\nSource-Whiteawesomesun's blog http://artofproblemsolving.com/community/c127371h1196789_a_vietas_problem",
+      "url": "https://artofproblemsolving.com/community/c3h1196791_vietas_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1197169",
+      "title": "How to solve mod 1000",
+      "text": "Lately I've been experimenting on mod 1000 and found no easy pattern to solve this. Can someone help me solve questions like these, note that I want to find the least positive integer value.\n\n\n\n$$101x \\equiv 101 \\pmod{1000}$$\n\nor like $$12321x \\equiv 321 \\pmod{1000}$$\n\nThanks,\n\ngenie\n\n\n\nEDIT: sorry canton should've specified...I want one of those answers like they give in wolfram which is like $1+1000n$ or $1+250n$\n\nEDIT: oops nvm figured how sorry lemme ask a mod to delete this",
+      "url": "https://artofproblemsolving.com/community/c3h1197169_how_to_solve_mod_1000",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1197128",
+      "title": "geo prob",
+      "text": "Sylvia drew what she thought was an isosceles trapezoid. She measured the base angles and found that they measured 81°, 79°, 101° and 99°. Could her drawing be an isosceles trapezoid? Explain.",
+      "url": "https://artofproblemsolving.com/community/c3h1197128_geo_prob",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1197068",
+      "title": "9 IMPROVED, What subject do u like most",
+      "text": "Plz put your vote in this improved vote system by me, Parth.MOEMS stand for Math Olympiad Contest Problems for Elementary and Middle Schools",
+      "url": "https://artofproblemsolving.com/community/c3h1197068_improved_what_subject_do_u_like_most",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196516",
+      "title": "Simplification of negative exponents and fractional exponent",
+      "text": "Simplify $ \\frac{x^-1 - y^-1}{x^{1/3} - y^{1/3}}$.",
+      "url": "https://artofproblemsolving.com/community/c3h1196516_simplification_of_negative_exponents_and_fractional_exponent",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1197049",
+      "title": "Balls and Jars",
+      "text": "There are 16 balls in a jar. There are 4 red balls, 4 blue balls, 4 green balls, and 4 yellow balls. Each of the balls have different designs (meaning they are distinct). 8 balls are chosen from the jar and there must be 2 of each color. How many ways are there to chose the balls?\n\n\n\nPlease explain.",
+      "url": "https://artofproblemsolving.com/community/c3h1197049_balls_and_jars",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196745",
+      "title": "Balls and Jars Counting",
+      "text": "There are 16 balls in a jar. There are 4 red balls, 4 blue balls, 4 green balls, and 4 yellow balls. Each of the balls have different designs. 8 balls are chosen from the jar and there must be 2 of each color. How many ways are there to chose the balls.",
+      "url": "https://artofproblemsolving.com/community/c3h1196745_balls_and_jars_counting",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196806",
+      "title": "Greatest Number that Cannot Be represented",
+      "text": "Hey, So I've been wondering.\n\n\n\nI recently saw a chain of problems that ask what is the greatest possible integer that cannot be represented by the sum of these 2 numbers. I know how to solve this, just the chicken mcnugget. But how would you solve a problem asking what is the greatest possible integer that cannot be represented by the sum of 3 numbers? Like take for example, 4,7, and 5. Any ideas?",
+      "url": "https://artofproblemsolving.com/community/c3h1196806_greatest_number_that_cannot_be_represented",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1194336",
+      "title": "Huge Multiplication",
+      "text": "How many zeroes are in 1*2*3*...*10?",
+      "url": "https://artofproblemsolving.com/community/c3h1194336_huge_multiplication",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1194685",
+      "title": "mathcounts",
+      "text": "In regular pentagon ABCDE, point M is the midpoint of side AE, and segments\n\nAC and BM intersect at point Z. If ZA = 3, what is the value of AB? Express\n\nyour answer in simplest radical form.",
+      "url": "https://artofproblemsolving.com/community/c3h1194685_mathcounts",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196662",
+      "title": "Mathcounts",
+      "text": "Harry and Mary are on a straight road traveling towards each other.Harry is traveling at 20 mph and Mary is traveling at 40 mph.When Harry and Mary are 12 miles apart,Zeke passes Harry while traveling 50 mph in the same direction as Harry.How many miles apart are Harry and Mary when Zeke passes Mary?",
+      "url": "https://artofproblemsolving.com/community/c3h1196662_mathcounts",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196564",
+      "title": "Polynomial Long Divison",
+      "text": "Hi, today in math class I learned how to do polynomial long division. However, one question on the homework is not like what I learned in class. Instead of having the polynomial divided by something like $(x+5)$ or $(x-2)$, it is divided by $-5x$. I don't know how to do it. Please help! Hints will be appreciated too! Thank you guys so much! It'll be better if you can show work.\n\n\n\nHere's the question: $\\frac{(-5x^3+15x^2-30x)}{(-5x)}$",
+      "url": "https://artofproblemsolving.com/community/c3h1196564_polynomial_long_divison",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1170848",
+      "title": "AMC 8 Score Stuff",
+      "text": "When will the AMC 8 score distribution be available on the internet?",
+      "url": "https://artofproblemsolving.com/community/c3h1170848_amc_8_score_stuff",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1167491",
+      "title": "Graphing in Big Competitions",
+      "text": "All right, like it says on the subject are there questions on graphing in Mathcounts and AMC.",
+      "url": "https://artofproblemsolving.com/community/c3h1167491_graphing_in_big_competitions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196567",
+      "title": "Distribution problems",
+      "text": "Hello\n\nToday on a practice MC test I missed a problem which was basically this:\n\nIf a person randomly distributes 4 chocolate chips 4 cookies, what is the probability that there are no more than 2 chips in any cookie?\n\nI put 19/35 because I assumed that the chocolate was indistinguishable, however, they were distinguishable(my answer would have been correct had they been indistinguishable). I don't want to make this mistake in a real competition. Is there any way I can distinguish between indistinguishability and distinguishability?\n\nThanks for your help in advance",
+      "url": "https://artofproblemsolving.com/community/c3h1196567_distribution_problems",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196713",
+      "title": "Counting Problem",
+      "text": "There are 16 balls in a jar. There are 4 red balls, 4 blue balls, 4 green balls, and 4 yellow balls. Each of the balls have different designs. 8 balls are chosen from the jar and there must be 2 of each color. How many ways are there to chose the balls.",
+      "url": "https://artofproblemsolving.com/community/c3h1196713_counting_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196339",
+      "title": "What type of problem is this",
+      "text": "I don't know what these are called and if there is a specific alcumus subject I can use to practice it. Heres the problem: What is the largest prime that divides both 20! + 14! and 20! − 14!?\n\nThanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1196339_what_type_of_problem_is_this",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196671",
+      "title": "Questions",
+      "text": "Anna the Ant wishes to travel from A to B, where A and B are the points farthest apart on a cylinder. She can only crawl on the surface of the cylinder. What is the shortest distance she may travel?",
+      "url": "https://artofproblemsolving.com/community/c3h1196671_questions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196596",
+      "title": "Math Problems from 2016 Mathcounts School Handbook",
+      "text": "I have questions on these problems...     :what?:\n\n\n\nIn how many ways can one knife, one fork, and one spoon be distributed, in any order, to three people, if each person is given 0,1,2, or 3 utensils?\n\n\n\nUsing pennies, nickels, dimes, and quarters, how many ways can you make 67 cents?\n\n\n\nHow many palindromes are between 9 and 1009?\n\n\n\nHow many positive integers less than 40 are relatively prime to both 7 and 10?\n\n\n\nWhat is thee greatest possible area of a concave pentagon in the coordinate plane with vertices, (-2,0), (2,0), (2,10), (0,6), and (-2,10)?\n\n\n\nCould you also give the solutions, Thanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1196596_math_problems_from_2016_mathcounts_school_handbook",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196604",
+      "title": "Log Problem",
+      "text": "I had a question on how to solve this log problem. I've gotten this far, but I'm stuck on what to do next.\n\n\n\nProblem: \"Solve 6^(x-2)=4^(3-x)\"\n\n\n\nMy work so far:\n\n6^(x-2)=4^(3-x)\n\nlog 6^(x-2) = log 4^(3-x)\n\n(x-2) log 6 = (3-x) log 4\n\n(x-2)/(3-x)=log 4/log 6\n\n\n\n(Also, I'm not sure if above work is right...)\n\nCan someone help me on what to do next please?",
+      "url": "https://artofproblemsolving.com/community/c3h1196604_log_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1195594",
+      "title": "9 Mathcounts or AMC 8",
+      "text": "I personally like mathcounts.",
+      "url": "https://artofproblemsolving.com/community/c3h1195594_mathcounts_or_amc_8",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196496",
+      "title": "States Qualififcation",
+      "text": "So do they pick top 6 and top 4 be a new team or do they let old team be up and only 2 extra individuals?",
+      "url": "https://artofproblemsolving.com/community/c3h1196496_states_qualififcation",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1195775",
+      "title": "Score Needed to qualify for Mathcounts Nationals?",
+      "text": "I ranked second in the hardest chapter in Wisconsin and qualified for state. I have been taking state competitions and have been getting 34's. Does anybody know what usually qualifies for nationals in Wisconsin? Or  in any other states.",
+      "url": "https://artofproblemsolving.com/community/c3h1195775_score_needed_to_qualify_for_mathcounts_nationals",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1189732",
+      "title": "What is the hardest out of the five subjects on AoPS?",
+      "text": "What do you find the hardest out the five subjects, counting and probability, geometry, pre-algebra, algebra, or number theory? I struggle with geometry the most out of all them.",
+      "url": "https://artofproblemsolving.com/community/c3h1189732_what_is_the_hardest_out_of_the_five_subjects_on_aops",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196327",
+      "title": "Combination question",
+      "text": "How many collections of six positive, odd integers have a sum of 18? Note that $1+1+1+3+3+9$ and $9+1+3+1+3+1$ are considered to be the same collection",
+      "url": "https://artofproblemsolving.com/community/c3h1196327_combination_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1195063",
+      "title": "AOPS Videos",
+      "text": "I liked AOPS videos from Mr.Richard.\n\nThere are pre-algebra, algebra, counting&probability, mathcounts, and AMC.\n\nI wonder if he would make other videos for like number theory of geometry.",
+      "url": "https://artofproblemsolving.com/community/c3h1195063_aops_videos",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "353450",
+      "title": "remainder problem",
+      "text": "Hi people,\n\n\n\nI have seen this question a bunch, but don't know how to answer it.\n\n\n\nWhat is the remainder of 5^30 when divided by 7 ??\n\n\n\nI did (7-2)^30\n\nand if you break that up, all the other terms are divisible by 7 except for the last one, 2^30.\n\npowers of 2 divided by 7- remainders are 2,4,1 right??\n\nso 30/3(numbers in the cycle) is divisible (10) so it is the last number in the cycle, 1??\n\n\n\nis this the easiest way to do it?? and is the answer right??\n\nPlease ask if I didn't explain clearly.\n\n\n\nthanks,\n\nLiBoy",
+      "url": "https://artofproblemsolving.com/community/c3h353450_remainder_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196494",
+      "title": "Infinite Solutions To A System of Equations",
+      "text": "How would you solve this :\n\n\n\nDetermine the value of  b such that the system below has an infinite number of solutions.\n\n\n\n$-3x + 2y - 4z = 6$\n\n\n\n$7x +6y + 4z = b$\n\n\n\n$-5x - 4y - 3z = -1$\n\n\n\nPlease explain how you got your anwer",
+      "url": "https://artofproblemsolving.com/community/c3h1196494_infinite_solutions_to_a_system_of_equations",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1195547",
+      "title": "MathCounts Questions",
+      "text": "Point (6,3) is reﬂected over line l to (2,5). What is the slope of line l?\n\n\n\nHow would you do this? I'm not very sure . . .\n\n\n\nKeith and Chi-An are playing a game. Keith chooses a positive integer less than 100. Chi-An then tries to guess Keith’s number by asking questions to which Keith answers yes or no. What is the number of questions Chi-An must ask so that, even if she is unlucky, she will always be able to identify the number?\n\n\n\n\n\nTo eliminate as many numbers as possible, Chi-An can ask if it's multiple of 2, then ask if its prime. Where do I go from here?\n\n\n\nHow many routes are there to get from A to B if we can only travel to the right or up along the segments shown?\n\n\n\nThere's a general formula for this, but I don't know it. How will that work? (Diagram attached)\n\nFind the value in dollars of $1,000 invested at 7.5% for 4 years. Round your answer to the nearest dollar.\n\n\n\nWhat's the most efficient way of doing this problem without solving for every year?",
+      "url": "https://artofproblemsolving.com/community/c3h1195547_mathcounts_questions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1195026",
+      "title": "Managing time for practicing math",
+      "text": "Hi,\n\nI have noticed that many people spend a few hours a day on math. Is this time spent on doing practice tests, reading    Aops books, or both? How should I divide the time that I have(~2 hours everyday) for math? I am currently preparing for the AMC 10b.",
+      "url": "https://artofproblemsolving.com/community/c3h1195026_managing_time_for_practicing_math",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196455",
+      "title": "Radicals",
+      "text": "Hi there!\n\n\n\nI am on chapter 20 in Intro to Algebra, and I seem to be stuck on radicals. After reading the explanations, I am still confused on how to solve them. One of the ones I am stuck on is Exercise 20.1.2:\n\n\n\nFind all solutions to the equation $\\sqrt{1+8r-r^2}=4$\n\n\n\nCould someone please explain how to solve it a bit more clearly?\n\n\n\nThanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1196455_radicals",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196452",
+      "title": "k Rubik's cubes, anyone?",
+      "text": "Hi, Is anyone interested in cubing.  My PB is 20.49 for 3x3.",
+      "url": "https://artofproblemsolving.com/community/c3h1196452_rubiks_cubes_anyone",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1195573",
+      "title": "Solution to quadratics with large integers",
+      "text": "Hey,\n\n\n\nI was just wondering how one might get a solution to this quadratic:\n\n\n\n$n^2 - n - 4032 = 0$ in a quick and efficient way? (i.e. under contest pressure)\n\n\n\nThanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1195573_solution_to_quadratics_with_large_integers",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1195644",
+      "title": "MathCounts Competition",
+      "text": "I got 1st place in the countdown round, and 3rd place overall, so I move on to states. I just took a practice state test yesterday and got a score of 27. I am from Ohio, so is that good enough to make it to nationals?",
+      "url": "https://artofproblemsolving.com/community/c3h1195644_mathcounts_competition",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196301",
+      "title": "Geo Prob",
+      "text": "Is every rhombus a parallelogram? Please explain why or why not...",
+      "url": "https://artofproblemsolving.com/community/c3h1196301_geo_prob",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1059698",
+      "title": "k Florida Mathcounts Cutoff",
+      "text": "Hi, I'm from Florida, can anyone tell me an approximate cut off for the individual scores to make it to nats? Thanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1059698_florida_mathcounts_cutoff",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196392",
+      "title": "2015 CDR question Chapter #27",
+      "text": "Help please, I don't understand. Why would the answer not be 44?\n\n\n\nClick to reveal hidden textIt is 47. :)",
+      "url": "https://artofproblemsolving.com/community/c3h1196392_2015_cdr_question_chapter_27",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "459426",
+      "title": "Maze Problem - MATHCOUNTS 2006 Chapter Target #2",
+      "text": "In the maze below, a player may only move toward the right. At each junction the player chooses a path that includes an operation (+ or –) and then a number. The player keeps a running total of her score throughout her journey, starting with $7$, and she may only choose among paths that keep her score between $2$ and $14$ points at all times. After performing four operations and ending at the $5$, what is the lowest score with which she can finish?\n\n\n\nDo you have to test every possibility? What's a good way to keep organized?\n\nSince this is target I'll have maybe 4 minutes to solve this.",
+      "url": "https://artofproblemsolving.com/community/c3h459426_maze_problem__mathcounts_2006_chapter_target_2",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1174475",
+      "title": "Nice inequality",
+      "text": "Given x, y, z ∈ R+ so that xy + yz + zx + xyz = 4..Prove that::\n\nx + y + z ≥ xy + yz + zx",
+      "url": "https://artofproblemsolving.com/community/c3h1174475_nice_inequality",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196355",
+      "title": "Why does this solution work?",
+      "text": "I looked up the Euclidean algorithm but I still don't get how they were able to subtract the entire term\n\n\n\nhttp://latex.artofproblemsolving.com/3/5/7/357f0d4236e6d3df168916c8e3a9012e9b71a342.png",
+      "url": "https://artofproblemsolving.com/community/c3h1196355_why_does_this_solution_work",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196356",
+      "title": "Practice vs. Real thing???",
+      "text": "I've been taking a lot of practice Mathcounts Chapters recently (because mainly doing states for past year, whoops) and consistently get around 40 if cut 10 minutes short on sprint and 44 ish if I get full time. My state is pretty NOT op at all and, last year, I got to state with only 22 in sprint and like 5 in target (I was not good at math), oooops, but it was EXACTLY what I got on the practice test the day before the actual thing in 2015. I don't want to assume I'll get 44 ish because I was punished for that in AMC 8 -.-\n\n\n\nWhat kind of range should I expect to see if taking the real thing? I don't really get affected by nerves. I have a classmate who is VERY (practically is my score) near my score and I'm getting a little paranoid. What's the best way to use my time in sprint? I finish all problems at the halfway mark typically and can check for the rest. There are always stupid sillies that slip my eye though.... like reading ounces as pounds.\n\n\n\nAlso, side note: All of my friends and friends' siblings and friends' parents are being particularly mean about MC. They're always talking about nats like they have already won and beaten me to pulp or that there's no way I have a chance. Even if I beat them in practice, they get really sour and start saying how they were just lucky or that I was lucky. It's really ruining my motivation and I feel like I can't even advance to state when my main focus is really going to nats (I got 5th last year, all the people who placed in front of me are gone.) How do I get my motivation back up?\n\n\n\nThanks",
+      "url": "https://artofproblemsolving.com/community/c3h1196356_practice_vs_real_thing",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1196305",
+      "title": "geo prob",
+      "text": "Ronald has a picture in the shape of a quadrilateral that he cut out of a magazine. How could Ronald use a ruler to prove that the picture is a parallelogram?",
+      "url": "https://artofproblemsolving.com/community/c3h1196305_geo_prob",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    }
+  ]
+}

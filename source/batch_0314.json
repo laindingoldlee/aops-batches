@@ -1,0 +1,1011 @@
+{
+  "format": "aops-topic-previews-v1",
+  "scope": "Loaded topic previews, not full replies or screened questions",
+  "source_archive_sha256": "15978407a01483794e215aef89ec1c105caa4e7154d91211c94bd95ef7186726",
+  "batch_number": 314,
+  "source_row_start": 31301,
+  "source_row_end": 31400,
+  "topic_count": 100,
+  "topics": [
+    {
+      "topic_id": "1178634",
+      "title": "Manipulation/Shortcut Marathon",
+      "text": "Hey guys, I have decided to make a manipulation/shortcut marathon! (Yeah, I know, why all the marathons all of a sudden?)\n\n\n\nThe rules are simple. Post a problem that can be solved using clever algebraic manipulations or a well-aimed \"bullet.\" I'll start by posting the first problem.\n\n\n\nP1If we have\n\n\\begin{align*}\nx+y&=2\\\\\nxy&=3\n\\end{align*}find the sum of the reciprocals of $x$ and $y$. Express your answer as a common fraction.\n\n\n\n\nYay 6 downvotes!",
+      "url": "https://artofproblemsolving.com/community/c3h1178634_manipulationshortcut_marathon",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1256286",
+      "title": "Not_Richard's Super Secret Squaring Technique",
+      "text": "We all know Richard Ruczyk has a Super Secret Squaring Technique, but what about Not_Richard? Well it turns out he has one too for numbers {40, 50}! I met him in the halls the other day and asked him to square 43. This is what he did:\n\n43-25=18\n\n50-43=7   =>   7^2=49.\n\n18 & 49   =>   1849.\n\n\n\nI didn't believe him, so I checked it on my calculator later that day, and it worked!\n\nThe next day I asked him to square 48, confident he would fail:\n\n48-25=23\n\n50-48=2   =>   2^2=04 (note how he turns '4' into a two digit number '04')\n\n23 & 04   =>   2304\n\n\n\nIt worked again!\n\nAt this point, Genius_4_Life came along and told us that a modification of his technique would work for ANY number>25.\n\nThis is what the method was:\n\nStep 1: Take the number x and evaluate x-25. Then add two zero's to the end where step two will go. This is A.\n\nStep 2: Subtract x from 50. Then square that value. This is B.\n\nStep 3: A+B is le square. The reason for two zeros in Step 1 is so that for 3-digit and higher values of B.\n\n\n\nProve that this works.",
+      "url": "https://artofproblemsolving.com/community/c3h1256286_not_richards_super_secret_squaring_technique",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255308",
+      "title": "What theorems have you learned in grade 7?",
+      "text": "Alright, so I have to do a math project, and Im thinking of doing various proofs for theorems that we have learned in grade 7.\n\n\n\nthese are my ideas currently, and I need some more:\n\npythagorean theorem\n\n180 degrees in triangle.\n\nself similar equations ( I don't know the official name lol but its like an infinite geometric series)\n\nthe number of degrees in a polygon\n\narea of circle\n\nperimeter of circle\n\narea of triangle (????)\n\n\n\nI want nice theorems that people in grades 7-9 can understand and is not scary ( like lots of equations and stuff)\n\n\n\n NORMAL 9th graders should be able to understand the theorems!!",
+      "url": "https://artofproblemsolving.com/community/c3h1255308_what_theorems_have_you_learned_in_grade_7",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1235701",
+      "title": "Spring Mock",
+      "text": "Hello, users of AoPS,\n\nAfter seeing some Mock AMC5's and 6's, I wanted to create my own. This will be around $6$th grade level. There are a few differences, such as, there are no multiple choice questions.Also, these questions are not ordered by difficulty.(:(). I will release the test soon.\n\nSee you soon,\n\nProblem writersMathArt4, BuddyS, and fishy15\n\n\nPlease sign up below.",
+      "url": "https://artofproblemsolving.com/community/c3h1235701_spring_mock",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1256222",
+      "title": "Number theory proof",
+      "text": "Prove that for every integer $k$ the numbers $2k+1$ and $9k+4$ are relatively prime.\n\n\n\nSource:http://www.isinj.com/usamo/250%20Problems%20in%20Elementary%20Number%20Theory%20-%20Sierpinski%20(1970).pdf",
+      "url": "https://artofproblemsolving.com/community/c3h1256222_number_theory_proof",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1256106",
+      "title": "Help Please?",
+      "text": "$|x+2| + |y-3| = 1$ is an equation for a square. How many units are in the length of its diagonals? Please don't graph it, unless that is the only solution. I want to know if there is a algebraic formula for this, or a neat way of doing it. Thanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1256106_help_please",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1256113",
+      "title": "More absolute value",
+      "text": "This isn't that hard but:\n\nSolve for all real values of x such that $|5x-1| = |3x+2|$.",
+      "url": "https://artofproblemsolving.com/community/c3h1256113_more_absolute_value",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255380",
+      "title": "What is mod used for?",
+      "text": "I get what mod is and its like a clock (lol), but I don't get what purpose it has in solving problems.\n\n\n\nFor example, this problem:i have x candy, put them into piles of 13 and get 3 remainder, put them into piles of 7 and get 5 remainder. How many candy do I have?\n\n\n\n$x \\equiv 3 (\\mod13 )$\n\n$x \\equiv 5 (\\mod7 )$\n\n\n\n\n\nBut then what do I do next with the 2 mods?",
+      "url": "https://artofproblemsolving.com/community/c3h1255380_what_is_mod_used_for",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1254285",
+      "title": "Problem Off The Top Of My Head",
+      "text": "Four friends are playing cards. Everybody is dealt $\\frac{1}{4}$ of the deck (Assume we're using a typical 52 card deck here). They finish the game and they play it again. What is the probability nobody gets any of the cards they had the first round (Different suits are different cards)?",
+      "url": "https://artofproblemsolving.com/community/c3h1254285_problem_off_the_top_of_my_head",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255907",
+      "title": "Simple Proof Problem",
+      "text": "Give good mathematical reasoning of why this works.\n\n\n\nTake a two digit number.\n\nAdd 90.\n\nCross out the left most digit.\n\nNow add $1000^{\\frac{1}{3}}$\n\nYou will end up with the number you started with.\n\n\n\nNote: This is mainly for 6th graders or below, or people who have started to take math seriously recently.",
+      "url": "https://artofproblemsolving.com/community/c3h1255907_simple_proof_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255752",
+      "title": "Why must an arithmetic sequence of 7 contain a multiple of 3",
+      "text": "Why must an arithmetic sequence with a common difference of 7 contain a multiple of 3?",
+      "url": "https://artofproblemsolving.com/community/c3h1255752_why_must_an_arithmetic_sequence_of_7_contain_a_multiple_of_3",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255832",
+      "title": "Large Polynomial Expansion",
+      "text": "Have fun! I keep sillying and it kills me.\n\n\n\n$$(a+b+c+d)^3$$",
+      "url": "https://artofproblemsolving.com/community/c3h1255832_large_polynomial_expansion",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255686",
+      "title": "Combinations",
+      "text": "Hi,\n\n\n\nI just realized how odd it is that for every $\\binom{n}{k}$ I have ever done, the result turns out to be an integer. I'm fairly certain this is true (it doesn't make sense for, say, 4.8 possible ways to arrange X to Y boxes), but is there a proof? Actually, I'm sure there is a proof, but I don't really feel like Googling it now (please don't just link me to Google) and I want to hear from you guys.\n\n\n\nThanks,\n\nhiabc",
+      "url": "https://artofproblemsolving.com/community/c3h1255686_combinations",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255747",
+      "title": "Proportion Problems",
+      "text": "Can someone give me a hint for each of these problems? Thanks in advance.\n\n\n\n1. If $x$ varies as the cube of $y$, and $y$ varies as the fifth root of $z$, then $x$ varies as the $n$th power of $z$. What is $n$?\n\n\n\n2. It is now between 10:00 and 11:00. Six minutes from now, the minute hand of a watch will be exactly opposite the place where the hour hand was three minutes ago. What is the exact time now?",
+      "url": "https://artofproblemsolving.com/community/c3h1255747_proportion_problems",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255438",
+      "title": "2014 Chapter Sprint:Question 4",
+      "text": "\"A square is divided by its four lines of symmetry. Triangles of different sizes are\n\nformed. How many total triangles are formed?\"\n\nDoes anyone have a better solution to this problem, I don't really understand the one they give.",
+      "url": "https://artofproblemsolving.com/community/c3h1255438_2014_chapter_sprintquestion_4",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1249543",
+      "title": "I'm Not Feeling Creative",
+      "text": "What are the last 3 digits of $7^{1086}$?",
+      "url": "https://artofproblemsolving.com/community/c3h1249543_im_not_feeling_creative",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255460",
+      "title": "2014 Chapter Sprint:Question 30",
+      "text": "\"What is the value of $\\sqrt{1}\\sqrt{2}\\sqrt{2}$ , where all subsequent numbers in\n\nthe expression are 2's? Express your answer in simplest radical form.\"\n\nCan someone give a solution for this question? I found it difficult and the solution provided didn't make sense to me.\n\n(Sorry the latex is wrong)\n\nhttp://www.franklin.kyschools.us/Downloads/MATHCOUNTS%202014%20Chapter%20Competition%20-%20Sprint%20Round.pdf go to the last question",
+      "url": "https://artofproblemsolving.com/community/c3h1255460_2014_chapter_sprintquestion_30",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255106",
+      "title": "Intellectuality123's Summer Math Contest",
+      "text": "Hello citizens of AoPS!\n\nIt's summer, and summer is the best time to really rev up on our math skills with all of our available time! Therefore, I decided to create a contest. This is my first contest, so lets see how it goes. This contest will have 15 free response (like Mathcounts) questions and you will have 30 minutes to complete the test. Imagine a hard AMC 8 test or Mathcounts chapter. Scoring will be 3 points for a correct answer, 1 point for skipped, and 0 points for incorrect. After the test is released, you will have 1 week to submit your answers. Submit your answers to me (Intellectuality123) or one of the test creators.\n\nTo signup, please use the Signups(n)\n format, and I am looking for 3 testsolvers and 3 testcreators. (Use testsolver(n)\n or testcreator(n)\n format) Approximate release date will be around June 20.\n\n\n\nHave fun!!!\n\n\n\n~Intellectuality123\n\nPlease do not sign up here. Please sign up in my other post in the \"Contests and Programs\" Section. Sorry for the inconvience :(",
+      "url": "https://artofproblemsolving.com/community/c3h1255106_intellectuality123s_summer_math_contest",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255214",
+      "title": "Algebra!",
+      "text": "Find the sum of all positive proper fractions (i.e. fractions that are strictly less than 1 ) whose denominators are equal to 52 . Do not discard equivalent fractions. Write your answer as a common fraction in lowest term.",
+      "url": "https://artofproblemsolving.com/community/c3h1255214_algebra",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255143",
+      "title": "Arcs and Circles",
+      "text": "Hi, and I'm here with another question for a formula. Please show how you derived it so I don't just bash but understand how you came up with that.\n\nIn a circle, what is the area of the shaded area where a and b are both less than or equal to 2r.",
+      "url": "https://artofproblemsolving.com/community/c3h1255143_arcs_and_circles",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255205",
+      "title": "Struggling with Basic Statistics",
+      "text": "So, I just mastered basic statistics yesterday on insane difficulty. However I am still struggling with it. What should I do?",
+      "url": "https://artofproblemsolving.com/community/c3h1255205_struggling_with_basic_statistics",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1255015",
+      "title": "k Cube roots",
+      "text": "What is the cube root of:\n\n0\n\n1\n\n8\n\n27\n\n64\n\n125\n\n216\n\n343\n\n512\n\n721\n\n1000\n\n\n\nClick to reveal hidden textSolution is 0 1 2 3 4 5 6 7 8 9 10",
+      "url": "https://artofproblemsolving.com/community/c3h1255015_cube_roots",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1254965",
+      "title": "How to Get Rid of Coordinates in Geogebra",
+      "text": "Hello, the title says it all.\n\n\n\nHow can we get rid of the coordinates in Geogebra? Is there an option anywhere?",
+      "url": "https://artofproblemsolving.com/community/c3h1254965_how_to_get_rid_of_coordinates_in_geogebra",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1254885",
+      "title": "2003 National Target Round Question",
+      "text": "Gunther's average on ten quizzes is 7.8. Each score is a positive whole number less than or equal to 10. He remembers that he scored at least one 5, at least 3 7's, at least two 9's and at least one 10. What is the sum of all the distinct possible values for Gunther's median quiz score?\n\nI did not quiet understand the explanation. Does anyone have a better one?",
+      "url": "https://artofproblemsolving.com/community/c3h1254885_2003_national_target_round_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1254194",
+      "title": "solve and compute",
+      "text": "1+2x2+3x4+4x8+5x16+.......................................+12x2048=",
+      "url": "https://artofproblemsolving.com/community/c3h1254194_solve_and_compute",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1249625",
+      "title": "drawing utensils",
+      "text": "Would rope count as a drawing utensil because you can use it to make ellipses?",
+      "url": "https://artofproblemsolving.com/community/c3h1249625_drawing_utensils",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1254818",
+      "title": "A shape in the coordinate plane",
+      "text": "What is the area of the region in the xy coordinate plane defined by $(x+y)^4+(x-y)^4-8x^2y^2 \\leq 2^{1337}$?\n\n\n\nI made up this problem.",
+      "url": "https://artofproblemsolving.com/community/c3h1254818_a_shape_in_the_coordinate_plane",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1254159",
+      "title": "Inter Geo and NT Book?",
+      "text": "I saw a reference to an Inter Geo book in Intro Geo. Is AOPS working on any of that? Does anyone know? It would be cool if they made a book for that stuff and completed the Inter series.",
+      "url": "https://artofproblemsolving.com/community/c3h1254159_inter_geo_and_nt_book",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1254734",
+      "title": "Interesting Algebro Prob",
+      "text": "Find the sum of the following fractions:\n\n1/8 + 1/24 + 1/48 + 1/80 + ... + 1/9800.\n\nExpress your answer as a common fraction in lowest terms.",
+      "url": "https://artofproblemsolving.com/community/c3h1254734_interesting_algebro_prob",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1254703",
+      "title": "Money counting",
+      "text": "Let L be the number of ways 10 dollars can be changed into quarters and dimes, with at least one coin being used. What does L=?",
+      "url": "https://artofproblemsolving.com/community/c3h1254703_money_counting",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1254570",
+      "title": "Deep Thinking Problem",
+      "text": "What is the GREATEST number of bags that can be used to hold $741$ marbles if each bag must contain one marble but no two bags may contain the same number of marbles?(The answer is NOT 38 (1+2+3+4...38), it requires some deeper level of thinking.)\n\nHint:Instead of thinking outside the box, think inside THE bag.",
+      "url": "https://artofproblemsolving.com/community/c3h1254570_deep_thinking_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1254374",
+      "title": "Equal angles in a pentagon",
+      "text": "In pentagon $VWXYZ,~\\angle VWX=100^{\\circ}$, and All the other angles are equal.  $YZ$ is extended to point $Q$ such that $QV \\parallel YX$. What is $m\\angle QVZ$?",
+      "url": "https://artofproblemsolving.com/community/c3h1254374_equal_angles_in_a_pentagon",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1253829",
+      "title": "Solve the Following question in a simplified way",
+      "text": "2007^3 - 2005^3 - 6 x 2006^2",
+      "url": "https://artofproblemsolving.com/community/c3h1253829_solve_the_following_question_in_a_simplified_way",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1254020",
+      "title": "Intersecting lines",
+      "text": "Let lines $m$ and $n$ intersect at a $28^{\\circ}$ angle. Now let their point of intersection be $A$. If we choose arbitrary point $B$ on $m$, and arbitrary point $C$ on $n$ what is the average of the possible values of $\\angle ACB+\\angle ABC$?",
+      "url": "https://artofproblemsolving.com/community/c3h1254020_intersecting_lines",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1253332",
+      "title": "Interesting Geo Problem",
+      "text": "A kite has side lengths 8 and 12. What is the largest possible area of a rectangle inscribed within the kite?",
+      "url": "https://artofproblemsolving.com/community/c3h1253332_interesting_geo_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1246424",
+      "title": "Fish counting problem",
+      "text": "Fisher Joe is fishing in a lake with exactly 20 red fish and 20 blue fish. Every\n\ntime he pulls his reel, a random fish is pulled out of the pond. He then marks\n\nthe color of the fish on a sheet of paper. Because he is a nice person, Joe puts\n\nthe fish back into the lake. He does this 10 times so he has ten colors on his\n\nlist, written in order from the first fish to the last fish. What is the\n\nprobability that no three consecutive colors on his list are blue? Express your\n\nanswer as a common fraction.\n\n\n\nClick to reveal hidden textans:63/128",
+      "url": "https://artofproblemsolving.com/community/c3h1246424_fish_counting_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1253934",
+      "title": "k Answer this if you dare",
+      "text": "4*4+4*4+4-4*4=?\n\n\n\nClick to reveal hidden textSolution is 20",
+      "url": "https://artofproblemsolving.com/community/c3h1253934_answer_this_if_you_dare",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1253931",
+      "title": "Probobilaty",
+      "text": "The probability that an electronic device produced by a company does not function properly is equal to 0.1. If 10 devices are bought, then the probability, to the nearest thousandth, that 7 devices function properly is\n\n\n\nA. 0.057\n\nB. 0.478\n\nC. 0.001\n\nD. 0\n\n\n\nClick to reveal hidden textSolution is A",
+      "url": "https://artofproblemsolving.com/community/c3h1253931_probobilaty",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1253925",
+      "title": "Circle centers with Points",
+      "text": "Write the standard equations for the circle with the center of (2,7) and r=4",
+      "url": "https://artofproblemsolving.com/community/c3h1253925_circle_centers_with_points",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1253595",
+      "title": "Counting Question",
+      "text": "A,B,C and D are sitting in a row with the 1st to fourth places from left to right. How many ways exist if A is not in 1st, B is not in 2nd, C is not in third, and D is not fourth? I thought the answer would be $4! - 1 = 23$ ways but the answer says it is 9. Please help, Thanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1253595_counting_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1253820",
+      "title": "Combinations with Restrictions",
+      "text": "I have made this question I would like to check my answer with others:\n\nThere are 3 math teachers and 5 science teachers. They will be attending a convention but there is one rule. There has to be one more science teacher than math teacher. For example, if all three math teachers attend then 4 science teachers must attend. How many ways can a group be organized(order doesn't matter).\n\nClick to reveal hidden texti got this, I might be wrong though: 65",
+      "url": "https://artofproblemsolving.com/community/c3h1253820_combinations_with_restrictions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1249832",
+      "title": "Practice for AMC 10",
+      "text": "So, I've been doing a pretty good amount of prep for AMC 10 next year, and I just need to complete my Geometry and then the Algebra book to finish the intro series. After that, I will review all the books and make sure I have the stuff engrained into my brain, but what do you guys recommend I do after? I was thinking of just doing all the previous AMC 10 competitions, but if there is something else you recommend to help a noob like me it would be great!",
+      "url": "https://artofproblemsolving.com/community/c3h1249832_practice_for_amc_10",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1253428",
+      "title": "The Intro Series",
+      "text": "I'm trying to do all of the Intro series to prepare for Mathcounts and AMC and I was just wondering if there's any certain order I should do the books in, like from easiest to hardest. Right now the first book I am doing is Number Theory and it seems kind of hard so I wanted to see if doing any of the other Intro books first would help me go through this book. Thanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1253428_the_intro_series",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1253383",
+      "title": "My contest experience (256th post!)",
+      "text": "This has been my first year using AoPS, and I would like to share my math experiences with everyone for my 256th post. Right now, if you are thinking \"Why don't you do this for your 200th post or something like that?\" just wait and see. These events are listed in chronological order.\n\n\n\nA long time ago when I was in 1st grade: I got my first book on math and a little bit of problem solving.\n\n\n\nA few years after that: For some reason, I started randomly memorizing powers of 2 (probably because of some game I playednot 2048\n.) Now the highest power of 2 I know by memory is 4194304.\n\n\n\nJune 2014: This was the first time that I had started to take classes (not AoPS) for outside-of-school math. That stuff wasn't that advanced, just basic problems like thisHow many zeroes are at the end of $2014!$?\n  At that time, I was just known as 'the kid who was good at math'.\n\n\n\nMay 2015: I participated in my first math contest (I think it was the Gauss or something like that) and did quite well. Then I did another math competition but didn't do very well.\n\n\n\nAugust 2015: I went to a new school and joined the MATHCOUNTS team. In the other school I went to before that, there was no MATHCOUNTS, no math club (I took the Gauss at a separate math training place) and not much problem solving.\n\n\n\nOctober 2015: My math club teacher showed us the MATHCOUNTS trainer and I signed up for an AoPS account (only to save my progress on that.) At that time, I didn't know anything about the AoPS forums or stuff like that.\n\n\n\nNovember 2015: I failed19\n the AMC 8. (oops)\n\n\n\nDecember 2015: We had the MATHCOUNTS School competition and I got a 44.\n\n\n\nFebruary 2016: I did the AMC 10 and the MATHCOUNTS chapter competition. My school didn't seem to offer the 10B, so I only took the AMC 10A.  I got a 102. Before the chapter competition, I was doing the MATHCOUNTS trainer a lot and it definitely helped me. For the chapter competition, I got a 39 but the countdown didn't help me much.\n\n\n\nMarch 2016: I started to post on the AoPS forums and started to do Alcumus. Also, I got addicted to FTW until the end of April. I also got Volume 1 and did MATHCOUNTS states where I missed Nationals by 1 point.\n\n\n\nMay 2016: This was when I started getting hundreds of forum posts and got a few more AoPS books, plus a few classes! Right now, I am working through Volume 1 and the introduction series.\n\n\n\nSo overall, this has been my first year of seriously studying for contests and stuff like that. I have definitely improved a lot from the beginning of the year! And one last thing:Thank you AoPS  :jump:  :coolspeak:  for making such great resources for us to use in math!\n\n\n\n\n\n\nFinal note: Today is around 1/4 of a year since I wrote my first post in the AoPS forums!",
+      "url": "https://artofproblemsolving.com/community/c3h1253383_my_contest_experience_256th_post",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1253701",
+      "title": "k Is 0 divide by 0 possible?",
+      "text": "I have a proof that 1=2\n\nlet's say that\n\nx=y\n\nMultiply both sides by x\n\n$x^2=xy$\n\nsubtract both side by$ y^2$\n\n$x^2-y^2=xy-y^2$\n\n(x+y)(x-y)=y(x-y)\n\nx+y=y\n\nsubstituted y by x\n\n2x=x\n\ndivide both sides by x\n\n2=1\n\n\n\nx-y=0 but if we divide it by 0 would the answer of $\\frac{0}{0}=all real number?$",
+      "url": "https://artofproblemsolving.com/community/c3h1253701_is_0_divide_by_0_possible",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1253520",
+      "title": "..................",
+      "text": "The length of a rectangle is increased by $25\\%$, but the width of the rectangle is decreased to keep the area of the rectangle unchanged. By what percent was the rectangle's width decreased?",
+      "url": "https://artofproblemsolving.com/community/c3h1253520_",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1253506",
+      "title": "how to solve the system of equation",
+      "text": "Given $$x+y+z = 9$$$$x^2+y^2+z^2=29$$$$x^3+y^3+z^3=99$$find the value of $x^4+y^4+z^4$",
+      "url": "https://artofproblemsolving.com/community/c3h1253506_how_to_solve_the_system_of_equation",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1252569",
+      "title": "Seemingly Impossible Math Problem?",
+      "text": "Hey guys, its me again and I want to show you this problem that seems impossible. But is actually solvable.\n\nSo here is this math problem (That I did not come up with):\n\nBefore you try this problem, you must agree to these terms:\n\n1. When posting your answer, make sure to use the Hide tags.\n\n2. Do not criticize I took this problem and claimed it as my own. I TAKE NO CREDIT FOR THIS.\n\n---\n\nHow to Use Hide Tags:\n\n(Hide=Your Title)What you want to say(/hide)\n\nYou should only edit whats in Orange, and replace parentheses with brackets.\n\n^^^That should look like: Your TitleWhat you want to say\n\n\n---\n\nOk now that we got all that clear, let's get on to it!\n\nI Agree to the T&C and Want to Give This Problem a Shot!A man walks into 7-Eleven store, and gets 4 items to buy. The cashier told the man that the total cost of the items was 7 dollars 11 cents. He was very surprised that the cost of the items were the same numbers as the store name! The cashier said he multiplied the cost of the items and got that number. The man kindly informed the cashier he was supposed to add the costs, not multiply. The cashier then added each cost of the item and the cost was also 7 dollars 11 cents. What was the cost of each item?\n\n\nSorry, I couldn't use the dollar symbol because of coding. :(",
+      "url": "https://artofproblemsolving.com/community/c3h1252569_seemingly_impossible_math_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251823",
+      "title": "Help Please Probability prob",
+      "text": "Nick has a terrible sleep schedule. He randomly picks a time between 4 AM and 6 AM to fall asleep, and wakes up at a random time between 11 AM and 1 PM of the same day. What is the probability that Nick gets at least 6 hours of sleep?\n\nI have no idea how to do this problem... so no leads :(",
+      "url": "https://artofproblemsolving.com/community/c3h1251823_help_please_probability_prob",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1224245",
+      "title": "2016 Spring MOCK AMC 8",
+      "text": "The BPMS Math Teamreaganchoi, idomath12345, The_Donger, Ann ArboritesCube1, jasonhu4, jam10307, Flash12, mathsolver101, VivekA, saagar, m123467, and quanhui868 present to you...\n\n\n\nTHE 2016 SPRING MOCK AMC 8!\n\n\n\nPLEASE READ THE RULES CAREFULLY! THE TEST HAS BEEN RELEASED! ALSO, FOR QUESTION 9 E SHOULD SAY 17 CENTIMETERS! QUESTION 17 E SHOULD SAY NOT ENOUGH INFORMATION! ALSO IF YOU ARE NOT TAKING THE ACTUAL CONTEST AND JUST WANT ACCESS TO THE PRIVATE FORUM TO VIEW PROBLEMS AND WRITE SOLUTIONS, PM ME IMMEDIATELY.\n\n\n\nGreetings!\n\n\n\nWhen I joined AoPS in fifth grade, I was just an elementary school math-addict lying on the streets, doing Alcumus problems, Mock AMC 8s, and procrastinating more than I am right now.\n\n\n\nThree and a half years and 1000 posts later, I am here, about to finish writing a MOCK AMC 8 in the Spring season for the entire AoPS Community. :D\n\n\n\nOf course three months ago, the exact same creators of this test (jam10307, jasonhu4, Cube1) wrote a trash \"MOCK AMC 9\" that was extremely troll and poorly-written. I can tell you right now this is my 1000th post and I refuse to let it be showered with criticism and anger that can be easily prevented by taking the time to write a high-quality AMC 8. This AMC 8 will be a NORMAL AMC 8 with no added sugars that could destroy the approval of the FDA for us to release this product. We will promise to make this AMC 8 successful to the best of our abilities. We will try to keep the difficulty and the content of the questions as appropriate as possible. As a bonus, by signing up to take this AMC 8 in the signups thread below, after you take the test you are allowed access to the 2016 Spring MOCK AMC 8 Private Forum to view solutions, discuss with those who already took it, ask questions, and give criticism!\n\n\n\nWe have already finished writing the problems and we are on the revision process. We expect the test to be released on April 30, 2016 and the submission deadline to be on June 9, 2016. I would recommend you signup before April 30th if we get a whole lot of signups, so please signup before then. Once the submission deadline passes, even if you took the test or not, as long as you sign up you will have access to the Private Forum to view problems and solutions.\n\n\n\nIf you have access to the private forum (which you will have once you finish the test or the submission deadline passes), scroll down on your \"My Forums\" list and click on \"2016 Spring MOCK AMC 8 Discussion\" or click here to go to the forum.\n\n\n\nRules1. This is a 25-question multiple choice contest with each of the answer choices A, B, C, D, and E. Only one of these answers is correct. This test is meant to imitate an actual AMC 8. Therefore all the AMC 8 rules apply. No calculators, computers, communication with others, etc. Only pencils, pens, paper, graph paper, rulers and compasses are allowed. Each correct answer is worth 1 point and blank answers and wrong answers are 0 points. Additionally, do not look at the test until you have set your timer to 40 minutes and started it.\n\n\n\n2. Submit your letter answer choices to one of the test creators via AoPS PM, or email your answers to the mock test email at 2016springmockamc8@gmail.com with your username. The email will be faster, but then you will have to give away your email to me :(.We will try to get your score back to you as quickly as possible.\n\n\n\n3. If there is an error in the test, please PM one of the test creators immediately. If it affects one of the problems, we will give those who submitted a chance to resubmit.\n\n\n\n4. The deadline for submissions is June 9th.\n\n\nDistinguished Honor Roll (3 Highest Scores)1. skipiano-24 :winner_first\n\n2. math129, palindrome-enumeration (testtaker), TroyMathGuy-23 :winner_second:\n\n3. Mudkipswims42-22 :winner_third:\n\n\n\n\nSignups\n\nWE HAVE ENOUGH VOLUNTEERS! NO MORE SIGNUPS NEEDED FOR VOLUNTEERS! SIGNUP FOR THE TEST INSTEAD!\n\n\n\nTestsolvers1. rlzhang\n\n2. palindrome-enumeration\n\n\n\n\nSignups to take the test in the regular hidden-text format. Quote the person before you, copy the numbered list (including the hidden text code), paste it in your reply, and add your name (along with adding a number to the signups count so I can keep track of the number of signups). Example: Test Signups1. math101010\n\n2. hiabc\n\n3. anser\n\n4. GeneralCobra19\n\n5. TroyMathGuy\n\n6. Mathguy5837\n\n7. Code_Centurion\n\n8. ishankhare\n\n9. ariedel\n\n10. techguy2\n\n11. avn\n\n12. Kwow\n\n13. bogstop320\n\n14. algebra_star1234\n\n15. mathcounts101\n\n16. catpiano\n\n17. clashcon123\n\n18. oceanair\n\n19. annieliu12\n\n20. fishy15\n\n21. Ryon123\n\n22. mathcounts101\n\n23. vrk2k3\n\n24. GrandGesture\n\n25. ramarnath2\n\n26. TopNotchMath\n\n27. gary2003\n\n28. Blue_Whale\n\n29. zeropluszeroequalstozero\n\n30. LinLaoShi\n\n31. ChrisMandelaJunior\n\n32. ghghghghghghghgh\n\n33. BuddyS\n\n34. AkshajK\n\n35. ajvkrish\n\n36. sketchcomedyrules\n\n37. popcorn1\n\n38. jlee30\n\n39. skipiano\n\n40. absinghal\n\n41. MathleteMA\n\n42. econaxis\n\n43. MathMaster4444\n\n44. Awesomeguy7\n\n45.geoman523\n\n46. math129\n\n47. budu\n\n48. rainelena15\n\n49. soojoong\n\n50. Patrick4President\n\n51. pi-3.14\n\n52. 8Invalid8\n\n53. aakritil\n\n54. claserken\n\n55.letsgomath\n\n56. Math1331Math\n\n57. burunduchok\n\n58. I-_-I\n\n59. relay400\n\n60. Goat\n\n61. hexagram\n\n62. wu2481632\n\n63. ilmathpro2003\n\n64. mathwrite\n\n\n\n\nTESTSOLVERS-TEST IS AVAILABLE TO YOU GUYS!\n\n\n\nThank you AoPS and have a wonderful springtime!  :w00tb:\n\n-Cube1",
+      "url": "https://artofproblemsolving.com/community/c3h1224245_2016_spring_mock_amc_8",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1252563",
+      "title": "Upcoming competitions.",
+      "text": "I made this thread to talk about the upcoming contests and competitions this year.\n\n\n\nI know the AMC 8 is coming in November, and the NSF nationals (a competition you're only allowed to do if you're Indian for reasons) are coming in August. Please list other competitions coming up this year, as many of us that don't know about them will be illuminated.\n\n\n\nThanks.",
+      "url": "https://artofproblemsolving.com/community/c3h1252563_upcoming_competitions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1253165",
+      "title": "Completely Failed MathCounts 2014 Chapter Sprint Round",
+      "text": "So, i was doing some previous tests to practice for next year so I can make state. I just took the 2014 Chapter Sprint Round and completely failed. My goal was 20, and let me tell you this, I did not met it what so ever. So, I just wanted to know your scores and any future tips for me, because as of now, I am contemplating quitting. I am totally broken down and discouraged.(Yes it was that bad and I won't share it)",
+      "url": "https://artofproblemsolving.com/community/c3h1253165_completely_failed_mathcounts_2014_chapter_sprint_round",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1253029",
+      "title": "Easy similar triangles",
+      "text": "Given triangle ABD. Side AB contains point C and side AD contains point T. Segment CT is parallel to side BD. If BC=7, AT=12, DT=6 and CT=18, find the perimeter of triangle ABD",
+      "url": "https://artofproblemsolving.com/community/c3h1253029_easy_similar_triangles",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1205754",
+      "title": "k MATHCOUNTS Chapter round discussion thread.",
+      "text": "The chapter rounds are over! Let discussion commence!",
+      "url": "https://artofproblemsolving.com/community/c3h1205754_mathcounts_chapter_round_discussion_thread",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1252667",
+      "title": "24 puzzle",
+      "text": "Make 24 using the following numbers:\n\n529, 2, 45, 4\n\n\n\nHow many ways can you find?",
+      "url": "https://artofproblemsolving.com/community/c3h1252667_24_puzzle",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1246702",
+      "title": "Mock AMC 8 Updates",
+      "text": "The test is officially under way so I wanted to give some updates here:\n\n\n\nTest Deadline is now May 29th.\n\n\n\nPeople who have taken the test up to now will receive credit for Problems 18 and 24.\n\n\n\nThere is a tiebreaker system.  The score is in parentheses, and the lowest tiebreaker score will have the highest ranking for the same score, you'll see what I mean.\n\nCurrent Leaderboard1. That_Crazy_Book_Nerd: 25 (0)\n\n1. claserken: 25 (0)\n\n2. Snowie: 24 (7)\n\n3. ghghghghghghghgh: 24 (8)\n\n4. lucasxia: 24 (23)\n\n5. math129: 23 (26)\n\n6. sketchcomedyrules: 22 (35)\n\n7. GeneralCobra19: 22 (49)\n\n8. katzrockso: 22 (51)\n\n9. ktthree: 22 (55)\n\n10. econaxis: 21 (46)\n\n11. annieliu12: 21 (52)\n\n12. Intellectuality123: 21 (63)\n\n13. KKMathMan: 21 (74)\n\n14. gary2003: 21 (75)\n\n15. nihao4112: 19 (90)\n\n16. fishy15: 18 (111)\n\n17. Dhman2727: 15 (113)",
+      "url": "https://artofproblemsolving.com/community/c3h1246702_mock_amc_8_updates",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251906",
+      "title": "Banking problem",
+      "text": "Johny has $3J$ dollars. He has the following bank offers that he will use:\n\n\n\nNacho Bank: We triple the money you put in, and halve that.  So, $\\frac{3J}{2}$\n\nHamburger Bank: We double the money you put that and split that into thirds. You get $\\frac{1}{3}$. So $\\frac{2J}{3}$.\n\nBank Bank: Every day you get $\\frac{J}{100}$ dollars per day.\n\n\n\nProblem sheet:\n\n\n\nA1) If Johny puts $J$ into each bank, over $46$ days how much money will he have in terms of $J$?\n\nA2) What if $J=26$?\n\nB) How many days will it take for all of the banks to give at least $50\\%$ profit each?",
+      "url": "https://artofproblemsolving.com/community/c3h1251906_banking_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1250395",
+      "title": "Expected value problem",
+      "text": "Mudkipswims42 makes a lot of posts each day.  $20\\%$ of the time, he makes 20 posts in a day, $\\dfrac{1}{3}$ of the time he makes 15 posts per day.  $30\\%$ of the time he makes 10 posts per day.  $10\\%$ of the time he makes 5 posts.  The remaining fraction of the time, he doesn't post.  If he currently has $5629$ posts, and today is May 31rst,  2016; What is the expected number of posts Mudkipswims42 will have On Jan 1, 2017? Round your answer to the nearest integer.",
+      "url": "https://artofproblemsolving.com/community/c3h1250395_expected_value_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1239977",
+      "title": "k MC Nationals Live Updates (2016)",
+      "text": "Hey all :)\n\n\n\nAs a few of you may know, for the past few years, I've posted live updates from the Mathcounts Nationals webcast, and I plan to do so once again.\n\n\n\nThe broadcast is in a bit under two hours at the time of writing, and I will begin posting results at that time (in the form of edits to this post).\n\n\n\nResults that will be posted are the top individuals, teams, and question-by-question updates for CD.\n\n\n\nLast year's post: http://artofproblemsolving.com/community/c3h1086622\n\n\n\nEdit: Broadcast has started!\n\n\n\nTop 10 Teams:\n\n10.  Michigan\n\n9.  Ohio\n\n8.  Virginia\n\n7.  Indiana\n\n6.  North Carolina\n\n5.  Massachusetts\n\n4.  New Jersey\n\n3.  Washington\n\n2.  California\n\n1.  Texas\n\n\n\nTop 12 Individuals (Pre-Countdown):\n\n12.  Benjamin Kang\n\n11.  Wentinn Liao\n\n10.  Andrew Cai\n\n9.  Alexander Xu\n\n8.  Eric Wei\n\n7.  Justin Yu\n\n6.  Brian Liu\n\n5.  Alex Wei\n\n4.  Benjamin Wright\n\n3.  Jason Liu\n\n2.  Luke Robitaille\n\n1.  Edward Wan\n\n\n\nTop 12 Individuals (Post-Countdown, ties broken by written seed):\n\n12.  Wentinn Liao (11)\n\n11.  Eric Wei (8)\n\n10.  Justin Yu (7)\n\n9.  Alex Wei (5)\n\n8.  Andrew Cai (10)\n\n7.  Alexander Xu (9)\n\n6.  Brian Liu (6)\n\n5.  Benjamin Wright (4)\n\n4.  Benjamin Kang (12)\n\n3.  Jason Liu (3)\n\n2.  Luke Robitaille (2)\n\n1.  Edward Wan (1)\n\n\n\nMatch-By-Match Results for Countdown:\n\n\n\nPreliminary Round:\n\n\n\nEric Wei (8) vs. Alexander Xu (9)\n\nQ1:  0-1\n\nQ2:  0-2\n\nQ3:  0-3, Alex advances.\n\n\n\nAlex Wei (5) vs. Benjamin Kang (12)\n\nQ1:  0-1\n\nQ2:  1-1\n\nQ3:  2-1\n\nQ4:  2-2\n\nQ5:  2-2\n\nQ6:  2-3, Ben advances.\n\n\n\nBrian Liu (6) vs. Wentinn Liao (11)\n\nQ1:  1-0\n\nQ2:  1-1\n\nQ3:  2-1\n\nQ4:  3-1, Brian advances.\n\n\n\nJustin Yu (7) vs. Andrew Cai (10)\n\nQ1:  0-1\n\nQ2:  0-1\n\nQ3:  0-2\n\nQ4:  0-2\n\n\n\nQuarterfinals\n\n\n\nEdward Wan (1) vs. Alexander Xu (9)\n\nQ1:  1-0\n\nQ2:  1-0\n\nQ3:  2-0\n\nQ4:  2-1\n\nQ5:  2-1, Edward advances.\n\n\n\nBenjamin Wright (4) vs. Benjamin Kang (12)\n\nQ1:  0-1\n\nQ2:  0-2\n\nQ3:  0-3, Ben (Kang) advances.\n\n\n\nJason Liu (3) vs. Brian Liu (6)\n\nQ1:  0-0\n\nQ2:  0-0\n\nQ3:  0-1\n\nQ4:  1-1\n\nQ5:  1-1\n\nQ6:  2-1, Jason advances.\n\n\n\nLuke Robitaille (2) vs. Andrew Cai (10)\n\nQ1:  1-0\n\nQ2:  2-0\n\nQ3:  2-1\n\nQ4:  3-1, Luke advances.\n\n\n\nSemifinals\n\n\n\nEdward Wan (1) vs. Benjamin Kang (12)\n\nQ1:  0-1\n\nQ2:  0-2\n\nQ3:  1-2\n\nQ4:  1-2\n\nQ5:  2-2\n\nQ6:  3-2\n\nQ7:  4-2, Edward advances.\n\n\n\nLuke Robitaille (2) vs. Jason Liu (3)\n\nQ1:  1-0\n\nQ2:  2-0\n\nQ3:  3-0\n\nQ4:  4-0, Luke advances.\n\n\n\nFinals\n\n\n\nEdward Wan (1) vs. Luke Robitaille (2)\n\nQ1:  0-1\n\nQ2:  1-1\n\nQ3:  2-1\n\nQ4:  2-2\n\nQ5:  3-2\n\nQ6:  3-2\n\nQ7:  3-3\n\nQ8:  3-3\n\nQ9:  4-3, Edward wins.\n\n\n\nThanks to all for watching, this concludes the competition and thus the updating of this thread.  :)",
+      "url": "https://artofproblemsolving.com/community/c3h1239977_mc_nationals_live_updates_2016",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1252672",
+      "title": "Clock problem",
+      "text": "What is the first time after 1 PM at which the minute hand and the hour hand of a clock point in exactly opposite directions?\n\n\n\nPlease post how you solved the problem.",
+      "url": "https://artofproblemsolving.com/community/c3h1252672_clock_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251862",
+      "title": "Logic Problem",
+      "text": "Mr. Thinks He’s Smart has three mathematician friends. He gives each friend the age of one of his three sons. All the mathematicians know is that the ages of the sons are positive integers, and Jorge got the youngest son, Brett got the second youngest, and Matt got the oldest son’s age. They must find out the ages of the three sons without directly saying the age they were given. Here is their conversation:\n\nBrett: This information is useless! I don’t know any other ages at all!\n\nJorge: Of course you don’t! I knew that from the start.\n\nMatt: Wait Jorge, if you knew that from the start, then is your number even?\n\nJorge: No, why?\n\nMatt: Thanks, now I know what all the ages are.\n\nWhat are the ages?",
+      "url": "https://artofproblemsolving.com/community/c3h1251862_logic_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1252544",
+      "title": "REGULAR PROBLEM",
+      "text": "How do you solve those problems with x amount of points equally spaced on a circle, that ask how many right triangles can be formed?  Is this a formula?",
+      "url": "https://artofproblemsolving.com/community/c3h1252544_regular_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1248233",
+      "title": "k Fried Chicken or Rotisserie Chicken?",
+      "text": "The Fried Chicken and the Rotisserie Chicken are having a race. They are racing to see who can cross the road the fastest. If this road would be displayed on the coordinate plane, they would be starting at (0,0) and they would be trying to race to (20,20). They can only move up or right, and can only stay. on lattice points. Sadly, the chickens are quite devious. If they meet on the same coordinate apart from the start and the end, they will both call KFC to take the other chicken away. If this happens, both chickens don't make it, as KFC doesn't care about the race and will cook both of them. What is the probability they finish the race?",
+      "url": "https://artofproblemsolving.com/community/c3h1248233_fried_chicken_or_rotisserie_chicken",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1240717",
+      "title": "2011 Math UNCO",
+      "text": "Let $T(n)$ be the number of ways of selecting three distinct numbers from $\\left\\{1, 2, 3,\\cdots ,n\\right\\}$ so that they are the lengths of the sides of a triangle. As an example, $T(5) = 3$; the only possibilities are $\\{2-3-4\\},\\{ 2-4-5\\}$, and $\\{3-4-5\\}$.\n\n\n\n(a) Determine a recursion for $T(n)$.\n\n\n\n(b) Determine a closed formula for $T(n)$.",
+      "url": "https://artofproblemsolving.com/community/c3h1240717_2011_math_unco",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1250441",
+      "title": "SSA Congruence",
+      "text": "Is there ever a time when SSA Congruence works? I know it's not a reliable way of finding congruence as in certain cases it can produce two triangles, but is there ever a time where SSA Congruence can be used to determine if two triangles are congruent?",
+      "url": "https://artofproblemsolving.com/community/c3h1250441_ssa_congruence",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1082145",
+      "title": "inequalities",
+      "text": "a) Is the inequality PA + PB < CA + CB true for any triangle ABC and any point P inside it ?\n\nb )Is the inequality PA+PB+PC < DA + DB + DC true for any tetrahedron ABCD and any point P inside it ?",
+      "url": "https://artofproblemsolving.com/community/c3h1082145_inequalities",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251530",
+      "title": "k Geo Marathon (600th post)",
+      "text": "600th post.\n\n\n\nI don't think I've seen any Geometry marathon because it's very hated.\n\n\n\nBut I'll make one.\n\n\n\nPost a solution to the previous problem and then make a new problem.\n\n\n\nexample: P1What is the area of square with length 4 inches.\n\n\n\n\nS14*4=16 $inches^2$\n\n\n\n\nThat was really easy because it was an example but make more interesting problems then that.\n\n\n\nRemember, MIDDLE SCHOOL math. So no crazy hard Geo Problems.",
+      "url": "https://artofproblemsolving.com/community/c3h1251530_geo_marathon_600th_post",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251616",
+      "title": "I have a problem about Polygon. Can you help me?",
+      "text": "Let ABCDE be a convex pentagon. Given that area of ∆ABC = area of ∆BCD = area of ∆CDE = area of ∆DEA  = area of ∆EAB = 2 $cm^2$. Find the area of the pentagon.",
+      "url": "https://artofproblemsolving.com/community/c3h1251616_i_have_a_problem_about_polygon_can_you_help_me",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1252036",
+      "title": "Distance to triangle sides from bisectors bases.",
+      "text": "In a triangle ABC bisectors AA1 and BB1 are drawn. Prove that the distance from any point M of A1B1 to AB is equal to the sum of distances from M to AC and BC.\n\n\n\nThis problem is from Viktor Prasolov book Problems in Plane and Solid Geometry. There is a solution there, based on segment ratios, but I'm looking for an alternative approach.",
+      "url": "https://artofproblemsolving.com/community/c3h1252036_distance_to_triangle_sides_from_bisectors_bases",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1249039",
+      "title": "k Summer Preparation for Math Competitions 2016-2017",
+      "text": "Hey guys, not many people have replied to this on the Contests form so I made the same thing here!\n\n\n\nSummer is coming up and as always, it's a time to prepare for next year! I have several goals in my mind, but here are the few of the most important:\n\n1. Get a 23+ on the AMC 8\n\n2. Make MATHCOUNTS Nationals (my State is Washington)\n\n3. Get a 110+ on the Math Kangaroo (easiest in my opinion)\n\n\n\nSo my question is what are reputable books (AoPS and beyond) to accomplish these goals, also if you know great resources other than AoPS be sure to post them! And also, any study tips?\n\n\n\nAnd here's a bit of my history:\n\n\n\nAMC 8: 20 this year, as a 7th grader, and 20 last year as well\n\nMATHCOUNTS Chapter: 36 this year, 24 last year (when I was an idiot), and in the low-30s/mid-30s in past National competitions (2000-2005)\n\nMATHCOUNTS School: 43 this year, and I don't know about last year (it was enough for top 4 in my non-competitive school though)\n\nMath Kangaroo: 98 this year, 102 last year\n\n\n\nThanks in advance!\n\nfatant\n\n\n\nNOTE: I have not made MATHCOUNTS State because my Chapter is one of the toughest in the WA.",
+      "url": "https://artofproblemsolving.com/community/c3h1249039_summer_preparation_for_math_competitions_20162017",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251787",
+      "title": "Fibonacci Number Patterns",
+      "text": "I read about Fibonacci number patterns in the Intro to Number Theory book and I can't figure out why some of them are true. Here are some of them:\n\n1) Every fifth number in the sequence is a multiple of 5\n\n2) Any two consecutive Fibonacci numbers are relatively prime\n\n3) The product of two Fibonacci numbers that are separated by each other by one other Fibonacci number is 1 more or 1 less than a perfect square.\n\n4) Every perfect square is a divisor of some Fibonacci number\n\n\n\nPlease tell me if you prove why some of them are true. Thanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1251787_fibonacci_number_patterns",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251730",
+      "title": "Summer Preparation",
+      "text": "Hey everyone,\n\nI was wondering what kind of preparation I need for the summer. Also, are my goals for next year within reason? Do you guys think I can get into USA(J)MO, or is it too hard?\n\n\n\nSome goals for next year (8th grade):\n\nMake AIME (should be quite easy)\n\nMake USA(J)MO (hard)\n\nMathcounts State CD (in CA)\n\nPerfect Score AMC 8\n\n\n\nAnd some things that I have done in the past:\n\n24 on AMC 8 in 6th and 7th grade\n\nMathcounts State 6th grade (CA)\n\nWon New Year’s Invitational CD this year (ignore this if you don’t know what it is)\n\n93 on 2016 AMC 12A\n\n\n\nAoPS classes I have taken:\n\nIntro to C&P, Intro to Geometry, Intermediate Algebra\n\nAnd I am taking Pre-Calc and AMC 12 Problem Series right now.\n\n\n\nFor Alcumus, I have mastered all topics in Pre-Algebra, C&P, and Geometry.\n\n\n\nThanks you!\n\nsupermessi",
+      "url": "https://artofproblemsolving.com/community/c3h1251730_summer_preparation",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251698",
+      "title": "k AoPS Username for Richard Ruscyk",
+      "text": "What is his username?",
+      "url": "https://artofproblemsolving.com/community/c3h1251698_aops_username_for_richard_ruscyk",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1098783",
+      "title": "Graph theory",
+      "text": "What resources are available to help me learn graph theory?",
+      "url": "https://artofproblemsolving.com/community/c3h1098783_graph_theory",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251074",
+      "title": "Counting Squares in Circles",
+      "text": "How many non-overlapping $2$ by $2$ squares will fit into a circle with radius $8$",
+      "url": "https://artofproblemsolving.com/community/c3h1251074_counting_squares_in_circles",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1250598",
+      "title": "wu2481632/SHARKYBOY Mock MATHCOUNTS Nationals Discussion",
+      "text": "Hey guys!\n\n\n\nSo I made this topic so everyone can discuss the outstanding Mock MATHCOUNTS Nationals created by SHARKYBOY and wu2481632. Post solutions to whichever problems you see fit, avoid repetition and please STAY ON TOPIC.\n\n\n\nComplete Test (Google):\n\nhttps://docs.google.com/document/d/1WzHHtEDwe2OR14qy-ObnokNRaMI--rmAeO0wubM_p7g/edit?usp=sharing\n\n\n\nComplete Test (PDF):\n\nhttp://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvZi85L2RjMGU1MTk5NjY0Mzk2NGEwODgxNjJjMmRjYjI5NGQ5MzRjNmZlLnBkZg==&rn=TW9ja1NwcmludC5wZGY=\n\n\n\nAnswers:\n\nhttp://services.artofproblemsolving.com/download.php?id=YXR0YWNobWVudHMvMS85L2U5MjBjNmEzYjY3NmI2NDhlMjYxMzE4Y2JkMWZmMzhkYjJhZTc1LnBuZw==&rn=YW5zd2Vyc3Rvd3VzaG9yay5QTkc=\n\n\n\nOfficial Competition (OVER):\n\nhttp://www.artofproblemsolving.com/community/c177316h1223199_wu2481632sharkyboy_mock_mathcounts_nationals",
+      "url": "https://artofproblemsolving.com/community/c3h1250598_wu2481632sharkyboy_mock_mathcounts_nationals_discussion",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251076",
+      "title": "Fibonacci Fun",
+      "text": "Prove that there are twice as many odd Fibonacci numbers as even ones.\n\n\n\n(Assume a finite Fibonacci series.  I really don't want to get into the whole concept of $\\aleph$ and $\\beth$ right now...)",
+      "url": "https://artofproblemsolving.com/community/c3h1251076_fibonacci_fun",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251392",
+      "title": "synthetic division practice",
+      "text": "does anyone know any cool problems associated with synthetic division or any ways to find them?",
+      "url": "https://artofproblemsolving.com/community/c3h1251392_synthetic_division_practice",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1244722",
+      "title": "k I really hope this problem isn't to hard for you guys",
+      "text": "The new American Mathematics Competition consist of 25 questions.\n\nThe scoring rules are:\n\nEach correct answer:    +6\n\nEach wrong answer:      0\n\nEach answer left blank: +2\n\n\n\n\n\n\n\nThe score of a student who answers 16 questions with 12 correct and 4 wrong answers is?\n\n\n\n\n\nEDIT: oops sorry",
+      "url": "https://artofproblemsolving.com/community/c3h1244722_i_really_hope_this_problem_isnt_to_hard_for_you_guys",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1250950",
+      "title": "Geometry and Circles",
+      "text": "Two circles have radii $15$ and $95$. If the two external tangents to the circles intersect at $60$ degrees, how far apart are the centers of the circles?",
+      "url": "https://artofproblemsolving.com/community/c3h1250950_geometry_and_circles",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1250442",
+      "title": "Playing with Fire",
+      "text": "Jerry is playing with fire. He lights one end of his identical ThisIsNotARealBrand strings. It takes exactly one hour to burn. Delighted by this, he lights both ends of another one of those strings, and it burns out in 30 minutes.\n\n\n\nHe then lights one end of his ThisIsFake strings. It takes 2 hours to burn. By that time, he gets bored and falls asleep.\n\n\n\nThe next day, his mother tells him to turn the sprinklers on for exactly 22 minutes and 30 seconds. He decides to have some fun, and tries to tell the time by using his 2 brands of string and a match only. How should he measure 22 minutes and 30 seconds? Once he lights an end, he cannot put out the fire.\n\n\n\nHow to measure 45 minutes: Click to reveal hidden textLight both ends of one ThisIsNotARealBrand string, and one end of another. When the first string burns out, light the second end of the second string. When the second string burns out, that will be 45 minutes from start to finish.",
+      "url": "https://artofproblemsolving.com/community/c3h1250442_playing_with_fire",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1250850",
+      "title": "Logarithms",
+      "text": "Can someone post some theorems with logarithms? I can't solve any problems with them.  I know I should work on proving them, but want to first learn some basic theorems to solve AIME #1s.",
+      "url": "https://artofproblemsolving.com/community/c3h1250850_logarithms",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1249823",
+      "title": "k Dear MATHCOUNTS, An Open Letter (My 500th Post on AoPS)",
+      "text": "Dear MATHCOUNTS,\n\n\n\nI hope this is an adequate way of saying thank you for what you have given me through your competition series over the last three years. What I have done in your competitions has changed me forever, and I am certain I will never forget those moments. MATHCOUNTS has changed me in so many ways, and I would like to say here what happened to me during my MATHCOUNTS career so you know what difference you can make in someone.\n\n\n\nFew people (I hope) remember how I was around age 10: shy, childish, you name it. I had absolutely no self-confidence. The previous year or two I had started to do math at home and I had gotten pretty good, but my contest scores still weren't great and I felt I was a failure at everything. I wasn't that good at any sport either, so I felt there was no use for my super-competitive juices, which remain today a really strong part of my personality. Of course, this is when I discover MATHCOUNTS.\n\n\n\nMy story starts in fifth grade, the year before I start MATHCOUNTS. Based on various other milestones one could argue that my story starts somewhere else, but inside I feel my story starts in fifth grade. My memories of school were very fond, I had a great teacher and many good friends. But it was also when I started math competitions. I had already been doing serious training in MATHCOUNTS and the AMC 8. We tried to convince my school to let me do the AMC 8 in school, but after long deliberation they decided they didn't want any lower schoolers doing the AMC 8. So I went to a math club nearby which I was not a member of to take it. They were very nice to let me in, as I believe I was the only non-member there, and definitely the youngest. The test was late at night, and before I went into the competition room I ate some candy to keep myself awake. The adrenaline rush that I got before the test was something I would feel countless times in the future as I got ready for other competitions. I thought I did okay on that test going out, and later I learned I got an 18, and got onto the Honor Roll. That was a big achievement for me in my first contest ever. My dad decided to take me to my local Chapter Competition's Countdown Round. Of course, I didn't participate, but it was really inspirational watching the kids solve them quickly. I even saw some people I knew. But now I'm sure I know everybody who was in the room that day. They would give questions to the audience, and I remember getting the question: \"What is the larger number of the two prime numbers that sum to 12,345?\" right, and I was the only person to raise my hand. This was the beginning of what would be an incredible MATHCOUNTS career.\n\n\n\nMoving on to sixth grade, when I started middle school. We started a MATHCOUNTS club in my school, because we had never had one before and I really wanted to do MATHCOUNTS. We got incredible participation that first year. 29 people came to the School Competition. Even after all that training, that test I felt so nervous, partly because it was my first competitive MATHCOUNTS ever. I won that competition and got onto the team, and was counting down the days until the Chapter Competition. At this point people would routinely come to me to ask for math homework help, and this was the first real respect I ever had I think. In previous years I was just the shy kid who's pretty good at math. I still remember that night before the Chapter Competition in sixth grade, I couldn't sleep. I was simply waiting for the super-exciting competition to come. These are the moments you live for I think. I met up with my team early Saturday morning at school, and we carpooled to the competition. It was as amazing as I thought it would be. There was a sign we saw that said \"MATHCOUNTS Registration\" and I start getting this amazing feeling inside, that I'd actually be a part of this forever. After waiting for a while, they sat us down in a large auditorium to take the test. When I took the test, I was actually sick that day so I had tissues next to me, but I didn't use them because I was so excited. I went through the test at a relatively good speed, getting to around #27 on the Sprint Round. The Target Round was as expected, I easily got the easy ones but didn't really do well on the harder ones. We were then moved to another room for the Team Round, and we were confident on the first 9, but then my team and I were clueless on #10 so I guessed. It turned out to be right! When we went to eat lunch, I had never felt so nervous. I knew I had a legitimate shot at Countdown, and I really wanted to make it as a sixth-grader. I barely ate any lunch, and finally they came out and announced who made Countdown. And for some reason, my name was last on the list. Name by name they called and it wasn't mine, and I got super nervous, and then finally my name, but no! A different last name! But then they call my full name, and I go up super relieved that not only did I make Countdown but I made States too. In the first round, my first question was: \"How many terminal zeros are at the end of 125!?\" I buzzed in immediately with the correct answer of 31. Even the moderator had to look for a second at me before telling me it was correct. No one in that entire room had gotten it right that fast. The second question had something to do with regular polygons, which I also got. I looked at the crowd and smiled. I knew I had a future at this. The next round I was beaten on the first question, and my opponent had a large cheering group, so I felt really nervous. But then I rattled off three correct answers out of the next four (the other one neither of us got), so I was in the finals. And I was playing a kid who was a good friend of mine, and we always were neck-and-neck everywhere. The questions got harder and kudos to him, he was faster than me. He won 3-0, so I got second. My team also got fourth. I got fifth individually. The feeling after that competition, however, was like something I had never felt before. I eagerly awaited the State Competition. When it finally came, I remember the wait was even longer. We went into a small classroom this time, just me and my three teammates with some of the other teams, with a proctor or two. I was also sick that day and I was coughing a lot. The test was really hard this time, and I knew from the beginning that I wasn't making Nationals. I might not have even made Countdown. After skipping almost half of the questions, I went back to check my work. I fixed a few answers, then time was called. I was really unhappy. The Target and Team rounds went by quickly, and I remember doing okay on the two of them. Then we ate pizza for lunch and I played on my phone. I was once again really nervous for Countdown. This would, obviously, become a common feeling for me. When they finally announced the Countdown names, my name was first this time (phew!) and I went up and sat in one of the seats next to the stage. My first round I was super nervous and buzzed in early every time, almost every time with the wrong answer. Except I got one right, and that was enough to put me into the next round. In the next round I had never felt more pressure: a win and I am guaranteed a trophy at States in sixth grade. What an incredible achievement that would be! Again I was super nervous, and I buzzed in early, only once with the correct answer, but that was enough. (I later learned that kid got 1st at Written!) In the Semifinals I got destroyed by the eventual champion, I didn't even stand a chance. The third place match was more interesting, though. I was playing another sixth-grader (this year, we were teammates at Nationals.) I got the first two questions really quickly, but then the next two I got nervous and got them wrong, and he took his time and got them right. The next correct answer would win third place, and I went a tiny bit slower, and still got the next question faster. I won third place in Countdown! But then when they said the top teams and individuals (I got 11th I later learned, and my team got 10th), it hit me that I didn't make Nationals. It hit me really hard. That feeling would stay with me until the State Competition the next year.\n\n\n\nNow I was in seventh grade, and I had more self-confidence than a lot of kids at my school. The experience I had at MATHCOUNTS the previous year stayed with me, and I was always smiling, as if I was always remembering that moment. I was sick again (can you believe my luck?) for the School Competition that year, so sick I shouldn't have gone to school. But I knew if I didn't go to school I would have no chance at Nationals, so I went. I got a 44 on the competition, and first at my school. That gave me confidence for future competitions that year. I didn't really train prior to the Chapter Competition, knowing that I had already gotten 5th in sixth grade and that I was a substantial favorite to get a trophy this time. It was the biggest mistake of my MATHCOUNTS career. Again I was super excited for the competition, that whole week it was the only thing I thought about. I really wanted that feeling of being in the competition room again. When we met at school again, my mind was racing. All I was thinking about was lunch and Countdown, and I wasn't paying any heed to the Written component. When we showed up we were in a different building this time, which kind of bummed me out because I didn't feel as comfortable as I did the previous year, having been in the same place as watching it in fifth grade. They took us upstairs for the written component, and I raced through the Sprint Round, seeing how easy the questions looked after another year of MATHCOUNTS training. The Target Round also went quickly, with only one very hard question (and evidently one other silly after I saw my score.) Our team was much better this year even though we lost a lot of 8th-graders, because everyone had an extra year of training. We did very well on the Team Round, and I went down feeling very confident about myself. However, I still felt that feeling of absolute nervousness, something I had only felt two times before in my life: pre-Countdown at the Chapter and State rounds the year before. Yet again my name was first, so there was no time to be nervous. I was relieved I made Countdown, feeling like there was a lot of pressure on me. But in the first round of Countdown I was playing a kid who I recognized from the previous year, and he improved a lot. He beat me on the first question, but I beat him on the second question, and the tension was unbearable. I made a silly mistake on the next question, and that was it, he got it right and the dream was over. I sulked through the rest of the Countdown Round, and then it didn't help that I wasn't one of the top individuals (I later learned I got 6th individually, worse than last year). My team got 2nd, which was the one exciting part on the day. We were really building as a team and we had a great future. I just hoped I would one-up myself at States, and I really wanted to make Nationals as a seventh-grader. The year before it had been so painful when I didn't qualify for Nationals, and I didn't want that to happen again. I doubled my daily math training from one hour to two hours that month, and did only MATHCOUNTS-specific training, meaning I halted my AoPS studies. I couldn't sleep again before the State Competition, this time knowing I had something to play for. I wanted to make Nationals so badly. We had a practice at my house the night before and met at my house early in the morning again. But it snowed, and the competition was delayed by a couple of hours!!!! And even worse, they cancelled the Countdown Round!!!! It was really really tense at the competition, and we waited for a while before they finally gave us the test. I saw some kids I knew very well, and I went through the Sprint Round and managed to finish it. Speed was something I payed lots of attention to the month before Chapters, because I knew I needed as many correct answers as possible if I wanted a chance at making Nationals. After a pretty good Sprint Round, the Target Round was okay and I answered most of them. The Team Round was okay, but it was much harder than last year, unlike the rest of the test. I thought they were playing with teams that used the evens and odds trick on the Team Round, and it was really hard. Lunchtime that day was even more nerve-racking because there was no Countdown Round. There was a long lecture about prime numbers that wasn’t great, and I was really nervous. They finally announced the top four teams first. Our school was third! It made me more confident about my chances at making Nationals. The fourth-place individual wasn't me, but the third-place individual was! As I walked to get my trophy, I felt like I was walking at Nationals. I was so excited about what was going to happen. I continued to train for another couple of months, and I was really nervous because I wanted to make the Countdown Round. I had always watched other people in the National Countdown Round, and that was my dream above all dreams. However, as a seventh-grader it seemed unlikely for me to actually do it. The practices and train ride with my teammates were really fun, but in the end it was time to meet some AoPSers. I got a lot of pins at the National Competition being a very serious pin-trader (every state has a different kind of pin and you try to trade with other states), and the hotel was fun but then when I went into the competition room it was all business. I wanted to do as well as I possibly could. After all the chants, we started. I was really nervous the whole time and quickly got under time pressure. I didn't make it to the end of the competition, and it was really heartbreaking. I knew for the first time in my MATHCOUNTS career I would have to watch the Countdown Round as a spectator. The Target Round whizzed by and I did okay on it, as did the Team Round which we practiced so hard for. Then they ushered us into this giant room and gave us all clappers. I saw people leaving the room, teams leaving the room. When we got close to the front I realized what was happening. I saw Arkansas run in, and I heard the announcer calling the states. So it was actually true! I got to run in to the light show at Nationals! Although I didn't make Countdown or win any award (congrats Kevin Liu), it was still a dream come true. I learned later that I got 143rd individually and my team got 26th, and I hoped to only improve this year.\n\n\n\nBy eighth grade (this year) I was no longer a shy kid at school. The National Competition made me proud of who I was, made me proud of being a member of the elite group that got to go to Nationals. And I would have the opportunity to do it twice! When the School Competition came around, I had barely touched a MATHCOUNTS test, save for a couple of practice Nationals. I tried the same strategy that worked for me last year, going really fast. Unfortunately this year I was a lot more silly mistake prone, and I made many many silly mistakes, and I got 3rd in my school. This just made me want to study harder, to get redemption, because I knew I was better than that. I knew that I had a shot at doing great things at Nationals as an 8th-grader, and I knew that I would need a stronger performance at Chapters. In the calendar year 2016 I didn't learn any new math during the MATHCOUNTS season, only MATHCOUNTS problems. I did a combination of using AoPS's MATHCOUNTS Trainer and the MATHCOUNTS OPLET on the MATHCOUNTS site. I immediately saw my scores on practice tests skyrocket. For the first time, not only was I avoiding silly mistakes, but I was also getting 40s and above on practice Chapter, State, and even old National competitions. This made the anticipation prior to the Chapter Competition even more unbearable. Our team was better than it ever was before, and we made a goal at the start of the year to win the state championship. My coach went with me to the National Competition a year before because the first and second place coaches couldn't go, but this year we wanted to win it outright. The Chapter Competition as always came with a lot of anticipation and lots of practice tests. But on the day of the test I felt surprisingly calm. I had been in the situation two, or maybe even three (if you count watching in 5th grade) times before, and I was simply a different person now. This was another way MATHCOUNTS has changed me, I have learned how to handle immense pressure. We went to the same room as last time, and I went through the test way more cautious than I did at the School Competition. I knew that a handful of silly mistakes would keep me from Countdown, and I definitely didn't want that to happen. However, I went so slow that I only made it to #27, even though I finished it last year! The Target Round was a different story, besides a silly mistake on #2 I went through the rest smoothly. Our amazing team crushed the Team Round, and I felt pretty good come lunchtime. However, the nerves came in again. It was my last Chapter Countdown ever should I qualify, and I really didn't want the heartbreak of sixth grade or the disgrace of seventh grade in the Countdown Round. I really felt this year was my year. But I was still nervous. They called my name in the middle of the pack, and I went up only to face something I had never faced before in MATHCOUNTS: I was playing a school teammate in the first round of the Countdown Round. Not just a school teammate, but one of my best friends since I started going to this certain school. It was painful every time I got a question right because I knew that one of my teammates was losing, but I did win the match. The semifinals I played against the kid who won the Chapter Competition last year, and it was nail-biting but I managed to win that one too. But then in the final I played against someone else from my school. When we do practice Countdowns at school it would very often end up as me against him, and now we were playing for the Chapter Competition finals. It reached 2-2, but then neither of us could get a question right. It was like writer's block, but for math. Neither one of us could finish the other one off. Finally, after the good part of 10 questions, I got one right and I won the Countdown Round. It was jubilation, but I also felt bad because I had to beat two teammates in the process. At the awards ceremony, I learned I got 2nd individually and our team got 1st. This gave me huge confidence going into the State Competition. But with huge confidence came even harder work, and sometimes I was working two and a half to three hours a day to finish what I was doing. I wanted to make Nationals so hard, I didn't want it to be even in doubt this time. I wanted to be able to make it on the worst of days, so I wouldn't feel nervous. But even with all the studying and all the practice tests, the day before I had that same feeling in my stomach which I would learn to love and now miss. The pre-competition feeling. The next day we met at school and got into carpooling groups, and we went to the competition. As always, there was tons of waiting time, and we were standing around for a while. But when the dust cleared and we got into the same small classroom, I felt that same feeling again. That same room I had been in for the previous two years was the room we were in again, and I knew it would be the last time. I closed my eyes, took a deep breath and then started the Sprint Round. I started slow, but then sped up as I felt more comfortable with my speed. However, I still didn't make it to the end of the test; all the work to reduce silly mistakes meant that I went much much slower. In fact, I only answered 23 on the State Competition, compared to the 26 or 27 from the previous year. But I still felt confident as I breezed through the Target Round (except for the last question), which meant that it would be down to how many silly mistakes I made to see whether I made the National Competition. Before the Countdown Round I met a new definition of nervous. I felt like the pressure was on me, and that I had to do at States what I did at Chapters. When they announced the Countdown people, my name was towards the end. We were all really nervous that I didn't even make Countdown, let alone Nationals. But I did, and then in my first round match I won on a deciding question that I would've lost if it weren't for my opponent buzzing in first incorrectly (I had the same answer as him.) In the second round, however, I didn't have the same luck. My opponent won the deciding question off of what he later told me was a guess. Oh well, I thought, there goes my Countdown career. (It would be my last competitive Countdown match ever.) I didn't pay much attention to the rest of the Countdown Round, waiting restlessly for the awards ceremony. Countdown came first, and obviously I got nothing. Then they said teams, and we got first! We hit our goal for the year, and we were state champions! Then the top individuals were announced. I wasn't 4th or 3rd. I thought to myself, \"I don't care if you make me 1st or 2nd. Just say my name.\" Sure enough, I was 2nd! Although it didn't come with the added bonus of winning the state championship, I made Nationals! It was a really exciting moment for me, and I wanted to study really hard for Nationals so I could be my best. However, looking retrospectively on the ensuing two months, I can say I had too much of a life. I had other things going on, including school and tennis tournaments, to be able to study lights out for Nationals. Albeit I studied more than was humanly possible given my restrictions, but looking back it simply wasn't enough. I went to my team practices, and met my new teammates who were all really nice, and when our train arrived in Washington, DC I was so excited for what was going to come next. Unfortunately, I was sick again. The first day was bad because I was using a tissue every day. And because I missed the AoPS party the previous year, I made an extra effort to meet a lot of AoPSers this time. I went to both AoPS parties and I had a lot of fun there. I traded lots of pins and got every one except for the Virgin Islands. But on the competition, after the cheers, when the flashcards went back in my backpack and my calculator went to the proctor for the Sprint Round, there was adrenaline of course but something just wasn't clicking. It wasn't exhaustion, although I barely slept the night before, but there was something else hindering me. I made it through the first 10, after skipping some questions, in 15 minutes. It was never the same after that. I did better, but I made it to #23, which was an improvement given I made it that far at States two months earlier. But still I had no more chances at Countdown. Although I did well on the first 4 Target Round questiond and got some Countdown hope, I basically fell asleep on #s 5 and 6. Those two problems were a nightmare come true. I was daydreaming of myself in the Countdown Round, and then I heard time called as soon as I started working on the problems. Instantly the daydream went away, never to return. I did alright on #s 7 and 8, then basically zoned out on the Team Round. I knew my MATHCOUNTS career was over and I was so sad. The run-in was absolutely amazing again, and even though I wasn't in the Countdown Round everybody was amazing. It's incredible to think someone actually got a perfect on this test! Congratulations Edward Wan! But then I truly realized my MATHCOUNTS career was over, and it was definitely one of the most bittersweet moments of my life. I was so sad that it was over, yet so happy that I got the opportunity to go to Nationals twice in three tries. I later learned that I got 71st individually and the highest in my state, one question away from Top 56. My team got 25th.\n\n\n\nTo conclude, I would like to state one more time how grateful I am for the MATHCOUNTS competitions. MATHCOUNTS, if you ever read this, just know that you changed my life forever. As I sit here writing this post, I probably should be studying for 8th-grade exams. I'm evidently almost done with middle school, and I'm taking the time to reflect on what has really been an incredible journey for me. Once again, thank you so much for what you have done.\n\n\n\nSincerely,\n\n\n\nrafa2be (oops my parents don't want me posting my real name)",
+      "url": "https://artofproblemsolving.com/community/c3h1249823_dear_mathcounts_an_open_letter_my_500th_post_on_aops",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251331",
+      "title": "k typing math",
+      "text": "hi, I don't know how to write math symbols such as multiplication sign, division sign(not /) and putting fractions. Can you tell me how to type them?",
+      "url": "https://artofproblemsolving.com/community/c3h1251331_typing_math",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251146",
+      "title": "In Need of Motivation",
+      "text": "If you have read my previous posts, you know that I want to make state in my last year of MathCounts. I didn't even make the school team this year. I am putting in hours of work to reach my goal. Recently, I have been discouraged. In await of CMMS and Vol 1, I am mastering pre algebra on insane. I have been doing bad. I'm spending long periods of time of a single question(Area topic in Pre-Algebra). If anyone has advice, post them below.",
+      "url": "https://artofproblemsolving.com/community/c3h1251146_in_need_of_motivation",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251188",
+      "title": "Logarithms",
+      "text": "$(x_1, y_1)$ and $(x_2, y_2)$ are the solutions to:\n\n\n\n$\\log_{225} x + \\log_{64} y =4$\n\n$\\log_x 225 -\\log_y 64 =1$\n\n\n\nFind the value of $\\log_{30} x_1y_1x_2y_2$",
+      "url": "https://artofproblemsolving.com/community/c3h1251188_logarithms",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251112",
+      "title": "Hopefully This Problem Will Be Solved!",
+      "text": "What is the 2011th digit from the right of $\\frac{2010^{2010}}{3}$?",
+      "url": "https://artofproblemsolving.com/community/c3h1251112_hopefully_this_problem_will_be_solved",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1250544",
+      "title": "Keyboard Mistakes",
+      "text": "Alp_snow7 has a tendency to typo. But lately, he has come to a frightening conclusion....his keyboard is trolling him! He found this out one day, when he typed \"lel\", but it came out as \"kek\". After this, started observing the patterns of the glitches. After a few days, he deduced several rules to how the keyboard is glitching. Any key might become the key left to it on the keyboard (For example, with the \"lel\", the \"L\" became the \"K\", and the \"K\" is the key directly left to the \"L\", so the \"L\" became the \"K\" for that word. It has a $\\frac{1}{10}$ chance to glitch once, and a $\\frac{1}{60}$ chance to glitch twice in a row (By this I mean one specific key has the chance to glitch twice in a row, so \"L\" might glitch once, alp_snow7 might type any number of letters in between the next \"L\", and this \"L\" would have a $\\frac{1}{60}$ chance to glitch). It does not seem to glitch more than twice in a row. Assuming alp_snow7 types only letter keys, and only letter keys will glitch, if alp_snow7 types an average of 30,000 letters a day, and he has an equal chance to type any letter on the keyboard, what is the average number of days it will take for his keyboard to glitch \"lel\" into a \"kek\" again?",
+      "url": "https://artofproblemsolving.com/community/c3h1250544_keyboard_mistakes",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1251005",
+      "title": "3D Geo Problems",
+      "text": "Ok does anyone have any mid-AIME level 3D geo problems, I suck very much at 3D geo and this is one of my worst areas. These are pretty rare but they always get me, and I don't feel like going through every AIME ever looking for 3D geo problems. Maybe some examples or theorems/strategies would help, thanks :)\n\n\n\nEDIT: This should probably go in the high school forum so mods feel free",
+      "url": "https://artofproblemsolving.com/community/c3h1251005_3d_geo_problems",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1249906",
+      "title": "Probability of sum of x when rolling y dice",
+      "text": "say what's the probability of rolling a sum of 10 with 3 dice?\n\n\n\nThis is simple but how about for larger numbers? How would you solve it?",
+      "url": "https://artofproblemsolving.com/community/c3h1249906_probability_of_sum_of_x_when_rolling_y_dice",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1250827",
+      "title": "Money exchanges in a game called Animal Jam",
+      "text": "Animal Jam is a fun game that's actually made by National Geographic. In Animal Jam, there are three money units: gems, diamonds, and tickets. You can exchange diamonds for gems in this game. Time for the math. The exchanges you can make are:\n\n\n\n1 diamond - 1,000 gems\n\n4 diamonds - 5,000 gems\n\n7 diamonds - 10,000 gems\n\n10 diamonds - 15,000 gems\n\n\n\nLet's figure out the maximum number of gems you can get with a fixed number of diamonds. Looks pretty tricky. I thought linear programming was the key to solving this, but it wasn't.\n\nI was talking about this stuff with my father last night. The good thing about this is 1, 4, 7, and 10 are in an arithmetic sequence. This leads to some ideas... Let's say you had 8 diamonds. Should you do the first and third exchanges, or two of the second exchange? You will get more gems doing the first and third exchange. Hey, this means you should never do two of the second exchange, because you'll get more gems doing the first and third! What if we had 11 diamonds? Should we do the first and fourth exchange, or the second and third? Do the first and fourth exchange, you will get more gems. This means don't do both the second and third exchanges to maximize your gems, you'll get more doing the first and fourth. And what about if you had 14 diamonds? Do you do the second and fourth exchange, or the third exchange twice? It actually doesn't matter. You'll get the same number of gems either way. Another thing: We have 21 diamonds this time. Should we do three of the third exchange, or two of the fourth and the first exchange once? We do the fourth exchange twice and the first once to get more gems. We see from this that you do not do the third exchange three times, because you get even more gems doing the fourth exchange twice and the fourth exchange once. And don't do the first exchange 4 or more times because you can replace that with doing the second exchange! Lastly, we look at the quality of each exchange (gems/diamonds). They have qualities of 1,000, 1,250, 1,429, and 1,500, respectively. It seems like we should just do as many of the fourth exchange as possible, and keep doing the biggest exchange possible. This is the answer (I think)! In fact, we could of just guessed this from the very beginning (ooh, maybe I didn't have to go through all that annoying stuff to get the answer)! But if we have different numbers, it gets harder.\n\n\n\nThere's also gems to tickets exchanges in Animal Jam. But it's not very interesting, because for all the exchanges, you pay a number of gems, and get exactly twice as many tickets. You can basically do what you want. The end.",
+      "url": "https://artofproblemsolving.com/community/c3h1250827_money_exchanges_in_a_game_called_animal_jam",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1250457",
+      "title": "k 9 Units in the cartesian plane",
+      "text": "IMAGE\n\n\n\nHello, in my math class, me and my teacher had a big argument about whether you had to state the unit in the cartesian plane. I will send the results of this poll to my teacher. What do you guys think?",
+      "url": "https://artofproblemsolving.com/community/c3h1250457_units_in_the_cartesian_plane",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1248562",
+      "title": "k I don't know what subject this problem is so I'll just post",
+      "text": "One day, Mr. Thinks He Is A Genius discovered a \"new\" trick: If you took the ratio of $2$ consecutive Fibonacci numbers ($\\frac{\\text{smaller}}{\\text{larger}}$), the higher the numbers you use, the ratio seems to get closer and closer to $$\\phi=\\frac{\\sqrt{5}-1}{2}=0.61803398874\\dots$$(for example, $\\frac{3}{5}=0.6$ and $\\frac{89}{144}=0.61805555555\\dots$). He showed his \"discovery\" (and a conjecture) to Mr. Actually a Genius.\n\n\n\nMr. Actually a Genius then took ANY $2$ positive integers and \"Fibonacci\"'d them. For example, if he took $1$ and $100$ (which he might or might not have done), he would get the sequence $$1, 100, 101, 201, 302, 503\\dots$$by summing the last $2$ terms to make the next one.\n\n\n\nHe then took the ratio of $2$ consecutive terms and repeated this process with larger and larger terms. Prove that this ratio also converges to $\\phi$.",
+      "url": "https://artofproblemsolving.com/community/c3h1248562_i_dont_know_what_subject_this_problem_is_so_ill_just_post",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1250736",
+      "title": "Real Numbers",
+      "text": "A number N is successively divided by 5,7 and 9 leaving remainder 3,4 and 7 respectively. What will the remainder be when N is divided by 35. Options are 13,17, 19 and 23",
+      "url": "https://artofproblemsolving.com/community/c3h1250736_real_numbers",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1250547",
+      "title": "Standard Deviation",
+      "text": "OK......\n\n\n\nso my math teacher assigned a 9 page packet about standard deviation.\n\nSince this is stupid common core, we used graphing calculators in school.\n\nThen the bell rang and in a rush I went home with the homework. Since the supplies list said that\n\nwe didnt need a graphing calculator, I assumed that the homework did not assume the use of a graphing calc.\n\n\n\nboy was I wrong.....\n\n\n\nthank god you can calculate standard deviation by hand, though I forgot how to :P\n\n\n\nCan anyone help me?",
+      "url": "https://artofproblemsolving.com/community/c3h1250547_standard_deviation",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1240689",
+      "title": "2016 FTW Tournament 1",
+      "text": "Hi guys, so I made a FTW Tournament.  I wanted to host one for a long time so today's the day.\n\nSo the tournament lasts from the 13 - 15. (Depends).  Check in is 5:30 to 6 and it starts at 6:00 PM EST. (May 13)\n\nTo sign up:  http://challonge.com/tournaments/signup/X7VRjAt06q\n\nThis is also practice for one on May 19th.\n\nLink:  http://challonge.com/tournaments/signup/LHIpv88oXe",
+      "url": "https://artofproblemsolving.com/community/c3h1240689_2016_ftw_tournament_1",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1250019",
+      "title": "Making Circles",
+      "text": "There are six points on the coordinate plane; (-1,1), (1,1), (3,1), (-1,-1), (1,-1), and (3,-1). How many distinct circles of radius 2 units are in the coordinate plane and pass through exactly two of the points on the graph?",
+      "url": "https://artofproblemsolving.com/community/c3h1250019_making_circles",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1250229",
+      "title": "ABSOULTE VALUE",
+      "text": "What is the sum of all integer solutions to $|n| < |n-3| < 9$?",
+      "url": "https://artofproblemsolving.com/community/c3h1250229_absoulte_value",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1250075",
+      "title": "k impossible proof??",
+      "text": "one of my teachers told me that two = 1 but i think that she is wrong\n\nbut she showed me and i cant figure out why its wrong\n\n\n\nso $a=b$\n\nmultiply by $a$ so $a^2=ab$\n\nsubtract $b^2$ from both sides to get $a^2-b^2=ab-b^2$\n\nfactor $(a-b)(a+b)=b(a-b)$\n\ncancel $a-b$ so $a+b=b$\n\nsince $a = b$, we know $2b=b$\n\ndivide by $b$ so $2 = 1$.",
+      "url": "https://artofproblemsolving.com/community/c3h1250075_impossible_proof",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1248914",
+      "title": "k 0.999999...=1 ?!",
+      "text": "Hello! I'm here for another mind-boggling (well, for me) problem. Like a paradox. And I really need some advise.\n\nPROBLEM:\n\nWe can prove that 0.9999999....=1.\n\nProof1; The fraction form of 0.333333... is $\\frac{1}{3}$,  so becomes the equation; $0.3333....=\\frac{1}{3}$. We can do anything to these numbers, as long we do the same thing on both sides. So we can do $0.33333...*3=\\frac{1}{3}*3$  Which results in $0.999999...=1$\n\nProof2;  We know numbers that are equal have a diffrence of 0. Substract 0.9999... from 1: $1-0.999999...=0.00000...$, because the 9's continue infinitly.\n\n\n\nI'm I bit confused.  :wallbash:  The proof's work, but it seems... Strange. Please help me with this.",
+      "url": "https://artofproblemsolving.com/community/c3h1248914_09999991_",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    }
+  ]
+}

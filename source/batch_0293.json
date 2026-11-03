@@ -1,0 +1,1011 @@
+{
+  "format": "aops-topic-previews-v1",
+  "scope": "Loaded topic previews, not full replies or screened questions",
+  "source_archive_sha256": "15978407a01483794e215aef89ec1c105caa4e7154d91211c94bd95ef7186726",
+  "batch_number": 293,
+  "source_row_start": 29201,
+  "source_row_end": 29300,
+  "topic_count": 100,
+  "topics": [
+    {
+      "topic_id": "1370589",
+      "title": ">>>>>>AMC 10 marathon<<<<<<",
+      "text": "I haven't seen any AMC 10 marathons, so let's start one! Rules:\n\n[list]\n\n[*]Please use hide tags so other people can solve the problem and learn.Use [code][hide=p/s number of problem or solution[\\hide] [/code]\n\n[*] Number solution and problems so people can reference to problem 12 instead of the 14th post in this thread!\n\n[*]Write full solutions instead of: [quote]The answer is 342[/quote]\n\n[*] Please don't look at the solutions in the contest collections! This doesn't  help us learn.\n\n[*] Use LaTeX. It is easier to read that way!\n\n[*]Please source the problem.\n\n[*]Please post problems from real AMC 10's :)\n\n[*]Please post answer choices.\n\n\n\n\n\n\n\n\n\n\n\nP1For positive numbers $ x$ and $ y$ the operation $ \\spadesuit(x,y)$ is defined as\n\n\\[ \\spadesuit(x,y)=x-\\frac1y\\]What is $ \\spadesuit(2,\\spadesuit(2,2))$?\n\n\n\n$ \\textbf{(A)}\\ \\frac23 \\qquad\n\\textbf{(B)}\\ 1 \\qquad\n\\textbf{(C)}\\ \\frac43 \\qquad\n\\textbf{(D)}\\ \\frac53 \\qquad\n\\textbf{(E)}\\ 2$",
+      "url": "https://artofproblemsolving.com/community/c3h1370589_amc_10_marathon",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368760",
+      "title": "Factorize",
+      "text": "Factorize the following:\n\n$(a+1)(a+2)(a+3)(a+4)+120$",
+      "url": "https://artofproblemsolving.com/community/c3h1368760_factorize",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1370060",
+      "title": "2 unknown",
+      "text": "$2a^2+b^2-2a+4ab+1=0$\n\nFind the value of $a$ and $b$.",
+      "url": "https://artofproblemsolving.com/community/c3h1370060_2_unknown",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1370347",
+      "title": "Series of Problem: No.2 Problem one",
+      "text": "This is the second Series of Problem\n\nNote those who is against me: just don't do the problem if you don't like me, plz.\n\nRules: artofproblemsolving.com/community/c3h1362778_series_of_problem_problem_1\n\nLeaderboard: Leaderboard1.TopNotchMath-25 points!\n\n2.innumerateguy-21 points!\n\n3.johnlovemaths-15 points!\n\n3.supermessi-15points!\n\n4.Ryon123-2.5 points!\n\n\n\n\nProblem 1A hyperbola centered at the origin has vertices at $(\\pm \\sqrt{33},0)$, and foci at $(\\pm\\sqrt{59},0)$.\n\n\n\nWrite the equation of this hyperbola.\n\n\nThis problem worth 4 points",
+      "url": "https://artofproblemsolving.com/community/c3h1370347_series_of_problem_no2_problem_one",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367820",
+      "title": "modular inverses",
+      "text": "Is there a way to find modular inverses without guess and check?",
+      "url": "https://artofproblemsolving.com/community/c3h1367820_modular_inverses",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1361730",
+      "title": "Moving on the Coordinate Plane",
+      "text": "So, I have been wondering how to do these types of questions:\n\n\n\nA bug starts at the origin. He can move forward, backwards, and sideways(both directions).\n\nHow many different ways can he return to the origin in 4 moves?",
+      "url": "https://artofproblemsolving.com/community/c3h1361730_moving_on_the_coordinate_plane",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1370010",
+      "title": "Geometry or Algebra B",
+      "text": "Hey, I was just wondering if I should take intro to algebra b first or geometry. Even though aops says to take algebra b first, I got like all the questions right on the are you ready for geometry test. Should I still do algebra b or can I take geometry? I want to take geometry because I am struggling with geometry questions on 20-30 of mathcounts state sprint and geometry national level, but am doing fine in algebra for the whole state test. Thanks!\n\n\n\nthe courses I have taken are,\n\nprealgebra 1&2\n\nalgebra A\n\nmathcounts amc 8 basics and advanced\n\nintro to counting and probability",
+      "url": "https://artofproblemsolving.com/community/c3h1370010_geometry_or_algebra_b",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1370041",
+      "title": "A math question",
+      "text": "Find the remainder when x   to the thirteenth power$+1$ is divided by $x-1$\n\nhow..?",
+      "url": "https://artofproblemsolving.com/community/c3h1370041_a_math_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1369852",
+      "title": "Analytic geo",
+      "text": "How do I stop making sillies in coordinate problems? I am working through ch 16 (coordinates) in vol 1, and out of 5 problems, I've sillied 2. How to stop this?",
+      "url": "https://artofproblemsolving.com/community/c3h1369852_analytic_geo",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1369643",
+      "title": "Can you find if a triangle is acute?",
+      "text": "Is there any way to know if a triangle is acute(or obtuse) with just the side lengths?\n\n\n\nThanks :)",
+      "url": "https://artofproblemsolving.com/community/c3h1369643_can_you_find_if_a_triangle_is_acute",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368506",
+      "title": "Mathcounts",
+      "text": "Hello, where can I find the cutoffs for each state in Mathcounts?",
+      "url": "https://artofproblemsolving.com/community/c3h1368506_mathcounts",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1369566",
+      "title": "Coefficient Multinomial Therorem",
+      "text": "Find the coefficient of $x^9$ in\n\n$$(x+x^2+x^3+x^4+x^5+x^6)^3$$",
+      "url": "https://artofproblemsolving.com/community/c3h1369566_coefficient_multinomial_therorem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1369794",
+      "title": "Ways to roll dice",
+      "text": "Supposed that I have two weird dice. One die has a 2 on three faces, a 3 on two faces, and a 5 on the sixth face. The other die has a 1 on one face, 4 on four faces, and 6 on the sixth face. [How many rolls are possible].\n\n\n\nSomehow I'm doing $3 \\cdot 3=9$, but the aops book this is from gets $36$ from generating functions. What am I doing wrong?\n\n\n\nEDIT: nvm, I got it",
+      "url": "https://artofproblemsolving.com/community/c3h1369794_ways_to_roll_dice",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1192243",
+      "title": "Mathcounts",
+      "text": "2005 national mathcounts team round #7\n\n\n\n\n\n\n\nThe tic-tac-toe problem",
+      "url": "https://artofproblemsolving.com/community/c3h1192243_mathcounts",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1369508",
+      "title": "modular arithmetic",
+      "text": "11 y congruent to 1 (mod 19) . find x",
+      "url": "https://artofproblemsolving.com/community/c3h1369508_modular_arithmetic",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1363036",
+      "title": "Sums of squares",
+      "text": "How many ways can any number be written as a sum of 2 squares?\n\n\n\nI stumbled across this idea while trying to solve this:\n\n\n\nFor art class, Jordan needs to cut a circle out of the coordinate grid. She would like to find a circle passing through at least 16 lattice points so that her cut is accurate. What is the smallest possible radius of her circle?",
+      "url": "https://artofproblemsolving.com/community/c3h1363036_sums_of_squares",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1369464",
+      "title": "2015 State Mathcounts Sprint Question",
+      "text": "Does anyone know how to solve this question\n\nSprint #28\n\n\n\nIn regular pentagon ABCDE, point M is the midpoint of side AE, and segments\n\nAC and BM intersect at point Z. If ZA = 3, what is the value of AB? Express\n\nyour answer in simplest radical form.",
+      "url": "https://artofproblemsolving.com/community/c3h1369464_2015_state_mathcounts_sprint_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1369474",
+      "title": "factorisation",
+      "text": "-4(x-2y)^2+8(x-2y)",
+      "url": "https://artofproblemsolving.com/community/c3h1369474_factorisation",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1369204",
+      "title": "Mathcounts Steps Problem",
+      "text": "Marie likes to jump up steps. She can jump up one step at a time, two steps at a time, or a combination of both. How many different ways can she jump up a set of five steps?\n\n\n\nI was wondering how to do problems like these",
+      "url": "https://artofproblemsolving.com/community/c3h1369204_mathcounts_steps_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1369408",
+      "title": "Question about AIME.",
+      "text": "Around how many middle-schoolers qualify for AIME every year? Just wondering.",
+      "url": "https://artofproblemsolving.com/community/c3h1369408_question_about_aime",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1361884",
+      "title": "k how do i do this",
+      "text": "how do you find x\n\n\n\n5x=4x-3\n\n\n\ni got x=3 but when i plug it back in i get 15=9\n\n\n\ni have been stuck on this for more than 30 minutes now when usually my math homework takes 10 minutes per problem",
+      "url": "https://artofproblemsolving.com/community/c3h1361884_how_do_i_do_this",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1369160",
+      "title": "What level is Volume 2?",
+      "text": "What level is Volume 2? More specifically, if you've mastered Volume 2, what is the highest level of math competition you can do and get a decent score?",
+      "url": "https://artofproblemsolving.com/community/c3h1369160_what_level_is_volume_2",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1369019",
+      "title": "2015 Chapter Sprint 29",
+      "text": "Hi, I was trying to solve problem 29 on the 2015 Chapter sprint round. Here is the question\n\n\n\nWhen 1/98 is expressed ad a decimal what is the 10th digit to the right of the decimal point?\n\n\n\nIs there an easier way to do this than long division?",
+      "url": "https://artofproblemsolving.com/community/c3h1369019_2015_chapter_sprint_29",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1369166",
+      "title": "Quartic Equation",
+      "text": "This a really stupid question but...\n\nOkay so, the original question is $x^4+x^3+2x^2+17x-21=0$\n\nFind the roots\n\nSo since x=1 works I got it to\n\n$(x^3+2x^2+4x+21)(x-1)$        THEN since $x=-3$ works, I got it down to\n\n$(x+3)(x-1)(x^2-x+7)$\n\nI really feel like I am making a mistake so far, since the quadratic gives a complex thing, but idk.\n\nAm I doing this right so far?",
+      "url": "https://artofproblemsolving.com/community/c3h1369166_quartic_equation",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368913",
+      "title": "problem solving",
+      "text": "hey do you guys know how to do these three questions?\n\n\n\nIt takes 12 hours to fill the pool with taps A and B (combined). It takes 36 hours with tap A alone, and it takes 8 hours with taps A, B, and C combined. How many hours would it take to fill the pool with tap C alone?\n\n\n\nA car is travelling at 96 km per hour. The radius of its wheels is 1/pi\n\n￼metres. How fast are its wheels rotating in degrees per second?\n\n\n\nHow many five-letter “words” are there which use only the letters A and/or B, and in which there are no consecutive occurrences of B? (For example, AAAAA and ABAAB qualify, but ABBAB does not.)",
+      "url": "https://artofproblemsolving.com/community/c3h1368913_problem_solving",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1369106",
+      "title": "Factoring a Quartic equation",
+      "text": "Okay, so the original question is :\n\nFind all roots of\n\n\n\n$x^4-10x^3+35x^2-50x+24=0 $\n\n\n\nsince x=1 is a solution and works, I factored (x-1) out of it, and got:\n\n\n\n$(x-1)(x^3-9x^2+26x-24)=0$\n\n\n\n\n\n\n\nWhat do I do from here to get the cubic part factored?",
+      "url": "https://artofproblemsolving.com/community/c3h1369106_factoring_a_quartic_equation",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368924",
+      "title": "Quality or Quantity",
+      "text": "Which is more important when you consider doing competitions? Quality or quantity.\n\nOur math club does a lot of competitions, but doesn't do as well as our rival school which specifically focuses on one competition. The other school is about six months ahead of us.",
+      "url": "https://artofproblemsolving.com/community/c3h1368924_quality_or_quantity",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368382",
+      "title": "Arranging letters in a word",
+      "text": "How many ways are there to rearrange the letters of CCARAVEN?\n\n\n\n2017 CCA Math Bonanza Lightning Round #1.2",
+      "url": "https://artofproblemsolving.com/community/c3h1368382_arranging_letters_in_a_word",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368454",
+      "title": "Catalan Number Graph",
+      "text": "How do you find the paths in a rectangular grid (m x n) that stays below to main diagonal?",
+      "url": "https://artofproblemsolving.com/community/c3h1368454_catalan_number_graph",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368630",
+      "title": "Mathcounts 2016 Sprint #29",
+      "text": "Hi I need help on the Mathcounts school sprint round problem 29, the one with the rectangle and the tetrahedron. Can someone help me on it?\n\n\n\nNo solutions please, only hints!",
+      "url": "https://artofproblemsolving.com/community/c3h1368630_mathcounts_2016_sprint_29",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368917",
+      "title": "Geometry Problem",
+      "text": "Hello everybody! As always: Please give proper explanation to all of your solutions if possible. Thank you! :)\n\n--------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n\n\nIn the given figure, $AEDF$ is a cyclic quadrilateral. $\\angle{A} = 54^{\\circ}$, $\\angle{B} = 35^{\\circ}$, $\\angle{F}= x$ and $\\angle{C} = y$. The values of $x$ and $y$ respectively are :\n\n\n\nIMAGE\n\n\n\n(A) $79^{\\circ}$, $47^{\\circ}$\n\n(B) $89^{\\circ}$, $37^{\\circ}$\n\n(C) $89^{\\circ}$, $47^{\\circ}$\n\n(D) $79^{\\circ}$, $37^{\\circ}$\n\n\n\n----------------------------------------------------------------------------------------------------------------------------------------------------------\n\nQuick side note: Can somebody give me a better graphing calculator other than Geogebra.org? It doesn't works on my PC.",
+      "url": "https://artofproblemsolving.com/community/c3h1368917_geometry_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368632",
+      "title": "Target Round",
+      "text": "In the target round, when there is little time left and I haven't finished a problem, I start to panic, and end up getting it wrong. How can I stop this? Thanks.",
+      "url": "https://artofproblemsolving.com/community/c3h1368632_target_round",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1316658",
+      "title": "Intro to Alg Confusion",
+      "text": "I have some confusion on a question in the Intro to Alg book. Can somebody please clear this up?\n\nProblem 20.19: Find constants A and B such that $\\frac{2x}{x^2-5x+6}=\\frac{A}{x-3}+\\frac{B}{x-2}$ for all $x$ besides $x=2$ and $x=3$. This presents two solutions. The first one I get; multiply by $x^2-5x+6$ and line up the coefficient of $x$ and the constant terms to build a system of equations for A and B. The second solution does the same to get $2x=A(x-2)+B(x-3)$ and then says \"This equation holds for all $x$, so we can plug in $x=3$ to solve for $A$ and $x=2$ to solve for $B$. I understand what they're saying, but isn't it disallowed to plug in $x=2$ or $x=3$? Am I missing something? Thanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1316658_intro_to_alg_confusion",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368341",
+      "title": "NEW HARD QUESTIONS",
+      "text": "Yeah, so my other topic was a failure, so here I will be posting difficult math problems.\n\n\n\nI encourage everyone to try the questions.\n\n\n\nGood Luck!",
+      "url": "https://artofproblemsolving.com/community/c3h1368341_new_hard_questions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368889",
+      "title": "Help Please",
+      "text": "How many integers between 16 and 30 inclusive can be written as the difference of two perfect squares?",
+      "url": "https://artofproblemsolving.com/community/c3h1368889_help_please",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368865",
+      "title": "Jackfruits! Jackfruits!!",
+      "text": "Once Sam and Aam ate $50$ jackfruits in total for $3$hrs and $5$hrs respectively. Another time they ate $200$ jackfruits for $26$hrs and $10$hrs respectively. Now what is the minimum time needed for them to eat $252$ jackfruits?",
+      "url": "https://artofproblemsolving.com/community/c3h1368865_jackfruits_jackfruits",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368799",
+      "title": "MATHCOUNTS 2014 chapter target number 4",
+      "text": "Is there a better way to do this problem? I just took this practice test, and I was wrong by one. I thought this problem was just super bashy over all. Any thoughts?",
+      "url": "https://artofproblemsolving.com/community/c3h1368799_mathcounts_2014_chapter_target_number_4",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368574",
+      "title": "Prove that",
+      "text": "$\\frac{2(\\sqrt{2}+\\sqrt{6})}{3(\\sqrt{2}+\\sqrt{3})} \\in Q$\n\nHi guys. Can you help me with this?",
+      "url": "https://artofproblemsolving.com/community/c3h1368574_prove_that",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368798",
+      "title": "\"([the number of data points] + 1) ÷ 2\"",
+      "text": "there has always been this equation i didn't really understand, its \"([the number of data points] + 1) ÷ 2\" its an equation to use finding the median, but i have never really figured it out, can someone explain to me what it means and give an example, because i hate using the other slower way",
+      "url": "https://artofproblemsolving.com/community/c3h1368798_the_number_of_data_points__1__2",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368794",
+      "title": "Mathcounts Graph Geometry",
+      "text": "A line passes through the points (−2,8) and (5,−13). When the equation of the line is written in the form $y=mx+b$, what is the product of $m$ and $b$?",
+      "url": "https://artofproblemsolving.com/community/c3h1368794_mathcounts_graph_geometry",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368779",
+      "title": "Isosceles Triangles",
+      "text": "In an isosceles triangle, the perpendicular bisector of one leg passes through the midpoint of the base.   If the length of this leg is 10, how long is the base in simplest terms?",
+      "url": "https://artofproblemsolving.com/community/c3h1368779_isosceles_triangles",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368788",
+      "title": "Can you help me with square roots?",
+      "text": "Find all ordered pairs of positive integers (a,b) such that a < b and the square root of (10 plus the square root of 84) equals the square root of a plus the square root of b.\n\n\n\nHi, guys.  Can you help me with this problem.  I'm sorry if you find this hard to read because I can't do LaTex.",
+      "url": "https://artofproblemsolving.com/community/c3h1368788_can_you_help_me_with_square_roots",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368324",
+      "title": "Mathcounts",
+      "text": "I am a 7th grader and I really want to make nationals this year. Around what would I have to get on the state sprint, target, etc. on average to make nationals? I live in IL if that helps",
+      "url": "https://artofproblemsolving.com/community/c3h1368324_mathcounts",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368737",
+      "title": "Prime number",
+      "text": "Find all prime numbers $p$ in which $\\sqrt{17p+625} \\in N$",
+      "url": "https://artofproblemsolving.com/community/c3h1368737_prime_number",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368706",
+      "title": "find how many digits N has",
+      "text": "Where  N=1+2⋅10+3⋅10^2+⋯+9⋅10^8+10⋅10^9",
+      "url": "https://artofproblemsolving.com/community/c3h1368706_find_how_many_digits_n_has",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368649",
+      "title": "MATHCOUNTS State/Nationals Team and Sprint Problems",
+      "text": "In the first two-mile race, Kendi beat Jerry by $\\frac{1}{3}$ mile, and in the second two-mile race, Jerri beat Micah by $\\frac{1}{2}$-mile. If Kendi and Micah run a third two-mile race, and all three runners run at the same speed in every race, by how many miles will Kendi beat Micah?\n\n\n\n(State team 1999 #4)\n\n\n\nMady has an infinite number of balls and empty boxes available to her. The empty boxes, each capable of holding four balls, are arranged in a row from left to right. At the first step, she places a ball in the first box for the row. At each subsequent step, she places a ball in the first box of the row that still has room for a ball and empties any previous boxes. How many balls in total are in the boxes as a result of Mady's 2010th step?\n\n\n\n(National Sprint 2010 #28)\n\n\n\nThe integers 1 through 2010 are written on a white board. The integer 1 is erased. Every integer that is either 7 or 11 greater than an erased integer will be erased. At the end of the process what is the largest integer remaining on the board?\n\n\n\n(National Team 2010 #8)\n\n\n\nAlyssa rode her bicycle for seven hours. She started on level ground and rode at a rate of $8$ mph. She came to a hill that slowed her down to a rate of $5$ mp. Upon reaching the top of the hill, she turned around and descended at a rate of $20$mph. Finally she returned home on the flat portion at $8$ mph. What is the total number of miles that she rode?\n\n\n\n(National Sprint 2000 #19)",
+      "url": "https://artofproblemsolving.com/community/c3h1368649_mathcounts_statenationals_team_and_sprint_problems",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368716",
+      "title": "2014 chapter sprint round",
+      "text": "Hi everyone,\n\nI have a question on the 2014 chapter sprint round question 25:\n\n\n\nFor what positive integer n does 3n^3 + 3n^2 + 4n = n^n?\n\n\n\nAre there any hints to help me solve this problem?\n\n\n\nThanks",
+      "url": "https://artofproblemsolving.com/community/c3h1368716_2014_chapter_sprint_round",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368667",
+      "title": "Checking for a book error",
+      "text": "If you have 2 indistinguishable farmers, 2 indistinguishable lawyers, and 2 indistinguishable mailmen sit around a circular table, and the people with the same jobs sit together, there is only one way (assuming rotations of a table do not count) to do this, right?\n\n\n\n3 ways for first group * 2 ways for second group * 1 way for final group /6 for rotations\n\n=1",
+      "url": "https://artofproblemsolving.com/community/c3h1368667_checking_for_a_book_error",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368677",
+      "title": "Find the result",
+      "text": "If $\\sqrt{x+9}+\\sqrt{x}=18$, then find $\\sqrt{x+9}-\\sqrt{x}=?$",
+      "url": "https://artofproblemsolving.com/community/c3h1368677_find_the_result",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368629",
+      "title": "how do you get the reciprocal of a ratio?",
+      "text": "This is the problem i was given\n\nFind the reciprocal of each ratio.\n\n2:3",
+      "url": "https://artofproblemsolving.com/community/c3h1368629_how_do_you_get_the_reciprocal_of_a_ratio",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1366422",
+      "title": "Parallel Lines on a Square",
+      "text": "Please help me. I can't progress at all. I tried similar triangles but i just can't make it work. Please help. Thanks. :)",
+      "url": "https://artofproblemsolving.com/community/c3h1366422_parallel_lines_on_a_square",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368515",
+      "title": "functions",
+      "text": "hey guys do you know how to do this question?\n\n\n\n\n\nF(x) = x^2 + 1\n\n\n\nwhat is the value of F(F(1))???",
+      "url": "https://artofproblemsolving.com/community/c3h1368515_functions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1354027",
+      "title": "3 Number Chicken Nugget",
+      "text": "How would you (rigorously) do this:\n\n\n\nTennis balls come in packages of 4, 9, and 13. What is the greatest number of tennis balls that cannot be bought.\n\n\n\nI know you can use the Chicken McNugget Theorem for 2 numbers, but what do you do for 3 or more numbers?",
+      "url": "https://artofproblemsolving.com/community/c3h1354027_3_number_chicken_nugget",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368340",
+      "title": "Please Help me!",
+      "text": "I don't understand this question at all!! :(\n\nMy QuestionA cube has volume 624 cubic cm. Consider the following tetrahedron whose vertices are one vertex of the cube and the midpoints of the three edges of the cube that are connected to that vertex. Find the number of cubic cm in the volume of this tetrahedron.",
+      "url": "https://artofproblemsolving.com/community/c3h1368340_please_help_me",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368303",
+      "title": "AMC 10 2006 A problem 16",
+      "text": "Is there a minicounts mini for this type of question, this question was exhausting to do, and i didn't want to see the solution,\n\nbut i really need a short cut the next time i do a question like this:   https://latex.artofproblemsolving.com/e/7/d/e7dd38d7d5efd1fe119ba93263f1f91a5d1d40fb.png the question is A circle of radius 1 is tangent to a circle of radius 2. The sides of $\\triangle ABC$ are tangent to the circles as shown, and the sides $\\overline{AB}$ and $\\overline{AC}$ are congruent. What is the area of $\\triangle ABC$? so is there a mini and if yes, plz tell me\n\n\n\nAMC 10 2006 A problem 16",
+      "url": "https://artofproblemsolving.com/community/c3h1368303_amc_10_2006_a_problem_16",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368085",
+      "title": "Mathcounts Mini's Activity Sheets",
+      "text": "Hello All,\n\n\n\nI just started binge watching the mathcounts mini's and noticed that each lesson had activity sheets! (:))\n\nDoes anyone know where the solutions to it would be? I don't want to get wrong answers and think I'm doing it the correct way.",
+      "url": "https://artofproblemsolving.com/community/c3h1368085_mathcounts_minis_activity_sheets",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368418",
+      "title": "Geometry Triangle Problem",
+      "text": "In right triangle ABC, M and N are midpoints of legs AB and BC, respectively. Leg AB is 6 units long, and leg BC is 8 units long. How many square units are in the area of APC?",
+      "url": "https://artofproblemsolving.com/community/c3h1368418_geometry_triangle_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368005",
+      "title": "2016 AMC10 A Problem 20",
+      "text": "I looked at the solution for this problem on the Art of Problem Solving website, but I don't understand how to use stars and bars to finish the problem off. Is there a formula for using stars and bars?",
+      "url": "https://artofproblemsolving.com/community/c3h1368005_2016_amc10_a_problem_20",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368315",
+      "title": "Help Please",
+      "text": "How to compute square roots like these without using calc?\n\n\n\n$\\sqrt{99920016}$",
+      "url": "https://artofproblemsolving.com/community/c3h1368315_help_please",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368278",
+      "title": "k Intro to NT question 14.5",
+      "text": "Let $r$ be a modulo-60 residue such that gcd(r, 60)=1. show that r has an inverse modulo 60.\n\n\n\nIf anyone has the book, can you explain the solution? The solution is saying that when rx does not equal ry then there is an inverse to r, but we are trying to prove the there is an inverse when gcd(r,60)=1 and the book already proved that when gcd(r,60)=1 then rx=ry, which contradicts itself.",
+      "url": "https://artofproblemsolving.com/community/c3h1368278_intro_to_nt_question_145",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368317",
+      "title": "Algebra Forum",
+      "text": "Hello, here I will post practice algebra questions. Others are allowed to post questions too.",
+      "url": "https://artofproblemsolving.com/community/c3h1368317_algebra_forum",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368295",
+      "title": "Veggie Math",
+      "text": "A vegetable store sold 3 tons of vegetables less on the first day than the second day. On the third day, it sold 5/9 of the amount sold in the first two days. If it sold 98 tons total for those three days, how much did it sell on the first day, the second day, and the third day?",
+      "url": "https://artofproblemsolving.com/community/c3h1368295_veggie_math",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368252",
+      "title": "MathCounts Topics",
+      "text": "Hi, I was wondering if anyone could give me a list of all the subtopics of alg, geo, c/p, and num theo that are used in MathCounts\n\nOr if anyone uses brilliant.org what topics to use there.\n\nThanks and have a nice day!",
+      "url": "https://artofproblemsolving.com/community/c3h1368252_mathcounts_topics",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368224",
+      "title": "MathCounts State Question",
+      "text": "Hello! Could someone please help me find a quick and easy solution to this question:\n\n\n\nTwo integers are randomly selected from the set of integers greater than or equal to -5 and less than or equal to 5. The two numbers need not be different. What is the probability that the sum of the two integers is less than their product?\n\n\n\nAnswer: 50/121\n\n\n\nThanks in advance!",
+      "url": "https://artofproblemsolving.com/community/c3h1368224_mathcounts_state_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367942",
+      "title": "Ummmmm....",
+      "text": "Dear Art of Problem Solving Community,\n\n\n\nI have a math competition coming up,  and I need advice about the best way to prepare.  I have been doing review problems from the introductory textbooks,  along with some alcumus.  Is this a good way to prepare?  I have been doing review problems/all the problems in the books to make sure that I have not forgotten anything.  Any advice is helpful.  Thank you!",
+      "url": "https://artofproblemsolving.com/community/c3h1367942_ummmmm",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1368040",
+      "title": "number theory",
+      "text": "Find all positive integers (x,y) that satisfy $x^{10}+5x^9+16x^8+40x^7+100x^6+100x^5+100x^4+40x^3+16x^2+5x+1=y^5$.\n\n\n\nThis problem may seem hard at first glance, but it is actually much easier than it looks. :)",
+      "url": "https://artofproblemsolving.com/community/c3h1368040_number_theory",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367227",
+      "title": "Repeating Decimals and That Clock Problem",
+      "text": "Problem #1Express this following decimal as a fraction. You may not show any work\n\n\n\n$0.08 \\overline 3 = $______________________\n\n\n\n\nProblem #2The smallest angle between the hands of a clock at 4:16 is _________ degrees.\n\n\n\n\nThanks! Your help is appreciated!",
+      "url": "https://artofproblemsolving.com/community/c3h1367227_repeating_decimals_and_that_clock_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367855",
+      "title": "Surface area",
+      "text": "Compute the surface area of a hexagonal frustrum with bases of length $4$ and $6$ and slant height $2$",
+      "url": "https://artofproblemsolving.com/community/c3h1367855_surface_area",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1366975",
+      "title": "Prepare for Mathcounts",
+      "text": "Hello all,\n\nIs there any other way to prepare for State Mathcounts other then things on AoPS?\n\n\n\nThanks",
+      "url": "https://artofproblemsolving.com/community/c3h1366975_prepare_for_mathcounts",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1349960",
+      "title": "Mock AMC 9",
+      "text": "This is my 1000th post and it will be commemorated as a contest. I will need problem writers, problem solvers and people who want to take the test. The test is about as hard as the 2015 AMC 8.\n\nI can allow a max of:\n\n25 problem writers\n\n5 problem solvers\n\n50 signups\n\nI'll give it a little bit of margin oferror in case if it comes to that.\n\nThe problems will be built into the based on the following qualities\n\n~Originality 60%\n\n~Difficulty 30%\n\n~Solution Clarity 10%\n\nRegistration1. innumerateguy\n\n2. Samchooo\n\n3.theguamian\n\n4. Littlelachy\n\n5. soojoong\n\n6. Derive_Foiler\n\n7. Blue_Whale\n\n8. GuamBrian8Math4Lunch\n\n9. burunduchok\n\n10. somenerd01\n\n11.akondepudi\n\n12.Problematic_Problem\n\n\n\n\nWriters1. moab33\n\n2. wlm2\n\n3. DigitalDagger\n\n\n\n\nSolvers1. B-mode\n\n2. mathchess5\n\n3. rt03\n\n\nLeaderboards1. jaycee-schmoll 22\n\n2. claire-brix 21\n\n3. innumerateguy 20\n\n3. itised 20\n\n5. letsgomath 19\n\n6. Divide_Conquer 18\n\n7. divijleisha 17\n\n7. kb2003 17\n\n9.geomstar_1234 16\n\n9. GuamBrian8Math4Lunch 16\n\n9. GamesMaster402 16\n\n12. EpicRuler101 15\n\n12. lb2003 15\n\n12. DaniyalQazi2 15\n\n15. soojong 14\n\n\nI will probably be spammed with requests after I say this, but if you want to be a manager who answers questions for registrants, post the word manager into this thread.\n\nHe must:\n\n~be a problem writer/solver\n\n~have experience in contests\n\n~be mature.\n\n~must know all the general rules to a contest.",
+      "url": "https://artofproblemsolving.com/community/c3h1349960_mock_amc_9",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367866",
+      "title": "algebra .",
+      "text": "Which is more  :   1(1!)+2(2!)+3(3!)+ ....+2001(2001!) or 2002!     ?",
+      "url": "https://artofproblemsolving.com/community/c3h1367866_algebra_",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367868",
+      "title": "Base number division",
+      "text": "How do I not make silly mistakes when dividing in different bases? Thanks.",
+      "url": "https://artofproblemsolving.com/community/c3h1367868_base_number_division",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1230767",
+      "title": "From a Olympic exam",
+      "text": "1,  Given $f(x)=3n^2-3n+1$. Find the last four digits of $f(1)+f(2)+...+f(2010)$\n\n\n\n2,  Given $f(0)=0$ and $f(n)=f(\\lfloor\\frac{n}{2}\\rfloor)+n-2\\lfloor\\frac{n}{2}\\rfloor$ for every posotive integer values of $n$. Find the greatest value of $f(m)$ with $m$ is a positive integer and smaller than $2011$.\n\n\n\n3,  If $a*b=\\frac{\\sqrt{a^2+3ab+b^2-2a-2b+4}}{ab+4}$, find $((...((2012*2011)*2010)...*2)*1)$",
+      "url": "https://artofproblemsolving.com/community/c3h1230767_from_a_olympic_exam",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367622",
+      "title": "Winning charm",
+      "text": "A six-digit sequence is randomly generated with the digits 0 through 5. The digit n “wins” if it appears exactly n times in the sequence. For example, 0 \"wins\" if it appears exactly 0 times in the sequence and 1 \"wins\" if it appears exactly 1 time in the sequence. What is the probability that only 0, 1, and 2 win? Express your answer as a common fraction.",
+      "url": "https://artofproblemsolving.com/community/c3h1367622_winning_charm",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367358",
+      "title": "Plane Geometry Problem",
+      "text": "We are given points $A,B,C,D$ in a plane such that $AD=13$, while $AB=BC=AC=CD=10$. Compute $\\angle ADB$.\n\n\n\nHow would you do this?",
+      "url": "https://artofproblemsolving.com/community/c3h1367358_plane_geometry_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367278",
+      "title": "algebra.",
+      "text": "solve in real numbers : x^2+x+1=(y^2+y+1)^2",
+      "url": "https://artofproblemsolving.com/community/c3h1367278_algebra",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1085723",
+      "title": "Mathcounts National Test 2014 Questions",
+      "text": "I've taken this test twice and these are the problems I have no idea how to do (target and sprint).  Please, try giving only hints and if you have to provide a solution, try making it a hidden text.  (Problems are in attachments)",
+      "url": "https://artofproblemsolving.com/community/c3h1085723_mathcounts_national_test_2014_questions",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367559",
+      "title": "Cube Rotational symetries",
+      "text": "I remember last year I had gotten an advantage in a couple math contests by reading a popular problem and its solutions. I remember thinking about those solutions which had said that there were $n$ rotational symmetries of a cube. What is $n$?",
+      "url": "https://artofproblemsolving.com/community/c3h1367559_cube_rotational_symetries",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367268",
+      "title": "help with distinguishablity",
+      "text": "Can anyone give me the quick formulas for each of these cases? all others that I've found make it sounds far too confusing\n\n\n\n1. distinguishable balls, distinguishable boxes\n\n2. distinguishable balls, indistinguishable boxes\n\n3. indistinguishable balls, distinguishable boxes\n\n4. indistinguishable balls, indistinguishable boxes\n\n\n\nAlso, how would you deal with these if boxes are allowed to be empty or are not? Thanks!",
+      "url": "https://artofproblemsolving.com/community/c3h1367268_help_with_distinguishablity",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367497",
+      "title": "Counting And Probability Problem",
+      "text": "Here is a problem I found in the Introduction to Counting and Probability Book:\n\nI have a bag of 5 quarters and 3 nickels. I randomly draw coins out 1 at a time. What is the probability that I haven't removed the 3 nickels after 4 turns?\n\n\n\nWhat is wrong with my solution: Using complementary counting, we want to find the probability that I have removed 3 nickels after 4 turns. The removal sequence is any different version of NNNQQQQQ. The number of ways for this to be mixed up is $\\binom{8}{3}$. The valid sequences are QNNNQQQQ, NQNNQQQQ, and NNQNQQQQ. Therefore, the answer is $1 - \\frac{3}{\\binom{8}{3}} = \\boxed{\\frac{53}{56}}$.\n\n\n\nThe answer says 'answer$\\frac{13}{14}$\n, so where did I go wrong?",
+      "url": "https://artofproblemsolving.com/community/c3h1367497_counting_and_probability_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367493",
+      "title": "NT problem",
+      "text": "A bakery sells loaves of bread in packs of 9, 13, 17. What is the greatest whole number amount of loaves which you cannot attain using only packs of these sizes? For example, you cannot attain exactly 10 loaves, but you can attain 22, because 9+13=22",
+      "url": "https://artofproblemsolving.com/community/c3h1367493_nt_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1366297",
+      "title": "Regular Math Practice",
+      "text": "Hello,  my name is Bob Bobson(aka HighQXMoney).\n\nWhat would be the best way to practice math outside of AoPS, like for competitions, school math, and things that have no prepared things for preparing for?",
+      "url": "https://artofproblemsolving.com/community/c3h1366297_regular_math_practice",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367308",
+      "title": "algebra.",
+      "text": "Find meaning of the equation (x+y)(x+z)(y+z) , if (x;y;z) are real numbers  and   x+y+z=a and 1/x+1/y+1/z=1/a ,    a is a real number.",
+      "url": "https://artofproblemsolving.com/community/c3h1367308_algebra",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367344",
+      "title": "Scalene Quadralateral",
+      "text": "If the midpoints of a scalene quadralateral are connected, then the formed figure is equilateral.\n\n\n\nApparently, the answer is sometimes, not never. How?",
+      "url": "https://artofproblemsolving.com/community/c3h1367344_scalene_quadralateral",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1366696",
+      "title": "Graphing",
+      "text": "Jeffery graphs $y=x^x$, but only finds points where $x$ is an integer, and graphs them up into a line where all points $(x, y)$ have positive values of $x$ and $y$, unlike the curve that you really get. (See https://www.desmos.com/calculator/v2jjbesucq )\n\nThen, his father extends his like backwards, like a normal line. What is the graph of the resulting line?",
+      "url": "https://artofproblemsolving.com/community/c3h1366696_graphing",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1362806",
+      "title": "Mathcounts Combinations Problem",
+      "text": "How many different combinations of three numbers can be selected from the set {1, 2, 3, 4, 5, 6, 7, 8} so that the numbers could represent the side lengths of a triangle?\n\n\n\nI tried using casework, but I ended up with too many cases.\n\n\n\nThanks for the help in advance,\n\npilover123",
+      "url": "https://artofproblemsolving.com/community/c3h1362806_mathcounts_combinations_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367222",
+      "title": "Good Problem",
+      "text": "The number $N$ is a two-digit number.\n\nWhen $N$ is divided by $9$, the remainder is $1$.\n\nWhen $N$ is divided by $10$, the remainder is $3$.\n\nWhat is the remainder when $N$ is divided by $11$?\n\n\n\n$\\textbf{(A) }0\\qquad\\textbf{(B) }2\\qquad\\textbf{(C) }4\\qquad\\textbf{(D) }5\\qquad \\textbf{(E) }7$",
+      "url": "https://artofproblemsolving.com/community/c3h1367222_good_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1363168",
+      "title": "orthocenter help",
+      "text": "I have tried to do this problem so many different ways but still cant figure it out....\n\n\n\nI have a triangle ABC with sides with AB=7, BC = 5, and AC =6. let D, E, and F be the foot of the altitudes on BC, AC, and AB respectively. AD, FC, BE intersect at H (hint: orthocenter). what is the radius of the circumcircle of triangle BHC. Express your answer in simplest form.\n\n\n\nIn general, can someone give some useful properties involving the orthocenter? Thanks",
+      "url": "https://artofproblemsolving.com/community/c3h1363168_orthocenter_help",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1365679",
+      "title": "2016 MATHCOUNTS Nationals Sprint 11",
+      "text": "If $a=b-1=c-3$ and $\\frac{1}{a}+\\frac{2}{b}+\\frac{1}{c}=1$ for some integer $a$, what is the value of the sum $a+b+c$?\n\n\n\nThis problem isn't very hard but as it comes so early in round, I was wondering if there is a way to solve this quickly.",
+      "url": "https://artofproblemsolving.com/community/c3h1365679_2016_mathcounts_nationals_sprint_11",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367185",
+      "title": "interesting rubics cube...",
+      "text": "So this question came to me while I was watching a Chinese show featuring ribics cube masters.\n\nThere's a rubics cube, that have $3*3*3$ sides. And six faces with all defferent colors. Basically just a normal rubics cube.\n\nSo, how many ways are there that you can arrange a rubics cube?",
+      "url": "https://artofproblemsolving.com/community/c3h1367185_interesting_rubics_cube",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1364029",
+      "title": "Target Round",
+      "text": "Hello fellow AOPSers\n\nI have been going through tough times, guys. (If you can even call it that :P) I have a gotten a absolutely HORRIBLE score on the sprint round.... :( I know I'm bad scoreWhy do you want to see my fail score? :(Click to reveal hidden textSigh.. 14/30 I KNOW IT'S SO BAAD\n\n So now I have to get a perfect score on the Target Round to get on the team. AND IT'S SCHOOL TEAM. I, myself can't believe it either. Can anyone tell me how to prepare for this? I need to get in..\n\n\n\nFeel free to PM me. I would prefer that :).\n\n\n\n\n\nEDIT: I'm in sixth grade.. So this is my first year.",
+      "url": "https://artofproblemsolving.com/community/c3h1364029_target_round",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1366899",
+      "title": "Geometry Medians Problem",
+      "text": "$BD$ and $CE$ are medians of $\\triangle ABC$. $BD$ and $CE$ are perpendicular, $BD=6$, and $CE=9$. What is the area of $\\triangle ABC$.\n\n\n\nI can do this problem with coordinates or Heron's formula (with 2-1 ratio), but is there a nice way to do this problem?",
+      "url": "https://artofproblemsolving.com/community/c3h1366899_geometry_medians_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1367010",
+      "title": "Mathcounts",
+      "text": "The mean median and mean of all modes of the integers 7,4,5,6,5,x are equal.\n\nHow many possible values are there for x?",
+      "url": "https://artofproblemsolving.com/community/c3h1367010_mathcounts",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1366978",
+      "title": "k Randolph Middle School",
+      "text": "This thread is for students of Randolph Middle School to discuss scholarly topics.",
+      "url": "https://artofproblemsolving.com/community/c3h1366978_randolph_middle_school",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1366635",
+      "title": "Degenerate Triangle Similarity?",
+      "text": "Hello,\n\n\n\nTriangle similarity is a powerful tool, but I'm confused over the case there two triangles are degenerate.\n\n\n\nIMAGE\n\n\n\nIn the figure, both $\\triangle{ABC}$ and $\\triangle{DEF}$ are degenerate. $AB = 5, AC = 7, BC = 12, DE = 11, DF = 4,$ and $EF = 15.$ Since $\\angle{A} \\cong \\angle{D}$ because both of them are $180^\\circ,$ the remaining two angles must both be $0^\\circ.$ Therefore, either $\\triangle{ABC} \\sim \\triangle{DEF}$ or $\\triangle{ACB} \\sim \\triangle{DFE}.$ However, comparing the side ratios, this is complete nonsense. How could this possibly be?\n\n\n\nSPG2500",
+      "url": "https://artofproblemsolving.com/community/c3h1366635_degenerate_triangle_similarity",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1366852",
+      "title": "Divisible by 6",
+      "text": "A positive integer N is smaller than the sum of its three greatest divisors (naturally, excluding N itself). Proof that all such N are divisible by 6.",
+      "url": "https://artofproblemsolving.com/community/c3h1366852_divisible_by_6",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1366801",
+      "title": "Problem.",
+      "text": "The Grammar club has  10 boys and 10 girls. A 4-person committee is chosen at random. What is the probability that the committee has at least 1 boy and at least 1 girl?\n\n\n\nI thought the answer is (nCr(10,1)*nCr(10, 1)*nCr(18,2))/(nCr(20,4)) but according to\n\n\n\nhttps://www.wolframalpha.com/input/?i=(nCr(10,1)*nCr(10,1)*nCr(18,2))%2F(nCr(20,4))\n\n\n\nthats greater than 1, so i'm like how is that the probability?",
+      "url": "https://artofproblemsolving.com/community/c3h1366801_problem",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1366618",
+      "title": "A mathcounts question",
+      "text": "($n^2 - 9$) /  ($n^2 - 4$)",
+      "url": "https://artofproblemsolving.com/community/c3h1366618_a_mathcounts_question",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1183510",
+      "title": "Impossible Countdown Problems in Given Time-Frame?",
+      "text": "Hi guys!\n\n\n\nSo I was practicing for MATHCOUNTS and I was practicing Countdown. As always most of the problems are easy but there are some which seem impossible to solve within 45 seconds. So here are the couple I found a bit impossible to do in the time frame given, and please give the fastest approaches possible:\n\n\n\nIn the seven-pointed star shown here (I don't have the diagram), what is the mean degree measure of the seven vertex angles? Express you answer as a common fraction.\n\n\n\nA 24-hour clock that runs fast gains 90 seconds every hour. If it is set correctly at 9:00 a.m., in how many days will it show the correct time?\n\n\n\nWhat is the product of all numbers x such that x^3+2x^2-3x-6=0 or 6x^3-3x^2-2x-1=0?\n\n\n\nIn square meters what is the area of the region bounded by the of y=|x| and y=sqrt(16-x^2)? Answer your answer in terms of pi.\n\n\n\nIf the integers 1, 2, 3, 4 are each used exactly once to replace the variables a, b, c, d, what is the greatest possible value of (a+b)^(c+d)?\n\n\n\nHow many amounts from 1 ¢ to 99 ¢, inclusive, can be created using only dimes and quarters?\n\n\n\nThanks in advance!  :-D",
+      "url": "https://artofproblemsolving.com/community/c3h1183510_impossible_countdown_problems_in_given_timeframe",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    },
+    {
+      "topic_id": "1366606",
+      "title": "Quadratics",
+      "text": "Suppose the equation $$h=-16t^2+35t$$models the altitude a football will reach $t$ seconds after it is kicked. Which of the following altitudes are possible?\n\n\n\nA. $h=16 \\text { ft}$\n\nB. $h=25\\text { ft}$\n\nC. $h=30\\text { ft}$\n\nD. $h=35\\text { ft}$",
+      "url": "https://artofproblemsolving.com/community/c3h1366606_quadratics",
+      "seen_on": [
+        "https://artofproblemsolving.com/community/c3_middle_school_math"
+      ],
+      "other_previews": []
+    }
+  ]
+}
