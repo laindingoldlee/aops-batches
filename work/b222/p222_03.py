@@ -206,14 +206,15 @@ The solutions are $-3\pm\dfrac{3\sqrt5}{5}$, and their sum is $\boxed{-6}$.''',
 fig=r'''real k=2/sqrt(21),h=4;
 pair V=(0,h);
 real yc=h*(1-k);
-draw(arc((0,0),3,0.6,0,180),dashed);draw(arc((0,0),3,0.6,180,360),linewidth(0.9));
-draw(shift(0,yc)*scale(3k,0.6k)*arc((0,0),1,0,180),dashed);
-draw(shift(0,yc)*scale(3k,0.6k)*arc((0,0),1,180,360),blue+linewidth(0.9));
-draw((-3,0)--V--(3,0),linewidth(0.9));
+real t0=degrees(asin(0.15));
+draw(scale(3,0.6)*arc((0,0),1,t0,180-t0),dashed);draw(scale(3,0.6)*arc((0,0),1,180-t0,360+t0),linewidth(0.9));
+draw(shift(0,yc)*scale(3k,0.6k)*arc((0,0),1,t0,180-t0),dashed);
+draw(shift(0,yc)*scale(3k,0.6k)*arc((0,0),1,180-t0,360+t0),blue+linewidth(0.9));
+draw((-3*Cos(t0),0.6*Sin(t0))--V--(3*Cos(t0),0.6*Sin(t0)),linewidth(0.9));
 draw((0,0)--(3,0),dashed);draw((0,0)--V,dashed);
 dot((0,0));dot((0,yc));
-label("$3$",(1.5,0),N);label("$5$",(1.5,h/2),NE);
-draw((3.8,0)--(3.8,yc),Arrows(4));draw((3,0)--(4,0),dotted);draw((3k+0.2,yc)--(4,yc),dotted);
+label("$3$",(2.05,0.21),fontsize(8pt));label("$5$",(2.3,1.0),E);
+draw((3.8,0)--(3.8,yc),Arrows(4));draw((3.1,0)--(4,0),dotted);draw((3k+0.2,yc)--(4,yc),dotted);
 label("$d$",(3.8,yc/2),E);label("$V$",V,N);'''
 b.add(1780203,4,r'''A cone has base radius $3$ and slant height $5$. A plane parallel to the base cuts the cone into a smaller cone and a frustum whose total surface areas are in the ratio $1:5$. Find the distance from the plane to the base.''',
 r'''The cone has height $\sqrt{5^2-3^2}=4$. Its lateral area is $\pi\cdot3\cdot5=15\pi$ and its base area is $9\pi$. Let the small cone (with the same apex $V$) be similar to the whole cone with ratio $k$, $0<k<1$.

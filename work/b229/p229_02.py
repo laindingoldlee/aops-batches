@@ -8,8 +8,8 @@ pair G=extension(A,Ep,C,D), F=extension(B,G,A,C);
 draw(A--B--C--cycle,linewidth(0.9));
 draw(A--Ep);draw(C--D);draw(B--F);
 dot(D);dot(Ep);dot(F);dot(G);
-label("$A$",A,W);label("$B$",B,E);label("$C$",C,N);label("$D$",D,S);label("$E$",Ep,NE);label("$F$",F,NW);label("$G$",G,dir(75));
-label("$40$",A,dir(-100),blue);label("$24$",B,dir(-80),blue);label("$9$",C,W,blue);'''
+label("$A$",A,dir(160));label("$B$",B,dir(20));label("$C$",C,N);label("$D$",D,S);label("$E$",Ep,NE);label("$F$",F,NW);label("$G$",G,dir(55));
+label("$40$",A+(0,-0.75),blue);label("$24$",B+(0,-0.75),blue);label("$9$",C+(0.75,0.1),blue);'''
 b.add(1744764,1,r'''In triangle $ABC$, points $D$, $E$, $F$ lie on sides $AB$, $BC$, $CA$ respectively, and the segments $AE$, $CD$, $BF$ meet at a common point $G$. If $AD:DB=3:5$ and $CE:EB=8:3$, find the ratio $FG:GB$.''',
 r'''Use mass points: place masses $m_A,m_B,m_C$ at the vertices so that $D$ is the balance point of $A,B$ and $E$ the balance point of $B,C$. This requires $m_A\cdot AD=m_B\cdot DB$, i.e.\ $m_A:m_B=5:3$, and $m_C\cdot CE=m_B\cdot EB$, i.e.\ $m_C:m_B=3:8$. In integers, $m_A=40$, $m_B=24$, $m_C=9$ (blue in the sketch).
 '''+asy(fig,'6cm')+r'''
@@ -141,7 +141,7 @@ b.add(1743083,2,r'''How many powers of $4$ lie between $2^8+1$ and $2^{18}+1$, i
 r'''The powers of $4$ are $4^k=2^{2k}$. We need $257\le 2^{2k}\le 262145$. Since $4^4=256<257$ and $4^9=2^{18}=262144\le262145<4^{10}$, the values are $k=5,6,7,8,9$: $\boxed{5}$ powers of $4$.''',
 'Exponents|Powers of two',1,
 note='A variation of 2018 AMC 8 Problem 25 (which asks for perfect cubes).')
-fig=r'''real a=4; pair k=(0.55,0.4);
+fig=r'''real a=4; pair k=(0.42,0.55);
 pair A=(0,0),B=(a,0),C=(a,0)+a*k,D=a*k;
 pair Ep=A+(0,a),F=B+(0,a),G=C+(0,a),H=D+(0,a);
 pair J=(F+B)/2,I=(H+D)/2;
@@ -152,7 +152,7 @@ draw(Ep--J--C,blue+linewidth(0.9));draw(C--I--Ep,blue+dashed);
 dot(J);dot(I);
 label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,E);label("$D$",D,dir(160));
 label("$E$",Ep,W);label("$F$",F,dir(-10));label("$G$",G,NE);label("$H$",H,NW);
-label("$J$",J,E);label("$I$",I,W);'''
+label("$J$",J,dir(-50));label("$I$",I,dir(130));'''
 b.add(1743083,3,r'''In cube $ABCDEFGH$, face $ABCD$ is the bottom face and $E,F,G,H$ are directly above $A,B,C,D$ respectively, so $C$ and $E$ are opposite vertices. Points $J$ and $I$ are the midpoints of edges $FB$ and $HD$. The plane through $E$, $J$, $C$, $I$ cuts the cube into two pieces. What fraction of the volume of the cube is the piece $EFGHICJ$ (the piece containing the top face $EFGH$)?''',
 r'''Let $O$ be the centre of the cube. The half-turn (point reflection) about $O$ maps the cube to itself and swaps opposite vertices and opposite edges: $E\leftrightarrow C$, and edge $FB\leftrightarrow$ edge $HD$ with their midpoints $J\leftrightarrow I$. So it maps the plane $EJCI$ to itself. (The plane does pass through $O$, the midpoint of $EC$.)
 '''+asy(fig,'5.5cm')+r'''

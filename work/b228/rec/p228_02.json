@@ -420,7 +420,7 @@
   "topic_id": "1749495",
   "part": 1,
   "question": "A rectangular box (rectangular prism) has edge lengths $a$, $b$ and $c$. Find the distance between two vertices that are farthest apart (the length of a space diagonal). What is it for a cube of edge $a$?",
-  "solution": "Let $P$ be a corner of the box and $Q$ the opposite corner. Walk from $P$ along the bottom face to the corner below $Q$: this is a diagonal of an $a\\times b$ rectangle, of length $e=\\sqrt{a^2+b^2}$ by the Pythagorean theorem. That diagonal is perpendicular to the vertical edge of length $c$ that ends at $Q$, so by the Pythagorean theorem again\n\\[\nPQ=\\sqrt{e^2+c^2}=\\boxed{\\sqrt{a^2+b^2+c^2}}.\n\\]\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\nreal a=4,c=2.4,bb=2.2;pair v=bb*(0.55,0.4);\npair P0=(0,0),P1=(a,0),P2=(a,c),P3=(0,c);\npair Q0=P0+v,Q1=P1+v,Q2=P2+v,Q3=P3+v;\ndraw(P0--P1--P2--P3--cycle,linewidth(0.9));\ndraw(P1--Q1--Q2--Q3--P3,linewidth(0.9));draw(P2--Q2,linewidth(0.9));\ndraw(P0--Q0,dashed);draw(Q0--Q1,dashed);draw(Q0--Q3,dashed);\ndraw(P0--Q1,blue+dashed+linewidth(0.8));\ndraw(P0--Q2,red+linewidth(1.1));\ndot(P0);dot(Q2);\nlabel(\"$P$\",P0,SW);label(\"$Q$\",Q2,NE);\nlabel(\"$a$\",(P0+P1)/2,S);label(\"$b$\",(P1+Q1)/2,SE);label(\"$c$\",(Q1+Q2)/2,E);\nlabel(\"$e$\",P0+0.6*(Q1-P0),0.6*S,blue);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nNo two vertices are farther apart: two vertices differ in $0$, $1$, $2$ or $3$ of the coordinates (in a coordinate system along the edges), giving distances $0$, an edge, a face diagonal or the space diagonal, and the space diagonal is the largest. For a cube of edge $a$ the space diagonal is $\\sqrt{3a^2}=a\\sqrt3$.",
+  "solution": "Let $P$ be a corner of the box and $Q$ the opposite corner. Walk from $P$ along the bottom face to the corner below $Q$: this is a diagonal of an $a\\times b$ rectangle, of length $e=\\sqrt{a^2+b^2}$ by the Pythagorean theorem. That diagonal is perpendicular to the vertical edge of length $c$ that ends at $Q$, so by the Pythagorean theorem again\n\\[\nPQ=\\sqrt{e^2+c^2}=\\boxed{\\sqrt{a^2+b^2+c^2}}.\n\\]\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\nreal a=4,c=2.4,bb=2.2;pair v=bb*(0.55,0.4);\npair P0=(0,0),P1=(a,0),P2=(a,c),P3=(0,c);\npair Q0=P0+v,Q1=P1+v,Q2=P2+v,Q3=P3+v;\ndraw(P0--P1--P2--P3--cycle,linewidth(0.9));\ndraw(P1--Q1--Q2--Q3--P3,linewidth(0.9));draw(P2--Q2,linewidth(0.9));\ndraw(P0--Q0,dashed);draw(Q0--Q1,dashed);draw(Q0--Q3,dashed);\ndraw(P0--Q1,blue+dashed+linewidth(0.8));\ndraw(P0--Q2,red+linewidth(1.1));\ndot(P0);dot(Q2);\nlabel(\"$P$\",P0,SW);label(\"$Q$\",Q2,NE);\nlabel(\"$a$\",(P0+P1)/2,S);label(\"$b$\",(P1+Q1)/2,SE);label(\"$c$\",(Q1+Q2)/2,E);\nlabel(\"$e$\",P0+0.6*(Q1-P0),S,blue);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nNo two vertices are farther apart: two vertices differ in $0$, $1$, $2$ or $3$ of the coordinates (in a coordinate system along the edges), giving distances $0$, an edge, a face diagonal or the space diagonal, and the space diagonal is the largest. For a cube of edge $a$ the space diagonal is $\\sqrt{3a^2}=a\\sqrt3$.",
   "tags": [
    "Cubes and rectangular prisms",
    "Pythagorean theorem",
@@ -501,6 +501,28 @@
    "question_number": null
   },
   "note": ""
+ },
+ {
+  "topic_id": "1747690",
+  "part": 1,
+  "question": "A player pays $\\$5$ to play a game. A die is rolled. If the number on the die is odd, the game is lost. If the number is even, the die is rolled again; the player wins if the second number matches the first and loses otherwise. How much should the player win for the game to be fair? (In a fair game the probability of winning times the amount won is what the player should pay.)",
+  "solution": "$P(\\text{win})=\\dfrac{1}{2}\\cdot\\dfrac{1}{6}=\\dfrac{1}{12}$, so the prize $W$ satisfies $\\dfrac{W}{12}=5$, i.e.\\ $W=\\boxed{\\$60}$. The poster's $\\$55$ would be the net gain on a win if the $\\$5$ fee were not counted in the prize; by the definition given, the amount won is $\\$60$.",
+  "tags": [
+   "Expected value",
+   "Independent events",
+   "Dice probability"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": "AMC 10",
+   "year": 2006,
+   "division": "A",
+   "paper": null,
+   "round": null,
+   "question_number": "13"
+  },
+  "note": "2006 AMC 10A #13; the poster's first answer 60 is correct, not 55. Repeat of an earlier record (aliased)."
  },
  {
   "topic_id": "1749682",

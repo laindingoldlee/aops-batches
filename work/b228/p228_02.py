@@ -243,6 +243,12 @@ b.add(1749222,1,r'''How many three-digit positive integers have all of their dig
 r'''Each of the three digits can be chosen independently as $2$ or $5$ (neither is $0$, so the hundreds digit causes no problem). By the multiplication principle there are $2\cdot2\cdot2=\boxed{8}$ such integers: $222,225,252,255,522,525,552,555$.''',
 'Multiplication principle|Digit problems',1)
 
+# ---------------- 1747690 AMC 10A 2006 #13 (alias)
+b.add(1747690,1,r'''A player pays $\$5$ to play a game. A die is rolled. If the number on the die is odd, the game is lost. If the number is even, the die is rolled again; the player wins if the second number matches the first and loses otherwise. How much should the player win for the game to be fair? (In a fair game the probability of winning times the amount won is what the player should pay.)''',
+r'''$P(\text{win})=\dfrac12\cdot\dfrac16=\dfrac1{12}$, so the prize $W$ satisfies $\dfrac{W}{12}=5$, i.e.\ $W=\boxed{\$60}$. The poster's $\$55$ would be the net gain on a win if the $\$5$ fee were not counted in the prize; by the definition given, the amount won is $\$60$.''',
+'Expected value|Independent events|Dice probability',2,source=src('AMC 10',2006,'A',13),
+note='2006 AMC 10A #13; the poster\'s first answer 60 is correct, not 55. Repeat of an earlier record (aliased).')
+
 # ---------------- 1749682 texts
 b.add(1749682,1,r'''Max's cell phone plan charges $\$0.13$ for each text message sent or received. Max was charged $\$7.41$ in a month in which he sent $15$ more texts than he received. How many texts did Max send?''',
 r'''Max sent or received $\dfrac{7.41}{0.13}=57$ texts in all. If he sent $s$ and received $r$, then $s+r=57$ and $s-r=15$, so $2s=72$ and $s=\boxed{36}$ (he received $21$).''',

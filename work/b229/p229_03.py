@@ -24,7 +24,7 @@ fig=r'''pair O=(0,0);pair[] V;for(int i=0;i<6;++i)V[i]=4*dir(60*i);
 draw(circle(O,4),linewidth(0.8));draw(V[0]--V[1]--V[2]--V[3]--V[4]--V[5]--cycle,linewidth(0.9));
 draw(O--V[0],dashed);draw(O--V[1],dashed);
 dot(O);label("$O$",O,SW);
-label("$4$",(V[0]+V[1])/2,dir(30));label("$4$",(O+V[0])/2,S);label("$4$",(O+V[1])/2,dir(150));'''
+label("$4$",(V[0]+V[1])/2+0.55*dir(210));label("$4$",(O+V[0])/2,S);label("$4$",(O+V[1])/2,dir(150));'''
 b.add(1742450,1,r'''A regular hexagon with side length $4$ cm is inscribed in a circle. Find the radius of the circle.''',
 r'''Join the centre $O$ to two adjacent vertices. The central angle is $\dfrac{360^\circ}{6}=60^\circ$, and the two radii are equal, so the triangle is isosceles with apex angle $60^\circ$, hence equilateral.
 '''+asy(fig,'4.5cm')+r'''
@@ -33,13 +33,13 @@ So the radius equals the side: $\boxed{4\text{ cm}}$.''',
 
 # ---------------- 1742456 towers, bridge and rope
 fig=r'''pair A=(0,0),B=(100,0),P=(0,90),Q=(100,150),X=(200/9,70);
-draw((-15,0)--(115,0),linewidth(0.6));
+draw((-22,0)--(115,0),linewidth(0.6));
 draw(A--P,linewidth(2));draw(B--Q,linewidth(2));
 draw((0,70)--(100,70),brown+linewidth(1.2));
 draw(P--B,blue);
 dot(X);dot(P);
 label("$P$",P,W);label("$A$",A,S);label("$B$",B,S);label("$Q$",Q,E);label("$X$",X,dir(60));
-label("$90$",(0,45),W);label("$150$",(100,75),E);label("$100$",(50,0),S);label("bridge",(70,70),N,brown);
+draw((-16,0)--(-16,90),Arrows(4));label("$90$",(-16,45),W);label("$150$",(100,75),E);label("$100$",(50,0),S);label("bridge",(70,70),N,brown);
 label("$20$",(0,80),W);label("$70$",(0,35),W);'''
 b.add(1742456,1,r'''Two towers of heights $90$ m and $150$ m stand $100$ m apart on level ground. A straight horizontal bridge connects the towers at a height of $70$ m. A rope is stretched from the top of the shorter tower to the foot of the taller tower. Find the distance from the top of the shorter tower to the point where the rope crosses the bridge.''',
 r'''Use coordinates with the shorter tower $AP$ on the $y$-axis ($A=(0,0)$, $P=(0,90)$) and the foot of the taller tower at $B=(100,0)$. The bridge is the segment $y=70$, $0\le x\le100$.
