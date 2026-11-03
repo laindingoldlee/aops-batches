@@ -1,0 +1,490 @@
+[
+ {
+  "topic_id": "1739467",
+  "part": 1,
+  "question": "The numbers $1,2,3,\\dots,n$ are written on a board. After one number $K$ is erased, the arithmetic mean of the remaining $n-1$ numbers is $46\\dfrac{20}{23}$. Find $K$.",
+  "solution": "The mean $46\\dfrac{20}{23}=\\dfrac{1078}{23}$ has denominator $23$, and the sum of the remaining numbers, $(n-1)\\cdot\\dfrac{1078}{23}$, is an integer. Since $\\gcd(1078,23)=1$, $23$ divides $n-1$.\n\nErasing one number changes the mean only a little. If the largest number $n$ is erased the mean is $\\dfrac{1+2+\\dots+(n-1)}{n-1}=\\dfrac {n}{2}$, and if $1$ is erased it is $\\dfrac{n+2}{2}$. So\n\\[\n\\dfrac {n}{2}\\le\\dfrac{1078}{23}\\le\\dfrac{n+2}{2}\\quad\\Longrightarrow\\quad 91<n<94,\n\\]\nso $n=92$ or $93$, and $n-1$ divisible by $23$ forces $n=93$. Then the remaining sum is $92\\cdot\\dfrac{1078}{23}=4\\cdot1078=4312$, while $1+2+\\dots+93=\\dfrac{93\\cdot94}{2}=4371$. Hence\n\\[\nK=4371-4312=\\boxed{59}.\n\\]",
+  "tags": [
+   "Averages and weighted averages",
+   "Arithmetic sequences",
+   "Summation",
+   "Bounding and extremal cases"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"46 (whole) 20/23\" is read as the mixed number 46 20/23."
+ },
+ {
+  "topic_id": "1740263",
+  "part": 1,
+  "question": "The product of two positive fractions is $\\dfrac{14}{15}$, and dividing one of them by the other gives $\\dfrac{35}{24}$. What is the greater of the two fractions?",
+  "solution": "Let the fractions be $x$ and $y$ with $xy=\\dfrac{14}{15}$ and $\\dfrac {x}{y}=\\dfrac{35}{24}$. Multiplying the two equations,\n\\[\nx^2=\\dfrac{14}{15}\\cdot\\dfrac{35}{24}=\\dfrac{490}{360}=\\dfrac{49}{36},\n\\]\nso $x=\\dfrac{7}{6}$ (as $x>0$), and $y=\\dfrac{14}{15}\\div\\dfrac{7}{6}=\\dfrac{14}{15}\\cdot\\dfrac{6}{7}=\\dfrac{4}{5}$. Since $\\dfrac {x}{y}>1$, $x$ is the greater one: the answer is $\\boxed{\\dfrac{7}{6}}$. Check: $\\dfrac{7}{6}\\cdot\\dfrac{4}{5}=\\dfrac{28}{30}=\\dfrac{14}{15}$ and $\\dfrac{7}{6}\\div\\dfrac{4}{5}=\\dfrac{35}{24}$.",
+  "tags": [
+   "Fractions",
+   "Equations and systems of equations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"Positive\" is added: without it the pair -7/6, -4/5 also works and then -4/5 is the greater fraction."
+ },
+ {
+  "topic_id": "1568921",
+  "part": 1,
+  "question": "Prove, using a picture instead of algebraic computation, that for all positive real numbers $a$ and $b$,\n\\[\n\\dfrac{a+b}{2}\\ge\\sqrt{ab},\n\\]\nwith equality only when $a=b$.",
+  "solution": "Suppose $a\\ge b$ (otherwise swap them). Draw a square of side $a+b$ and place four $a\\times b$ rectangles inside it in a pinwheel, each rectangle starting at a corner of the square and running along one side:\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(4.6cm);\ndefaultpen(fontsize(10pt));\nreal a=3,b=1.4,s=a+b;\npen f=rgb(0.82,0.9,1);\nfilldraw((0,0)--(a,0)--(a,b)--(0,b)--cycle,f,linewidth(0.8));\nfilldraw((a,0)--(s,0)--(s,a)--(a,a)--cycle,f,linewidth(0.8));\nfilldraw((b,a)--(s,a)--(s,s)--(b,s)--cycle,f,linewidth(0.8));\nfilldraw((0,b)--(b,b)--(b,s)--(0,s)--cycle,f,linewidth(0.8));\ndraw((0,0)--(s,0)--(s,s)--(0,s)--cycle,linewidth(1));\nlabel(\"$a$\",(a/2,0),S);label(\"$b$\",(a+b/2,0),S);\nlabel(\"$b$\",(0,b/2),W);label(\"$a$\",(0,b+a/2),W);\nlabel(\"$ab$\",(a/2,b/2));label(\"$ab$\",(a+b/2,a/2));label(\"$ab$\",(b+a/2,a+b/2));label(\"$ab$\",(b/2,b+a/2));\nlabel(\"$(a-b)^2$\",((a+b)/2,(a+b)/2),fontsize(9pt));\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nThe four rectangles do not overlap, and they leave a small square hole in the middle of side $a-b$. So the big square, of area $(a+b)^2$, contains four rectangles of total area $4ab$:\n\\[\n(a+b)^2\\ge 4ab .\n\\]\nThe hole is empty exactly when $a=b$, so equality holds only then. Taking square roots of both (positive) sides gives $a+b\\ge2\\sqrt{ab}$, which is the claim $\\dfrac{a+b}{2}\\ge\\sqrt{ab}$. $\\blacksquare$",
+  "tags": [
+   "AM-GM inequality",
+   "Inequalities",
+   "Area decomposition",
+   "Squares"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks for a proof of AM-GM \"with just words and reasoning\"; the record asks for the classical picture proof of the two-variable case."
+ },
+ {
+  "topic_id": "1738949",
+  "part": 1,
+  "question": "Prove that the equation\n\\[\n\\dfrac{3x^{10}}{y^{10}}=1991\n\\]\nhas no solutions in integers $x,y$ (with $y\\ne0$).",
+  "solution": "Suppose integers $x$ and $y\\ne0$ satisfy $3x^{10}=1991\\,y^{10}$. Then $x\\ne0$ too. Look at the exponent of the prime $3$ in both sides. Write $3^p\\parallel x$ and $3^q\\parallel y$ (the exact powers of $3$ dividing $x$ and $y$). Since $1991=11\\cdot181$ is not divisible by $3$, the exponent of $3$ is $10p+1$ on the left and $10q$ on the right. But $10p+1\\equiv1\\pmod{10}$ and $10q\\equiv0\\pmod{10}$, so they cannot be equal, contradicting unique prime factorisation. Hence there are no integer solutions. $\\blacksquare$",
+  "tags": [
+   "Diophantine equations",
+   "Prime factorisation",
+   "Exponents",
+   "Proof by contradiction"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1739977",
+  "part": 1,
+  "question": "Find all positive integers $n\\le40$ for which\n\\[\n\\sqrt{n+\\sqrt{n+\\sqrt{n+\\cdots}}}\n\\]\n(infinitely many nested square roots) is an integer.",
+  "solution": "The nested radical is the limit $L$ of $a_1=\\sqrt n$, $a_{k+1}=\\sqrt{n+a_k}$. This sequence is increasing (by induction, $a_{k+1}>a_k$ because $a_2>a_1$ and $t\\mapsto\\sqrt{n+t}$ is increasing) and bounded above by the positive root of $t^2=n+t$, so it converges, and its limit satisfies\n\\[\nL=\\sqrt{n+L}\\quad\\Longrightarrow\\quad L^2-L=n,\\qquad L=\\dfrac{1+\\sqrt{1+4n}}{2}.\n\\]\nSo $L$ is an integer $m$ exactly when $n=m(m-1)$. Since $n\\ge1$ we need $m\\ge2$, and $m(m-1)\\le40$ gives $m\\le6$. Hence\n\\[\nn\\in\\{\\boxed{2,\\ 6,\\ 12,\\ 20,\\ 30}\\},\n\\]\nwith values $L=2,3,4,5,6$ respectively.",
+  "tags": [
+   "Radicals",
+   "Sequences and series",
+   "Quadratic equations"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The garbled \"sqrt of n + sqrt n....(whole root)\" is read as the infinite nested radical sqrt(n + sqrt(n + ...))."
+ },
+ {
+  "topic_id": "1739930",
+  "part": 1,
+  "question": "What is the largest multiple of $12$ that can be written using each of the digits $0,1,2,3,4,5,6,7,8,9$ exactly once?",
+  "solution": "A number is a multiple of $12$ exactly when it is divisible by $3$ and by $4$. The digit sum is $0+1+\\dots+9=45$, so every such ten-digit number is divisible by $3$. We need its last two digits to form a multiple of $4$.\n\nTo make the number as large as possible, keep the leading digits as large as possible. With the first eight digits $98765432$ the last two digits are $1,0$ in some order, and neither $10$ nor $01$ is a multiple of $4$. With the first seven digits $9876543$ the last three digits are $2,1,0$ in some order; the largest arrangement whose last two digits form a multiple of $4$ is $120$ ($20$ is divisible by $4$, while $210$ and $201$ end in $10$ and $01$). So the answer is\n\\[\n\\boxed{9876543120}.\n\\]",
+  "tags": [
+   "Divisibility rules",
+   "Digits and bases",
+   "Factors and multiples"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1736311",
+  "part": 1,
+  "question": "Consider the expression\n\\[\n2\\ \\square\\ 2\\ \\square\\ 2\\ \\square\\ \\cdots\\ \\square\\ 2\n\\]\nwith $2018$ twos and $2017$ blanks. Each blank is filled with one of $+$, $-$, $\\times$, $\\div$, giving $4^{2017}$ expressions, and each expression is evaluated with the usual order of operations. Find the sum of all $4^{2017}$ results.",
+  "solution": "Let there be $n$ twos in general (here $n=2018$). Each expression is a sum of signed \\emph{terms}, the blocks of twos joined by $\\times$ and $\\div$:\n\\[\n\\text{value}=T_1\\pm T_2\\pm\\cdots\\pm T_r ,\n\\]\nwhere $T_1$ is the first block and the sign of every later term is the $+$ or $-$ in front of it.\n\n\\textbf{Later terms cancel.} Fix an expression and a term $T_i$ with $i\\ge2$. Changing the sign in front of $T_i$ (from $+$ to $-$ or back) gives another expression with exactly the same terms. These two expressions contribute $+T_i$ and $-T_i$, so over all expressions the contributions of all terms other than the first cancel. Hence the total is the sum, over all expressions, of the first term $T_1$.\n\n\\textbf{The first term.} Suppose the first block has $k$ twos. Its $k-1$ operations are $\\times$ or $\\div$, and each $\\times2$ multiplies by $2$ while each $\\div2$ multiplies by $\\dfrac{1}{2}$, so summing over the $2^{k-1}$ choices,\n\\[\n\\sum T_1=2\\left(2+\\dfrac{1}{2}\\right)^{k-1}=2\\left(\\dfrac{5}{2}\\right)^{k-1}.\n\\]\nIf $k<n$, the next operation is $+$ or $-$ ($2$ choices) and the remaining $n-1-k$ operations are free ($4^{n-1-k}$ choices). If $k=n$ the whole expression is one block. So the total is\n\\[\n\\sum_{k=1}^{n-1}2\\left(\\dfrac{5}{2}\\right)^{k-1}\\cdot2\\cdot4^{n-1-k}+2\\left(\\dfrac{5}{2}\\right)^{n-1}\n=4^{n-1}\\sum_{j=0}^{n-2}\\left(\\dfrac{5}{8}\\right)^{j}+2\\left(\\dfrac{5}{2}\\right)^{n-1}.\n\\]\nThe geometric sum is $\\dfrac{1-(5/8)^{n-1}}{3/8}$, so the total is\n\\[\n\\dfrac{8}{3}\\cdot4^{n-1}-\\dfrac{8}{3}\\left(\\dfrac{5}{2}\\right)^{n-1}+2\\left(\\dfrac{5}{2}\\right)^{n-1}=\\dfrac{2}{3}\\left(4^{n}-\\left(\\dfrac{5}{2}\\right)^{n-1}\\right).\n\\]\n(For example $n=2$: $4+0+4+1=9=\\dfrac{2}{3}\\left(16-\\dfrac{5}{2}\\right)$.) For $n=2018$ the sum of all results is\n\\[\n\\boxed{\\dfrac{2}{3}\\left(4^{2018}-\\left(\\dfrac{5}{2}\\right)^{2017}\\right)=\\dfrac{2^{6053}-5^{2017}}{3\\cdot2^{2016}}}.\n\\]",
+  "tags": [
+   "Summation",
+   "Geometric sequences",
+   "Pairing and grouping",
+   "Symmetry",
+   "Order of operations"
+  ],
+  "difficulty": 6,
+  "rationale": "A difficult-to-spot insight followed by substantial reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The formula was checked by brute force over all operator choices for 1 to 7 twos with exact fractions."
+ },
+ {
+  "topic_id": "1739351",
+  "part": 1,
+  "question": "A sequence of positive integers is generated as follows: if the current term is divisible by $3$, the next term is the current term divided by $3$; otherwise the next term is the current term minus $1$. If the first term is a three-digit number and the sixth term is $1$, what is the sum of all possible first terms?",
+  "solution": "Work backwards. A term $x$ can be preceded by $3x$ (always, since $3x$ is divisible by $3$), or by $x+1$, but only when $x+1$ is \\emph{not} divisible by $3$.\n\n\\begin{itemize}\n\\item Term 6: $1$.\n\\item Term 5: $3$ or $2$.\n\\item Term 4: from $3$: $9$ or $4$; from $2$: $6$ (not $3$, which is divisible by $3$). So $9,4,6$.\n\\item Term 3: $27,10$; $12,5$; $18,7$.\n\\item Term 2: $81,28$; $30,11$; $36,13$; $15$ (not $6$); $54,19$; $21,8$.\n\\item Term 1: each term-2 value $x$ gives $3x$ and possibly $x+1$. The values $x+1$ are all at most $82$, and $3x$ is a three-digit number only for $x=81,36,54$, giving $243,108,162$.\n\\end{itemize}\nCheck: $243\\to81\\to27\\to9\\to3\\to1$, $108\\to36\\to12\\to4\\to3\\to1$, $162\\to54\\to18\\to6\\to2\\to1$. The sum is $243+108+162=\\boxed{513}$.",
+  "tags": [
+   "Working backwards",
+   "Recurrence relations",
+   "Divisibility"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1739592",
+  "part": 1,
+  "question": "Let $x_1,x_2,\\dots,x_n$ be positive real numbers with arithmetic mean $A=\\dfrac{x_1+x_2+\\cdots+x_n}{n}$. Prove, without calculus, that\n\\[\nx_1x_2\\cdots x_n\\le A^n ,\n\\]\nwith equality only when all the numbers are equal.",
+  "solution": "If all the numbers equal $A$, the product is $A^n$. Otherwise some number is larger than $A$ and some number is smaller than $A$ (they cannot all be on the same side, since their average is $A$); say $x_i>A>x_j$.\n\n\\textbf{Smoothing step.} Replace $x_i$ by $A$ and $x_j$ by $x_i+x_j-A$. The new numbers are still positive ($x_i+x_j-A>x_j>0$), their sum and therefore their mean $A$ are unchanged, and the product of the two changed numbers increases:\n\\[\nA(x_i+x_j-A)-x_ix_j=(x_i-A)(A-x_j)>0 .\n\\]\nThe other numbers are untouched, so the whole product strictly increases. Moreover, the number of entries equal to $A$ goes up by at least one.\n\n\\textbf{Repeat.} After at most $n-1$ smoothing steps every entry equals $A$ (once $n-1$ entries equal $A$, the last one does too, because the sum is $nA$). The product has strictly increased at every step and ends at $A^n$. Hence, if the numbers were not all equal, the original product was strictly less than $A^n$. Together with the equality case this proves $x_1x_2\\cdots x_n\\le A^n$, with equality only when all $x_k$ are equal. $\\blacksquare$\n\n(Taking $n$-th roots gives the familiar form $\\dfrac{x_1+\\cdots+x_n}{n}\\ge\\sqrt[n]{x_1x_2\\cdots x_n}$.)",
+  "tags": [
+   "AM-GM inequality",
+   "Inequalities",
+   "Invariants and monovariants"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks for a proof of AM-GM using only middle-school mathematics; the record gives the smoothing proof for n numbers."
+ },
+ {
+  "topic_id": "1739370",
+  "part": 1,
+  "question": "Three red beads, five blue beads, four green beads and three white beads are put on a necklace so that all beads of the same colour are next to each other. Beads of the same colour are identical, and two necklaces are the same if one can be turned into the other by rotating it or flipping it over. How many different necklaces are there?\n\nA student says the answer is $6$, the circular arrangements of $4$ objects; another says $24$, because rotations should not be counted. Who, if anyone, is right?",
+  "solution": "Since each colour forms one block, a necklace is determined by the cyclic order of the four blocks R, B, G, W around the circle. Up to rotation, the number of cyclic orders of $4$ distinct blocks is $\\dfrac{4!}{4}=3!=6$: fix R and order the other three after it.\n\nA necklace can also be flipped over, which reverses the cyclic order. For four distinct blocks a cyclic order is never the same as its reverse (for example R,B,G,W reversed is R,W,G,B), so the $6$ cyclic orders fall into $3$ mirror pairs:\n\\[\n\\{\\text{RBGW},\\text{RWGB}\\},\\quad\\{\\text{RBWG},\\text{RGWB}\\},\\quad\\{\\text{RGBW},\\text{RWBG}\\}.\n\\]\nSo there are $\\boxed{3}$ different necklaces.\n\nThe student's $6$ is the right count if the necklace may be rotated but not flipped (for instance, if it has a clasp on one side). The answer $24=4!$ counts the orders of four blocks in a row, which is not a count of necklaces at all: a circle has no first position, so rotations of the same arrangement must be identified.",
+  "tags": [
+   "Circular arrangements",
+   "Permutations",
+   "Symmetry"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The teacher's answer 24 is not correct. \"Necklace\" is read with rotations and reflections identified (answer 3); the solution also explains that 6 counts rotations only."
+ },
+ {
+  "topic_id": "1737760",
+  "part": 1,
+  "question": "When $1999^{2000}$ is divided by $5$, what is the remainder?",
+  "solution": "Since $1999\\equiv-1\\pmod 5$, we get $1999^{2000}\\equiv(-1)^{2000}=1\\pmod5$. The remainder is $\\boxed{1}$.",
+  "tags": [
+   "Remainders and congruences",
+   "Modular exponentiation"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1738860",
+  "part": 1,
+  "question": "In rectangle $ABCD$, points $E$ and $F$ lie on sides $BC$ and $CD$, respectively. Point $F$ is the midpoint of $CD$, and $BE=\\dfrac{1}{3}BC$. Segments $AC$ and $FE$ intersect at point $P$. What is the ratio of $AP$ to $PC$? Express your answer as a common fraction.",
+  "solution": "Extend $FE$ beyond $E$ to meet line $AB$ (extended beyond $B$) at $G$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\npair A=(0,0),B=(6,0),C=(6,4),D=(0,4),Ep=(6,4/3),F=(3,4),P=(30/7,20/7),G=(7.5,0);\ndraw(A--B--C--D--cycle,linewidth(0.9));\ndraw(A--C,linewidth(0.8));draw(F--Ep,linewidth(0.8));\ndraw(B--G,dashed);draw(Ep--G,dashed);\ndraw((1.5,3.85)--(1.5,4.15));draw((4.5,3.85)--(4.5,4.15));\ndot(P);\nlabel(\"$A$\",A,SW);label(\"$B$\",B,S);label(\"$C$\",C,NE);label(\"$D$\",D,NW);\nlabel(\"$E$\",Ep,E);label(\"$F$\",F,N);label(\"$P$\",P,dir(88));label(\"$G$\",G,S);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nLet $AB=w$ and $BC=h$. Then $BE=\\dfrac {h}{3}$ and $EC=\\dfrac{2h}{3}$, and $FC=\\dfrac {w}{2}$. Triangles $EBG$ and $ECF$ are similar (vertical angles at $E$ and right angles at $B$ and $C$), so\n\\[\n\\dfrac{BG}{CF}=\\dfrac{BE}{EC}=\\dfrac{1}{2},\\qquad BG=\\dfrac {w}{4},\\qquad AG=w+\\dfrac {w}{4}=\\dfrac{5w}{4}.\n\\]\nNow $AG\\parallel CF$, so triangles $APG$ and $CPF$ are similar (alternate angles), and\n\\[\n\\dfrac{AP}{PC}=\\dfrac{AG}{CF}=\\dfrac{5w/4}{w/2}=\\boxed{\\dfrac{5}{2}}.\n\\]\n(Check with coordinates $A=(0,0)$, $C=(w,h)$, $E=\\left(w,\\dfrac {h}{3}\\right)$, $F=\\left(\\dfrac {w}{2},h\\right)$: the lines meet at $P=\\dfrac{5}{7}\\,C$.)",
+  "tags": [
+   "Rectangles",
+   "Similarity",
+   "Midpoints",
+   "Parallel lines"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The figure was attached; the text determines it. The poster asks for a method without coordinates, so the solution uses similar triangles. The figure uses a 6 by 4 rectangle."
+ },
+ {
+  "topic_id": "1737110",
+  "part": 1,
+  "question": "Ramanujan knew that there are four different positive integers $A,B,C,D$ with\n\\[\nA^3+B^3=1729\\quad\\text{and}\\quad C^3+D^3=1729 .\n\\]\nFind $A+B+C+D$.",
+  "solution": "The cubes below $1729$ are $1,8,27,64,125,216,343,512,729,1000,1331,1728$. Checking which pairs add up to $1729$: $1729-1728=1=1^3$ and $1729-1000=729=9^3$, and no other difference $1729-k^3$ (for $k=10,11,12$ or $k\\le9$) is a cube apart from these. So\n\\[\n1729=1^3+12^3=9^3+10^3,\n\\]\nand $A+B+C+D=1+12+9+10=\\boxed{32}$.",
+  "tags": [
+   "Perfect cubes",
+   "Diophantine equations",
+   "Systematic counting"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1737382",
+  "part": 2,
+  "question": "At how many points does the parabola $y=x^2+8x+7$ intersect the line $y=6x+18$?",
+  "solution": "At an intersection point $x^2+8x+7=6x+18$, that is $x^2+2x-11=0$. The discriminant is $2^2+4\\cdot11=48>0$, so there are two real solutions $x=-1\\pm2\\sqrt3$, each giving one point. The answer is $\\boxed{2}$.",
+  "tags": [
+   "Quadratic equations",
+   "Equations and systems of equations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Problem P2 of a marathon post; \"a parabola with formula x^2+8x+7\" is read as y = x^2+8x+7."
+ },
+ {
+  "topic_id": "1737382",
+  "part": 3,
+  "question": "A linear function $f$ satisfies $f(0)=7$ and $f(2)=17$. Find\n\\[\nf(0)+f(1)+f(2)+\\cdots+f(127).\n\\]",
+  "solution": "A linear function has the form $f(x)=mx+c$. From $f(0)=7$ we get $c=7$, and $f(2)=2m+7=17$ gives $m=5$. So $f(x)=5x+7$, and\n\\[\n\\sum_{x=0}^{127}(5x+7)=5\\cdot\\dfrac{127\\cdot128}{2}+7\\cdot128=40640+896=\\boxed{41536}.\n\\]",
+  "tags": [
+   "Functions",
+   "Arithmetic sequences",
+   "Summation"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Problem P3 of the marathon. As posted, f is not determined by f(0) and f(2); the word \"linear\" is added, which is clearly intended."
+ },
+ {
+  "topic_id": "1738601",
+  "part": 1,
+  "question": "Three friends each select a different number from the set $\\{1,2,3,11,12,13,21,22,23\\}$ and add the three numbers together. If they repeat this for all possible choices, how many different sums can they get?",
+  "solution": "Write each number as $10a+b$ with tens digit $a\\in\\{0,1,2\\}$ and units digit $b\\in\\{1,2,3\\}$; the nine numbers are all nine pairs $(a,b)$. For three different numbers let $T$ be the sum of the tens digits and $U$ the sum of the units digits. The sum is $10T+U$ with $3\\le U\\le9$, so different pairs $(T,U)$ give different sums, and we count the achievable pairs.\n\n\\begin{itemize}\n\\item $T=0$: all three numbers are $1,2,3$, so $U=6$: $1$ sum. Similarly $T=6$ ($21,22,23$): $1$ sum.\n\\item $T=1$: two numbers with $a=0$ (different units digits, $b_1+b_2\\in\\{3,4,5\\}$) and one with $a=1$ ($b_3\\in\\{1,2,3\\}$), so $U$ takes every value from $4$ to $8$: $5$ sums. By symmetry $T=5$ also gives $5$ sums.\n\\item $T=2$: tens digits $0,0,2$ or $0,1,1$; in both cases $U$ is a sum of two different units digits and one more, again every value $4,\\dots,8$, and $U=3$ or $9$ would need three equal units digits, i.e.\\ tens digits $0,1,2$. So $5$ sums; likewise $T=4$.\n\\item $T=3$: tens digits $0,1,2$ allow any three units digits, so $U=3,\\dots,9$: $7$ sums (tens digits $1,1,1$ give only $U=6$ again).\n\\end{itemize}\nIn total $1+5+5+7+5+5+1=\\boxed{29}$ different sums.",
+  "tags": [
+   "Casework",
+   "Systematic counting",
+   "Place value"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"Select a number and remove it\" is read as three different numbers. Checked by listing all 84 triples."
+ },
+ {
+  "topic_id": "1550572",
+  "part": 1,
+  "question": "How many numbers from $1000$ to $2000$ have all three of the numbers $15$, $20$ and $25$ as factors?",
+  "solution": "A number has $15=3\\cdot5$, $20=2^2\\cdot5$ and $25=5^2$ as factors exactly when it is a multiple of\n\\[\n\\operatorname{lcm}(15,20,25)=2^2\\cdot3\\cdot5^2=300 .\n\\]\nThe multiples of $300$ from $1000$ to $2000$ are $1200,1500,1800$, so the answer is $\\boxed{3}$.",
+  "tags": [
+   "HCF and LCM",
+   "Factors and multiples"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "P1 of an AMC 8 marathon thread (the contest year is not given)."
+ },
+ {
+  "topic_id": "1730993",
+  "part": 1,
+  "question": "On average, how many times must a fair die be thrown until a $6$ appears for the first time?",
+  "solution": "Let $E$ be the expected number of throws. The first throw is a $6$ with probability $\\dfrac{1}{6}$, and then one throw was needed. With probability $\\dfrac{5}{6}$ it is not a $6$; then one throw has been used and the situation starts afresh, so on average $E$ more throws are needed. Hence\n\\[\nE=1+\\dfrac{5}{6}E\\quad\\Longrightarrow\\quad\\dfrac{1}{6}E=1\\quad\\Longrightarrow\\quad E=\\boxed{6}.\n\\]\n(Directly: $E=\\sum_{k\\ge1}k\\left(\\dfrac{5}{6}\\right)^{k-1}\\dfrac{1}{6}=\\dfrac{1}{6}\\cdot\\dfrac{1}{(1-5/6)^2}=6$.)",
+  "tags": [
+   "Expected value",
+   "Geometric distribution",
+   "Dice probability",
+   "Recursive probability"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "From Fifty Challenging Problems in Probability (Mosteller); the poster asks for an explanation of the book solution."
+ },
+ {
+  "topic_id": "1738261",
+  "part": 1,
+  "question": "The first three terms of a sequence are $1$, $2$ and $3$. Each later term is the sum of the three terms before it. What is the $11$th term of the sequence?",
+  "solution": "Let $t_n$ be the $n$-th term, so $t_n=t_{n-1}+t_{n-2}+t_{n-3}$ for $n\\ge4$. A small time-saver: $t_{n}=2t_{n-1}-t_{n-4}$, since $t_{n-1}=t_{n-2}+t_{n-3}+t_{n-4}$. Either way,\n\\[\n1,\\ 2,\\ 3,\\ 6,\\ 11,\\ 20,\\ 37,\\ 68,\\ 125,\\ 230,\\ 423,\n\\]\nso the $11$th term is $\\boxed{423}$. (For example $t_{11}=2\\cdot230-37=423$.)",
+  "tags": [
+   "Recurrence relations",
+   "Sequences and series"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The poster got 423 by adding; the solution confirms it and gives the shortcut t_n = 2t_(n-1) - t_(n-4)."
+ },
+ {
+  "topic_id": "415026",
+  "part": 1,
+  "question": "If two dice are tossed, the probability that the product of the numbers showing on the tops of the dice is greater than $10$ is\n\\[\n\\textbf{(A)}\\ \\dfrac{3}{7}\\qquad\\textbf{(B)}\\ \\dfrac{17}{36}\\qquad\\textbf{(C)}\\ \\dfrac{1}{2}\\qquad\\textbf{(D)}\\ \\dfrac{5}{8}\\qquad\\textbf{(E)}\\ \\dfrac{11}{12}\n\\]",
+  "solution": "There are $36$ equally likely ordered outcomes. Count the products greater than $10$ by the first die:\n\\begin{itemize}\n\\item first die $1$: none; first die $2$: second die $6$ ($1$ outcome);\n\\item first die $3$: $4,5,6$ ($3$); first die $4$: $3,4,5,6$ ($4$);\n\\item first die $5$: $3,4,5,6$ ($4$); first die $6$: $2,3,4,5,6$ ($5$).\n\\end{itemize}\nThat is $1+3+4+4+5=17$ outcomes, so the probability is $\\dfrac{17}{36}$, answer $\\boxed{\\textbf{(B)}}$.",
+  "tags": [
+   "Dice probability",
+   "Probability",
+   "Systematic counting"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": "AJHSME",
+   "year": 1992,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": "23"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1737416",
+  "part": 1,
+  "question": "In triangle $ABC$, $AB=14$, $BC=15$ and $AC=13$. Let $X$ be the circumcentre of the triangle. The supplement of $\\angle BXC$ is one of the angles of a right triangle with integer side lengths. Find the smallest possible perimeter of this right triangle.",
+  "solution": "By the law of cosines,\n\\[\n\\cos A=\\dfrac{AB^2+AC^2-BC^2}{2\\cdot AB\\cdot AC}=\\dfrac{196+169-225}{364}=\\dfrac{5}{13},\\qquad \\sin A=\\dfrac{12}{13}.\n\\]\nAngle $A$ is acute, so the circumcentre $X$ lies on the same side of $BC$ as $A$, and the central angle is $\\angle BXC=2\\angle A$:\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\npair B=(0,0),C=(15,0),A=(8.4,11.2),X=(7.5,3.125);\ndraw(circle(X,8.125),gray(0.55));\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(B--X--C,blue+linewidth(0.8));\ndot(X);\ndraw(arc(X,1.0,degrees(B-X),degrees(C-X)),blue);\nlabel(\"$2\\angle A$\",X+2.15*dir(270),blue);\nlabel(\"$A$\",A,N);label(\"$B$\",B,W);label(\"$C$\",C,E);label(\"$X$\",X,N);\nlabel(\"$14$\",(A+B)/2,NW);label(\"$13$\",(A+C)/2,NE);label(\"$15$\",(B+C)/2,S);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nLet $\\theta=180^\\circ-2A$ be its supplement. Then\n\\[\n\\cos\\theta=-\\cos2A=1-2\\cos^2A=\\dfrac{119}{169},\\qquad \\sin\\theta=\\sin2A=2\\cdot\\dfrac{12}{13}\\cdot\\dfrac{5}{13}=\\dfrac{120}{169}.\n\\]\nIn a right triangle with an acute angle $\\theta$, the adjacent leg, opposite leg and hypotenuse are in the ratio $\\cos\\theta:\\sin\\theta:1=119:120:169$. Since $\\gcd(119,120)=1$, the integer triangles with this angle are the multiples $119k,120k,169k$, and the smallest perimeter is\n\\[\n119+120+169=\\boxed{408}.\n\\]",
+  "tags": [
+   "Circumcircles and circumcentres",
+   "Inscribed angles",
+   "Law of cosines",
+   "Trigonometric identities",
+   "Pythagorean triples",
+   "Right triangles"
+  ],
+  "difficulty": 5,
+  "rationale": "A meaningful insight or a moderately demanding combination of familiar ideas.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Solution figure drawn to scale from B=(0,0), C=(15,0), A=(8.4,11.2), circumcentre (7.5,3.125), R=65/8."
+ },
+ {
+  "topic_id": "1737879",
+  "part": 1,
+  "question": "Two integers are relatively prime when their greatest common divisor is $1$.\n\\begin{enumerate}\n\\item[(a)] Is $1$ relatively prime to $1$?\n\\item[(b)] Is $1$ relatively prime to $0$?\n\\end{enumerate}",
+  "solution": "\\textbf{(a)} The only positive divisor of $1$ is $1$, so the common positive divisors of $1$ and $1$ are just $1$, and $\\gcd(1,1)=1$. So $\\boxed{\\text{yes}}$, $1$ is relatively prime to $1$.\n\n\\textbf{(b)} Every integer divides $0$ (because $0=d\\cdot0$), so the common positive divisors of $1$ and $0$ are the positive divisors of $1$, namely just $1$. Thus $\\gcd(1,0)=1$ and $\\boxed{\\text{yes}}$, $1$ and $0$ are relatively prime. (More generally $\\gcd(n,0)=|n|$, so $n$ is relatively prime to $0$ only for $n=\\pm1$; and $1$ is relatively prime to every integer.)",
+  "tags": [
+   "HCF and LCM",
+   "Factors and multiples"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ }
+]

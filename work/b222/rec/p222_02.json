@@ -1,0 +1,671 @@
+[
+ {
+  "topic_id": "1782319",
+  "part": 1,
+  "question": "Prove that there are no positive integers $p$ and $q$ such that\n\\[\n\\dfrac{p^6+2p^4+p^2}{p^9-8p^3}-\\dfrac{1}{4q}=\\dfrac{5}{6q}.\n\\]",
+  "solution": "We need $p^9-8p^3\\ne0$, i.e.\\ $p^6\\ne8$, which holds for all positive integers. Simplify both sides. The left fraction is\n\\[\n\\dfrac{p^2(p^2+1)^2}{p^3(p^6-8)}=\\dfrac{(p^2+1)^2}{p(p^6-8)},\n\\]\nand $\\dfrac{5}{6q}+\\dfrac{1}{4q}=\\dfrac{10+3}{12q}=\\dfrac{13}{12q}$. So the equation is\n\\[\n12q\\,(p^2+1)^2=13p\\,(p^6-8).\n\\]\nFor $p=1$ the right side is negative, so $p\\ge2$. Now look at the factor $p^2+1$:\n\\begin{itemize}\n\\item $\\gcd(p^2+1,p)=1$;\n\\item $p^2\\equiv-1\\pmod{p^2+1}$ gives $p^6\\equiv-1$, so $p^6-8\\equiv-9\\pmod{p^2+1}$ and $\\gcd(p^2+1,p^6-8)$ divides $9$; but $p^2+1\\equiv1$ or $2\\pmod3$ is never divisible by $3$, so $\\gcd(p^2+1,p^6-8)=1$.\n\\end{itemize}\nHence $(p^2+1)^2$ is coprime to $p(p^6-8)$, and since it divides $13p(p^6-8)$, it divides $13$. But $(p^2+1)^2\\ge25>13$ for $p\\ge2$. This contradiction shows that there are \\boxed{\\text{no positive integers }p,q} satisfying the equation. $\\blacksquare$",
+  "tags": [
+   "Rational equations",
+   "Divisibility",
+   "Remainders and congruences",
+   "Factoring",
+   "Diophantine equations"
+  ],
+  "difficulty": 5,
+  "rationale": "A meaningful insight or a moderately demanding combination of familiar ideas.",
+  "source": {
+   "competition": "Bangladesh Mathematical Olympiad",
+   "year": 2014,
+   "division": "Dhaka Regional",
+   "paper": null,
+   "round": null,
+   "question_number": "4"
+  },
+  "note": "The post (BdMO 2014 Dhaka regional, problem 4) asks for the minimum of p*q, but as typed the equation has no solutions in positive integers (proved here; also checked by search for p < 3000). The original wording could not be recovered, so the record asks for the proof that there are no solutions."
+ },
+ {
+  "topic_id": "1782694",
+  "part": 1,
+  "question": "$ABC$ is a triangle in which the altitude from $A$ to $BC$ has length $2$ and $BC=6$. $DEFG$ is a square with $D$ on line $AB$ and $E$ on line $AC$ (on the sides or their extensions), and $F$, $G$ on line $BC$. Find all possible values of the perimeter of $DEFG$.",
+  "solution": "Let the square have side $s$. Since $F$ and $G$ lie on $BC$, the side $DE$ is parallel to $BC$ at distance $s$ from it. Triangle $ADE$ is then similar to triangle $ABC$ (with $D\\in AB$, $E\\in AC$), and the ratio of similarity is the ratio of the distances from $A$ to the lines $DE$ and $BC$. So\n\\[\n\\dfrac{DE}{BC}=\\dfrac{|2-s|}{2}\\quad\\text{if $DE$ is on the same side of $BC$ as $A$,}\\qquad\n\\dfrac{DE}{BC}=\\dfrac{2+s}{2}\\quad\\text{otherwise.}\n\\]\nWith $DE=s$ and $BC=6$:\n\\begin{itemize}\n\\item $DE$ between $BC$ and $A$ ($s<2$): $s=3(2-s)$, so $s=\\dfrac{3}{2}$; this is the square inscribed in the triangle, figure (i).\n\\item $DE$ beyond $A$ ($s>2$): $s=3(s-2)$, so $s=3$; here $D$ and $E$ lie on the extensions of $AB$ and $AC$ beyond $A$, figure (ii).\n\\item $DE$ on the other side of $BC$: $s=3(2+s)$ has no positive solution.\n\\end{itemize}\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5.5cm);\ndefaultpen(fontsize(10pt));\npair B=(0,0),C=(6,0),A=(2.5,2);\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(A--(-0.8,2),dotted);draw((-0.6,0)--(-0.6,2),Arrows(4));\npair D=(1.875,1.5),Ep=(3.375,1.5),F=(3.375,0),G=(1.875,0);\ndraw(D--Ep--F--G--cycle,blue+linewidth(0.9));\nlabel(\"$A$\",A,N);label(\"$B$\",B,SW);label(\"$C$\",C,SE);\nlabel(\"$D$\",D,NW);label(\"$E$\",Ep,NE);label(\"$F$\",F,S);label(\"$G$\",G,S);\nlabel(\"$2$\",(-0.6,1),W);label(\"$6$\",(4.7,0),S);label(\"(i)\",(3,-1.1));\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5.5cm);\ndefaultpen(fontsize(10pt));\npair B=(0,0),C=(6,0),A=(2.5,2);\npair D=(3.75,3),Ep=(0.75,3),F=(0.75,0),G=(3.75,0);\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(A--D,dashed);draw(A--Ep,dashed);\ndraw(D--Ep--F--G--cycle,blue+linewidth(0.9));\nlabel(\"$A$\",A,S);label(\"$B$\",B,SW);label(\"$C$\",C,SE);\nlabel(\"$D$\",D,NE);label(\"$E$\",Ep,NW);label(\"$F$\",F,S);label(\"$G$\",G,S);\nlabel(\"$3$\",(D+Ep)/2,N);label(\"$6$\",(4.9,0),S);label(\"(ii)\",(3,-1.1));\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nSo the perimeter of $DEFG$ is $4\\cdot\\dfrac{3}{2}=\\boxed{6}$ for the square inside the triangle, and $4\\cdot3=\\boxed{12}$ for the square on the extensions beyond $A$. (The computation does not depend on the shape of the triangle; in figure (ii) the square overlaps the triangle, and $A$ lies inside it.)",
+  "tags": [
+   "Squares",
+   "Similarity",
+   "Triangles",
+   "Altitudes",
+   "Lengths, perimeter, and area"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "Bangladesh Mathematical Olympiad",
+   "year": 2014,
+   "division": "Dhaka Regional",
+   "paper": null,
+   "round": null,
+   "question_number": "3"
+  },
+  "note": "BdMO 2014 Dhaka regional, problem 3. Because the post allows D, E on the extensions of AB, AC, there are two squares (side 3/2 and side 3); the record asks for all values (perimeters 6 and 12). Both configurations were checked with coordinates."
+ },
+ {
+  "topic_id": "1782754",
+  "part": 1,
+  "question": "Let $a>1$ and $n\\ge1$ be integers. Prove that $a-1$ divides $a^n-1$.",
+  "solution": "\\textbf{Factorisation.} For every $n\\ge1$,\n\\[\na^n-1=(a-1)\\left(a^{n-1}+a^{n-2}+\\cdots+a+1\\right),\n\\]\nas one checks by expanding: the product is $(a^n+a^{n-1}+\\cdots+a)-(a^{n-1}+\\cdots+a+1)=a^n-1$. The second factor is an integer, so $(a-1)\\mid a^n-1$.\n\n\\textbf{Congruences (alternative).} Since $a\\equiv1\\pmod{a-1}$, we get $a^n\\equiv1^n=1\\pmod{a-1}$, i.e.\\ $a-1\\mid a^n-1$. $\\blacksquare$",
+  "tags": [
+   "Divisibility",
+   "Factoring",
+   "Remainders and congruences",
+   "Geometric sequences"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1782611",
+  "part": 26,
+  "question": "A triangle in the coordinate plane has vertices $(-4,0)$, $(6,0)$ and $(0,5)$. The line $y=\\dfrac{5}{4}x+c$, where $c$ is a positive number, divides the triangle into a trapezoid and a smaller triangle whose areas, respectively, are in the ratio $5:4$. What is the value of $c$? Express your answer as a common fraction.",
+  "solution": "The side from $(-4,0)$ to $(0,5)$ has slope $\\dfrac{5}{4}$, so the line $y=\\dfrac{5}{4}x+c$ is parallel to it. For $c>0$ it cuts off a small triangle at the vertex $(6,0)$, similar to the whole triangle, and the rest is a trapezoid.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6.5cm);\ndefaultpen(fontsize(10pt));\npair A=(-4,0),B=(6,0),C=(0,5),P=(-2/3,0),Q=(2,10/3);\nfill(P--B--Q--cycle,palecyan);\ndraw((-5,0)--(7,0),gray,Arrow);draw((0,0)--(0,6),gray,Arrow);\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(P--Q,blue+linewidth(0.9));\ndot(A);dot(B);dot(C);dot(P);dot(Q);\nlabel(\"$(-4,0)$\",A,S);label(\"$(6,0)$\",B,S);label(\"$(0,5)$\",C,NE);\nlabel(\"$-\\dfrac{2}{3}$\",P,S);label(\"$Q$\",Q,NE);label(\"$x$\",(7,0),E);label(\"$y$\",(0,6),N);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nThe small triangle has $\\dfrac{4}{5+4}=\\dfrac{4}{9}$ of the area of the whole triangle, so its linear ratio of similarity is $\\sqrt{\\dfrac{4}{9}}=\\dfrac{2}{3}$. Its side on the $x$-axis is $\\dfrac{2}{3}\\cdot10=\\dfrac{20}{3}$, so the line meets the $x$-axis at $x=6-\\dfrac{20}{3}=-\\dfrac{2}{3}$. Then $0=\\dfrac{5}{4}\\cdot\\left(-\\dfrac{2}{3}\\right)+c$, so\n\\[\nc=\\boxed{\\dfrac{5}{6}}.\n\\]\n(Check: the line meets the side $y=5-\\dfrac{5}{6}x$ at $Q=\\left(2,\\dfrac{10}{3}\\right)$; the small triangle has area $\\dfrac{1}{2}\\cdot\\dfrac{20}{3}\\cdot\\dfrac{10}{3}=\\dfrac{100}{9}$ and the whole triangle $25$, and $25-\\dfrac{100}{9}=\\dfrac{125}{9}$, ratio $125:100=5:4$.)",
+  "tags": [
+   "Coordinate geometry",
+   "Similarity",
+   "Area ratios",
+   "Slope",
+   "Triangles"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2017,
+   "division": "State",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": "26"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1782611",
+  "part": 29,
+  "question": "Lines $AB$ and $DC$ are parallel, and the transversals $AC$ and $BD$ intersect at a point $X$ between the two lines so that $\\dfrac{AX}{CX}=\\dfrac{5}{7}$. Points $P$ and $Q$ lie on segments $AB$ and $DC$, respectively. Segment $PQ$ intersects the transversals $BD$ and $AC$ at points $M$ and $N$, respectively, so that $PM=MN=NQ$. What is the ratio $\\dfrac{AP}{BP}$? Express your answer as a common fraction.",
+  "solution": "Put $X$ at the origin with the lines $AB$ and $DC$ horizontal: $AB$ is the line $y=5$ and $DC$ the line $y=-7$ (distances in the ratio $AX:XC=5:7$). The dilation about $X$ with factor $-\\dfrac{7}{5}$ maps $A$ to $C$ and $B$ to $D$, so write $A=(a,5)$, $B=(b,5)$, $C=\\left(-\\dfrac{7a}{5},-7\\right)$, $D=\\left(-\\dfrac{7b}{5},-7\\right)$.\n\nThe points of $PQ$ that divide it into three equal parts lie at heights $5-\\dfrac{12}{3}=1$ and $5-\\dfrac{24}{3}=-3$. The point of $BD$ at height $1$ is $M=\\left(\\dfrac {b}{5},1\\right)$ and the point of $AC$ at height $-3$ is $N=\\left(-\\dfrac{3a}{5},-3\\right)$. Let $P=(p,5)$ and let $d$ be the horizontal step from $P$ to $M$ (equal to the step from $M$ to $N$):\n\\[\np+d=\\dfrac {b}{5},\\qquad p+2d=-\\dfrac{3a}{5}\\quad\\Longrightarrow\\quad d=-\\dfrac{3a+b}{5},\\quad p=\\dfrac{3a+2b}{5}.\n\\]\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\npair X=(0,0),A=(-3,5),B=(4,5),C=(4.2,-7),D=(-5.6,-7);\npair P=(-0.2,5),Q=(2.8,-7),M=(0.8,1),Nn=(1.8,-3);\ndraw((-5,5)--(6,5),linewidth(0.9));draw((-7,-7)--(6,-7),linewidth(0.9));\ndraw(A--C,linewidth(0.8));draw(B--D,linewidth(0.8));\ndraw(P--Q,blue+linewidth(0.9));\ndot(X);dot(P);dot(Q);dot(M);dot(Nn);\nlabel(\"$A$\",A,N);label(\"$B$\",B,N);label(\"$C$\",C,S);label(\"$D$\",D,S);label(\"$X$\",X,W);\nlabel(\"$P$\",P,N);label(\"$Q$\",Q,S);label(\"$M$\",M,E);label(\"$N$\",Nn,E);\npair u=unit(Q-P),nrm=rotate(90)*u;\nfor(pair m: new pair[]{(P+M)/2,(M+Nn)/2,(Nn+Q)/2}) draw((m-0.3*nrm)--(m+0.3*nrm),blue);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nSo $P=\\dfrac{3A+2B}{5}$, which divides $AB$ with $AP=\\dfrac{2}{5}AB$ and $BP=\\dfrac{3}{5}AB$. Hence $\\dfrac{AP}{BP}=\\boxed{\\dfrac{2}{3}}$. (Then $Q=\\dfrac{6C+D}{7}$ lies on segment $DC$, so the configuration exists; in the figure $a=-3$, $b=4$.)",
+  "tags": [
+   "Parallel lines",
+   "Similarity",
+   "Coordinate geometry",
+   "Dilations and homothety",
+   "Ratios, proportions, and variation"
+  ],
+  "difficulty": 5,
+  "rationale": "A meaningful insight or a moderately demanding combination of familiar ideas.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2017,
+   "division": "State",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": "29"
+  },
+  "note": "The post writes \"AX CX = 5 7\"; read as AX/CX = 5/7."
+ },
+ {
+  "topic_id": "1782611",
+  "part": 30,
+  "question": "Suppose that $a$ is a number such that the system of equations\n\\[\n|2x|-y=5,\\qquad x-|2y+2|=a\n\\]\nhas an odd number of distinct solutions. What is the product of all possible values of $a$?",
+  "solution": "From the first equation $y=2|x|-5$, so $2y+2=4|x|-8$ and the second equation becomes\n\\[\ng(x):=x-\\bigl|4|x|-8\\bigr|=a .\n\\]\nEach solution $x$ gives exactly one solution $(x,y)$ of the system, so we count solutions of $g(x)=a$. The function $g$ is piecewise linear:\n\\[\ng(x)=\\begin{cases}5x+8,&x\\le-2,\\\\-3x-8,&-2\\le x\\le0,\\\\5x-8,&0\\le x\\le2,\\\\-3x+8,&x\\ge2,\\end{cases}\n\\qquad g(-2)=-2,\\ g(0)=-8,\\ g(2)=2 .\n\\]\nSo $g$ rises to $-2$, falls to $-8$, rises to $2$ and then falls again. Counting intersections with the horizontal line at height $a$:\n\\begin{itemize}\n\\item $a>2$: $0$ solutions; $a=2$: $1$ solution ($x=2$);\n\\item $-2<a<2$: $2$ solutions (one in $(0,2)$, one in $(2,\\infty)$);\n\\item $a=-2$: $3$ solutions ($x=-2$ and one on each side of $2$);\n\\item $-8<a<-2$: $4$ solutions; $a=-8$: $3$ solutions ($x=0$, one with $x<-2$, one with $x>2$);\n\\item $a<-8$: $2$ solutions.\n\\end{itemize}\nThe number of solutions is odd exactly for $a\\in\\{2,-2,-8\\}$, and the product is $2\\cdot(-2)\\cdot(-8)=\\boxed{32}$.",
+  "tags": [
+   "Absolute value",
+   "Systems of linear equations",
+   "Piecewise functions",
+   "Casework"
+  ],
+  "difficulty": 5,
+  "rationale": "A meaningful insight or a moderately demanding combination of familiar ideas.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2017,
+   "division": "State",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": "30"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1782611",
+  "part": 8,
+  "question": "An M-shaped curve is created by graphing the parabola $y=x^2$ in the coordinate plane and then reflecting the part of the parabola that is above the line $y=1$ across the line $y=1$. There is a horizontal line that intersects the M-shaped curve at four points $A$, $B$, $C$ and $D$ so that $AB=BC=CD$. What is the distance $AB$? Express your answer as a common fraction in simplest radical form.",
+  "solution": "The M-shaped curve is $y=x^2$ for $|x|\\le1$ and $y=2-x^2$ for $|x|\\ge1$ (reflecting $y$ across $y=1$ replaces $y$ by $2-y$). A horizontal line $y=k$ with $0<k<1$ meets it at four points: $x=\\pm\\sqrt k$ on the inner part and $x=\\pm\\sqrt{2-k}$ on the reflected parts.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\nimport graph;\nreal f(real x){return abs(x)<=1 ? x^2 : 2-x^2;}\nreal k=1/5;\ndraw((-2,0)--(2,0),gray,Arrow);draw((0,-1.4)--(0,1.6),gray,Arrow);\ndraw(graph(f,-1.8,1.8,n=721),linewidth(0.9));\ndraw((-1,1)--(1,1),dashed+gray);\ndraw((-1.9,k)--(1.9,k),blue);\npair A=(-sqrt(9/5),k),B=(-sqrt(1/5),k),C=(sqrt(1/5),k),D=(sqrt(9/5),k);\ndot(A);dot(B);dot(C);dot(D);\nlabel(\"$A$\",A,NW);label(\"$B$\",B,NE);label(\"$C$\",C,NW);label(\"$D$\",D,NE);\nlabel(\"$y=1$\",(1,1),E,gray);label(\"$x$\",(2,0),E);label(\"$y$\",(0,1.6),N);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nIn order, $A=-\\sqrt{2-k}$, $B=-\\sqrt k$, $C=\\sqrt k$, $D=\\sqrt{2-k}$ (as $x$-coordinates). $BC=2\\sqrt k$ and $AB=\\sqrt{2-k}-\\sqrt k$. The condition $AB=BC$ gives\n\\[\n\\sqrt{2-k}=3\\sqrt k\\ \\Longrightarrow\\ 2-k=9k\\ \\Longrightarrow\\ k=\\dfrac{1}{5} .\n\\]\nThen $AB=2\\sqrt{\\dfrac{1}{5}}=\\dfrac{2}{\\sqrt5}=\\boxed{\\dfrac{2\\sqrt5}{5}}$.",
+  "tags": [
+   "Parabolas",
+   "Reflections",
+   "Coordinate geometry",
+   "Radicals"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2017,
+   "division": "State",
+   "paper": null,
+   "round": "Target",
+   "question_number": "8"
+  },
+  "note": "Part number 08 is Target problem 8; parts 26, 29, 30 are Sprint problems. The line y = 1 itself meets the curve in only two points, so k < 1."
+ },
+ {
+  "topic_id": "1771440",
+  "part": 1,
+  "question": "A dorm dining hall has three tables. Currently, one student is seated at one table, two are seated at another and three are seated at the remaining table. Each student who enters the dining hall picks a table to join with probability proportional to the number of students already seated at the table. Terri enters the dining hall and sits at a table. Ursula then enters the dining hall and sits at a table. What is the probability that there is now a table at which at least four students are seated? Express your answer as a common fraction.",
+  "solution": "Call the tables $T_1,T_2,T_3$ with $1,2,3$ students. Terri joins them with probabilities $\\dfrac{1}{6},\\dfrac{2}{6},\\dfrac{3}{6}$.\n\\begin{itemize}\n\\item Terri joins $T_3$ (probability $\\dfrac{1}{2}$): $T_3$ already has $4$ students.\n\\item Terri joins $T_2$ (probability $\\dfrac{1}{3}$): the tables have $1,3,3$ students out of $7$, and we need Ursula to join one of the tables with $3$: probability $\\dfrac{6}{7}$.\n\\item Terri joins $T_1$ (probability $\\dfrac{1}{6}$): the tables have $2,2,3$, and Ursula must join the table with $3$: probability $\\dfrac{3}{7}$.\n\\end{itemize}\nThe total probability is\n\\[\n\\dfrac{1}{2}+\\dfrac{1}{3}\\cdot\\dfrac{6}{7}+\\dfrac{1}{6}\\cdot\\dfrac{3}{7}=\\dfrac{7}{14}+\\dfrac{4}{14}+\\dfrac{1}{14}=\\boxed{\\dfrac{6}{7}}.\n\\]\n(Complementary check: no table reaches $4$ only if Terri sits at $T_2$ and Ursula at $T_1$, or Terri at $T_1$ and Ursula at $T_1$ or $T_2$: $\\dfrac{1}{3}\\cdot\\dfrac{1}{7}+\\dfrac{1}{6}\\cdot\\dfrac{4}{7}=\\dfrac{1}{21}+\\dfrac{2}{21}=\\dfrac{1}{7}$.)",
+  "tags": [
+   "Probability",
+   "Conditional probability",
+   "Casework",
+   "Complementary probability"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2018,
+   "division": "School",
+   "paper": null,
+   "round": "Team",
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1782703",
+  "part": 1,
+  "question": "Find all real numbers $a,b,c$ with $1<a<b<c$ such that $a+b+c=ab+bc+ca$, or show that there are none.",
+  "solution": "There are none. Since all three numbers exceed $1$,\n\\[\nab>a\\cdot1=a,\\qquad bc>b\\cdot1=b,\\qquad ca>c\\cdot1=c .\n\\]\nAdding, $ab+bc+ca>a+b+c$, so the equation can never hold. Hence $\\boxed{\\text{there is no solution}}$. (In fact only $a,b,c>1$ is needed, not the ordering.) $\\blacksquare$",
+  "tags": [
+   "Inequalities",
+   "Proof by contradiction"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post says \"solve if possible\"; it is impossible for any reals greater than 1, which the record proves."
+ },
+ {
+  "topic_id": "1782744",
+  "part": 1,
+  "question": "Let $x$ be a real number and $n$ a positive integer. Prove that\n\\[\n\\left\\lfloor\\dfrac{\\lfloor x\\rfloor}{n}\\right\\rfloor=\\left\\lfloor\\dfrac{x}{n}\\right\\rfloor .\n\\]",
+  "solution": "Let $m=\\left\\lfloor\\dfrac {x}{n}\\right\\rfloor$, an integer with $m\\le\\dfrac {x}{n}<m+1$, i.e.\\ $mn\\le x<(m+1)n$.\n\nSince $mn$ is an integer and $mn\\le x$, we have $mn\\le\\lfloor x\\rfloor$ (the floor is the largest integer not exceeding $x$). Also $\\lfloor x\\rfloor\\le x<(m+1)n$. Hence\n\\[\nmn\\le\\lfloor x\\rfloor<(m+1)n\\quad\\Longrightarrow\\quad m\\le\\dfrac{\\lfloor x\\rfloor}{n}<m+1,\n\\]\nso $\\left\\lfloor\\dfrac{\\lfloor x\\rfloor}{n}\\right\\rfloor=m=\\left\\lfloor\\dfrac {x}{n}\\right\\rfloor$. $\\blacksquare$",
+  "tags": [
+   "Floor and ceiling functions",
+   "Inequalities"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The square brackets of the post are the floor function."
+ },
+ {
+  "topic_id": "1782697",
+  "part": 1,
+  "question": "In an acute triangle $ABC$, a circle of radius $66$ has its diameter on side $BC$ and touches sides $AB$ and $AC$. Similarly, a circle of radius $55$ has its diameter on side $CA$ and touches $AB$ and $BC$, and a circle of radius $60$ has its diameter on side $AB$ and touches $BC$ and $CA$. What is the radius of the incircle of triangle $ABC$?",
+  "solution": "Let $a=BC$, $b=CA$, $c=AB$, let $K$ be twice the area of $ABC$, and let $O_1$ be the centre of the first circle, on $BC$. Since the circle touches $AB$ and $AC$, its radius $66$ is the distance from $O_1$ to both lines. Splitting the triangle along $AO_1$,\n\\[\nK=2[ABO_1]+2[AO_1C]=66\\,c+66\\,b,\\qquad\\text{so}\\qquad b+c=\\dfrac{K}{66}.\n\\]\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6.5cm);\ndefaultpen(fontsize(10pt));\nreal a=13,b=9,c=11;\npair B=(0,0),C=(a,0);\nreal xa=(a^2+c^2-b^2)/(2a);pair A=(xa,sqrt(c^2-xa^2));\nreal s=(a+b+c)/2;real K=2*sqrt(s*(s-a)*(s-b)*(s-c));\npair Oa=(b*B+c*C)/(b+c),Ob=(c*C+a*A)/(a+c),Oc=(b*B+a*A)/(a+b);\ndraw(circle(Oa,K/(b+c)),blue);draw(circle(Ob,K/(a+c)),heavygreen);draw(circle(Oc,K/(a+b)),red);\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(A--Oa,dashed);\npair T1=B+dot(Oa-B,unit(A-B))*unit(A-B),T2=C+dot(Oa-C,unit(A-C))*unit(A-C);\ndraw(Oa--T1,blue+dashed);draw(Oa--T2,blue+dashed);\ndot(Oa);dot(Ob);dot(Oc);\nlabel(\"$A$\",A,N);label(\"$B$\",B,SW);label(\"$C$\",C,SE);\nlabel(\"$O_1$\",Oa,S);label(\"$O_2$\",Ob,NE);label(\"$O_3$\",Oc,NW);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nIn the same way $c+a=\\dfrac{K}{55}$ and $a+b=\\dfrac{K}{60}$. Adding,\n\\[\n2(a+b+c)=K\\left(\\dfrac{1}{66}+\\dfrac{1}{55}+\\dfrac{1}{60}\\right)=K\\cdot\\dfrac{10+12+11}{660}=\\dfrac{K}{20}.\n\\]\nThe inradius $r$ satisfies $K=r(a+b+c)$, so\n\\[\nr=\\dfrac{K}{a+b+c}=\\boxed{40}.\n\\]\n(Such a triangle exists: the three equations give $a:b:c=13:9:11$, an acute triangle, and each circle's diameter lies inside its side.)\n\n\\emph{Remark on the original data.} With radii $18$ on $BC$, $6$ on $CA$ and $9$ on $AB$, the same equations give $b+c=\\dfrac {K}{18}$, $c+a=\\dfrac {K}{6}$, $a+b=\\dfrac {K}{9}$ and $a+b+c=\\dfrac {K}{6}$, hence $b=0$: no such triangle exists (the formula would give $r=6$).",
+  "tags": [
+   "Incircles and incentres",
+   "Tangents",
+   "Circles",
+   "Area decomposition",
+   "Triangles"
+  ],
+  "difficulty": 5,
+  "rationale": "A meaningful insight or a moderately demanding combination of familiar ideas.",
+  "source": {
+   "competition": "Bangladesh Mathematical Olympiad",
+   "year": 2014,
+   "division": "Dhaka Regional",
+   "paper": null,
+   "round": null,
+   "question_number": "6"
+  },
+  "note": "BdMO 2014 Dhaka regional, problem 6. The posted radii 18 (on BC), 6 (on AC) and 9 (on AB) are impossible: they force CA = 0 (shown in the solution; the intended answer was presumably r = 6). The radii were changed to 66, 55, 60, which give a genuine acute triangle with sides in the ratio 13:9:11 and inradius 40 (checked with coordinates, including that each diameter lies within its side)."
+ },
+ {
+  "topic_id": "1782692",
+  "part": 1,
+  "question": "A sequence satisfies $a_1=2015$ and\n\\[\n\\dfrac{a_1+a_2+\\cdots+a_n}{a_n}=n^2\\quad\\text{for every } n>1 .\n\\]\nFind $a_{2014}$.",
+  "solution": "Let $S_n=a_1+\\cdots+a_n$, so $S_n=n^2a_n$ for $n\\ge2$; this also holds for $n=1$. Then for $n\\ge2$\n\\[\na_n=S_n-S_{n-1}=n^2a_n-(n-1)^2a_{n-1}\\ \\Longrightarrow\\ (n^2-1)a_n=(n-1)^2a_{n-1}\\ \\Longrightarrow\\ a_n=\\dfrac{n-1}{n+1}\\,a_{n-1}.\n\\]\nMultiplying these relations for $n=2,\\dots,N$ telescopes:\n\\[\na_N=a_1\\cdot\\dfrac{1}{3}\\cdot\\dfrac{2}{4}\\cdot\\dfrac{3}{5}\\cdots\\dfrac{N-1}{N+1}=a_1\\cdot\\dfrac{1\\cdot2}{N(N+1)}=\\dfrac{2a_1}{N(N+1)}.\n\\]\nHence $a_{2014}=\\dfrac{2\\cdot2015}{2014\\cdot2015}=\\boxed{\\dfrac{1}{1007}}$.",
+  "tags": [
+   "Recurrence relations",
+   "Sequences and series",
+   "Telescoping sums"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "Bangladesh Mathematical Olympiad",
+   "year": 2014,
+   "division": "Dhaka Regional",
+   "paper": null,
+   "round": null,
+   "question_number": "5"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1782691",
+  "part": 1,
+  "question": "Positive integers $a,b,c,d,e,f$ satisfy $a+b=c+d=e+f=101$, and positive integers $m,n$ satisfy $\\dfrac{ace}{bdf}=\\dfrac {m}{n}$. Prove that $m+n>100$.",
+  "solution": "From $\\dfrac{ace}{bdf}=\\dfrac {m}{n}$ we get $n\\cdot ace=m\\cdot bdf$. Work modulo the prime $101$. Since $b=101-a$, $d=101-c$, $f=101-e$,\n\\[\nbdf\\equiv(-a)(-c)(-e)=-ace\\pmod{101}.\n\\]\nSo $n\\cdot ace\\equiv-m\\cdot ace$, i.e.\n\\[\nace\\,(m+n)\\equiv0\\pmod{101}.\n\\]\nEach of $a,c,e$ lies between $1$ and $100$, so none is divisible by the prime $101$, and neither is their product. Hence $101\\mid m+n$, and as $m+n>0$, $m+n\\ge101>100$. $\\blacksquare$\n\n(The fraction $\\dfrac {m}{n}$ need not be in lowest terms for this argument.)",
+  "tags": [
+   "Remainders and congruences",
+   "Prime numbers",
+   "Divisibility"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1782537",
+  "part": 1,
+  "question": "The side lengths of a right triangle are positive integers, and one of its legs has length $11$. Find the perimeter of the triangle.",
+  "solution": "Let the other leg be $b$ and the hypotenuse $c$. Then $c^2-b^2=11^2=121$, so\n\\[\n(c-b)(c+b)=121 .\n\\]\nHere $0<c-b<c+b$, and since $121=11^2$ with $11$ prime, the only factorisation with the smaller factor first is $1\\cdot121$. Thus $c-b=1$, $c+b=121$, giving $c=61$, $b=60$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(7cm);\ndefaultpen(fontsize(10pt));\npair C=(0,0),B=(60,0),A=(0,11);\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw((0,2)--(2,2)--(2,0));\nlabel(\"$A$\",A,N);label(\"$B$\",B,E);label(\"$C$\",C,SW);\nlabel(\"$11$\",(A+C)/2,W);label(\"$60$\",(B+C)/2,S);label(\"$61$\",(A+B)/2,NE);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nThe triangle is $11,60,61$ and its perimeter is $11+60+61=\\boxed{132}$.",
+  "tags": [
+   "Right triangles",
+   "Pythagorean theorem",
+   "Pythagorean triples",
+   "Difference of squares",
+   "Diophantine equations"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1782307",
+  "part": 1,
+  "question": "The function $f$ takes positive integers to positive integers, is strictly increasing (if $a>b$ then $f(a)>f(b)$), and satisfies $f(f(x))=x^2+2$ for every positive integer $x$. Find $f(6)$.",
+  "solution": "Let $f(1)=k$. Then $f(k)=f(f(1))=3$.\n\\begin{itemize}\n\\item $k=1$ is impossible: then $f(1)=1$ and $f(f(1))=1\\ne3$.\n\\item $k\\ge3$ is impossible: a strictly increasing function on the positive integers satisfies $f(m)>f(1)$ for $m>1$, so $f(k)>f(1)=k\\ge3$, contradicting $f(k)=3$.\n\\end{itemize}\nHence $f(1)=2$, and then\n\\[\nf(2)=f(f(1))=1^2+2=3,\\quad f(3)=f(f(2))=2^2+2=6,\\quad f(6)=f(f(3))=3^2+2=11 .\n\\]\nSo $f(6)=\\boxed{11}$.",
+  "tags": [
+   "Functional equations",
+   "Functions",
+   "Logical deduction"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "Bangladesh Mathematical Olympiad",
+   "year": 2014,
+   "division": "Dhaka Regional",
+   "paper": null,
+   "round": null,
+   "question_number": "2"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1781234",
+  "part": 1,
+  "question": "Two water tanks are being filled. Each one starts with $100$ litres of water. The first tank fills at the rate of $15$ litres per minute and the second at the rate of $20$ litres per minute. After how many minutes will the first tank contain $\\dfrac{7}{8}$ as much water as the second tank?\n\n(a) $5$ minutes \\quad (b) $6$ minutes \\quad (c) $7$ minutes \\quad (d) $8$ minutes",
+  "solution": "After $t$ minutes the tanks contain $100+15t$ and $100+20t$ litres. We need\n\\[\n100+15t=\\dfrac{7}{8}(100+20t)\\ \\Longrightarrow\\ 800+120t=700+140t\\ \\Longrightarrow\\ 20t=100\\ \\Longrightarrow\\ t=5 .\n\\]\nCheck: after $5$ minutes the tanks hold $175$ and $200$ litres, and $\\dfrac{175}{200}=\\dfrac{7}{8}$. The answer is \\textbf{(a)} $\\boxed{5\\text{ minutes}}$.\n\n(As posted, with $\\dfrac{7}{3}$ instead of $\\dfrac{7}{8}$, the equation $300+45t=700+140t$ gives $t=-\\dfrac{80}{19}<0$: the first tank always holds less water than the second, so it can never hold $\\dfrac{7}{3}$ times as much.)",
+  "tags": [
+   "Rates",
+   "Linear equations",
+   "Fractions"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The posted ratio 7/3 is impossible (the first tank always holds less than the second); with 7/8 the answer is choice (a), 5 minutes, so 7/3 is taken as a typo for 7/8. The record uses 7/8 and explains the change."
+ },
+ {
+  "topic_id": "1568275",
+  "part": 1,
+  "question": "Three workers have to do a certain job. The first worker can finish the job alone in $8$ hours, and each of the other two can finish it alone in $4$ hours. How long will it take the three workers to finish the job working together?",
+  "solution": "In one hour the workers do $\\dfrac{1}{8}$, $\\dfrac{1}{4}$ and $\\dfrac{1}{4}$ of the job, together\n\\[\n\\dfrac{1}{8}+\\dfrac{1}{4}+\\dfrac{1}{4}=\\dfrac{5}{8}\n\\]\nof the job. So the whole job takes $1\\div\\dfrac{5}{8}=\\dfrac{8}{5}$ hours, that is $\\boxed{\\dfrac{8}{5}\\text{ hours}=1\\text{ hour }36\\text{ minutes}}$.",
+  "tags": [
+   "Work and rates",
+   "Fractions"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1782298",
+  "part": 1,
+  "question": "How many times does the digit $8$ appear in the product $999999999\\times123456789$?",
+  "solution": "Since $999999999=10^9-1$,\n\\[\n999999999\\times123456789=123456789\\cdot10^9-123456789=123456788\\,876543211 .\n\\]\n(Subtracting $123456789$ from $123456789000000000$: the last nine digits become $10^9-123456789=876543211$ and the first nine digits decrease by $1$, from $123456789$ to $123456788$.) The digits are $1,2,3,4,5,6,7,8,8,8,7,6,5,4,3,2,1,1$, so the digit $8$ appears $\\boxed{3}$ times.",
+  "tags": [
+   "Place value",
+   "Whole-number operations",
+   "Digits and bases"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": "Bangladesh Mathematical Olympiad",
+   "year": 2014,
+   "division": "Dhaka Regional",
+   "paper": null,
+   "round": null,
+   "question_number": "1"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1781571",
+  "part": 1,
+  "question": "\\begin{enumerate}\n\\item[(a)] How many distinct $7$-digit numbers can be made by rearranging the digits of $2335142$?\n\\item[(b)] How many distinct $5$-digit numbers can be made using five of these seven digits (each digit used at most as often as it occurs in $2335142$)?\n\\end{enumerate}",
+  "solution": "The digits are $1,2,2,3,3,4,5$: the digits $2$ and $3$ occur twice and $1,4,5$ once. There is no $0$, so every arrangement is a genuine number.\n\n(a) The number of arrangements of a multiset is $\\dfrac{7!}{2!\\,2!}=\\dfrac{5040}{4}=\\boxed{1260}$.\n\n(b) Classify the five chosen digits by how many repeated pairs they contain.\n\\begin{itemize}\n\\item Five different digits: they must be $1,2,3,4,5$, giving $5!=120$ numbers.\n\\item Exactly one pair ($22$ or $33$) and three other different digits chosen from the remaining four values: $2\\cdot\\dbinom43=8$ choices of digits, each with $\\dfrac{5!}{2!}=60$ arrangements, giving $480$.\n\\item Both pairs $22$, $33$ and one of $1,4,5$: $3$ choices, each with $\\dfrac{5!}{2!\\,2!}=30$ arrangements, giving $90$.\n\\end{itemize}\nThe total is $120+480+90=\\boxed{690}$.",
+  "tags": [
+   "Multiset permutations",
+   "Casework",
+   "Digit problems"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Part (b) is the post's \"challenge\" (5-digit numbers from the same 7 digits). Both counts were checked by brute force."
+ },
+ {
+  "topic_id": "1782185",
+  "part": 1,
+  "question": "Find the sum of the $y$-coordinates of all integer solutions $(x,y)$ of\n\\[\n\\dfrac{1}{x}+\\dfrac{1}{y}=\\dfrac{1}{7} .\n\\]",
+  "solution": "Multiplying by $7xy$ (with $x,y\\ne0$) gives $7y+7x=xy$, i.e.\\ $xy-7x-7y=0$, and adding $49$:\n\\[\n(x-7)(y-7)=49 .\n\\]\n(Note the sign: the constant on the right is $+49$, not $-49$.) The integer factorisations of $49$ are $1\\cdot49$, $7\\cdot7$, $49\\cdot1$, $(-1)(-49)$, $(-7)(-7)$, $(-49)(-1)$, giving\n\\[\n(x,y)=(8,56),\\ (14,14),\\ (56,8),\\ (6,-42),\\ (0,0),\\ (-42,6).\n\\]\nThe pair $(0,0)$ must be discarded, since $\\dfrac{1}{0}$ is undefined. The remaining $y$-values are $56,14,8,-42,6$, with sum $\\boxed{42}$.",
+  "tags": [
+   "Diophantine equations",
+   "Factoring",
+   "Rational equations"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The poster obtains 42 but writes (x-7)(y-7) = -49 and includes y = 0; the solution corrects the sign and excludes (0,0) (which contributes 0, so the sum is unchanged)."
+ },
+ {
+  "topic_id": "1782185",
+  "part": 2,
+  "question": "Positive integers $m$ and $n$ satisfy $m>n$, $m$ is not a multiple of $n$, and\n\\[\n\\dfrac{1}{m}+\\dfrac{1}{n}=\\dfrac{2}{15}.\n\\]\nFind $m+n$.",
+  "solution": "Clearing denominators, $15n+15m=2mn$. Multiply by $2$ and add $225$ to factor:\n\\[\n4mn-30m-30n+225=225\\ \\Longrightarrow\\ (2m-15)(2n-15)=225 .\n\\]\n(Working with $7.5$ as in $(m-7.5)(n-7.5)=56.25$ is the same equation divided by $4$; doubling avoids fractions.) Both factors are odd. They cannot both be negative: then $|2n-15|\\le13$ and $|2m-15|\\le13$, and the product would be at most $169<225$. So both are positive, with $2n-15<2m-15$:\n\\[\n2n-15\\in\\{1,3,5,9\\},\\qquad (n,m)=(8,120),\\ (9,45),\\ (10,30),\\ (12,20).\n\\]\nIn the first three pairs $m$ is a multiple of $n$ ($120=15\\cdot8$, $45=5\\cdot9$, $30=3\\cdot10$); only $(m,n)=(20,12)$ remains. So $m+n=\\boxed{32}$.",
+  "tags": [
+   "Diophantine equations",
+   "Factoring",
+   "Factors and multiples"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post stops at (m-7.5)(n-7.5) = 56.25; the solution doubles to integer factors."
+ },
+ {
+  "topic_id": "1746417",
+  "part": 1,
+  "question": "What is the radius of the largest sphere that fits inside a regular tetrahedron with edge length $1$?",
+  "solution": "The largest sphere is the inscribed sphere, tangent to all four faces; its centre $I$ is the centre of the tetrahedron. Joining $I$ to the four vertices splits the tetrahedron into four pyramids, each with a face as base and height $r$. So\n\\[\nV=\\dfrac{1}{3}\\,r\\cdot(\\text{total surface area}).\n\\]\nFor edge $1$: each face has area $\\dfrac{\\sqrt3}{4}$, so the surface area is $\\sqrt3$. The height of the tetrahedron is $DG$, where $G$ is the centroid of the base $ABC$ and $AG=\\dfrac{2}{3}\\cdot\\dfrac{\\sqrt3}{2}=\\dfrac{\\sqrt3}{3}$, so $DG=\\sqrt{1-\\dfrac{1}{3}}=\\sqrt{\\dfrac{2}{3}}=\\dfrac{\\sqrt6}{3}$. The volume is $V=\\dfrac{1}{3}\\cdot\\dfrac{\\sqrt3}{4}\\cdot\\dfrac{\\sqrt6}{3}=\\dfrac{\\sqrt2}{12}$. Hence\n\\[\nr=\\dfrac{3V}{\\sqrt3}=\\dfrac{\\sqrt2}{4\\sqrt3}=\\boxed{\\dfrac{\\sqrt6}{12}}.\n\\]\nThe figure shows the cross-section through the apex $D$, the vertex $A$ and the midpoint $M$ of $BC$; the sphere meets it in a circle tangent to $AM$ (in the base) and to $DM$ (in the face $DBC$, which is perpendicular to this plane).\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5cm);\ndefaultpen(fontsize(10pt));\nreal h=sqrt(2/3);\npair A=(0,0),M=(sqrt(3)/2,0),D=(sqrt(3)/3,h),G=(sqrt(3)/3,0);\nreal r=h/4;pair I=(sqrt(3)/3,r);\ndraw(A--M--D--cycle,linewidth(0.9));\ndraw(D--G,dashed);\ndraw(circle(I,r),blue);\npair T=M+dot(I-M,unit(D-M))*unit(D-M);\ndraw(I--T,blue+dashed);dot(I);dot(G);dot(T);\ndraw((G+(0.03,0))--(G+(0.03,0.03))--(G+(0,0.03)));\nlabel(\"$A$\",A,SW);label(\"$M$\",M,SE);label(\"$D$\",D,N);label(\"$G$\",G,S);label(\"$I$\",I,W);label(\"$r$\",(I+T)/2,NE);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nEquivalently, $r=\\dfrac{1}{4}DG$: the centre divides each height in the ratio $3:1$.",
+  "tags": [
+   "Pyramids",
+   "Spheres",
+   "Volume",
+   "Surface area",
+   "Solid geometry"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"Regular triangular pyramid with base length 1\" does not fix the height; it is read as a regular tetrahedron with edge 1 (the usual intended meaning). The radius was checked with coordinates (distance from the centroid to each face)."
+ },
+ {
+  "topic_id": "1782144",
+  "part": 1,
+  "question": "Gina lays square tiles on a floor. She begins with $1$ tile in a corner of the room. She adds $3$ tiles to form a $2\\times2$ square of tiles, then $5$ tiles to form a $3\\times3$ square, and so on, until the whole floor is covered. The last time, she adds $25$ tiles. What is the size of the floor, in tiles?",
+  "solution": "Going from an $(n-1)\\times(n-1)$ square to an $n\\times n$ square adds $n^2-(n-1)^2=2n-1$ tiles. The last step adds $25=2n-1$ tiles, so $n=13$. The floor is a $\\boxed{13\\times13}$ square of tiles, using $169$ tiles in all. (Check: $1+3+5+\\cdots+25=13^2=169$.)",
+  "tags": [
+   "Perfect squares",
+   "Pattern recognition",
+   "Sequences and series"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1782143",
+  "part": 1,
+  "question": "Flagpole $A$ is $6\\dfrac{3}{5}$ metres high. Flagpole $C$ is $\\dfrac{1}{4}$ higher than flagpole $A$ (that is, its height exceeds the height of $A$ by a quarter of the height of $A$), and flagpole $B$ is $\\dfrac{3}{4}$ the height of flagpole $C$. What is the height of flagpole $B$?",
+  "solution": "Flagpole $A$ is $6\\dfrac{3}{5}=\\dfrac{33}{5}$ m high. Flagpole $C$ is $1+\\dfrac{1}{4}=\\dfrac{5}{4}$ times as high:\n\\[\nC=\\dfrac{5}{4}\\cdot\\dfrac{33}{5}=\\dfrac{33}{4}\\text{ m}.\n\\]\nThen $B=\\dfrac{3}{4}\\cdot\\dfrac{33}{4}=\\dfrac{99}{16}$ m, i.e.\\ $\\boxed{6\\dfrac{3}{16}\\text{ metres}}$.",
+  "tags": [
+   "Fractions",
+   "Ratios, proportions, and variation"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"1/4 higher than flagpole A\" is read as a quarter of A's height higher (the reading is stated in the question); the alternative \"1/4 metre higher\" would give B = 5.1375 m."
+ },
+ {
+  "topic_id": "1781693",
+  "part": 1,
+  "question": "What is the smaller angle between the hour hand and the minute hand of an analogue clock at $5{:}00$? Give a method that works for any time $h{:}m$.",
+  "solution": "The $12$ hour marks are $\\dfrac{360^\\circ}{12}=30^\\circ$ apart. At $5{:}00$ the minute hand points at $12$ and the hour hand at $5$, five marks away, so the angle is $5\\cdot30^\\circ=\\boxed{150^\\circ}$ (the other angle is $210^\\circ$, which is larger).\n\nIn general, at $h{:}m$ the minute hand is $6m$ degrees past $12$ (it moves $360^\\circ$ in $60$ minutes) and the hour hand is $30h+\\dfrac {m}{2}$ degrees past $12$ (it moves $30^\\circ$ per hour, i.e.\\ $\\dfrac{1}{2}^\\circ$ per minute). The angle between them is $\\left|30h-\\dfrac{11m}{2}\\right|$, replaced by $360^\\circ$ minus this value if it exceeds $180^\\circ$. For $5{:}00$: $|150-0|=150^\\circ$.",
+  "tags": [
+   "Clock problems",
+   "Rates"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1782031",
+  "part": 1,
+  "question": "Two ribbons, of widths $4$ mm and $12$ mm, are laid on top of each other, crossing to form a parallelogram (their overlap). What is the perimeter of the parallelogram, in millimetres, if its area is $60\\text{ mm}^2$?",
+  "solution": "Each pair of opposite sides of the parallelogram lies along the two edges of one ribbon, so the distance between those sides is that ribbon's width.\n\nTake as base a side lying along an edge of the $4$ mm ribbon; the corresponding height is $4$, so this side has length $\\dfrac{60}{4}=15$. Take as base a side along an edge of the $12$ mm ribbon; the height is $12$, so this side has length $\\dfrac{60}{12}=5$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(7cm);\ndefaultpen(fontsize(10pt));\npair u=(3/5,4/5);\nfill((-6,0)--(26,0)--(26,4)--(-6,4)--cycle,paleyellow);\nfill((-2.25,-3)--(12.75,-3)--(12.75,-3)+10.5/0.8*u--(-2.25,-3)+10.5/0.8*u--cycle,palecyan);\nfill((0,0)--(15,0)--(18,4)--(3,4)--cycle,mediumgray);\ndraw((-6,0)--(26,0));draw((-6,4)--(26,4));\ndraw((-2.25,-3)--(-2.25,-3)+10.5/0.8*u);draw((12.75,-3)--(12.75,-3)+10.5/0.8*u);\ndraw((0,0)--(15,0)--(18,4)--(3,4)--cycle,linewidth(1));\nlabel(\"$15$\",(7.5,0),S);label(\"$5$\",(16.5,2),E);\nlabel(\"width $4$\",(-3,2));label(\"width $12$\",(-2.25,-3)+10.5/0.8*u+(6,0.6),N);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nThe perimeter is $2(15+5)=\\boxed{40}$ mm. (The ribbons cross at an angle $\\theta$ with $\\sin\\theta=\\dfrac{60}{15\\cdot5}=\\dfrac{4}{5}$, which is possible; the figure is drawn with this angle.)",
+  "tags": [
+   "Parallelograms",
+   "Lengths, perimeter, and area"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2015,
+   "division": "National",
+   "paper": null,
+   "round": "Countdown",
+   "question_number": null
+  },
+  "note": "The figure is in a missing attachment, but the text determines the configuration (the overlap of two straight ribbons)."
+ },
+ {
+  "topic_id": "1781575",
+  "part": 1,
+  "question": "There are $140$ houses in Protik's village, numbered $1,2,3,\\dots,140$. On the first day Protik took chocolates at the houses whose numbers are divisible by $4$. The next day he ate noodles at the houses whose numbers are divisible by $10$. Then he went to all the houses he had not yet visited and had ice cream. At how many houses did he have ice cream?",
+  "solution": "Count the houses he visited on the first two days, by inclusion-exclusion. Multiples of $4$: $\\left\\lfloor\\dfrac{140}{4}\\right\\rfloor=35$. Multiples of $10$: $14$. Multiples of both, i.e.\\ of $\\operatorname{lcm}(4,10)=20$: $7$. So he visited $35+14-7=42$ houses on the first two days, and he had ice cream at\n\\[\n140-42=\\boxed{98}\n\\]\nhouses. ($42$ is the number of houses he had \\emph{already} visited.)",
+  "tags": [
+   "Sets and inclusion–exclusion",
+   "Complementary counting",
+   "HCF and LCM",
+   "Factors and multiples"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks \"isn't the answer 42?\"; 42 houses were visited on the first two days, and the answer is 140 - 42 = 98."
+ },
+ {
+  "topic_id": "1781696",
+  "part": 1,
+  "question": "In Noakhali, every person has at least $1$ and at most $2018$ hairs. What is the minimum number of people that must live there so that we can be certain that at least two of them have the same number of hairs?",
+  "solution": "There are $2018$ possible numbers of hairs ($1,2,\\dots,2018$). With $2018$ people it is possible that all the numbers are different (one person with each number), so $2018$ people are not enough. With $2019$ people, by the pigeonhole principle two of them must have the same number of hairs. The minimum is $\\boxed{2019}$.",
+  "tags": [
+   "Pigeonhole principle"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The poster's answer 2019 is correct."
+ },
+ {
+  "topic_id": "1445715",
+  "part": 1,
+  "question": "If $a\\#b=a^2(7-b)$, what is the value of $(2\\#5)\\#3$?",
+  "solution": "The symbol $\\#$ is an operation defined by the formula. First $2\\#5=2^2(7-5)=4\\cdot2=8$. Then\n\\[\n(2\\#5)\\#3=8\\#3=8^2(7-3)=64\\cdot4=\\boxed{256}.\n\\]",
+  "tags": [
+   "Custom operations",
+   "Order of operations"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2017,
+   "division": "School",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": "23"
+  },
+  "note": "The post writes \"a (squared)(7-b)\"; read as a^2(7-b)."
+ },
+ {
+  "topic_id": "1781238",
+  "part": 1,
+  "question": "Elmer and Elvin are emptying a full $800$-gallon tank while they fill an empty $1000$-gallon tank. They empty the first tank at the rate of $15$ gallons per minute and fill the second at the rate of $25$ gallons per minute. After how many minutes will both tanks contain the same number of gallons?",
+  "solution": "After $t$ minutes the first tank holds $800-15t$ gallons and the second $25t$ gallons. Setting them equal,\n\\[\n800-15t=25t\\ \\Longrightarrow\\ 40t=800\\ \\Longrightarrow\\ t=20 .\n\\]\nAfter $\\boxed{20}$ minutes both tanks hold $500$ gallons. (The difference $800$ shrinks by $15+25=40$ gallons every minute, so it vanishes after $\\dfrac{800}{40}=20$ minutes.)",
+  "tags": [
+   "Rates",
+   "Linear equations"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The starting states (first tank full, second empty) are stated explicitly."
+ }
+]

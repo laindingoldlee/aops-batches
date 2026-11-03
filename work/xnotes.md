@@ -1,0 +1,4 @@
+- b227 1755042-q118 (Alvin mini-golf) repeats b229 draft 1745621-q01: b229 should alias to b227
+- b227 1755042-q119 (Cayley die -2,-1,0,0,1,2) repeats b229 draft 1745621-q02: b229 should alias to b227
+- b229 1743778-q01 (2015 MATHCOUNTS Chapter Sprint #24, triangle reflected in y-axis, 1.5) repeats b230 draft 1736178-q01: b230 should alias to b229
+- b227 1757367-q01 (two right triangles, areas 3(a+b) and 2(c+d), answer 50) repeats b230 draft 1735148-q01: b230 should alias to b227

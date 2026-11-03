@@ -1,0 +1,664 @@
+[
+ {
+  "topic_id": "1779396",
+  "part": 1,
+  "question": "Evaluate $(\\log_2 9)(\\log_3 7)(\\log_7 8)$.",
+  "solution": "Write every logarithm in terms of natural logarithms (change of base):\n\\[\n(\\log_2 9)(\\log_3 7)(\\log_7 8)=\\dfrac{\\ln 9}{\\ln 2}\\cdot\\dfrac{\\ln 7}{\\ln 3}\\cdot\\dfrac{\\ln 8}{\\ln 7}\n=\\dfrac{2\\ln 3}{\\ln 2}\\cdot\\dfrac{\\ln 7}{\\ln 3}\\cdot\\dfrac{3\\ln 2}{\\ln 7}=2\\cdot3=\\boxed{6}.\n\\]",
+  "tags": [
+   "Logarithms"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "KPMT problem; the post writes Log_2 9 etc. without LaTeX."
+ },
+ {
+  "topic_id": "1780033",
+  "part": 1,
+  "question": "The length of the diagonal of rectangle $ABCD$ equals half the rectangle's perimeter less four-fifths of the length of the shorter side. What is the ratio of the length of the shorter side of the rectangle to the length of its longer side? Express your answer as a common fraction.",
+  "solution": "Let the longer side be $l$ and the shorter side $w$. Half the perimeter is $l+w$, and ``less four-fifths of the shorter side'' means subtract $\\dfrac{4}{5}w$. So the diagonal is $l+w-\\dfrac{4}{5}w=l+\\dfrac {w}{5}$, and by the Pythagorean theorem\n\\[\nl^2+w^2=\\left(l+\\dfrac {w}{5}\\right)^2=l^2+\\dfrac{2lw}{5}+\\dfrac{w^2}{25}.\n\\]\nHence $\\dfrac{24}{25}w^2=\\dfrac{2}{5}lw$, so $\\dfrac {w}{l}=\\dfrac{2}{5}\\cdot\\dfrac{25}{24}=\\boxed{\\dfrac{5}{12}}$. (Check: a $5$ by $12$ rectangle has diagonal $13=12+1$.)",
+  "tags": [
+   "Rectangles",
+   "Pythagorean theorem",
+   "Ratios, proportions, and variation"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2014,
+   "division": "Chapter",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": "22"
+  },
+  "note": "2014 MATHCOUNTS Chapter Sprint #22; the same problem is posted in topic 1777483 of this batch (aliased to it)."
+ },
+ {
+  "topic_id": "1780033",
+  "part": 2,
+  "question": "How many different combinations of three numbers can be selected from the set $\\{1,2,3,4,5,6,7,8\\}$ so that the three numbers could be the side lengths of a triangle?",
+  "solution": "Choose three different numbers $a<b<c$. They are the sides of a (non-degenerate) triangle exactly when $a+b>c$; the other two triangle inequalities hold automatically. Count by the largest number $c$, listing pairs $a<b<c$ with $a+b>c$:\n\\begin{itemize}\n\\item $c=4$: $(2,3)$; $1$ set.\n\\item $c=5$: $(2,4),(3,4)$; $2$ sets.\n\\item $c=6$: $(2,5),(3,4),(3,5),(4,5)$; $4$ sets.\n\\item $c=7$: $(2,6),(3,5),(3,6),(4,5),(4,6),(5,6)$; $6$ sets.\n\\item $c=8$: $(2,7),(3,6),(3,7),(4,5),(4,6),(4,7),(5,6),(5,7),(6,7)$; $9$ sets.\n\\end{itemize}\n($c\\le3$ gives nothing, since $1+2=3$.) The total is $1+2+4+6+9=\\boxed{22}$.",
+  "tags": [
+   "Triangle inequality",
+   "Systematic counting",
+   "Casework"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2014,
+   "division": "Chapter",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": "26"
+  },
+  "note": "Second problem of the post (2014 Chapter Sprint #26, as identified in the earlier record); repeat of an earlier record (aliased). \"Combinations of three numbers\" read as three different numbers from the set; degenerate triangles are excluded. Count checked by computer."
+ },
+ {
+  "topic_id": "1779918",
+  "part": 1,
+  "question": "Find the number of five-letter words that use letters from the set $\\{A,B,C\\}$ and contain at least one $A$ and at least one $B$.",
+  "solution": "There are $3^5=243$ words in all. By inclusion--exclusion, remove the $2^5=32$ words with no $A$ and the $2^5=32$ words with no $B$, and add back the $1$ word ($CCCCC$) with neither:\n\\[\n243-32-32+1=\\boxed{180}.\n\\]",
+  "tags": [
+   "Sets and inclusion–exclusion",
+   "Complementary counting",
+   "Multiplication principle"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1779794",
+  "part": 1,
+  "question": "The numbers $a$ and $b$ are rational, and one of the roots of $9x^2+ax-b=0$ is $\\dfrac{-2-\\sqrt6}{3}$. Solve the equation $bx^2-ax+16=0$.",
+  "solution": "Since the coefficients are rational and $\\dfrac{-2-\\sqrt6}{3}$ is irrational, the other root is its conjugate $\\dfrac{-2+\\sqrt6}{3}$. (Indeed, if $r=\\dfrac{-2-\\sqrt6}{3}$, then $(3r+2)^2=6$, i.e.\\ $9r^2+12r-2=0$; subtracting $9r^2+ar-b=0$ gives $(12-a)r=2-b$, and since $r$ is irrational, $a=12$ and $b=2$.) By Vieta's formulas the sum of the roots is $-\\dfrac{4}{3}=-\\dfrac {a}{9}$ and the product is $\\dfrac{4-6}{9}=-\\dfrac{2}{9}=-\\dfrac {b}{9}$, so $a=12$ and $b=2$.\n\nThe second equation is $2x^2-12x+16=0$, i.e.\\ $x^2-6x+8=(x-2)(x-4)=0$. So $x=\\boxed{2\\text{ or }4}$.",
+  "tags": [
+   "Quadratic equations",
+   "Vieta's formulas",
+   "Radicals"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post does not say that a and b are rational (needed for the conjugate root); this is added. \"Find x\" read as solving the second equation (both roots given)."
+ },
+ {
+  "topic_id": "1779794",
+  "part": 2,
+  "question": "For a positive integer $x$, let $\\langle x\\rangle$ denote the number of primes less than or equal to $x$. Find the sum of all positive integers $x$ such that\n\\[\n\\left(\\langle x\\rangle+1\\right)^2-2\\left(\\langle x\\rangle+4\\right)-9=0 .\n\\]",
+  "solution": "Let $p=\\langle x\\rangle$. The equation is $p^2+2p+1-2p-8-9=0$, i.e.\\ $p^2=16$, so $p=4$ (a count is nonnegative). The primes up to $x$ are $2,3,5,7$ exactly when $7\\le x<11$, i.e.\\ $x\\in\\{7,8,9,10\\}$. The sum is $7+8+9+10=\\boxed{34}$.",
+  "tags": [
+   "Prime numbers",
+   "Quadratic equations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post says <x> \"represents the prime numbers less than or equal to x\"; read as the number of such primes."
+ },
+ {
+  "topic_id": "1779794",
+  "part": 3,
+  "question": "A bowl contains $100$ g of salt water with a salt concentration of $20\\%$. We take out $x$ g of the mixture and then add $x$ g of water. Then we again take out $x$ g of the (well-mixed) salt water and add $x$ g of water. Now the concentration is $5\\%$. Find $x$.",
+  "solution": "Each step keeps the total mass $100$ g and removes the fraction $\\dfrac{x}{100}$ of the salt present, so it multiplies the concentration by $1-\\dfrac{x}{100}$. After two steps\n\\[\n20\\left(1-\\dfrac{x}{100}\\right)^2=5\\ \\Longrightarrow\\ \\left(1-\\dfrac{x}{100}\\right)^2=\\dfrac{1}{4}\\ \\Longrightarrow\\ 1-\\dfrac{x}{100}=\\dfrac{1}{2}\n\\]\n(the value must lie between $0$ and $1$). Hence $x=\\boxed{50}$. Check: $20$ g of salt becomes $10$ g, then $5$ g, in $100$ g of water: $5\\%$.",
+  "tags": [
+   "Mixture problems",
+   "Percentages",
+   "Quadratic equations"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1779655",
+  "part": 1,
+  "question": "Convert $213_6$ (the number written $213$ in base $6$) to base $4$.",
+  "solution": "First convert to base $10$: $213_6=2\\cdot6^2+1\\cdot6+3=72+6+3=81$. Then write $81$ in base $4$ using the powers $1,4,16,64$: $81=1\\cdot64+17=1\\cdot64+1\\cdot16+1=1\\cdot64+1\\cdot16+0\\cdot4+1$. So $213_6=\\boxed{1101_4}$.\n\n(Repeated division gives the same digits: $81=4\\cdot20+1$, $20=4\\cdot5+0$, $5=4\\cdot1+1$, $1=4\\cdot0+1$; reading the remainders upwards gives $1101$.)",
+  "tags": [
+   "Digits and bases"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks how to convert between bases, with the example 213 in base 6 to base 4; that example is the question."
+ },
+ {
+  "topic_id": "1779563",
+  "part": 1,
+  "question": "A regular $2019$-gon has perimeter $2\\pi$. Find its area, rounded to the nearest integer.",
+  "solution": "Let $n=2019$, let $R$ be the circumradius and $r$ the inradius (apothem) of the polygon. The figure shows a regular $12$-gon with the same notation; $O$ is the centre and the dashed circle is the incircle.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5cm);\ndefaultpen(fontsize(10pt));\nint n=12; real R=1; real r=R*cos(pi/n);\npair O=(0,0);\npair[] P; for(int k=0;k<n;++k) P.push(R*dir(90+360*k/n));\npath g=P[0]; for(int k=1;k<n;++k) g=g--P[k]; g=g--cycle;\ndraw(g,linewidth(0.9));\ndraw(circle(O,r),dashed+gray);\npair Mid=(P[6]+P[7])/2;\ndraw(O--Mid,blue+linewidth(0.7)); draw(O--P[7],dashed);\ndot(O); label(\"$O$\",O,N);\nlabel(\"$r$\",(O+Mid)/2,dir(degrees(Mid-O)-90),blue);\nlabel(\"$R$\",(O+P[7])/2,dir(degrees(P[7]-O)+90));\npair u=unit(P[7]-P[6]); pair v=(-u.y,u.x);\ndraw(Mid+0.05*u--Mid+0.05*u+0.05*v--Mid+0.05*v);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nCutting the polygon into $n$ triangles with apex $O$, each with base a side and height $r$, gives\n\\[\n\\text{Area}=\\dfrac{1}{2}\\cdot(\\text{perimeter})\\cdot r=\\dfrac{1}{2}\\cdot2\\pi\\cdot r=\\pi r .\n\\]\n\\textbf{Upper bound.} The polygon contains its incircle, and its perimeter is longer than the circumference of that circle, so $2\\pi>2\\pi r$, i.e.\\ $r<1$.\n\n\\textbf{Lower bound.} The polygon is inscribed in its circumcircle, so its perimeter is shorter than that circumference: $2\\pi<2\\pi R$, i.e.\\ $R>1$. Also $r=R\\cos\\dfrac{\\pi}{n}$ and $\\dfrac{\\pi} {n}<0.01$, so $r>\\cos0.01>1-\\dfrac{0.01^2}{2}>0.99$.\n\nHence $3.11<0.99\\pi<\\text{Area}<\\pi<3.15$, and the area to the nearest integer is $\\boxed{3}$. (Exactly, the area is $\\dfrac{\\pi^2}{n}\\cot\\dfrac{\\pi}{n}\\approx3.14159$, extremely close to the area $\\pi$ of a circle of perimeter $2\\pi$.)",
+  "tags": [
+   "Regular polygons",
+   "Lengths, perimeter, and area",
+   "Circles",
+   "Estimation"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post does not say \"regular\"; a 2019-gon of perimeter 2pi can have any area in (0, pi), so the polygon is taken to be regular. The figure illustrates the notation with a 12-gon."
+ },
+ {
+  "topic_id": "1779468",
+  "part": 1,
+  "question": "The sequence $1,\\ 1\\dfrac{1}{2},\\ 1\\dfrac{5}{6},\\ 2\\dfrac{1}{12},\\ \\dots$ is formed by adding $\\dfrac{1}{2}$, then $\\dfrac{1}{3}$, then $\\dfrac{1}{4}$, and so on. Find the next two terms.",
+  "solution": "The terms are the partial sums $1$, $1+\\dfrac{1}{2}$, $1+\\dfrac{1}{2}+\\dfrac{1}{3}$, $1+\\dfrac{1}{2}+\\dfrac{1}{3}+\\dfrac{1}{4}$: indeed $1+\\dfrac{1}{2}=1\\dfrac{1}{2}$, $1\\dfrac{1}{2}+\\dfrac{1}{3}=1\\dfrac{5}{6}$ and $1\\dfrac{5}{6}+\\dfrac{1}{4}=\\dfrac{25}{12}=2\\dfrac{1}{12}$. The next two terms are\n\\[\n2\\dfrac{1}{12}+\\dfrac{1}{5}=\\dfrac{125+12}{60}=\\dfrac{137}{60}=2\\dfrac{17}{60}\\qquad\\text{and}\\qquad\\dfrac{137}{60}+\\dfrac{1}{6}=\\dfrac{147}{60}=\\dfrac{49}{20}=2\\dfrac{9}{20}.\n\\]\nSo the next two terms are $\\boxed{2\\dfrac{17}{60}\\text{ and }2\\dfrac{9}{20}}$.",
+  "tags": [
+   "Sequences and series",
+   "Fractions",
+   "Pattern recognition"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post only asks for the next two numbers of 1, 1 1/2, 1 5/6, 2 1/12; the rule (harmonic partial sums, which these four terms fit) is stated in the question so that the answer is determined."
+ },
+ {
+  "topic_id": "1779468",
+  "part": 2,
+  "question": "If $a$, $b$, $c$ and $d$ are four distinct integers between $-5.5$ and $4.5$, what is the greatest possible value of $\\dfrac {a}{b}-cd$?",
+  "solution": "The integers available are $-5,-4,\\dots,4$, and $b\\ne0$.\n\n\\textbf{Bounds.} Always $\\dfrac {a}{b}\\le|a|\\le5$, and $\\dfrac {a}{b}=5$ only for $a=-5,\\ b=-1$. Also $cd\\ge-20$, with $cd=-20$ only for $\\{c,d\\}=\\{-5,4\\}$.\n\\begin{itemize}\n\\item If $-5\\in\\{c,d\\}$, then $a\\ne-5$, so $\\dfrac {a}{b}\\le4$ (as $|a|\\le4$), and $-cd\\le20$: the value is at most $24$.\n\\item If $-5\\notin\\{c,d\\}$, then $c,d\\in\\{-4,\\dots,4\\}$ are distinct, so $cd\\ge-16$ (the most negative product is $-4\\cdot4$), and $\\dfrac {a}{b}\\le5$: the value is at most $21$.\n\\end{itemize}\nThe value $24$ is attained by $a=-4$, $b=-1$, $c=4$, $d=-5$: $\\dfrac{-4}{-1}-(4)(-5)=4+20=24$. The greatest value is $\\boxed{24}$.",
+  "tags": [
+   "Bounding and extremal cases",
+   "Casework",
+   "Fractions"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Answer confirmed by checking all choices of four distinct integers."
+ },
+ {
+  "topic_id": "1779468",
+  "part": 3,
+  "question": "On day $1$ you have $100$ dollars. On day $2$ you earn $1$ dollar, on day $3$ you lose $2$ dollars, on day $4$ you earn $2$ dollars, on day $5$ you lose $3$ dollars, on day $6$ you earn $3$ dollars, and so on (on day $2k$ you earn $k$ dollars and on day $2k+1$ you lose $k+1$ dollars). On which day do you first run out of money?",
+  "solution": "Look at the money at the end of each odd day $2k+1$ ($k\\ge1$). Days $2k$ and $2k+1$ together change the money by $k-(k+1)=-1$. So at the end of day $2k+1$ you have $100-k$ dollars, and at the end of day $2k+2$ you have $100-k+(k+1)=101$ dollars. Thus the amount is never below $100-k$ before the end of day $2k+1$, and it first reaches $0$ when $100-k=0$, i.e.\\ $k=100$, at the end of day $2\\cdot100+1=\\boxed{201}$.\n\n(Just before, at the end of day $200$, you have $101$ dollars and on day $201$ you lose $101$.)",
+  "tags": [
+   "Sequences and series",
+   "Pattern recognition",
+   "Money and currency"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The phrase \"the number of days it takes\" is read as the day on which the money first reaches 0. Checked by simulation."
+ },
+ {
+  "topic_id": "1779468",
+  "part": 4,
+  "question": "You pick a number from $1$ to $6$ and then roll two fair six-sided dice. If your number does not show on either die, you lose $1$ dollar; if it shows on exactly one die, you win $2$ dollars; if it shows on both dice, you win $5$ dollars. Find your expected winnings per game. Is the game favourable, unfavourable or fair?",
+  "solution": "For a fixed number, each die shows it with probability $\\dfrac{1}{6}$, independently. So\n\\[\nP(\\text{none})=\\dfrac{25}{36},\\qquad P(\\text{exactly one})=2\\cdot\\dfrac{1}{6}\\cdot\\dfrac{5}{6}=\\dfrac{10}{36},\\qquad P(\\text{both})=\\dfrac{1}{36}.\n\\]\nThe expected winnings are\n\\[\n\\dfrac{25}{36}(-1)+\\dfrac{10}{36}(2)+\\dfrac{1}{36}(5)=\\dfrac{-25+20+5}{36}=\\boxed{0}.\n\\]\nThe game is \\textbf{fair}: on average you neither win nor lose, so there is no advantage in playing (or in refusing).",
+  "tags": [
+   "Expected value",
+   "Dice probability",
+   "Independent events"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"Should you play the game?\" made precise as computing the expected value."
+ },
+ {
+  "topic_id": "1779434",
+  "part": 1,
+  "question": "Three standard six-sided dice are rolled. What is the probability that the three numbers showing can be arranged to form an arithmetic sequence? (For example, $(1,3,2)$ counts, since $1,2,3$ is an arithmetic sequence; a constant sequence such as $4,4,4$ also counts.)",
+  "solution": "Count ordered outcomes. Constant sequences: $6$ outcomes. Common difference $1$: the sets $\\{1,2,3\\},\\{2,3,4\\},\\{3,4,5\\},\\{4,5,6\\}$; difference $2$: $\\{1,3,5\\},\\{2,4,6\\}$. Each of these $6$ sets of three different numbers appears in $3!=6$ orders, giving $36$ outcomes. The probability is $\\dfrac{6+36}{216}=\\boxed{\\dfrac{7}{36}}$.",
+  "tags": [
+   "Probability",
+   "Arithmetic sequences",
+   "Dice probability",
+   "Systematic counting"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Repeat of an earlier record (aliased). Constant sequences counted as arithmetic."
+ },
+ {
+  "topic_id": "1779285",
+  "part": 1,
+  "question": "In the diagram, $O$ is the centre of the circle and $A$, $B$, $C$, $D$ lie on the circle. Chords $AB$ and $CD$ are parallel, $\\angle ABO=24^\\circ$, and $\\angle OBC=\\angle OCD$. Find $\\angle BOC$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\npair O=(0,0);\npair A=dir(260),B=dir(128),C=dir(52),D=dir(-24);\ndraw(unitcircle,linewidth(0.7));\ndraw(A--B--C--D,linewidth(0.9));\ndraw(B--O--C,linewidth(0.7));\ndot(O);dot(A);dot(B);dot(C);dot(D);\nlabel(\"$O$\",O,S);label(\"$A$\",A,dir(260));label(\"$B$\",B,dir(128));label(\"$C$\",C,dir(52));label(\"$D$\",D,dir(-24));\ndraw(arc(B,0.45,-76,-52),linewidth(0.6));\nlabel(\"$24^\\circ$\",B+0.74*dir(-64));\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}",
+  "solution": "Let $\\angle OBC=\\angle OCD=x$. Since $OB=OC$ (radii), triangle $OBC$ is isosceles and $\\angle OCB=\\angle OBC=x$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6.5cm);\ndefaultpen(fontsize(10pt));\npair O=(0,0);\npair A=dir(260),B=dir(128),C=dir(52),D=dir(-24);\ndraw(unitcircle,linewidth(0.7));\ndraw(A--B--C--D,linewidth(0.9));\ndraw(B--O--C,linewidth(0.7));\ndot(O);dot(A);dot(B);dot(C);dot(D);\nlabel(\"$O$\",O,S);label(\"$A$\",A,dir(260));label(\"$B$\",B,dir(128));label(\"$C$\",C,dir(52));label(\"$D$\",D,dir(-24));\ndraw(arc(B,0.45,-76,-52),linewidth(0.6));\nlabel(\"$24^\\circ$\",B+0.74*dir(-64));\ndraw(arc(B,0.3,-52,0),blue+linewidth(0.6)); label(\"$x$\",B+0.4*dir(-26),blue);\ndraw(arc(C,0.3,180,232),blue+linewidth(0.6)); label(\"$x$\",C+0.4*dir(206),blue);\ndraw(arc(C,0.22,232,284),blue+linewidth(0.6)); label(\"$x$\",C+0.32*dir(258),blue);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nAs in the figure, $O$ lies inside the angles $ABC$ and $BCD$, so\n\\[\n\\angle ABC=\\angle ABO+\\angle OBC=24^\\circ+x,\\qquad \\angle BCD=\\angle BCO+\\angle OCD=2x .\n\\]\nBecause $AB\\parallel CD$ and $A$, $D$ are on the same side of the transversal $BC$, these co-interior angles add up to $180^\\circ$:\n\\[\n24^\\circ+x+2x=180^\\circ\\ \\Longrightarrow\\ x=52^\\circ .\n\\]\nFinally, in triangle $OBC$, $\\angle BOC=180^\\circ-2x=180^\\circ-104^\\circ=\\boxed{76^\\circ}$.",
+  "tags": [
+   "Circles",
+   "Parallel lines",
+   "Isosceles triangles",
+   "Angle chasing"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "AoPS Introduction to Geometry problem 3.20; the book figure is missing from the post. It was rebuilt from the text: O inside angles ABC and BCD, A and D on the same side of BC (the only configuration consistent with the data, drawn to scale from the answer)."
+ },
+ {
+  "topic_id": "1778686",
+  "part": 1,
+  "question": "If $x+\\dfrac{1}{x}=5$, find $x^4+\\dfrac{1}{x^4}$.",
+  "solution": "Square twice. From $\\left(x+\\dfrac{1}{x}\\right)^2=x^2+2+\\dfrac{1}{x^2}$,\n\\[\nx^2+\\dfrac{1}{x^2}=5^2-2=23 ,\n\\]\nand from $\\left(x^2+\\dfrac{1}{x^2}\\right)^2=x^4+2+\\dfrac{1}{x^4}$,\n\\[\nx^4+\\dfrac{1}{x^4}=23^2-2=\\boxed{527}.\n\\]\nIn general, if $s_k=x^k+\\dfrac{1}{x^k}$, then $s_{2k}=s_k^2-2$ and $s_{k+1}=s_1s_k-s_{k-1}$ (from multiplying $s_1$ by $s_k$), so any $s_k$ follows quickly from $s_1$.",
+  "tags": [
+   "Algebraic expressions and identities",
+   "Exponents",
+   "Recurrence relations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "KPMT problem from the title; the post asks for a quick general method, given at the end of the solution."
+ },
+ {
+  "topic_id": "1779038",
+  "part": 1,
+  "question": "There are four three-digit numbers that are equal to the sum of the cubes of their digits. Find them and their sum.",
+  "solution": "Write the number as $100a+10b+c$ with digits $a\\ge1$, $b$, $c$. The condition is\n\\[\n100a+10b+c=a^3+b^3+c^3\\iff a(100-a^2)+b(10-b^2)=c^3-c=(c-1)c(c+1).\n\\]\nPut $f(a)=a(100-a^2)$, $g(b)=b(10-b^2)$ and $h(c)=c^3-c$. For $a=1,\\dots,9$, $f(a)=99,192,273,336,375,384,357,288,171$; for $b=0,\\dots,9$, $g(b)=0,9,12,3,-24,-75,-156,-273,-432,-639$; and for $c=0,\\dots,9$, $h(c)=0,0,6,24,60,120,210,336,504,720$. We need $f(a)+g(b)=h(c)$. Listing $f(a)+g(b)$ for $b=0,\\dots,9$:\n\\begin{itemize}\n\\item $a=1$: $99,108,111,102,75,\\mathbf{24},-57,-174,-333,-540$; $24=h(3)$ gives $\\mathbf{153}$.\n\\item $a=2$: $192,201,204,195,168,117,36,-81,-240,-447$: none.\n\\item $a=3$: $273,282,285,276,249,198,117,\\mathbf{0},-159,-366$; $0=h(0)=h(1)$ gives $\\mathbf{370}$ and $\\mathbf{371}$.\n\\item $a=4$: $\\mathbf{336},345,348,339,312,261,180,63,-96,-303$; $336=h(7)$ gives $\\mathbf{407}$.\n\\item $a=5$: $375,384,387,378,351,300,219,102,-57,-264$: none.\n\\item $a=6$: $384,393,396,387,360,309,228,111,-48,-255$: none.\n\\item $a=7$: $357,366,369,360,333,282,201,84,-75,-282$: none.\n\\item $a=8$: $288,297,300,291,264,213,132,15,-144,-351$: none.\n\\item $a=9$: $171,180,183,174,147,96,15,-102,-261,-468$: none.\n\\end{itemize}\nThe numbers are $153,370,371,407$, and their sum is $\\boxed{1301}$.",
+  "tags": [
+   "Digit problems",
+   "Perfect cubes",
+   "Casework"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Narcissistic (Armstrong) numbers; the case check was confirmed by computer."
+ },
+ {
+  "topic_id": "1778933",
+  "part": 1,
+  "question": "David climbs a staircase of $6$ steps, taking $1$, $2$ or $3$ steps at a time. In how many ways can he get to the top?",
+  "solution": "Let $w_n$ be the number of ways to climb $n$ steps. The last move is $1$, $2$ or $3$ steps, so $w_n=w_{n-1}+w_{n-2}+w_{n-3}$ with $w_0=1$, $w_1=1$, $w_2=2$. Then\n\\[\nw_3=4,\\quad w_4=7,\\quad w_5=13,\\quad w_6=24 .\n\\]\nHe can get upstairs in $\\boxed{24}$ ways.",
+  "tags": [
+   "Recursive counting",
+   "Recurrence relations",
+   "Partitions and compositions"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1779041",
+  "part": 1,
+  "question": "Let real numbers $a,b,c$ satisfy $a^2+b^2+c^2=1$. Let $M$ and $m$ be the maximum and minimum values of $ab+bc+ca$. Find $M-m$.",
+  "solution": "\\textbf{Maximum.} $a^2+b^2+c^2-(ab+bc+ca)=\\dfrac{1}{2}\\left[(a-b)^2+(b-c)^2+(c-a)^2\\right]\\ge0$, so $ab+bc+ca\\le1$, with equality at $a=b=c=\\dfrac{1}{\\sqrt3}$. So $M=1$.\n\n\\textbf{Minimum.} $(a+b+c)^2=a^2+b^2+c^2+2(ab+bc+ca)=1+2(ab+bc+ca)\\ge0$, so $ab+bc+ca\\ge-\\dfrac{1}{2}$, with equality when $a+b+c=0$, e.g.\\ $a=\\dfrac{1}{\\sqrt2}$, $b=-\\dfrac{1}{\\sqrt2}$, $c=0$. So $m=-\\dfrac{1}{2}$.\n\nHence $M-m=\\boxed{\\dfrac{3}{2}}$.",
+  "tags": [
+   "Inequalities",
+   "Maxima and minima",
+   "Algebraic expressions and identities"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1779041",
+  "part": 2,
+  "question": "A complex number $z$ satisfies $|z-i|=2$. Find the maximum value of $|z-\\overline{z}|$.",
+  "solution": "Write $z=x+yi$. Then $z-\\overline z=2yi$, so $|z-\\overline z|=2|y|$. The condition says $z$ lies on the circle with centre $i$ and radius $2$, so $y$ ranges over $[1-2,\\,1+2]=[-1,3]$. Hence $|y|\\le3$, with $|y|=3$ at $z=3i$, and the maximum is $\\boxed{6}$.",
+  "tags": [
+   "Complex numbers",
+   "Maxima and minima"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post writes \"I z-i I\" and \"z with a bar on top\"; read as |z - i| = 2 and the conjugate."
+ },
+ {
+  "topic_id": "1779111",
+  "part": 1,
+  "question": "A student writes that the number of ways to put $n$ indistinguishable objects into $k$ indistinguishable boxes is $\\dbinom{n+k-1}{k}$, and asks whether this requires every box to get at least one object. Correct the statement, and illustrate with $n=7$ objects and $k=3$ boxes: find the number of ways when\n\\begin{enumerate}\n\\item the boxes are distinguishable and boxes may be empty;\n\\item the boxes are distinguishable and every box gets at least one object;\n\\item the boxes are indistinguishable and boxes may be empty.\n\\end{enumerate}",
+  "solution": "Stars and bars counts placements of $n$ identical objects into $k$ \\emph{distinguishable} boxes. A placement is a row of $n$ stars and $k-1$ bars (the bars separate the boxes), so there are $\\dbinom{n+k-1}{k-1}$ of them, and \\emph{empty boxes are allowed} (two adjacent bars). If every box must get at least one object, first put one object in each box and distribute the remaining $n-k$ freely: $\\dbinom{n-1}{k-1}$ ways. For indistinguishable boxes there is no such binomial formula: one counts partitions of $n$ into at most $k$ parts.\n\nFor $n=7$, $k=3$:\n\\begin{enumerate}\n\\item $\\dbinom{9}{2}=\\boxed{36}$;\n\\item $\\dbinom{6}{2}=\\boxed{15}$;\n\\item the partitions of $7$ into at most $3$ parts: $7,\\ 6+1,\\ 5+2,\\ 4+3,\\ 5+1+1,\\ 4+2+1,\\ 3+3+1,\\ 3+2+2$, so $\\boxed{8}$.\n\\end{enumerate}",
+  "tags": [
+   "Stars and bars",
+   "Distributions and integer solutions",
+   "Partitions and compositions"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Conceptual question turned into a correction of the formula (the bottom number is k - 1, the boxes must be distinguishable, and empty boxes are allowed) with a worked example n = 7, k = 3 chosen for the record."
+ },
+ {
+  "topic_id": "1778662",
+  "part": 1,
+  "question": "In cents, what is the least total amount that cannot be obtained by using a combination of fewer than eight coins from a collection of pennies, nickels, dimes and quarters?",
+  "solution": "\\textbf{Fewest coins for an amount.} Take a collection with the fewest coins for an amount $n$. It has at most $4$ pennies (five pennies could be replaced by one nickel), at most $1$ nickel (two nickels by a dime), at most $2$ dimes (three dimes by a quarter and a nickel), and not both $2$ dimes and a nickel (these make a quarter). So the coins other than quarters are worth at most $20+4=24$ cents, which forces the number of quarters to be $q=\\left\\lfloor\\dfrac {n}{25}\\right\\rfloor$ and the rest to be worth $r=n-25q\\le24$. The rest is then made greedily, with\n\\[\nc(r)=\\left\\lfloor\\dfrac {r}{10}\\right\\rfloor+\\left\\lfloor\\dfrac{r\\bmod10}{5}\\right\\rfloor+(r\\bmod5)\n\\]\ncoins, and the fewest coins for $n$ is $q+c(r)$. For $0\\le r\\le18$ we have $c(r)\\le5$ (the largest values are $c(9)=c(14)=c(18)=5$), while $c(19)=1+1+4=6$.\n\n\\textbf{The least amount.} An amount below $69$ has $q\\le1$, giving at most $1+6=7$ coins, or $q=2$ and $r\\le18$, giving at most $2+5=7$ coins. The amount $69=2\\cdot25+19$ needs $2+6=8$ coins. So the least amount that cannot be made with fewer than eight coins is $\\boxed{69}$ cents.",
+  "tags": [
+   "Money and currency",
+   "Casework",
+   "Bounding and extremal cases"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2018,
+   "division": "School",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": "25"
+  },
+  "note": "\"Last year's school sprint #25\" (post from January 2019): 2018 MATHCOUNTS School Sprint #25. The minimum-coin counts were checked by computer for all amounts up to 200."
+ },
+ {
+  "topic_id": "1778586",
+  "part": 1,
+  "question": "A point $P$ lies inside rectangle $ABCD$ with $PA=2$, $PB=3$ and $PC=10$. Find $PD$.",
+  "solution": "Draw the lines through $P$ parallel to the sides (dashed). Let $r$ and $s$ be the distances from $P$ to $AD$ and to $BC$, and $p$ and $t$ the distances from $P$ to $AB$ and to $CD$; in the figure they appear as the pieces of the sides $AB$ and $AD$.\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(0,7cm);\ndefaultpen(fontsize(10pt));\nreal x=1.2,y=1.6,w=x+sqrt(9-y^2),h=y+sqrt(100-(w-x)^2);\npair A=(0,0),B=(w,0),C=(w,h),D=(0,h),P=(x,y);\ndraw(A--B--C--D--cycle,linewidth(0.9));\ndraw((x,0)--(x,h),dashed+gray); draw((0,y)--(w,y),dashed+gray);\ndraw(P--A,blue);draw(P--B,blue);draw(P--C,blue);draw(P--D,red);\ndot(P);\nlabel(\"$A$\",A,SW);label(\"$B$\",B,SE);label(\"$C$\",C,NE);label(\"$D$\",D,NW);label(\"$P$\",P+0.5*dir(140));\nlabel(\"$2$\",(P+A)/2,dir(140),blue);label(\"$3$\",(P+B)/2,dir(80),blue);label(\"$10$\",P+0.62*(C-P),dir(-5),blue);\nlabel(\"$p$\",(0,y/2),W);label(\"$t$\",(0,(y+h)/2),W);label(\"$r$\",(x/2,0),S);label(\"$s$\",((x+w)/2,0),S);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nBy the Pythagorean theorem in the four right triangles with hypotenuses $PA,PB,PC,PD$:\n\\[\nPA^2=r^2+p^2,\\quad PB^2=s^2+p^2,\\quad PC^2=s^2+t^2,\\quad PD^2=r^2+t^2 .\n\\]\nHence $PA^2+PC^2=r^2+s^2+p^2+t^2=PB^2+PD^2$ (the British flag theorem), so\n\\[\nPD^2=PA^2+PC^2-PB^2=4+100-9=95,\\qquad PD=\\boxed{\\sqrt{95}}.\n\\]\nThe figure is drawn to scale (one such rectangle; the answer does not depend on which).",
+  "tags": [
+   "Rectangles",
+   "Pythagorean theorem",
+   "Right triangles"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The figure uses P = (1.2, 1.6) in a rectangle about 3.74 by 11.27, which realises PA = 2, PB = 3, PC = 10."
+ },
+ {
+  "topic_id": "1778586",
+  "part": 2,
+  "question": "A square is inscribed in a circle of radius $1$, and the region inside the circle but outside the square is shaded. Then a circle is inscribed in the square, a square is inscribed in this new circle, and the region between the new circle and the new square is shaded. This process is repeated infinitely many times. What is the total area of the shaded region?",
+  "solution": "A square inscribed in a circle of radius $r$ has diagonal $2r$, so its area is $\\dfrac{(2r)^2}{2}=2r^2$, and its inscribed circle has radius equal to half the side, $\\dfrac{r}{\\sqrt2}$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5cm);\ndefaultpen(fontsize(10pt));\nreal r=1;\nfor(int k=0;k<5;++k){\n  fill(circle((0,0),r),lightgray);\n  path sq=r*dir(45)--r*dir(135)--r*dir(225)--r*dir(315)--cycle;\n  fill(sq,white);\n  draw(circle((0,0),r),linewidth(0.7)); draw(sq,linewidth(0.7));\n  r=r/sqrt(2);\n}\ndraw((0,0)--dir(160),blue+linewidth(0.6)); label(\"$1$\",0.88*dir(160)+0.13*dir(70),blue);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nSo the shaded region at a stage with circle radius $r$ has area $\\pi r^2-2r^2=(\\pi-2)r^2$, and the next circle has radius $\\dfrac {r}{\\sqrt2}$, i.e.\\ $r^2$ is halved at each stage. Starting from $r=1$, the total is the geometric series\n\\[\n(\\pi-2)\\left(1+\\dfrac{1}{2}+\\dfrac{1}{4}+\\cdots\\right)=(\\pi-2)\\cdot2=\\boxed{2\\pi-4}.\n\\]",
+  "tags": [
+   "Circles",
+   "Squares",
+   "Geometric sequences",
+   "Lengths, perimeter, and area"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The figure shows the first five stages."
+ },
+ {
+  "topic_id": "1778586",
+  "part": 3,
+  "question": "Let $a$ and $b$ be integers with $2\\le a\\le16$ and $2\\le b\\le16$. What is the maximum possible value of $\\dfrac{a}{10b+a}+\\dfrac{b}{10a+b}$?",
+  "solution": "The expression is symmetric, so assume $a\\ge b$ and put $t=\\dfrac {a}{b}\\ge1$:\n\\[\nf(t)=\\dfrac{t}{10+t}+\\dfrac{1}{10t+1}.\n\\]\nThen\n\\[\nf'(t)=\\dfrac{10}{(10+t)^2}-\\dfrac{10}{(10t+1)^2},\n\\]\nwhich is positive for $t>1$ because $10t+1>10+t$ there. So $f$ increases with $t$, and the maximum comes from the largest ratio $t=\\dfrac{16}{2}=8$, i.e.\\ $a=16$, $b=2$ (or the reverse):\n\\[\n\\dfrac{16}{36}+\\dfrac{2}{162}=\\dfrac{4}{9}+\\dfrac{1}{81}=\\boxed{\\dfrac{37}{81}}.\n\\]",
+  "tags": [
+   "Maxima and minima",
+   "Fractions",
+   "Calculus"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Checked over all 225 pairs (a, b)."
+ },
+ {
+  "topic_id": "1778486",
+  "part": 1,
+  "question": "One side of a triangle has length $36$. A line parallel to that side divides the triangle into two parts of equal area. Find the length of the segment of this line that lies inside the triangle.",
+  "solution": "Let the triangle be $ABC$ with $BC=36$, and let the line meet $AB$ at $D$ and $AC$ at $E$, with $DE\\parallel BC$ and $DE=x$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\npair B=(0,0),C=(36,0),A=(12,24);\nreal k=1/sqrt(2);\npair D=A+k*(B-A),Ep=A+k*(C-A);\nfill(A--D--Ep--cycle,paleblue);\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(D--Ep,red+linewidth(0.9));\nlabel(\"$A$\",A,N);label(\"$B$\",B,SW);label(\"$C$\",C,SE);label(\"$D$\",D,W);label(\"$E$\",Ep,E);\nlabel(\"$36$\",(B+C)/2,S);label(\"$x$\",(D+Ep)/2,N,red);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nSince $DE\\parallel BC$, triangle $ADE$ is similar to triangle $ABC$ with ratio $\\dfrac{x}{36}$, so its area is $\\left(\\dfrac {x}{36}\\right)^2$ times the area of $ABC$. The two parts have equal area, so triangle $ADE$ has half the area of $ABC$:\n\\[\n\\left(\\dfrac{x}{36}\\right)^2=\\dfrac{1}{2}\\ \\Longrightarrow\\ x=\\dfrac{36}{\\sqrt2}=\\boxed{18\\sqrt2}.\n\\]",
+  "tags": [
+   "Similarity",
+   "Area ratios",
+   "Parallel lines",
+   "Triangles"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1773289",
+  "part": 1,
+  "question": "Determine which is greater: $99^{100}$ or $100^{99}$.",
+  "solution": "Compare the quotient\n\\[\n\\dfrac{99^{100}}{100^{99}}=99\\cdot\\left(\\dfrac{99}{100}\\right)^{99}=\\dfrac{99}{\\left(1+\\dfrac{1}{99}\\right)^{99}} .\n\\]\n\\textbf{Claim:} $\\left(1+\\dfrac{1}{n}\\right)^n<3$ for every positive integer $n$. By the binomial theorem,\n\\[\n\\left(1+\\dfrac{1}{n}\\right)^n=\\sum_{k=0}^{n}\\dbinom nk\\dfrac{1}{n^k},\\qquad \\dbinom nk\\dfrac{1}{n^k}=\\dfrac{1}{k!}\\cdot\\dfrac{n}{n}\\cdot\\dfrac{n-1}{n}\\cdots\\dfrac{n-k+1}{n}\\le\\dfrac{1}{k!}\\le\\dfrac{1}{2^{k-1}}\\ (k\\ge1).\n\\]\nSo the sum is at most $1+1+\\dfrac{1}{2}+\\dfrac{1}{4}+\\cdots<3$.\n\nHence the quotient exceeds $\\dfrac{99}{3}=33>1$, and $\\boxed{99^{100}}$ is the greater number.",
+  "tags": [
+   "Exponents",
+   "Binomial theorem",
+   "Inequalities",
+   "Bounding and extremal cases"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1774814",
+  "part": 1,
+  "question": "A teacher pairs her $24$ students into $12$ pairs. Next week she pairs them into $12$ pairs again so that every student gets a different partner from this week. In how many ways can next week's pairing be made?",
+  "solution": "The number of ways to split $2m$ people into $m$ unordered pairs is $(2m-1)!!=(2m-1)(2m-3)\\cdots3\\cdot1$: the first person in a fixed order has $2m-1$ choices of partner, then the first unpaired person has $2m-3$ choices, and so on.\n\nLet $A_i$ ($i=1,\\dots,12$) be the set of pairings of the $24$ students that contain this week's $i$-th pair. A pairing containing $k$ prescribed pairs is a pairing of the other $24-2k$ students, so $|A_{i_1}\\cap\\dots\\cap A_{i_k}|=(23-2k)!!$. By inclusion--exclusion, the number of pairings avoiding all twelve old pairs is\n\\[\n\\sum_{k=0}^{12}(-1)^k\\dbinom{12}{k}(23-2k)!!=\\boxed{187\\,778\\,717\\,632},\n\\]\nwhere $(-1)!!=1$. (For instance, with $4$ students the formula gives $3-2+1=2$, and with $6$ students $15-9+3-1=8$, as direct listing confirms.)",
+  "tags": [
+   "Sets and inclusion–exclusion",
+   "Derangements",
+   "Combinations"
+  ],
+  "difficulty": 5,
+  "rationale": "A meaningful insight or a moderately demanding combination of familiar ideas.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"How many ways is this possible\" read as the number of new pairings of the 24 students in which nobody keeps this week's partner. Formula checked against brute force for up to 10 students; the value was computed exactly."
+ },
+ {
+  "topic_id": "1777751",
+  "part": 1,
+  "question": "Let $x,y,z$ be positive numbers with $x+y+z=1$. Find the maximum value of\n\\[\nP=\\dfrac{x}{x+yz}+\\dfrac{y}{y+zx}+\\dfrac{\\sqrt{xyz}}{z+xy}.\n\\]",
+  "solution": "\\textbf{Substitution.} Put $a=\\sqrt{\\dfrac{yz}{x}}$, $b=\\sqrt{\\dfrac{zx}{y}}$, $c=\\sqrt{\\dfrac{xy}{z}}$. Then $bc=x$, $ca=y$, $ab=z$, so $ab+bc+ca=1$, and conversely positive $a,b,c$ with $ab+bc+ca=1$ give positive $x,y,z$ with sum $1$. Dividing numerator and denominator by $x$, $y$, $z$ respectively,\n\\[\nP=\\dfrac{1}{1+a^2}+\\dfrac{1}{1+b^2}+\\dfrac{c}{1+c^2}.\n\\]\n\\textbf{Angles.} Write $a=\\tan\\dfrac {A}{2}$, $b=\\tan\\dfrac {B}{2}$ with $A,B\\in(0,\\pi)$. Since $c=\\dfrac{1-ab}{a+b}>0$ we have $ab<1$, so $\\dfrac{A+B}{2}<\\dfrac{\\pi}{2}$, and $c=\\cot\\dfrac{A+B}{2}=\\tan\\dfrac {C}{2}$ with $C=\\pi-A-B>0$. Using $\\dfrac{1}{1+\\tan^2u}=\\cos^2u=\\dfrac{1+\\cos2u}{2}$ and $\\dfrac{\\tan u}{1+\\tan^2u}=\\sin u\\cos u=\\dfrac{\\sin 2u}{2}$,\n\\[\nP=1+\\dfrac{\\cos A+\\cos B}{2}+\\dfrac{\\sin C}{2}.\n\\]\n\\textbf{Bound.} $\\cos A+\\cos B=2\\cos\\dfrac{A+B}{2}\\cos\\dfrac{A-B}{2}\\le2\\sin\\dfrac {C}{2}$, with equality when $A=B$. With $t=\\dfrac {C}{2}\\in\\left(0,\\dfrac{\\pi}{2}\\right)$,\n\\[\nP\\le1+\\sin t+\\sin t\\cos t=1+g(t),\\qquad g(t)=\\sin t\\,(1+\\cos t).\n\\]\nNow $g'(t)=\\cos t+\\cos^2t-\\sin^2t=(2\\cos t-1)(\\cos t+1)$, which is positive for $t<\\dfrac{\\pi}{3}$ and negative after, so $g(t)\\le g\\left(\\dfrac{\\pi}{3}\\right)=\\dfrac{\\sqrt3}{2}\\cdot\\dfrac{3}{2}=\\dfrac{3\\sqrt3}{4}$.\n\n\\textbf{Equality} needs $C=\\dfrac{2\\pi}{3}$, $A=B=\\dfrac{\\pi}{6}$: $a=b=\\tan15^\\circ=2-\\sqrt3$, $c=\\tan60^\\circ=\\sqrt3$, i.e.\\ $x=y=bc=2\\sqrt3-3$ and $z=ab=7-4\\sqrt3$ (indeed $x+y+z=1$). Hence the maximum is\n\\[\n\\boxed{1+\\dfrac{3\\sqrt3}{4}}.\n\\]",
+  "tags": [
+   "Substitution",
+   "Maxima and minima",
+   "Inequalities",
+   "Calculus"
+  ],
+  "difficulty": 6,
+  "rationale": "A difficult-to-spot insight followed by substantial reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Checked numerically by a fine grid search over the simplex and by evaluating P at the equality point."
+ },
+ {
+  "topic_id": "1777839",
+  "part": 1,
+  "question": "A sequence $a_1,a_2,\\dots$ of non-negative integers is defined by the rule $a_{n+2}=|a_{n+1}-a_n|$ for $n\\ge1$. If $a_1=999$, $a_2<999$ and $a_{2006}=1$, how many different values of $a_2$ are possible?\n\n$\\textbf{(A)}\\ 165\\qquad\\textbf{(B)}\\ 324\\qquad\\textbf{(C)}\\ 495\\qquad\\textbf{(D)}\\ 499\\qquad\\textbf{(E)}\\ 660$",
+  "solution": "\\textbf{The gcd is invariant.} $\\gcd(a_{n+1},a_{n+2})=\\gcd(a_{n+1},|a_{n+1}-a_n|)=\\gcd(a_n,a_{n+1})$. So $\\gcd(999,a_2)$ divides every term, including $a_{2006}=1$: we need $\\gcd(999,a_2)=1$ (in particular $a_2\\ge1$).\n\n\\textbf{Parity.} If $a_2$ is even, the parities are odd, even, odd, odd, even, odd, odd, even, $\\dots$ (period $3$), and $a_n$ is even exactly when $n\\equiv2\\pmod3$. Since $2006\\equiv2\\pmod3$, $a_{2006}$ would be even. So $a_2$ must be odd. Then the parities are odd, odd, even, odd, odd, even, $\\dots$, and $a_n$ is even exactly when $n\\equiv0\\pmod3$; $a_{2006}$ is odd.\n\n\\textbf{These conditions suffice.} Suppose $a_2$ is odd and $\\gcd(999,a_2)=1$, and let $M_n=\\max(a_n,a_{n+1})$. While $M_n>1$, two consecutive terms are positive and coprime, hence different, so the next term is positive too; and if $a_n,a_{n+1},a_{n+2}>0$ then $a_{n+2}<M_n$ and $a_{n+3}<\\max(a_{n+1},a_{n+2})\\le M_n$, so $M_{n+2}\\le M_n-1$. Starting from $M_1=999$, we get $M_n=1$ for some $n\\le1+2\\cdot998=1997$. From then on the terms are $0$s and $1$s following $|a_{n+1}-a_n|$, i.e.\\ the pattern $1,1,0$ repeats, so every term after that point is $0$ or $1$. As $a_{2006}$ is odd, $a_{2006}=1$.\n\n\\textbf{Count.} $999=3^3\\cdot37$, so $\\varphi(999)=999\\cdot\\dfrac{2}{3}\\cdot\\dfrac{36}{37}=648$ numbers in $[1,998]$ are coprime to $999$. The map $k\\mapsto999-k$ pairs them and changes parity, so exactly half are odd. The number of possible $a_2$ is $\\boxed{324}$, answer $\\textbf{(B)}$.",
+  "tags": [
+   "Recurrence relations",
+   "Invariants and monovariants",
+   "Parity",
+   "Euler's theorem and totient"
+  ],
+  "difficulty": 6,
+  "rationale": "A difficult-to-spot insight followed by substantial reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "This is 2006 AMC 12B #25 (the post does not name the source). Count confirmed by simulating every a_2 < 999."
+ }
+]

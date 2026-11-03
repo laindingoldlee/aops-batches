@@ -1,0 +1,644 @@
+[
+ {
+  "topic_id": "1752850",
+  "part": 1,
+  "question": "The positive integers $c,a,t,s,g,o$ satisfy\n\\[\ncat=5,\\qquad sat=75,\\qquad csgo=45,\n\\]\nwhere juxtaposition means multiplication (so $cat=c\\cdot a\\cdot t$). Find the maximum possible value of $cats+go$.",
+  "solution": "Since $c\\cdot a\\cdot t=5$ is prime, exactly one of $c,a,t$ equals $5$ and the other two equal $1$.\n\nIf $c=5$, then $a=t=1$, so $s=75$ and $csgo=5\\cdot75\\cdot go=375\\,go\\ge375>45$, impossible.\n\nHence $c=1$ and $at=5$. Then $s\\cdot at=75$ gives $s=15$, and $csgo=15\\,go=45$ gives $go=3$. In every solution\n\\[\ncats+go=(cat)\\cdot s+go=5\\cdot15+3=78 .\n\\]\n(For example $c=1$, $a=5$, $t=1$, $s=15$, $g=3$, $o=1$.) The value is forced, so the maximum is $\\boxed{78}$.",
+  "tags": [
+   "Factors and multiples",
+   "Prime factorisation",
+   "Logical deduction"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post writes the products with *; the record writes them as juxtaposition. The value 78 is the same for every solution, so \"maximum\" is kept. Checked by brute force."
+ },
+ {
+  "topic_id": "1752843",
+  "part": 1,
+  "question": "A store is having a sale on soap: for every three bars of soap purchased, one more bar is given free. Each bar costs $\\$2$, and there is a limit of eight bars per customer (free bars included). A customer takes home $b$ bars and pays as little as possible.\n\\begin{enumerate}\n\\item Write a piecewise-defined function $C(b)$ for the total cost in dollars.\n\\item State the domain of $C$ in the context of the problem.\n\\end{enumerate}",
+  "solution": "In a group of four bars, three are paid for and the fourth is free. So among $b$ bars the number of free bars is the number of complete groups of four, and the customer pays for the rest.\n\\begin{itemize}\n\\item $0\\le b\\le3$: no free bar, so $C=2b$.\n\\item $b=4$: three bars are paid for, so $C=6$.\n\\item $5\\le b\\le7$: one bar is free, so $C=2(b-1)$.\n\\item $b=8$: two bars are free, so $C=2\\cdot6=12$.\n\\end{itemize}\nHence\n\\[\nC(b)=\\begin{cases}2b, & b=0,1,2,3,\\\\ 2(b-1), & b=4,5,6,7,\\\\ 12, & b=8.\\end{cases}\n\\]\n(The middle line gives $C(4)=6$, as required.) Equivalently $C(b)=2\\left(b-\\left\\lfloor\\dfrac {b}{4}\\right\\rfloor\\right)$.\n\nThe domain is the set of whole numbers of bars allowed: $\\boxed{\\{0,1,2,3,4,5,6,7,8\\}}$ (or $\\{1,\\dots,8\\}$ if a customer must buy something). It is not an interval, since a fraction of a bar cannot be bought.",
+  "tags": [
+   "Piecewise functions",
+   "Functions",
+   "Money and currency",
+   "Floor and ceiling functions"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks how the problem is done; the record states that the customer pays the least possible (free bars are counted among the b bars)."
+ },
+ {
+  "topic_id": "1751545",
+  "part": 1,
+  "question": "Find all pairs of positive integers $(x,y)$ such that\n\\[\nx+2y+\\dfrac{3x}{y}=2012 .\n\\]",
+  "solution": "Multiply by $y$: $xy+2y^2+3x=2012y$, so $x(y+3)=y(2012-2y)$ and\n\\[\nx=\\dfrac{y(2012-2y)}{y+3}.\n\\]\nFor $x>0$ we need $y<1006$. Put $u=y+3$, so $4\\le u\\le1008$. Then $y(2012-2y)=(u-3)(2018-2u)\\equiv(-3)\\cdot2018=-6054\\pmod u$, so $u$ must divide\n\\[\n6054=2\\cdot3\\cdot1009 ,\n\\]\nwith $1009$ prime. The divisors of $6054$ are $1,2,3,6,1009,2018,3027,6054$, and the only one in $[4,1008]$ is $u=6$. Thus $y=3$ and\n\\[\nx=\\dfrac{3\\cdot2006}{6}=1003 .\n\\]\nCheck: $1003+6+\\dfrac{3\\cdot1003}{3}=1003+6+1003=2012$. The only solution is $\\boxed{(x,y)=(1003,3)}$.",
+  "tags": [
+   "Diophantine equations",
+   "Divisibility",
+   "Prime factorisation"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"Natural numbers\" read as positive integers (y = 0 is impossible; if x = 0 were allowed, (0, 1006) would also work). Checked by brute force."
+ },
+ {
+  "topic_id": "1752607",
+  "part": 1,
+  "question": "What is the mean of all three-digit positive integers whose digits are all in the set $\\{2,0,1,9\\}$? (Digits may repeat.)",
+  "solution": "The hundreds digit is $1$, $2$ or $9$, and the tens and units digits are any of $0,1,2,9$, independently, so each position is uniform over its allowed digits. The mean is\n\\[\n100\\cdot\\dfrac{1+2+9}{3}+10\\cdot\\dfrac{12}{4}+\\dfrac{12}{4}=400+30+3=\\boxed{433}.\n\\]",
+  "tags": [
+   "Mean",
+   "Place value",
+   "Digit problems"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": null,
+   "division": "Handbook",
+   "paper": null,
+   "round": "Warm-Up 8",
+   "question_number": "108"
+  },
+  "note": "MATHCOUNTS Handbook Warm-Up 8 #108. Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1738877",
+  "part": 1,
+  "question": "Call a function $f$ \\emph{calculator-made} if $f(x)$ can be written as an expression in $x$ and real constants using only addition, subtraction, multiplication, division, powers and roots, logarithms, factorials, and the trigonometric functions and their inverses.\n\nLet $n\\ge1$ and let $a_1,a_2,\\dots,a_n$ be distinct real numbers; put $a_{n+1}=a_1$. Prove that there is a calculator-made function $f$ with $f(a_i)=a_{i+1}$ for every $i=1,2,\\dots,n$.",
+  "solution": "We only need addition, subtraction, multiplication and division with constants. For $n=1$ take $f(x)=a_1$ (a constant is allowed). For $n\\ge2$ use Lagrange interpolation: for each $i$ let\n\\[\nL_i(x)=\\prod_{j\\ne i}\\dfrac{x-a_j}{a_i-a_j}.\n\\]\nThe denominators are nonzero because the $a_j$ are distinct. If $x=a_k$ with $k\\ne i$, the factor with $j=k$ is $0$, so $L_i(a_k)=0$; and $L_i(a_i)=\\prod_{j\\ne i}1=1$. Now define\n\\[\nf(x)=\\sum_{i=1}^{n}a_{i+1}L_i(x).\n\\]\nFor each $k$, all terms vanish at $x=a_k$ except the $k$-th, so $f(a_k)=a_{k+1}\\cdot1=a_{k+1}$. This $f$ is a polynomial written with $+,-,\\times,\\div$ and the constants $a_i$, so it is calculator-made. Hence $\\boxed{\\text{such an }f\\text{ always exists}}$.\n\nFor example, for $n=2$ the function $f(x)=a_1+a_2-x$ swaps $a_1$ and $a_2$. $\\blacksquare$",
+  "tags": [
+   "Polynomials",
+   "Functions",
+   "Construction"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks whether such a \"Casio-able\" function exists; it is posed as a proof. Lagrange interpolation needs only the four basic operations."
+ },
+ {
+  "topic_id": "1745114",
+  "part": 1,
+  "question": "Explain why\n\\[\n45376=453\\cdot100+76\\equiv453\\cdot0+4\\cdot19\\equiv0\\pmod4,\n\\]\nand use the same idea to prove that a positive integer is divisible by $4$ if and only if the number formed by its last two digits is divisible by $4$.",
+  "solution": "Any positive integer $N$ can be written as $N=100q+r$, where $q$ is the number formed by all digits except the last two and $r$ is the number formed by the last two digits ($0\\le r\\le99$). For $45376$, $q=453$ and $r=76$.\n\nSince $100=4\\cdot25$, we have $100\\equiv0\\pmod4$, so $100q\\equiv0\\cdot q=0\\pmod4$. Hence\n\\[\nN=100q+r\\equiv r\\pmod4 .\n\\]\nSo $N$ and $r$ leave the same remainder on division by $4$; in particular $4\\mid N$ if and only if $4\\mid r$. For $45376$: $76=4\\cdot19\\equiv0\\pmod4$, so $45376\\equiv0\\pmod4$, which is exactly the displayed chain ($453\\cdot100\\equiv453\\cdot0$ and $76=4\\cdot19$). Indeed $45376=4\\cdot11344$. $\\blacksquare$",
+  "tags": [
+   "Divisibility rules",
+   "Remainders and congruences",
+   "Place value"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The poster does not understand the chain of congruences; the record asks for the explanation and the general rule."
+ },
+ {
+  "topic_id": "1752482",
+  "part": 1,
+  "question": "A fair coin is flipped five times. What is the probability that it never lands heads up twice in a row? Express your answer as a common fraction.",
+  "solution": "Let $a_n$ be the number of sequences of $n$ flips with no two consecutive heads. Such a sequence either ends in T (preceded by any good sequence of length $n-1$) or ends in TH (preceded by any good sequence of length $n-2$), so $a_n=a_{n-1}+a_{n-2}$, with $a_1=2$ (H, T) and $a_2=3$ (HT, TH, TT). Then\n\\[\na_3=5,\\quad a_4=8,\\quad a_5=13 .\n\\]\nOut of $2^5=32$ equally likely sequences, $13$ are good, so the probability is $\\boxed{\\dfrac{13}{32}}$.",
+  "tags": [
+   "Probability",
+   "Recursive counting",
+   "Fibonacci sequence"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": null,
+   "division": "Handbook",
+   "paper": null,
+   "round": "Warm-Up 8",
+   "question_number": "104"
+  },
+  "note": "MATHCOUNTS Handbook Warm-Up 8 #104 (\"fie flips\" read as five flips). Checked by enumeration."
+ },
+ {
+  "topic_id": "1751255",
+  "part": 1,
+  "question": "Three fair six-sided dice are rolled. Let $G$ be the greatest and $L$ the least of the three numbers rolled. Find the expected value of $L+G$.",
+  "solution": "Replace each roll $x$ by $7-x$. This is a bijection of the outcomes that keeps every outcome equally likely, and it turns the least roll $L$ into $7-G'$, where $G'$ is the greatest of the new rolls. Hence $L$ has the same distribution as $7-G$, so $E[L]=7-E[G]$ and\n\\[\nE[L+G]=E[L]+E[G]=\\boxed{7}.\n\\]\n(Directly: $P(G\\le k)=\\left(\\dfrac {k}{6}\\right)^3$ gives $E[G]=\\dfrac{1}{216}\\sum_{k=1}^{6}k\\left(k^3-(k-1)^3\\right)=\\dfrac{1071}{216}$, and $E[L]=7-\\dfrac{1071}{216}=\\dfrac{441}{216}$; the sum is $\\dfrac{1512}{216}=7$.)",
+  "tags": [
+   "Expected value",
+   "Dice probability",
+   "Symmetry"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Checked by enumerating all 216 outcomes."
+ },
+ {
+  "topic_id": "1751255",
+  "part": 2,
+  "question": "The area of triangle $ABC$ is $72$. Points $E$ and $F$ lie on sides $AB$ and $AC$, respectively, such that $AE:EB=1:2$ and $AF:FC=1:1$. Find the area of triangle $AEF$.",
+  "solution": "Triangles $AEF$ and $ABC$ share the angle at $A$, so their areas are in the ratio of the products of the sides enclosing that angle:\n\\[\n\\dfrac{[AEF]}{[ABC]}=\\dfrac{\\dfrac{1}{2}\\,AE\\cdot AF\\sin A}{\\dfrac{1}{2}\\,AB\\cdot AC\\sin A}=\\dfrac{AE}{AB}\\cdot\\dfrac{AF}{AC}=\\dfrac{1}{3}\\cdot\\dfrac{1}{2}=\\dfrac{1}{6} .\n\\]\n(Without trigonometry: $[AEC]=\\dfrac{1}{3}[ABC]$ because the two triangles have the same height from $C$ and bases $AE=\\dfrac{1}{3}AB$; and $[AEF]=\\dfrac{1}{2}[AEC]$ because $F$ is the midpoint of $AC$.)\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\npair A=(1.6,5),B=(0,0),C=(7,0);\npair Ep=A+(B-A)/3,F=(A+C)/2;\nfill(A--Ep--F--cycle,palegray);\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(Ep--F,linewidth(0.8));\ndot(Ep);dot(F);\nlabel(\"$A$\",A,N);label(\"$B$\",B,SW);label(\"$C$\",C,SE);\nlabel(\"$E$\",Ep,W);label(\"$F$\",F,NE);\nlabel(\"$1$\",(A+Ep)/2,W);label(\"$2$\",(Ep+B)/2,W);\nlabel(\"$1$\",(A+F)/2,NE);label(\"$1$\",(F+C)/2,NE);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nHence $[AEF]=\\dfrac{72}{6}=\\boxed{12}$.",
+  "tags": [
+   "Area ratios",
+   "Triangles",
+   "Lengths, perimeter, and area"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1752245",
+  "part": 1,
+  "question": "Simplify\n\\[\n\\dfrac{(\\sqrt{2}-1)^{1-\\sqrt{3}}}{(\\sqrt{2}+1)^{1+\\sqrt{3}}},\n\\]\nwriting your answer as $a-b\\sqrt{c}$, where $a$, $b$, $c$ are positive integers.",
+  "solution": "Since $(\\sqrt2-1)(\\sqrt2+1)=1$, $\\sqrt2+1=(\\sqrt2-1)^{-1}$, so the expression is\n\\[\n(\\sqrt2-1)^{1-\\sqrt3}(\\sqrt2-1)^{1+\\sqrt3}=(\\sqrt2-1)^2=\\boxed{3-2\\sqrt2}.\n\\]",
+  "tags": [
+   "Exponents",
+   "Radicals",
+   "Algebraic manipulation"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "Mandelbrot",
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Mandelbrot problem. Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1752100",
+  "part": 1,
+  "question": "Prove that if $a$ and $b$ are integers with $b>0$, then there exist unique integers $q$ and $r$ such that\n\\[\na=qb+r\\qquad\\text{and}\\qquad 2b\\le r<3b .\n\\]",
+  "solution": "\\textbf{Existence.} By the division algorithm there are integers $q'$ and $r'$ with $a=q'b+r'$ and $0\\le r'<b$. Put $q=q'-2$ and $r=r'+2b$. Then\n\\[\nqb+r=(q'-2)b+r'+2b=q'b+r'=a,\n\\]\nand $2b\\le r'+2b<3b$.\n\n\\textbf{Uniqueness.} Suppose $a=q_1b+r_1=q_2b+r_2$ with $2b\\le r_1,r_2<3b$. Then $r_1-r_2=(q_2-q_1)b$ is a multiple of $b$, and $-b<r_1-r_2<b$. The only multiple of $b$ strictly between $-b$ and $b$ is $0$, so $r_1=r_2$, and then $(q_2-q_1)b=0$ with $b>0$ gives $q_1=q_2$. $\\blacksquare$",
+  "tags": [
+   "Remainders and congruences",
+   "Divisibility"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Burton, Elementary Number Theory, exercise; problem 1 of the post."
+ },
+ {
+  "topic_id": "1752100",
+  "part": 2,
+  "question": "Prove that $3a^2-1$ is never a perfect square, for any integer $a$.",
+  "solution": "Every integer $m$ is congruent to $0$, $1$ or $2$ modulo $3$, so $m^2\\equiv0$, $1$ or $4\\equiv1\\pmod3$: a perfect square leaves remainder $0$ or $1$ on division by $3$. But\n\\[\n3a^2-1\\equiv-1\\equiv2\\pmod3 .\n\\]\nHence $3a^2-1$ is never a perfect square. $\\blacksquare$",
+  "tags": [
+   "Perfect squares",
+   "Remainders and congruences",
+   "Quadratic residues"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1752100",
+  "part": 3,
+  "question": "Show that the cube of any integer is of the form $7k$ or $7k\\pm1$ for some integer $k$.",
+  "solution": "Every integer $a$ is congruent to one of $0,\\pm1,\\pm2,\\pm3$ modulo $7$, and $(-a)^3=-a^3$, so it suffices to compute\n\\[\n0^3=0,\\qquad 1^3=1,\\qquad 2^3=8=7+1,\\qquad 3^3=27=28-1 .\n\\]\nThus $a^3\\equiv0,\\pm1\\pmod7$ for $a\\equiv0,\\pm1,\\pm2,\\pm3$ respectively (with $(\\pm2)^3\\equiv\\pm1$ and $(\\pm3)^3\\equiv\\mp1$). So $a^3=7k$ or $a^3=7k\\pm1$ for some integer $k$. $\\blacksquare$",
+  "tags": [
+   "Perfect cubes",
+   "Remainders and congruences"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1751902",
+  "part": 1,
+  "question": "The graph of a linear function $f$ is perpendicular to the graph of a linear function $g$. The graphs intersect at $(-3,-10)$, and $f(3)=8$. Find $g(12)$.",
+  "solution": "The graph of $f$ passes through $(-3,-10)$ and $(3,8)$, so its slope is $\\dfrac{8-(-10)}{3-(-3)}=\\dfrac{18}{6}=3$. Perpendicular lines (neither vertical) have slopes with product $-1$, so the graph of $g$ has slope $-\\dfrac{1}{3}$ and passes through $(-3,-10)$:\n\\[\ng(x)=-10-\\dfrac{1}{3}(x+3).\n\\]\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6.5cm);\ndefaultpen(fontsize(10pt));\nimport graph;\nreal f(real x){return 3x-1;} real g(real x){return -10-(x+3)/3;}\npair P=(-3,-10),Q=(3,8),R=(12,-15);\ndraw((-8,0)--(15,0),gray,Arrow(5));draw((0,-18)--(0,11),gray,Arrow(5));\nlabel(\"$x$\",(15,0),NE,gray);label(\"$y$\",(0,11),NE,gray);\ndraw((-5,f(-5))--(3.6,f(3.6)),blue+linewidth(0.9));\ndraw((-7.5,g(-7.5))--(14,g(14)),red+linewidth(0.9));\npair u=unit((1,3)),v=unit((3,-1));real m=1.1;\ndraw(P+m*u--P+m*u+m*v--P+m*v,linewidth(0.6));\ndot(P);dot(Q);dot(R);\nlabel(\"$(-3,-10)$\",P,2*dir(205));label(\"$(3,8)$\",Q,E);label(\"$(12,-15)$\",R,SW);\nlabel(\"$f$\",(3.6,f(3.6)),N,blue);label(\"$g$\",(14,g(14)),NE,red);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nHence $g(12)=-10-\\dfrac{15}{3}=\\boxed{-15}$.",
+  "tags": [
+   "Slope",
+   "Perpendicular lines",
+   "Linear equations",
+   "Functions",
+   "Coordinate geometry"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1751778",
+  "part": 1,
+  "question": "Without a calculator, find the sum of the digits of the number $2003^4-1997^4$.",
+  "solution": "Let $a=2003$ and $b=1997$, so $a+b=4000$ and $a-b=6$. Then\n\\[\na^4-b^4=(a^2-b^2)(a^2+b^2)=(a-b)(a+b)(a^2+b^2)=24000\\,(a^2+b^2).\n\\]\nWith $a=2000+3$ and $b=2000-3$, $a^2+b^2=2\\left(2000^2+3^2\\right)=2\\cdot4000009=8000018$. Therefore\n\\[\n2003^4-1997^4=24000\\cdot8000018=192000432000 .\n\\]\nThe sum of its digits is $1+9+2+4+3+2=\\boxed{21}$.",
+  "tags": [
+   "Difference of squares",
+   "Algebraic expressions and identities",
+   "Digits and bases"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "Mandelbrot",
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Mandelbrot problem. The post's hint (\"rewrite the numbers as a power of 2\") is not used; the numbers are written as 2000 plus or minus 3. Checked by direct computation."
+ },
+ {
+  "topic_id": "1751211",
+  "part": 1,
+  "question": "Triangle $ABC$ is isosceles with $A=(2,7)$, $B=(-2,0)$ and $C=(3,-1)$. Triangle $ABC$ is reflected over $BC$ to form triangle $A'BC$. Triangle $A'BC$ is reflected over $A'C$ to form triangle $A'B'C$. Triangle $A'B'C$ is reflected over $B'C$ to form triangle $A''B'C$. What is the slope of line $AA''$?",
+  "solution": "Here $AB=AC=\\sqrt{65}$. All three reflections are in lines through $C$, so we work with vectors from $C$: $\\vec{CA}=(-1,8)$, $\\vec{CB}=(-5,1)$.\n\nTo reflect a vector $\\mathbf v$ in the line through $C$ with direction $\\mathbf d$, use $\\mathbf v\\mapsto 2\\dfrac{\\mathbf v\\cdot\\mathbf d}{\\mathbf d\\cdot\\mathbf d}\\,\\mathbf d-\\mathbf v$.\n\n\\textbf{Over $BC$} ($\\mathbf d=(-5,1)$): $\\mathbf v=(-1,8)$, $\\mathbf v\\cdot\\mathbf d=13$, $\\mathbf d\\cdot\\mathbf d=26$, so $\\vec{CA'}=(-5,1)-(-1,8)=(-4,-7)$ and $A'=(-1,-8)$.\n\n\\textbf{Over $A'C$} ($\\mathbf d=(-4,-7)$): $\\mathbf v=\\vec{CB}=(-5,1)$, $\\mathbf v\\cdot\\mathbf d=13$, $\\mathbf d\\cdot\\mathbf d=65$, so $\\vec{CB'}=\\dfrac{2}{5}(-4,-7)-(-5,1)=\\left(\\dfrac{17}{5},-\\dfrac{19}{5}\\right)$ and $B'=\\left(\\dfrac{32}{5},-\\dfrac{24}{5}\\right)$.\n\n\\textbf{Over $B'C$} ($\\mathbf d=(17,-19)$): $\\mathbf v=\\vec{CA'}=(-4,-7)$, $\\mathbf v\\cdot\\mathbf d=65$, $\\mathbf d\\cdot\\mathbf d=650$, so $\\vec{CA''}=\\dfrac{1}{5}(17,-19)-(-4,-7)=\\left(\\dfrac{37}{5},\\dfrac{16}{5}\\right)$ and $A''=\\left(\\dfrac{52}{5},\\dfrac{11}{5}\\right)$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(7cm);\ndefaultpen(fontsize(10pt));\npair A=(2,7),B=(-2,0),C=(3,-1),A1=(-1,-8),B1=(6.4,-4.8),A2=(10.4,2.2);\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(A1--B--C--cycle,gray+dashed);\ndraw(A1--B1--C--cycle,gray+dashed);\ndraw(A2--B1--C--cycle,gray+dashed);\ndraw(A--A2,red+linewidth(0.9));\ndot(A);dot(B);dot(C);dot(A1);dot(B1);dot(A2);\nlabel(\"$A(2,7)$\",A,N);label(\"$B(-2,0)$\",B,W);label(\"$C$\",C,2*dir(205));\nlabel(\"$A'$\",A1,SW);label(\"$B'$\",B1,SE);label(\"$A''$\",A2,E);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nThe slope of $AA''$ is\n\\[\n\\dfrac{\\dfrac{11}{5}-7}{\\dfrac{52}{5}-2}=\\dfrac{-\\dfrac{24}{5}}{\\dfrac{42}{5}}=\\boxed{-\\dfrac{4}{7}}.\n\\]\n(Check: $CA''=\\sqrt{\\dfrac{37^2+16^2}{25}}=\\sqrt{65}=CA$, as it must be.)",
+  "tags": [
+   "Reflections",
+   "Coordinate geometry",
+   "Slope",
+   "Isosceles triangles"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Coordinates of every image checked with exact arithmetic."
+ },
+ {
+  "topic_id": "1751518",
+  "part": 1,
+  "question": "Positive integers $x$ and $y$ satisfy $x+y\\ge9$, and $M=\\max(x,y)$. Find the largest integer $k$ such that $M\\ge k$ for all such $x$ and $y$.",
+  "solution": "Since $M\\ge x$ and $M\\ge y$, we get $2M\\ge x+y\\ge9$, so $M\\ge\\dfrac{9}{2}$, and as $M$ is an integer, $M\\ge5$. The pair $(x,y)=(4,5)$ has $x+y=9$ and $M=5$, so no larger bound holds. The answer is $\\boxed{5}$.",
+  "tags": [
+   "Inequalities",
+   "Bounding and extremal cases"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks \"find M >= ?\"; read as the best (largest) lower bound for M."
+ },
+ {
+  "topic_id": "1751489",
+  "part": 1,
+  "question": "Segment $AN$ is an altitude of triangle $ABC$ (so $N$ lies on line $BC$ and $AN\\perp BC$). If $AB=3\\cdot NC$ and $AN=2\\cdot NC$, prove that $AC=BN$.",
+  "solution": "Let $NC=x$. Then $AN=2x$ and $AB=3x$. Both triangles $ANC$ and $ANB$ have a right angle at $N$, so by the Pythagorean theorem\n\\[\nAC=\\sqrt{AN^2+NC^2}=\\sqrt{4x^2+x^2}=\\sqrt5\\,x,\n\\qquad\nBN=\\sqrt{AB^2-AN^2}=\\sqrt{9x^2-4x^2}=\\sqrt5\\,x .\n\\]\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\nreal x=1;pair N0=(0,0),C=(x,0),B=(-sqrt(5)*x,0),A=(0,2x);\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(A--N0,linewidth(0.8));\ndraw((0,0.16)--(0.16,0.16)--(0.16,0),linewidth(0.6));\nlabel(\"$A$\",A,N);label(\"$B$\",B,SW);label(\"$C$\",C,SE);label(\"$N$\",N0,S);\nlabel(\"$x$\",(N0+C)/2,S);label(\"$2x$\",(A+N0)/2,W);\nlabel(\"$3x$\",(A+B)/2,NW);label(\"$\\sqrt{5}\\,x$\",(B+N0)/2,S);label(\"$\\sqrt{5}\\,x$\",(A+C)/2,NE);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nHence $AC=BN$. $\\blacksquare$ (The argument does not depend on whether $N$ lies between $B$ and $C$.)",
+  "tags": [
+   "Right triangles",
+   "Pythagorean theorem",
+   "Altitudes"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1750915",
+  "part": 1,
+  "question": "What is the mean of the six numbers $632.14$, $632.15$, $632.12$, $632.14$, $632.13$, $632.16$? Find it quickly, without adding the numbers in full.",
+  "solution": "Guess $632.14$ and add up the deviations from it, in hundredths:\n\\[\n0+1-2+0-1+2=0 .\n\\]\nThe deviations sum to $0$, so their mean is $0$ and the mean of the numbers is the guess itself, $\\boxed{632.14}$. (Subtracting a common amount from every number subtracts it from the mean, so only the small deviations need to be averaged.)",
+  "tags": [
+   "Mean",
+   "Decimals",
+   "Estimation"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"632..13\" read as 632.13. The poster's method (average the decimal parts) is correct; the record shows the even quicker deviation method."
+ },
+ {
+  "topic_id": "1750909",
+  "part": 1,
+  "question": "Two distinct circles and an ellipse are drawn in the plane. What is the maximum possible number of points at which at least two of the three curves intersect?",
+  "solution": "\\textbf{Upper bound.} Two distinct circles meet in at most $2$ points. A circle and an ellipse meet in at most $4$ points: two distinct conics meet in at most $4$ points (after a rotation the circle is $x^2+y^2+Dx+Ey+F=0$; eliminating one variable between the two equations leaves an equation of degree at most $4$). So there are at most\n\\[\n2+4+4=10\n\\]\nintersection points.\n\n\\textbf{The bound is attained.} The question asks for the maximum over all possible drawings, so it is enough to exhibit one configuration. Take circles of radius $1$ centred at $(\\pm0.6,0)$ and the ellipse $\\dfrac{x^2}{2.2^2}+\\dfrac{y^2}{0.5^2}=1$. The circles meet at $(0,\\pm0.8)$; the long flat ellipse passes through each circle, crossing it twice above the $x$-axis and twice below, and none of these crossings is at $(0,\\pm0.8)$ or common to both circles.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(7cm);\ndefaultpen(fontsize(10pt));\npath c1=circle((-0.6,0),1),c2=circle((0.6,0),1);\npath el=scale(2.2,0.5)*unitcircle;\ndraw(c1,blue+linewidth(0.8));draw(c2,heavygreen+linewidth(0.8));draw(el,red+linewidth(0.8));\npair[] P=intersectionpoints(c1,c2);\npair[] Q=intersectionpoints(c1,el);\npair[] R=intersectionpoints(c2,el);\nfor(pair z:P) dot(z);for(pair z:Q) dot(z);for(pair z:R) dot(z);\nlabel(\"$C_1$\",(-0.6,0)+dir(135),NW,blue);label(\"$C_2$\",(0.6,0)+dir(45),NE,heavygreen);label(\"$\\mathcal{E}$\",(2.2,0),E,red);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nThe figure shows the $2+4+4$ distinct points, so the maximum is $\\boxed{10}$. The poster's count of $6$ assumes that each pair of curves meets in only $2$ points, which is true for two circles but not for a circle and an ellipse.",
+  "tags": [
+   "Circles",
+   "Ellipses",
+   "Conic sections",
+   "Counting intersections"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post reads \"two distinct circles and ellipses\"; read as two circles and one ellipse (\"two of the three curves\"). The poster objects that 10 needs a special layout; the record explains that a maximum is over all layouts. The 10 intersection points of the figure were computed numerically and checked to be distinct."
+ },
+ {
+  "topic_id": "1750969",
+  "part": 1,
+  "question": "In a class, $8$ students do an activity: $6$ of them sit in a circle and the other $2$ act out a story in the middle of the circle. In how many ways can this be done, if two seatings are considered the same when one is a rotation of the other?",
+  "solution": "Choose the two actors: $\\dbinom82=28$ ways (they play the same role, so their order does not matter). Arrange the remaining $6$ students around the circle up to rotation: $\\dfrac{6!}{6}=5!=120$ ways. The total is $28\\cdot120=\\boxed{3360}$.",
+  "tags": [
+   "Circular arrangements",
+   "Combinations",
+   "Multiplication principle"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The two actors are taken as an unordered pair (the post gives them no distinct roles)."
+ },
+ {
+  "topic_id": "1750969",
+  "part": 2,
+  "question": "Amy rolls a standard six-sided die and tosses a fair coin at the same time. If the coin shows heads, she multiplies the number on the die by $2$; otherwise she divides it by $2$. What is the expected value of the resulting number? Express your answer as a decimal rounded to the nearest thousandth.",
+  "solution": "The die and the coin are independent and the die has mean $3.5$. By linearity,\n\\[\nE=\\dfrac{1}{2}\\cdot2\\cdot3.5+\\dfrac{1}{2}\\cdot\\dfrac{3.5}{2}=3.5+0.875=\\boxed{4.375}.\n\\]",
+  "tags": [
+   "Expected value",
+   "Dice probability",
+   "Independent events"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1750969",
+  "part": 3,
+  "question": "Find the ratio of the volume of the largest cube that can be inscribed in a sphere of radius $x$ to the volume of the largest cube that can be inscribed in a hemisphere of radius $x$. Express your answer in simplest radical form.",
+  "solution": "\\textbf{Sphere.} The largest cube has all eight vertices on the sphere, so its space diagonal is a diameter: $s\\sqrt3=2x$, $s=\\dfrac{2x}{\\sqrt3}$, and the volume is $V_1=\\dfrac{8x^3}{3\\sqrt3}$.\n\n\\textbf{Hemisphere.} The largest cube stands on the flat face with its base centred at the centre $O$ of the hemisphere, and its four top vertices on the curved surface. A top vertex is at horizontal distance $\\dfrac{s\\sqrt2}{2}$ (half the base diagonal) and height $s$ from $O$, so\n\\[\n\\left(\\dfrac{s\\sqrt2}{2}\\right)^2+s^2=x^2\\ \\Longrightarrow\\ \\dfrac{3}{2}s^2=x^2\\ \\Longrightarrow\\ s=x\\sqrt{\\dfrac{2}{3}},\n\\]\nand $V_2=s^3=\\dfrac{2\\sqrt2\\,x^3}{3\\sqrt3}$.\n\nThe sketches show the cross-sections through a diagonal plane of each cube (side $s$, face diagonal $s\\sqrt2$):\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(8cm);\ndefaultpen(fontsize(10pt));\nreal x=1.6,s1=2x/sqrt(3),s2=x*sqrt(2/3);\npicture p1,p2;\ndraw(p1,circle((0,0),x),linewidth(0.8));\ndraw(p1,box((-s1*sqrt(2)/2,-s1/2),(s1*sqrt(2)/2,s1/2)),blue+linewidth(0.9));\ndraw(p1,(0,0)--(s1*sqrt(2)/2,s1/2),dashed);dot(p1,(0,0));\nlabel(p1,\"$x$\",(s1*sqrt(2)/4,s1/4),NW);\nlabel(p1,\"$s$\",(-s1*sqrt(2)/2,0),E,blue);label(p1,\"$s\\sqrt{2}$\",(0,-s1/2),N,blue);\nlabel(p1,\"sphere\",(0,-x),S);\ndraw(p2,arc((0,0),x,0,180)--cycle,linewidth(0.8));\ndraw(p2,box((-s2*sqrt(2)/2,0),(s2*sqrt(2)/2,s2)),blue+linewidth(0.9));\ndraw(p2,(0,0)--(s2*sqrt(2)/2,s2),dashed);dot(p2,(0,0));\nlabel(p2,\"$x$\",(s2*sqrt(2)/4,s2/2),2*NW);\nlabel(p2,\"$s$\",(-s2*sqrt(2)/2,s2/2),E,blue);label(p2,\"$s\\sqrt{2}$\",(0,0),S,blue);\nlabel(p2,\"hemisphere\",(0,-0.55),S);\nadd(p1);add(shift(4.2,0)*p2);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nThe ratio is\n\\[\n\\dfrac{V_1}{V_2}=\\dfrac{8}{2\\sqrt2}=\\boxed{2\\sqrt2}.\n\\]",
+  "tags": [
+   "Spheres",
+   "Cubes and rectangular prisms",
+   "Volume",
+   "Pythagorean theorem"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Standard reading: the largest cube in a hemisphere rests on the flat face. Values checked numerically."
+ },
+ {
+  "topic_id": "1684977",
+  "part": 1,
+  "question": "The number of ways of selecting $6$ objects from $n$ distinct objects is the same as the number of ways of selecting $3$ objects from $n$ distinct objects. An answer key says $n=9$ is the only solution, but a student claims that $n=0,1,2$ also work. Find all nonnegative integers $n$ with $\\dbinom n6=\\dbinom n3$, and decide who is right.",
+  "solution": "\\textbf{Small $n$.} For $n\\le2$ there is no way to choose $3$ (or $6$) objects, so $\\dbinom n3=\\dbinom n6=0$ and the equation holds. For $n=3,4,5$, $\\dbinom n3\\ge1$ but $\\dbinom n6=0$, so it fails.\n\n\\textbf{$n\\ge6$.} Both sides are positive and\n\\[\n\\dfrac{\\dbinom n6}{\\dbinom n3}=\\dfrac{\\dfrac{n!}{6!\\,(n-6)!}}{\\dfrac{n!}{3!\\,(n-3)!}}=\\dfrac{(n-3)(n-4)(n-5)}{6\\cdot5\\cdot4}.\n\\]\nSo we need $(n-3)(n-4)(n-5)=120=6\\cdot5\\cdot4$. The left side is strictly increasing for $n\\ge6$, so there is exactly one solution, $n-3=6$, i.e.\\ $n=9$. (This is also $\\dbinom n3=\\dbinom n{n-3}$ with $n-3=6$.)\n\nSo the full solution set is $\\boxed{n\\in\\{0,1,2,9\\}}$. The student is right as a matter of mathematics: for $n=0,1,2$ both counts are $0$. The answer key is right only if the problem intends that selections are possible (that is, $n\\ge6$, or the common number of ways is positive), which is presumably what was meant.",
+  "tags": [
+   "Combinations",
+   "Combinatorial identities and binomial coefficients",
+   "Polynomials"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The poster's answer n = 0, 1, 2, 9 is correct over the nonnegative integers; the key's n = 9 is the unique solution with a positive number of ways. The record asks for all n and explains both. Checked by direct computation for n up to 200."
+ },
+ {
+  "topic_id": "1751050",
+  "part": 1,
+  "question": "Two opposite vertices of a square are $(5,4)$ and $(1,-6)$. Find the coordinates of the other two vertices.",
+  "solution": "The diagonals of a square bisect each other, are equal, and are perpendicular. The centre is the midpoint of the given diagonal,\n\\[\nM=\\left(\\dfrac{5+1}{2},\\dfrac{4+(-6)}{2}\\right)=(3,-1),\n\\]\nand the vector from $M$ to $(5,4)$ is $(2,5)$. The other half-diagonals are this vector turned through $\\pm90^\\circ$, namely $(5,-2)$ and $(-5,2)$. Hence the other two vertices are\n\\[\nM\\pm(5,-2)=\\boxed{(8,-3)\\ \\text{and}\\ (-2,1)}.\n\\]\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\npair A=(5,4),C=(1,-6),B=(8,-3),D=(-2,1),M=(3,-1);\ndraw((-4,0)--(10,0),gray,Arrow(5));draw((0,-8)--(0,6),gray,Arrow(5));\nlabel(\"$x$\",(10,0),NE,gray);label(\"$y$\",(0,6),NE,gray);\ndraw(A--B--C--D--cycle,linewidth(0.9));\ndraw(A--C,dashed);draw(B--D,dashed);\ndot(A);dot(B);dot(C);dot(D);dot(M);\nlabel(\"$(5,4)$\",A,NE);label(\"$(8,-3)$\",B,E);label(\"$(1,-6)$\",C,SE);label(\"$(-2,1)$\",D,W);\nlabel(\"$M$\",M,3*dir(298));\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nCheck: the four sides all have length $\\sqrt{3^2+7^2}=\\sqrt{58}$, e.g.\\ from $(5,4)$ to $(8,-3)$ the vector is $(3,-7)$ and from $(8,-3)$ to $(1,-6)$ it is $(-7,-3)$, which is perpendicular to it.",
+  "tags": [
+   "Squares",
+   "Coordinate geometry",
+   "Rotations",
+   "Midpoints"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1750857",
+  "part": 1,
+  "question": "Let $x$ and $y$ be real numbers with $-1<x<0$ and $0<y<1$. Prove that\n\\[\nx^2+y^2+xy<1 .\n\\]",
+  "solution": "Put $u=-x$, so $0<u<1$ and $0<y<1$, and the expression is $u^2+y^2-uy$. By symmetry we may assume $u\\ge y$. Then\n\\[\nu^2+y^2-uy=u^2-y(u-y)\\le u^2<1,\n\\]\nsince $y>0$ and $u-y\\ge0$. Hence $x^2+y^2+xy<1$. $\\blacksquare$",
+  "tags": [
+   "Inequalities",
+   "Algebraic manipulation"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Translated from French (\"soient x et y deux reels ... montrer que\")."
+ },
+ {
+  "topic_id": "1750568",
+  "part": 1,
+  "question": "Square $ABCD$ has side length $12$. Point $P$ lies on line $AB$, outside the square, with $PA=4$. Segment $PC$ intersects side $AD$ at $Q$. What is the length of $CQ$?",
+  "solution": "For $PC$ to cross side $AD$, $P$ must lie on line $AB$ beyond $A$. Use coordinates $A=(0,0)$, $B=(12,0)$, $C=(12,12)$, $D=(0,12)$, $P=(-4,0)$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\npair A=(0,0),B=(12,0),C=(12,12),D=(0,12),P=(-4,0),Q=(0,3);\ndraw(A--B--C--D--cycle,linewidth(0.9));\ndraw(P--A,linewidth(0.9));draw(P--C,red+linewidth(0.9));\ndot(P);dot(Q);\nlabel(\"$A$\",A,S);label(\"$B$\",B,SE);label(\"$C$\",C,NE);label(\"$D$\",D,NW);\nlabel(\"$P$\",P,SW);label(\"$Q$\",Q,dir(140));\nlabel(\"$4$\",(P+A)/2,S);label(\"$12$\",(A+B)/2,S);label(\"$12$\",(B+C)/2,E);\nlabel(\"$3$\",(0,1.5),E);label(\"$9$\",(0,7.5),E);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nTriangles $PAQ$ and $PBC$ are similar (both have a right angle, at $A$ and at $B$, and they share the angle at $P$), so\n\\[\n\\dfrac{AQ}{BC}=\\dfrac{PA}{PB}=\\dfrac{4}{16}\\ \\Longrightarrow\\ AQ=3,\\qquad DQ=9 .\n\\]\nThen in right triangle $CDQ$, $CQ=\\sqrt{CD^2+DQ^2}=\\sqrt{144+81}=\\boxed{15}$.",
+  "tags": [
+   "Squares",
+   "Similarity",
+   "Pythagorean theorem",
+   "Right triangles"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "P is taken on line AB beyond A, the only position for which PC meets side AD."
+ },
+ {
+  "topic_id": "1750568",
+  "part": 2,
+  "question": "Four positive integers are arranged from smallest to largest. The smallest three form an arithmetic sequence, and the largest three form a geometric sequence. When the second largest integer is divided by the second smallest integer, the result is $\\dfrac{5}{4}$. What is the smallest possible sum of the four integers?",
+  "solution": "Write the numbers $a<b<c<d$. From $\\dfrac {c}{b}=\\dfrac{5}{4}$, $b=4k$ and $c=5k$; then $a=2b-c=3k$ and $d=\\dfrac{c^2}{b}=\\dfrac{25k}{4}$, which is an integer exactly when $4\\mid k$. The sum $\\dfrac{73k}{4}$ is least for $k=4$: $12,16,20,25$, with sum $\\boxed{73}$.",
+  "tags": [
+   "Arithmetic sequences",
+   "Geometric sequences",
+   "Divisibility"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1750568",
+  "part": 3,
+  "question": "When a jet flies between city A and city B at $510$ mph, it arrives $16$ minutes ahead of schedule. When it flies at $450$ mph, it arrives $34$ minutes behind schedule. What is the distance between city A and city B? Express your answer as a decimal to the nearest tenth.",
+  "solution": "Let the distance be $d$ miles and the scheduled flight time $T$ hours. Then\n\\[\n\\dfrac{d}{510}=T-\\dfrac{16}{60},\\qquad \\dfrac{d}{450}=T+\\dfrac{34}{60}.\n\\]\nSubtracting, the two flight times differ by $\\dfrac{50}{60}=\\dfrac{5}{6}$ hour:\n\\[\n\\dfrac {d}{450}-\\dfrac {d}{510}=\\dfrac{5}{6}\\ \\Longrightarrow\\ d\\cdot\\dfrac{510-450}{450\\cdot510}=\\dfrac{5}{6}\\ \\Longrightarrow\\ \\dfrac{d}{3825}=\\dfrac{5}{6},\n\\]\nso $d=\\dfrac{5\\cdot3825}{6}=\\boxed{3187.5}$ miles. (Check: $\\dfrac{3187.5}{510}=6.25$ hours and $\\dfrac{3187.5}{450}=7.08\\overline{3}$ hours differ by $50$ minutes; the schedule is $6$ hours $31$ minutes.) The poster's $399.3$ is not correct.",
+  "tags": [
+   "Distance, rate, and time",
+   "Linear equations",
+   "Unit conversion"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The poster's answer 399.3 is wrong; the distance is 3187.5 miles. Checked with exact fractions."
+ }
+]
