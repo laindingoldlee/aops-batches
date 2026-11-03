@@ -125,7 +125,7 @@ draw(A--B--C--cycle,linewidth(0.9));draw(B--C--D--Ee--cycle,linewidth(0.9));
 draw(A--D,blue);draw(A--Ee,blue);draw(D--Ee,blue+linewidth(0.9));
 draw((0.6,0)--(0.6,0.6)--(0,0.6));
 label("$A$",A,SW);label("$B$",B,S);label("$C$",C,W);label("$D$",D,N);label("$E$",Ee,E);
-label("$6$",(A+B)/2,S);label("$8$",(A+C)/2,W);label("$10$",B+0.3*(C-B),NE);'''
+label("$6$",(A+B)/2,S);label("$8$",(A+C)/2,W);label("$10$",C+0.3*(B-C),SW);'''
 b.add(1767722,30,r'''Right triangle $ABC$ has legs $AB=6$ cm and $AC=8$ cm. Square $BCDE$ is drawn outside the triangle along the hypotenuse. What is the area of triangle $ADE$, in square centimetres?''',
 r'''Place $A=(0,0)$, $B=(6,0)$, $C=(0,8)$. Then $\overrightarrow{BC}=(-6,8)$, and the perpendicular vector of the same length pointing away from $A$ is $(8,6)$. So the square has vertices $D=C+(8,6)=(8,14)$ and $E=B+(8,6)=(14,6)$.
 '''+asy(fig,'5.5cm')+r'''
@@ -267,7 +267,7 @@ draw(apex--O,dashed);draw(O--M,dashed);draw(apex--M,red+linewidth(0.9));
 dot(O);dot(M,red);
 label("$V$",apex,N);label("$O$",O,dir(200));label("$M$",M,SE,red);
 label("$6$",apex+0.55*(M-apex),E,red);label("$h$",apex+0.5*(O-apex),W);
-label("$\sqrt7$",O+0.3*(M-O),N,fontsize(9pt));'''
+label("$\sqrt7$",O+0.25*(M-O),S,fontsize(9pt));'''
 b.add(1767069,1,r'''A pyramid has a square base of area $28$ square feet. The slant height of the pyramid (the height of each triangular face, from the apex to the midpoint of a base edge) is $6$ feet. Find the volume of the pyramid.''',
 r'''The base has side $\sqrt{28}=2\sqrt7$. Let $V$ be the apex, $O$ the centre of the base and $M$ the midpoint of a base edge (the figure uses the right-hand edge); then $OM=\sqrt7$ (half the side), $VM=6$ is the slant height, and $VO=h$ is the height, with a right angle at $O$.
 '''+asy(fig,'5cm')+r'''
