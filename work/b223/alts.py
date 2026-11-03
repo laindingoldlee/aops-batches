@@ -10,6 +10,7 @@ A={
  "1774223-q01":"Triangle ABC with its blue circumcircle. Dashed perpendicular bisectors of AB (through its midpoint M) and of BC (through its midpoint K), with right-angle marks, meet at the centre O. Gray segments join O to A, B and C.",
  "1772259-q03":"Obtuse triangle ABC with sides BC = 4t, CA = 3t, AB = 2t and the obtuse angle at A. Dashed blue altitudes: 3 from A to BC, 4 from B and 6 from C; the last two meet the dotted extensions of CA and BA beyond A, with right-angle marks at the feet.",
  "1772259-q04":"Square ABCD with E on side BC and F on segment DE. Segments DE, BF and a red segment AF are drawn; dashed gray lines show diagonal BD and the part FC of diagonal AC. Single ticks mark DF = BF, double ticks mark FE = BE, angle EDB is marked 15 degrees and angle DFA 75 degrees.",
+ "1777483-q01":"Rectangle ABCD drawn 12 by 5, with the right angle at B marked, the longer side AB labelled l, the shorter side BC labelled w, and the blue diagonal AC labelled l plus w over 5.",
  "1773745-q01":"Right triangle with the right angle at C, CA = 5 vertical, CB = 12 horizontal and AB = 13. A red segment runs from P on AB to Q on CB; a point X on it is joined by a dashed blue horizontal segment x to side CA.",
 }
 Q={

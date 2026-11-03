@@ -125,7 +125,7 @@ draw(A--B--C--cycle,linewidth(0.9));draw(B--C--D--Ee--cycle,linewidth(0.9));
 draw(A--D,blue);draw(A--Ee,blue);draw(D--Ee,blue+linewidth(0.9));
 draw((0.6,0)--(0.6,0.6)--(0,0.6));
 label("$A$",A,SW);label("$B$",B,S);label("$C$",C,W);label("$D$",D,N);label("$E$",Ee,E);
-label("$6$",(A+B)/2,S);label("$8$",(A+C)/2,W);label("$10$",(B+C)/2,SW);'''
+label("$6$",(A+B)/2,S);label("$8$",(A+C)/2,W);label("$10$",B+0.3*(C-B),NE);'''
 b.add(1767722,30,r'''Right triangle $ABC$ has legs $AB=6$ cm and $AC=8$ cm. Square $BCDE$ is drawn outside the triangle along the hypotenuse. What is the area of triangle $ADE$, in square centimetres?''',
 r'''Place $A=(0,0)$, $B=(6,0)$, $C=(0,8)$. Then $\overrightarrow{BC}=(-6,8)$, and the perpendicular vector of the same length pointing away from $A$ is $(8,6)$. So the square has vertices $D=C+(8,6)=(8,14)$ and $E=B+(8,6)=(14,6)$.
 '''+asy(fig,'5.5cm')+r'''
@@ -209,7 +209,7 @@ draw(C--(C+(-1.6,0)),red+linewidth(1.1),Arrow(TeXHead));
 draw(D--(D+(0,-1.6)),red+linewidth(1.1),Arrow(TeXHead));
 draw(arc(A,0.9,0,45));label("$45^\circ$",A+1.35*dir(22.5),fontsize(8pt));
 dot(A);dot(B);dot(C);dot(D);dot(O);
-label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,NE);label("$D$",D,NW);label("$O$",O,N);'''
+label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,NE);label("$D$",D,NW);label("$O$",O,E);'''
 b.add(1767337,1,r'''Four bugs sit at the vertices of a unit square. At the same moment each bug begins to crawl directly towards its counterclockwise neighbour, always heading straight at it, at a constant speed of $1$ unit per minute. How long does it take for the bugs to meet?
 
 Also explain the following ``radial'' argument: each bug's velocity makes a $45^\circ$ angle with the line to the centre, so it approaches the centre at speed $\dfrac{1}{\sqrt2}$, and it starts at distance $\dfrac{1}{\sqrt2}$ from the centre.''',
@@ -260,16 +260,16 @@ note='Repeat of an earlier record (aliased).')
 # ---------------- 1767069 pyramid volume from slant height
 fig=r'''pair d=(0.5,0.32);
 real s=2*sqrt(7);
-pair p0=(0,0),p1=(s,0),p2=p1+s*d,p3=s*d,O=(p0+p2)/2,M=(p0+p1)/2,apex=O+(0,sqrt(29));
+pair p0=(0,0),p1=(s,0),p2=p1+s*d,p3=s*d,O=(p0+p2)/2,M=(p1+p2)/2,apex=O+(0,sqrt(29));
 draw(p0--p1--p2,linewidth(0.9));draw(p2--p3--p0,dashed);
 draw(apex--p0,linewidth(0.9));draw(apex--p1,linewidth(0.9));draw(apex--p2,linewidth(0.9));draw(apex--p3,dashed);
 draw(apex--O,dashed);draw(O--M,dashed);draw(apex--M,red+linewidth(0.9));
 dot(O);dot(M,red);
-label("$V$",apex,N);label("$O$",O,E);label("$M$",M,S,red);
-label("$6$",apex+0.62*(M-apex),W,red);label("$h$",apex+0.45*(O-apex),E);
-label("$\sqrt7$",(O+M)/2,dir(-20));'''
+label("$V$",apex,N);label("$O$",O,dir(200));label("$M$",M,SE,red);
+label("$6$",apex+0.55*(M-apex),E,red);label("$h$",apex+0.5*(O-apex),W);
+label("$\sqrt7$",O+0.3*(M-O),N,fontsize(9pt));'''
 b.add(1767069,1,r'''A pyramid has a square base of area $28$ square feet. The slant height of the pyramid (the height of each triangular face, from the apex to the midpoint of a base edge) is $6$ feet. Find the volume of the pyramid.''',
-r'''The base has side $\sqrt{28}=2\sqrt7$. Let $V$ be the apex, $O$ the centre of the base and $M$ the midpoint of a base edge; then $OM=\sqrt7$ (half the side), $VM=6$ is the slant height, and $VO=h$ is the height, with a right angle at $O$.
+r'''The base has side $\sqrt{28}=2\sqrt7$. Let $V$ be the apex, $O$ the centre of the base and $M$ the midpoint of a base edge (the figure uses the right-hand edge); then $OM=\sqrt7$ (half the side), $VM=6$ is the slant height, and $VO=h$ is the height, with a right angle at $O$.
 '''+asy(fig,'5cm')+r'''
 By the Pythagorean theorem, $h=\sqrt{6^2-(\sqrt7)^2}=\sqrt{29}$. The volume is
 \[
@@ -285,10 +285,9 @@ path poly(pair P,real a,int n){ path p=P; pair Q=P; real t=a; for(int k=0;k<n-1;
 filldraw(poly(V,0,4),rgb(0.85,0.92,1),linewidth(0.9));
 filldraw(poly(V,90,6),rgb(1,0.93,0.8),linewidth(0.9));
 filldraw(poly(V,210,8),rgb(0.88,0.97,0.85),linewidth(0.9));
-dot(V);label("$V$",V,dir(-8));
-label("square",(0.5,0.5),fontsize(8pt));
-label("hexagon",(0,1)+(-0.87,0.5)*1.0+(-0.0,0)-(0.0,0)+(0.0,-0.5)+(0.0,0)*1,fontsize(8pt));
-label("octagon",1.3*dir(277)+(-0.75,0.0)+(0,-0.6),fontsize(8pt));'''
+dot(V);
+pair ctr(real a,int n){ real al=180-360/n; return V+1/(2*Sin(180/n))*dir(a+al/2); }
+label("square",ctr(0,4),fontsize(8pt));label("hexagon",ctr(90,6),fontsize(8pt));label("octagon",ctr(210,8),fontsize(8pt));'''
 b.add(1766655,1,r'''The great rhombicuboctahedron is a convex polyhedron with $26$ faces: $12$ square faces, $6$ regular octagonal faces and $8$ regular hexagonal faces. At each vertex, one square, one hexagon and one octagon meet. How many of the segments joining two vertices of the polyhedron lie in its interior (apart from their endpoints)?''',
 r'''\textbf{Vertices and edges.} Each vertex lies on exactly one octagon, so there are $6\cdot8=48$ vertices. Three faces, hence three edges, meet at each vertex, so there are $\dfrac{48\cdot3}{2}=72$ edges. (Check with Euler's formula: $48-72+26=2$.)
 '''+asy(fig,'4.5cm')+r'''

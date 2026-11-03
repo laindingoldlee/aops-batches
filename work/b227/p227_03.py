@@ -27,9 +27,9 @@ r'''Write $x^4-10x^2+16=0$ as $(x^2-2)(x^2-8)=0$, so the roots are $\pm\sqrt2$ a
 h=10/2**(1/3)
 fig=r'''real H=10,R=5,h=%.5f; real yc=H-h, rc=R*h/H;
 pair V=(0,H);
-draw(shift(0,0)*xscale(R)*yscale(R*0.25)*arc((0,0),1,180,360),linewidth(0.9));
-draw(shift(0,0)*xscale(R)*yscale(R*0.25)*arc((0,0),1,0,180),dashed);
-draw(shift(0,yc)*xscale(rc)*yscale(rc*0.25)*unitcircle,blue+linewidth(0.8));
+draw(shift(0,0)*xscale(R)*yscale(R*0.15)*arc((0,0),1,180,360),linewidth(0.9));
+draw(shift(0,0)*xscale(R)*yscale(R*0.15)*arc((0,0),1,0,180),dashed);
+draw(shift(0,yc)*xscale(rc)*yscale(rc*0.15)*unitcircle,blue+linewidth(0.8));
 draw((-R,0)--V--(R,0),linewidth(0.9));
 draw(V--(0,0),dashed);
 dot(V);

@@ -54,7 +54,14 @@ r'''Let the longer side be $l$ and the shorter side $w$. Half the perimeter is $
 \[
 l^2+w^2=\left(l+\dfrac w5\right)^2=l^2+\dfrac{2lw}{5}+\dfrac{w^2}{25},
 \]
-so $\dfrac{24}{25}w^2=\dfrac25lw$ and $\dfrac wl=\dfrac{10}{24}=\boxed{\dfrac{5}{12}}$. (Check: a $5$ by $12$ rectangle has diagonal $13$, and $\dfrac{34}{2}-\dfrac45\cdot5=17-4=13$.)''',
+so $\dfrac{24}{25}w^2=\dfrac25lw$ and $\dfrac wl=\dfrac{10}{24}=\boxed{\dfrac{5}{12}}$. (Check: a $5$ by $12$ rectangle has diagonal $13$, and $\dfrac{34}{2}-\dfrac45\cdot5=17-4=13$.)
+'''+asy(r'''pair A=(0,0),B=(12,0),C=(12,5),D=(0,5);
+draw(A--B--C--D--cycle,linewidth(0.9));
+draw(A--C,blue+linewidth(0.8));
+real s=0.6; draw(B+(-s,0)--B+(-s,s)--B+(0,s));
+label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,NE);label("$D$",D,NW);
+label("$l$",(A+B)/2,S);label("$w$",(B+C)/2,E);label("$l+\dfrac{w}{5}$",(A+C)/2+(0.6,0),dir(-60),blue);''','6cm')+r'''
+The figure shows the rectangle drawn with the answer's proportions, $l=12$ and $w=5$.''',
 'Rectangles|Pythagorean theorem|Ratios, proportions, and variation',2,source=src('MATHCOUNTS',2014,'Chapter',22,rnd='Sprint'),
 note='"Less four-fifths" means minus four-fifths.')
 

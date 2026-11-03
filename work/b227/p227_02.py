@@ -26,8 +26,8 @@ note='Conceptual post turned into a short exercise with a proof.')
 
 # ---------------- 1756743 perpendicular bisector
 fig=r'''import graph;
-xaxis(Label("$x$",position=EndPoint,align=E),-4,10,Arrow(6));
-yaxis(Label("$y$",position=EndPoint,align=N),-1,7,Arrow(6));
+xaxis(Label("$x$",position=EndPoint,align=3E),-4,10,Arrow(6));
+yaxis(Label("$y$",position=EndPoint,align=3N),-1,7,Arrow(6));
 pair P=(-2,4),Q=(8,4),M=(3,4);
 draw(P--Q,linewidth(0.9));
 draw((3,-1)--(3,7),blue+linewidth(0.8));
@@ -70,8 +70,8 @@ note='The post asks whether there is a formula; the record asks for a proof of n
 # ---------------- 1756275 slope between two points
 fig=r'''import graph;
 fill((1,1)--(0,2)--(0,3)--cycle,paleblue);
-xaxis(Label("$x$",position=EndPoint,align=E),-0.6,2.4,Arrow(6));
-yaxis(Label("$y$",position=EndPoint,align=N),-0.4,3.8,Arrow(6));
+xaxis(Label("$x$",position=EndPoint,align=3E),-0.6,2.4,Arrow(6));
+yaxis(Label("$y$",position=EndPoint,align=3N),-0.4,3.8,Arrow(6));
 pair P=(1,1),A=(0,2),B=(0,3);
 draw((1.6,-0.2)--(0,3),dashed);draw((1.8,0.2)--(0,2),dashed);
 draw((1.7,-0.05)--(0,2.5),red+linewidth(0.8));
