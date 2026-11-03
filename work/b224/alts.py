@@ -1,3 +1,30 @@
-A={}
-Q={}
-ALT={**{(k,"solution"):v for k,v in A.items()},**{(k,"question"):v for k,v in Q.items()}}
+# Alt text for every diagram: key <topic>-qNN -> string or list (several diagrams, in order)
+A={
+ "1772054-q01":"A three by three array of lattice points from (0,0) to (2,2). The two long diagonals of the array are drawn in blue, each made of two segments of length sqrt 2, and the four short diagonals forming a tilted square through the edge midpoints are drawn in red.",
+ "1771914-q01":"Coordinate axes with a regular hexagon of side 2 to the right of the y-axis: one side runs from (0,1) to (0,3) on the y-axis and the lowest vertex is (sqrt 3, 0) on the x-axis. A blue line from the origin O passes through the centre C of the hexagon.",
+ "1771791-q01":"The lateral surface unrolled: a sector of an annulus with inner radius 3 and outer radius 6 about the apex O, spanning 240 degrees. A lies on the inner arc and B on the outer arc, 120 degrees apart. The gray dashed straight segment AB dips inside the inner circle; the red shortest path runs from B along the tangent to the inner circle at T (right angle at T, radius OT = 3) and then along the inner arc from T to A. OB = 6 is dashed.",
+ "1771651-q02":"Right triangle ABC with the right angle at B, angle 40 degrees at C and 50 degrees at A. The hypotenuse AC is labelled 3 and the shortest side AB, opposite the 40 degree angle, is labelled a.",
+ "1771314-q01":"A patch of 19 regular hexagons in a honeycomb, each labelled with a number from 0 to 6 and coloured by its label. The central hexagon labelled 0 is surrounded by six hexagons labelled 1 to 6 in some order, and every hexagon's neighbours carry the six other labels.",
+ "1770283-q01":"A thick vertical pillar PH of height 9 standing on horizontal ground, with H at the bottom and a right-angle mark at H. On the ground, G is x from H and the snake's start S is 27 - x beyond G. The eagle's blue flight path PG is labelled 27 - x.",
+ "1770185-q01":["Left: a vertical cross-section showing three circles of radius r, two resting on the ground line and one on top touching both, with dashed blue segments from the top centre to the two lower centres, a dashed segment between the lower centres and a red vertical segment from its midpoint to the top centre; a double arrow h on the right gives the height from the ground to the top of the upper circle. Right: the triangle of centres, with the two sides 2r in blue, the base split into two halves r sqrt 2, and the red altitude r sqrt 2 with a right-angle mark."],
+ "1770260-q01":"Equilateral triangle ABC with B at bottom left, C at bottom right and an interior point P joined to A, B and C. The point P' outside the triangle beyond side AB is the image of P under the 60 degree rotation about B; blue dashed segments BP', PP' and AP' are drawn, with a right-angle mark at P' between P'A and P'P.",
+ "1770219-q01":"Left: a quarter circle with centre O, radii OK and OJ of length r and a right-angle mark at O. An arrow points to the right, to a cone with apex O, slant height r, dashed height h and base radius r over 4.",
+ "1770209-q01":"Two similar square pyramids side by side, drawn with hidden edges dashed: the smaller one is labelled A = 10, V = ? and the larger one A = 17, V = 13.",
+ "1769062-q01":"A rectangular box drawn in oblique view with hidden edges dashed; the front base edge is labelled y = 12, the depth edge x = 8 and the vertical edge 2x = 16.",
+ "1769062-q02":"A rectangular pyramid with hidden edges dashed and a dashed height from the apex to the centre of the base; the front base edge is labelled x = 14, the side edge x - 2 = 12, and a double arrow on the left marks the height x + 3 = 17.",
+ "1768109-q01":"Right trapezoid ABCD with A at bottom left, B at bottom right, C at top and D at top left; AB = a at the bottom, DC = b at the top and the vertical leg AD = h, with right-angle marks at A and D. The blue diagonals AC and BD cross at a right angle, marked.",
+ "1767722-q30":"Right triangle ABC with the right angle at A, AB = 6 horizontal and AC = 8 vertical, hypotenuse BC = 10. The square BCDE is drawn outward on BC, with D above and E to the right. Blue segments AD and AE and the side DE form triangle ADE.",
+ "1766947-q01":"Two triangles side by side: the first with sides 8 (base), 6 and 9 over 2; the second, larger, with sides 32 over 3 (base), 8 and 6.",
+ "1767337-q01":"Unit square ABCD with dashed diagonals through the centre O. Red arrows at each vertex point along the sides counterclockwise: from A towards B, B towards C, C towards D and D towards A. The 45 degree angle between side AB and the half-diagonal AO is marked at A.",
+ "1766580-q01":"A grid of lattice points with the blue triangle with vertices (0,0), (6,0) and (2,4). The 12 lattice points on its boundary are blue and the 7 lattice points strictly inside are red.",
+ "1767069-q01":"A square pyramid with apex V, hidden edges dashed. O is the centre of the base and M the midpoint of the right-hand base edge; the dashed height VO is labelled h, the dashed segment OM is labelled sqrt 7, and the red slant height VM is labelled 6.",
+ "1766655-q01":"A square, a regular hexagon and a regular octagon, each with side 1, laid flat around a common vertex so that consecutive faces share an edge, leaving a small gap where the octagon and square do not meet.",
+ "1766801-q01":"Trapezoid ABCD with the long base AB on top and the shorter base DC at the bottom; the blue diagonals AC and BD meet at O.",
+ "1766257-q01":"A cube drawn in oblique view with hidden edges dashed and its 8 vertices marked, with the caption V - E + F = 8 - 12 + 6 = 2.",
+ "1766257-q02":"Triangle ABC with BC = 12 at the bottom, AB = 5 and AC = 9, with its blue incircle centred at I. A red radius r runs from I down to the point of tangency on BC, with a right-angle mark.",
+ "1766818-q01":"Triangle ADC with A at bottom left, C at bottom right and D at the top. The blue segment DM runs from D to the point M on AC; the angle ADM at D and the angle ACD at C are both marked theta.",
+}
+Q={
+ "1771791-q01":"A frustum of a cone in oblique view: the bottom base has radius 4 (back half of its rim dashed), the top base has radius 2, and the slant height is 3. Point A is at the front of the bottom rim and point B at the back of the top rim.",
+}
+ALT={**{(k,'solution'):v for k,v in A.items()},**{(k,'question'):v for k,v in Q.items()}}

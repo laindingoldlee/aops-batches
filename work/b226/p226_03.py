@@ -71,7 +71,7 @@ pair u=unit(A-B),v=unit(C-B);
 draw((B+1.3*u)--(B+1.3*u+1.3*v)--(B+1.3*v),linewidth(0.4));
 dot(O);
 label("$A$",A,W);label("$C$",C,E);label("$B$",B,NW);label("$P$",O,S);
-label("$10$",(A+B)/2,NW);label("$26$",(A+C)/2+(4,0),S);'''
+label("$10$",(A+B)/2,2*dir(-22));label("$26$",(A+C)/2+(4,0),S);'''
 b.add(1759713,5,r'''Segment $AC$ is a diameter of circle $P$, which has radius $13$ cm. If $B$ is a point on circle $P$ such that $AB=10$ cm, what is the length of segment $BC$?''',
 r'''An angle inscribed in a semicircle is a right angle, so $\angle ABC=90^\circ$, and $AC=2\cdot13=26$.
 '''+asy(fig,'5.5cm')+r'''
@@ -86,14 +86,13 @@ real t=degrees(acos((r-h)/r));
 path seg=arc(O,r,270-t,270+t)--cycle;
 fill(seg,rgb(0.75,0.85,1));
 draw(circle(O,r),linewidth(0.9));
-draw((-6,yw)--(6,yw),blue+linewidth(0.6));
+draw((-6.5,yw)--(6.5,yw),blue+linewidth(0.6));
 draw(O--(xw,yw),dashed);draw(O--(-xw,yw),dashed);draw(O--(0,yw),dashed);
 dot(O);label("$O$",O,N);
-label("$4$",(xw/2,yw/2),SE);label("$2$",(0,yw),NW);
-draw(arc(O,0.9,270-t,270+t),linewidth(0.5));label("$120^\circ$",O+1.3*dir(270)+(0.0,0.0),E,fontsize(8pt));
-label("water level",(6,yw),N,blue);
-draw((-0.25,-r)--(0.25,-r));draw((-0.25,yw)--(0.25,yw));
-label("$h=2$",(0,-r),S);'''
+label("$4$",(xw/2,yw/2),NE);label("$2$",(0,yw/2),E);
+draw((-5,-r)--(-5,yw),Arrows(4));draw((-5.4,-r)--(-0.3,-r),gray+dotted);
+label("$2$",(-5,(yw-r)/2),W);
+label("water level",(6.5,yw),N,blue);'''
 b.add(1759128,1,r'''Squidward's clarinet is a solid right circular cylinder with radius $4$ inches and length $16$ inches. He drops it into his bath, and it comes to rest completely horizontal, with the water surface $2$ inches above the lowest line of the clarinet. What volume of water, in cubic inches, does the clarinet displace?''',
 r'''The displaced volume is the volume of the part of the cylinder below the water surface: the length $16$ times the area of the circular segment of height $2$ in a circle of radius $4$ (the cross-section).
 '''+asy(fig,'5.5cm')+r'''
@@ -238,7 +237,7 @@ draw(A--B,gray+dashed);
 draw(P--A,red+linewidth(0.8));draw(P--B,red+linewidth(0.8));
 dot(A);dot(B);dot(P);
 label("$A(-6,0)$",A,SE);label("$B(0,4)$",B,E);label("$P$",P,W);
-label("$y=2x+12$",(-2.9,6.2),E);
+label("$y=2x+12$",(-2.9,6.2),W);
 label("$x$",(2,0),S);label("$y$",(0,6),W);'''
 b.add(1759331,1,r'''A line with slope $2$ passes through $A(-6,0)$. Let $B=(0,4)$. Find the coordinates of the point $P$ on the line such that $PA=PB$.''',
 r'''The line is $y=2(x+6)=2x+12$. The points equidistant from $A$ and $B$ form the perpendicular bisector of $AB$ (dashed, blue). Its midpoint is $(-3,2)$ and $\overrightarrow{AB}=(6,4)$, so the bisector is $6(x+3)+4(y-2)=0$, i.e.\ $3x+2y+5=0$.

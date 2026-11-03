@@ -230,7 +230,7 @@ pair u=unit(O-A),v=unit(P-A);draw(A+0.18*u--A+0.18*(u+v)--A+0.18*v,linewidth(0.5
 u=unit(O-B);v=unit(P-B);draw(B+0.18*u--B+0.18*(u+v)--B+0.18*v,linewidth(0.5));
 draw(M+(0.18,0)--M+(0.18,0.18)--M+(0,0.18),linewidth(0.5));
 dot(O);dot(M);
-label("$O$",O,W);label("$P$",P,E);label("$A$",A,N);label("$B$",B,S);label("$M$",M,dir(-135));'''
+label("$O$",O,W);label("$P$",P,E);label("$A$",A,NE);label("$B$",B,SE);label("$M$",M,dir(-135));'''
 b.add(1785275,1,r'''Two tangents $PA$ and $PB$ are drawn to a circle with centre $O$ from an external point $P$, touching the circle at $A$ and $B$. Prove that $OP$ is the perpendicular bisector of $AB$.''',
 r'''\textbf{Equal tangents.} A tangent is perpendicular to the radius at the point of contact, so $\angle OAP=\angle OBP=90^\circ$. The right triangles $OAP$ and $OBP$ have the common hypotenuse $OP$ and equal legs $OA=OB$ (radii), so they are congruent (hypotenuse-leg), and $PA=PB$.
 '''+asy(fig,'6cm')+r'''

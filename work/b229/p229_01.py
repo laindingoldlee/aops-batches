@@ -290,7 +290,7 @@ mints left. So she \textbf{never} finishes the mints: there is no such day. (The
 note='Problem 1 of a "Devil\'s Night" set, kept as stated: with these numbers the supply grows, so the answer is that she never finishes (the poster gives no answer). Problems 2 and 3 are dropped (see screening).')
 
 # ---------------- 1742448 train and bus
-b.add(1742448,1,r'''Walking at $5$ km/h, I miss the train by $7$ minutes. If I go by bus at $30$ km/h, I arrive $13$ minutes early. How far is the station from my house?''',
+b.add(1742448,1,r'''Walking at $5$ kilometres per hour, I miss the train by $7$ minutes. If I go by bus at $30$ kilometres per hour, I arrive $13$ minutes early. How far is the station from my house?''',
 r'''Let the distance be $d$ km. Walking takes $\dfrac d5$ hours and the bus $\dfrac d{30}$ hours; the difference is $7+13=20$ minutes $=\dfrac13$ hour. So $\dfrac d5-\dfrac d{30}=\dfrac d6=\dfrac13$, and $d=\boxed{2\text{ km}}$. (Walking takes $24$ minutes, the bus $4$ minutes.)''',
 'Distance, rate, and time|Linear equations',2)
 

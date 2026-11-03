@@ -101,12 +101,24 @@ The units digit is $\boxed{7}$.''',
 note='The poster says the problem is on the 2003 AMC 10A; this was not confirmed, so no source is recorded.')
 
 # ---------------- 1748211 lattice points hyperbola
+fig=r'''import graph;
+pair hp(real t){return (2*cosh(t),2*sinh(t));} pair hm(real t){return (-2*cosh(t),2*sinh(t));}
+draw((-4.2,0)--(4.4,0),gray,Arrow(5));draw((0,-3.4)--(0,3.6),gray,Arrow(5));
+label("$x$",(4.4,0),E,gray);label("$y$",(0,3.6),N,gray);
+draw((-3.3,-3.3)--(3.3,3.3),gray+dashed);draw((-3.3,3.3)--(3.3,-3.3),gray+dashed);
+draw(graph(hp,-1.15,1.15),blue+linewidth(0.9));draw(graph(hm,-1.15,1.15),blue+linewidth(0.9));
+pair[] P={(2,0),(-2,0),(2.5,1.5),(2.5,-1.5),(-2.5,1.5),(-2.5,-1.5)};
+for(pair z:P) dot(z);
+label("$2000$",(2,0),dir(-140),fontsize(8pt));label("$-2000$",(-2,0),dir(-40),fontsize(8pt));
+label("$(2500,1500)$",(2.5,1.5),E);label("$(2500,-1500)$",(2.5,-1.5),E);'''
 b.add(1748211,1,r'''How many lattice points lie on the hyperbola $x^2-y^2=2000^2$?''',
 r'''Write $(x-y)(x+y)=2000^2=2^8\cdot5^6$. The factors $x-y$ and $x+y$ have the same parity (their sum is $2x$); their product is even, so both are even. Put $x-y=2m$ and $x+y=2n$; then
 \[
 mn=2^6\cdot5^6=10^6,
 \]
-and conversely every pair of integers $(m,n)$ with $mn=10^6$ gives the lattice point $(x,y)=(m+n,\,n-m)$, different pairs giving different points. The number $10^6$ has $(6+1)(6+1)=49$ positive divisors, and $m$ may be any positive or negative divisor (then $n=\dfrac{10^6}{m}$), so there are $2\cdot49=\boxed{98}$ lattice points.''',
+and conversely every pair of integers $(m,n)$ with $mn=10^6$ gives the lattice point $(x,y)=(m+n,\,n-m)$, different pairs giving different points (for example $m=250$, $n=4000$ gives $(4250,3750)$, and $m=500$, $n=2000$ gives $(2500,1500)$).
+'''+asy(fig,'6.5cm')+r'''
+The number $10^6$ has $(6+1)(6+1)=49$ positive divisors, and $m$ may be any positive or negative divisor (then $n=\dfrac{10^6}{m}$), so there are $2\cdot49=\boxed{98}$ lattice points.''',
 'Lattice points|Hyperbolas|Divisor counting|Difference of squares|Parity',4,
 note='The poster got 32 and a friend 98; 98 is correct. Checked by brute force.')
 

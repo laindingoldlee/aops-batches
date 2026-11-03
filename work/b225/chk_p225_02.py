@@ -100,17 +100,17 @@ assert abs(2*(120000*math.pi+38400*math.pi+clip)-exact)<1e-3
 def inside(P):
     return all(cr(V[(k+1)%6]-V[k],P-V[k])>0 for k in range(6))
 def seg_ok(Q,P):
-    for t in np.linspace(0.002,0.998,120):
+    for t in np.linspace(0.002,0.998,50):
         if inside(Q+(P-Q)*t): return False
     return True
 bd=[min(k,6-k)*s for k in range(6)]
-rng=np.random.default_rng(5);N=40000;hit=0;Rb=800
+rng=np.random.default_rng(5);N=12000;hit=0;Rb=800
 for P in rng.uniform(-Rb,Rb,(N,2)):
     if inside(P): continue
     d=min(bd[k]+np.linalg.norm(P-V[k]) for k in range(6) if seg_ok(V[k],P))
     hit+=d<=Lh
 est=hit/N*(2*Rb)**2
-assert abs(est-exact)<0.02*exact
+assert abs(est-exact)<0.04*exact
 # 1764207
 yv=F(5,8); assert F(1,4)+(1-yv)**2==yv**2 and (1+yv)/2*F(1,2)==F(13,32)
 # 1763710

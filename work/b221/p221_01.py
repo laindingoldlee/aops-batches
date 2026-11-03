@@ -360,7 +360,7 @@ draw(graph(f,-1.6,1.3),blue+linewidth(0.9));
 pair A=(-1/3,1/3),B=(2/3,0);
 dot(A);dot(B);
 draw((-1/3,0)--A--(0,1/3),dashed+gray);
-label("$A$",A,N);label("$-\dfrac13$",(-1/3,0),S);draw((0,1/3)--(0.04,1/3));label("$\dfrac13$",(0.03,1/3),dir(20),fontsize(9pt));
+label("$A$",A,2*dir(215));label("$-\dfrac13$",(-1/3,0),S);draw((0,1/3)--(0.04,1/3));label("$\dfrac13$",(0.03,1/3),dir(20),fontsize(9pt));
 label("$B$",B,SW);label("$\dfrac23$",(2/3,0),2*N);
 label("$3x+9y=2$",(1.3,f(1.3)),SE,blue);'''
 b.add(1787556,1,r'''The points $A\left(\ ?\ ,\ \dfrac13\right)$ and $B\left(\dfrac23,\ ?\ \right)$ lie on the line $3x+9y=2$. Find the missing coordinates, and then find the slope of the line.''',

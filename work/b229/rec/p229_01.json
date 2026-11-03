@@ -529,7 +529,7 @@
  {
   "topic_id": "1742448",
   "part": 1,
-  "question": "Walking at $5$ km/h, I miss the train by $7$ minutes. If I go by bus at $30$ km/h, I arrive $13$ minutes early. How far is the station from my house?",
+  "question": "Walking at $5$ kilometres per hour, I miss the train by $7$ minutes. If I go by bus at $30$ kilometres per hour, I arrive $13$ minutes early. How far is the station from my house?",
   "solution": "Let the distance be $d$ km. Walking takes $\\dfrac {d}{5}$ hours and the bus $\\dfrac {d}{30}$ hours; the difference is $7+13=20$ minutes $=\\dfrac{1}{3}$ hour. So $\\dfrac {d}{5}-\\dfrac {d}{30}=\\dfrac {d}{6}=\\dfrac{1}{3}$, and $d=\\boxed{2\\text{ km}}$. (Walking takes $24$ minutes, the bus $4$ minutes.)",
   "tags": [
    "Distance, rate, and time",

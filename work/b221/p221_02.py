@@ -40,7 +40,7 @@ draw(O--4*dir(200),linewidth(0.6));draw(O--7*dir(90),blue+linewidth(0.6));draw(O
 label("$4$",2*dir(200),dir(110));
 label("$7$",(0,4.6),E,blue);
 label("$10$",8.5*dir(-30),dir(60));
-label("$O$",O,dir(-95));'''
+label("$O$",O,dir(-115));'''
 b.add(1787424,1,r'''What is the area of the circle whose radius is the average of the radii of two circles with areas $16\pi$ and $100\pi$?''',
 r'''A circle of area $\pi r^2$ has radius $r$, so the two circles have radii $4$ (since $\pi\cdot4^2=16\pi$) and $10$ (since $\pi\cdot10^2=100\pi$). Their average is $\dfrac{4+10}{2}=7$, and the circle of radius $7$ has area $\pi\cdot7^2=\boxed{49\pi}$.
 '''+asy(fig,'5cm')+r'''
@@ -277,7 +277,7 @@ draw(A--B--C--D--cycle,linewidth(0.9));
 draw(A--C,dashed+gray);
 draw(P--A,blue+linewidth(0.8));draw(P--B,blue+linewidth(0.8));draw(P--C,blue+linewidth(0.8));draw(P--D,blue+linewidth(0.8));
 dot(P);
-label("$A$",A,SW);label("$B$",B,NW);label("$C$",C,NE);label("$D$",D,SE);label("$P$",P,dir(-45));
+label("$A$",A,SW);label("$B$",B,NW);label("$C$",C,NE);label("$D$",D,SE);label("$P$",P,2*dir(16));
 label("$1$",(P+A)/2,NW,fontsize(9pt));
 label("$5$",(P+B)/2,E);label("$7$",(P+C)/2+(0.15,-0.15),SE);label("$5$",(P+D)/2,N);'''
 b.add(1785634,5,r'''The distances from a point inside a square to the vertices of the square are, in clockwise order, $1$, $5$, $7$, $5$. Find the area of the square.''',

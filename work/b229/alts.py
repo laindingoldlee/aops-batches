@@ -12,6 +12,7 @@ A={
  "1744764-q01":"Triangle ABC with D on AB, E on BC and F on CA; the cevians AE, CD and BF meet at G. Blue mass labels 40, 24 and 9 are written next to A, B and C.",
  "1744133-q01":"Circle with centre O and perpendicular diameters AB (horizontal) and CD (vertical). From P on the circle, perpendiculars meet AB at Y and CD at Z with right-angle marks; the blue segment YZ and the dashed radius OP are the diagonals of rectangle OYPZ.",
  "1743778-q01":"Coordinate axes with triangle ABC in black, A(-4,2), B(1,2), C(-1,5), and its blue reflection A'B'C' in the y-axis. The overlapping region, triangle B'BX with X on the y-axis, is shaded gray.",
+ "1743083-q01":"Regular octagon with every second vertex joined to form a blue square; the other four vertices are joined by a gray dashed square.",
  "1743083-q03":"Oblique drawing of cube ABCDEFGH with bottom face ABCD and top face EFGH. J is the midpoint of edge FB and I the midpoint of edge HD; the cross-section EJCI is shaded, with EJ and JC drawn solid blue and CI and IE dashed blue.",
  "1743083-q04":"Square ABCD with A at the bottom left, the diagonal AC and the segment from B to the midpoint E of CD meeting at F. Quadrilateral AFED is shaded gray and triangle BFC is shaded light blue.",
  "1742862-q01":"A triangle with sides labelled a, b and c, the longest side c along the bottom.",

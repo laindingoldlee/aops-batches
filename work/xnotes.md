@@ -3,3 +3,5 @@
 - b229 1743778-q01 (2015 MATHCOUNTS Chapter Sprint #24, triangle reflected in y-axis, 1.5) repeats b230 draft 1736178-q01: b230 should alias to b229
 - b227 1757367-q01 (two right triangles, areas 3(a+b) and 2(c+d), answer 50) repeats b230 draft 1735148-q01: b230 should alias to b227
 - b223 1605801-q01 (2018 MATHCOUNTS School Sprint #22, median of {1.7,1.1,1.4,2.1,2.3,s}, 0.35) repeats b224 draft 1768268-q01: b224 should alias to b223
+- b222 1777432-q01 (cube faces, 6 colours, adjacent faces different, 230) repeats b223 draft 1777424-q01: b223 should alias to b222
+- b225 draft 1765675-q01 (least Heronian area, longest side 17) repeats prior aops-topic-1945887-q01 (b222 1784100-q01 is aliased to it): b225 should alias to aops-topic-1945887-q01

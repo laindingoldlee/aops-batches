@@ -133,8 +133,14 @@ The number of necklaces is
 note='Burnside count; the method was checked against brute force on smaller necklaces.')
 
 # ---------------- 1743083 2018 AMC 8 variants
+fig=r'''pair[] V;for(int i=0;i<8;++i)V[i]=dir(22.5+45*i);
+draw(V[0]--V[1]--V[2]--V[3]--V[4]--V[5]--V[6]--V[7]--cycle,linewidth(0.9));
+draw(V[0]--V[2]--V[4]--V[6]--cycle,blue+linewidth(1));draw(V[1]--V[3]--V[5]--V[7]--cycle,gray+dashed);
+for(int i=0;i<8;++i)dot(V[i]);'''
 b.add(1743083,1,r'''Four of the eight vertices of a regular octagon are chosen at random and joined to form a quadrilateral. What is the probability that none of the sides of the quadrilateral is also a side of the octagon?''',
-r'''The quadrilateral (with its vertices in cyclic order) has a side of the octagon exactly when two chosen vertices are adjacent on the octagon. So we need $4$ of the $8$ vertices of a cycle with no two adjacent. Between consecutive chosen vertices there must be at least one unchosen vertex, and there are only $8-4=4$ unchosen ones, so exactly one unchosen vertex lies in each gap: the chosen vertices alternate. That gives $2$ sets (the two ``squares''). The probability is $\dfrac{2}{\dbinom84}=\dfrac2{70}=\boxed{\dfrac1{35}}$.''',
+r'''The quadrilateral (with its vertices in cyclic order) has a side of the octagon exactly when two chosen vertices are adjacent on the octagon. So we need $4$ of the $8$ vertices of a cycle with no two adjacent. Between consecutive chosen vertices there must be at least one unchosen vertex, and there are only $8-4=4$ unchosen ones, so exactly one unchosen vertex lies in each gap: the chosen vertices alternate. That gives $2$ sets, the two inscribed squares (one in blue, the other gray dashed):
+'''+asy(fig,'4cm')+r'''
+The probability is $\dfrac{2}{\dbinom84}=\dfrac2{70}=\boxed{\dfrac1{35}}$.''',
 'Probability|Combinations|Regular polygons',3,
 note='A variation (by the poster) of 2018 AMC 8 Problem 23.')
 b.add(1743083,2,r'''How many powers of $4$ lie between $2^8+1$ and $2^{18}+1$, inclusive?''',
