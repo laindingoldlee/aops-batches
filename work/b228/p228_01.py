@@ -171,7 +171,7 @@ and $2b\le r'+2b<3b$.
 
 \textbf{Uniqueness.} Suppose $a=q_1b+r_1=q_2b+r_2$ with $2b\le r_1,r_2<3b$. Then $r_1-r_2=(q_2-q_1)b$ is a multiple of $b$, and $-b<r_1-r_2<b$. The only multiple of $b$ strictly between $-b$ and $b$ is $0$, so $r_1=r_2$, and then $(q_2-q_1)b=0$ with $b>0$ gives $q_1=q_2$. $\blacksquare$''',
 'Remainders and congruences|Divisibility',2,
-note='Burton, Elementary Number Theory, exercise; problem 1 of the post.')
+note='Burton, Elementary Number Theory, exercise; problem 1 of the post. Repeat of an earlier record (aliased).')
 b.add(1752100,2,r'''Prove that $3a^2-1$ is never a perfect square, for any integer $a$.''',
 r'''Every integer $m$ is congruent to $0$, $1$ or $2$ modulo $3$, so $m^2\equiv0$, $1$ or $4\equiv1\pmod3$: a perfect square leaves remainder $0$ or $1$ on division by $3$. But
 \[

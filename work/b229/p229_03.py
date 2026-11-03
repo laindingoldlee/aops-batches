@@ -158,7 +158,7 @@ draw(P1--Q,blue);draw(P1--(Q.x,P1.y),dashed);draw(Q--(Q.x,P1.y),dashed);
 draw(Q--(Q.x,4),dotted);draw(P1--(0,1),dotted);
 dot(P1);dot(P2);dot(Q);
 label("$r$",(0.5,1),N);label("$2r$",(Q.x,3),E);
-label("$3r$",(P1+Q)/2,dir(110),blue);label("$r$",(Q.x,1.5),E);label("$d$",((1+Q.x)/2,1),S);'''
+label("$3r$",P1+0.75*(Q-P1),dir(110),blue);label("$r$",(Q.x,1.5),E);label("$d$",(2.65,1),S);'''
 b.add(1741490,1,r'''Three circles are inscribed in a rectangle of width $w$ and height $h$, as shown. Two of the circles are congruent; one is tangent to the left and top sides, the other to the left and bottom sides, and they are tangent to each other. The third circle is larger and is tangent to the top, bottom and right sides of the rectangle and to both smaller circles. What is the ratio of $h$ to $w$? Express your answer as a decimal to the nearest hundredth.
 '''+asy(qfig,'5cm'),
 r'''Let the small radius be $r$. The two small circles are stacked along the left side, so $h=4r$, and the large circle touches the top and bottom, so its radius is $2r$. Put the lower small centre at $(r,r)$ and the large centre at $(x,2r)$.
@@ -217,12 +217,12 @@ fig1=r'''pair O=(0,0);pair A=5*dir(90),B=5*dir(150),C=5*dir(90-2*aSin(0.6));
 draw(circle(O,5),gray);draw(A--B--C--cycle,linewidth(0.9));
 dot(O);label("$O$",O,S);
 label("$A$",A,N);label("$B$",B,W);label("$C$",C,E);
-label("$5$",(A+B)/2,dir(120));label("$6$",(A+C)/2,dir(50));'''
+label("$5$",(A+B)/2+1.15*dir(120));label("$6$",(A+C)/2,dir(50));'''
 fig2=r'''pair O=(0,0);pair A=5*dir(90),B=5*dir(150),C=5*dir(90+2*aSin(0.6));
 draw(circle(O,5),gray);draw(A--B--C--cycle,linewidth(0.9));
 dot(O);label("$O$",O,S);
 label("$A$",A,N);label("$B$",B,NW);label("$C$",C,W);
-label("$5$",(A+B)/2,dir(120));label("$6$",(A+C)/2,dir(-30));'''
+label("$5$",(A+B)/2+1.15*dir(120));label("$6$",(A+C)/2,dir(-30));'''
 b.add(1741603,1,r'''A triangle inscribed in a circle of radius $5$ has two sides of lengths $5$ and $6$. Find all possible lengths of the third side.''',
 r'''Let $AB=5$ and $AC=6$, with circumradius $R=5$. By the extended law of sines, $\sin C=\dfrac{AB}{2R}=\dfrac12$ and $\sin B=\dfrac{AC}{2R}=\dfrac35$. So $C=30^\circ$ or $150^\circ$, and $\cos B=\pm\dfrac45$.
 

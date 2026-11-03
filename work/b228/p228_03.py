@@ -488,7 +488,7 @@ r'''The sum is between $2$ and $10$, so it must be $3$, $6$ or $9$. Sum $3$: $(1
 b.add(1746203,1,r'''Prove that if $a$ is an odd integer, then $a^2\equiv1\pmod8$.''',
 r'''Write $a=2k+1$. Then $a^2=4k^2+4k+1=4k(k+1)+1$. One of $k$ and $k+1$ is even, so $8\mid4k(k+1)$ and $a^2\equiv1\pmod8$. $\blacksquare$''',
 'Remainders and congruences|Parity|Perfect squares',2,
-note='Burton, Elementary Number Theory, exercise; problem 1 of the post.')
+note='Burton, Elementary Number Theory, exercise; problem 1 of the post. Repeat of an earlier record (aliased).')
 b.add(1746203,2,r'''Prove that for every integer $a$, $a^3\equiv0$, $1$ or $6\pmod7$.''',
 r'''Modulo $7$, $a\equiv0,\pm1,\pm2,\pm3$, and $(-a)^3=-a^3$. Since $0^3=0$, $1^3=1$, $2^3=8\equiv1$ and $3^3=27\equiv6\equiv-1\pmod7$, every cube is $\equiv0$ or $\pm1$, i.e.\ $a^3\equiv0,1$ or $6\pmod7$. $\blacksquare$''',
 'Remainders and congruences|Perfect cubes',2)
@@ -497,7 +497,8 @@ r'''If $5\mid a$, then $a^4\equiv0$. Otherwise $a\equiv\pm1$ or $\pm2\pmod5$, so
 'Remainders and congruences|Fermat\'s little theorem',2)
 b.add(1746203,4,r'''Prove that if the integer $a$ is divisible by neither $2$ nor $3$, then $a^2\equiv1\pmod{24}$.''',
 r'''Since $a$ is odd, $a^2\equiv1\pmod8$ (write $a=2k+1$; then $a^2-1=4k(k+1)$ and $k(k+1)$ is even). Since $3\nmid a$, $a\equiv\pm1\pmod3$ and $a^2\equiv1\pmod3$. So $8\mid a^2-1$ and $3\mid a^2-1$, and as $\gcd(3,8)=1$, $24\mid a^2-1$. $\blacksquare$''',
-'Remainders and congruences|Divisibility|Parity',2)
+'Remainders and congruences|Divisibility|Parity',2,
+note='Repeat of an earlier record (aliased).')
 
 # ---------------- 1746596 consecutive
 b.add(1746596,1,r'''If $a,b,c,d$ are consecutive integers (in increasing order), prove that $bc-ad=2$.''',

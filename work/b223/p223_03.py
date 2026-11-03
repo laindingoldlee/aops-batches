@@ -37,7 +37,7 @@ draw(A--Ha,blue+dashed); draw(B--Hb,blue+dashed); draw(C--Hc,blue+dashed);
 real s=0.25;
 void ra(pair F,pair P,pair Q){pair u=unit(P-F),v=unit(Q-F); draw(F+s*u--F+s*u+s*v--F+s*v,blue);}
 ra(Ha,C,A); ra(Hb,B,C); ra(Hc,C,B);
-label("$A$",A+(0,0.45));label("$B$",B,SW);label("$C$",C,SE);
+label("$A$",A+(0.32,-0.72));label("$B$",B,SW);label("$C$",C,SE);
 label("$3$",(A+Ha)/2,W,blue);label("$4$",(B+Hb)/2,dir(150),blue);label("$6$",(C+Hc)/2,dir(45),blue);
 label("$4t$",(B+C)/2,S);label("$3t$",(A+C)/2,dir(-119));label("$2t$",(A+B)/2,dir(-43));'''
 b.add(1772259,3,r'''Find the perimeter of a triangle whose altitudes have lengths $3$, $4$ and $6$.''',

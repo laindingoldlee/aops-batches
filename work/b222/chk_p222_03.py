@@ -56,12 +56,11 @@ for k in range(0,31):
     assert a**3+b**3+c**3==int(str(a)+str(b)+str(c))
     assert str(a)=='1'+'6'*k and str(b)=='5'+'0'*k and str(c)=='3'*(k+1)
 # 1780934: random 6-regular enemy graphs on 20 vertices
-import networkx as nx
-for seed in range(5):
-    Gr=nx.random_regular_graph(6,20,seed=seed)
+for steps in [(1,2,3),(1,3,5),(2,5,7),(1,4,9)]:
+    edge=lambda u,v:min((u-v)%20,(v-u)%20) in steps
     cnt=0
     for t in itertools.combinations(range(20),3):
-        e=sum(Gr.has_edge(u,v) for u,v in itertools.combinations(t,2))
+        e=sum(edge(u,v) for u,v in itertools.combinations(t,2))
         if e in (0,3): cnt+=1
     assert cnt==360
 # 1635242
