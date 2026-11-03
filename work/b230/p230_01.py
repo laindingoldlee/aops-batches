@@ -113,7 +113,7 @@ If $k<n$, the next operation is $+$ or $-$ ($2$ choices) and the remaining $n-1-
 \sum_{k=1}^{n-1}2\left(\dfrac52\right)^{k-1}\cdot2\cdot4^{n-1-k}+2\left(\dfrac52\right)^{n-1}
 =4^{n-1}\sum_{j=0}^{n-2}\left(\dfrac58\right)^{j}+2\left(\dfrac52\right)^{n-1}.
 \]
-The geometric sum is $\dfrac{1-(5/8)^{n-1}}{3/8}$, so the total is
+The geometric sum is $\dfrac{1-\left(\dfrac58\right)^{n-1}}{\dfrac38}$, so the total is
 \[
 \dfrac83\cdot4^{n-1}-\dfrac83\left(\dfrac52\right)^{n-1}+2\left(\dfrac52\right)^{n-1}=\dfrac23\left(4^{n}-\left(\dfrac52\right)^{n-1}\right).
 \]
@@ -199,7 +199,7 @@ Let $AB=w$ and $BC=h$. Then $BE=\dfrac h3$ and $EC=\dfrac{2h}{3}$, and $FC=\dfra
 \]
 Now $AG\parallel CF$, so triangles $APG$ and $CPF$ are similar (alternate angles), and
 \[
-\dfrac{AP}{PC}=\dfrac{AG}{CF}=\dfrac{5w/4}{w/2}=\boxed{\dfrac52}.
+\dfrac{AP}{PC}=\dfrac{AG}{CF}=\dfrac{5w}{4}\cdot\dfrac{2}{w}=\boxed{\dfrac52}.
 \]
 (Check with coordinates $A=(0,0)$, $C=(w,h)$, $E=\left(w,\dfrac h3\right)$, $F=\left(\dfrac w2,h\right)$: the lines meet at $P=\dfrac57\,C$.)''',
 'Rectangles|Similarity|Midpoints|Parallel lines',3,
@@ -264,7 +264,7 @@ r'''Let $E$ be the expected number of throws. The first throw is a $6$ with prob
 \[
 E=1+\dfrac56E\quad\Longrightarrow\quad\dfrac16E=1\quad\Longrightarrow\quad E=\boxed{6}.
 \]
-(Directly: $E=\sum_{k\ge1}k\left(\dfrac56\right)^{k-1}\dfrac16=\dfrac16\cdot\dfrac{1}{(1-5/6)^2}=6$.)''',
+(Directly: $E=\sum_{k\ge1}k\left(\dfrac56\right)^{k-1}\dfrac16=\dfrac16\cdot\dfrac{1}{\left(1-\dfrac56\right)^2}=6$.)''',
 'Expected value|Geometric distribution|Dice probability|Recursive probability',3,
 note='From Fifty Challenging Problems in Probability (Mosteller); the poster asks for an explanation of the book solution.')
 

@@ -74,7 +74,13 @@ r'''Such a triangle has two equal sides $a$ and a different third side $b$, with
 \item $a=2,3,4,5$: $b=1,\dots,2a-1$ except $a$: $2,4,6,8$ choices;
 \item $a=6,\dots,10$: $b=1,\dots,10$ except $a$: $9$ choices each.
 \end{itemize}
-Different pairs $(a,b)$ give different triangles. The total is $2+4+6+8+5\cdot9=\boxed{65}$, choice (1).''',
+Different pairs $(a,b)$ give different triangles. The total is $2+4+6+8+5\cdot9=\boxed{65}$, choice (1).
+'''+asy(r'''pair B=(0,0),C=(3,0),A=(1.5,2.6);
+draw(A--B--C--cycle,linewidth(0.9));
+void tk(pair P,pair Q){pair m=(P+Q)/2,v=0.12*unit(rotate(90)*(Q-P));draw(m-v--m+v,linewidth(0.7));}
+tk(A,B);tk(A,C);
+label("$a$",A+0.3*(B-A),W);label("$a$",A+0.3*(C-A),E);label("$b<2a$",(B+C)/2,S);''','3.5cm')+r'''
+The sketch shows a triangle with equal sides $a$ and base $b$; the triangle inequality only requires $b<a+a$.''',
 'Isosceles triangles|Triangle inequality|Casework|Systematic counting',3)
 
 # ---------------- 1763629 X+Y+Z=10 with lower bounds
@@ -312,7 +318,7 @@ dot(Wp);dot(X);dot(Y);dot(Z);dot(M);
 label("$W(2,1)$",Wp,dir(-40));label("$X(6,3)$",X,E);label("$Y(4,7)$",Y,N);label("$Z(0,5)$",Z,W);label("$(3,4)$",M,1.5*dir(27));'''
 b.add(1762366,148,r'''Square $WXYZ$ has vertices $W(2,1)$, $X(a,b)$, $Y(4,7)$ and $Z(c,d)$, in this order. What is the value of $|ab-cd|$?''',
 r'''In the order $W,X,Y,Z$, the vertices $W$ and $Y$ are opposite, so $WY$ is a diagonal. (They need not be adjacent, which is why ``$W$ and $Y$ do not form a side'' is no obstacle.) The centre is the midpoint $M=(3,4)$, and $\overrightarrow{MW}=(-1,-3)$. The other two vertices are obtained by rotating this vector through $\pm90^\circ$: $(3,-1)$ and $(-3,1)$. So $X$ and $Z$ are $(6,3)$ and $(0,5)$ in some order.
-'''+asy(fig,'5cm')+r'''
+'''+asy(fig,'6.5cm')+r'''
 Either way $|ab-cd|=|6\cdot3-0\cdot5|=\boxed{18}$.''',
 'Squares|Coordinate geometry|Rotations|Midpoints',3,source=src('MATHCOUNTS Handbook',None,None,148),
 note='The poster thought the vertices could not form a square (W and Y are opposite vertices, not adjacent) and got 10; the answer is 18.')
@@ -387,7 +393,7 @@ r'''Between hearing the two shots the man travels for $230$ seconds at speed $v$
 \[
 240+\dfrac{d-230v}{1265}=\dfrac{d}{1265}+230\ \Longrightarrow\ 230v=10\cdot1265\ \Longrightarrow\ v=55 .
 \]
-In words: in $230$ seconds the train covers the distance that sound covers in $10$ seconds. The speed is $\boxed{55\text{ ft/s}}$, which is $37.5$ miles per hour.''',
+In words: in $230$ seconds the train covers the distance that sound covers in $10$ seconds. The speed is $\boxed{55}$ feet per second, which is $37.5$ miles per hour.''',
 'Distance, rate, and time|Relative speed|Unit conversion',3)
 
 # ---------------- 1763222 AMC 10A 2011 #25
@@ -396,7 +402,16 @@ b.add(1763222,1,r'''Let $R$ be a square region and $n\ge4$ an integer. A point $
 $\textbf{(A)}\ 1500\qquad\textbf{(B)}\ 1560\qquad\textbf{(C)}\ 2320\qquad\textbf{(D)}\ 2480\qquad\textbf{(E)}\ 2500$''',
 r'''Let $R$ be the unit square $[0,1]^2$ and $X=(x,y)$ an interior point.
 
-\textbf{The rays must go to the four corners.} Each of the $n$ regions is a triangle with a vertex at $X$; a region containing a corner of the square in the interior of its boundary arc would not be a triangle. So four of the rays go to the corners, and they split $R$ into four triangles on the sides with areas $\dfrac x2,\dfrac{1-x}{2},\dfrac y2,\dfrac{1-y}{2}$ (base $1$, height the distance from $X$ to that side).
+\textbf{The rays must go to the four corners.} Each of the $n$ regions is a triangle with a vertex at $X$; a region containing a corner of the square in the interior of its boundary arc would not be a triangle. So four of the rays go to the corners, and they split $R$ into four triangles on the sides with areas $\dfrac x2,\dfrac{1-x}{2},\dfrac y2,\dfrac{1-y}{2}$ (base $1$, height the distance from $X$ to that side). The sketch shows the case $n=10$, $X=\left(\dfrac25,\dfrac35\right)$: the solid rays go to the corners and the dashed rays cut the four side triangles into $2,3,3,2$ equal parts.
+'''+asy(r'''real u=5; pair X=(0.4u,0.6u);
+pair[] K={(0,0),(u,0),(u,u),(0,u)};
+filldraw((0,0)--(u,0)--(u,u)--(0,u)--cycle,white,linewidth(0.9));
+for(int i=0;i<4;++i) draw(X--K[i],linewidth(0.8));
+pair[] Pp={(0,0.5u),(u,u/3),(u,2u/3),(u/3,0),(2u/3,0),(0.5u,u)};
+for(int i=0;i<6;++i) draw(X--Pp[i],blue+dashed);
+dot(X);label("$X$",X+0.62*dir(103));
+label("$x$",(0.2u,0.6u),N);label("$1-x$",(3.9,0.6u),S);
+draw(X--(0,0.6u),dotted);draw(X--(u,0.6u),dotted);''','5cm')+r'''
 
 \textbf{Counting.} The remaining rays split each of these four triangles into triangles with a common height, so each triangle on a side is cut into some number $m_i\ge1$ of pieces of area $\dfrac1n$. Hence $\dfrac x2=\dfrac{m_1}{n}$ and $\dfrac{1-x}{2}=\dfrac{m_2}{n}$, so $x=\dfrac{2m_1}{n}$, and similarly for $y$. Conversely, if $x$ and $y$ are multiples of $\dfrac2n$ strictly between $0$ and $1$, dividing each side into equal parts gives $n$ triangles of area $\dfrac1n$ (then $m_1+m_2+m_3+m_4=\dfrac n2+\dfrac n2=n$).
 

@@ -92,7 +92,7 @@ b.add(1737089,1,r'''Explain why $0^0$ is often left undefined: show that
 and conclude that no value assigned to $0^0$ makes the function $f(x,y)=x^y$ (defined for $x\ge0$, $y>0$ and for $x>0$, $y=0$) continuous at $(0,0)$. Why do algebra and combinatorics nevertheless use the convention $0^0=1$?''',
 r'''For every $x>0$ we have $x^0=1$, so $\lim_{x\to0^+}x^0=1$. For every $y>0$ we have $0^y=0$, so $\lim_{y\to0^+}0^y=0$.
 
-If $f$ were continuous at $(0,0)$ with some value $f(0,0)=c$, then $f$ would tend to $c$ along every path into $(0,0)$. Along the path $(x,0)$, $x\to0^+$, the values are all $1$, forcing $c=1$; along the path $(0,y)$, $y\to0^+$, the values are all $0$, forcing $c=0$. This is impossible, so no choice of $0^0$ makes $x^y$ continuous at $(0,0)$; this is why $0^0$ is called an indeterminate form in analysis. (Other paths give other limits too: along $y=\dfrac{1}{\ln(1/x)}$ the value $x^y=e^{-1}$ is constant.)
+If $f$ were continuous at $(0,0)$ with some value $f(0,0)=c$, then $f$ would tend to $c$ along every path into $(0,0)$. Along the path $(x,0)$, $x\to0^+$, the values are all $1$, forcing $c=1$; along the path $(0,y)$, $y\to0^+$, the values are all $0$, forcing $c=0$. This is impossible, so no choice of $0^0$ makes $x^y$ continuous at $(0,0)$; this is why $0^0$ is called an indeterminate form in analysis. (Other paths give other limits too: along $y=\dfrac{1}{\ln\dfrac1x}$ the value $x^y=e^{-1}$ is constant.)
 
 In algebra and combinatorics, however, $a^0$ means the empty product, which is $1$ for every $a$, and with $0^0=1$ formulas such as $(1+x)^n=\sum_k\binom nk x^k$ at $x=0$, $\sum_k a_kx^k$ at $x=0$, and ``the number of functions from an $m$-set to an $n$-set is $n^m$'' (one function from the empty set) hold without exceptions. So $0^0=1$ is the useful convention there, while in limits $0^0$ has no single value.''',
 'Exponents|Calculus|Counterexamples',3,
@@ -116,12 +116,20 @@ note='One of four problems in the post (q01-q04 in order).')
 b.add(1736178,2,r'''If Desi flips a fair coin eight times, what is the probability that he gets the same number of heads and tails? Express your answer as a common fraction.''',
 r'''He needs exactly $4$ heads in $8$ flips. There are $\binom84=70$ such sequences out of $2^8=256$, so the probability is $\dfrac{70}{256}=\boxed{\dfrac{35}{128}}$.''',
 'Binomial probability|Combinations|Probability',2)
+fig=r'''pair[] Q={(0,0),(2,0),(2,2),(0,2)};
+draw(Q[0]--Q[1]--Q[2]--Q[3]--cycle,linewidth(0.9));draw(Q[1]--(3.1,0),dashed);
+draw(arc(Q[1],0.45,0,90));label("$90^\circ$",Q[1]+0.8*dir(45),fontsize(8pt));
+pair c=(5.6,1); real R=1.08; pair[] G; for(int i=0;i<8;++i) G.push(c+R*dir(-112.5+45*i));
+draw(G[0]--G[1]--G[2]--G[3]--G[4]--G[5]--G[6]--G[7]--cycle,linewidth(0.9));
+pair e=G[1]+0.95*unit(G[1]-G[0]); draw(G[1]--e,dashed);
+draw(arc(G[1],0.45,degrees(G[1]-G[0]),degrees(G[2]-G[1])));label("$45^\circ$",G[1]+0.85*dir((degrees(G[1]-G[0])+degrees(G[2]-G[1]))/2),fontsize(8pt));'''
 b.add(1736178,3,r'''For positive integers $n$ and $m$, each exterior angle of a regular $n$-sided polygon is $45$ degrees larger than each exterior angle of a regular $m$-sided polygon. One example is $n=4$ and $m=8$, because the exterior angles of a square and a regular octagon are $90^\circ$ and $45^\circ$. What is the greatest possible value of $m$?''',
 r'''The exterior angle of a regular $k$-gon is $\dfrac{360^\circ}{k}$, so
 \[
 \dfrac{360}{n}-\dfrac{360}{m}=45\iff\dfrac8n-\dfrac8m=1\iff 8m-8n=mn\iff(8-n)(m+8)=64 .
 \]
-Since $m+8>8$, the factor $8-n$ is a positive divisor of $64$ less than $8$, i.e.\ $1$, $2$ or $4$, and $n\ge3$ allows all three: $n=7,m=56$; $n=6,m=24$; $n=4,m=8$. The greatest value is $m=\boxed{56}$. (Check: $\dfrac{360}{7}-\dfrac{360}{56}=\dfrac{2880-360}{56}=45$.)''',
+Since $m+8>8$, the factor $8-n$ is a positive divisor of $64$ less than $8$, i.e.\ $1$, $2$ or $4$, and $n\ge3$ allows all three: $n=7,m=56$; $n=6,m=24$; $n=4,m=8$. The greatest value is $m=\boxed{56}$. (Check: $\dfrac{360}{7}-\dfrac{360}{56}=\dfrac{2880-360}{56}=45$.) The exterior angle is the turn between one side and the extension of the previous side; for the example in the statement:
+'''+asy(fig,'5cm'),
 'Regular polygons|Angle sums|Diophantine equations|Factoring',3)
 b.add(1736178,4,r'''On a standard die each face shows a different number from $1$ through $6$. Jake has a die whose six faces show the expressions
 \[
@@ -156,7 +164,7 @@ note='The post gives the template ___x^3 + ___x^2 - ___x + ___ = 0; the blanks a
 b.add(1729625,1,r'''Bob leaves to go trick-or-treating at 4:20 pm and looks at his analog watch. To the nearest minute, what is the next time at which the angle between the minute hand and the hour hand is the same as when he started? Express your answer in 24-hour time.''',
 r'''At 4:20 the hour hand is at $4\cdot30^\circ+20\cdot\dfrac12^\circ=130^\circ$ (measured clockwise from 12) and the minute hand at $120^\circ$, so the angle is $10^\circ$ with the minute hand behind.
 
-The minute hand gains $6-\dfrac12=\dfrac{11}{2}$ degrees per minute on the hour hand. The angle is next $10^\circ$ when the minute hand is $10^\circ$ \emph{ahead}, i.e.\ after it has gained $20^\circ$, which takes $\dfrac{20}{11/2}=\dfrac{40}{11}\approx3.64$ minutes. That is about 4:23.6 pm, so to the nearest minute the answer is $\boxed{16{:}24}$.''',
+The minute hand gains $6-\dfrac12=\dfrac{11}{2}$ degrees per minute on the hour hand. The angle is next $10^\circ$ when the minute hand is $10^\circ$ \emph{ahead}, i.e.\ after it has gained $20^\circ$, which takes $20\div\dfrac{11}{2}=\dfrac{40}{11}\approx3.64$ minutes. That is about 4:23.6 pm, so to the nearest minute the answer is $\boxed{16{:}24}$.''',
 'Clock problems|Relative speed|Calendar and clock problems',3,
 note='The phrase "he checks his watch every minute" is ignored, as "to the nearest minute" asks for the rounded time of the exact coincidence (16:23.6, i.e. 16:24). If instead the angle had to be exactly 10 degrees at a whole minute, the next such time would be 19:40.')
 b.add(1729625,2,r'''What is the tens digit of $2^{2041}$?''',
@@ -333,7 +341,7 @@ The median is the $8$th: $\boxed{1878}$.''',
 b.add(1735512,89,r'''Gavin goes for a run at a constant pace of $9$ minutes per mile. Ten minutes later, Lars goes for a run along the same route at a constant pace of $7$ minutes per mile. How many minutes does it take Lars to reach Gavin?''',
 r'''When Lars starts, Gavin is $\dfrac{10}{9}$ mile ahead. Their speeds are $\dfrac19$ and $\dfrac17$ mile per minute, so Lars closes the gap at $\dfrac17-\dfrac19=\dfrac2{63}$ mile per minute. He reaches Gavin after
 \[
-\dfrac{10/9}{2/63}=\dfrac{10}{9}\cdot\dfrac{63}{2}=\boxed{35}\text{ minutes}.
+\dfrac{10}{9}\div\dfrac{2}{63}=\dfrac{10}{9}\cdot\dfrac{63}{2}=\boxed{35}\text{ minutes}.
 \]
 (Check: Lars runs $5$ miles in $35$ minutes, and Gavin runs $5$ miles in $45=10+35$ minutes.)''',
 'Relative speed|Distance, rate, and time',2,source=src('MATHCOUNTS Handbook',2019,None,89,rnd='Warm-Up 6'))
@@ -538,7 +546,7 @@ Let $\varphi=\angle DMO$. Since $I$ is equidistant from the lines $MO$ and $MD$,
 \[
 \tan\dfrac\varphi2=\dfrac{11}{r_0},\qquad \tan\varphi=\dfrac{24}{r_0}.
 \]
-By the double-angle formula, $\dfrac{2\cdot11/r_0}{1-121/r_0^2}=\dfrac{24}{r_0}$, so $22=24\left(1-\dfrac{121}{r_0^2}\right)$, which gives $\dfrac{121}{r_0^2}=\dfrac1{12}$ and $r_0^2=1452$, $r_0=22\sqrt3$. The inradius of an equilateral triangle with side $s$ is $\dfrac{s}{2\sqrt3}$, so
+By the double-angle formula, $\dfrac{22}{r_0}\div\left(1-\dfrac{121}{r_0^2}\right)=\dfrac{24}{r_0}$, so $22=24\left(1-\dfrac{121}{r_0^2}\right)$, which gives $\dfrac{121}{r_0^2}=\dfrac1{12}$ and $r_0^2=1452$, $r_0=22\sqrt3$. The inradius of an equilateral triangle with side $s$ is $\dfrac{s}{2\sqrt3}$, so
 \[
 AB=2\sqrt3\,r_0=2\sqrt3\cdot22\sqrt3=\boxed{132}.
 \]

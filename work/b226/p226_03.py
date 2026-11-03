@@ -236,7 +236,7 @@ draw((-29/7-0.9*1.4,26/7+0.9*2.1)--(M+1.4*(2,-3)),dashed+blue);
 draw(A--B,gray+dashed);
 draw(P--A,red+linewidth(0.8));draw(P--B,red+linewidth(0.8));
 dot(A);dot(B);dot(P);
-label("$A(-6,0)$",A,SE);label("$B(0,4)$",B,E);label("$P$",P,W);
+label("$A(-6,0)$",A,SE);label("$B(0,4)$",B,E);label("$P$",P,1.8*dir(190));
 label("$y=2x+12$",(-2.9,6.2),W);
 label("$x$",(2,0),S);label("$y$",(0,6),W);'''
 b.add(1759331,1,r'''A line with slope $2$ passes through $A(-6,0)$. Let $B=(0,4)$. Find the coordinates of the point $P$ on the line such that $PA=PB$.''',
@@ -267,7 +267,7 @@ draw((-0.5,0.5)--(4,5),linewidth(0.8));
 draw(A--P--B,red+linewidth(0.9));
 draw(A1--P,red+dashed);draw(A--A1,gray+dotted);
 dot(A);dot(B);dot(A1);dot(P);
-label("$A(1,2)$",A,W);label("$B(3,4)$",B,SE);label("$A'(1,-2)$",A1,E);label("$P$",P,2*dir(-60));
+label("$A$",A,1.5*W);label("$B(3,4)$",B,SE);label("$A'(1,-2)$",A1,E);label("$P$",P,2*dir(-60));
 label("$y=x+1$",(4,5),E);label("$x$",(4.5,0),S);label("$y$",(0,5),W);'''
 b.add(1759220,1,r'''The points $A(1,2)$ and $B(3,b)$ lie on the graph of $y=x+a$, where $a$ is a constant. A point $P$ is chosen on the $x$-axis so that $AP+BP$ is as small as possible. Find the coordinates of $P$.''',
 r'''From $2=1+a$ we get $a=1$, so the line is $y=x+1$ and $b=4$. Reflect $A$ in the $x$-axis to $A'(1,-2)$. For every $P$ on the $x$-axis, $AP=A'P$, so $AP+BP=A'P+PB\ge A'B$, with equality exactly when $P$ lies on segment $A'B$.

@@ -393,11 +393,11 @@ r'''Measure times in minutes after 3:00: Bob arrives at $B$ uniform on $[0,60]$,
 
 Write $M=15+V$ with $V$ uniform on $[0,60]$. Then $M-B=15+(V-B)$, and $D=V-B$ has the triangular density $\dfrac{60-|x|}{3600}$ on $[-60,60]$. The condition $0<M-B<L$ means $-15<D<L-15$, an interval inside $[-15,0]$, where the density is $\dfrac{60+x}{3600}$. Substituting $y=x+15$, for a fixed $L$:
 \[
-P(0<M-B<L)=\int_0^L\dfrac{45+y}{3600}\,dy=\dfrac{45L+L^2/2}{3600}.
+P(0<M-B<L)=\int_0^L\dfrac{45+y}{3600}\,dy=\dfrac{45L+\dfrac{L^2}{2}}{3600}.
 \]
 Averaging over $L$: $E[L]=10$ and $E[L^2]=\dfrac{15^3-5^3}{3\cdot10}=\dfrac{325}3$, so
 \[
-P(\text{interrupted})=\dfrac{45\cdot10+\dfrac12\cdot\dfrac{325}{3}}{3600}=\dfrac{3025/6}{3600}=\dfrac{121}{864}.
+P(\text{interrupted})=\dfrac{45\cdot10+\dfrac12\cdot\dfrac{325}{3}}{3600}=\dfrac{3025}{6\cdot3600}=\dfrac{121}{864}.
 \]
 The probability that Bob rages is $\dfrac12\cdot\dfrac{121}{864}=\boxed{\dfrac{121}{1728}}\approx0.070$.''',
 'Geometric probability|Probability|Independent events|Calculus',6,

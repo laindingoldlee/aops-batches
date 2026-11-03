@@ -297,7 +297,7 @@ r'''Label the vertices $V_0,\dots,V_5$ in order, with the leash tied at $V_0$; $
 '''+asy(fig,'8cm')+r'''
 \textbf{The clipped sector.} Put $V_3$ at the origin with the line $V_3V_0$ as the vertical axis. Then $V_2$ is at horizontal distance $120\cos30^\circ=60\sqrt3$ from the axis, and the sector at $V_2$ consists of the directions from straight up (along $V_1V_2$ extended) to the direction of $V_2V_3$, which makes $30^\circ$ with the horizontal. Measure the angle $\theta$ from the upward vertical towards $V_3$, so $\theta$ runs from $0$ to $60^\circ$. In direction $\theta$ the axis is at distance $\dfrac{60\sqrt3}{\sin\theta}$ from $V_2$, and the arc of radius $360$ meets the axis at $X$, where $\sin\theta_X=\dfrac{60\sqrt3}{360}=\dfrac{\sqrt3}{6}$. The part of the sector on our side is the sector minus the piece beyond the axis:
 \[
-21600\pi-\int_{\theta_X}^{\pi/3}\dfrac12\left(360^2-\dfrac{10800}{\sin^2\theta}\right)d\theta
+21600\pi-\int_{\theta_X}^{\dfrac{\pi}{3}}\dfrac12\left(360^2-\dfrac{10800}{\sin^2\theta}\right)d\theta
 =21600\pi-64800\left(\dfrac\pi3-\theta_X\right)+5400\left(\cot\theta_X-\cot\dfrac\pi3\right).
 \]
 Here $\cot\theta_X=\sqrt{11}$, $\cot\dfrac\pi3=\dfrac{1}{\sqrt3}$, and $\dfrac\pi3-\theta_X=\arctan\sqrt{11}-\dfrac\pi6$ (because $\dfrac\pi2-\theta_X$ is the angle whose tangent is $\sqrt{11}$).

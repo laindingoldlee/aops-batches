@@ -1,0 +1,43 @@
+# Alt text for every diagram: key <topic>-qNN -> string or list (several diagrams, in order)
+A={
+ "1568921-q01":"A square of side a+b divided into four shaded a by b rectangles arranged in a pinwheel around a central white square labelled (a-b) squared. The sides are labelled a and b along the bottom and left edges, and each rectangle is labelled ab.",
+ "1738860-q01":"Rectangle ABCD with A bottom left, B bottom right, C top right, D top left. F is the midpoint of DC (tick marks on both halves) and E is on BC one third of the way up from B. Diagonal AC and segment FE meet at point P. Segment FE is extended (dashed) beyond E to G on line AB extended beyond B.",
+ "1737416-q01":"Triangle ABC with AB = 14, AC = 13, BC = 15, inscribed in a gray circle with centre X. Blue segments XB and XC form the central angle at X, marked with an arc and labelled 2 angle A.",
+ "1736828-q01":"A 5 by 5 square with gray 1 by 1 squares cut from its corners. A blue tilted square has one vertex on each side of the 5 by 5 square; each of its sides passes through an inner corner of a cut-out square (marked with dots, one labelled P). Along the bottom side the segments to the left and right of the tilted square's vertex are labelled a and 5 - a.",
+ "1737548-q01":"A 5 by 5 square with gray 1 by 1 corner squares cut away. A blue equilateral triangle points downward, with its lowest vertex at the midpoint of the bottom side and its top side along the line through the lower edges of the top cut-outs. Its dashed altitude is labelled 4.",
+ "1736178-q02":[],
+ "447574-q01":"Two isosceles triangles side by side. The first has sides 25, 25 and base 30, split by a dashed altitude 20 into halves 15 and 15. The second has sides 25, 25 and base 40, split by a dashed altitude 15 into halves 20 and 20. Right-angle marks at the feet of both altitudes.",
+ "1731630-q01":"A 6 by 2 grid of unit squares with a red diagonal from the bottom-left corner to the top-right corner, passing through the grid point in the middle. The six squares the diagonal passes through are shaded blue: three in the bottom row on the left and three in the top row on the right.",
+ "1731630-q02":"Oblique drawing of a 4 by 4 by 4 cube made of unit cubes, with the front, top and right faces gridded. On each visible face the central 2 by 2 block of squares is shaded blue.",
+ "1735512-q82":"Two congruent circles centred at A and B with the square AEBF formed by the centres and the intersection points E and F; a right-angle mark at E. Two red lines through A along AE and AF are tangent to circle B. The double wedge between these lines that contains line AB is shaded, and segment AB is dashed.",
+ "1736373-q01":"A cone drawn in perspective with an elliptical base, the back half of the base dashed. A dashed height from the apex to the centre of the base is labelled 3, and a dashed radius to the right edge of the base is labelled 5, with a right-angle mark at the centre.",
+ "1735893-q01":"Coordinate axes with the red line 3x - 2y - 6 = 0 and a blue parabola opening to the upper left, with focus at the origin O. A point P on the lower arm of the parabola is joined by dashed segments to O and to the foot of its perpendicular on the red line, marked with a right angle.",
+ "1729507-q01":["A hexagon inscribed in a gray circle with centre O, with consecutive sides labelled 2, 2, 7, 7, 11, 11 outside the circle.",
+  "Upper semicircle with diameter P0P3 labelled d = 2R. A quadrilateral P0P1P2P3 is inscribed with sides P0P1 = 2, P1P2 = 7, P2P3 = 11, and the diagonals P0P2 and P1P3 are dashed."],
+ "1729507-q02":"Trapezoid ABCD with long base AB at the bottom, short top base DC = 3, left leg AD = 8 and right leg BC = 15. A blue dashed segment from C to E on AB is parallel to DA; AE = 3 and EB = 17, with a right-angle mark at C between CE and CB.",
+ "1729507-q03":"Right triangle DOM with the right angle at O, D at the top and M to the right; DO has a dimension arrow labelled 24 and OM is labelled r0. A blue semicircle centred at I on DO, of radius 11, is tangent to OM at O and to DM at T; the dashed radius IT is labelled 11.",
+ "1734443-q01":"Right triangle ABC with the right angle at C, A at the top and B to the right. M is the midpoint of CB and K the midpoint of CA, with tick marks on the halves. Blue dashed medians AM and BK are labelled 10 and 4 sqrt 10.",
+ "1734443-q02":"A long thin right triangle with the right angle at the lower left: vertical leg x - 1 = 11, horizontal leg 5x = 60 and hypotenuse 4x + 13 = 61.",
+ "1734443-q03":"Triangle ABC with BC horizontal; AB = 5 and AC = sqrt 153. A dashed altitude AH = 3 meets BC at H with a right-angle mark, and a blue segment joins A to a point D on HC.",
+ "1734443-q05":"A small circle with centre O and a large circle with centre A, joined by a dashed segment of length 26. A blue common external tangent segment above both circles is labelled 6 sqrt 17, and a red internal tangent segment crossing between the circles is labelled 4 sqrt 22. Gray radii run to the four points of tangency.",
+ "1734443-q06":"A gray circle with diameter AC and centre X. Triangle ABC has B on the circle near C, with AB = 80 and BC = 18. A blue dashed altitude from B meets AC at D with a right-angle mark.",
+ "1734443-q07":"Triangle ABC with BC = 8 along the bottom, AB = 7, and the angle at B marked 60 degrees; side AC is labelled sqrt 57.",
+ "1734443-q08":"A regular pentagon with centre O. Gray radii run to the two ends of the bottom side, which is labelled 10, and a blue dashed apothem a runs from O to the midpoint of that side. The angle between a radius and the apothem is marked 36 degrees.",
+ "1734443-q09":"A circle with centre C and a point P(3,4) outside it to the left. The blue segment PQ joins P to the nearest point Q of the circle on line PC, and the dashed radius QC is labelled 6.",
+ "1734443-q10":"Oblique drawing of a regular tetrahedron with the front base edge labelled s and the hidden base edge dashed. A blue dashed height h from the apex meets the base at its centre.",
+ "1734443-q11":"Two gray unit circles: the left contains an inscribed regular hexagon and the right an inscribed regular octagon. In each, two blue radii of length 1 to adjacent vertices bound a central angle, marked 60 degrees and 45 degrees.",
+ "1734443-q14":"A dashed vertical axis with two blue circles of radius r, one on each side, their centres on a dashed gray ellipse showing the path of the centre. Below them, a dimension arrow labelled R runs from the axis to the point directly below the right circle's centre, and a radius of the right circle is labelled r.",
+ "1734443-q15":"A horizontal blue river line. The ninja N is to the upper left and the dojo D higher to the upper right. The path goes from N down to a point X on the river and up to D. A dashed segment continues from X to D', the reflection of D below the river, and a dotted segment joins D to D'.",
+ "1734443-q16":"Convex quadrilateral ABCD with dashed perpendicular diagonals AC (horizontal) and BD (vertical) meeting at O, with a right-angle mark. The sides are labelled AB = 21, BC = 26, CD = 32 and AD = sqrt 789.",
+ "1735595-q01":"Coordinate axes with the blue line y = x. The route goes from (-1,4) to a point X on the line and then up to (12,21). The reflection (4,-1) of the start is joined to X by a dashed segment and to the start by a dotted segment.",
+ "1734263-q01":["A unit square and a rhombus with all sides 1 and a 60 degree angle, each side labelled 1.",
+  "A gray circle with the dashed diameter V2V4 labelled 65. The inscribed quadrilateral V1V2V3V4 has sides V1V2 = 25, V2V3 = 39, V3V4 = 52 and V4V1 = 60, with right-angle marks at V1 and V3."],
+ "1734599-q01":"Circle P with chords BD (horizontal) and CE crossing at A. AB = 3, AD = 6 and AC = 8 are labelled, and the short segment AE is drawn thick in blue and labelled 2 1/4.",
+ "1734740-q01":"The square with vertices (1,1), (1,-1), (-1,-1), (-1,1) on coordinate axes. The points P1 = (-1,1) and P2 = (1,1) are the top corners, joined by a blue segment labelled a = 2.",
+ "1734605-q01":"Equilateral hexagon ABCDEF with every side labelled 2 and the angle at B marked 105 degrees. The blue dashed triangle ACE is drawn inside.",
+}
+del A["1736178-q02"]
+Q={
+ "1734599-q01":"Circle P with chords BD (horizontal) and CE crossing at A. The lengths AB = 3, AD = 6 and AC = 8 are labelled; E is the lower end of chord CE.",
+}
+ALT={**{(k,'solution'):v for k,v in A.items()},**{(k,'question'):v for k,v in Q.items()}}

@@ -52,7 +52,7 @@ label("$O$",O,W);label("$K$",K,NW);label("$T$",T,S);
 label("$r$",(K+T)/2,E,blue);
 label("$R-r$",(O+K)/2,N+0.6*W);
 draw(arc(O,0.22,0,22.5),linewidth(0.5));
-label("$22.5^\circ$",0.36*dir(11),E,fontsize(8pt));'''
+label("$22.5^\circ$",0.27*dir(11),E,fontsize(8pt));'''
 b.add(1762490,1,r'''A circular cheese pizza is cut into $8$ congruent $45^\circ$ sectors. On each slice the largest possible circle of pepperoni is placed so that the whole pepperoni circle lies on that slice. What fraction of the pizza is covered by pepperoni?''',
 r'''Let the pizza have radius $R$ and centre $O$. The largest circle inside a $45^\circ$ sector is tangent to both straight edges and to the arc, so its centre $K$ lies on the bisector of the sector, at distance $R-r$ from $O$, where $r$ is its radius.
 '''+asy(fig1,'4.5cm')+asy(fig2,'6cm')+r'''
@@ -185,7 +185,7 @@ draw(A--B--C--cycle,linewidth(0.9));
 draw(O--(9.2,9.2*m),red+linewidth(0.8));
 dot(P);dot(Q);
 label("$A(0,8)$",A,W);label("$B(2,0)$",B,S);label("$C(8,0)$",C,S);label("$O$",O,SW);
-label("$P$",P,W);label("$Q$",Q,N);label("$y=mx$",(9.2,9.2*m),E,red);
+label("$P$",P,1.6*dir(165));label("$Q$",Q,N);label("$y=mx$",(9.2,9.2*m),E,red);
 label("$x$",(10,0),S);label("$y$",(0,9),W);'''
 b.add(1761304,1,r'''Triangle $ABC$ has vertices $A(0,8)$, $B(2,0)$ and $C(8,0)$. A line through the origin cuts the area of triangle $ABC$ in half. Find the sum of the slope and the $y$-intercept of this line.''',
 r'''The area of the triangle is $\dfrac12\cdot6\cdot8=24$. The line through the origin has $y$-intercept $0$; write it as $y=mx$ with $m>0$ (for $m\le0$ the line has $y\le0$ whenever $x\ge0$, so it misses the interior of the triangle, and the line $x=0$ touches it only at $A$). It crosses $AB$ (the line $4x+y=8$) at $P$ and $AC$ (the line $x+y=8$) at $Q$, cutting off triangle $APQ$.
@@ -217,7 +217,7 @@ label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,NE);label("$D$",D,NW);'''
 figs=figq+r'''
 draw(P1--P2--P3--P4--cycle,dashed);
 dot(P1);dot(P2);dot(P3);dot(P4);
-label("$P_1$",P1,S,fontsize(8pt));label("$P_2$",P2,E,fontsize(8pt));label("$P_3$",P3,N,fontsize(8pt));label("$P_4$",P4,W,fontsize(8pt));
+label("$P_1$",P1,2.6*S,fontsize(8pt));label("$P_2$",P2,2.6*E,fontsize(8pt));label("$P_3$",P3,2.6*N,fontsize(8pt));label("$P_4$",P4,2.6*W,fontsize(8pt));
 draw(D--P1,gray+dotted);draw(D--P2,gray+dotted);'''
 b.add(1762011,1,r'''Square $ABCD$ has side length $1$. Four quarter circles of radius $1$ are drawn inside the square, centred at $A$, $B$, $C$ and $D$. What is the area of the region that lies inside all four quarter circles (shaded)?
 '''+asy(figq,'4.5cm'),
