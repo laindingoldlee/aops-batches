@@ -9,7 +9,7 @@ draw((0,0.7)--(0.7,0.7)--(0.7,0));
 draw((3,-0.25)--(3,0.25));draw((9,-0.25)--(9,0.25));
 draw((-0.25,2)--(0.25,2));draw((-0.25,6)--(0.25,6));
 label("$A$",A,N);label("$B$",B,E);label("$C$",C,SW);label("$M$",M,S);label("$K$",K,W);
-label("$10$",(3.9,4.6),blue);label("$4\sqrt{10}$",(7.6,0.55),blue+fontsize(9pt));'''
+label("$10$",(3.9,4.6),blue);label("$4\sqrt{10}$",(6.6,2.5),blue+fontsize(9pt));'''
 b.add(1734443,1,r'''The medians to the legs of a right triangle have lengths $10$ and $4\sqrt{10}$. Find the length of the hypotenuse.''',
 r'''Let the right angle be at $C$, with legs $CB=a$ and $CA=b$, and let $M$ and $K$ be the midpoints of $CB$ and $CA$:
 '''+asy(fig,'6.5cm')+r'''
@@ -92,7 +92,7 @@ draw(circle(X,41),gray(0.6));
 draw(A--B--C--cycle,linewidth(0.9));draw(B--D,blue+dashed);
 draw(D+(0,1.8)--D+(-1.8,1.8)--D+(-1.8,0),blue);
 dot(X);
-label("$A$",A,W);label("$B$",B,N);label("$C$",C,E);label("$X$",X,S);label("$D$",D,S);
+label("$A$",A,W);label("$B$",B,1.3*dir(155));label("$C$",C,E);label("$X$",X,S);label("$D$",D,S);
 label("$80$",(A+B)/2,N);label("$18$",(B+C)/2,dir(10));'''
 b.add(1734443,6,r'''Triangle $ABC$ is inscribed in a circle with centre $X$, where $\angle ABC=90^\circ$, $BC=18$ and $AB=80$. The altitude from $B$ meets $AC$ at $D$. What is the distance between $X$ and $D$?''',
 r'''Since $\angle ABC=90^\circ$, $AC$ is a diameter and $X$ is its midpoint. Here $AC=\sqrt{80^2+18^2}=\sqrt{6724}=82$, so $AX=41$:
@@ -134,7 +134,7 @@ fig=r'''pair P=(3,4),C=(21,10); real r=6; pair Q=C+r*unit(P-C);
 draw(circle(C,r),linewidth(0.9));
 draw(C--Q,dashed);draw(P--Q,blue+linewidth(1));
 dot(P);dot(C);dot(Q,blue);
-label("$P(3,4)$",P,W);label("$C$",C,E);label("$Q$",Q,dir(250));label("$6$",(C+Q)/2,N);'''
+label("$P(3,4)$",P,W);label("$C$",C,E);label("$Q$",Q,1.5*dir(150));label("$6$",(C+Q)/2,N);'''
 b.add(1734443,9,r'''What is the shortest distance from the point $(3,4)$ to the circle $x^2+y^2-42x-20y=-505$?''',
 r'''Completing the squares, $(x-21)^2+(y-10)^2=441+100-505=36$: a circle with centre $C=(21,10)$ and radius $6$. The point $P=(3,4)$ is at distance $\sqrt{18^2+6^2}=\sqrt{360}=6\sqrt{10}>6$ from $C$, so it is outside, and the nearest point $Q$ of the circle lies on segment $PC$:
 '''+asy(fig,'6cm')+r'''
@@ -457,7 +457,7 @@ fig=r'''draw(box((-1,-1),(1,1)),linewidth(0.9));
 draw((-1.6,0)--(1.6,0),gray(0.6),Arrow(TeXHead));draw((0,-1.6)--(0,1.7),gray(0.6),Arrow(TeXHead));
 pair P1=(-1,1),P2=(1,1);
 draw(P1--P2,blue+linewidth(1));dot(P1,blue);dot(P2,blue);
-label("$P_1$",P1,NW);label("$P_2$",P2,NE);label("$a=2$",(0,1),N,blue);
+label("$P_1$",P1,NW);label("$P_2$",P2,NE);label("$a=2$",(0,1),2*N,blue,Fill(white));
 label("$(1,-1)$",(1,-1),SE,fontsize(8pt));label("$(-1,-1)$",(-1,-1),SW,fontsize(8pt));'''
 b.add(1734740,1,r'''Two distinct points $P_1$ and $P_2$ lie in the square with vertices $(1,1)$, $(1,-1)$, $(-1,-1)$, $(-1,1)$ (boundary included). Let $a$ be the length of $\overline{P_1P_2}$ and $b$ the sum of the $y$-coordinates of the two points. Two new distinct points $P_3$ and $P_4$ are plotted so that the difference of their $y$-coordinates is $a$ and the difference of their $x$-coordinates is $b$. What is the greatest integer less than or equal to the maximum possible length of $\overline{P_3P_4}$?''',
 r'''Let $P_1=(x_1,y_1)$ and $P_2=(x_2,y_2)$. Then

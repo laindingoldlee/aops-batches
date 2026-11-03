@@ -318,7 +318,7 @@ draw((-1.2,-1.2)--(4.4,4.4),red+linewidth(0.8));draw((-1.2,1.2)--(4.4,-4.4),red+
 draw(A--B,dashed);
 draw(Ep+0.3*dir(-45)--Ep+0.3*dir(-45)+0.3*dir(-135)--Ep+0.3*dir(-135));
 dot(A);dot(B);
-label("$A$",A+(-0.5,0));label("$B$",B,E);label("$E$",Ep,N);label("$F$",F,S);
+label("$A$",A+(-0.5,0));label("$B$",B,E);label("$E$",Ep,2*N);label("$F$",F,2*S);
 '''
 b.add(1735512,82,r'''Circles $A$ and $B$ (centred at points $A$ and $B$) intersect, and points $E$ and $F$ lie on circle $B$ so that quadrilateral $AEBF$ is a square. What is the probability that a randomly chosen line through point $A$ intersects both circles? Express your answer as a common fraction.''',
 r'''Every line through $A$ meets circle $A$, since $A$ is its centre. So we need the probability that the line meets circle $B$.
@@ -351,8 +351,9 @@ fig=r'''real r=5,h=3,k=1.25;
 draw(arc((0,0),r,k,180,360),linewidth(0.9));
 draw(reverse(arc((0,0),r,k,0,180)),dashed+linewidth(0.6));
 path el(real r,real k,real a,real b){guide g; for(int i=0;i<=60;++i){real t=a+(b-a)*i/60; g=g--(r*Cos(t),k*Sin(t));} return g;}
-draw(el(r,k,180,360),linewidth(0.9));draw(el(r,k,0,180),dashed+linewidth(0.6));
-draw((-r,0)--(0,h)--(r,0),linewidth(0.9));
+real t0=degrees(asin(k/h));
+draw(el(r,k,180-t0,360+t0),linewidth(0.9));draw(el(r,k,t0,180-t0),dashed+linewidth(0.6));
+draw((-r*Cos(t0),k*Sin(t0))--(0,h)--(r*Cos(t0),k*Sin(t0)),linewidth(0.9));
 draw((0,0)--(0,h),dashed);draw((0,0)--(r,0),dashed);
 draw((0,0.35)--(0.35,0.35)--(0.35,0));
 dot((0,0));
