@@ -64,4 +64,4 @@ Excluded (36):
 - Batches 76-80 are still missing from the registry.
 
 ## Orchestrator addendum (cross-batch)
-- 1757353-q01 (five-term AP, 28) is aliased to b226 aops-topic-1759713-q03, and 1757353-q02 (Vida's guppies, 48) to b225 aops-topic-1762366-q149: same problems in earlier batches of this run. Topic 1757353 is now a duplicate.
+- 1757353-q01 (five-term AP, 28) is aliased to b226 aops-topic-1759713-q03, and 1757353-q02 (Vida's guppies, 48) to b225 aops-topic-1762366-q149: same problems in earlier batches of this run. Part q03 of 1757353 is still exported. Final counts after these aliases: 80 records, 5 aliases.

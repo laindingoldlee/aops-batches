@@ -98,4 +98,4 @@ Fixes after viewing the contact sheets:
 - `pdfcheck.py`: `records=74 asy_files=13 asy_failures=0 pages=74`, `warnings: 0`, no colour leak, `OK`.
 
 ## Orchestrator addendum (cross-batch)
-- 1777424-q01 (cube colourings, 230) is aliased to b222 aops-topic-1777432-q01 (same problem, earlier batch of this run).
+- 1777424-q01 (cube colourings, 230) is aliased to b222 aops-topic-1777432-q01 (same problem, earlier batch of this run). Final counts: 73 records, 10 aliases.
