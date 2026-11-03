@@ -2,7 +2,6 @@ from qb import *
 b=Bank('p230_03')
 
 # ---------------- 1734443 sixteen geometry problems from a local contest
-RA=lambda P,u,w,s=0.6: 'draw(%s+%g*%s--%s+%g*%s+%g*%s--%s+%g*%s);'%(P,s,u,P,s,u,s,w,P,s,w)
 fig=r'''pair C=(0,0),B=(12,0),A=(0,8),M=(6,0),K=(0,4);
 draw(A--B--C--cycle,linewidth(0.9));
 draw(A--M,blue+dashed);draw(B--K,blue+dashed);
@@ -419,9 +418,6 @@ so $f$ is odd. $\blacksquare$ (Its graph is symmetric about the origin.)''',
 'Functions|Symmetry',1)
 
 # ---------------- 1734599 intersecting chords
-pre=r'''pair A=(0,0),B=(-3,0),D=(6,0); pair u=dir(115); pair C=8*u,Ep=-(9/4)*u;
-real cy=(abs(C)^2+(3*C.x)-18)/(2*C.y); pair Ctr=(1.5,(C.x^2+C.y^2-3*C.x-18+3*C.x)/(2*C.y));
-'''
 fig=r'''pair A=(0,0),B=(-3,0),D=(6,0); pair u=dir(115); pair C=8*u,Ep=-(9/4)*u;
 real k=(C.x^2+C.y^2-3*C.x-18)/(2*C.y); pair P=(1.5,k);
 draw(circle(P,abs(B-P)),linewidth(0.9));
@@ -506,7 +502,7 @@ Here $\dfrac{\sqrt3}{4}\left(8+2\sqrt6-2\sqrt2\right)=2\sqrt3+\dfrac{3\sqrt2-\sq
 \[
 \text{area}=2\sqrt3+\dfrac{6\sqrt2+2\sqrt6}{2}=\boxed{2\sqrt3+3\sqrt2+\sqrt6}\approx10.16 .
 \]''',
-'Equilateral polygons|Equilateral triangles|Law of cosines|Area decomposition|Trigonometric identities|Isosceles triangles',4,
+'Quadrilaterals and polygons|Equilateral triangles|Law of cosines|Area decomposition|Trigonometric identities|Isosceles triangles',4,
 note='The hexagon is determined by the data (its sides turn by 75 and 45 degrees alternately and close up). The area was checked with the shoelace formula.')
 
 # ---------------- 1734670 AMC 8 prep problem 3
