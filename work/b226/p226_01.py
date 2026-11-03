@@ -223,11 +223,11 @@ b.add(1762011,1,r'''Square $ABCD$ has side length $1$. Four quarter circles of r
 '''+asy(figq,'4.5cm'),
 r'''Put $A=(0,0)$, $B=(1,0)$, $C=(1,1)$, $D=(0,1)$ and $h=\dfrac{\sqrt3}{2}$. The region is bounded by four arcs whose endpoints are
 \[
-P_1=\left(\tfrac12,1-h\right),\quad P_2=\left(h,\tfrac12\right),\quad P_3=\left(\tfrac12,h\right),\quad P_4=\left(1-h,\tfrac12\right);
+P_1=\left(\dfrac12,1-h\right),\quad P_2=\left(h,\dfrac12\right),\quad P_3=\left(\dfrac12,h\right),\quad P_4=\left(1-h,\dfrac12\right);
 \]
 for instance $P_1$ is on the circles centred at $C$ and $D$ (it forms an equilateral triangle with $C$ and $D$), and $P_2$ is on the circles centred at $A$ and $D$. The arc $P_1P_2$ is part of the circle centred at $D$, and similarly for the other three arcs.
 '''+asy(figs,'6cm')+r'''
-\textbf{The square $P_1P_2P_3P_4$.} Its side is $P_1P_2=\sqrt2\left(h-\tfrac12\right)=\dfrac{\sqrt3-1}{\sqrt2}$, so its area is $\dfrac{(\sqrt3-1)^2}{2}=2-\sqrt3$.
+\textbf{The square $P_1P_2P_3P_4$.} Its side is $P_1P_2=\sqrt2\left(h-\dfrac12\right)=\dfrac{\sqrt3-1}{\sqrt2}$, so its area is $\dfrac{(\sqrt3-1)^2}{2}=2-\sqrt3$.
 
 \textbf{The four segments.} Seen from $D$, the directions to $P_1$ and $P_2$ make angles of $60^\circ$ and $30^\circ$ with side $DC$, so the arc $P_1P_2$ subtends $30^\circ=\dfrac{\pi}{6}$ at $D$. The circular segment between chord $P_1P_2$ and the arc has area
 \[
@@ -443,7 +443,8 @@ note='The post asks in general how to factor cubics, giving x^3 + 35x^2 - 50x + 
 # ---------------- 1761505 2019 problems
 b.add(1761505,1,r'''What is the last digit of $2019^{2019}$?''',
 r'''The last digit of $2019^k$ is that of $9^k$, which is $9$ for odd $k$ and $1$ for even $k$ (since $9^2=81$). As $2019$ is odd, the last digit is $\boxed{9}$.''',
-'Units digits and last digits|Exponents',1)
+'Units digits and last digits|Exponents',1,
+note='Repeat of an earlier record (aliased).')
 b.add(1761505,2,r'''What is the sum of the first $2019$ positive integers?''',
 r'''$1+2+\cdots+2019=\dfrac{2019\cdot2020}{2}=2019\cdot1010=\boxed{2039190}$.''',
 'Arithmetic sequences|Summation',1)

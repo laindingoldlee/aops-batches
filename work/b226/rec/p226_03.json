@@ -227,8 +227,7 @@
   "question": "Convert $540$ radians into degrees.",
   "solution": "Since $\\pi$ radians equal $180^\\circ$, $540$ radians equal $540\\cdot\\dfrac{180}{\\pi}=\\boxed{\\dfrac{97200}{\\pi}}$ degrees, about $30940^\\circ$. (If the intended quantity was $540^\\circ$, that is $3\\pi$ radians.)",
   "tags": [
-   "Unit conversion",
-   "Trigonometry"
+   "Unit conversion"
   ],
   "difficulty": 1,
   "rationale": "Immediate application of a definition or basic fact.",

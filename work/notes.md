@@ -6,3 +6,5 @@
 - b223 figs reviewed (13). FIXED 1772259-q03: A label sat on the dotted side extensions; moved inside the angle.
 - b221 figs reviewed (16). FIXED label collisions: 1787556 (A on line), 1787424 (O on radius 10), 1785634-q05 (P on PD), 1785275 (A,B on circle).
 - b229 done: 81 rec, 12 al (2 to b227 draft 1755042), 24 diag; 67/1/28/4. Check 1741490 (missing fig, placement chosen to match 0.69).
+- b228 done: 86 rec, 14 al, 18 diag; 69/0/23/8. Check 1747745 reading (|S|=3), 1706241 reading (724).
+- b229 figs reviewed (24). FIXED label collisions: 1743708 (0,3) on line, 1745435 P/Q on circle, 1743083-q03 I on edge DH, 1743013 T on lines, 1741984 A(1,3) on y-axis.

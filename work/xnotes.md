@@ -5,3 +5,5 @@
 - b223 1605801-q01 (2018 MATHCOUNTS School Sprint #22, median of {1.7,1.1,1.4,2.1,2.3,s}, 0.35) repeats b224 draft 1768268-q01: b224 should alias to b223
 - b222 1777432-q01 (cube faces, 6 colours, adjacent faces different, 230) repeats b223 draft 1777424-q01: b223 should alias to b222
 - b225 draft 1765675-q01 (least Heronian area, longest side 17) repeats prior aops-topic-1945887-q01 (b222 1784100-q01 is aliased to it): b225 should alias to aops-topic-1945887-q01
+- b226 1759713-q03 (MATHCOUNTS handbook, five-term AP with mean 18 and mean of squares 374, answer 28) repeats b227 draft 1757353-q01: b227 should alias to b226
+- b225 1762366-q149 (MATHCOUNTS Handbook #149, Vida's guppies, mean+median+mode = range, 48) repeats b227 draft 1757353-q02: b227 should alias to b225

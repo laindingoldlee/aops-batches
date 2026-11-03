@@ -110,10 +110,11 @@ label("$O$",O,SW);label("$K$",K,SE);label("$J$",J,NW);label("$r$",(r/2,0),S);lab
 draw((r+0.4,r/2)--(r+1.4,r/2),Arrow(TeXHead));
 real a=r/4, h=sqrt(r^2-a^2);
 pair V=(r+2.4+a,r+0.1), c=(r+2.4+a,r+0.1-h);
-draw(ellipse(c,a,0.12),linewidth(0.9));
+draw(shift(c)*xscale(a)*yscale(0.12)*arc((0,0),1,180,360),linewidth(0.9));draw(shift(c)*xscale(a)*yscale(0.12)*arc((0,0),1,0,180),dashed);
 draw(V--(c+(a,0)),linewidth(0.9));draw(V--(c-(a,0)),linewidth(0.9));
 draw(V--c,dashed);draw(c--c+(a,0),dashed);
-label("$O$",V,N);label("$r$",(V+c+(a,0))/2,E);label("$h$",(V+c)/2,W);label("$\dfrac{r}{4}$",c+(a/2,-0.12),S);'''
+label("$O$",V,N);label("$r$",(V+c+(a,0))/2,E);
+real xl=c.x-a-0.3; draw((xl,c.y)--(xl,V.y),Arrows(TeXHead));draw(V--(xl-0.08,V.y),dotted);draw(c-(a,0)--(xl-0.08,c.y),dotted);label("$h$",(xl,(c.y+V.y)/2),W);label("$\dfrac{r}{4}$",c+(a/2,-0.12),S);'''
 b.add(1770219,1,r'''A sector of a circle with central angle $90^\circ$ and radius $r$ has radii $OK$ and $OJ$, where $K$ and $J$ are points on the circle. The sector is cut out and curved so that $OK$ and $OJ$ coincide, forming the lateral surface of a cone. Find the volume of the cone in terms of $r$.''',
 r'''The radius $r$ of the sector becomes the slant height of the cone, and the arc $KJ$ becomes the circumference of the base. The arc has length $\dfrac14\cdot2\pi r=\dfrac{\pi r}{2}$, so the base radius $a$ satisfies $2\pi a=\dfrac{\pi r}{2}$, i.e.\ $a=\dfrac r4$.
 '''+asy(fig,'7cm')+r'''

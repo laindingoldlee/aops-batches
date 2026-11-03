@@ -28,8 +28,8 @@ draw(box((0,0),(5,5)),dashed+gray(0.5));'''
 fig=L+r'''
 filldraw((a,0)--(5,a)--(5-a,5)--(0,5-a)--cycle,rgb(0.82,0.9,1),blue+linewidth(0.8));
 dot((4,1));dot((4,4));dot((1,4));dot((1,1));
-label("$a$",(a/2,0),S);label("$5-a$",(5,a/2),E);
-label("$P$",(4,1),dir(-60));'''
+label("$a$",(a/2,0),S);label("$5-a$",((5+a)/2,0),S);
+label("$P$",(4.5,0.5));'''
 b.add(1736828,1,r'''One-inch squares are cut from the corners of a $5$-inch square. What is the area, in square inches, of the largest square that can be fitted into the remaining space?
 \[
 \textbf{(A)}\ 9\qquad\textbf{(B)}\ 12\dfrac12\qquad\textbf{(C)}\ 15\qquad\textbf{(D)}\ 15\dfrac12\qquad\textbf{(E)}\ 17
@@ -106,7 +106,7 @@ label("$x$",(5,0),S);label("$y$",(0,6),W);
 draw(A--B--C--cycle,blue+linewidth(0.9));draw(A2--B2--C2--cycle,red+linewidth(0.9)+dashed);
 label("$A$",A,W);label("$B$",B,dir(-60));label("$C$",C,N);
 label("$A'$",A2,E);label("$B'$",B2,dir(240));label("$C'$",C2,N);
-dot((0,3.5));label("$(0,3.5)$",(0,3.5),dir(110),fontsize(8pt));'''
+dot((0,3.5));'''
 b.add(1736178,1,r'''Points $A$, $B$ and $C$ have coordinates $(-4,2)$, $(1,2)$ and $(-1,5)$, respectively. If triangle $ABC$ is reflected across the $y$-axis, what is the area of the region that is the intersection of triangle $ABC$ and its reflection? Express your answer as a decimal to the nearest tenth.''',
 r'''The reflection is $A'=(4,2)$, $B'=(-1,2)$, $C'=(1,5)$. Both triangles have their bases on the line $y=2$, and the intersection is bounded below by $y=2$ and above by the sides $BC$ and $B'C'$:
 '''+asy(fig,'6.5cm')+r'''
@@ -303,22 +303,22 @@ A shutter speed of $\dfrac1{50}$ second corresponds to a focal length of $\boxed
 
 # ---------------- 1735512 Handbook Warm-Up 6 #82, 83, 85, 89
 fig=r'''real s=2; pair A=(0,0),B=(s*sqrt(2),0),Ep=(s/sqrt(2),s/sqrt(2)),F=(s/sqrt(2),-s/sqrt(2));
-fill(A--(4.8,4.8)--(4.8,-4.8)--cycle,rgb(1,0.92,0.85));
+fill(A--(4.4,4.4)--(4.4,-4.4)--cycle,rgb(1,0.92,0.85));fill(A--(-1.2,1.2)--(-1.2,-1.2)--cycle,rgb(1,0.92,0.85));
 draw(circle(A,s),linewidth(0.8));draw(circle(B,s),linewidth(0.8));
 draw(A--Ep--B--F--cycle,blue);
-draw((-1.2,-1.2)--(4.8,4.8),red+linewidth(0.8));draw((-1.2,1.2)--(4.8,-4.8),red+linewidth(0.8));
+draw((-1.2,-1.2)--(4.4,4.4),red+linewidth(0.8));draw((-1.2,1.2)--(4.4,-4.4),red+linewidth(0.8));
 draw(A--B,dashed);
 draw(Ep+0.3*dir(-45)--Ep+0.3*dir(-45)+0.3*dir(-135)--Ep+0.3*dir(-135));
 dot(A);dot(B);
-label("$A$",A,W);label("$B$",B,E);label("$E$",Ep,dir(160));label("$F$",F,dir(200));
-label("$45^\circ$",A+0.95*dir(22.5),fontsize(8pt));
+label("$A$",A+(-0.5,0));label("$B$",B,E);label("$E$",Ep,N);label("$F$",F,S);
+label("$45^\circ$",A+1.2*dir(21),fontsize(8pt));
 draw(arc(A,0.6,0,45));'''
 b.add(1735512,82,r'''Circles $A$ and $B$ (centred at points $A$ and $B$) intersect, and points $E$ and $F$ lie on circle $B$ so that quadrilateral $AEBF$ is a square. What is the probability that a randomly chosen line through point $A$ intersects both circles? Express your answer as a common fraction.''',
 r'''Every line through $A$ meets circle $A$, since $A$ is its centre. So we need the probability that the line meets circle $B$.
 
 Let the square have side $s$. Then circle $B$ has radius $BE=s$, and $AB=s\sqrt2$ is a diagonal of the square. Since $\angle AEB=90^\circ$, the line $AE$ is perpendicular to the radius $BE$, so it is tangent to circle $B$; likewise $AF$. These tangents make angles of $45^\circ$ with $AB$ (the diagonal of a square bisects its angle):
 '''+asy(fig,'6cm')+r'''
-A line through $A$ meets circle $B$ exactly when its angle with line $AB$ is at most $45^\circ$ (the shaded double wedge between the tangents). A random line through $A$ has its direction uniformly distributed over $180^\circ$, and $90^\circ$ of these directions work, so the probability is $\dfrac{90}{180}=\boxed{\dfrac12}$.''',
+A line through $A$ meets circle $B$ exactly when its angle with line $AB$ is at most $45^\circ$ (the shaded double wedge bounded by the two tangent lines). A random line through $A$ has its direction uniformly distributed over $180^\circ$, and $90^\circ$ of these directions work, so the probability is $\dfrac{90}{180}=\boxed{\dfrac12}$.''',
 'Geometric probability|Tangents|Circles|Squares',4,source=src('MATHCOUNTS Handbook',2019,None,82,rnd='Warm-Up 6'),
 note='The figure was attached; the text determines the answer. "A randomly chosen line through A" is read as a uniformly random direction. The figure draws circle A with radius AE (its radius does not matter).')
 b.add(1735512,83,r'''Lauren randomly picks two cards, without replacement, from six cards numbered $2,3,5,6,7$ and $10$. What is the probability that the product of the two numbers on the selected cards is a multiple of $10$? Express your answer as a common fraction.''',
@@ -349,7 +349,7 @@ draw((-r,0)--(0,h)--(r,0),linewidth(0.9));
 draw((0,0)--(0,h),dashed);draw((0,0)--(r,0),dashed);
 draw((0,0.35)--(0.35,0.35)--(0.35,0));
 dot((0,0));
-label("$3$",(0,h/2),W);label("$5$",(r/2,0),N);'''
+label("$3$",(0,2.15),W);label("$5$",(r/2,0),N);'''
 fig=fig.replace(r'''draw(arc((0,0),r,k,180,360),linewidth(0.9));
 draw(reverse(arc((0,0),r,k,0,180)),dashed+linewidth(0.6));
 ''','')
@@ -404,12 +404,12 @@ label("$x$",(4.5,0),S,gray(0.3));label("$y$",(0,6),W,gray(0.3));
 draw((-0.6,-3.9)--(3.6,2.4),red+linewidth(0.9));
 label("$3x-2y-6=0$",(3.6,2.4),E,red);
 draw(g,blue+linewidth(0.9));
-real v0=2.6; pair P=V-(v0^2/(4p))*nn+v0*t; pair Fp=P-((3*P.x-2*P.y-6)/13)*(3,-2);
+real v0=-3; pair P=V-(v0^2/(4p))*nn+v0*t; pair Fp=P-((3*P.x-2*P.y-6)/13)*(3,-2);
 draw(P--(0,0),dashed);draw(P--Fp,dashed);
 pair u=unit(P-Fp),w=unit((2,3));
 draw(Fp+0.25*u--Fp+0.25*u+0.25*w--Fp+0.25*w);
 dot((0,0));dot(P);
-label("$O$",(0,0),dir(225));label("$P$",P,N);'''
+label("$O$",(0,0),dir(135));label("$P$",P,dir(235));'''
 b.add(1735893,1,r'''Find an equation for the set of points that are equidistant from the line $3x-2y-6=0$ and the origin.''',
 r'''A point $P=(x,y)$ is at distance $\sqrt{x^2+y^2}$ from the origin $O$ and at distance $\dfrac{|3x-2y-6|}{\sqrt{3^2+2^2}}=\dfrac{|3x-2y-6|}{\sqrt{13}}$ from the line. Setting these equal and squaring (both sides are nonnegative),
 \[
@@ -481,16 +481,16 @@ pair[] P; real t=100; for(int i=0;i<6;++i){P.push(R*dir(t)); t-=arcs[i];}
 draw(circle((0,0),R),gray(0.6));
 draw(P[0]--P[1]--P[2]--P[3]--P[4]--P[5]--cycle,linewidth(0.9));
 string[] lab={"$2$","$2$","$7$","$7$","$11$","$11$"};
-for(int i=0;i<6;++i){pair m=(P[i]+P[(i+1)%6])/2; label(lab[i],m,unit(m));}
+for(int i=0;i<6;++i){pair m=(P[i]+P[(i+1)%6])/2; label(lab[i],(R+0.75)*unit(m));}
 dot((0,0));label("$O$",(0,0),S);'''
 R8=r'''real R=7; real x=aSin(1/7), y=30, z=aSin(11/14);
 pair P0=R*dir(180),P1=R*dir(180-2*x),P2=R*dir(180-2*x-2*y),P3=R*dir(0);
 draw(arc((0,0),R,0,180),gray(0.6));
 draw(P0--P1--P2--P3--cycle,linewidth(0.9));
 draw(P0--P2,dashed);draw(P1--P3,dashed);
-label("$2$",(P0+P1)/2,unit((P0+P1)/2));label("$7$",(P1+P2)/2,unit((P1+P2)/2));label("$11$",(P2+P3)/2,unit((P2+P3)/2));
+label("$2$",(P0+P1)/2,W);label("$7$",(R+0.75)*unit((P1+P2)/2));label("$11$",(R+0.75)*unit((P2+P3)/2));
 label("$d=2R$",(0,0),S);
-label("$P_0$",P0,W);label("$P_1$",P1,NW);label("$P_2$",P2,N);label("$P_3$",P3,E);'''
+label("$P_0$",P0,SW);label("$P_1$",P1,NW);label("$P_2$",P2,N);label("$P_3$",P3,E);'''
 b.add(1729507,1,r'''A cyclic hexagon has side lengths $2$, $2$, $7$, $7$, $11$ and $11$, in that order. Find its circumradius.''',
 r'''Let the circumradius be $R$ and the centre $O$.
 '''+asy(R7,'5cm')+r'''
@@ -524,12 +524,12 @@ The area is $\dfrac{20+3}{2}\cdot\dfrac{120}{17}=\dfrac{1380}{17}$, a reduced fr
 fig=r'''real r0=22*sqrt(3),h=24,r=11; pair O=(0,0),M=(r0,0),D=(0,h),I=(0,r);
 pair T=D+dot(I-D,unit(M-D))*unit(M-D);
 draw(O--M--D--cycle,linewidth(0.9));
-draw(circle(I,r),blue);
+draw(arc(I,r,-90,90),blue);
 draw(I--T,blue+dashed);
 draw(O+(1.4,0)--O+(1.4,1.4)--O+(0,1.4));
 dot(I);
 label("$D$",D,N);label("$O$",O,SW);label("$M$",M,SE);label("$I$",I,W);label("$T$",T,NE);
-label("$11$",(I+T)/2,dir(130),blue);
+label("$11$",(I+T)/2,dir(-45),blue);
 draw((-5,0)--(-5,h),Arrows(TeXHead));label("$24$",(-5,h/2),W);
 label("$r_0$",(r0/2,0),S);'''
 b.add(1729507,3,r'''In tetrahedron $ABCD$, $AB=BC=CA$ and $DA=DB=DC$. The altitude of $ABCD$ from $D$ is $24$, and the radius of the inscribed sphere of $ABCD$ is $11$. Find $AB$.''',

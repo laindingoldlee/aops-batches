@@ -9,10 +9,10 @@ draw((0,0.7)--(0.7,0.7)--(0.7,0));
 draw((3,-0.25)--(3,0.25));draw((9,-0.25)--(9,0.25));
 draw((-0.25,2)--(0.25,2));draw((-0.25,6)--(0.25,6));
 label("$A$",A,N);label("$B$",B,E);label("$C$",C,SW);label("$M$",M,S);label("$K$",K,W);
-label("$10$",(A+M)/2+(0.3,0.4),NE,blue);label("$4\sqrt{10}$",(B+K)/2+(1.2,-0.1),S,blue);'''
+label("$10$",(3.9,4.6),blue);label("$4\sqrt{10}$",(7.6,0.55),blue+fontsize(9pt));'''
 b.add(1734443,1,r'''The medians to the legs of a right triangle have lengths $10$ and $4\sqrt{10}$. Find the length of the hypotenuse.''',
 r'''Let the right angle be at $C$, with legs $CB=a$ and $CA=b$, and let $M$ and $K$ be the midpoints of $CB$ and $CA$:
-'''+asy(fig,'5.5cm')+r'''
+'''+asy(fig,'6.5cm')+r'''
 By Pythagoras in the right triangles $ACM$ and $BCK$,
 \[
 AM^2=b^2+\dfrac{a^2}{4}=100,\qquad BK^2=a^2+\dfrac{b^2}{4}=160 .
@@ -48,12 +48,12 @@ note='"Sum of all possible integral values" is read as the sum of the distinct i
 fig=r'''pair B=(0,0),A=(sqrt(6),0),C=(0,sqrt(2)),D=(sqrt(2),sqrt(2)+sqrt(6)),H=(sqrt(2),0);
 draw(A--B--C--cycle,linewidth(0.9));draw(A--C--D--cycle,linewidth(0.9));
 draw(D--H,blue+dashed);
-draw((0,0.2)--(0.2,0.2)--(0.2,0));draw(H+(0,0.2)--H+(0.2,0.2)--H+(0.2,0));
+draw((0,0.2)--(0.2,0.2)--(0.2,0));draw(H+(0,0.2)--H+(-0.2,0.2)--H+(-0.2,0));
 pair u=unit(A-C),w=unit(D-C);draw(C+0.2*u--C+0.2*u+0.2*w--C+0.2*w);
 label("$A$",A,SE);label("$B$",B,SW);label("$C$",C,W);label("$D$",D,N);label("$H$",H,S);
 label("$\sqrt{2}$",(B+C)/2,W);
-draw(arc(A,0.55,degrees(C-A),180));label("$30^\circ$",A+0.95*dir(171),fontsize(8pt));
-draw(arc(A,0.85,degrees(D-A),degrees(C-A)));label("$45^\circ$",A+1.25*dir(128),fontsize(8pt));'''
+draw(arc(A,0.45,degrees(C-A),180));label("$30^\circ$",A+0.75*dir(165),fontsize(7pt));
+draw(arc(A,0.7,degrees(D-A),degrees(C-A)));label("$45^\circ$",A+1.0*dir(127.5),fontsize(7pt));'''
 b.add(1734443,4,r'''Right triangle $ABC$ has hypotenuse $AC$, $\angle CAB=30^\circ$ and $BC=\sqrt2$. Right triangle $ACD$ has hypotenuse $AD$ and $\angle DAC=45^\circ$. The interiors of triangles $ABC$ and $ACD$ do not overlap. Find the length of the perpendicular from $D$ to line $AB$.''',
 r'''In triangle $ABC$ (right angle at $B$), $AC=\dfrac{BC}{\sin30^\circ}=2\sqrt2$. Triangle $ACD$ has its right angle at $C$ and $\angle DAC=45^\circ$, so it is isosceles with $CD=AC=2\sqrt2$ and $AD=AC\sqrt2=4$. Since the triangles lie on opposite sides of $AC$, $\angle DAB=\angle DAC+\angle CAB=75^\circ$:
 '''+asy(fig,'5cm')+r'''
@@ -72,7 +72,7 @@ draw(T1--T2,blue+linewidth(0.9));draw(U1--U2,red+linewidth(0.9));
 draw(O--T1,gray(0.5));draw(A--T2,gray(0.5));draw(O--U1,gray(0.5));draw(A--U2,gray(0.5));
 dot(O);dot(A);
 label("$O$",O,W);label("$A$",A,E);label("$26$",(19,0),S);
-label("$6\sqrt{17}$",(T1+T2)/2,dir(100),blue);label("$4\sqrt{22}$",(U1+U2)/2+(1.2,0),dir(-60),red);'''
+label("$6\sqrt{17}$",(T1+T2)/2,dir(100),blue);label("$4\sqrt{22}$",(6.6,-3.2),red);'''
 b.add(1734443,5,r'''A circle with centre $O$ has radius $5$, and a circle with centre $A$ has radius $13$, with $OA=26$. Find the sum of the lengths of one common external tangent segment and one common internal tangent segment of the two circles (each segment running between its two points of tangency).''',
 r'''For a common tangent segment $T_1T_2$, the radii $OT_1$ and $AT_2$ are both perpendicular to it:
 '''+asy(fig,'7cm')+r'''
@@ -117,8 +117,8 @@ so $AC=\boxed{\sqrt{57}}$.
 fig=r'''real s=10; real ap=(s/2)/Tan(36); pair O=(0,0);
 pair[] P; for(int i=0;i<5;++i) P.push((s/(2*Sin(36)))*dir(270-36+72*i));
 draw(P[0]--P[1]--P[2]--P[3]--P[4]--cycle,linewidth(0.9));
-pair M=(P[0]+P[4])/2;
-draw(O--M,blue+dashed);draw(O--P[0],gray(0.5));draw(O--P[4],gray(0.5));
+pair M=(P[0]+P[1])/2;
+draw(O--M,blue+dashed);draw(O--P[0],gray(0.5));draw(O--P[1],gray(0.5));
 dot(O);label("$O$",O,N);
 label("$10$",M,S);label("$a$",(O+M)/2,E,blue);
 label("$36^\circ$",O+2.4*dir(252),fontsize(8pt));draw(arc(O,1.4,234,270));'''
@@ -134,7 +134,7 @@ fig=r'''pair P=(3,4),C=(21,10); real r=6; pair Q=C+r*unit(P-C);
 draw(circle(C,r),linewidth(0.9));
 draw(C--Q,dashed);draw(P--Q,blue+linewidth(1));
 dot(P);dot(C);dot(Q,blue);
-label("$P(3,4)$",P,W);label("$C(21,10)$",C,E);label("$Q$",Q,dir(250));label("$6$",(C+Q)/2,N);'''
+label("$P(3,4)$",P,W);label("$C$",C,E);label("$Q$",Q,dir(250));label("$6$",(C+Q)/2,N);'''
 b.add(1734443,9,r'''What is the shortest distance from the point $(3,4)$ to the circle $x^2+y^2-42x-20y=-505$?''',
 r'''Completing the squares, $(x-21)^2+(y-10)^2=441+100-505=36$: a circle with centre $C=(21,10)$ and radius $6$. The point $P=(3,4)$ is at distance $\sqrt{18^2+6^2}=\sqrt{360}=6\sqrt{10}>6$ from $C$, so it is outside, and the nearest point $Q$ of the circle lies on segment $PC$:
 '''+asy(fig,'6cm')+r'''
@@ -145,7 +145,7 @@ pair pr(real x,real y,real z){return (x+0.6*y,0.3*y+z);}
 pair P1=pr(0,0,0),P2=pr(s,0,0),P3=pr(s/2,s*sqrt(3)/2,0),G=pr(s/2,s*sqrt(3)/6,h),O=pr(s/2,s*sqrt(3)/6,0);
 draw(P1--P3,dashed);draw(P1--P2--P3,linewidth(0.9));draw(P1--G--P2,linewidth(0.9));draw(P3--G,linewidth(0.9));
 draw(G--O,blue+dashed);dot(O,blue);
-label("$h=2\sqrt3$",(G+O)/2,W,blue);label("$s$",(P1+P2)/2,S);'''
+label("$h$",(G+O)/2,E,blue);label("$s$",(P1+P2)/2,S);'''
 b.add(1734443,10,r'''What is the volume of a regular tetrahedron with height $2\sqrt3$?''',
 r'''Let the edge be $s$. The foot of the height is the centre of the base triangle, at distance $\dfrac{s}{\sqrt3}$ from each base vertex, so by Pythagoras the height is
 \[
@@ -179,7 +179,7 @@ fig=r'''pair A=(0,0),B=(16,0),C=(16,12),D=(0,12),B2=(4.48,15.36),Q=(3.5,12);
 fill(A--C--Q--cycle,rgb(0.82,0.9,1));
 draw(A--B--C--D--cycle,linewidth(0.9));draw(A--C,linewidth(0.9));
 draw(A--B2--C,red+dashed);
-label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,E);label("$D$",D,W);label("$B'$",B2,N,red);label("$Q$",Q,dir(200));
+label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,E);label("$D$",D,W);label("$B'$",B2,N,red);label("$Q$",Q,dir(125));
 label("$16$",(A+B)/2,S);label("$12$",(B+C)/2,E);'''
 b.add(1734443,12,r'''A $12$ by $16$ rectangular piece of paper is folded along a diagonal. What is the area of the region where the two layers overlap?''',
 r'''Let the rectangle be $ABCD$ with $AB=16$, $BC=12$, folded along $AC$, so that $B$ goes to $B'$. The overlap is the triangle $ACQ$, where $Q$ is the point where $AB'$ crosses side $DC$:
@@ -200,7 +200,7 @@ Modulo $100$: $35\cdot364\equiv35\cdot64=2240\equiv40$, then $40\cdot286\equiv40
 fig=r'''real R=3,r=1;
 draw((0,-1.8)--(0,1.8),dashed);label("axis",(0,1.8),N,fontsize(8pt));
 draw(circle((R,0),r),blue+linewidth(0.9));draw(circle((-R,0),r),blue+linewidth(0.9));
-draw((0,0)--(R,0),Arrows(TeXHead));label("$R$",(R/2,0),N);
+draw((0,-1.35)--(R,-1.35),Arrows(TeXHead));draw((R,-0.15)--(R,-1.5),gray(0.5));label("$R$",(R/2,-1.35),S);
 draw((R,0)--(R,0)+r*dir(-60));label("$r$",(R,0)+0.5*r*dir(-60),E);
 dot((R,0));
 draw(ellipse((0,0),R,0.45),gray(0.5)+dashed);'''
@@ -271,7 +271,7 @@ r'''Let there be $n$ sparrows. The first condition says $n>5$. In the second arr
 note='The vague second condition ("when two sparrows are on each feeder, some of the feeders will be empty") is made precise: all sparrows sit, two on each occupied feeder, and at least one feeder is empty. (If one sparrow could be left over, 7 would also be possible.)')
 
 # ---------------- 1735595 four tournament problems
-fig=r'''pair P=(-1,4),Q=(12,21),P2=(4,-1),X=(37/9,37/9);
+fig=r'''pair P=(-1,4),Q=(12,21),P2=(4,-1),X=(48/7,48/7);
 draw((-2.5,0)--(13,0),gray(0.5),Arrow(TeXHead));draw((0,-2.5)--(0,22),gray(0.5),Arrow(TeXHead));
 label("$x$",(13,0),S,gray(0.3));label("$y$",(0,22),W,gray(0.3));
 draw((-2,-2)--(13,13),blue+linewidth(0.9));label("$y=x$",(13,13),E,blue);
@@ -340,7 +340,7 @@ draw(V1--V2--V3--V4--cycle,linewidth(0.9));draw(V2--V4,dashed);
 pair u=unit(V2-V1),w=unit(V4-V1);draw(V1+2.5*u--V1+2.5*u+2.5*w--V1+2.5*w);
 pair u2=unit(V2-V3),w2=unit(V4-V3);draw(V3+2.5*u2--V3+2.5*u2+2.5*w2--V3+2.5*w2);
 label("$V_1$",V1,N);label("$V_2$",V2,W);label("$V_3$",V3,S);label("$V_4$",V4,E);
-label("$25$",(V1+V2)/2,NW);label("$39$",(V2+V3)/2,SW);label("$52$",(V3+V4)/2,SE);label("$60$",(V4+V1)/2,NE);
+label("$25$",(V1+V2)/2,unit(-(V1+V2)));label("$39$",(V2+V3)/2,unit(-(V2+V3)));label("$52$",(V3+V4)/2,unit(-(V3+V4)));label("$60$",(V4+V1)/2,unit(-(V4+V1)));
 label("$65$",(12,0),N);'''
 b.add(1734263,1,r'''Heron's formula gives the area of a triangle from its three side lengths.
 \begin{enumerate}
@@ -423,7 +423,7 @@ real k=(C.x^2+C.y^2-3*C.x-18)/(2*C.y); pair P=(1.5,k);
 draw(circle(P,abs(B-P)),linewidth(0.9));
 draw(B--D,linewidth(0.9));draw(C--Ep,linewidth(0.9));
 dot(A);dot(P);
-label("$A$",A,dir(-30));label("$B$",B,W);label("$D$",D,E);label("$C$",C,N);label("$E$",Ep,S);label("$P$",P,E);
+label("$A$",A,dir(55));label("$B$",B,W);label("$D$",D,E);label("$C$",C,N);label("$E$",Ep,S);label("$P$",P,E);
 label("$3$",(A+B)/2,S);label("$6$",(A+D)/2,S);label("$8$",(A+C)/2,W);'''
 b.add(1734599,1,r'''In circle $P$, chords $BD$ and $CE$ intersect at $A$, as shown, with $AB=3$ units, $AC=8$ units and $AD=6$ units. What is the value of $AE$? Express your answer as a mixed number.
 '''+asy(fig,'4.5cm'),
@@ -431,7 +431,7 @@ r'''By the intersecting chords theorem (power of the point $A$), the products of
 \[
 AB\cdot AD=AC\cdot AE\quad\Longrightarrow\quad3\cdot6=8\cdot AE\quad\Longrightarrow\quad AE=\dfrac{18}{8}=\boxed{2\dfrac14}\text{ units}.
 \]
-'''+asy(fig.replace(r'label("$8$",(A+C)/2,W);',r'label("$8$",(A+C)/2,W);label("$2\dfrac14$",(A+Ep)/2,W,blue);draw(A--Ep,blue+linewidth(1));'),'4.5cm')+r'''
+'''+asy(fig.replace(r'label("$8$",(A+C)/2,W);',r'label("$8$",(A+C)/2,W);label("$2\dfrac14$",(A+Ep)/2,E,blue+fontsize(8pt));draw(A--Ep,blue+linewidth(1));'),'4.5cm')+r'''
 (The triangles $ABC$ and $AED$ are similar, since $\angle BAC=\angle EAD$ (vertical angles) and $\angle ABC=\angle AED$ (both inscribed in arc $CD$), which is why the products agree.)''',
 'Power of a point|Arcs and chords|Circles|Similarity',2,source=src('MATHCOUNTS Handbook',2019,None,6,rnd='Warm-Up 3'),
 note='The figure was attached. The chords are stated as BD and CE, the pairing consistent with the requested mixed-number answer (pairing B with C would give the integer 4). Figure redrawn to scale with AE = 9/4.')

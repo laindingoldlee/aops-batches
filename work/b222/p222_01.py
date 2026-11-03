@@ -114,11 +114,11 @@ fig=r'''void para(real a,real x,pair o,string nm){
 para(28,52,(0,0),"(i)");
 para(52,28,(0,-36),"(ii)");'''
 b.add(1784164,1,r'''The diagonals of a parallelogram have lengths $82$ cm and $30$ cm. One altitude of the parallelogram is $18$ cm long. What is the smallest possible area of the parallelogram, in square centimetres?''',
-r'''Let the altitude $18$ be drawn to the side $AB$ of length $a$, and place $A=(0,0)$, $B=(a,0)$, $D=(x,18)$, $C=(a+x,18)$ (we may take $a+x>0$ by reflecting the figure if necessary). The diagonals are $AC$ and $BD$:
+r'''Let the altitude $18$ be drawn to the side $AB$ of length $a$, and place $A=(0,0)$, $B=(a,0)$, $D=(x,18)$, $C=(a+x,18)$ (reflecting the figure if necessary, we may take $x\ge0$). The diagonals are $AC$ and $BD$:
 \[
 AC^2=(a+x)^2+18^2,\qquad BD^2=(x-a)^2+18^2 .
 \]
-The diagonal ending on the far side at horizontal distance $a+x$ is the longer one, so $(a+x)^2+324=82^2=6724$ and $(x-a)^2+324=30^2=900$. Hence $a+x=80$ and $x-a=\pm24$, giving
+Since $a>0$ and $x\ge0$, $a+x\ge|x-a|$, so $AC$ is the longer diagonal: $(a+x)^2+324=82^2=6724$ and $(x-a)^2+324=30^2=900$. Hence $a+x=80$ and $x-a=\pm24$, giving
 \[
 a=\dfrac{80-24}{2}=28\qquad\text{or}\qquad a=\dfrac{80+24}{2}=52 .
 \]

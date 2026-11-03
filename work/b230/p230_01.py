@@ -189,7 +189,7 @@ draw(B--G,dashed);draw(Ep--G,dashed);
 draw((1.5,3.85)--(1.5,4.15));draw((4.5,3.85)--(4.5,4.15));
 dot(P);
 label("$A$",A,SW);label("$B$",B,S);label("$C$",C,NE);label("$D$",D,NW);
-label("$E$",Ep,E);label("$F$",F,N);label("$P$",P,dir(88));label("$G$",G,S);'''
+label("$E$",Ep,dir(20));label("$F$",F,N);label("$P$",P+(0,0.12),dir(88));label("$G$",G,S);'''
 b.add(1738860,1,r'''In rectangle $ABCD$, points $E$ and $F$ lie on sides $BC$ and $CD$, respectively. Point $F$ is the midpoint of $CD$, and $BE=\dfrac13BC$. Segments $AC$ and $FE$ intersect at point $P$. What is the ratio of $AP$ to $PC$? Express your answer as a common fraction.''',
 r'''Extend $FE$ beyond $E$ to meet line $AB$ (extended beyond $B$) at $G$.
 '''+asy(fig,'6cm')+r'''

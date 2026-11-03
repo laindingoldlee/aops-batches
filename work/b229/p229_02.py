@@ -158,7 +158,7 @@ draw(Ep--J--C,blue+linewidth(0.9));draw(C--I--Ep,blue+dashed);
 dot(J);dot(I);
 label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,E);label("$D$",D,dir(160));
 label("$E$",Ep,W);label("$F$",F,dir(-10));label("$G$",G,NE);label("$H$",H,NW);
-label("$J$",J,dir(-50));label("$I$",I,dir(130));'''
+label("$J$",J,dir(-50));label("$I$",I,1.5*dir(35));'''
 b.add(1743083,3,r'''In cube $ABCDEFGH$, face $ABCD$ is the bottom face and $E,F,G,H$ are directly above $A,B,C,D$ respectively, so $C$ and $E$ are opposite vertices. Points $J$ and $I$ are the midpoints of edges $FB$ and $HD$. The plane through $E$, $J$, $C$, $I$ cuts the cube into two pieces. What fraction of the volume of the cube is the piece $EFGHICJ$ (the piece containing the top face $EFGH$)?''',
 r'''Let $O$ be the centre of the cube. The half-turn (point reflection) about $O$ maps the cube to itself and swaps opposite vertices and opposite edges: $E\leftrightarrow C$, and edge $FB\leftrightarrow$ edge $HD$ with their midpoints $J\leftrightarrow I$. So it maps the plane $EJCI$ to itself. (The plane does pass through $O$, the midpoint of $EC$.)
 '''+asy(fig,'5.5cm')+r'''
@@ -266,7 +266,7 @@ draw((-1,0)--(9.5,0),gray,Arrow(5));draw((0,-0.8)--(0,9.3),gray,Arrow(5));
 fill(A--T--U--cycle,lightgray);
 draw(A--B--C--cycle,linewidth(0.9));draw((-0.6,2)--(9,2),blue);
 dot(T);dot(U);
-label("$A(0,8)$",A,E);label("$B(2,0)$",B,S);label("$C(8,0)$",C,S);label("$T$",T,dir(200));label("$U$",U,NE);label("$y=t$",(9,2),N,blue);'''
+label("$A(0,8)$",A,E);label("$B(2,0)$",B,S);label("$C(8,0)$",C,S);label("$T$",T,1.5*dir(145));label("$U$",U,NE);label("$y=t$",(9,2),N,blue);'''
 b.add(1743013,1,r'''Triangle $ABC$ has vertices $A(0,8)$, $B(2,0)$, $C(8,0)$. A horizontal line $y=t$ meets segment $\overline{AB}$ at $T$ and segment $\overline{AC}$ at $U$, forming triangle $ATU$ with area $13.5$. Compute $t$.''',
 r'''Since $TU\parallel BC$, triangle $ATU$ is similar to triangle $ABC$ with ratio $k=\dfrac{8-t}{8}$, the ratio of their heights from $A$.
 '''+asy(fig,'5.5cm')+r'''

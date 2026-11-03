@@ -83,7 +83,7 @@ fig=r'''pair A=(1,3),C=(5,1),B=(4,4),D=(2,0),M=(3,2);
 draw((-0.5,0)--(6,0),gray,Arrow(5));draw((0,-0.5)--(0,5),gray,Arrow(5));
 draw(A--B--C--D--cycle,linewidth(0.9));draw(A--C,dashed);draw(B--D,dashed);
 dot(A);dot(B);dot(C);dot(D);dot(M);
-label("$A(1,3)$",A,W);label("$B(4,4)$",B,N);label("$C(5,1)$",C,E);label("$D(2,0)$",D,dir(-60));label("$M$",M,dir(15));'''
+label("$A(1,3)$",A,dir(95));label("$B(4,4)$",B,N);label("$C(5,1)$",C,E);label("$D(2,0)$",D,dir(-60));label("$M$",M,dir(15));'''
 b.add(1741984,1,r'''$ABCD$ is a square with $A=(1,3)$ and $C=(5,1)$. Find the coordinates of $B$ and $D$.''',
 r'''$A$ and $C$ are opposite vertices, so the diagonals meet at the midpoint $M=(3,2)$ of $AC$. The other diagonal $BD$ has the same length, is perpendicular to $AC$, and is bisected by $M$. Since $\overrightarrow{MC}=(2,-1)$, rotating it by $90^\circ$ gives $(1,2)$, so $B$ and $D$ are $M\pm(1,2)$:
 \[

@@ -268,7 +268,7 @@ draw((-0.5,4)--(2.5,-2),linewidth(0.9));draw((-8,-1)--(3,4.5),blue+linewidth(0.9
 pair X=(-6,0),Y=(0,3),Z=(0.6,3.3);
 dot(X);dot(Y);
 label("$x$",(4,0),S);label("$y$",(0,7),W);
-label("$(0,3)$",Y+(-1.4,0.5));label("$(-6,0)$",X,dir(-60));
+label("$(0,3)$",Y,2*dir(-14));label("$(-6,0)$",X,dir(-60));
 label("$2x+y=3$",(2.2,-1.4),E);label("$y=\dfrac12x+3$",(-5.6,3.2),blue);
 pair H=(0.6,1.8);'''
 b.add(1743708,1,r'''A line has $y$-intercept $(0,3)$ and is perpendicular to the line $2x+y=3$. Find the $x$-intercept of the line.
@@ -302,7 +302,7 @@ draw((-8,-6)--(12,14),blue+linewidth(0.9));
 draw(O--H,dashed);draw(O--P1,dashed);
 draw(H+0.7*dir(-45)--H+0.7*dir(-45)+0.7*dir(45)--H+0.7*dir(45));
 dot(O);dot(P1);dot(P2);dot(H);
-label("$O$",O,SE);label("$P$",P1,dir(100));label("$Q$",P2,dir(280));label("$H$",H,NW);
+label("$O$",O,SE);label("$P$",P1,2*dir(0));label("$Q$",P2,1.5*dir(175));label("$H$",H,NW);
 label("$10$",(O+P1)/2,SE);label("$y=x+2$",(12,14),E,blue);label("$x$",(15,0),S);label("$y$",(0,15),W);'''
 b.add(1745435,1,r'''A line passes through the points $\left(\dfrac{27}{2},\dfrac{31}{2}\right)$ and $\left(-\dfrac{36}{7},-\dfrac{22}{7}\right)$, and a circle has centre $(3,3)$ and radius $10$. What is the distance between the two points where the line intersects the circle?''',
 r'''The slope of the line is

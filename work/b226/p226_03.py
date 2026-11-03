@@ -124,7 +124,7 @@ AC=\sqrt{x^2-9}=\sqrt{\dfrac{9}{k^2}-9}=\boxed{\dfrac{3\sqrt{1-k^2}}{k}}\qquad(0
 note='The post writes 90^\\cdot for 90 degrees.')
 b.add(1759128,3,r'''Convert $540$ radians into degrees.''',
 r'''Since $\pi$ radians equal $180^\circ$, $540$ radians equal $540\cdot\dfrac{180}{\pi}=\boxed{\dfrac{97200}{\pi}}$ degrees, about $30940^\circ$. (If the intended quantity was $540^\circ$, that is $3\pi$ radians.)''',
-'Unit conversion|Trigonometry',1)
+'Unit conversion',1)
 b.add(1759128,4,r'''How many terms are there in the expansion of $(3a+4b+6c+12d)^6$ after like terms are combined?''',
 r'''Every term has the form (positive coefficient)$\cdot a^ib^jc^kd^l$ with $i+j+k+l=6$, $i,j,k,l\ge0$, and every such monomial occurs; since all coefficients are positive, nothing cancels. By stars and bars the number of such monomials is $\dbinom{6+3}{3}=\boxed{84}$.''',
 'Stars and bars|Binomial theorem|Polynomials',2)
