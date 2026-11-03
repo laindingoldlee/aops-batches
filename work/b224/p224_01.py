@@ -158,7 +158,7 @@ Check: $x=1,2,3,4,5$ give $40,20,10,5,2.5$.''',
 b.add(1772119,1,r'''Dad passed a man at the market selling mangoes. When asked the price of a dozen, the man replied, ``If they were two more for $\$12$, it would make them a dollar per dozen less.'' Dad said he would take $\$12$ worth. How many mangoes should the man have given him?''',
 r'''Let the price be $p$ dollars per dozen. Then $\$12$ buys $\dfrac{12}{p}$ dozen, that is, $\dfrac{144}{p}$ mangoes.
 
-``Two more for $\$12$'' means that $\$12$ would buy $\dfrac{144}{p}+2$ mangoes, and then a dozen would cost $p-1$ dollars. A dozen at that price costs $12\cdot\dfrac{12}{\frac{144}{p}+2}$ dollars, so
+``Two more for $\$12$'' means that $\$12$ would buy $\dfrac{144}{p}+2$ mangoes, and then a dozen would cost $p-1$ dollars. A dozen at that price costs $12\cdot\dfrac{12}{\dfrac{144}{p}+2}$ dollars, so
 \[
 \dfrac{144}{\dfrac{144}{p}+2}=p-1\ \Longrightarrow\ 144p=(p-1)(144+2p)\ \Longrightarrow\ 2p^2-2p-144=0\ \Longrightarrow\ p^2-p-72=0 .
 \]

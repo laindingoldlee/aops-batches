@@ -12,7 +12,7 @@ r'''\textbf{(a) Existence.} Consider the $n$ numbers $a,\ a+m,\ a+2m,\ \dots,\ a
 
 \textbf{(b)} Applying (a) twice: the numbers $\equiv3\pmod5$ are $3,8,13,18,23,\dots$, and the first that is $\equiv2\pmod3$ is $8$; so $x\equiv8\pmod{15}$. The numbers $8,23,38,\dots$ are $\equiv1,2,\dots\pmod7$: $8\equiv1$ and $23\equiv2$. So $x\equiv23\pmod{105}$, and the smallest positive solution is $\boxed{23}$. Check: $23=7\cdot3+2=4\cdot5+3=3\cdot7+2$.''',
 'Chinese remainder theorem|Remainders and congruences|Divisibility',3,
-note='The post asks what the Chinese remainder theorem is; the record asks for a proof of the two-modulus statement and the classical example of Sunzi (answer 23).')
+note='The post asks what the Chinese remainder theorem is; the record asks for a proof of the two-modulus statement and the classical example of Sunzi (answer 23). Contained in an earlier record (general CRT and the same example), so aliased.')
 
 # ---------------- 1768345 sum of n with 3^20 < n^2 < 53^3
 b.add(1768345,1,r'''What is the sum of the integer values of $n$ such that $3^{20}<n^2<53^3$?''',
@@ -32,7 +32,7 @@ x\ge\dfrac25N+\dfrac34N-N=\dfrac{3}{20}N\ge\dfrac{3}{20}\cdot20=3 .
 \]
 With $N=20$: $8$ wear gloves and $15$ wear hats; if all $20-15=5$ people without hats wear gloves, exactly $8-5=3$ wear both. The minimum is $\boxed{\textbf{(A)}\ 3}$.''',
 'Sets and inclusion–exclusion|Fractions|Bounding and extremal cases',3,source=src('AMC 8'),
-note='Third problem of a "get close to 1000" game thread; P1 (gasoline price graph) and P2 (octagon of unit squares) depend on missing images and are dropped. The thread names AMC 8 as the source without a year.')
+note='Third problem of a "get close to 1000" game thread; P1 (gasoline price graph) and P2 (octagon of unit squares) depend on missing images and are dropped. The thread names AMC 8 as the source without a year. Repeat of an earlier record (aliased).')
 
 # ---------------- 1767081 Andy and Beth
 b.add(1767081,1,r'''Andy and Beth play a game. Andy thinks of two numbers $a$ and $b$ and tells Beth the ordered pair $(a,b)$. Beth must find a different ordered pair of numbers $(c,d)$ such that $a+b=c+d$, $ab=cd$ and $a\ne d$. Beth wins if she completes this task; otherwise Andy wins. Prove that Andy always wins.''',
@@ -74,7 +74,8 @@ r'''In increasing order the known values are $1.1,\ 1.4,\ 1.7,\ 2.1,\ 2.3$. With
 \item If $s\ge2.1$, they are $1.7$ and $2.1$: median $1.9$.
 \end{itemize}
 In every case the median is between $1.55$ and $1.9$, and both values occur. The difference is $1.9-1.55=\boxed{0.35}$.''',
-'Median|Casework',2)
+'Median|Casework',2,
+note='2018 MATHCOUNTS School Sprint #22; repeat of the batch 223 draft of this run (aliased).')
 
 # ---------------- 1665584 odd coefficients, no rational root (alias)
 b.add(1665584,1,r'''Show that if $a$, $b$ and $c$ are odd integers, the equation $ax^2+bx+c=0$ has no rational root.''',
@@ -443,7 +444,7 @@ Triangles $ADM$ and $ACD$ share the angle at $A$ (since $M$ lies on $AC$, $\angl
 \]
 so $AD^2=AM\cdot AC$. $\blacksquare$''',
 'Similarity|Triangles|Angle chasing',2,
-note='AoPS Introduction to Geometry exercise; "segment DM is drawn" is read as M on side AC.')
+note='AoPS Introduction to Geometry exercise; "segment DM is drawn" is read as M on side AC. Repeat of an earlier record (aliased).')
 
 # ---------------- 1766234 1/16 in base 5
 b.add(1766234,1,r'''When the fraction $\dfrac{1}{16}$ is written in base $5$, the result is the repeating expansion $0.\overline{abcd}_5$, where $a,b,c,d$ are base-$5$ digits. Find $a+b+c+d$.''',

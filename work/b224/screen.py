@@ -15,6 +15,5 @@ EXCL.update({
 })
 PARTIAL={
  '1772017':'The bonus question (a general formula for the minimum number of keystrokes for every n) is open-ended and dropped; only the 2019 problem is used.',
- '1752262':'P1 (graph of gasoline prices) and P2 (octagon of 10 unit squares) need missing images and are dropped; only P3 (gloves and hats) is used, as q03.',
  '1767722':'Problem #26 (congruent right triangles and three squares "in the figure") needs the missing figure and is dropped; only #30 is used, as q30.',
 }
