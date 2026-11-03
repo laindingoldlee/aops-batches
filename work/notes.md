@@ -20,3 +20,4 @@
 - b230 done: 97 rec, 7 al (2 to b229/b227 per xnotes), 36 diag; 64/2/30/4. Check 1736176 (11 vs 50), 1735595-q02, 1729625-q01 readings.
 - b225 figs reviewed (22). FIXED 1763561-q01: sqrt7 label touched red circle.
 - b230 figs reviewed (36). FIXED: 1736373 cone sides now tangent to base ellipse (back rim was poking outside the silhouette); 1735512-q82 E,F labels on lines; 1734443-q01 4sqrt10 label read as MB -> moved onto BK; 1734443-q06 B on circle; 1734443-q09 Q on circle; 1734740 a=2 on y-axis (white label box).
+- Cross-batch scan (xdup, 266 pairs >0.35): no further repeats; top pairs are near misses with different data (e.g. 1778686 x+1/x=5 x^4 vs 1706241 x+1/x=4 x^5; sum 1..2019 vs 1..100).
