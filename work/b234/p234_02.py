@@ -8,13 +8,13 @@ RA=r'''void ra(pair P,pair U,pair V,real s){draw(P+s*unit(U-P)--P+s*unit(U-P)+s*
 fig=r'''import graph;
 pair P=(2,3),Q=(7,-7),X=(5,-3);
 draw((-0.5,0)--(8.5,0),gray,Arrow(5));draw((0,-8)--(0,4.5),gray,Arrow(5));
-label("$x$",(8.5,0),N,gray);label("$y$",(0,4.5),E,gray);
+label("$x$",(8.5,0),N,gray);label("$y$",(0,4.5),W,gray);
 draw(P--X,red+linewidth(1));draw(X--Q,blue+linewidth(1));
 draw(P--(5,3),dashed);draw((5,3)--X,dashed);
 dot(P);dot(Q);dot(X);
-label("$(2,3)$",P,W);label("$(7,-7)$",Q,E);label("$(5,-3)$",X,E);
+label("$(2,3)$",P,N);label("$(7,-7)$",Q,E);label("$(5,-3)$",X,E);
 label("$60\%$",(2.6,1.2),W,red);label("$40\%$",(X+Q)/2,SW,blue);
-label("$3$",(3.5,3),N);label("$6$",(5,1.5),E);'''
+label("$3$",(3.5,3),S);label("$6$",(5,1.5),E);'''
 b.add(1715264,1,r'''Let $(x,y)$ be the point that is $60\%$ of the way from the point $(2,3)$ to the point $(7,-7)$. What is $x+y$?''',
 r'''Moving from $(2,3)$ to $(7,-7)$ changes $x$ by $5$ and $y$ by $-10$. Going $60\%$ of the way changes them by $0.6\cdot5=3$ and $0.6\cdot(-10)=-6$, so
 \[

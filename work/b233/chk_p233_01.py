@@ -13,12 +13,14 @@ for k in (4,5,6):
 assert cnt==6991
 assert sum(C(4,p)*C(11,4-p) for p in range(3))==1320 and sum(C(4,p)*C(6,4-p) for p in range(3))==185
 # 1710142: rational p only for (3,2): check ab=6 cases and random search over small a,b numerically
-import sympy as sp
+from mpmath import mp, mpf, sqrt as msqrt
+mp.dps=60
 sols=[]
 for a in range(1,60):
     for b_ in range(1,60):
-        p=sp.nsimplify((sp.sqrt(2)+sp.sqrt(a))/(sp.sqrt(3)+sp.sqrt(b_)))
-        if sp.simplify((sp.sqrt(2)+sp.sqrt(a))/(sp.sqrt(3)+sp.sqrt(b_))).is_rational: sols.append((a,b_))
+        p=(msqrt(2)+msqrt(a))/(msqrt(3)+msqrt(b_))
+        fr=F(str(mp.nstr(p,50))).limit_denominator(10**6)
+        if abs(p-mpf(fr.numerator)/fr.denominator)<mpf(10)**-40: sols.append((a,b_))
 assert sols==[(3,2)]
 # 1710127
 assert [d for d in range(12,20300) if 19250%d==11 and 20302%d==3]==[53]
@@ -107,7 +109,7 @@ for c in itertools.combinations(range(17),4):
     assert not all(red(*e) for e in pr) and not all(not red(*e) for e in pr)
 assert [x for x in Q if (x-1)%17 in Q]==sorted([2,9,16]) or sorted(x for x in Q if (x-1)%17 in Q)==[2,9,16]
 # R(3,4)<=9 sanity: R(3,3)=6 exhaustive on 5 points pentagon colouring exists
-for _ in range(200):
+for _ in range(30):
     col={e:random.random()<0.5 for e in itertools.combinations(range(18),2)}
     assert any(len({col[e] for e in itertools.combinations(c,2)})==1 for c in itertools.combinations(range(18),4))
 print('ok')

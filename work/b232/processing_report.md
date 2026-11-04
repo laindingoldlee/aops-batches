@@ -120,7 +120,7 @@ The other 12 excluded topics are non-mathematical: AMC 8 versus a math-team meet
 
 ## Diagrams
 
-There are 20 Asymptote diagrams in the exported records, 19 in solutions and 1 in a question. Each has an SVG preview and alt text. The question figure (1725534) is now in an aliased record, so the exported records' only question figure is gone. All exported figures are solution sketches: every geometry-tagged exported record has one. Proportions are true, except two figures that are marked "not to scale" (1726281-q01 and q02).
+There are 20 Asymptote diagrams in the exported records, all in solutions (the only question figure, in 1725534, belongs to a record that became an alias). Each has an SVG preview and alt text, and every geometry-tagged exported record has a solution sketch. Proportions are true, except two figures that are marked "not to scale" (1726281-q01 and q02).
 
 Fixes after viewing the contact sheets:
 - 1728070-q01: the angle arcs at C were shrunk so the tick mark on CD no longer touches them. Confusing double ticks on AB and AC (overlapping the single tick on CD) were removed.

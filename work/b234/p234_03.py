@@ -125,7 +125,7 @@ draw(V[0]--V[1]--V[2]--V[3]--V[4]--V[5]--cycle,linewidth(0.9));
 for(int i=0;i<6;++i) draw(O--V[i],dashed+gray);
 dot(O);
 label("$O$",O+(0,-1.4));
-label("$6$",(V[0]+V[1])/2,dir(30));
+label("$6$",(V[0]+V[1])/2,dir(210));
 label("$6$",(O+V[0])/2,S);'''
 b.add(1698023,1,r'''A regular hexagon with area $54\sqrt3$ square inches is inscribed in a circle. What is the circumference of the circle? Express your answer in terms of $\pi$.''',
 r'''The segments from the centre $O$ to the six vertices cut the hexagon into six equilateral triangles whose side $s$ equals the side of the hexagon and also the radius of the circle.
@@ -325,7 +325,7 @@ draw(A--(B+C)/2,blue+dashed);draw(B--(C+A)/2,blue+dashed);draw(C--(A+B)/2,blue+d
 draw(A--(6,0),red+dashed);draw(A--H,red+dashed);draw(B--H,red+dashed);draw(C--H,red+dashed);
 draw(A--B--C--cycle,linewidth(0.9));
 dot(G,blue);dot(I,heavygreen);dot(H,red);
-label("$A$",A,dir(10));label("$B$",B,SW);label("$C$",C,SE);
+label("$A$",A,1.6*W);label("$B$",B,SW);label("$C$",C,SE);
 label("$G$",G,dir(65),blue);label("$I$",I,N,heavygreen);label("$H$",H,N,red);'''
 b.add(1711919,1,r'''Explain the difference between the centroid, the incentre and the orthocentre of a triangle by stating how each is defined. Then find all three for the triangle with vertices $A(6,8)$, $B(0,0)$ and $C(21,0)$.''',
 r'''\textbf{Definitions.}

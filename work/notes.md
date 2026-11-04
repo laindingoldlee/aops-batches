@@ -28,3 +28,5 @@
 - b235 done: 75 rec, 11 al, 19 diag; 63/2/29/6. Check 1708235 reading (1699), 1707676-q05 (diagonal reading), 1710592 (official 6 from memory - proof given).
 - b235 figs reviewed (19): OK.
 - b234 done: 78 rec, 6 al, 19 diag; 68/0/26/6. 1712630 none of the choices right (16.92). Near miss 1715264-q03 vs prior 1759128-q04 kept (different coefficients).
+- b232 done: 73 rec, 17 al, 20 diag; 60/4/23/13. xnotes: b233 1717359-q01,q02,q04 should alias to b232. Near miss 1726527 vs prior 2953609-q04 kept (different wording/answer).
+- b234 figs reviewed (19). FIXED: 1715264-q01 (2,3) label overlapped y-axis; 1698023 side label 6 squeezed against circle (moved inside); 1711919 A label on side AC.
