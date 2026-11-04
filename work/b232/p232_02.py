@@ -122,7 +122,7 @@ pair A=(-4,0),B=(4,0),C=(2,h),D=(-2,h),Q=(2,0),O=(0,r);
 draw(A--B--C--D--cycle,linewidth(0.9));
 draw(circle(O,r),blue+linewidth(0.8));
 draw(C--Q,dashed);draw(Q--Q+(-0.35,0)--Q+(-0.35,0.35)--Q+(0,0.35),linewidth(0.5));
-label("$4$",(D+C)/2,N);label("$8$",(A+B)/2,S);label("$6$",(B+C)/2,E);
+label("$4$",(D+C)/2,N);draw((-4,-1.2)--(4,-1.2),Arrows(4));label("$8$",(0,-1.2),S);label("$6$",(B+C)/2,E);
 label("$2$",(Q+B)/2,S);label("$4\sqrt2$",(C+Q)/2+(0,-0.6),W);
 label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,NE);label("$D$",D,NW);'''
 b.add(1726281,4,r'''A circle is inscribed in an isosceles trapezoid whose bases have lengths $4$ and $8$. What is the diameter of the circle?''',

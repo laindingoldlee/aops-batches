@@ -18,7 +18,7 @@ def root(f,a,b):
         else: a=m
     return (a+b)/2
 f=lambda y: abs(y)+math.hypot(8,y-8)-L
-r=root(f,-50,0)/root(f,0,50); assert F(r).limit_denominator(100)!=F(r).limit_denominator(10**6) or True
+r=root(f,-50,0)/root(f,0,50)
 assert all(abs(r-F(p,q))>1e-6 for q in range(1,60) for p in range(-60,1))
 # 1719974
 for x in [i/50 for i in range(-200,800)]:
