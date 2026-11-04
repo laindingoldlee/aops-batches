@@ -1,0 +1,36 @@
+# orchestrator notes 221-230
+- b227 done: 82 rec, 3 al, 15 diag; 61/1/36/2. Check 1753103-q02 (independent chips reading 51/64), 1753584 (missing fig reading).
+- b227 figs reviewed (15). FIXED 1756275, 1756743: axis x/y labels touched arrowheads (align 3E/3N). FIXED 1753987: cone ellipses flattened (0.25->0.15) so cut ellipse no longer touches back base arc and side kink gone.
+- b223 done: 74 rec, 9 al, 13 diag; 55/1/36/8. Check 1775342 (key 120 vs data 90), 1773142 reading, 1777839 = 2006 AMC12B#25 (no src).
+- b221 done: 63 rec, 18 al, 16 diag; 54/2/29/15. Check 1787416 (right->acute, 84), 1780989-q02 (0.58 rounding reading).
+- b223 figs reviewed (13). FIXED 1772259-q03: A label sat on the dotted side extensions; moved inside the angle.
+- b221 figs reviewed (16). FIXED label collisions: 1787556 (A on line), 1787424 (O on radius 10), 1785634-q05 (P on PD), 1785275 (A,B on circle).
+- b229 done: 81 rec, 12 al (2 to b227 draft 1755042), 24 diag; 67/1/28/4. Check 1741490 (missing fig, placement chosen to match 0.69).
+- b228 done: 86 rec, 14 al, 18 diag; 69/0/23/8. Check 1747745 reading (|S|=3), 1706241 reading (724).
+- b229 figs reviewed (24). FIXED label collisions: 1743708 (0,3) on line, 1745435 P/Q on circle, 1743083-q03 I on edge DH, 1743013 T on lines, 1741984 A(1,3) on y-axis.
+- b222 done: 70 rec, 7 al, 18 diag; 62/1/34/3. xnotes: b223 1777424 should alias to b222 1777432 (b223 already finished - do it in xdup step); b225 1765675->1945887, 1765713 vs b222 1777350.
+- b224 done: 81 rec, 10 al (1 to b223 1605801), 23 diag; 68/2/21/9. Check 1772698 P6 Monty Hall reading, 1771791 answer 3sqrt3+pi.
+- b226 done: 80 rec, 8 al, 20 diag; 58/1/34/7. xnotes: b227 1757353-q01 should alias to b226 1759713-q03 (b227 finished - do in xdup step).
+- b228 figs reviewed (18). FIXED: 1748217-q01 half-chord labels moved to the halves used in the right triangles; 1748211 vertex labels off axis/curve; 1749331 A,C,D labels off strip lines; 1746837 d1/2,d2/2 labels off sides AD/BC.
+- b222 figs reviewed (18). FIXED 1782694-q01 (both figs): '6' sat beside FC/GC (read as that segment); now a dimension arrow under BC. FIXED 1780203-q04: radius '3' sat on back base ellipse.
+- b224 figs reviewed (23): OK (frustum contour checked: tangent construction is correct).
+- b226 figs reviewed (20). FIXED: 1762490 22.5deg label touched circle; 1761304 P on AB; 1762011 P1-P4 labels in arc cusps pushed out; 1759331 P on dashed bisector; 1759220 A(1,2) overlapped y-axis -> label A only.
+- xnotes acted: b223 1777424-q01 -> b222 1777432-q01; b227 1757353-q01 -> b226 1759713-q03, q02 -> b225 1762366-q149 (all verified identical).
+- b225 done: 93 rec, 10 al (1 to b222 1777350), 22 diag; 68/0/25/7. Check 1757873-q02 reading (180/7), 1764326 reading, 1763286 leash answer.
+- b230 done: 97 rec, 7 al (2 to b229/b227 per xnotes), 36 diag; 64/2/30/4. Check 1736176 (11 vs 50), 1735595-q02, 1729625-q01 readings.
+- b225 figs reviewed (22). FIXED 1763561-q01: sqrt7 label touched red circle.
+- b230 figs reviewed (36). FIXED: 1736373 cone sides now tangent to base ellipse (back rim was poking outside the silhouette); 1735512-q82 E,F labels on lines; 1734443-q01 4sqrt10 label read as MB -> moved onto BK; 1734443-q06 B on circle; 1734443-q09 Q on circle; 1734740 a=2 on y-axis (white label box).
+- Cross-batch scan (xdup, 266 pairs >0.35): no further repeats; top pairs are near misses with different data (e.g. 1778686 x+1/x=5 x^4 vs 1706241 x+1/x=4 x^5; sum 1..2019 vs 1..100).
+
+# orchestrator notes 231-235
+- b231 done: 79 rec, 17 al, 15 diag; 58/0/29/13. Check 1734077 (rebuilt fig, 56), 1728894, 1734032 (trivial 1 year).
+- b231 figs reviewed (15). FIXED 1728894-q01: PQ=10 label sat under the left half only; now a dimension arrow P..Q.
+- b235 done: 75 rec, 11 al, 19 diag; 63/2/29/6. Check 1708235 reading (1699), 1707676-q05 (diagonal reading), 1710592 (official 6 from memory - proof given).
+- b235 figs reviewed (19): OK.
+- b234 done: 78 rec, 6 al, 19 diag; 68/0/26/6. 1712630 none of the choices right (16.92). Near miss 1715264-q03 vs prior 1759128-q04 kept (different coefficients).
+- b232 done: 73 rec, 17 al, 20 diag; 60/4/23/13. xnotes: b233 1717359-q01,q02,q04 should alias to b232. Near miss 1726527 vs prior 2953609-q04 kept (different wording/answer).
+- b234 figs reviewed (19). FIXED: 1715264-q01 (2,3) label overlapped y-axis; 1698023 side label 6 squeezed against circle (moved inside); 1711919 A label on side AC.
+- b232 figs reviewed (20). FIXED 1726281-q04: AB=8 label sat over the left part only (A..foot is 6); now a dimension arrow.
+- b233 done: 73 rec, 9 al (3 to b232 per xnotes), 21 diag; 62/3/29/6. 1716792 excluded (no clean proof); 1720781 R(4,4) diff 7.
+- b233 figs reviewed (21). FIXED: 1720835 base label 6 moved to centre of CA; 1717359-q05 D label touched circle/AC.
+- Cross-batch scan 231-235 (61 pairs >0.35): no further repeats; all xnotes lines acted on by workers (b232 1725534 -> prior; b233 1717359 q01/q02/q04 -> b232).

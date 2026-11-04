@@ -1,0 +1,591 @@
+[
+ {
+  "topic_id": "1784477",
+  "part": 1,
+  "question": "On the Celsius scale water freezes at $0^\\circ$ and boils at $100^\\circ$. On the Sulesic scale water freezes at $20^\\circ$ and boils at $160^\\circ$. Both scales are linear. What is the temperature on the Sulesic scale when it is $215^\\circ$ on the Celsius scale?",
+  "solution": "Between freezing and boiling the Celsius scale rises by $100$ degrees and the Sulesic scale by $160-20=140$ degrees, so one Celsius degree corresponds to $\\dfrac{140}{100}=1.4$ Sulesic degrees. Since $0^\\circ\\text{C}$ is $20^\\circ$ Sulesic,\n\\[\nS=20+1.4\\,C .\n\\]\nFor $C=215$ we get $S=20+1.4\\cdot215=20+301=\\boxed{321^\\circ}$ on the Sulesic scale.",
+  "tags": [
+   "Linear equations",
+   "Ratios, proportions, and variation",
+   "Unit conversion"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The (standard) assumption that the scales are linear is stated."
+ },
+ {
+  "topic_id": "1784575",
+  "part": 1,
+  "question": "In triangle $PQR$, $PQ=PR$, and $X$ is a point on side $PR$ such that $QR^2=PR\\cdot XR$. Prove that $QX=QR$.",
+  "solution": "From $QR^2=PR\\cdot XR$ we get\n\\[\n\\dfrac{QR}{PR}=\\dfrac{XR}{QR}.\n\\]\nTriangles $RQX$ and $RPQ$ share the angle at $R$ (the angle $QRX$ is the angle $PRQ$, because $X$ lies on $RP$), and the sides enclosing that angle are proportional: $\\dfrac{RX}{RQ}=\\dfrac{RQ}{RP}$. Hence, by SAS similarity, $\\triangle RXQ\\sim\\triangle RQP$, with $R\\to R$, $X\\to Q$, $Q\\to P$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(4.5cm);\ndefaultpen(fontsize(10pt));\npair Q=(-2,0),R=(2,0),P=(0,6),X=(1.2,2.4);\ndraw(P--Q--R--cycle,linewidth(0.9));\ndraw(Q--X,blue+linewidth(0.8));\ndot(X);\nlabel(\"$P$\",P,N);label(\"$Q$\",Q,SW);label(\"$R$\",R,SE);label(\"$X$\",X,E);\n// equal sides PQ = PR\npair m1=(P+Q)/2,m2=(P+R)/2;\ndraw((m1-0.18*unit(rotate(90)*(P-Q)))--(m1+0.18*unit(rotate(90)*(P-Q))));\ndraw((m2-0.18*unit(rotate(90)*(R-P)))--(m2+0.18*unit(rotate(90)*(R-P))));\n// equal segments QX = QR (double ticks)\npair m3=(Q+X)/2,m4=(Q+R)/2;\nfor(int k=-1;k<=1;k+=2){\n pair o3=0.08*k*unit(X-Q),o4=(0.08*k,0);\n draw((m3+o3-0.18*unit(rotate(90)*(X-Q)))--(m3+o3+0.18*unit(rotate(90)*(X-Q))),blue);\n draw((m4+o4-(0,0.18))--(m4+o4+(0,0.18)),blue);\n}\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nCorresponding angles give $\\angle RXQ=\\angle RQP$. Since $PQ=PR$, the base angles of triangle $PQR$ are equal: $\\angle RQP=\\angle PRQ$. Therefore\n\\[\n\\angle QXR=\\angle RQP=\\angle PRQ=\\angle QRX ,\n\\]\nso triangle $QXR$ has equal angles at $X$ and $R$, and is isosceles with $QX=QR$. $\\blacksquare$",
+  "tags": [
+   "Similarity",
+   "Isosceles triangles",
+   "Triangles"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The figure uses PQ = PR = sqrt(40) and QR = 4, so XR = 16/sqrt(40), i.e. X is 0.4 of the way from R to P; QX = QR = 4 was checked with coordinates."
+ },
+ {
+  "topic_id": "1784545",
+  "part": 1,
+  "question": "In triangle $ABC$, points $P$ and $Q$ lie on sides $AB$ and $AC$ with $PQ\\parallel BC$. If $AP=1.5$ cm, $PB=3$ cm and $AQ=1.3$ cm, find $QC$.",
+  "solution": "Since $PQ\\parallel BC$, triangles $APQ$ and $ABC$ are similar (corresponding angles at $P,B$ and at $Q,C$ are equal), so $\\dfrac{AP}{AB}=\\dfrac{AQ}{AC}$, or equivalently (basic proportionality theorem) $\\dfrac{AP}{PB}=\\dfrac{AQ}{QC}$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(4.5cm);\ndefaultpen(fontsize(10pt));\npair B=(0,0),C=(6,0),A=(2,4.5);\npair P=A+(B-A)/3,Q=A+(C-A)/3;\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(P--Q,linewidth(0.9));\ndot(P);dot(Q);\nlabel(\"$A$\",A,N);label(\"$B$\",B,SW);label(\"$C$\",C,SE);label(\"$P$\",P,W);label(\"$Q$\",Q,E);\nlabel(\"$1.5$\",(A+P)/2,W);label(\"$3$\",(P+B)/2,W);\nlabel(\"$1.3$\",(A+Q)/2,NE);label(\"$x$\",(Q+C)/2,NE);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nWith $QC=x$:\n\\[\n\\dfrac{1.5}{3}=\\dfrac{1.3}{x}\\ \\Longrightarrow\\ x=\\dfrac{3\\cdot1.3}{1.5}=2.6 .\n\\]\nSo $QC=\\boxed{2.6\\text{ cm}}$.",
+  "tags": [
+   "Similarity",
+   "Parallel lines",
+   "Triangles",
+   "Ratios, proportions, and variation"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1776535",
+  "part": 1,
+  "question": "Factorise $x^2+2xy+y^2$.",
+  "solution": "This is a perfect square trinomial: $(x+y)^2=x^2+2xy+y^2$. Hence\n\\[\nx^2+2xy+y^2=\\boxed{(x+y)^2}.\n\\]",
+  "tags": [
+   "Factoring",
+   "Algebraic expressions and identities"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1776535",
+  "part": 2,
+  "question": "A rectangle has area $x^2-y^2$, where $x>y>0$. Express possible side lengths of the rectangle in terms of $x$ and $y$ by factorising the area.",
+  "solution": "By the difference of squares,\n\\[\nx^2-y^2=(x+y)(x-y).\n\\]\nBoth factors are positive because $x>y>0$, so the rectangle can have sides $\\boxed{x+y\\text{ and }x-y}$; indeed $(x+y)(x-y)=x^2-y^2$.",
+  "tags": [
+   "Difference of squares",
+   "Factoring"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post says \"the 2 sides of the square\"; it means the rectangle. The condition x > y > 0 is added so that the side lengths are positive."
+ },
+ {
+  "topic_id": "1784532",
+  "part": 1,
+  "question": "A square sheet of paper is folded along four broken lines, parallel to one side, that divide it into $5$ equal strips, so that the strips lie exactly on top of one another. The rectangle that results from the folding has perimeter $180$ cm. What is the area of the original square?",
+  "solution": "Let the side of the square be $s$ cm. The broken lines cut it into five strips of size $s\\times\\dfrac {s}{5}$, and after folding only one strip is visible:\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5cm);\ndefaultpen(fontsize(10pt));\nreal s=5;\ndraw((0,0)--(s,0)--(s,s)--(0,s)--cycle,linewidth(0.9));\nfor(int k=1;k<5;++k) draw((k,0)--(k,s),dashed);\nlabel(\"$s$\",(s/2,0),S);label(\"$s$\",(0,s/2),W);\npair o=(7,0);\nfilldraw(shift(o)*((0,0)--(1,0)--(1,s)--(0,s)--cycle),paleblue,linewidth(0.9));\nlabel(\"$\\dfrac{s}{5}$\",o+(0.5,0),S);label(\"$s$\",o+(1,s/2),E);\nlabel(\"square\",(s/2,s),N);label(\"folded\",o+(0.5,s),N);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nThe rectangle has perimeter\n\\[\n2\\left(s+\\dfrac {s}{5}\\right)=\\dfrac{12s}{5}=180\\ \\Longrightarrow\\ s=75 .\n\\]\nSo the square has area $75^2=\\boxed{5625\\text{ cm}^2}$. (No trial and error is needed: write the perimeter in terms of $s$ and solve the linear equation.)",
+  "tags": [
+   "Paper folding",
+   "Squares",
+   "Rectangles",
+   "Lengths, perimeter, and area",
+   "Linear equations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The figure of the original problem is missing; the text determines it (the broken lines split the square into 5 equal strips, which are folded onto one another)."
+ },
+ {
+  "topic_id": "1784164",
+  "part": 1,
+  "question": "The diagonals of a parallelogram have lengths $82$ cm and $30$ cm. One altitude of the parallelogram is $18$ cm long. What is the smallest possible area of the parallelogram, in square centimetres?",
+  "solution": "Let the altitude $18$ be drawn to the side $AB$ of length $a$, and place $A=(0,0)$, $B=(a,0)$, $D=(x,18)$, $C=(a+x,18)$ (reflecting the figure if necessary, we may take $x\\ge0$). The diagonals are $AC$ and $BD$:\n\\[\nAC^2=(a+x)^2+18^2,\\qquad BD^2=(x-a)^2+18^2 .\n\\]\nSince $a>0$ and $x\\ge0$, $a+x\\ge|x-a|$, so $AC$ is the longer diagonal: $(a+x)^2+324=82^2=6724$ and $(x-a)^2+324=30^2=900$. Hence $a+x=80$ and $x-a=\\pm24$, giving\n\\[\na=\\dfrac{80-24}{2}=28\\qquad\\text{or}\\qquad a=\\dfrac{80+24}{2}=52 .\n\\]\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(10cm);\ndefaultpen(fontsize(10pt));\nvoid para(real a,real x,pair o,string nm){\n pair A=o,B=o+(a,0),C=o+(a+x,18),D=o+(x,18);\n draw(A--B--C--D--cycle,linewidth(0.9));\n draw(A--C,blue);draw(B--D,blue);\n draw(o+(0,18)--D,dashed);draw(A--o+(0,18),dashed);\n draw((o+(0,18))--(o+(2.2,18))--(o+(2.2,15.8))--(o+(0,15.8)));\n label(\"$18$\",o+(0,9),W);\n label(\"$\"+string(a)+\"$\",(A+B)/2,S);\n label(\"$A$\",A,SW);label(\"$B$\",B,S);label(\"$C$\",C,NE);label(\"$D$\",D,N);\n label(\"$AC=82$\",o+(86,11),E);label(\"$BD=30$\",o+(86,5),E);\n label(nm,o+(-9,9),W);\n}\npara(28,52,(0,0),\"(i)\");\npara(52,28,(0,-36),\"(ii)\");\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nBoth cases give genuine parallelograms: (i) $a=28$, $x=52$ and (ii) $a=52$, $x=28$. The area is base times height, $18a$, which is $504$ or $936$. The smallest possible area is $\\boxed{504}$ square centimetres.",
+  "tags": [
+   "Parallelograms",
+   "Diagonals",
+   "Coordinate geometry",
+   "Pythagorean theorem",
+   "Lengths, perimeter, and area"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2014,
+   "division": "State",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": "25"
+  },
+  "note": "Both configurations were checked with coordinates (diagonals 82 and 30, altitude 18 to the side of length 28 or 52)."
+ },
+ {
+  "topic_id": "1784280",
+  "part": 1,
+  "question": "Find the value of $-1+2-3+4-5+6-\\cdots-23+24$.",
+  "solution": "Group the terms in consecutive pairs:\n\\[\n(-1+2)+(-3+4)+\\cdots+(-23+24).\n\\]\nThere are $\\dfrac{24}{2}=12$ pairs, each equal to $1$, so the sum is $\\boxed{12}$.",
+  "tags": [
+   "Pairing and grouping",
+   "Summation"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1784280",
+  "part": 2,
+  "question": "Find the value of\n\\[\n3\\cdot(1+3+5-7+9+11+13-15+\\cdots+89+91+93-95+97+99+101-103),\n\\]\nwhere the odd numbers from $1$ to $103$ appear in order and every fourth one is subtracted.",
+  "solution": "The odd numbers $1,3,\\dots,103$ are $52$ numbers, which split into $13$ blocks of four consecutive odd numbers. The block starting at $8k+1$ ($k=0,1,\\dots,12$) contributes\n\\[\n(8k+1)+(8k+3)+(8k+5)-(8k+7)=16k+2 .\n\\]\n(Check: $1+3+5-7=2$ and $97+99+101-103=194=16\\cdot12+2$.) The sum inside the brackets is\n\\[\n\\sum_{k=0}^{12}(16k+2)=16\\cdot\\dfrac{12\\cdot13}{2}+2\\cdot13=1248+26=1274,\n\\]\nand the requested value is $3\\cdot1274=\\boxed{3822}$.",
+  "tags": [
+   "Pairing and grouping",
+   "Arithmetic sequences",
+   "Summation"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "Math Is Cool",
+   "year": 2018,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Math Is Cool 2018 (as the post says). The pattern (every fourth odd number subtracted) is stated explicitly."
+ },
+ {
+  "topic_id": "1784100",
+  "part": 1,
+  "question": "A Heronian triangle is a triangle with three integer side lengths and integer area. What is the least possible area of a Heronian triangle whose longest side has length $17$?",
+  "solution": "Let the other two sides be $x\\le y\\le17$ and put $u=x+y$, $d=y-x\\ge0$. The triangle inequality gives $u\\ge18$, and $y\\le17$ gives $u+d\\le34$. Heron's formula $16A^2=(x+y+17)(x+y-17)(17+x-y)(17-x+y)$ becomes\n\\[\n16A^2=(u^2-289)(289-d^2).\n\\]\nIf $u$ were even, $d$ would be even too, and the right side would be odd; so $u$ and $d$ are odd, $u\\ge19$, $d\\le34-u$.\n\n\\textbf{$u=19$.} Then $u^2-289=72$ and $A^2=\\dfrac{9(289-d^2)}{2}$, so $\\dfrac{289-d^2}{2}$ must be a perfect square. For $d=1,3,5,\\dots,15$ this number is $144,140,132,120,104,84,60,32$; only $d=1$ works, giving $A^2=9\\cdot144$, $A=36$, with sides $x=9$, $y=10$.\n\n\\textbf{$u=21$.} Then $u^2-289=152$ and $A^2=\\dfrac{19(289-d^2)}{2}$, so $19$ must divide $\\dfrac{289-d^2}{2}$ for some odd $d\\le13$; the values $144,140,132,120,104,84,60$ are not multiples of $19$. No triangle.\n\n\\textbf{$u\\ge23$.} Then $d\\le11$, so $289-d^2\\ge168$, and $u^2-289\\ge240$; hence $A^2\\ge\\dfrac{240\\cdot168}{16}=2520>36^2$.\n\nSo the least possible area is $\\boxed{36}$, attained by the triangle with sides $9,10,17$: $s=18$ and $A=\\sqrt{18\\cdot9\\cdot8\\cdot1}=\\sqrt{1296}=36$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\npair B=(0,0),C=(17,0),A=(154/17,72/17),H=(154/17,0);\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(A--H,dashed);\ndraw((H.x,0)--(H.x+0.6,0)--(H.x+0.6,0.6)--(H.x,0.6));\nlabel(\"$A$\",A,N);label(\"$B$\",B,SW);label(\"$C$\",C,SE);label(\"$H$\",H,S);\nlabel(\"$10$\",(A+B)/2,NW);label(\"$9$\",(A+C)/2,NE);label(\"$17$\",(5,0),S);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nGeometrically, the altitude $AH$ to the side $17$ has length $\\dfrac{2\\cdot36}{17}=\\dfrac{72}{17}$, and $BH=\\dfrac{154}{17}$, $HC=\\dfrac{135}{17}$; the triangle is very flat, which is why its area is small.",
+  "tags": [
+   "Heron's formula",
+   "Triangles",
+   "Triangle inequality",
+   "Casework",
+   "Perfect squares"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Checked by brute force over all integer sides x <= y <= 17: the least area is 36 (9, 10, 17), as the posted answer says."
+ },
+ {
+  "topic_id": "1783820",
+  "part": 1,
+  "question": "Harry chooses two distinct integers $a,b$ and Voldemort chooses two distinct integers $c,d$, all from $\\{1,2,\\dots,9\\}$, so that the four numbers $a,b,c,d$ are all different; every such choice is equally likely. If some two of the four numbers have a sum that is a perfect square, Voldemort spares Harry. Find the probability that Voldemort spares Harry.",
+  "solution": "The set $\\{a,b,c,d\\}$ is a uniformly random $4$-element subset of $\\{1,\\dots,9\\}$; there are $\\dbinom94=126$ of them. Count the subsets in which \\emph{no} two elements sum to a square. The possible square sums of two different numbers from $1$ to $9$ are $4,9,16$, coming from the pairs\n\\[\n\\{1,3\\};\\quad \\{1,8\\},\\{2,7\\},\\{3,6\\},\\{4,5\\};\\quad \\{7,9\\}.\n\\]\nJoin two numbers when they form one of these pairs. The numbers split into three chains, $8-1-3-6$, $2-7-9$ and $4-5$, and we need $4$ numbers with no two joined. Counting sets of non-adjacent numbers by size:\n\\begin{itemize}\n\\item chain $8-1-3-6$: $1$ empty set, $4$ singletons, $3$ pairs ($\\{8,3\\},\\{8,6\\},\\{1,6\\}$), no triples;\n\\item chain $2-7-9$: $1$, $3$ singletons, $1$ pair ($\\{2,9\\}$);\n\\item chain $4-5$: $1$, $2$ singletons.\n\\end{itemize}\nThe number of good $4$-sets is the coefficient of $t^4$ in $(1+4t+3t^2)(1+3t+t^2)(1+2t)$. The first two factors multiply to $1+7t+16t^2+13t^3+3t^4$, so the coefficient is $3+2\\cdot13=29$.\n\nHence Harry is put to death with probability $\\dfrac{29}{126}$, and he is spared with probability\n\\[\n1-\\dfrac{29}{126}=\\boxed{\\dfrac{97}{126}}.\n\\]",
+  "tags": [
+   "Probability",
+   "Complementary probability",
+   "Perfect squares",
+   "Casework",
+   "Combinations"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The condition \"at least 2 items p, q of the set sum to a perfect square\" is read as: some two different numbers of the four have a square sum. The integers are 1 to 9 (the interval 0 < x < 10). Checked by enumerating all 126 sets."
+ },
+ {
+  "topic_id": "1783710",
+  "part": 1,
+  "question": "Find the greatest possible value of $-a+\\sqrt{4-a^2}$, where $a$ is a real number with $-2\\le a\\le2$.",
+  "solution": "By the Cauchy-Schwarz inequality (or the inequality $u+v\\le\\sqrt{2(u^2+v^2)}$),\n\\[\n(-a)\\cdot1+\\sqrt{4-a^2}\\cdot1\\le\\sqrt{1^2+1^2}\\cdot\\sqrt{(-a)^2+\\left(\\sqrt{4-a^2}\\right)^2}=\\sqrt2\\cdot\\sqrt{4}=2\\sqrt2 .\n\\]\nEquality holds when $-a=\\sqrt{4-a^2}$, i.e.\\ $a\\le0$ and $a^2=2$, so $a=-\\sqrt2$; then the value is $\\sqrt2+\\sqrt2=2\\sqrt2$. The greatest value is $\\boxed{2\\sqrt2}$.\n\n(AM-GM gives lower bounds for sums of positive terms; here we need an upper bound for a sum, which comes from comparing the sum with the sum of squares $a^2+(4-a^2)=4$. Equivalently, with $a=2\\cos t$, $0\\le t\\le\\pi$, the expression is $2\\sin t-2\\cos t=2\\sqrt2\\sin(t-45^\\circ)\\le2\\sqrt2$.)",
+  "tags": [
+   "Cauchy-Schwarz inequality",
+   "Maxima and minima",
+   "Radicals"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The domain -2 <= a <= 2 (where the square root is defined) is stated. The post asks why AM-GM does not apply; the solution explains this and uses Cauchy-Schwarz."
+ },
+ {
+  "topic_id": "1783346",
+  "part": 1,
+  "question": "In trapezoid $ABCD$, $AB$ is parallel to $CD$, $AB=3$, $BC=4$, $CD=8$ and $DA=3$. Find the area of the trapezoid.",
+  "solution": "Through $B$ draw the line parallel to $AD$, meeting $DC$ at $T$. Then $ABTD$ is a parallelogram, so $DT=AB=3$, $BT=AD=3$ and $TC=8-3=5$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(7cm);\ndefaultpen(fontsize(10pt));\npair D=(0,0),C=(8,0),A=(1.8,2.4),B=(4.8,2.4),T=(3,0),H=(4.8,0);\ndraw(A--B--C--D--cycle,linewidth(0.9));\ndraw(B--T,dashed);draw(B--H,dashed);\npair u1=unit(T-B),u2=unit(C-B);\ndraw((B+0.3*u1)--(B+0.3*(u1+u2))--(B+0.3*u2));\ndraw((H+(0.25,0))--(H+(0.25,0.25))--(H+(0,0.25)));\nlabel(\"$A$\",A,NW);label(\"$B$\",B,N);label(\"$C$\",C,SE);label(\"$D$\",D,SW);label(\"$T$\",T,S);label(\"$H$\",H,S);\nlabel(\"$3$\",(A+B)/2,N);label(\"$3$\",(A+D)/2,NW);label(\"$4$\",(B+C)/2,NE);\nlabel(\"$3$\",(D+T)/2,S);label(\"$5$\",(T+C)/2+(0.5,0),S);label(\"$3$\",(B+T)/2+(-0.3,0.15),W);label(\"$h$\",(B+H)/2,E);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nTriangle $TBC$ has sides $3,4,5$, so it is right-angled at $B$. Its altitude from $B$ is the height $h$ of the trapezoid:\n\\[\nh=\\dfrac{TB\\cdot BC}{TC}=\\dfrac{3\\cdot4}{5}=\\dfrac{12}{5}.\n\\]\nThe area of the trapezoid is\n\\[\n\\dfrac{AB+CD}{2}\\cdot h=\\dfrac{3+8}{2}\\cdot\\dfrac{12}{5}=\\boxed{\\dfrac{66}{5}}.\n\\]\n(The other reading, $BC\\parallel DA$, is impossible: then the same construction would give a triangle with sides $3$, $8$ and $4-3=1$, which violates the triangle inequality.)",
+  "tags": [
+   "Trapezoids",
+   "Right triangles",
+   "Pythagorean theorem",
+   "Parallelograms",
+   "Lengths, perimeter, and area"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post says \"AB is parallel to BC\", a typo. AB parallel to CD is the only possible reading (BC parallel to DA would need a triangle with sides 1, 3, 8); this is explained in the solution. Coordinates D(0,0), C(8,0), A(1.8,2.4), B(4.8,2.4) confirm all four sides and the area 13.2."
+ },
+ {
+  "topic_id": "1783613",
+  "part": 1,
+  "question": "In isosceles trapezoid $ABCD$, $AB$ is parallel to $CD$, with $AB=3$ and $CD=4$. Segment $EF$ is drawn parallel to $CD$ with $E$ on $BC$ and $F$ on $AD$. If $AF:FD=15:16$, what is the length of $EF$?",
+  "solution": "Draw through $A$ the line parallel to $BC$; it meets $FE$ at $G$ and $DC$ at $K$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5cm);\ndefaultpen(fontsize(10pt));\npair D=(0,0),C=(4,0),A=(0.5,3),B=(3.5,3);\nreal t=15/31;\npair F=A+t*(D-A),Ep=B+t*(C-B),K=(1,0),G=A+t*(K-A);\ndraw(A--B--C--D--cycle,linewidth(0.9));\ndraw(F--Ep,linewidth(0.9));\ndraw(A--K,dashed);\ndot(F);dot(Ep);dot(G);dot(K);\nlabel(\"$A$\",A,NW);label(\"$B$\",B,NE);label(\"$C$\",C,SE);label(\"$D$\",D,SW);\nlabel(\"$F$\",F,W);label(\"$E$\",Ep,E);label(\"$G$\",G,NE);label(\"$K$\",K,S);\nlabel(\"$3$\",(A+B)/2,N);label(\"$1$\",(D+K)/2,S);label(\"$3$\",(K+C)/2,S);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n$ABEG$ and $ABCK$ are parallelograms, so $GE=KC=AB=3$ and $DK=4-3=1$. Since $FG\\parallel DK$, triangles $AFG$ and $ADK$ are similar with ratio $\\dfrac{AF}{AD}=\\dfrac{15}{31}$, so $FG=\\dfrac{15}{31}\\cdot1=\\dfrac{15}{31}$. Therefore\n\\[\nEF=FG+GE=\\dfrac{15}{31}+3=\\boxed{\\dfrac{108}{31}}.\n\\]\n(The trapezoid need not be isosceles for this argument; the height does not matter either.)",
+  "tags": [
+   "Trapezoids",
+   "Similarity",
+   "Parallel lines",
+   "Ratios, proportions, and variation"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Checked with coordinates (height 3, and other heights). The figure uses height 3; the height is not given and does not affect the answer."
+ },
+ {
+  "topic_id": "1783549",
+  "part": 1,
+  "question": "A $3\\times3\\times3$ cube is formed by gluing together $27$ standard dice. What is the smallest possible sum of all the numbers showing on the surface of the large cube? (On a standard die the numbers on opposite faces add up to $7$.)",
+  "solution": "Classify the $26$ dice that are visible by how many of their faces lie on the surface:\n\\begin{itemize}\n\\item the $8$ corner dice show $3$ faces, which meet at a vertex of the die and are pairwise adjacent;\n\\item the $12$ edge dice (middle of each edge) show $2$ adjacent faces;\n\\item the $6$ face-centre dice show $1$ face;\n\\end{itemize}\nand the centre die is hidden.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(4.5cm);\ndefaultpen(fontsize(10pt));\npair v=(0.45,0.32);\npen[] col={palegreen,paleblue,pink};\nint ext(int i){return (i==0||i==2)?1:0;}\nfor(int i=0;i<3;++i) for(int j=0;j<3;++j){\n filldraw((i,j)--(i+1,j)--(i+1,j+1)--(i,j+1)--cycle,col[ext(i)+ext(j)]);\n filldraw(((i,3)+j*v)--((i+1,3)+j*v)--((i+1,3)+(j+1)*v)--((i,3)+(j+1)*v)--cycle,col[ext(i)+ext(j)]);\n filldraw(((3,i)+j*v)--((3,i)+(j+1)*v)--((3,i+1)+(j+1)*v)--((3,i+1)+j*v)--cycle,col[ext(i)+ext(j)]);\n}\ndraw((0,0)--(3,0)--(3,3)--(0,3)--cycle,linewidth(0.9));\ndraw((0,3)--(0,3)+3v--(3,3)+3v--(3,0)+3v--(3,0),linewidth(0.9));draw((3,3)--(3,3)+3v,linewidth(0.9));\nfilldraw(box((0,-1.0),(0.4,-0.6)),pink);label(\"$3$ faces\",(0.5,-0.8),E);\nfilldraw(box((0,-1.8),(0.4,-1.4)),paleblue);label(\"$2$ faces\",(0.5,-1.6),E);\nfilldraw(box((0,-2.6),(0.4,-2.2)),palegreen);label(\"$1$ face\",(0.5,-2.4),E);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nThree faces of a die meeting at a vertex contain no pair of opposite faces, so they show three different numbers, with sum at least $1+2+3=6$; and $1,2,3$ can indeed meet at a vertex, since no two of them are opposite ($1+6=2+5=3+4=7$). Two adjacent faces show different numbers with sum at least $1+2=3$, which is attainable. A single face shows at least $1$. Each die can be turned independently, so all these minima are achieved together, and the smallest total is\n\\[\n8\\cdot6+12\\cdot3+6\\cdot1=48+36+6=\\boxed{90}.\n\\]",
+  "tags": [
+   "Cubes and rectangular prisms",
+   "Bounding and extremal cases",
+   "Systematic counting"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1783551",
+  "part": 1,
+  "question": "The graph of a polynomial function crosses the $x$-axis at exactly $10$ points. What are the minimum and the maximum possible degree of the polynomial? Which degrees are possible?",
+  "solution": "Let $p$ be the polynomial. At each crossing point $p$ has a real root, so $p$ has at least $10$ distinct real roots and $\\deg p\\ge10$. The degree $10$ occurs, for example, for\n\\[\np(x)=(x-1)(x-2)\\cdots(x-10),\n\\]\nwhose graph crosses the axis at $1,2,\\dots,10$.\n\nThere is \\emph{no maximum}: for every $k\\ge0$, the polynomial $(x-1)(x-2)\\cdots(x-10)\\,(x^2+1)^k$ has degree $10+2k$ and the same sign as $(x-1)\\cdots(x-10)$ everywhere, so its graph crosses the axis exactly at the same $10$ points.\n\nOn the other hand the degree must be \\emph{even}. The graph crosses the axis exactly where $p$ changes sign, so between $x\\to-\\infty$ and $x\\to+\\infty$ the sign of $p$ changes exactly $10$ times, an even number. Hence $p(x)$ has the same sign for very large negative and very large positive $x$. For odd degree the leading term $cx^n$ has opposite signs at the two ends, so the degree cannot be odd.\n\nAnswer: the minimum degree is $\\boxed{10}$, there is no maximum, and the possible degrees are exactly the even numbers $10,12,14,\\dots$.",
+  "tags": [
+   "Polynomials",
+   "Polynomial roots",
+   "Parity"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks for a maximum degree; there is none. The record adds the observation that the degree must be even."
+ },
+ {
+  "topic_id": "1783256",
+  "part": 1,
+  "question": "How many positive even three-digit numbers have the property that the sum of the hundreds digit and the tens digit equals the units digit?",
+  "solution": "Let the number have digits $h,t,u$ with $h\\ge1$ and $h+t=u$. The units digit $u$ is even, and $u=h+t\\ge1$, so $u\\in\\{2,4,6,8\\}$. For a fixed $u$, the hundreds digit can be any of $h=1,2,\\dots,u$, and then $t=u-h$ is a digit from $0$ to $u-1$. So there are $u$ numbers for each $u$, and the total is\n\\[\n2+4+6+8=\\boxed{20}.\n\\]",
+  "tags": [
+   "Digit problems",
+   "Systematic counting",
+   "Casework"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post names MATHCOUNTS without year or round. Checked by brute force."
+ },
+ {
+  "topic_id": "1783520",
+  "part": 1,
+  "question": "Determine the largest positive integer $n$ for which $2018!$ is divisible by $2021^n$.",
+  "solution": "Factor $2021=43\\cdot47$, with $43$ and $47$ prime. By Legendre's formula the exponents of these primes in $2018!$ are\n\\[\nv_{43}(2018!)=\\left\\lfloor\\dfrac{2018}{43}\\right\\rfloor+\\left\\lfloor\\dfrac{2018}{43^2}\\right\\rfloor=46+1=47,\\qquad\nv_{47}(2018!)=\\left\\lfloor\\dfrac{2018}{47}\\right\\rfloor=42,\n\\]\nsince $43^2=1849\\le2018<47^2=2209$. As $2021^n=43^n47^n$, we need $n\\le47$ and $n\\le42$. The largest $n$ is $\\boxed{42}$.",
+  "tags": [
+   "Factorials",
+   "Prime factorisation",
+   "Divisibility",
+   "Floor and ceiling functions"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1772864",
+  "part": 1,
+  "question": "Factorise $a^3(b-c)^3+b^3(c-a)^3+c^3(a-b)^3$.",
+  "solution": "Put $x=a(b-c)$, $y=b(c-a)$, $z=c(a-b)$. Then\n\\[\nx+y+z=ab-ac+bc-ab+ca-bc=0 .\n\\]\nUsing the identity $x^3+y^3+z^3-3xyz=(x+y+z)(x^2+y^2+z^2-xy-yz-zx)$, we get $x^3+y^3+z^3=3xyz$ whenever $x+y+z=0$. Hence\n\\[\na^3(b-c)^3+b^3(c-a)^3+c^3(a-b)^3=\\boxed{3abc(a-b)(b-c)(c-a)}.\n\\]\n(Check with $a=1,b=2,c=3$: the left side is $-1+8\\cdot8-27=36$ and the right side is $3\\cdot6\\cdot(-1)(-1)\\cdot2=36$.)",
+  "tags": [
+   "Factoring",
+   "Algebraic expressions and identities",
+   "Sum and difference of cubes",
+   "Substitution"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1772864",
+  "part": 2,
+  "question": "A triangle has side lengths $a$, $b$, $c$. Let\n\\[\np=a^4+b^4+c^4-2\\left(a^2b^2+b^2c^2+c^2a^2\\right).\n\\]\nDetermine whether $p$ is positive or negative, and explain why.",
+  "solution": "Complete a square:\n\\[\np=\\left(a^2+b^2-c^2\\right)^2-4a^2b^2 ,\n\\]\nsince $(a^2+b^2-c^2)^2=a^4+b^4+c^4+2a^2b^2-2a^2c^2-2b^2c^2$. By the difference of squares, twice,\n\\[\np=\\left(a^2+b^2-c^2-2ab\\right)\\left(a^2+b^2-c^2+2ab\\right)=\\bigl((a-b)^2-c^2\\bigr)\\bigl((a+b)^2-c^2\\bigr)\n\\]\n\\[\n=(a-b-c)(a-b+c)(a+b-c)(a+b+c).\n\\]\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(4cm);\ndefaultpen(fontsize(10pt));\npair B=(0,0),C=(5,0),A=(1.6,3);\ndraw(A--B--C--cycle,linewidth(0.9));\nlabel(\"$A$\",A,N);label(\"$B$\",B,SW);label(\"$C$\",C,SE);\nlabel(\"$a$\",(B+C)/2,S);label(\"$b$\",(A+C)/2,NE);label(\"$c$\",(A+B)/2,NW);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nBy the triangle inequality $a<b+c$, $b<a+c$ and $c<a+b$, so $a-b-c<0$ while $a-b+c>0$, $a+b-c>0$ and $a+b+c>0$. Hence $\\boxed{p<0}$ for every triangle.\n\n(In fact $p=-16K^2$, where $K$ is the area of the triangle, by Heron's formula.)",
+  "tags": [
+   "Factoring",
+   "Difference of squares",
+   "Triangle inequality",
+   "Heron's formula",
+   "Inequalities"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1783316",
+  "part": 1,
+  "question": "Let $a$ and $b$ be nonzero integers with $\\gcd(a,b)=1$. Can the equation $ax+by=1$ have more than one solution in integers $x,y$? Describe all its integer solutions.",
+  "solution": "Yes; it has infinitely many. By Bezout's identity there is at least one solution $(x_0,y_0)$. For every integer $t$,\n\\[\na(x_0+bt)+b(y_0-at)=ax_0+by_0+abt-abt=1,\n\\]\nso $(x_0+bt,\\ y_0-at)$ is a solution, and different $t$ give different solutions because $b\\ne0$.\n\nThese are all the solutions. If $ax+by=1$, subtracting $ax_0+by_0=1$ gives $a(x-x_0)=-b(y-y_0)$. So $b$ divides $a(x-x_0)$, and since $\\gcd(a,b)=1$, $b\\mid x-x_0$; write $x-x_0=bt$. Then $abt=-b(y-y_0)$, so $y-y_0=-at$.\n\nAnswer: $\\boxed{\\text{yes: the solutions are }x=x_0+bt,\\ y=y_0-at\\ (t\\in\\mathbb Z)}$, infinitely many. For example $3x+5y=1$ has the solutions $(2,-1),(7,-4),(-3,2),\\dots$.",
+  "tags": [
+   "Linear Diophantine equations",
+   "HCF and LCM",
+   "Divisibility"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks only whether there can be more than one solution; the record also asks for all solutions. Nonzero a, b are assumed."
+ },
+ {
+  "topic_id": "1783275",
+  "part": 1,
+  "question": "Let $p$ be a prime and $k$ an integer with $0<k<p$. Prove that $p$ divides $\\dbinom pk=\\dfrac{p!}{k!\\,(p-k)!}$. Does the statement remain true if $p$ is replaced by a composite number?",
+  "solution": "$\\dbinom pk$ is an integer, and\n\\[\np!=\\dbinom pk\\cdot k!\\,(p-k)! .\n\\]\nThe prime $p$ divides the left side. On the right, $k!$ and $(p-k)!$ are products of positive integers smaller than $p$ (because $1\\le k\\le p-1$ and $1\\le p-k\\le p-1$), and a prime dividing a product divides one of the factors, so $p\\nmid k!\\,(p-k)!$. Hence $p\\mid\\dbinom pk$. $\\blacksquare$\n\nFor composite numbers the statement is false: for $n=4$ and $k=2$, $\\dbinom42=6$ is not divisible by $4$. (The proof breaks down because $4$ divides $2!\\cdot2!=4$.) So the answer to the second question is $\\boxed{\\text{no}}$.",
+  "tags": [
+   "Combinatorial identities and binomial coefficients",
+   "Prime numbers",
+   "Divisibility",
+   "Factorials",
+   "Counterexamples"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post writes p!/(n!(p-k)!); n! is a typo for k!. The question about composite p is answered with a counterexample."
+ },
+ {
+  "topic_id": "1780436",
+  "part": 1,
+  "question": "A tray is shaped like an equilateral triangle with side $50$ units. A samosa is shaped like an equilateral triangle with side $5$ units. What is the least number of samosas needed to cover the tray completely?",
+  "solution": "The ratio of side lengths is $\\dfrac{50}{5}=10$, so the area of the tray is $10^2=100$ times the area of one samosa. The samosas must cover the whole area of the tray, so at least $100$ are needed.\n\n$100$ samosas suffice: dividing each side of the tray into $10$ equal parts and drawing the lines parallel to the sides through the division points cuts the tray into $1+3+5+\\cdots+19=10^2=100$ equilateral triangles of side $5$ (the row $k$ from the top contains $2k-1$ triangles).\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5.5cm);\ndefaultpen(fontsize(10pt));\npair A=(0,0),B=(10,0),C=(5,5*sqrt(3));\nfill((0,0)--(1,0)--(0.5,sqrt(3)/2)--cycle,lightred);\nfor(int k=1;k<10;++k){\n draw(A+k/10*(C-A)--B+k/10*(C-B),gray);\n}\nfor(int k=1;k<10;++k){draw(A+k/10*(B-A)--A+k/10*(B-A)+(10-k)/10*(C-A),gray);draw(B+k/10*(A-B)--B+k/10*(A-B)+(10-k)/10*(C-B),gray);}\ndraw(A--B--C--cycle,linewidth(0.9));\nlabel(\"$50$\",(5,0),S);label(\"$5$\",(0.5,0),S);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nSo the least number is $\\boxed{100}$, as the poster thought.",
+  "tags": [
+   "Equilateral triangles",
+   "Colourings, tilings, and coverings",
+   "Scaling of length, area, and volume",
+   "Lengths, perimeter, and area"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks for the \"maximum number of Somucha we will need to fully cover the tray\"; this is read as the least number that covers it. The poster's answer 100 is correct."
+ },
+ {
+  "topic_id": "1783141",
+  "part": 1,
+  "question": "The sequence $1,16,56,121,\\dots$ has constant second differences. Find a formula for its $n$th term.",
+  "solution": "The first differences are $15,40,65,\\dots$ and the second differences are all $25$. A sequence with constant second difference $D$ is given by a quadratic $a_n=An^2+Bn+C$ with $2A=D$, because\n\\[\na_{n+1}-a_n=A(2n+1)+B,\\qquad (a_{n+2}-a_{n+1})-(a_{n+1}-a_n)=2A .\n\\]\nSo $A=\\dfrac{25}{2}$. The first difference $a_2-a_1=3A+B=15$ gives $B=15-\\dfrac{75}{2}=-\\dfrac{45}{2}$, and $a_1=A+B+C=1$ gives $C=1-\\dfrac{25}{2}+\\dfrac{45}{2}=11$. Hence\n\\[\na_n=\\boxed{\\dfrac{25n^2-45n+22}{2}}.\n\\]\nCheck: $a_1=1$, $a_2=\\dfrac{100-90+22}{2}=16$, $a_3=\\dfrac{225-135+22}{2}=56$, $a_4=\\dfrac{400-180+22}{2}=121$, and the next term is $a_5=211$.",
+  "tags": [
+   "Sequences and series",
+   "Pattern recognition",
+   "Systems of linear equations"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post gives four terms and asks for a method; the record states that the second differences are constant (otherwise four terms do not determine the sequence)."
+ },
+ {
+  "topic_id": "1783108",
+  "part": 1,
+  "question": "In the second-to-last test of the year Ellie scored $98$, and her average score increased by $1$. In the last test she scored $70$, and her average score decreased by $2$. How many tests did she take during the year?",
+  "solution": "Before the second-to-last test, let Ellie have taken $n$ tests with average $m$, so her total was $nm$.\n\nAfter scoring $98$: $\\dfrac{nm+98}{n+1}=m+1$, so $nm+98=nm+n+m+1$, i.e.\\ $n+m=97$.\n\nAfter scoring $70$ the average drops by $2$ from $m+1$ to $m-1$: $\\dfrac{nm+168}{n+2}=m-1$, so $nm+168=nm+2m-n-2$, i.e.\\ $2m-n=170$.\n\nAdding the two equations gives $3m=267$, so $m=89$ and $n=8$. She took $n+2=\\boxed{10}$ tests. (Check: $8\\cdot89=712$; $\\dfrac{810}{9}=90$; $\\dfrac{880}{10}=88=90-2$.)",
+  "tags": [
+   "Averages and weighted averages",
+   "Systems of linear equations"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1726380",
+  "part": 1,
+  "question": "Kyle has three identical chocolate bars, each a rectangular block of length $6$ and height (thickness) $1$; its width is not given. He gives one bar to each of his friends Meit and RJ and keeps one himself. Meit makes two straight vertical cuts from one corner of the top face of his bar that trisect the right angle at that corner, and one of the cuts runs along a diagonal of the top face (so the bar breaks into $3$ pieces). Meit gives the smallest piece to Kyle, keeps the biggest piece and gives the remaining piece to RJ. Kyle and RJ still have their own full bars. Let $K$, $R$ and $M$ be the total volumes of chocolate that Kyle, RJ and Meit now have. Find $K\\cdot(R-M)$, assuming that the length $6$ is the longer side of the top face.",
+  "solution": "Let the top face be the rectangle $ABCD$ with $AB=6$, cut from the corner $A$. The two cuts make angles of $30^\\circ$ and $60^\\circ$ with $AB$. A diagonal $AC$ makes an angle less than $45^\\circ$ with the longer side $AB$, so the diagonal is the $30^\\circ$ cut and the width is $BC=6\\tan30^\\circ=2\\sqrt3$. The $60^\\circ$ cut meets $DC$ at $P$ with $DP=AD\\tan30^\\circ=2\\sqrt3\\cdot\\dfrac{1}{\\sqrt3}=2$, so $PC=4$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6.5cm);\ndefaultpen(fontsize(10pt));\nreal w=2*sqrt(3);\npair A=(0,0),B=(6,0),C=(6,w),D=(0,w),P=(2,w);\nfill(A--B--C--cycle,paleyellow);fill(A--C--P--cycle,palecyan);fill(A--P--D--cycle,pink);\ndraw(A--B--C--D--cycle,linewidth(0.9));\ndraw(A--C,linewidth(0.8));draw(A--P,linewidth(0.8));\ndraw(arc(A,0.9,0,30));draw(arc(A,1.1,30,60));draw(arc(A,0.9,60,90));\nlabel(\"$30^\\circ$\",A+1.45*dir(15),fontsize(8pt));label(\"$30^\\circ$\",A+1.6*dir(45),fontsize(8pt));label(\"$30^\\circ$\",A+1.45*dir(75),fontsize(8pt));\nlabel(\"$A$\",A,SW);label(\"$B$\",B,SE);label(\"$C$\",C,NE);label(\"$D$\",D,NW);label(\"$P$\",P,N);\nlabel(\"$6$\",(A+B)/2,S);label(\"$2\\sqrt3$\",(A+D)/2,W);label(\"$2$\",(D+P)/2,N);label(\"$4$\",(P+C)/2,N);\nlabel(\"$M$\",(4,1.1));label(\"$R$\",(3.1,2.6));label(\"$K$\",(0.55,2.75));\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nWith thickness $1$, the volumes of the pieces equal the areas of the triangles:\n\\[\n[ABC]=\\dfrac{1}{2}\\cdot6\\cdot2\\sqrt3=6\\sqrt3,\\qquad [ACP]=\\dfrac{1}{2}\\cdot4\\cdot2\\sqrt3=4\\sqrt3,\\qquad [APD]=\\dfrac{1}{2}\\cdot2\\cdot2\\sqrt3=2\\sqrt3 .\n\\]\nA full bar has volume $6\\cdot2\\sqrt3=12\\sqrt3$. Kyle gets the smallest piece and RJ the middle one, and each also has a full bar; Meit keeps only the biggest piece:\n\\[\nK=12\\sqrt3+2\\sqrt3=14\\sqrt3,\\qquad R=12\\sqrt3+4\\sqrt3=16\\sqrt3,\\qquad M=6\\sqrt3 .\n\\]\nHence $K(R-M)=14\\sqrt3\\cdot10\\sqrt3=\\boxed{420}$.",
+  "tags": [
+   "Rectangles",
+   "Special right triangles",
+   "Area decomposition",
+   "Volume",
+   "Lengths, perimeter, and area"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Local competition problem, rewritten for clarity. \"Length 6\" is read as the longer side of the top face (otherwise the width would be 6 sqrt 3 and the answer 3780); the cuts are read as vertical cuts through the whole thickness. \"Kyle and RJ still have 1 full chocolate bar\" is used: each of them has a full bar besides the piece."
+ }
+]
