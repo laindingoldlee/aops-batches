@@ -32,3 +32,4 @@
 - b234 figs reviewed (19). FIXED: 1715264-q01 (2,3) label overlapped y-axis; 1698023 side label 6 squeezed against circle (moved inside); 1711919 A label on side AC.
 - b232 figs reviewed (20). FIXED 1726281-q04: AB=8 label sat over the left part only (A..foot is 6); now a dimension arrow.
 - b233 done: 73 rec, 9 al (3 to b232 per xnotes), 21 diag; 62/3/29/6. 1716792 excluded (no clean proof); 1720781 R(4,4) diff 7.
+- b233 figs reviewed (21). FIXED: 1720835 base label 6 moved to centre of CA; 1717359-q05 D label touched circle/AC.

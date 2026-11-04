@@ -218,7 +218,7 @@ draw(O--A,dashed);draw(O--B,dashed);
 draw(B--(0.18,0)--(0.18,0.18)--(0,0.18),linewidth(0.5));
 dot(O);dot(F);dot(D);dot(Ep);
 label("$A$",A,NW);label("$B$",B,SW);label("$C$",C,SE);label("$E$",Ep,S);
-label("$D$",D,dir(-68)*1.6);label("$F$",F,W);label("$O$",O,E);'''
+label("$D$",D,dir(-62)*2.6);label("$F$",F,W);label("$O$",O,E);'''
 b.add(1717359,5,r'''Triangle $ABC$ has $AB=3$, $BC=4$ and $AC=5$. Point $E$ is on segment $BC$ such that $AE$ bisects $\angle BAC$. Point $D$ lies on segment $AC$, and $F$ is the intersection of segments $BD$ and $AE$. The points $C$, $D$, $F$, $E$ lie on a circle with centre $O$. The value of $OA+OB$ can be written as $\dfrac{\sqrt a+\sqrt b}{c}$, where $a$ and $b$ are positive integers relatively prime to the positive integer $c$. Find $a+b+c$.''',
 r'''Since $3^2+4^2=5^2$, the angle at $B$ is right. Put $B=(0,0)$, $C=(4,0)$, $A=(0,3)$, and let $\alpha=\angle BAC$, $\gamma=\angle BCA$, so $\tan\gamma=\dfrac34$ and $\tan\alpha=\dfrac43$. By the angle bisector theorem $\dfrac{BE}{EC}=\dfrac{AB}{AC}=\dfrac35$, so $BE=\dfrac32$ and $E=\left(\dfrac32,0\right)$.
 

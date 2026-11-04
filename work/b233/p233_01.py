@@ -456,7 +456,7 @@ draw(A--B--C--cycle,linewidth(0.9));
 draw(B--(-3,0),dashed);
 dot(A);dot(B);dot(C);
 label("$A(0,0)$",A,SE);label("$B(-3,4)$",B,N);label("$C(-6,0)$",C,dir(-110)*1.3);
-label("$5$",(A+B)/2,NE);label("$5$",(B+C)/2,NW);label("$6$",(-4.5,0),S);
+label("$5$",(A+B)/2,NE);label("$5$",(B+C)/2,NW);label("$6$",(-3,0),1.6*S);
 label("$x$",(1.2,0),N);label("$y$",(0,5.2),N);'''
 b.add(1720835,1,r'''A segment has endpoints $A(0,0)$ and $B(-3,4)$. Point $C$ is the image of point $B$ translated down $4$ units and left $3$ units. What is the perimeter of $\triangle ABC$?''',
 r'''Translating $B(-3,4)$ left $3$ units and down $4$ units gives $C(-3-3,\,4-4)=(-6,0)$. (Not $(0,-6)$: ``left'' changes the $x$-coordinate and ``down'' changes the $y$-coordinate.)
