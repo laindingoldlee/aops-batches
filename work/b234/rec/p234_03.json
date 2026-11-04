@@ -1,0 +1,608 @@
+[
+ {
+  "topic_id": "1713423",
+  "part": 1,
+  "question": "A student claims: ``If $a^5$ is a natural number, then $a$ is also a natural number.''\n\\begin{enumerate}\n\\item[(a)] Show that the claim is false for real numbers $a$.\n\\item[(b)] Prove that the claim is true if $a$ is a rational number.\n\\end{enumerate}",
+  "solution": "\\textbf{(a)} Take $a=\\sqrt[5]{2}$. Then $a^5=2$ is a natural number, but $1<a<2$ (since $1^5<2<2^5$), so $a$ is not a natural number. The claim is false.\n\n\\textbf{(b)} Let $a$ be rational with $a^5=n$, a natural number. Since $n>0$, also $a>0$. Write $a=\\dfrac {p}{q}$ in lowest terms with $p,q$ positive integers and $\\gcd(p,q)=1$. Then\n\\[\np^5=nq^5 .\n\\]\nSuppose $q>1$ and let $r$ be a prime factor of $q$. Then $r\\mid nq^5=p^5$, and since $r$ is prime, $r\\mid p$. So $r$ divides both $p$ and $q$, contradicting $\\gcd(p,q)=1$. Hence $q=1$ and $a=p$ is a natural number. $\\blacksquare$",
+  "tags": [
+   "Counterexamples",
+   "Radicals",
+   "Prime factorisation",
+   "Proof by contradiction"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks to prove the claim as stated, which is false for real a (counterexample 2^(1/5)); the record asks for the counterexample and proves the corrected claim for rational a."
+ },
+ {
+  "topic_id": "1712750",
+  "part": 1,
+  "question": "Find the remainder when $2^{200}$ is divided by $13$.",
+  "solution": "Since $13$ is prime and does not divide $2$, Fermat's little theorem gives $2^{12}\\equiv1\\pmod{13}$. (Directly: $2^6=64=5\\cdot13-1\\equiv-1$, so $2^{12}\\equiv1$.) As $200=12\\cdot16+8$,\n\\[\n2^{200}=\\left(2^{12}\\right)^{16}\\cdot2^8\\equiv2^8=256=19\\cdot13+9\\equiv9\\pmod{13}.\n\\]\nThe remainder is $\\boxed{9}$.",
+  "tags": [
+   "Modular exponentiation",
+   "Remainders and congruences",
+   "Fermat's little theorem"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Near miss (different exponent) with aops-topic-2796272-q10 (2^2000 mod 13)."
+ },
+ {
+  "topic_id": "1713347",
+  "part": 1,
+  "question": "Let $ABC$ be an acute triangle with orthocentre $H$, and let $D$, $E$, $F$ be the midpoints of $BC$, $CA$, $AB$, respectively. A circle centred at $H$ is drawn so large that triangle $ABC$ lies in its interior. The line $EF$ meets the circle at $P$, the line $FD$ meets it at $Q$, and the line $DE$ meets it at $R$ (for each line, either of the two intersection points may be taken). Prove that $AP=BQ=CR$.",
+  "solution": "Let $r$ be the radius of the circle and let $AA_1$, $BB_1$, $CC_1$ be the altitudes. As the triangle is acute, $H$ lies inside it, on each altitude between the vertex and the foot.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6.5cm);\ndefaultpen(fontsize(10pt));\npair A=(1.2,4),B=(0,0),C=(5,0);\npair A1=(A.x,0);\npair H=extension(A,A1,B,B+rotate(90)*(C-A));\nreal r=4.6;\npair D=(B+C)/2,Ee=(C+A)/2,F=(A+B)/2;\npair hit(pair X,pair Y){pair u=unit(Y-X);pair w=Y-H;real bb=dot(w,u);real cc=dot(w,w)-r*r;real t=-bb+sqrt(bb*bb-cc);return Y+t*u;}\npair P=hit(Ee,F),Q=hit(F,D),R=hit(D,Ee);\npair K=extension(A,A1,Ee,F);\ndraw(circle(H,r),gray+linewidth(0.8));\ndraw(Ee--P,gray);draw(F--Q,gray);draw(D--R,gray);\ndraw(A--A1,dashed);\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(A--P,red+linewidth(0.9));draw(B--Q,red+linewidth(0.9));draw(C--R,red+linewidth(0.9));\ndot(H);dot(D);dot(Ee);dot(F);dot(P,red);dot(Q,red);dot(R,red);dot(K);dot(A1);\nlabel(\"$A$\",A,dir(60));label(\"$B$\",B,dir(200));label(\"$C$\",C,dir(-20));\nlabel(\"$H$\",H,W);label(\"$D$\",D,dir(-110));label(\"$E$\",Ee,dir(40));label(\"$F$\",F,dir(120));\nlabel(\"$P$\",P,W);label(\"$Q$\",Q,SE);label(\"$R$\",R,N);\nlabel(\"$K$\",K,dir(60));label(\"$A_1$\",A1,dir(135));\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n\\textbf{A formula for $AP$.} $EF$ is a midline, so $EF\\parallel BC$, and therefore the altitude $AA_1$ is perpendicular to $EF$. Let $K=AA_1\\cap EF$. The dilation with centre $A$ and ratio $\\dfrac{1}{2}$ maps $B,C$ to $F,E$ and hence $A_1$ to $K$, so $K$ is the midpoint of $AA_1$. Write $h=AA_1$ and $t=AH$, with $0<t<h$.\n\nThe points $A$, $H$, $K$ lie on a line perpendicular to line $EF$ at $K$, and $P$ lies on line $EF$. By Pythagoras in the right triangles $AKP$ and $HKP$,\n\\[\nAP^2=AK^2+KP^2,\\qquad r^2=HP^2=HK^2+KP^2 .\n\\]\nSubtracting, and using $AK=\\dfrac {h}{2}$, $HK=\\left|t-\\dfrac {h}{2}\\right|$,\n\\[\nAP^2=r^2+AK^2-HK^2=r^2+\\dfrac{h^2}{4}-\\left(t-\\dfrac {h}{2}\\right)^2=r^2+t(h-t)=r^2+AH\\cdot HA_1 .\n\\]\nThis holds for either intersection point $P$. In the same way\n\\[\nBQ^2=r^2+BH\\cdot HB_1,\\qquad CR^2=r^2+CH\\cdot HC_1 .\n\\]\n\n\\textbf{The three products are equal.} Since $\\angle AA_1B=\\angle AB_1B=90^\\circ$, the points $A_1$ and $B_1$ lie on the circle with diameter $AB$. The chords $AA_1$ and $BB_1$ of that circle meet at $H$, so by the power of the point $H$,\n\\[\nAH\\cdot HA_1=BH\\cdot HB_1 ,\n\\]\nand likewise $BH\\cdot HB_1=CH\\cdot HC_1$ (circle with diameter $BC$). Hence $AP^2=BQ^2=CR^2$, so $AP=BQ=CR$. $\\blacksquare$",
+  "tags": [
+   "Triangles",
+   "Altitudes",
+   "Midpoints",
+   "Power of a point",
+   "Pythagorean theorem",
+   "Circles"
+  ],
+  "difficulty": 6,
+  "rationale": "A difficult-to-spot insight followed by substantial reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "RMO mock test problem. The statement is tidied (\"DE intersects\" read like the other two as \"the line DE meets the circle\"); the proof shows that AP = BQ = CR whichever intersection point is chosen on each line. Checked numerically for random acute triangles and radii."
+ },
+ {
+  "topic_id": "1713302",
+  "part": 1,
+  "question": "Prove that in every Pythagorean triple (positive integers $a,b,c$ with $a^2+b^2=c^2$) at least one of the three numbers is divisible by $3$.",
+  "solution": "Every integer is $\\equiv0,1$ or $2\\pmod3$, so every square is $\\equiv0$ or $1\\pmod3$ (as $1^2\\equiv2^2\\equiv1$), and a square is $\\equiv0$ exactly when the number is divisible by $3$.\n\nSuppose neither $a$ nor $b$ is divisible by $3$. Then $a^2\\equiv b^2\\equiv1$, so $c^2=a^2+b^2\\equiv2\\pmod3$, which is impossible for a square. Hence $3\\mid a$ or $3\\mid b$. $\\blacksquare$\n\n(In fact one of the legs is always divisible by $3$; for example $(3,4,5)$, $(5,12,13)$, $(8,15,17)$.)",
+  "tags": [
+   "Pythagorean triples",
+   "Remainders and congruences",
+   "Perfect squares",
+   "Proof by contradiction"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1713055",
+  "part": 1,
+  "question": "In triangle $ABC$, $\\angle A=60^\\circ$, $\\angle C=45^\\circ$ and $AB=12$. Find the perimeter of the triangle.",
+  "solution": "Drop the altitude $BH$ to $AC$. Since $\\angle A$ and $\\angle C$ are acute, $H$ lies between $A$ and $C$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\nvoid ra(pair P,pair U,pair V,real s){draw(P+s*unit(U-P)--P+s*unit(U-P)+s*unit(V-P)--P+s*unit(V-P),linewidth(0.5));}\nreal s=sqrt(3);\npair A=(0,0),C=(6+6*s,0),B=(6,6*s),Hh=(6,0);\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(B--Hh,dashed);\nra(Hh,B,C,0.6);\ndraw(arc(A,1.3,0,60));draw(arc(C,1.6,135,180));\nlabel(\"$60^\\circ$\",A+2.5*dir(30));label(\"$45^\\circ$\",C+2.5*dir(157.5));\nlabel(\"$A$\",A,SW);label(\"$B$\",B,N);label(\"$C$\",C,SE);label(\"$H$\",Hh,S);\nlabel(\"$12$\",(A+B)/2,NW);label(\"$6\\sqrt6$\",(B+C)/2,NE);\nlabel(\"$6$\",(A+Hh)/2,S);label(\"$6\\sqrt3$\",(Hh+C)/2,S);label(\"$6\\sqrt3$\",(B+Hh)/2+(0,-1.2),W);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n\\begin{itemize}\n\\item Triangle $ABH$ is a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle with hypotenuse $AB=12$: $AH=6$ and $BH=6\\sqrt3$.\n\\item Triangle $BHC$ is a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle with leg $BH=6\\sqrt3$: $HC=6\\sqrt3$ and $BC=6\\sqrt3\\cdot\\sqrt2=6\\sqrt6$.\n\\end{itemize}\nSo $AC=6+6\\sqrt3$, $BC=6\\sqrt6$, and the perimeter is\n\\[\n12+(6+6\\sqrt3)+6\\sqrt6=\\boxed{18+6\\sqrt3+6\\sqrt6}\\approx43.09 .\n\\]",
+  "tags": [
+   "Triangles",
+   "Special right triangles",
+   "Altitudes",
+   "Lengths, perimeter, and area"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1711204",
+  "part": 1,
+  "question": "Let $z$ be the number of zeros at the end of $420!$. How many zeros are at the end of $z!$?",
+  "solution": "The number of trailing zeros of $n!$ equals the exponent of $5$ in $n!$ (there are always more factors $2$), which by Legendre's formula is $\\left\\lfloor\\dfrac {n}{5}\\right\\rfloor+\\left\\lfloor\\dfrac {n}{25}\\right\\rfloor+\\left\\lfloor\\dfrac {n}{125}\\right\\rfloor+\\cdots$.\n\nFor $420!$: $z=84+16+3=103$.\n\nFor $103!$: $20+4=\\boxed{24}$.",
+  "tags": [
+   "Trailing zeros",
+   "Factorials",
+   "Floor and ceiling functions"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Near miss with aops-topic-1872176-q01 (zeros at the end of 420! only)."
+ },
+ {
+  "topic_id": "1698023",
+  "part": 1,
+  "question": "A regular hexagon with area $54\\sqrt3$ square inches is inscribed in a circle. What is the circumference of the circle? Express your answer in terms of $\\pi$.",
+  "solution": "The segments from the centre $O$ to the six vertices cut the hexagon into six equilateral triangles whose side $s$ equals the side of the hexagon and also the radius of the circle.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(4.5cm);\ndefaultpen(fontsize(10pt));\npair O=(0,0);\npair[] V;for(int i=0;i<6;++i) V.push(6*dir(60*i));\ndraw(circle(O,6),blue+linewidth(0.9));\ndraw(V[0]--V[1]--V[2]--V[3]--V[4]--V[5]--cycle,linewidth(0.9));\nfor(int i=0;i<6;++i) draw(O--V[i],dashed+gray);\ndot(O);\nlabel(\"$O$\",O+(0,-1.4));\nlabel(\"$6$\",(V[0]+V[1])/2,dir(30));\nlabel(\"$6$\",(O+V[0])/2,S);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nEach triangle has area $\\dfrac{\\sqrt3}{4}s^2$, so\n\\[\n6\\cdot\\dfrac{\\sqrt3}{4}s^2=\\dfrac{3\\sqrt3}{2}s^2=54\\sqrt3\\quad\\Longrightarrow\\quad s^2=36,\\quad s=6 .\n\\]\nThe radius is $6$ inches, so the circumference is $2\\pi\\cdot6=\\boxed{12\\pi}$ inches.",
+  "tags": [
+   "Regular polygons",
+   "Circles",
+   "Equilateral triangles",
+   "Lengths, perimeter, and area"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2013,
+   "division": "School",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": "30"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1712659",
+  "part": 1,
+  "question": "A boy has $3$ pairs of trousers, $2$ jackets and $5$ shirts. How many different outfits consisting of one pair of trousers, one jacket and one shirt can he put together?",
+  "solution": "By the multiplication principle there are $3\\cdot2\\cdot5=\\boxed{30}$ outfits.",
+  "tags": [
+   "Multiplication principle"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1712621",
+  "part": 1,
+  "question": "In triangle $KLM$, $LM=20\\sqrt3$, $\\angle K=105^\\circ$ and $\\angle M=30^\\circ$. Find $KL$ and $KM$.",
+  "solution": "The third angle is $\\angle L=180^\\circ-105^\\circ-30^\\circ=45^\\circ$. Drop the altitude $KH=h$ to $LM$; since $\\angle L$ and $\\angle M$ are acute, $H$ lies between $L$ and $M$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6.5cm);\ndefaultpen(fontsize(10pt));\nvoid ra(pair P,pair U,pair V,real s){draw(P+s*unit(U-P)--P+s*unit(U-P)+s*unit(V-P)--P+s*unit(V-P),linewidth(0.5));}\nreal s=sqrt(3);\npair L=(0,0),M=(20*s,0),Hh=(30-10*s,0),K=(30-10*s,30-10*s);\ndraw(K--L--M--cycle,linewidth(0.9));\ndraw(K--Hh,dashed);\nra(Hh,K,M,1.4);\ndraw(arc(L,3.5,0,45));draw(arc(M,4.5,150,180));\nlabel(\"$45^\\circ$\",L+5.2*dir(22.5));label(\"$30^\\circ$\",M+6.6*dir(165));draw(arc(K,2.2,degrees(L-K),degrees(M-K)+360));label(\"$105^\\circ$\",K+4.8*dir(312));\nlabel(\"$K$\",K,N);label(\"$L$\",L,SW);label(\"$M$\",M,SE);label(\"$H$\",Hh,S);\nlabel(\"$20\\sqrt3$\",(L+M)/2+(0,-3),S);\nlabel(\"$h$\",(K+Hh)/2,W);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n\\begin{itemize}\n\\item In the $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle $KHL$: $LH=h$ and $KL=h\\sqrt2$.\n\\item In the $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle $KHM$: $HM=h\\sqrt3$ and $KM=2h$.\n\\end{itemize}\nSo $LM=h+h\\sqrt3=20\\sqrt3$, giving\n\\[\nh=\\dfrac{20\\sqrt3}{1+\\sqrt3}=\\dfrac{20\\sqrt3(\\sqrt3-1)}{2}=30-10\\sqrt3 .\n\\]\nTherefore\n\\[\n\\boxed{KL=h\\sqrt2=30\\sqrt2-10\\sqrt6\\approx17.93},\\qquad \\boxed{KM=2h=60-20\\sqrt3\\approx25.36}.\n\\]\n(Check with the law of sines: $\\dfrac{KL}{\\sin30^\\circ}=\\dfrac{KM}{\\sin45^\\circ}=\\dfrac{LM}{\\sin105^\\circ}\\approx35.86$.)",
+  "tags": [
+   "Triangles",
+   "Special right triangles",
+   "Altitudes",
+   "Rationalising denominators"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1711916",
+  "part": 1,
+  "question": "A right triangle with sides $6$, $8$ and $10$ units is rotated about its side of length $10$. What is the volume of the resulting solid? Express your answer as a decimal to the nearest tenth.",
+  "solution": "Let the triangle be $ABC$ with hypotenuse $AB=10$, $AC=6$, $BC=8$. Rotating about $AB$, the vertex $C$ traces a circle whose radius is the altitude from $C$ to $AB$:\n\\[\nr=\\dfrac{AC\\cdot BC}{AB}=\\dfrac{6\\cdot8}{10}=4.8 .\n\\]\nThe foot of this altitude splits $AB$ into $\\dfrac{6^2}{10}=3.6$ and $\\dfrac{8^2}{10}=6.4$. The solid consists of two cones with common base radius $4.8$ and heights $3.6$ and $6.4$:\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5.5cm);\ndefaultpen(fontsize(10pt));\npair A=(0,0),B=(10,0),C=(3.6,4.8),C2=(3.6,-4.8),O=(3.6,0);\npath el=shift(O)*scale(1.3,4.8)*unitcircle;\ndraw(subpath(el,1,3),dashed+gray);\ndraw(subpath(el,3,5),linewidth(0.8));\ndraw(A--C--B--C2--cycle,linewidth(0.9));\ndraw(A--B,dashed);\ndraw(O--C,blue+dashed);\ndot(O);\nlabel(\"$A$\",A,W);label(\"$B$\",B,E);label(\"$C$\",C,N);\nlabel(\"$6$\",(A+C)/2,NW);label(\"$8$\",(C+B)/2,NE);\nlabel(\"$r$\",(4.05,2.4),blue);\ndraw((0,-5.8)--(3.6,-5.8),Arrows(4));draw((3.6,-5.8)--(10,-5.8),Arrows(4));\ndraw((0,-5.5)--(0,-6.1));draw((3.6,-5.5)--(3.6,-6.1));draw((10,-5.5)--(10,-6.1));\nlabel(\"$3.6$\",(1.8,-5.8),S);label(\"$6.4$\",(6.8,-5.8),S);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n\\[\nV=\\dfrac{1}{3}\\pi(4.8)^2(3.6+6.4)=\\dfrac{1}{3}\\pi\\cdot23.04\\cdot10=76.8\\pi\\approx\\boxed{241.3}\\text{ cubic units}.\n\\]",
+  "tags": [
+   "Cones",
+   "Volume",
+   "Right triangles",
+   "Solid geometry"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Problem 1 of the post (a set of practice problems)."
+ },
+ {
+  "topic_id": "1711916",
+  "part": 2,
+  "question": "An eight-digit number $N$ has one digit $2$, three digits $3$, two digits $4$ and two digits $5$. If $N$ is a power of $2$, what is $N$?",
+  "solution": "Eight-digit powers of $2$ lie between $10^7$ and $10^8$: since $2^{23}=8388608$ has seven digits and $2^{27}=134217728$ has nine, the candidates are $2^{24},2^{25},2^{26}$.\n\nThe digit sum of $N$ is $2+3\\cdot3+2\\cdot4+2\\cdot5=29$, so $N\\equiv29\\equiv2\\pmod9$. Powers of $2$ modulo $9$ repeat with period $6$: $2^6\\equiv1$, so $2^{24}\\equiv1$, $2^{25}\\equiv2$, $2^{26}\\equiv4\\pmod9$. Only $2^{25}$ fits, and indeed\n\\[\nN=2^{25}=\\boxed{33554432},\n\\]\nwhich has one $2$, three $3$'s, two $4$'s and two $5$'s.",
+  "tags": [
+   "Powers of two",
+   "Digits and bases",
+   "Remainders and congruences"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Problem 2 of the post."
+ },
+ {
+  "topic_id": "1711916",
+  "part": 3,
+  "question": "Ty flips a fair coin $20$ times. What is the probability that it lands heads up and tails up an equal number of times? Express your answer as a decimal to the nearest thousandth.",
+  "solution": "Equal numbers means exactly $10$ heads. The probability is\n\\[\n\\dfrac{\\dbinom{20}{10}}{2^{20}}=\\dfrac{184756}{1048576}\\approx0.17620,\n\\]\nwhich rounds to $\\boxed{0.176}$.",
+  "tags": [
+   "Binomial probability",
+   "Probability",
+   "Combinations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Problem 3 of the post."
+ },
+ {
+  "topic_id": "1711916",
+  "part": 4,
+  "question": "The number $2019$ can be written as a sum of consecutive integers (positive, zero or negative) in increasing order in several ways, for example $1009+1010=2019$ and $(-2018)+(-2017)+\\cdots+2018+2019=2019$. Including these two examples, in how many ways can $2019$ be written as the sum of at least two consecutive integers in increasing order?",
+  "solution": "A run of $k\\ge1$ consecutive integers starting at $a$ has sum $\\dfrac{k(2a+k-1)}{2}$. So we need\n\\[\nk(2a+k-1)=4038=2\\cdot3\\cdot673 .\n\\]\nThe two factors $k$ and $2a+k-1$ differ by the odd number $2a-1$, so they have opposite parity; conversely, every factorisation $4038=k\\cdot m$ with $k\\ge1$ and $k,m$ of opposite parity gives an integer $a=\\dfrac{m-k+1}{2}$. Since $4038=2\\cdot2019$ with $2019$ odd, every divisor $k$ of $4038$ works: an odd $k$ has even partner and vice versa. The divisors of $4038$ are\n\\[\n1,2,3,6,673,1346,2019,4038 ,\n\\]\neight in all. The divisor $k=1$ is the one-term ``sum'' $2019$, which is not allowed. Hence there are $\\boxed{7}$ ways ($k=2,3,6,673,1346,2019,4038$; for example $k=4038$ gives $-2018+\\cdots+2019$ and $k=3$ gives $672+673+674$).",
+  "tags": [
+   "Factors and multiples",
+   "Divisor counting",
+   "Arithmetic sequences",
+   "Parity"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Problem 4 of the post. Checked by enumerating all runs."
+ },
+ {
+  "topic_id": "1711916",
+  "part": 5,
+  "question": "Three parallel chords of a circle have lengths $12$, $k$ and $16$, and all three lie on the same side of the centre. The chord of length $k$ lies between the other two and is $2$ units from each of them. Find $k$ in simplest radical form.",
+  "solution": "A longer chord is closer to the centre, so the chord of length $16$ is nearest the centre. Let it be at distance $d$ from the centre $O$; then the chord of length $k$ is at distance $d+2$ and the chord of length $12$ at distance $d+4$. With radius $r$, the half-chords give\n\\[\nr^2=8^2+d^2=6^2+(d+4)^2 .\n\\]\nSo $64+d^2=36+d^2+8d+16$, hence $8d=12$, $d=\\dfrac{3}{2}$ and $r^2=64+\\dfrac{9}{4}=\\dfrac{265}{4}$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5cm);\ndefaultpen(fontsize(10pt));\nreal R=sqrt(66.25);\npair O=(0,0);\ndraw(circle(O,R),linewidth(0.9));\nreal[] y={-1.5,-3.5,-5.5};\npen cp=blue+linewidth(1);\nfor(int i=0;i<3;++i){real hx=sqrt(R^2-y[i]^2);draw((-hx,y[i])--(hx,y[i]),cp);}\ndraw(O--(0,-5.5),dashed);\ndraw(O--(8,-1.5),dashed+gray);draw(O--(-6,-5.5),dashed+gray);\ndot(O);label(\"$O$\",O,N);\nlabel(\"$16$\",(8,-1.5),E,blue);label(\"$k$\",(sqrt(R^2-12.25),-3.5),E,blue);label(\"$12$\",(6,-5.5),E,blue);\nlabel(\"$d$\",(0,-0.75),E);label(\"$2$\",(0,-2.5),W);label(\"$2$\",(0,-4.5),W);\nlabel(\"$r$\",(4,-0.75),N,gray);label(\"$r$\",(-3,-2.75),NW,gray);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nFor the middle chord, at distance $d+2=\\dfrac{7}{2}$,\n\\[\n\\left(\\dfrac {k}{2}\\right)^2=r^2-\\left(\\dfrac{7}{2}\\right)^2=\\dfrac{265-49}{4}=54,\\qquad \\dfrac {k}{2}=3\\sqrt6,\n\\]\nso $k=\\boxed{6\\sqrt6}\\approx14.7$.",
+  "tags": [
+   "Circles",
+   "Arcs and chords",
+   "Pythagorean theorem"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Problem 5 of the post. The picture was not provided; the post describes it (all three chords on the same side of the centre, the chord of length k in the middle)."
+ },
+ {
+  "topic_id": "1712099",
+  "part": 1,
+  "question": "Find all integers $N$ such that $N^2-71$ is divisible by $7N+55$.",
+  "solution": "Let $d=7N+55$ (note $d\\ne0$, as $7\\nmid55$). If $d\\mid N^2-71$, then $d\\mid49(N^2-71)$. Since\n\\[\n49(N^2-71)=49N^2-3479=(7N+55)(7N-55)-454 ,\n\\]\nit follows that $d\\mid454=2\\cdot227$. So $7N+55\\in\\{\\pm1,\\pm2,\\pm227,\\pm454\\}$, i.e.\\ $7N\\in\\{-54,-56,-53,-57,172,-282,399,-509\\}$. Only $-56$ and $399$ are multiples of $7$, giving $N=-8$ and $N=57$.\n\nCheck: for $N=-8$, $7N+55=-1$ divides everything ($N^2-71=-7$). For $N=57$, $7N+55=454$ and $N^2-71=3178=7\\cdot454$.\n\nThe answers are $\\boxed{N=-8\\ \\text{and}\\ N=57}$.",
+  "tags": [
+   "Divisibility",
+   "Diophantine equations",
+   "Factors and multiples"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Source given only as \"BC Exam\"; not recorded as a contest source. Checked by search over |N| <= 10^5."
+ },
+ {
+  "topic_id": "1712340",
+  "part": 1,
+  "question": "Ten different integers from $1$ to $20$ inclusive have product $7.783776\\cdot10^{10}$. What is their sum?",
+  "solution": "The product is $P=77837760000=2^9\\cdot3^5\\cdot5^4\\cdot7\\cdot11\\cdot13$ (divide out $10^4$ to get $7783776=2^5\\cdot3^5\\cdot7\\cdot11\\cdot13$).\n\\begin{itemize}\n\\item $17,19\\nmid P$, so $17$ and $19$ are not used. The only multiples of $11$ and $13$ up to $20$ are $11$ and $13$, so both are used.\n\\item The multiples of $5$ are $5,10,15,20$, each contributing exactly one factor $5$; to reach $5^4$ all four are used.\n\\item The multiples of $7$ are $7$ and $14$; exactly one of them is used.\n\\end{itemize}\nNow $5\\cdot10\\cdot15\\cdot20=2^3\\cdot3\\cdot5^4$, so the remaining three numbers, chosen from $\\{1,2,3,4,6,8,9,12,16,18\\}$, must have product $2^6\\cdot3^4$ (if $7$ is used) or $2^5\\cdot3^4$ (if $14$ is used). Each of these numbers contains at most $3^2$, so the exponent $4$ of $3$ arises either as $2+2+0$ or as $2+1+1$.\n\\begin{itemize}\n\\item $2+1+1$: one of $9,18$ and two of $3,6,12$. The power of $2$ in such a product is at most $2^{1+1+2}=2^4$, too small.\n\\item $2+2+0$: the numbers $9$ and $18$ (product $2\\cdot3^4$) and a power of $2$, which must be $2^5=32$ (too big) or $2^4=16$ (with $14$).\n\\end{itemize}\nHence the numbers are\n\\[\n5,9,10,11,13,14,15,16,18,20 ,\n\\]\nand their sum is $\\boxed{131}$.",
+  "tags": [
+   "Prime factorisation",
+   "Factors and multiples",
+   "Casework"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The ten integers are taken to be distinct. The factorisation and the uniqueness of the set were checked by searching all 10-element subsets of {1,...,20}."
+ },
+ {
+  "topic_id": "1690790",
+  "part": 1,
+  "question": "What are the last three digits of $1^{300}\\cdot2^{300}\\cdot3^{300}\\cdot4^{300}\\cdot5^{300}$?",
+  "solution": "The product is $(1\\cdot2\\cdot3\\cdot4\\cdot5)^{300}=120^{300}$. Since $120$ is divisible by $10$, $120^{300}$ is divisible by $10^{300}$, in particular by $1000$. The last three digits are $\\boxed{000}$.",
+  "tags": [
+   "Units digits and last digits",
+   "Exponents",
+   "Factorials"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Near miss with aops-topic-1787633-q01 (last two nonzero digits of 1^100 2^200 3^300 4^400 5^500)."
+ },
+ {
+  "topic_id": "1711274",
+  "part": 1,
+  "question": "Show that $n^4-n^3+n^2-n$ is divisible by $2$ for every integer $n$.",
+  "solution": "Factor by grouping:\n\\[\nn^4-n^3+n^2-n=n^3(n-1)+n(n-1)=n(n-1)(n^2+1).\n\\]\nAmong the consecutive integers $n-1$ and $n$, one is even, so the product $n(n-1)$, and hence the whole expression, is divisible by $2$. $\\blacksquare$",
+  "tags": [
+   "Parity",
+   "Factoring",
+   "Divisibility"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1711594",
+  "part": 1,
+  "question": "How many four-digit integers between $7000$ and $9000$ have the property that the thousands digit equals the sum of the other three digits?",
+  "solution": "The thousands digit is $7$ or $8$ ($9000$ does not have the property).\n\\begin{itemize}\n\\item Thousands digit $7$: the other digits $a,b,c\\ge0$ satisfy $a+b+c=7$; each is automatically at most $9$. Stars and bars gives $\\dbinom{9}{2}=36$.\n\\item Thousands digit $8$: $a+b+c=8$, giving $\\dbinom{10}{2}=45$.\n\\end{itemize}\nThe total is $36+45=\\boxed{81}$.",
+  "tags": [
+   "Stars and bars",
+   "Digit problems",
+   "Distributions and integer solutions"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1711919",
+  "part": 1,
+  "question": "Explain the difference between the centroid, the incentre and the orthocentre of a triangle by stating how each is defined. Then find all three for the triangle with vertices $A(6,8)$, $B(0,0)$ and $C(21,0)$.",
+  "solution": "\\textbf{Definitions.}\n\\begin{itemize}\n\\item The \\emph{centroid} $G$ is the common point of the three medians (segments from a vertex to the midpoint of the opposite side). It divides each median in the ratio $2:1$ from the vertex, and its coordinates are the averages of the vertices' coordinates.\n\\item The \\emph{incentre} $I$ is the common point of the three angle bisectors. It is equidistant from the three sides and is the centre of the inscribed circle. With side lengths $a=BC$, $b=CA$, $c=AB$, it is $I=\\dfrac{aA+bB+cC}{a+b+c}$.\n\\item The \\emph{orthocentre} $H$ is the common point of the three altitudes (lines through a vertex perpendicular to the opposite side). It lies inside an acute triangle, at the right-angle vertex of a right triangle, and outside an obtuse triangle.\n\\end{itemize}\nThe centroid and incentre are always inside the triangle; the three points coincide only for an equilateral triangle.\n\n\\textbf{The example.} Here $a=BC=21$, $b=CA=\\sqrt{15^2+8^2}=17$, $c=AB=\\sqrt{6^2+8^2}=10$.\n\\begin{itemize}\n\\item $G=\\left(\\dfrac{6+0+21}{3},\\dfrac{8+0+0}{3}\\right)=\\boxed{\\left(9,\\dfrac{8}{3}\\right)}$.\n\\item $I=\\dfrac{21(6,8)+17(0,0)+10(21,0)}{48}=\\left(\\dfrac{336}{48},\\dfrac{168}{48}\\right)=\\boxed{\\left(7,\\dfrac{7}{2}\\right)}$. Check: the area is $\\dfrac{1}{2}\\cdot21\\cdot8=84$ and the semiperimeter $24$, so the inradius is $\\dfrac{84}{24}=\\dfrac{7}{2}$, the height of $I$ above $BC$.\n\\item The altitude from $A$ is the line $x=6$. The altitude from $C$ is perpendicular to $AB$, whose direction is $(6,8)$: it is $6(x-21)+8y=0$. At $x=6$: $8y=90$, $y=\\dfrac{45}{4}$. So $H=\\boxed{\\left(6,\\dfrac{45}{4}\\right)}$; it lies outside the triangle because the angle at $A$ is obtuse ($AB^2+AC^2=389<441=BC^2$). (The altitude from $B$, perpendicular to $AC$, is $15x-8y=0$, which also passes through $H$.)\n\\end{itemize}\nIn the sketch, the medians are blue, the altitudes red (with the sides $AB$, $AC$ extended, dotted, to the feet of the altitudes from $C$ and $B$), and the incircle green.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(7cm);\ndefaultpen(fontsize(10pt));\npair B=(0,0),C=(21,0),A=(6,8);\npair G=(A+B+C)/3,I=(7,3.5),H=(6,11.25);\npair fb=A+dot(B-A,unit(C-A))*unit(C-A),fc=A+dot(C-A,unit(B-A))*unit(B-A);\ndraw(A--fb,dotted+gray);draw(A--fc,dotted+gray);\ndraw(circle(I,3.5),heavygreen);\ndraw(A--(B+C)/2,blue+dashed);draw(B--(C+A)/2,blue+dashed);draw(C--(A+B)/2,blue+dashed);\ndraw(A--(6,0),red+dashed);draw(A--H,red+dashed);draw(B--H,red+dashed);draw(C--H,red+dashed);\ndraw(A--B--C--cycle,linewidth(0.9));\ndot(G,blue);dot(I,heavygreen);dot(H,red);\nlabel(\"$A$\",A,dir(10));label(\"$B$\",B,SW);label(\"$C$\",C,SE);\nlabel(\"$G$\",G,dir(65),blue);label(\"$I$\",I,N,heavygreen);label(\"$H$\",H,N,red);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}",
+  "tags": [
+   "Medians and centroids",
+   "Incircles and incentres",
+   "Altitudes",
+   "Angle bisectors",
+   "Coordinate geometry"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks what the difference between centroids, incenters and orthocenters is; turned into definitions plus a computation for a specific obtuse triangle."
+ },
+ {
+  "topic_id": "1712197",
+  "part": 1,
+  "question": "How many ordered triples of positive integers $(e,f,g)$ satisfy\n\\[\n(ge-fe)\\left(\\dfrac {g}{e}+\\dfrac {f}{e}\\right)\\equiv e^2\\pmod{(e+f+g)^2}\\ ?\n\\]\nProve your answer.",
+  "solution": "First simplify the left side: $(ge-fe)\\left(\\dfrac {g}{e}+\\dfrac {f}{e}\\right)=e(g-f)\\cdot\\dfrac{g+f}{e}=g^2-f^2$, an integer. So the condition says\n\\[\n(e+f+g)^2\\ \\Big|\\ g^2-f^2-e^2 .\n\\]\nLet $M=(e+f+g)^2$. Then $0<g^2<M$ and $0<e^2+f^2<M$, so $g^2-(e^2+f^2)$ is the difference of two numbers in the interval $(0,M)$ and has absolute value less than $M$. The only multiple of $M$ in that range is $0$. Hence the condition holds exactly when\n\\[\ne^2+f^2=g^2 ,\n\\]\ni.e.\\ when $(e,f,g)$ is a Pythagorean triple with hypotenuse $g$. There are infinitely many such triples, for example $(3k,4k,5k)$ for every positive integer $k$. So there are $\\boxed{\\text{infinitely many}}$ ordered triples.",
+  "tags": [
+   "Pythagorean triples",
+   "Remainders and congruences",
+   "Bounding and extremal cases"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Checked by search for e, f, g <= 60: the solutions are exactly the triples with e^2 + f^2 = g^2."
+ },
+ {
+  "topic_id": "1648327",
+  "part": 1,
+  "question": "Assume the infinite expression\n\\[\nx=\\sqrt{\\dfrac{\\sqrt{\\dfrac{\\sqrt{\\dfrac{\\sqrt{\\cdots}}{\\sqrt{\\cdots}}}}{\\sqrt{\\dfrac{\\sqrt{\\cdots}}{\\sqrt{\\cdots}}}}}}{\\sqrt{\\dfrac{\\sqrt{\\dfrac{\\sqrt{\\cdots}}{\\sqrt{\\cdots}}}}{\\sqrt{\\dfrac{\\sqrt{\\cdots}}{\\sqrt{\\cdots}}}}}}}\n\\]\nhas a positive real value $x$, where every numerator and every denominator under a fraction bar is again a copy of the whole expression. Find $x$.",
+  "solution": "The expression is $\\sqrt{\\dfrac{Y}{Z}}$, where the numerator $Y$ and the denominator $Z$ are copies of the whole expression, so $Y=Z=x$. Hence\n\\[\nx=\\sqrt{\\dfrac {x}{x}}=\\sqrt1=\\boxed{1}.\n\\]\n(The value is forced once a positive value is assumed; and $x=1$ is consistent, since every finite truncation in which the innermost entries are replaced by $1$ also equals $1$.)",
+  "tags": [
+   "Radicals",
+   "Substitution"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Joke-style self-similar expression; the reading that each numerator and denominator is a copy of the whole expression, with a positive value, is stated."
+ },
+ {
+  "topic_id": "1712010",
+  "part": 1,
+  "question": "For positive constants $a,b,c$, the graph of $ax^2+by^2=c$ is an ellipse centred at the origin.\n\\begin{enumerate}\n\\item[(a)] How should the equation be changed to move the ellipse, without changing its shape, so that its centre is the point $(h,k)$?\n\\item[(b)] Find the centre and the lengths of the semi-axes of the ellipse $4x^2+9y^2-16x+54y+61=0$.\n\\end{enumerate}",
+  "solution": "\\textbf{(a)} Translating a graph by $h$ to the right and $k$ upward replaces $x$ by $x-h$ and $y$ by $y-k$: a point $(x,y)$ lies on the moved curve exactly when $(x-h,y-k)$ lies on the original one. So the new equation is\n\\[\n\\boxed{a(x-h)^2+b(y-k)^2=c}.\n\\]\n\n\\textbf{(b)} Complete the squares:\n\\[\n4(x^2-4x)+9(y^2+6y)=-61\\ \\Longrightarrow\\ 4(x-2)^2-16+9(y+3)^2-81=-61\\ \\Longrightarrow\\ 4(x-2)^2+9(y+3)^2=36 ,\n\\]\nthat is,\n\\[\n\\dfrac{(x-2)^2}{9}+\\dfrac{(y+3)^2}{4}=1 .\n\\]\nThis is the ellipse $4x^2+9y^2=36$ (dashed in the sketch) moved $2$ units right and $3$ units down. Its centre is $\\boxed{(2,-3)}$, with horizontal semi-axis $\\boxed{3}$ and vertical semi-axis $\\boxed{2}$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5.5cm);\ndefaultpen(fontsize(10pt));\nimport graph;\ndraw((-4.2,0)--(6,0),gray,Arrow(5));draw((0,-5.8)--(0,2.8),gray,Arrow(5));\nlabel(\"$x$\",(6,0),N,gray);label(\"$y$\",(0,2.8),E,gray);\nfor(int i=-3;i<=5;++i) if(i!=0) {draw((i,-0.1)--(i,0.1),gray);}\nfor(int j=-5;j<=2;++j) if(j!=0) {draw((-0.1,j)--(0.1,j),gray);}\ndraw(scale(3,2)*unitcircle,dashed+gray);\npair c=(2,-3);\ndraw(shift(c)*scale(3,2)*unitcircle,blue+linewidth(1));\ndraw((0,0)--c,red,Arrow(6));\ndot(c,blue);\ndraw(c--c+(3,0),dashed);draw(c--c+(0,2),dashed);\nlabel(\"$3$\",c+(1.5,0),N);label(\"$2$\",c+(0,1),E);\nlabel(\"$(2,-3)$\",c,S,blue);\nlabel(\"$O$\",(0,0),dir(135));\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}",
+  "tags": [
+   "Ellipses",
+   "Conic sections",
+   "Translations",
+   "Completing the square",
+   "Coordinate geometry"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks how to shift the centre of an ellipse ax^2+by^2=c; part (b) was added as a concrete exercise."
+ },
+ {
+  "topic_id": "1711366",
+  "part": 1,
+  "question": "Frank and Usain start together at the same point of a circular track one mile long and run in opposite directions, Frank at $12$ miles per hour and Usain at $22$ miles per hour. After how long do they first meet?",
+  "solution": "Running in opposite directions, they approach each other along the track at the combined speed $12+22=34$ miles per hour, and they meet for the first time when together they have covered the full lap of $1$ mile. This takes\n\\[\n\\dfrac{1}{34}\\text{ hour}=\\dfrac{60}{34}\\text{ min}=\\boxed{\\dfrac{30}{17}\\text{ minutes}}\\approx1\\text{ min }46\\text{ s}.\n\\]\n(The same time results if they start at the two ends of a straight one-mile course and run towards each other.)",
+  "tags": [
+   "Relative speed",
+   "Distance, rate, and time"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post only says \"a mile race ... in opposite directions\"; read as a one-mile circular track with a common start (equivalently, the two ends of a one-mile course running towards each other)."
+ },
+ {
+  "topic_id": "1711063",
+  "part": 1,
+  "question": "What is the value of\n\\[\n\\sum_{n=3}^{10}\\dfrac{n^4+2n^3-7n^2-8n+12}{4\\dbinom{n-1}{2}}\\ ?\n\\]",
+  "solution": "The numerator vanishes at $n=1,2,-2,-3$, and indeed\n\\[\nn^4+2n^3-7n^2-8n+12=(n-1)(n-2)(n+2)(n+3)\n\\]\n(multiply $(n^2-3n+2)(n^2+5n+6)$ to check). The denominator is $4\\cdot\\dfrac{(n-1)(n-2)}{2}=2(n-1)(n-2)$. So for $n\\ge3$ each term is\n\\[\n\\dfrac{(n+2)(n+3)}{2}=\\dbinom{n+3}{2}.\n\\]\nBy the hockey-stick identity,\n\\[\n\\sum_{n=3}^{10}\\dbinom{n+3}{2}=\\sum_{m=6}^{13}\\dbinom m2=\\dbinom{14}{3}-\\dbinom{6}{3}=364-20=\\boxed{344}.\n\\]",
+  "tags": [
+   "Factoring",
+   "Polynomials",
+   "Combinatorial identities and binomial coefficients",
+   "Summation"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1711299",
+  "part": 1,
+  "question": "Prove that there is no pair of prime numbers whose difference is $7$.",
+  "solution": "Suppose $p$ and $q$ are primes with $p-q=7$. Since $7$ is odd, $p$ and $q$ have different parity, so one of them is even. The only even prime is $2$, and as $p>q$, we get $q=2$ and $p=9$. But $9=3\\cdot3$ is not prime. Hence no two primes differ by $7$. $\\blacksquare$",
+  "tags": [
+   "Prime numbers",
+   "Parity",
+   "Proof by contradiction"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1710875",
+  "part": 1,
+  "question": "Show how one can discover the factorisations\n\\[\nx^3-y^3=(x-y)(x^2+xy+y^2)\\qquad\\text{and}\\qquad x^3+y^3=(x+y)(x^2-xy+y^2)\n\\]\nwithout knowing them in advance.",
+  "solution": "\\textbf{Finding a factor.} Regard $x^3-y^3$ as a polynomial in $x$ (with $y$ a constant). It vanishes at $x=y$, so by the factor theorem $x-y$ is a factor. Likewise $x^3+y^3$ vanishes at $x=-y$, so $x+y$ is a factor.\n\n\\textbf{Finding the other factor.} The quotient has degree $2$ in $x$ and is homogeneous of degree $2$, so it is $x^2+pxy+y^2$ (comparing the $x^3$ and $y^3$ coefficients). Expanding,\n\\[\n(x-y)(x^2+pxy+y^2)=x^3+(p-1)x^2y+(1-p)xy^2-y^3 ,\n\\]\nwhich equals $x^3-y^3$ exactly when $p=1$. Hence\n\\[\nx^3-y^3=(x-y)(x^2+xy+y^2).\n\\]\n(This is also the finite geometric series idea: $(x-y)(x^2+xy+y^2)=x^3+x^2y+xy^2-x^2y-xy^2-y^3$ telescopes.)\n\n\\textbf{The sum.} Replace $y$ by $-y$ in the identity just proved:\n\\[\nx^3+y^3=x^3-(-y)^3=(x+y)\\bigl(x^2-xy+y^2\\bigr). \\qquad\\blacksquare\n\\]",
+  "tags": [
+   "Sum and difference of cubes",
+   "Factoring",
+   "Remainder theorem and factor theorem",
+   "Polynomials"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post lists the second formula as x^3 + y^3 = (x - y)(x^2 + xy + y^2), a typo for x^3 - y^3; the record states both formulas correctly."
+ }
+]

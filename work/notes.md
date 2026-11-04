@@ -23,3 +23,4 @@
 - Cross-batch scan (xdup, 266 pairs >0.35): no further repeats; top pairs are near misses with different data (e.g. 1778686 x+1/x=5 x^4 vs 1706241 x+1/x=4 x^5; sum 1..2019 vs 1..100).
 
 # orchestrator notes 231-235
+- b231 done: 79 rec, 17 al, 15 diag; 58/0/29/13. Check 1734077 (rebuilt fig, 56), 1728894, 1734032 (trivial 1 year).

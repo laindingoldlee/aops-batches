@@ -1,0 +1,666 @@
+[
+ {
+  "topic_id": "1733681",
+  "part": 1,
+  "question": "Prove that for every positive integer $n$,\n\\[\n1^2+2^2+\\cdots+n^2=\\dfrac{n(n+1)(2n+1)}{6}.\n\\]",
+  "solution": "Induction on $n$. For $n=1$ both sides equal $1$. If the formula holds for $n$, then\n\\[\n\\sum_{k=1}^{n+1}k^2=\\dfrac{n(n+1)(2n+1)}{6}+(n+1)^2=\\dfrac{(n+1)\\bigl(2n^2+7n+6\\bigr)}{6}=\\dfrac{(n+1)(n+2)(2n+3)}{6},\n\\]\nwhich is the formula for $n+1$. $\\blacksquare$",
+  "tags": [
+   "Summation",
+   "Mathematical induction"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1734046",
+  "part": 1,
+  "question": "For a positive integer $n$, let $f(n)$ be the value of the power tower consisting of $n$ copies of $n$, evaluated from the top down, so that $a^{b^c}=a^{\\left(b^c\\right)}$. For example, $f(1)=1$, $f(2)=2^2=4$ and $f(3)=3^{3^3}=3^{27}$. What is the units digit of\n\\[\nf(1)+f(2)+f(3)+\\cdots+f(2018)?\n\\]",
+  "solution": "Write $f(n)=n^{E_n}$, where $E_n$ is the tower of $n-1$ copies of $n$ (so $E_1=1$, $E_2=2$, $E_3=27$). The units digits of the powers of any integer repeat with a period dividing $4$ from the first power on, so the units digit of $n^{E}$ depends only on the units digit of $n$ and on $E\\bmod4$ (for $E\\ge1$).\n\n\\textbf{Even $n$.} For $n=2$, $f(2)=4$. For even $n\\ge4$, $E_n$ is a power of $n$ with exponent at least $n\\ge2$, so $4\\mid E_n$; then $n^{E_n}$ has the same units digit as $n^4$: that is $0$ if $10\\mid n$ and $6$ otherwise (as $2^4,4^4,6^4,8^4$ all end in $6$).\n\n\\textbf{Odd $n$.} Here $E_n$ is a power of the odd number $n$ (or $E_1=1$). If $n\\equiv1\\pmod4$ then $E_n\\equiv1\\pmod4$, and the units digit of $f(n)$ is that of $n$. If $n\\equiv3\\pmod4$ then $E_n=n^{E'}$ with $E'$ odd, so $E_n\\equiv3^{E'}\\equiv3\\pmod4$, and the units digit of $f(n)$ is that of $n^3$.\n\nSo for $n\\ne2$ the units digit of $f(n)$ depends only on $n\\bmod20$. For $n=1,\\dots,20$ (using $6$ in place of the true value $4$ for $n=2$) the digits are\n\\[\n1,6,7,6,5,6,3,6,9,0,1,6,3,6,5,6,7,6,9,0,\n\\]\nwith sum $98$. Hence\n\\[\n\\sum_{n=1}^{2000}f(n)\\equiv100\\cdot98-2=9798\\pmod{10},\n\\]\nwhere $-2$ corrects $n=2$. For $n=2001,\\dots,2018$ the digits are the first $18$ of the list above, with sum $98-9-0=89$. The total is $\\equiv9798+89=9887$, so the units digit is $\\boxed{7}$.",
+  "tags": [
+   "Units digits and last digits",
+   "Exponents",
+   "Remainders and congruences",
+   "Pattern recognition"
+  ],
+  "difficulty": 5,
+  "rationale": "A meaningful insight or a moderately demanding combination of familiar ideas.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Answer confirmed by computing every tower modulo 10 with the generalised Euler theorem."
+ },
+ {
+  "topic_id": "1734624",
+  "part": 1,
+  "question": "The bus from Kevin's home to the middle school travels $8$ miles west, then turns and travels $8$ miles north, then turns and travels $7$ miles west to arrive at the school. If the bus could travel directly from Kevin's home to the school along a straight path, how many miles shorter would the trip be?",
+  "solution": "Altogether the school is $8+7=15$ miles west and $8$ miles north of Kevin's home. The straight path is the hypotenuse of a right triangle with legs $15$ and $8$:\n\\[\n\\sqrt{15^2+8^2}=\\sqrt{289}=17 \\text{ miles}.\n\\]\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\npair H=(0,0),P1=(-8,0),P2=(-8,8),Sc=(-15,8);\ndraw(H--P1--P2--Sc,linewidth(0.9));\ndraw(H--Sc,dashed+blue);\ndraw(P1--P1+(0.8,0)--P1+(0.8,0.8)--P1+(0,0.8));\ndot(H);dot(Sc);\nlabel(\"home\",H,SE);label(\"school\",Sc,NW);\nlabel(\"$8$\",(H+P1)/2,S);label(\"$8$\",(-8,6.6),W);label(\"$7$\",(P2+Sc)/2,N);\ndraw((-15,0)--P1,dotted);draw((-15,0)--Sc,dotted);\nlabel(\"$15$\",((-15,0)+P1)/2,S);\nlabel(\"$17$\",H+0.25*(Sc-H),NE,blue);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nThe bus route is $8+8+7=23$ miles, so the direct trip would be $23-17=\\boxed{6}$ miles shorter.",
+  "tags": [
+   "Pythagorean theorem",
+   "Right triangles"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2019,
+   "division": "Handbook",
+   "paper": null,
+   "round": "Warm-Up 3",
+   "question_number": "8"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1734624",
+  "part": 2,
+  "question": "How many diagonals does a polygon with $17$ sides have?",
+  "solution": "From each of the $17$ vertices, diagonals go to every vertex except itself and its two neighbours, that is to $14$ vertices. This gives $17\\cdot14$ diagonal ends, and each diagonal has two ends, so the number of diagonals is\n\\[\n\\dfrac{17\\cdot14}{2}=\\boxed{119}.\n\\]\n(The number $14$ is the number of diagonals from a single vertex, not the total; the figure shows these $14$ diagonals from one vertex $V$ of a $17$-gon.)\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5cm);\ndefaultpen(fontsize(10pt));\npair[] P;\nfor(int i=0;i<17;++i) P.push(dir(90+360*i/17));\ndraw(P[0]--P[1]--P[2]--P[3]--P[4]--P[5]--P[6]--P[7]--P[8]--P[9]--P[10]--P[11]--P[12]--P[13]--P[14]--P[15]--P[16]--cycle,linewidth(0.9));\nfor(int i=2;i<16;++i) draw(P[0]--P[i],blue+linewidth(0.5));\nfor(int i=0;i<17;++i) dot(P[i],linewidth(3));\nlabel(\"$V$\",P[0],N);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}",
+  "tags": [
+   "Diagonals",
+   "Quadrilaterals and polygons",
+   "Combinations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2019,
+   "division": "Handbook",
+   "paper": null,
+   "round": "Warm-Up 3",
+   "question_number": "10"
+  },
+  "note": "The poster thought the answer was 14; that is the number of diagonals from one vertex. Corrected to 119."
+ },
+ {
+  "topic_id": "1734398",
+  "part": 1,
+  "question": "A ``degenerate triangle'' $ABC$ has its three vertices on one line, with $C$ on segment $AB$, $BC=a$, $CA=b$ and $AB=c=a+b$ ($a,b>0$). Use Heron's formula\n\\[\n[ABC]=\\sqrt{s(s-a)(s-b)(s-c)},\\qquad s=\\dfrac{a+b+c}{2},\n\\]\nto find its area, and confirm the result with the formula $\\dfrac{1}{2}\\cdot\\text{base}\\cdot\\text{height}$.",
+  "solution": "Here $s=\\dfrac{a+b+(a+b)}{2}=a+b=c$, so $s-c=0$ and\n\\[\n[ABC]=\\sqrt{(a+b)\\cdot b\\cdot a\\cdot0}=\\boxed{0}.\n\\]\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\npair A=(0,0),C=(3,0),B=(7,0);\ndraw(A--B,linewidth(0.9));\ndot(A);dot(B);dot(C);\nlabel(\"$A$\",A,W);label(\"$C$\",C,S);label(\"$B$\",B,E);\ndraw((0,0.45)--(3,0.45),Arrows(4));label(\"$b$\",(1.5,0.45),N);\ndraw((3,0.45)--(7,0.45),Arrows(4));label(\"$a$\",(5,0.45),N);\ndraw((0,-0.75)--(7,-0.75),Arrows(4));label(\"$a+b$\",(3.5,-0.75),S);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nWith base $AB$, the third vertex $C$ lies on line $AB$, so the height is $0$ and $\\dfrac{1}{2}\\cdot c\\cdot0=0$ as well. So the area of a degenerate triangle is defined and equals $0$: the three points enclose no region. (Heron's formula also shows the converse: for positive sides, the area is $0$ exactly when one side equals the sum of the other two.)",
+  "tags": [
+   "Heron's formula",
+   "Triangles",
+   "Triangle inequality",
+   "Lengths, perimeter, and area"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks whether the area of a degenerate triangle is 0 or undefined; turned into a computation with Heron's formula and base times height (answer 0)."
+ },
+ {
+  "topic_id": "1734291",
+  "part": 1,
+  "question": "If $45a=54b$ for positive integers $a$ and $b$, what is the smallest possible value of $a+b$? Explain.",
+  "solution": "Divide by $9$: $5a=6b$. Since $5\\mid6b$ and $\\gcd(5,6)=1$, $5\\mid b$; write $b=5t$, then $a=6t$ with $t$ a positive integer. So $a+b=11t\\ge11$, with equality for $a=6$, $b=5$ (check: $45\\cdot6=270=54\\cdot5$). The answer is $\\boxed{11}$.",
+  "tags": [
+   "Linear Diophantine equations",
+   "Divisibility",
+   "HCF and LCM"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1444972",
+  "part": 1,
+  "question": "Find the smallest positive integer whose decimal representation ends with the digits $2011$ and which is divisible by $7$.",
+  "solution": "Such a number is $N=10000k+2011$ for an integer $k\\ge0$. Modulo $7$: $10000=7\\cdot1428+4\\equiv4$ and $2011=7\\cdot287+2\\equiv2$. So we need\n\\[\n4k+2\\equiv0\\pmod7\\iff4k\\equiv5\\pmod7\\iff k\\equiv2\\cdot5=10\\equiv3\\pmod7,\n\\]\nusing $2\\cdot4\\equiv1\\pmod7$. The least $k$ is $3$, giving $N=\\boxed{32011}=7\\cdot4573$.",
+  "tags": [
+   "Remainders and congruences",
+   "Divisibility",
+   "Digit problems"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1733869",
+  "part": 1,
+  "question": "The eight vertices of a cube are labelled $A,B,C,\\dots,H$ in a random order, all labellings being equally likely. What is the probability that segment $AB$ and segment $CD$ intersect (at a point on or inside the cube)?",
+  "solution": "The segments $AB$ and $CD$ join two disjoint pairs of vertices. Only the unordered pair $\\bigl\\{\\{A,B\\},\\{C,D\\}\\bigr\\}$ of vertex pairs matters, and by symmetry it is equally likely to be any of the\n\\[\n\\dfrac{\\binom82\\binom62}{2}=\\dfrac{28\\cdot15}{2}=210\n\\]\nunordered pairs of disjoint vertex pairs.\n\nTwo segments joining four distinct vertices can meet only at an interior point of both, so the four vertices must be coplanar and the segments must be the two diagonals of the quadrilateral they form. Sets of four coplanar vertices of a cube are the $6$ faces and the $6$ ``diagonal rectangles'' through two opposite edges. In each of these $12$ rectangles exactly one pair of segments crosses: the two diagonals (the two sides of a pair of opposite sides are parallel and never meet). In the figure, the red pair is the diagonals of a face (the right face) and the blue pair is two space diagonals, which are the diagonals of a diagonal rectangle.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(4.5cm);\ndefaultpen(fontsize(10pt));\npair P(real x,real y,real z){return (x+0.5*z,y+0.35*z);}\npair A0=P(0,0,0),B0=P(1,0,0),C0=P(1,1,0),D0=P(0,1,0),A1=P(0,0,1),B1=P(1,0,1),C1=P(1,1,1),D1=P(0,1,1);\ndraw(A0--B0--C0--D0--cycle,linewidth(0.8));\ndraw(B0--B1--C1--C0,linewidth(0.8));draw(D0--D1--C1,linewidth(0.8));\ndraw(A0--A1,dashed);draw(A1--B1,dashed);draw(A1--D1,dashed);\ndraw(B0--C1,red+linewidth(0.8));draw(C0--B1,red+linewidth(0.8));\ndraw(A0--C1,blue+linewidth(0.8));draw(D0--B1,blue+linewidth(0.8));\ndot(A0);dot(B0);dot(C0);dot(D0);dot(A1);dot(B1);dot(C1);dot(D1);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nHence the probability is $\\dfrac{12}{210}=\\boxed{\\dfrac{2}{35}}$.",
+  "tags": [
+   "Probability",
+   "Cubes and rectangular prisms",
+   "Counting intersections",
+   "Combinations"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Answer checked by testing every pair of disjoint vertex pairs of a unit cube for intersection."
+ },
+ {
+  "topic_id": "1734077",
+  "part": 1,
+  "question": "A figure consists of a unit square with four more unit squares attached, one to each of its sides (a plus sign made of five squares). In each of the five squares both diagonals are drawn, as shown.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(4cm);\ndefaultpen(fontsize(10pt));\npair[] sq={(0,0),(1,0),(-1,0),(0,1),(0,-1)};\nfor(int i=0;i<5;++i){pair p=sq[i];\n draw(p--p+(1,0)--p+(1,1)--p+(0,1)--cycle,linewidth(0.8));\n draw(p--p+(1,1),linewidth(0.6));draw(p+(1,0)--p+(0,1),linewidth(0.6));}\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nHow many triangles of any size are in the figure?",
+  "solution": "Every vertex of a triangle must be a corner of a square or the centre of a square, and its sides must run along drawn segments. Sort the triangles by size, with the unit square having area $1$. All of them are right isosceles triangles.\n\\begin{itemize}\n\\item Area $\\dfrac{1}{4}$: in each square, the four quarters cut out by the diagonals: $4\\cdot5=20$.\n\\item Area $\\dfrac{1}{2}$: in each square, the four halves cut off by one diagonal: $4\\cdot5=20$.\n\\item Area $1$: hypotenuse of length $2$ along two collinear sides of two adjacent squares, legs along one diagonal of each of the two squares. Each of the $4$ pairs (centre square, arm square) gives $2$ such triangles, one on each side of their common line: $8$.\n\\item Area $2$: legs of length $2$ along two sides, hypotenuse along the diagonals of two squares, e.g.\\ with the right angle at a corner of the centre square where an arm side continues it. There are $4$, one at each corner of the centre square.\n\\item Area $\\dfrac{9}{4}$: hypotenuse of length $3$ across a whole arm-centre-arm row, apex at the centre of a perpendicular arm square, legs along diagonals through that arm square and the two side arms: $4$, one for each arm square holding the apex.\n\\end{itemize}\nTotal: $20+20+8+4+4=\\boxed{56}$.",
+  "tags": [
+   "Counting shapes in figures",
+   "Systematic counting",
+   "Casework"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The poster could not attach the figure and described it: a square with a square on each side, every square split into four triangles by its diagonals; the figure is rebuilt from this description. The count was confirmed by a computer enumeration of all triples of points whose connecting segments lie along drawn lines."
+ },
+ {
+  "topic_id": "1734047",
+  "part": 1,
+  "question": "What is the smallest prime number that divides some number of the form $4242\\cdots42+1$ or of the form $4242\\cdots42-1$ (where $4242\\cdots42$ consists of the block $42$ repeated one or more times)?",
+  "solution": "Let $M_k=4242\\cdots42$ with $k$ blocks, so $M_k=42\\cdot(1+100+100^2+\\cdots+100^{k-1})$.\n\\begin{itemize}\n\\item $2,3,7$: $42=2\\cdot3\\cdot7$ divides $M_k$, so $M_k\\pm1$ leaves remainder $\\pm1$ modulo each of them.\n\\item $5$: $M_k\\pm1$ ends in $3$ or $1$.\n\\item $11$: since $100\\equiv1\\pmod{11}$, $M_k\\equiv42k\\equiv9k\\pmod{11}$. For $k=5$, $9k=45\\equiv1$, so $11\\mid M_5-1=4242424241$ (indeed $4242424241=11\\cdot385674931$).\n\\end{itemize}\nThe answer is $\\boxed{11}$. The quick way to test $11$ is the alternating digit sum: in $M_k$ each block contributes $4-2=2$, so $M_k\\equiv-2k$, and $M_k-1\\equiv-2k-1\\equiv0$ when $k=5$.",
+  "tags": [
+   "Divisibility rules",
+   "Remainders and congruences",
+   "Prime numbers"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2014,
+   "division": "Chapter",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": "28"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1734032",
+  "part": 1,
+  "question": "Every year $y$, starting with the year $2018$, a mathematician writes the units digit of $7^y$ on a blackboard, immediately to the right of the digit written the year before (if there is one). After how many years will two adjacent digits on the board differ by at least $4$?",
+  "solution": "The units digits of $7^1,7^2,7^3,7^4,\\dots$ are $7,9,3,1$, repeating with period $4$. Since $2018\\equiv2\\pmod4$, the digit written in $2018$ is $9$ and in $2019$ it is $3$. These are adjacent and $|9-3|=6\\ge4$. So the condition is first met in $2019$, after $\\boxed{1}$ year.",
+  "tags": [
+   "Units digits and last digits",
+   "Pattern recognition"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Read as: the first year in which two adjacent digits on the board differ by at least 4; this already happens in the second year."
+ },
+ {
+  "topic_id": "1607327",
+  "part": 1,
+  "question": "Find the number of terms in the expansion of $(a+b+c+d+f+g+h)^{20}$ after like terms are combined.",
+  "solution": "Each term has the form (coefficient)$\\cdot a^{e_1}b^{e_2}c^{e_3}d^{e_4}f^{e_5}g^{e_6}h^{e_7}$ with nonnegative integers $e_i$ summing to $20$, every such monomial occurs (with a positive multinomial coefficient), and different exponent lists give different terms. By stars and bars the number of solutions of $e_1+\\cdots+e_7=20$ is\n\\[\n\\binom{20+6}{6}=\\binom{26}{6}=\\boxed{230230}.\n\\]",
+  "tags": [
+   "Stars and bars",
+   "Distributions and integer solutions",
+   "Binomial theorem"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1733566",
+  "part": 1,
+  "question": "There are $1000$ people in line for a game. On a table are $1000$ cups face down; exactly one cup has $1000$ dollars under it and the others have nothing. The people come up one at a time; each chooses one of the remaining cups uniformly at random. If the cup has the money, that person takes the $1000$ dollars and the game ends (nobody behind plays). If not, the person takes that empty cup away and the next person plays with the remaining cups.\n\\begin{enumerate}\n\\item[(a)] A claim says that one position $n$ in line has the highest expected payoff. Show that this is false: compute the expected payoff of the person in position $n$.\n\\item[(b)] Now everybody who actually plays must first pay a fee of $c$ dollars, where $0<c<1000$. Which position in line has the highest expected payoff, and what is it?\n\\end{enumerate}",
+  "solution": "\\textbf{(a)} The person in position $n$ plays only if the first $n-1$ players all missed. Then $1001-n$ cups remain, one with the money. The probability that the first $n-1$ players miss is\n\\[\n\\dfrac{999}{1000}\\cdot\\dfrac{998}{999}\\cdots\\dfrac{1001-n}{1002-n}=\\dfrac{1001-n}{1000},\n\\]\nand then person $n$ wins with probability $\\dfrac{1}{1001-n}$. So\n\\[\nP(\\text{person }n\\text{ wins})=\\dfrac{1001-n}{1000}\\cdot\\dfrac{1}{1001-n}=\\dfrac{1}{1000}\n\\]\nfor every $n$. (Equivalently: the order in which the cups are picked is a random ordering of the cups, and the money cup is equally likely to be in each position.) Every person's expected payoff is $1000\\cdot\\dfrac{1}{1000}=\\boxed{1\\text{ dollar}}$, so no position is better than another.\n\n\\textbf{(b)} Person $n$ pays the fee only if he plays, which happens with probability $\\dfrac{1001-n}{1000}$. His expected payoff is\n\\[\n1-c\\cdot\\dfrac{1001-n}{1000}\\text{ dollars},\n\\]\nwhich increases with $n$. So the last person, $\\boxed{n=1000}$, is best off, with expected payoff $1-\\dfrac{c}{1000}$ dollars (for example $0.99999$ dollars when $c=0.01$ and $0.98$ dollars when $c=20$).",
+  "tags": [
+   "Expected value",
+   "Probability",
+   "Conditional probability"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post claims a single best position n; in fact every position has expected payoff 1 dollar. The record asks to show this and, from the post's extensions, handles a fee paid only by those who play (then the last position is best). Checked by exact computation."
+ },
+ {
+  "topic_id": "1076780",
+  "part": 1,
+  "question": "For real $x$, find the sum of the maximum and minimum values of\n\\[\ny=\\dfrac{x^2-2x-3}{2x^2+2x+1}.\n\\]",
+  "solution": "The denominator $2x^2+2x+1=2\\left(x+\\dfrac{1}{2}\\right)^2+\\dfrac{1}{2}$ is always positive, so $y$ is defined for all real $x$. A value $y$ is attained exactly when\n\\[\n(2y-1)x^2+(2y+2)x+(y+3)=0\n\\]\nhas a real solution $x$. If $y=\\dfrac{1}{2}$ this is $3x+\\dfrac{7}{2}=0$, which has a solution. Otherwise we need the discriminant to be nonnegative:\n\\[\n(2y+2)^2-4(2y-1)(y+3)=-4y^2-12y+16=-4(y+4)(y-1)\\ge0\\iff-4\\le y\\le1 .\n\\]\nBoth ends are attained: $y=1$ at $x=-2$ (value $\\dfrac{5}{5}$) and $y=-4$ at $x=-\\dfrac{1}{3}$ (value $\\dfrac{-\\dfrac{20}{9}}{\\dfrac{5}{9}}$). So the maximum is $1$, the minimum is $-4$, and their sum is $\\boxed{-3}$.",
+  "tags": [
+   "Maxima and minima",
+   "Quadratic equations",
+   "Rational equations",
+   "Functions"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1732030",
+  "part": 1,
+  "question": "Find the error in the following argument. ``Let $S=1+2+4+8+16+\\cdots$. Then $2S=2+4+8+16+32+\\cdots$, and subtracting, $2S-S=-1$, so $S=-1$. But $S$ is a sum of positive integers.",
+  "solution": "The argument treats $S$ as a number, but the series has no finite sum: its partial sums are\n\\[\nS_n=1+2+\\cdots+2^{n-1}=2^n-1,\n\\]\nwhich grow without bound. So $S$ does not exist as a real number, and the algebra $2S-S=S$ (which uses $S$ as a finite quantity that can be subtracted) is invalid. ``$\\infty-\\infty$'' is not $-1$.\n\nDoing the computation honestly with partial sums shows what is really true:\n\\[\n2S_n-S_n=(2+4+\\cdots+2^n)-(1+2+\\cdots+2^{n-1})=2^n-1=S_n,\n\\]\nand nothing is left over. The trick $rS-S$ is valid for a geometric series $1+r+r^2+\\cdots$ only when $|r|<1$, where the partial sums $\\dfrac{1-r^n}{1-r}$ converge to $\\dfrac{1}{1-r}$. For $r=2$ the formula $\\dfrac{1}{1-r}=-1$ is the value that the manipulation produces, but the series diverges, so $\\boxed{\\text{the error is assigning a finite value }S\\text{ to a divergent series}}$.",
+  "tags": [
+   "Geometric sequences",
+   "Sequences and series"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Paradox 1 of a paradox marathon; posed as \"find the error\"."
+ },
+ {
+  "topic_id": "1701662",
+  "part": 1,
+  "question": "Stones come in packages of $10$, $15$ and $50$. DespaThanos buys $10$ packages; for each package he chooses one of the three sizes uniformly at random, independently. What is the probability that he can share all his stones equally between himself and his two friends?",
+  "solution": "He can share them equally among the $3$ people exactly when the total is divisible by $3$. Modulo $3$ the package sizes are $10\\equiv1$, $15\\equiv0$, $50\\equiv2$: one size of each residue.\n\nFix the choices for the first nine packages; their total has some residue $r$ modulo $3$. Exactly one of the three equally likely sizes of the tenth package has residue $-r$, making the total divisible by $3$. So, whatever happens with the first nine packages, the conditional probability of success is $\\dfrac{1}{3}$, and the probability is $\\boxed{\\dfrac{1}{3}}$.",
+  "tags": [
+   "Probability",
+   "Remainders and congruences",
+   "Independent events"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"Share equally with his two friends\" read as dividing the stones equally among three people. Checked over all 3^10 choices."
+ },
+ {
+  "topic_id": "1711870",
+  "part": 1,
+  "question": "Decompose into partial fractions:\n\\[\n\\dfrac{5x^3-3x^2+2x-1}{x^4+x^2}.\n\\]",
+  "solution": "Since $x^4+x^2=x^2(x^2+1)$, write\n\\[\n\\dfrac{5x^3-3x^2+2x-1}{x^2(x^2+1)}=\\dfrac {A}{x}+\\dfrac {B}{x^2}+\\dfrac{Cx+D}{x^2+1}.\n\\]\nClearing denominators,\n\\[\n5x^3-3x^2+2x-1=Ax(x^2+1)+B(x^2+1)+(Cx+D)x^2=(A+C)x^3+(B+D)x^2+Ax+B .\n\\]\nComparing coefficients: $B=-1$, $A=2$, $A+C=5$ so $C=3$, and $B+D=-3$ so $D=-2$. Hence\n\\[\n\\dfrac{5x^3-3x^2+2x-1}{x^4+x^2}=\\boxed{\\dfrac{2}{x}-\\dfrac{1}{x^2}+\\dfrac{3x-2}{x^2+1}}.\n\\]",
+  "tags": [
+   "Partial fractions",
+   "Polynomials"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1731581",
+  "part": 1,
+  "question": "A bakery sells cookies in packages of $8$, $12$ or $15$. What is the largest number of cookies that cannot be bought exactly?",
+  "solution": "Multiples of $4$ from $8$ on are made with $8$s and $12$s. Using $15$ once, twice or three times covers the residues $3,2,1$ modulo $4$ from $23$, $38$, $53$ on (since $15+8=23$, $30+8=38$, $45+8=53$), while $15$, $30$, $45$ are also possible. The largest impossible number is $53-4=\\boxed{49}$.",
+  "tags": [
+   "Linear Diophantine equations",
+   "Remainders and congruences",
+   "Casework"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "MathWorks",
+   "year": 2015,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1731674",
+  "part": 1,
+  "question": "I have twenty $3$-cent stamps and twenty $5$-cent stamps. Using one or more of these stamps, how many different amounts of postage can I make?",
+  "solution": "An amount is $3a+5b$ with $0\\le a,b\\le20$, not both $0$; all amounts lie between $1$ and $3\\cdot20+5\\cdot20=160$ cents.\n\n\\textbf{Symmetry.} Using $a$ threes and $b$ fives leaves $20-a$ threes and $20-b$ fives, worth $160-(3a+5b)$. So $v$ can be made if and only if $160-v$ can be made (counting $0$ as made by no stamps).\n\n\\textbf{Amounts up to $80$.} For $1\\le v\\le80$ take $a\\in\\{0,1,2,3,4\\}$ with $3a\\equiv v\\pmod5$. If $v\\ge3a$, then $b=\\dfrac{v-3a}{5}\\le16$, so $v=3a+5b$ with both counts at most $20$. The condition $v\\ge3a$ fails only for $v=1,2,4,7$ (which need $a=2,4,3,4$), and these four amounts are clearly impossible. So in $1\\le v\\le80$ exactly $1,2,4,7$ cannot be made.\n\n\\textbf{Amounts from $80$ to $160$.} By the symmetry, $v$ with $80\\le v\\le159$ is impossible exactly when $160-v\\in\\{1,2,4,7\\}$, i.e.\\ $v\\in\\{159,158,156,153\\}$, and $160$ itself is possible.\n\nSo $8$ of the $160$ amounts $1,2,\\dots,160$ are impossible, and $160-8=\\boxed{152}$ amounts can be made.",
+  "tags": [
+   "Linear Diophantine equations",
+   "Symmetry",
+   "Money and currency",
+   "Complementary counting"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Checked by listing all 3a + 5b."
+ },
+ {
+  "topic_id": "1732087",
+  "part": 1,
+  "question": "Two circles intersect, and their common chord has length $a$. The distance between their centres is $b$, and the radius of one of the circles is $c$, where $\\dfrac {a}{2}<c<b$. Find all possible values of the radius of the second circle in terms of $a$, $b$ and $c$.",
+  "solution": "Let the circles have centres $O_1$ (radius $c$) and $O_2$ (radius $r$) and meet at $P$ and $Q$, so $PQ=a$. The line $O_1O_2$ is the perpendicular bisector of $PQ$; let it meet $PQ$ at its midpoint $M$. In right triangle $O_1MP$,\n\\[\nO_1M=\\sqrt{c^2-\\dfrac{a^2}{4}}=\\dfrac{1}{2}\\sqrt{4c^2-a^2}=:d .\n\\]\nSince $d<c<b=O_1O_2$, the centre $O_2$ cannot lie between $M$ and $O_1$. So there are two cases.\n\n\\textbf{Centres on opposite sides of the chord} (the usual picture): $O_2M=b-d$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(7.5cm);\ndefaultpen(fontsize(10pt));\npair O1=(-4,0),O2=(3,0),Pp=(0,3),Q=(0,-3);\ndraw(circle(O1,5),linewidth(0.8));draw(circle(O2,sqrt(18)),linewidth(0.8));\ndraw(Pp--Q,red+linewidth(0.8));draw(O1--O2,dashed);draw(O1--Pp,blue);draw(O2--Pp,deepgreen);\ndraw((0,0)--(0.4,0)--(0.4,0.4)--(0,0.4));\ndot(O1);dot(O2);dot(Pp);dot(Q);\nlabel(\"$O_1$\",O1,W);label(\"$O_2$\",O2,E);label(\"$P$\",Pp,2.5*N);label(\"$Q$\",Q,2.5*S);\nlabel(\"$c$\",(O1+Pp)/2,NW,blue);label(\"$r$\",(O2+Pp)/2,NE,deepgreen);\nlabel(\"$a$\",(0,-0.9),E,red);label(\"$b$\",(-2.6,0),S);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n\\textbf{Centres on the same side}, with $O_1$ between $M$ and $O_2$: $O_2M=b+d$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(7cm);\ndefaultpen(fontsize(10pt));\npair O1=(-4,0),O2=(-11,0),Pp=(0,3),Q=(0,-3);\ndraw(circle(O2,sqrt(130)),linewidth(0.8));draw(circle(O1,5),linewidth(0.8));\ndraw(Pp--Q,red+linewidth(0.8));draw(O2--(0,0),dashed);draw(O1--Pp,blue);draw(O2--Pp,deepgreen);\ndot(O1);dot(O2);dot(Pp);dot(Q);\nlabel(\"$O_1$\",O1,S);label(\"$O_2$\",O2,S);label(\"$P$\",Pp,NE);label(\"$Q$\",Q,SE);\nlabel(\"$c$\",(O1+Pp)/2,SE,blue);label(\"$r$\",(O2+Pp)/2,N,deepgreen);\nlabel(\"$a$\",(0,-1.4),W,red);label(\"$b$\",(O1+O2)/2,S);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nIn right triangle $O_2MP$, $r^2=\\dfrac{a^2}{4}+O_2M^2=\\dfrac{a^2}{4}+b^2\\mp2bd+d^2=b^2+c^2\\mp2bd$. Hence\n\\[\n\\boxed{r=\\sqrt{b^2+c^2-b\\sqrt{4c^2-a^2}}\\quad\\text{or}\\quad r=\\sqrt{b^2+c^2+b\\sqrt{4c^2-a^2}}},\n\\]\nthe first when the centres are on opposite sides of the common chord and the second when they are on the same side. (The figures use $a=6$, $c=5$, $b=7$, giving $r=\\sqrt{18}$ and $r=\\sqrt{130}$.)",
+  "tags": [
+   "Circles",
+   "Arcs and chords",
+   "Pythagorean theorem",
+   "Perpendicular bisectors"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"The distance between the two circles\" is read as the distance between their centres. The post asks for \"the\" radius, but two configurations fit the data (centres on opposite sides of the chord or on the same side); the record asks for all possible values and gives both."
+ },
+ {
+  "topic_id": "1732087",
+  "part": 2,
+  "question": "In equiangular hexagon $ABCDEF$, $AB=4$, $BC=2$, $CD=7$ and $DE=1$. Find $EF$ and $FA$.",
+  "solution": "Every interior angle of an equiangular hexagon is $120^\\circ$. Extend sides $AB$, $CD$ and $EF$ until they meet at $X$ (lines $AB$, $CD$), $Y$ (lines $CD$, $EF$) and $Z$ (lines $EF$, $AB$). The triangles $BXC$, $DYE$ and $FZA$ have two angles of $180^\\circ-120^\\circ=60^\\circ$, so they are equilateral, with sides $BC=2$, $DE=1$ and $FA$. Then triangle $XYZ$ has all angles $60^\\circ$, so it is equilateral.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6.5cm);\ndefaultpen(fontsize(10pt));\npair A=(0,0),B=A+4*dir(0),C=B+2*dir(60),D=C+7*dir(120),Ep=D+1*dir(180),F=Ep+5*dir(240);\npair X=extension(A,B,C,D),Y=extension(C,D,Ep,F),Z=extension(Ep,F,A,B);\ndraw(B--X--C,dashed+gray);draw(D--Y--Ep,dashed+gray);draw(F--Z--A,dashed+gray);\ndraw(A--B--C--D--Ep--F--cycle,linewidth(0.9));\nlabel(\"$A$\",A,dir(240));label(\"$B$\",B,dir(300));label(\"$C$\",C,E);label(\"$D$\",D,dir(60));label(\"$E$\",Ep,dir(120));label(\"$F$\",F,W);\nlabel(\"$4$\",(A+B)/2,N);label(\"$2$\",(B+C)/2,W);label(\"$7$\",(C+D)/2,SW);label(\"$1$\",(D+Ep)/2,S);\nlabel(\"$5$\",(Ep+F)/2,E);label(\"$4$\",(F+A)/2,NE);\nlabel(\"$X$\",X,SE);label(\"$Y$\",Y,N);label(\"$Z$\",Z,SW);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nIts sides are\n\\[\nZX=FA+AB+BC=FA+6,\\qquad XY=BC+CD+DE=10,\\qquad YZ=DE+EF+FA=1+EF+FA .\n\\]\nFrom $ZX=XY$, $FA=4$; from $YZ=XY$, $1+EF+4=10$, so $EF=5$. Hence $\\boxed{EF=5,\\ FA=4}$.",
+  "tags": [
+   "Equiangular polygons",
+   "Equilateral triangles",
+   "Quadrilaterals and polygons"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The figure is drawn from the computed sides 4, 2, 7, 1, 5, 4 and closes up exactly."
+ },
+ {
+  "topic_id": "1732678",
+  "part": 1,
+  "question": "When written out completely, $16^{2011}$ has $m$ digits and $625^{2011}$ has $n$ digits. Find $m+n$ (without a computer).",
+  "solution": "A positive integer $N$ has $k$ digits exactly when $10^{k-1}\\le N<10^k$. Since $16\\cdot625=10^4$,\n\\[\n16^{2011}\\cdot625^{2011}=10^{8044}.\n\\]\nWrite $16^{2011}=10^{\\alpha}$ and $625^{2011}=10^{\\beta}$ with $\\alpha+\\beta=8044$. Neither number is a power of $10$ ($16^{2011}$ is not divisible by $5$ and $625^{2011}$ is odd), so neither $\\alpha$ nor $\\beta$ is an integer, and the numbers of digits are $m=\\lfloor\\alpha\\rfloor+1$ and $n=\\lfloor\\beta\\rfloor+1$. For non-integers with an integer sum, $\\lfloor\\alpha\\rfloor+\\lfloor\\beta\\rfloor=\\alpha+\\beta-1=8043$. Therefore $m+n=8043+2=\\boxed{8045}$.",
+  "tags": [
+   "Digits and bases",
+   "Exponents",
+   "Floor and ceiling functions",
+   "Logarithms"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Checked by computing both numbers exactly."
+ },
+ {
+  "topic_id": "1543814",
+  "part": 1,
+  "question": "Let $a,b,c$ be positive real numbers with $a+b+c=3$. Prove that\n\\[\n\\dfrac{9}{abc}\\ge2\\left(\\dfrac {a}{b}+\\dfrac {b}{c}+\\dfrac {c}{a}\\right)+3 .\n\\]",
+  "solution": "Multiplying by $abc>0$ and using $\\dfrac {a}{b}\\cdot abc=a^2c$, $\\dfrac {b}{c}\\cdot abc=ab^2$, $\\dfrac {c}{a}\\cdot abc=bc^2$, the inequality becomes\n\\[\n9\\ge2\\left(a^2c+ab^2+bc^2\\right)+3abc,\\quad\\text{i.e.}\\quad a^2c+ab^2+bc^2+abc+\\dfrac{abc}{2}\\le\\dfrac{9}{2} .\n\\]\n\n\\textbf{Lemma.} For nonnegative $x,y,z$: $x^2y+y^2z+z^2x+xyz\\le\\dfrac{4}{27}(x+y+z)^3$.\n\n\\emph{Proof.} The left side is unchanged by the cyclic shift $(x,y,z)\\to(y,z,x)$, and among the three shifts the middle letter $y$ takes each of the three values; so we may assume $y$ lies between $x$ and $z$. Then $z(y-x)(y-z)\\le0$, i.e.\\ $y^2z+z^2x\\le xyz+yz^2$. Hence\n\\[\nx^2y+y^2z+z^2x+xyz\\le x^2y+yz^2+2xyz=y(x+z)^2=4\\cdot y\\cdot\\dfrac{x+z}{2}\\cdot\\dfrac{x+z}{2}\\le4\\left(\\dfrac{x+y+z}{3}\\right)^3\n\\]\nby AM-GM on $y,\\dfrac{x+z}{2},\\dfrac{x+z}{2}$. $\\square$\n\nWith $(x,y,z)=(a,c,b)$ the lemma gives $a^2c+c^2b+b^2a+abc\\le\\dfrac{4}{27}\\cdot27=4$. Also by AM-GM, $abc\\le\\left(\\dfrac{a+b+c}{3}\\right)^3=1$, so $\\dfrac{abc}{2}\\le\\dfrac{1}{2}$. Adding,\n\\[\na^2c+ab^2+bc^2+abc+\\dfrac{abc}{2}\\le4+\\dfrac{1}{2}=\\dfrac{9}{2},\n\\]\nwhich is the required inequality. Equality holds for $a=b=c=1$, where both sides equal $9$. $\\blacksquare$",
+  "tags": [
+   "Inequalities",
+   "AM-GM inequality",
+   "Algebraic manipulation"
+  ],
+  "difficulty": 6,
+  "rationale": "A difficult-to-spot insight followed by substantial reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Checked numerically on random triples with a + b + c = 3."
+ },
+ {
+  "topic_id": "1732887",
+  "part": 1,
+  "question": "A contest asked for the $12$th term of the sequence $2,9,28,\\dots$ with choices $37$, $65$, $1728$, $1729$, and the key gave $1729$ (the rule $n^3+1$).\n\\begin{enumerate}\n\\item[(a)] Show that the rule $a_n=n^3+1$ fits the given terms and gives $a_{12}=1729$.\n\\item[(b)] Show that the given terms do not determine $a_{12}$: for every real number $v$ there is a polynomial $p$ of degree at most $3$ with $p(1)=2$, $p(2)=9$, $p(3)=28$ and $p(12)=v$. Find such a polynomial with $p(12)=37$.\n\\end{enumerate}",
+  "solution": "\\textbf{(a)} $1^3+1=2$, $2^3+1=9$, $3^3+1=28$, and $12^3+1=1729$.\n\n\\textbf{(b)} Let\n\\[\np(n)=n^3+1+k(n-1)(n-2)(n-3)\n\\]\nfor a constant $k$. The added term vanishes at $n=1,2,3$, so $p(1)=2$, $p(2)=9$, $p(3)=28$ for every $k$, and\n\\[\np(12)=1729+k\\cdot11\\cdot10\\cdot9=1729+990k .\n\\]\nChoosing $k=\\dfrac{v-1729}{990}$ gives $p(12)=v$, so every value of the $12$th term is consistent with the three given terms. For $v=37$, $k=-\\dfrac{1692}{990}=-\\dfrac{94}{55}$, so\n\\[\n\\boxed{p(n)=n^3+1-\\dfrac{94}{55}(n-1)(n-2)(n-3)}\n\\]\nfits $2,9,28$ and has $p(12)=37$. Hence the question as stated is ambiguous; $n^3+1$ is merely the simplest rule, which is why $1729$ was the intended answer.",
+  "tags": [
+   "Polynomials",
+   "Sequences and series",
+   "Pattern recognition"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "Maryland Mathalon",
+   "year": 2018,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": "2"
+  },
+  "note": "The poster objects that the question (12th term of 2, 9, 28, ...) is ambiguous. The record proves this with a one-parameter family of cubics and keeps the intended rule n^3 + 1 (1729) as part (a)."
+ },
+ {
+  "topic_id": "1627894",
+  "part": 1,
+  "question": "The equation $\\dfrac{\\sqrt5-1}{2}+1=\\dfrac{\\sqrt5-1}{2}$ is false. Show that it becomes true when the right-hand side is replaced by its reciprocal, that is, prove\n\\[\n\\dfrac{\\sqrt5-1}{2}+1=\\dfrac{2}{\\sqrt5-1}.\n\\]",
+  "solution": "The left side is $\\dfrac{\\sqrt5-1+2}{2}=\\dfrac{\\sqrt5+1}{2}$. Rationalising the right side,\n\\[\n\\dfrac{2}{\\sqrt5-1}=\\dfrac{2(\\sqrt5+1)}{(\\sqrt5-1)(\\sqrt5+1)}=\\dfrac{2(\\sqrt5+1)}{4}=\\dfrac{\\sqrt5+1}{2}.\n\\]\nThe two sides agree, so $\\boxed{\\dfrac{\\sqrt5-1}{2}+1=\\dfrac{2}{\\sqrt5-1}}$. In other words $x=\\dfrac{\\sqrt5-1}{2}\\approx0.618$ satisfies $x+1=\\dfrac{1}{x}$, i.e.\\ $x^2+x-1=0$; its reciprocal $\\dfrac{\\sqrt5+1}{2}$ is the golden ratio.",
+  "tags": [
+   "Radicals",
+   "Rationalising denominators",
+   "Quadratic equations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post is a \"use one stroke to make it true\" puzzle with no stated rules; the record asks for the intended mathematical fact (x + 1 = 1/x for x = (sqrt5 - 1)/2)."
+ },
+ {
+  "topic_id": "526580",
+  "part": 1,
+  "question": "In American football a team can score $2$ points (a safety), $3$ points (a field goal) or $6$ points (a touchdown); after a touchdown it may score $1$ additional point. So each scoring play adds $2$, $3$, $6$ or $7$ points. The final score of a game is $21$ to $17$. Counting each team's scoring only by how many plays of each kind it made (not their order), how many combinations of scoring plays for the two teams are possible?",
+  "solution": "For each team count the solutions of $2s+3f+6t+7u=\\text{score}$ in nonnegative integers (safeties, field goals, touchdowns without and with the extra point).\n\n\\textbf{Score $21$.} By $u$:\n\\begin{itemize}\n\\item $u=0$: $2s+3f+6t=21$. Here $f$ is odd. $t=0$: $f=1,3,5,7$ ($4$); $t=1$: $2s+3f=15$, $f=1,3,5$ ($3$); $t=2$: $2s+3f=9$, $f=1,3$ ($2$); $t=3$: $2s+3f=3$, $f=1$ ($1$). Total $10$.\n\\item $u=1$: $2s+3f+6t=14$, $f$ even. $t=0$: $f=0,2,4$ ($3$); $t=1$: $2s+3f=8$, $f=0,2$ ($2$); $t=2$: $2s+3f=2$, $f=0$ ($1$). Total $6$.\n\\item $u=2$: $2s+3f+6t=7$, $f$ odd: $t=0$, $f=1$ ($1$); $t=1$: $2s+3f=1$, none. Total $1$.\n\\item $u=3$: $0$ remaining: $1$.\n\\end{itemize}\nSo $10+6+1+1=18$ ways.\n\n\\textbf{Score $17$.}\n\\begin{itemize}\n\\item $u=0$: $2s+3f+6t=17$, $f$ odd. $t=0$: $f=1,3,5$ ($3$); $t=1$: $2s+3f=11$, $f=1,3$ ($2$); $t=2$: $2s+3f=5$, $f=1$ ($1$). Total $6$.\n\\item $u=1$: $2s+3f+6t=10$, $f$ even. $t=0$: $f=0,2$ ($2$); $t=1$: $2s+3f=4$, $f=0$ ($1$). Total $3$.\n\\item $u=2$: $2s+3f+6t=3$: $f=1$ ($1$).\n\\end{itemize}\nSo $6+3+1=10$ ways.\n\nThe two teams' combinations are independent, so there are $18\\cdot10=\\boxed{180}$ possibilities.",
+  "tags": [
+   "Linear Diophantine equations",
+   "Casework",
+   "Multiplication principle",
+   "Systematic counting"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post does not say whether order matters or whether the two teams are counted together; the record counts unordered combinations of scoring plays (2, 3, 6, 7) for each team and multiplies. Checked by enumeration."
+ },
+ {
+  "topic_id": "1732939",
+  "part": 1,
+  "question": "Find $N^3$, where\n\\[\nN=\\sqrt{7\\sqrt{3\\sqrt{7\\sqrt{3\\sqrt{7\\sqrt{3\\cdots}}}}}}\n\\]\n(the pattern $7,3,7,3,\\dots$ continues forever, and $N$ is the limit of the finite truncations).",
+  "solution": "The expression under the first two square roots repeats itself: $N=\\sqrt{7\\sqrt{3N}}$. Squaring twice,\n\\[\nN^2=7\\sqrt{3N}\\quad\\Longrightarrow\\quad N^4=49\\cdot3N=147N .\n\\]\nSince $N>0$, $N^3=\\boxed{147}$.\n\n(The truncations converge: in logarithms, each pair of roots replaces $\\ln N$ by $\\dfrac{\\ln7}{2}+\\dfrac{\\ln3}{4}+\\dfrac{\\ln N}{4}$, a contraction, so the limit exists and is the positive solution $N=147^{\\dfrac{1}{3}}$.)",
+  "tags": [
+   "Radicals",
+   "Exponents",
+   "Substitution"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1732841",
+  "part": 1,
+  "question": "Find the real solutions of $x(x+1)(x+2)(x+3)=63$.",
+  "solution": "Pair the outer and inner factors: $x(x+3)=x^2+3x$ and $(x+1)(x+2)=x^2+3x+2$. With $u=x^2+3x+1$ the equation becomes\n\\[\n(u-1)(u+1)=63\\iff u^2=64\\iff u=\\pm8 .\n\\]\nIf $u=8$: $x^2+3x-7=0$, so $x=\\dfrac{-3\\pm\\sqrt{37}}{2}$. If $u=-8$: $x^2+3x+9=0$ has discriminant $9-36<0$, so no real roots. The real solutions are\n\\[\n\\boxed{x=\\dfrac{-3+\\sqrt{37}}{2}\\ \\text{ and }\\ x=\\dfrac{-3-\\sqrt{37}}{2}}.\n\\]",
+  "tags": [
+   "Substitution",
+   "Quadratic equations",
+   "Polynomials"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1732752",
+  "part": 1,
+  "question": "Each of the seven vertices of a regular heptagon is coloured either blue or white. Two colourings are considered the same if one can be obtained from the other by a rotation. How many different colourings are possible?",
+  "solution": "There are $2^7=128$ colourings in all. The two one-coloured colourings are each fixed by every rotation. For any other colouring, a rotation by $k$ steps ($1\\le k\\le6$) that fixes it would force all vertices to have the same colour, because $\\gcd(k,7)=1$ and repeated rotation by $k$ steps visits all seven vertices. So each of the other $126$ colourings has $7$ different rotations, and they fall into $\\dfrac{126}{7}=18$ classes. The number of different colourings is $18+2=\\boxed{20}$. (Burnside's lemma gives the same: $\\dfrac{128+6\\cdot2}{7}=20$.)",
+  "tags": [
+   "Symmetry",
+   "Burnside's lemma",
+   "Prime numbers",
+   "Colourings, tilings, and coverings"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"Golden heptagon\" read as a regular heptagon."
+ },
+ {
+  "topic_id": "1732647",
+  "part": 1,
+  "question": "\\begin{enumerate}\n\\item[(a)] Write a positive integer as $N=10x+e$, where $e$ is its last digit and $x$ is the number formed by the other digits. Prove that $17\\mid N$ if and only if $17\\mid x-5e$. (So the test can be repeated on smaller and smaller numbers.)\n\\item[(b)] Generalise: for any positive integer $m$ with $\\gcd(m,10)=1$, give a similar rule ``$m\\mid N$ if and only if $m\\mid x-te$'' and prove it.\n\\end{enumerate}",
+  "solution": "\\textbf{(a)} We have\n\\[\n10(x-5e)=10x-50e=(10x+e)-51e=N-3\\cdot17e .\n\\]\nSo $10(x-5e)\\equiv N\\pmod{17}$. Since $\\gcd(10,17)=1$, $17\\mid N$ if and only if $17\\mid10(x-5e)$ if and only if $17\\mid x-5e$. $\\blacksquare$\n\n\\textbf{(b)} Since $\\gcd(10,m)=1$, there is an integer $t\\ge0$ with $10t\\equiv-1\\pmod m$ (because $10$ has an inverse modulo $m$). Then\n\\[\n10(x-te)=10x-10te=N-(10t+1)e\\equiv N\\pmod m,\n\\]\nsince $m\\mid10t+1$. As $\\gcd(10,m)=1$, $m\\mid N\\iff m\\mid x-te$. $\\blacksquare$\n\nExamples: $m=17$, $t=5$ ($50+1=51=3\\cdot17$); $m=7$, $t=2$ ($21$); $m=13$, $t=9$ ($91=7\\cdot13$); $m=19$, $t=17$ ($171=9\\cdot19$), or equivalently $m\\mid x+2e$ for $19$ since $-17\\equiv2$. For $m$ sharing a factor with $10$, split $m=2^i5^jm'$ and test the last $\\max(i,j)$ digits for $2^i5^j$ and use the rule above for $m'$.",
+  "tags": [
+   "Divisibility rules",
+   "Remainders and congruences",
+   "Digits and bases"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"Come up with a way to find the divisibility of any number\" turned into part (b): the general rule for any m coprime to 10 (with a remark on other m)."
+ }
+]
