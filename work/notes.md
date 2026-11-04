@@ -33,3 +33,4 @@
 - b232 figs reviewed (20). FIXED 1726281-q04: AB=8 label sat over the left part only (A..foot is 6); now a dimension arrow.
 - b233 done: 73 rec, 9 al (3 to b232 per xnotes), 21 diag; 62/3/29/6. 1716792 excluded (no clean proof); 1720781 R(4,4) diff 7.
 - b233 figs reviewed (21). FIXED: 1720835 base label 6 moved to centre of CA; 1717359-q05 D label touched circle/AC.
+- Cross-batch scan 231-235 (61 pairs >0.35): no further repeats; all xnotes lines acted on by workers (b232 1725534 -> prior; b233 1717359 q01/q02/q04 -> b232).
