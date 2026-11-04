@@ -113,12 +113,12 @@ which is $\boxed{4.1}$ to the nearest tenth.''',
 
 # ---------------- 1706122 ski slope grade
 figg=r'''pair A=(0,4),B=(4,0),Cc=(0,0);
-draw(A--B,linewidth(1.1));draw(A--Cc--B,gray+dashed);draw(A--(0,4.4),gray+dashed);
+draw(A--B,linewidth(1.1));draw(A--Cc--B,gray+dashed);draw(A--(0,4.3),gray+dashed);
 draw((0.35,0)--(0.35,0.35)--(0,0.35));
 draw(arc(A,0.9,-90,-45),blue);
 label("$45^\circ$",A+1.5*dir(-67.5),blue);
 label("$d$",(0,2),W);label("$d$",(2,0),S);
-label("vertical",(0,4.6));label("slope",(2.4,2.2),NE);'''
+label("vertical",(0,4.3),N);label("slope",(2.4,2.2),NE);'''
 b.add(1706122,1,r'''The grade of a ski slope is the ratio of the vertical drop to the horizontal distance. What is the measure of the angle between the ski slope and the vertical, for a ski slope whose grade is $100\%$?''',
 r'''A grade of $100\%$ means the vertical drop equals the horizontal distance, say both equal $d$. The slope is then the hypotenuse of a right isosceles triangle with legs $d$ (vertical) and $d$ (horizontal).
 '''+asy(figg,'4.5cm')+r'''

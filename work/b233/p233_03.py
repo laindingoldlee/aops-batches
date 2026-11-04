@@ -356,8 +356,8 @@ draw((-3.2,0)--(6,0),Arrow(TeXHead));draw((0,-2)--(0,7),Arrow(TeXHead));
 draw((-3,-2)--(5.6,6.6),blue+linewidth(0.8));
 draw(P--(5,0),dotted);
 dot(A);dot(B);dot(P);
-label("$A(0,1)$",A,NW);label("$B(-2,-1)$",B,NW);label("$E(5,6)$",P,E);
-label("$y=x+1$",(4,5),NW,blue);
+label("$A$",A,NW);label("$B$",B,NW);label("$E$",P,E);
+label("$y=x+1$",(2.6,3.6),SE,blue);
 label("$x$",(6,0),N);label("$y$",(0,7),E);label("$5$",(5,0),S);'''
 b.add(1716607,1,r'''The point $E(5,h)$ lies on the line through $A(0,1)$ and $B(-2,-1)$. What is the value of $h$?''',
 r'''The slope of $AB$ is $\dfrac{1-(-1)}{0-(-2)}=1$, and the line passes through $(0,1)$, so its equation is $y=x+1$. For $x=5$, $h=5+1=\boxed{6}$.
