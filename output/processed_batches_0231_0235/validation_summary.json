@@ -1,0 +1,73 @@
+{
+  "batches": "231-235",
+  "question_records": 378,
+  "topics_screened": 500,
+  "screening_statuses": {
+    "duplicate": 44,
+    "included": 311,
+    "excluded": 136,
+    "partial": 9
+  },
+  "aliases": 60,
+  "diagram_previews": 94,
+  "missing_diagram_previews": 0,
+  "diagram_previews_compiled": true,
+  "zip_members": 1229,
+  "zip_sha256": "c48e93d7bb8c183ea8b125567c42808ebf249edf7ea4a39b90ea764121a675ef",
+  "checks_passed": true,
+  "per_batch": {
+    "231": {
+      "question_records": 79,
+      "aliases": 17,
+      "diagram_previews": 15,
+      "screening_statuses": {
+        "duplicate": 13,
+        "included": 58,
+        "excluded": 29
+      }
+    },
+    "232": {
+      "question_records": 73,
+      "aliases": 17,
+      "diagram_previews": 20,
+      "screening_statuses": {
+        "excluded": 23,
+        "duplicate": 13,
+        "included": 60,
+        "partial": 4
+      }
+    },
+    "233": {
+      "question_records": 73,
+      "aliases": 9,
+      "diagram_previews": 21,
+      "screening_statuses": {
+        "included": 62,
+        "duplicate": 6,
+        "excluded": 29,
+        "partial": 3
+      }
+    },
+    "234": {
+      "question_records": 78,
+      "aliases": 6,
+      "diagram_previews": 19,
+      "screening_statuses": {
+        "excluded": 26,
+        "included": 68,
+        "duplicate": 6
+      }
+    },
+    "235": {
+      "question_records": 75,
+      "aliases": 11,
+      "diagram_previews": 19,
+      "screening_statuses": {
+        "included": 63,
+        "excluded": 29,
+        "duplicate": 6,
+        "partial": 2
+      }
+    }
+  }
+}
