@@ -25,7 +25,7 @@ i.e.\ it lies on the origin's side of the perpendicular bisector $x+y=4$ of the 
 '''+asy(fig,'6cm')+r'''
 The region is the $5\times5$ square $0\le x\le5$, $1\le y\le6$ of area $25$. The part of it with $x+y<4$ is the shaded right triangle with vertices $(0,1)$, $(3,1)$, $(0,4)$, with legs $3$ and $3$ and area $\dfrac92$. The probability is
 \[
-\dfrac{9/2}{25}=\dfrac{9}{50}=\boxed{18\%}.
+\dfrac{\ \dfrac92\ }{25}=\dfrac{9}{50}=\boxed{18\%}.
 \]''',
 'Geometric probability|Coordinate geometry|Perpendicular bisectors|Percentages',3,
 note='Problem 2 of the post (answer 18% as given). Problem 1 (ellipse with foci (0,0) and (-8,8) through (3,4); ratio of y-intercepts m/n with |m+n| = 8) is dropped: with these data the y-intercepts are about -3.057 and 8.676, whose ratio is irrational, so the stated data or answer are wrong and the intended data cannot be recovered.')

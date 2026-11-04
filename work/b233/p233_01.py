@@ -300,7 +300,7 @@ Total $8+6+4+2=\boxed{20}$.''',
 b.add(1721676,1,r'''Let $f(x)=1-x$ and $g(x)=\dfrac1x$, each with its natural domain. Find $f(f(x))$ and $g(g(x))$ together with their domains. Are $f\circ f$ and $g\circ g$ the same function?''',
 r'''$f$ is defined for all real $x$, and $f(f(x))=1-(1-x)=x$ for every real $x$.
 
-$g$ is defined for $x\ne0$, and $g(x)=\dfrac1x$ is never $0$, so $g(g(x))=\dfrac{1}{1/x}$ is defined exactly for $x\ne0$, where it equals $x$.
+$g$ is defined for $x\ne0$, and $g(x)=\dfrac1x$ is never $0$, so $g(g(x))=\dfrac{1}{\ \dfrac1x\ }$ is defined exactly for $x\ne0$, where it equals $x$.
 
 So both compositions are given by the rule $x\mapsto x$, but $f\circ f$ has domain all real numbers while $g\circ g$ has domain $\{x:x\ne0\}$. Since a function includes its domain, $\boxed{\text{they are not the same function}}$: they agree wherever both are defined, but $f(f(0))=0$ while $g(g(0))$ is undefined.''',
 'Functions|Inverse functions',2,

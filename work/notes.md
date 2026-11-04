@@ -31,3 +31,4 @@
 - b232 done: 73 rec, 17 al, 20 diag; 60/4/23/13. xnotes: b233 1717359-q01,q02,q04 should alias to b232. Near miss 1726527 vs prior 2953609-q04 kept (different wording/answer).
 - b234 figs reviewed (19). FIXED: 1715264-q01 (2,3) label overlapped y-axis; 1698023 side label 6 squeezed against circle (moved inside); 1711919 A label on side AC.
 - b232 figs reviewed (20). FIXED 1726281-q04: AB=8 label sat over the left part only (A..foot is 6); now a dimension arrow.
+- b233 done: 73 rec, 9 al (3 to b232 per xnotes), 21 diag; 62/3/29/6. 1716792 excluded (no clean proof); 1720781 R(4,4) diff 7.

@@ -226,7 +226,7 @@ r'''Since $3^2+4^2=5^2$, the angle at $B$ is right. Put $B=(0,0)$, $C=(4,0)$, $A
 \[
 180^\circ-\alpha-\angle ABD=180^\circ-\dfrac\alpha2-\gamma\quad\Longrightarrow\quad\angle ABD=\gamma-\dfrac\alpha2 .
 \]
-Here $\tan\dfrac\alpha2=\dfrac{\sin\alpha}{1+\cos\alpha}=\dfrac{4/5}{8/5}=\dfrac12$, so
+Here $\tan\dfrac\alpha2=\dfrac{\sin\alpha}{1+\cos\alpha}=\dfrac{\ \dfrac45\ }{\ \dfrac85\ }=\dfrac12$, so
 \[
 \tan\angle ABD=\dfrac{\dfrac34-\dfrac12}{1+\dfrac38}=\dfrac2{11}.
 \]
