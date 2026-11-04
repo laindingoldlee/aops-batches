@@ -11,3 +11,6 @@
 
 ## run 231-235 (lines above are from run 221-230 and are done)
 - b232 draft 1725534-q01 (glide reflection of triangle ABC onto DAE, ratio 5/11) repeats prior aops-topic-1877656-q01 (b234 1713999-q01 is aliased to it): b232 should alias to aops-topic-1877656-q01
+- b232 1723304-q01 (min of sqrt(2x^2-3)+sqrt(3x+5), answer 16) repeats b233 draft 1717359-q02: b233 should alias to b232
+- b232 1724486-q03 (isosceles ABC, trisectors AD, AE, CD = 5, DE = 1, AC = 5 sqrt5/2) repeats b233 draft 1717359-q01: b233 should alias to b232
+- b232 1724486-q01 (rational function with asymptotes x = -4 and y = 2x - 2, a+b+d+e = 13) repeats b233 draft 1717359-q04: b233 should alias to b232

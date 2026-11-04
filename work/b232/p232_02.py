@@ -345,7 +345,7 @@ which indeed are collinear, on the line $y=-3x+\dfrac{15}{2}$.
 \]
 (Indeed, reflecting in $m$ sends $A,B,C$ to $\left(\dfrac92,\dfrac32\right)$, $\left(-\dfrac12,\dfrac32\right)$, $\left(\dfrac{13}{10},-\dfrac{9}{10}\right)$, and the translation by $\left(\dfrac12,-\dfrac32\right)$, which is parallel to $m$, then gives $D,A,E$.)''',
 'Reflections|Translations|Geometric transformations|Area ratios|Coordinate geometry|Right triangles',5,source=src('MATHCOUNTS',2018,'National',30,rnd='Sprint'),
-note='The figure was attached; the text determines it once E is on the side of AD opposite B (on the same side the map would preserve orientation and could not be a glide reflection). The answer 5/11 matches the given answer.')
+note='The figure was attached; the text determines it once E is on the side of AD opposite B (on the same side the map would preserve orientation and could not be a glide reflection). The answer 5/11 matches the given answer. Repeat of an earlier record (aliased).')
 
 # ---------------- 1724620 square ZENG pentagon; LMNO and prism repeats
 fig=r'''real r=(18-9*sqrt(2))/4,c=3-r;
@@ -391,7 +391,8 @@ r'''Such a number is $\overline{1abc}$ with $a+b+c=23$ and each digit at most $9
 \item $a=9$: $b+c=14$: $1959,1968,1977,1986,1995$.
 \end{itemize}
 There are $15$ numbers, already in increasing order, so the median is the $8$th: $\boxed{1878}$.''',
-'Median|Digits and bases|Systematic counting',2)
+'Median|Digits and bases|Systematic counting',2,
+note='Repeat of an earlier record (aliased).')
 
 # ---------------- 1723304 minimum of sqrt(2x^2-3)+sqrt(3x+5)
 b.add(1723304,1,r'''The minimum value of $y=\sqrt{2x^2-3}+\sqrt{3x+5}$ (over all real $x$ for which it is defined) can be written as $\sqrt{a-\dfrac{b\sqrt c}{d}}$, where $a,b,c,d$ are positive integers, $c$ is not divisible by the square of a prime, and $\dfrac bd$ is in lowest terms. Find $a+b+c+d$.''',
