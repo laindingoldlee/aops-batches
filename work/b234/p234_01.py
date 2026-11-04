@@ -393,7 +393,7 @@ note='Number-sense question: the post asks how to approximate pi^7 within 5% men
 b.add(1715047,1,r'''Prove that when a prime number is divided by $30$, the remainder is never a composite number.''',
 r'''Let $p$ be a prime and $p=30q+r$ with $0\le r\le29$. Suppose $r$ is composite. A composite number $r\le29$ has a prime factor $s$ with $s^2\le r<49$, so $s\in\{2,3,5\}$; in particular $s\mid30$. Then $s$ divides $30q+r=p$. Since $p$ is prime, $p=s\le5$. But a prime $p\le5<30$ leaves remainder $r=p$ on division by $30$, and $p$ is prime, not composite. This contradiction shows that $r$ is not composite: the remainder is $1$ or a prime (for example $31\to1$, $37\to7$, $59\to29$). $\blacksquare$''',
 'Prime numbers|Remainders and congruences|Divisibility|Proof by contradiction',3,source=FBH(2016,7,3),
-note='Checked for all primes below 10^6.')
+note='Repeat of an earlier record (aliased). Checked for all primes below 10^6.')
 
 # ---------------- 1715602 telescoping
 b.add(1715602,1,r'''If $f(x)=4x^2-1$, what is the value of

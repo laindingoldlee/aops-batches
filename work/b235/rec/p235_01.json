@@ -133,8 +133,7 @@
   "question": "Rudy has a basket of perfectly cylindrical cookies of varying sizes. He has seven cookies of radius $3$ inches, eight cookies of radius $2$ inches and seven cookies of radius $1$ inch. All cookies are $0.25$ inches thick. Rudy splits the cookies into $3$ groups such that each group's cookies have the same total volume. If all the cookies remain whole, what is the fewest possible number of cookies in any group?",
   "solution": "All cookies have the same thickness, so volumes are proportional to $r^2$: the cookies have ``weights'' $9$ (seven of them), $4$ (eight) and $1$ (seven). The total weight is $63+32+7=102$, so each group has weight $34$.\n\n\\textbf{No group has $5$ or fewer cookies.} Suppose a group has $a$ big, $b$ medium and $c$ small cookies, with $a+b+c\\le5$ and $9a+4b+c=34$. Since $36>34$, $a\\le3$. If $a\\le2$, then $9a+4b+c\\le9a+4(5-a)=5a+20\\le30<34$. If $a=3$, the other at most two cookies must weigh $7$, but two cookies from $\\{4,1\\}$ weigh $2$, $5$ or $8$, and one weighs $1$ or $4$. So every group has at least $6$ cookies.\n\n\\textbf{Six is possible.} For example\n\\[\n\\{9,9,4,4,4,4\\},\\qquad \\{9,9,9,4,1,1,1\\},\\qquad \\{9,9,4,4,4,1,1,1,1\\}\n\\]\nuses seven $9$'s, eight $4$'s and seven $1$'s, and each group weighs $34$. The fewest possible number of cookies in a group is $\\boxed{6}$.",
   "tags": [
-   "Volume",
-   "Cylinders",
+   "Ratios, proportions, and variation",
    "Bounding and extremal cases",
    "Construction"
   ],

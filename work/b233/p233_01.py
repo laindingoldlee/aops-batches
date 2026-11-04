@@ -87,7 +87,7 @@ uv-u-v=298\iff(u-1)(v-1)=299=13\cdot23 .
 \]
 With $u<v$ we have $u-1<v-1$, so $(u-1,v-1)$ is one of $(1,299)$, $(13,23)$, $(-299,-1)$, $(-23,-13)$, giving $v-u=298,10,298,10$. The smallest value is $\boxed{10}$, for example $u=14$, $v=24$: $x^2-38x+336=0$ with $-38+336=298$.''',
 "Vieta's formulas|Quadratic equations|Factoring|Diophantine equations",3,source=src('MMC',2015,None,12),
-note='The posted statement "(u - v)(u + v) = x2 + bx + c" is a garbling of (x - u)(x - v) = x^2 + bx + c, where u < v are the integer roots; the record states it that way.')
+note='Repeat of an earlier record (aliased). The posted statement "(u - v)(u + v) = x2 + bx + c" is a garbling of (x - u)(x - v) = x^2 + bx + c, where u < v are the integer roots; the record states it that way.')
 
 # ---------------- 1720977 jars
 b.add(1720977,1,r'''Jar A contains $50$ balls, $15$ green and $35$ red. Jar B also contains $50$ balls, $20$ green and $30$ red. Three balls are chosen at random from jar A and placed in jar B. Jar B is then shaken to mix the balls, and a ball is chosen at random from jar B. What is the probability that it is red?
@@ -105,7 +105,7 @@ P(\text{red})=\dfrac{32.1}{53}=\boxed{\dfrac{321}{530}}.
 
 \textbf{The student's errors.} Jar A has $50$ balls, not $100$, and after the transfer jar B has $53$ balls, not $103$; moreover the probability of moving exactly $k$ red balls must count the choices of which of the three balls are red (the hypergeometric probabilities above), not just a product of single draws.''',
 'Probability|Conditional probability|Expected value|Sampling without replacement',4,
-note='The posted attempt (denominators 100 and 103, missing case counts) is wrong; the key answer 321/530 is correct and is derived. Checked with exact fractions.')
+note='Repeat of an earlier record (aliased); this record also asks for the error in the attempt. The posted attempt (denominators 100 and 103, missing case counts) is wrong; the key answer 321/530 is correct and is derived. Checked with exact fractions.')
 
 # ---------------- 1721820 modular arithmetic bonanza
 b.add(1721820,1,r'''What is the units digit of
@@ -409,7 +409,7 @@ r'''The twelve integers fall into three residue classes modulo $3$, with $4$ num
 \item one from each class: $4^3=64$ choices.
 \end{itemize}
 There are $\binom{12}3=220$ choices in all, so the probability is $\dfrac{76}{220}=\boxed{\dfrac{19}{55}}$.''',
-'Probability|Remainders and congruences|Combinations|Casework',3)
+'Probability|Remainders and congruences|Combinations|Casework',3,note='Repeat of an earlier record (aliased).')
 
 # ---------------- 1721021 system of inequalities
 b.add(1721021,1,r'''Solve the system of inequalities without graphing:
@@ -444,7 +444,7 @@ r'''\textbf{Counting proof.} Count the subsets of an $n$-element set in two ways
 
 (Equivalently, put $x=y=1$ in the binomial theorem $(x+y)^n=\sum\binom nkx^ky^{n-k}$.)''',
 "Pascal's triangle|Combinatorial identities and binomial coefficients|Double counting|Binomial theorem",2,
-note='The post asks to prove that every row sum is a power of 2; proved that the sum of row n is 2^n.')
+note='Contained in an earlier record (aliased). The post asks to prove that every row sum is a power of 2; proved that the sum of row n is 2^n.')
 
 # ---------------- 1720835 MATHCOUNTS handbook translation
 fig=r'''import graph;

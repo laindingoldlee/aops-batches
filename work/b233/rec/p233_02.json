@@ -61,9 +61,9 @@
    "division": "School",
    "paper": null,
    "round": "Sprint",
-   "question_number": null
+   "question_number": "25"
   },
-  "note": "2018 MATHCOUNTS School Sprint (problem number not given). Answer checked by brute force over all coin combinations."
+  "note": "Repeat of an earlier record (aliased). 2018 MATHCOUNTS School Sprint #25 (number from the earlier record of the same problem). Answer checked by brute force over all coin combinations."
  },
  {
   "topic_id": "1719663",
@@ -238,7 +238,7 @@
    "round": null,
    "question_number": null
   },
-  "note": "The poster tried casework on the position of an even digit; the complement avoids it."
+  "note": "Repeat of an earlier record (aliased). The poster tried casework on the position of an even digit; the complement avoids it."
  },
  {
   "topic_id": "1719574",

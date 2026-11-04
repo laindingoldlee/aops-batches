@@ -162,7 +162,7 @@ AC^2=\dfrac{125}{4},\qquad AC=\boxed{\dfrac{5\sqrt5}{2}}.
 (Then $h=1$; the triangle is very flat, with $\angle A\approx159.6^\circ$.)
 '''+asy(fig,'9cm'),
 'Angle bisector theorem|Isosceles triangles|Pythagorean theorem|Symmetry',4,
-note='KEP round 8, problem 1. The posted data are inconsistent: CD = 5 and DE = 1 already force AE = sqrt(5)/2, so the given AE = 9 is impossible, and the points F, G (trisectors of angle C) play no role. The record drops AE = 9 and F, G, states the order B, E, D, C, and asks for AC. Checked with coordinates (h = 1).')
+note='Repeat of the b232 draft 1724486-q03 (same KEP problem, same repair; aliased). KEP round 8, problem 1. The posted data are inconsistent: CD = 5 and DE = 1 already force AE = sqrt(5)/2, so the given AE = 9 is impossible, and the points F, G (trisectors of angle C) play no role. The record drops AE = 9 and F, G, states the order B, E, D, C, and asks for AC. Checked with coordinates (h = 1).')
 
 b.add(1717359,2,r'''The minimum value of $y=\sqrt{2x^2-3}+\sqrt{3x+5}$ (over all real $x$ for which it is defined) can be written as $\sqrt{a-\dfrac{b\sqrt c}{d}}$, where $a,b,c,d$ are positive integers, $c$ is squarefree and $\dfrac bd$ is in lowest terms. Find $a+b+c+d$.''',
 r'''The expression is defined when $2x^2\ge3$ and $3x\ge-5$, i.e.\ on $\left[-\dfrac53,-\dfrac{\sqrt6}{2}\right]\cup\left[\dfrac{\sqrt6}2,\infty\right)$. Let $x_0=-\dfrac{\sqrt6}2$; then $y(x_0)=\sqrt{3x_0+5}=\sqrt{5-\dfrac{3\sqrt6}{2}}\approx1.151$.
@@ -180,7 +180,7 @@ y_{\min}=\sqrt{5-\dfrac{3\sqrt6}{2}},
 \]
 so $(a,b,c,d)=(5,3,6,2)$ and $a+b+c+d=\boxed{16}$.''',
 'Maxima and minima|Radicals|Inequalities|Bounding and extremal cases',5,
-note='KEP round 8, problem 2. "a, b, c, d integers in simplest form" made precise (c squarefree, b/d in lowest terms). The minimum lies at the endpoint x = -sqrt(6)/2 of the left part of the domain; checked numerically.')
+note='Repeat of the b232 draft 1723304-q01 (aliased). KEP round 8, problem 2. "a, b, c, d integers in simplest form" made precise (c squarefree, b/d in lowest terms). The minimum lies at the endpoint x = -sqrt(6)/2 of the left part of the domain; checked numerically.')
 
 b.add(1717359,3,r'''Find the sum of all prime numbers $p$ such that the decimal expansion of $\dfrac1p$ has a repetend (period) of length exactly $4$.''',
 r'''If $\dfrac1p$ has period exactly $4$, then $p$ divides $10^4-1=9999$ (multiply by $10^4$ and subtract), but $p$ does not divide $10^k-1$ for $k=1,2,3$ (otherwise the period would be shorter), and $p\ne2,5$. Now $9999=3^2\cdot11\cdot101$.
@@ -208,7 +208,7 @@ f(x)=\dfrac{2x^2+6x+K}{x+4}=2x-2+\dfrac{K+8}{x+4}.
 \]
 For every positive $K$ the remainder $K+8$ is nonzero, so both asymptotes really occur, which is why $c$ and $f$ can vary. The answer is $2+6+1+4=\boxed{13}$.''',
 'Functions|Polynomials',3,
-note='KEP round 8, problem 4. As posted, a, b, d, e are only determined up to a common factor (any multiple of (2, 6, 1, 4) works); the record adds that they have no common factor greater than 1.')
+note='Repeat of the b232 draft 1724486-q01 (same repair; aliased). KEP round 8, problem 4. As posted, a, b, d, e are only determined up to a common factor (any multiple of (2, 6, 1, 4) works); the record adds that they have no common factor greater than 1.')
 
 fig=r'''pair A=(0,3),B=(0,0),C=(4,0),Ep=(1.5,0),D=(12/25,66/25),F=(0.4,2.2),O=(2.75,2);
 draw(circle(O,sqrt(89)/4),blue+linewidth(0.6));
@@ -357,7 +357,7 @@ draw((-3,-2)--(5.6,6.6),blue+linewidth(0.8));
 draw(P--(5,0),dotted);
 dot(A);dot(B);dot(P);
 label("$A$",A,NW);label("$B$",B,NW);label("$E$",P,E);
-label("$y=x+1$",(2.6,3.6),SE,blue);
+label("$y=x+1$",(3.2,2.0),blue);
 label("$x$",(6,0),N);label("$y$",(0,7),E);label("$5$",(5,0),S);'''
 b.add(1716607,1,r'''The point $E(5,h)$ lies on the line through $A(0,1)$ and $B(-2,-1)$. What is the value of $h$?''',
 r'''The slope of $AB$ is $\dfrac{1-(-1)}{0-(-2)}=1$, and the line passes through $(0,1)$, so its equation is $y=x+1$. For $x=5$, $h=5+1=\boxed{6}$.

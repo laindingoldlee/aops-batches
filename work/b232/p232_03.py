@@ -9,13 +9,13 @@ fill(A--A2--B2--B--cycle,paleblue);fill(B--B1--C2--C--cycle,paleblue);fill(C--C1
 draw(A1--A2--B2--B1--C2--C1--cycle,linewidth(0.9));
 draw(A--B--C--cycle,linewidth(1.1));
 draw(A1--B1,dashed);draw(B2--C1,dashed);draw(A2--C2,dashed);
-label("$A$",A,dir(80));label("$B$",B,dir(140));label("$C$",C,S);
+pair G=(A+B+C)/3;label("$A$",A+0.6*unit(G-A));label("$B$",B+0.7*unit(G-B));label("$C$",C+0.6*unit(G-C));
 label("$A_1$",A1,W);label("$A_2$",A2,SW);label("$B_1$",B1,E);label("$B_2$",B2,SE);label("$C_1$",C1,N);label("$C_2$",C2,NE);
 label("$x$",(A+A1)/2,N);label("$x$",(B+B1)/2,N);label("$x$",(C+C2)/2,NW);
-label("$T$",(A+B+C)/3);'''
+label("$T$",(A+B+C)/3+(0,-0.3));'''
 b.add(1723400,1,r'''Triangle $ABC$ has side lengths $a=BC$, $b=CA$, $c=AB$ and area $T$, and let $x>0$. On each of the three lines $AB$, $BC$, $CA$, mark the two points that lie outside the side, at distance $x$ beyond each of its endpoints: on line $AB$ the points $A_1$ (beyond $A$) and $B_1$ (beyond $B$), on line $BC$ the points $B_2$ (beyond $B$) and $C_1$ (beyond $C$), and on line $CA$ the points $C_2$ (beyond $C$) and $A_2$ (beyond $A$). Find the area of the hexagon $A_1A_2B_2B_1C_2C_1$ in terms of $T$, $a$, $b$, $c$ and $x$.''',
 r'''Cut the hexagon into the triangle, three corner triangles at the vertices (green) and three quadrilaterals along the sides (blue).
-'''+asy(fig,'6.5cm')+r'''
+'''+asy(fig,'7cm')+r'''
 \textbf{Corner triangles.} At $A$, triangle $AA_1A_2$ has $AA_1=AA_2=x$ and angle $\angle A_1AA_2=\angle BAC$ (vertical angles), so its area is $\dfrac12x^2\sin A$. Similarly at $B$ and $C$.
 
 \textbf{Side quadrilaterals.} The points $A_2$ and $B_2$ lie on the rays $CA$ and $CB$ beyond $A$ and $B$, with $CA_2=b+x$ and $CB_2=a+x$. So the quadrilateral $ABB_2A_2$ is triangle $CA_2B_2$ minus triangle $CAB$, with area
@@ -54,12 +54,12 @@ note='"Between 20 and 50" gives the same answer whether or not 20 and 50 are all
 # ---------------- 1724416 sixty-degree angles in convex polygon
 fig=r'''pair A=(0,0),B=(3,0),C=B+3*dir(60),D=3*dir(60);
 draw(A--B--C--D--cycle,linewidth(0.9));
-draw(A--(-1.4,0),dashed);draw(C--C+1.4*dir(60),dashed);
+draw(A--A+1.4*dir(240),dashed);draw(C--C+1.4*dir(60),dashed);
 draw(arc(A,0.55,0,60));label("$60^\circ$",A+1.0*dir(30),fontsize(8pt));
 draw(arc(C,0.55,180,240));label("$60^\circ$",C+1.0*dir(210),fontsize(8pt));
-draw(arc(A,0.45,60,180),blue,Arrow(4));label("$120^\circ$",A+0.95*dir(120),blue+fontsize(8pt));
-draw(arc(C,0.45,-120,60),blue,Arrow(4));label("$120^\circ$",C+0.95*dir(-30),blue+fontsize(8pt));
-label("$A$",A,S);label("$B$",B,SE);label("$C$",C,N);label("$D$",D,NW);'''
+draw(arc(A,0.45,240,360),blue);label("$120^\circ$",A+0.95*dir(300),blue+fontsize(8pt));
+draw(arc(C,0.45,60,180),blue);label("$120^\circ$",C+0.95*dir(120),blue+fontsize(8pt));
+label("$A$",A,NW);label("$B$",B,SE);label("$C$",C,E);label("$D$",D,NW);'''
 b.add(1724416,1,r'''Prove that a convex polygon with $n\ge4$ sides has at most two interior angles equal to $60^\circ$.''',
 r'''Walking around a convex polygon, we turn at each vertex through the exterior angle $180^\circ-(\text{interior angle})$, which is positive because each interior angle is less than $180^\circ$. After one full trip we have turned through exactly $360^\circ$, so the exterior angles add up to $360^\circ$.
 
@@ -235,17 +235,16 @@ path poly(pair P,real d,int n){pair[] q;q.push(P);real t=d;pair X=P;for(int i=1;
 path p1=poly(V,0,5),p2=poly(V,108,5),d1=poly(V,216,10);
 fill(p1,palegreen);fill(p2,palegreen);fill(d1,paleblue);
 draw(p1,linewidth(0.9));draw(p2,linewidth(0.9));draw(d1,linewidth(0.9));
-dot(V);label("$V$",V,dir(25),fontsize(9pt));
-draw(arc(V,0.35,0,108));draw(arc(V,0.28,108,216));draw(arc(V,0.35,216,360));
-label("$108^\circ$",0.62*dir(54),fontsize(7pt));label("$108^\circ$",0.6*dir(162),fontsize(7pt));label("$144^\circ$",0.62*dir(288),fontsize(7pt));
-label("pentagon",(0.55,1.05),fontsize(8pt));label("pentagon",(-1.15,0.45),fontsize(8pt));label("decagon",(0.2,-1.7),fontsize(8pt));'''
+draw(arc(V,0.18,0,108));draw(arc(V,0.18,108,216));draw(arc(V,0.18,216,360));
+label("$108^\circ$",0.5*dir(54),fontsize(7pt));label("$108^\circ$",0.5*dir(162),fontsize(7pt));label("$144^\circ$",0.42*dir(288),fontsize(7pt));
+label("pentagon",0.95*dir(54),fontsize(7pt));label("pentagon",0.95*dir(162),fontsize(7pt));label("decagon",1.618*dir(288),fontsize(8pt));'''
 b.add(1723548,1,r'''Regular polygons with $5$, $5$ and $12$ sides do not fit around a point, but two regular pentagons and a regular decagon do.
 \begin{enumerate}
 \item[(a)] Check both statements.
 \item[(b)] Prove that there is no edge-to-edge tiling of the plane by regular polygons in which every vertex is surrounded by two regular pentagons and one regular decagon.
 \end{enumerate}''',
 r'''\textbf{(a)} A regular $n$-gon has interior angles $\dfrac{(n-2)180^\circ}{n}$: $108^\circ$ for $n=5$, $144^\circ$ for $n=10$ and $150^\circ$ for $n=12$. Since $108^\circ+108^\circ+150^\circ=366^\circ\ne360^\circ$, two pentagons and a dodecagon do not fit around a point, while $108^\circ+108^\circ+144^\circ=360^\circ$, so two pentagons and a decagon do.
-'''+asy(fig,'5cm')+r'''
+'''+asy(fig,'6cm')+r'''
 \textbf{(b)} Suppose such a tiling exists, and look at one pentagon $P$. At each vertex $V$ of $P$ there are exactly three tiles: $P$, one other pentagon and one decagon. The two edges of $P$ at $V$ separate $P$ from its two neighbours at $V$; each of these edges is shared with one of the other two tiles at $V$ (the tiling is edge-to-edge). So at every vertex of $P$, the two edges of $P$ meeting there are shared with tiles of \emph{different} kinds: one with a pentagon and one with the decagon.
 
 Going around $P$, the kinds of the neighbours across its edges $e_1,e_2,e_3,e_4,e_5$ must therefore alternate: pentagon, decagon, pentagon, decagon, \dots\ But there are $5$ edges, an odd number, so $e_5$ and $e_1$, which meet at a vertex of $P$, would have neighbours of the same kind. This contradiction shows that no such tiling exists. $\blacksquare$

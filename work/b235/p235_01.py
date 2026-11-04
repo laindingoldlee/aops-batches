@@ -92,7 +92,7 @@ r'''All cookies have the same thickness, so volumes are proportional to $r^2$: t
 \{9,9,4,4,4,4\},\qquad \{9,9,9,4,1,1,1\},\qquad \{9,9,4,4,4,1,1,1,1\}
 \]
 uses seven $9$'s, eight $4$'s and seven $1$'s, and each group weighs $34$. The fewest possible number of cookies in a group is $\boxed{6}$.''',
-'Volume|Cylinders|Bounding and extremal cases|Construction',4,source=src('MATHCOUNTS',2018,'National',12,rnd='Sprint'),
+'Ratios, proportions, and variation|Bounding and extremal cases|Construction',4,source=src('MATHCOUNTS',2018,'National',12,rnd='Sprint'),
 note='The poster found a split with a 6-cookie group and asks why 5 is impossible; the record proves the bound. The poster\'s first group (9,9,9,4,1,1,1,1) weighs 35, not 34; the record uses a corrected split (6, 7 and 9 cookies). Official answer 6.')
 
 # ---------------- 1710182 FBH 2017 G8 P4

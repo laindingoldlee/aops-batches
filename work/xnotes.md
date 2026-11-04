@@ -10,3 +10,4 @@
 - b222 1777350-q01 (2017 Chapter Sprint #29, Yu's 12 coins, 23/2048) is the same problem as b225 draft 1765713-q01, which adds a part (explain a wrong argument): b225 should alias to b222 unless it keeps the extra part as the reason to export
 
 ## run 231-235 (lines above are from run 221-230 and are done)
+- b232 draft 1725534-q01 (glide reflection of triangle ABC onto DAE, ratio 5/11) repeats prior aops-topic-1877656-q01 (b234 1713999-q01 is aliased to it): b232 should alias to aops-topic-1877656-q01

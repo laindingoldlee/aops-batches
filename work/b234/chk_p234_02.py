@@ -56,7 +56,6 @@ assert [n for n in range(8,10**5,8) if sum(map(int,str(n)))==7 and dp(n)==6]==[1
 # 1715027
 assert [(a3,b3) for a3 in range(1,10) for b3 in range(10) if int(f'{a3}783{b3}')%56==0]==[(2,2),(9,2)]
 # 1715038
-sols=[k for k in range(1,51) for S_ in itertools.combinations(range(1,51),k) if False]
 ok=[]
 for m in range(0,51):
     if (101+m)%4: continue
@@ -104,7 +103,8 @@ for ch in [3125*r/8057,25*r/49,343*r/625,7*sp.sqrt(551)/5,2147*sp.sqrt(3306)/350
     assert abs(float(ch-ar))>0.5
 # 1712753
 A1=sp.Matrix([4,sp.sqrt(105)]);K=sp.Matrix([4,sp.sqrt(105)/4])
-assert sp.simplify((A1-K).norm()/K.norm())==3
+B7=sp.Matrix([0,0]);M7=(A1+sp.Matrix([12,0]))/2
+assert sp.simplify(K[1]*M7[0]-M7[1]*K[0])==0 and sp.simplify((A1[1]-K[1])/K[1])==3 and sp.simplify((A1-sp.Matrix([0,0])).norm())==11 and sp.simplify((A1-sp.Matrix([12,0])).norm())==13
 # 1714043
 assert 32-2==30
 # 1713813

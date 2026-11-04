@@ -52,8 +52,8 @@ r'''\textbf{Every amount up to $68$ cents needs at most $7$ coins.} Write $n=25q
 \textbf{$69$ cents needs $8$ coins.} The number of pennies must be $\equiv4\pmod5$, since all other coins are multiples of $5$. With $4$ pennies, the remaining $65$ cents would have to be made from at most $3$ coins of $5,10,25$; but $25+25+10=60$ and $25+25+25=75$ are the only sums of three such coins between $55$ and $75$ (others are smaller), and two or fewer such coins give at most $50$. With $9$ or more pennies we already have too many coins after adding the coins needed for the remaining $60$ cents (at least $3$). So $69$ needs at least $8$ coins ($25+25+10+5+1+1+1+1$).
 
 The answer is $\boxed{69}$ cents.''',
-'Money and currency|Casework|Bounding and extremal cases',4,source=src('MATHCOUNTS',2018,'School',None,rnd='Sprint'),
-note='2018 MATHCOUNTS School Sprint (problem number not given). Answer checked by brute force over all coin combinations.')
+'Money and currency|Casework|Bounding and extremal cases',4,source=src('MATHCOUNTS',2018,'School',25,rnd='Sprint'),
+note='Repeat of an earlier record (aliased). 2018 MATHCOUNTS School Sprint #25 (number from the earlier record of the same problem). Answer checked by brute force over all coin combinations.')
 
 # ---------------- 1719663 occurrences of 2013
 b.add(1719663,1,r'''The numbers from $1$ to $30000$ are written one after another to form a long string of digits:
@@ -144,7 +144,7 @@ r'''Use the complement. The product of the digits is odd exactly when all four d
 1-\dfrac{625}{9000}=1-\dfrac{5}{72}=\boxed{\dfrac{67}{72}}.
 \]''',
 'Complementary probability|Parity|Probability|Digit problems',2,
-note='The poster tried casework on the position of an even digit; the complement avoids it.')
+note='Repeat of an earlier record (aliased). The poster tried casework on the position of an even digit; the complement avoids it.')
 
 # ---------------- 1719574 AMC 10A 2017 #17
 fig=r'''draw(circle((0,0),5),gray+linewidth(0.6));

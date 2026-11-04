@@ -355,7 +355,7 @@
   "topic_id": "1715908",
   "part": 1,
   "question": "In quadrilateral $ABCD$ the angles at $A$ and $C$ are right angles, $AB=AD$, and $BC+CD=10$. Find the area of $ABCD$.",
-  "solution": "Let $AB=AD=a$, $BC=x$, $CD=y$, so $x+y=10$. The diagonal $BD$ is the hypotenuse of both right triangles $BAD$ and $BCD$:\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5.5cm);\ndefaultpen(fontsize(10pt));\nreal r=sqrt(58)/2;\npair B=(-r,0),D=(r,0),A=(0,r);\nreal x=10/r; pair C=(x,-sqrt(r^2-x^2));\nvoid ra(pair P,pair U,pair V,real s){draw(P+s*unit(U-P)--P+s*unit(U-P)+s*unit(V-P)--P+s*unit(V-P),linewidth(0.5));}\ndraw(A--B--C--D--cycle,linewidth(0.9));\ndraw(B--D,dashed+gray);\nra(A,B,D,0.45);ra(C,B,D,0.45);\n// equal-length ticks on AB and AD\npair m1=(A+B)/2,m2=(A+D)/2;\ndraw(m1+0.22*unit(rotate(90)*(B-A))--m1-0.22*unit(rotate(90)*(B-A)));\ndraw(m2+0.22*unit(rotate(90)*(D-A))--m2-0.22*unit(rotate(90)*(D-A)));\nlabel(\"$A$\",A,N);label(\"$B$\",B,W);label(\"$C$\",C,S);label(\"$D$\",D,E);\nlabel(\"$a$\",m1+0.45*unit(rotate(-90)*(B-A)));label(\"$a$\",m2+0.45*unit(rotate(90)*(D-A)));\nlabel(\"$x$\",(B+C)/2,SW);label(\"$y$\",(C+D)/2,SE);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n\\[\nBD^2=a^2+a^2=2a^2\\qquad\\text{and}\\qquad BD^2=x^2+y^2 .\n\\]\nThe area is the sum of the areas of the two right triangles:\n\\[\n[ABCD]=\\dfrac{a^2}{2}+\\dfrac{xy}{2}=\\dfrac{2a^2+2xy}{4}=\\dfrac{x^2+y^2+2xy}{4}=\\dfrac{(x+y)^2}{4}=\\dfrac{100}{4}=\\boxed{25}.\n\\]\n(The answer does not depend on how the sum $10$ is split between $x$ and $y$; the figure shows $x=7$, $y=3$.)",
+  "solution": "Let $AB=AD=a$, $BC=x$, $CD=y$, so $x+y=10$. The diagonal $BD$ is the hypotenuse of both right triangles $BAD$ and $BCD$:\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5.5cm);\ndefaultpen(fontsize(10pt));\nreal r=sqrt(58)/2;\npair B=(-r,0),D=(r,0),A=(0,r);\nreal x=10/r; pair C=(x,-sqrt(r^2-x^2));\nvoid ra(pair P,pair U,pair V,real s){draw(P+s*unit(U-P)--P+s*unit(U-P)+s*unit(V-P)--P+s*unit(V-P),linewidth(0.5));}\ndraw(A--B--C--D--cycle,linewidth(0.9));\ndraw(B--D,dashed+gray);\nra(A,B,D,0.45);ra(C,B,D,0.45);\n// equal-length ticks on AB and AD\npair m1=(A+B)/2,m2=(A+D)/2;\ndraw(m1+0.22*unit(rotate(90)*(B-A))--m1-0.22*unit(rotate(90)*(B-A)));\ndraw(m2+0.22*unit(rotate(90)*(D-A))--m2-0.22*unit(rotate(90)*(D-A)));\nlabel(\"$A$\",A,N);label(\"$B$\",B,W);label(\"$C$\",C,S);label(\"$D$\",D,E);\nlabel(\"$a$\",m1+0.6*unit(rotate(-90)*(B-A)));label(\"$a$\",m2+0.6*unit(rotate(90)*(D-A)));\nlabel(\"$x$\",(B+C)/2,SW);label(\"$y$\",(C+D)/2,SE);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n\\[\nBD^2=a^2+a^2=2a^2\\qquad\\text{and}\\qquad BD^2=x^2+y^2 .\n\\]\nThe area is the sum of the areas of the two right triangles:\n\\[\n[ABCD]=\\dfrac{a^2}{2}+\\dfrac{xy}{2}=\\dfrac{2a^2+2xy}{4}=\\dfrac{x^2+y^2+2xy}{4}=\\dfrac{(x+y)^2}{4}=\\dfrac{100}{4}=\\boxed{25}.\n\\]\n(The answer does not depend on how the sum $10$ is split between $x$ and $y$; the figure shows $x=7$, $y=3$.)",
   "tags": [
    "Quadrilaterals and polygons",
    "Right triangles",
@@ -526,7 +526,7 @@
    "round": null,
    "question_number": "3"
   },
-  "note": "Checked for all primes below 10^6."
+  "note": "Repeat of an earlier record (aliased). Checked for all primes below 10^6."
  },
  {
   "topic_id": "1715602",

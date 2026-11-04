@@ -110,7 +110,7 @@
    "round": null,
    "question_number": "12"
   },
-  "note": "The posted statement \"(u - v)(u + v) = x2 + bx + c\" is a garbling of (x - u)(x - v) = x^2 + bx + c, where u < v are the integer roots; the record states it that way."
+  "note": "Repeat of an earlier record (aliased). The posted statement \"(u - v)(u + v) = x2 + bx + c\" is a garbling of (x - u)(x - v) = x^2 + bx + c, where u < v are the integer roots; the record states it that way."
  },
  {
   "topic_id": "1720977",
@@ -133,7 +133,7 @@
    "round": null,
    "question_number": null
   },
-  "note": "The posted attempt (denominators 100 and 103, missing case counts) is wrong; the key answer 321/530 is correct and is derived. Checked with exact fractions."
+  "note": "Repeat of an earlier record (aliased); this record also asks for the error in the attempt. The posted attempt (denominators 100 and 103, missing case counts) is wrong; the key answer 321/530 is correct and is derived. Checked with exact fractions."
  },
  {
   "topic_id": "1721820",
@@ -583,7 +583,7 @@
    "round": null,
    "question_number": null
   },
-  "note": ""
+  "note": "Repeat of an earlier record (aliased)."
  },
  {
   "topic_id": "1721021",
@@ -649,7 +649,7 @@
    "round": null,
    "question_number": null
   },
-  "note": "The post asks to prove that every row sum is a power of 2; proved that the sum of row n is 2^n."
+  "note": "Contained in an earlier record (aliased). The post asks to prove that every row sum is a power of 2; proved that the sum of row n is 2^n."
  },
  {
   "topic_id": "1720835",
