@@ -359,9 +359,9 @@ draw(A--Dd,blue);draw(B--Ee,blue);
 real q=0.3;
 pair u=unit(A-Dd),v=unit(C-Dd);draw(Dd+q*u--Dd+q*(u+v)--Dd+q*v);
 u=unit(B-Ee);v=unit(C-Ee);draw(Ee+q*u--Ee+q*(u+v)--Ee+q*v);
-draw(arc(H,0.45,degrees(Dd-H),degrees(Ee-H)),red);
-label("$126^\circ$",H+0.95*dir((degrees(Dd-H)+degrees(Ee-H))/2),red);
-draw(arc(A,1.45,45,80));label("$80^\circ$",A+1.9*dir(63));
+draw(arc(H,0.55,degrees(Dd-H),degrees(Ee-H)),red);
+label("$126^\circ$",H+0.95*dir(75),red);
+draw(arc(A,0.65,0,80));label("$80^\circ$",A+1.15*dir(18));
 dot(H);dot(Dd);dot(Ee);
 label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,N);label("$H$",H,N);label("$D$",Dd,NE);label("$E$",Ee,NW);'''
 b.add(1710125,1,r'''In an acute triangle $ABC$, $\angle BAC=80^\circ$. The altitudes from $A$ and from $B$ meet at $H$, and $\angle AHB=126^\circ$. Which side of the triangle is the shortest and which is the longest?''',
@@ -370,7 +370,7 @@ r'''Let $D$ and $E$ be the feet of the altitudes from $A$ and $B$, on $BC$ and $
 126^\circ=\angle AHB=180^\circ-\angle C\quad\Longrightarrow\quad \angle C=54^\circ,
 \]
 and $\angle B=180^\circ-80^\circ-54^\circ=46^\circ$.
-'''+asy(figh,'6cm')+r'''
+'''+asy(figh,'7cm')+r'''
 In a triangle the longer side is opposite the larger angle. The angles are $\angle A=80^\circ>\angle C=54^\circ>\angle B=46^\circ$, so the \textbf{longest side is $BC$} (opposite $A$) and the \textbf{shortest side is $CA$} (opposite $B$): $\boxed{CA<AB<BC}$.''',
 'Triangles|Altitudes|Angle chasing|Angle sums',3,source=src('Junior Regional Olympiad FBH',2017,'Grade 6',3),
 note='"Altitudes h_a and h_b" read as the altitudes from A and B. The figure is drawn with the actual angles 80, 46, 54 degrees.')

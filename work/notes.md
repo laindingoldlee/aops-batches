@@ -24,3 +24,4 @@
 
 # orchestrator notes 231-235
 - b231 done: 79 rec, 17 al, 15 diag; 58/0/29/13. Check 1734077 (rebuilt fig, 56), 1728894, 1734032 (trivial 1 year).
+- b231 figs reviewed (15). FIXED 1728894-q01: PQ=10 label sat under the left half only; now a dimension arrow P..Q.

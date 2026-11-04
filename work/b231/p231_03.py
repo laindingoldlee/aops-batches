@@ -176,7 +176,7 @@ draw(L+0.5*unit(M-L)--L+0.5*unit(M-L)+0.5*unit(P-L)--L+0.5*unit(P-L));
 dot(P);dot(Q);dot(L);dot(M);dot(H);
 label("$P$",P,S);label("$Q$",Q,S);label("$L$",L,N);label("$M$",M,NE);label("$H$",H,W);
 label("$4$",(Q+M)/2,E,blue);label("$4$",(P+H)/2,W,blue);label("$2$",(H+L)/2,W,blue);
-label("$10$",(-1.6,0),S);'''
+draw((-4,-1.7)--(6,-1.7),Arrows(4));label("$10$",(1,-1.7),S);'''
 b.add(1728894,1,r'''Two semicircles with centres $P$ and $Q$ and radii $6$ and $4$ stand on the diameter of a large semicircle. They are tangent to each other and to the large semicircle. A line is tangent to semicircle $P$ at $L$ and to semicircle $Q$ at $M$, as shown.
 '''+asy(qf,'6.5cm')+r'''
 Find $LM$.''',

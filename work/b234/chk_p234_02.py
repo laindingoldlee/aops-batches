@@ -52,7 +52,7 @@ assert [n for n in range(1,100) if n*(n+1)**2//2==605 and n*(n+1)**2%2==0]==[10]
 assert sum(k*k for k in range(1,11))==385 and sum(k*(k+1)//2 for k in range(1,11))==220
 # 1715059
 def dp(n): return math.prod(int(t) for t in str(n))
-assert [n for n in range(8,10**7,8) if sum(map(int,str(n)))==7 and dp(n)==6]==[16,1312,3112]
+assert [n for n in range(8,10**5,8) if sum(map(int,str(n)))==7 and dp(n)==6]==[16,1312,3112]
 # 1715027
 assert [(a3,b3) for a3 in range(1,10) for b3 in range(10) if int(f'{a3}783{b3}')%56==0]==[(2,2),(9,2)]
 # 1715038

@@ -12,7 +12,7 @@ draw(Tt--X,dashed);
 ra(T,X,Tt,0.35);ra(M,X,Mt,0.25);
 label("$9$",(0,4.5),W);label("$1.5$",(6,0.75),W);
 label("$6$",(3,0),S);label("$1.2$",(6.6,0),S);
-label("tree",(0,9),N);label("man",(6,1.5),N);label("tip of both shadows",X,dir(-30)*1.4);'''
+label("$X$",X,SE);'''
 b.add(1716595,1,r'''A man $1.5$ metres tall stands $6$ metres from a tree, on the side away from the sun, so that the tip of his shadow coincides with the tip of the tree's shadow. His shadow is $1.2$ metres long. What is the height of the tree?''',
 r'''The sun's rays are parallel, so the ray over the top of the man also passes over the top of the tree and both shadows end at the same point $X$. The man and the tree are both vertical, so the right triangles formed by the man and his shadow and by the tree and its shadow are similar (they share the angle at $X$). The tree's shadow is $6+1.2=7.2$ metres long, so
 \[
@@ -115,8 +115,10 @@ fig=RA+r'''pair A=(0,0),B=(10,0),C=(3.6,4.8),H=(3.6,0),M=(5,0),L=(30/7,0);
 draw(A--B--C--cycle,linewidth(0.9));
 draw(C--H,linewidth(0.7));draw(C--M,linewidth(0.7)+blue);draw(C--L,linewidth(0.7)+red);
 ra(H,B,C,0.3);ra(C,A,B,0.35);
-draw(arc(C,1.5,degrees(H-C),degrees(L-C)),linewidth(0.5));
-draw(arc(C,1.5,degrees(L-C),degrees(M-C)),linewidth(0.5));
+draw(arc(C,2.8,degrees(H-C),degrees(L-C)),linewidth(0.5));
+draw(arc(C,2.8,degrees(L-C),degrees(M-C)),linewidth(0.5));
+draw(C+2.65*dir((degrees(H-C)+degrees(L-C))/2)--C+2.95*dir((degrees(H-C)+degrees(L-C))/2),linewidth(0.5));
+draw(C+2.65*dir((degrees(L-C)+degrees(M-C))/2)--C+2.95*dir((degrees(L-C)+degrees(M-C))/2),linewidth(0.5));
 label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,N);
 label("$H$",H,S);label("$L$",L,S);label("$M$",M,S);'''
 b.add(1717404,1,r'''Let $ABC$ be a right triangle with the right angle at $C$. Prove that the bisector of the right angle also bisects the angle between the median and the altitude drawn from $C$ to the hypotenuse.''',
@@ -216,7 +218,7 @@ draw(O--A,dashed);draw(O--B,dashed);
 draw(B--(0.18,0)--(0.18,0.18)--(0,0.18),linewidth(0.5));
 dot(O);dot(F);dot(D);dot(Ep);
 label("$A$",A,NW);label("$B$",B,SW);label("$C$",C,SE);label("$E$",Ep,S);
-label("$D$",D,dir(60));label("$F$",F,W);label("$O$",O,E);'''
+label("$D$",D,dir(-68)*1.6);label("$F$",F,W);label("$O$",O,E);'''
 b.add(1717359,5,r'''Triangle $ABC$ has $AB=3$, $BC=4$ and $AC=5$. Point $E$ is on segment $BC$ such that $AE$ bisects $\angle BAC$. Point $D$ lies on segment $AC$, and $F$ is the intersection of segments $BD$ and $AE$. The points $C$, $D$, $F$, $E$ lie on a circle with centre $O$. The value of $OA+OB$ can be written as $\dfrac{\sqrt a+\sqrt b}{c}$, where $a$ and $b$ are positive integers relatively prime to the positive integer $c$. Find $a+b+c$.''',
 r'''Since $3^2+4^2=5^2$, the angle at $B$ is right. Put $B=(0,0)$, $C=(4,0)$, $A=(0,3)$, and let $\alpha=\angle BAC$, $\gamma=\angle BCA$, so $\tan\gamma=\dfrac34$ and $\tan\alpha=\dfrac43$. By the angle bisector theorem $\dfrac{BE}{EC}=\dfrac{AB}{AC}=\dfrac35$, so $BE=\dfrac32$ and $E=\left(\dfrac32,0\right)$.
 
@@ -267,8 +269,7 @@ pair P=extension(A,D,C,F),Ep=extension(B,P,A,C);
 draw(A--B--C--cycle,linewidth(0.9));
 draw(A--D,linewidth(0.7));draw(C--F,linewidth(0.7));draw(B--Ep,linewidth(0.7)+blue);
 dot(P);
-label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,N);label("$D$",D,NE);label("$F$",F,S);label("$E$",Ep,W);label("$P$",P,dir(5)*1.5);
-label("$9$",(4.5,0),dir(-90)*1.6);label("$6$",(A+C)/2,dir(180)*2.2);'''
+label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,N);label("$D$",D,NE);label("$F$",F,S);label("$E$",Ep,W);label("$P$",P,dir(245)*1.5);'''
 b.add(1710109,3,r'''In $\triangle ABC$, $AB=9$ and $AC=6$. $D$ is the midpoint of $BC$, and $F$ is the point on $AB$ such that $CF$ bisects $\angle C$. The segments $AD$ and $CF$ meet at $P$, and line $BP$ meets $AC$ at $E$. As $BC$ varies over all values for which the triangle exists, $AE$ takes values in an interval. The sum of the greatest lower bound and the least upper bound of the possible values of $AE$ can be written as $\dfrac mn$ in lowest terms. Find $m+n$.''',
 r'''Let $BC=x$. By the angle bisector theorem $\dfrac{AF}{FB}=\dfrac{CA}{CB}=\dfrac6x$, and $\dfrac{BD}{DC}=1$. By Ceva's theorem for the concurrent cevians $AD$, $BE$, $CF$,
 \[
@@ -321,7 +322,7 @@ draw(A--D,linewidth(0.7));draw(C--Ep,linewidth(0.7));
 draw(D--M,dashed+blue);
 dot(Sm);dot(M);dot(Ep);dot(D);
 label("$A$",A,N);label("$B$",B,SW);label("$C$",C,SE);label("$D$",D,S);
-label("$S$",Sm,dir(-10)*1.4);label("$E$",Ep,W);label("$M$",M,W);'''
+label("$S$",Sm,dir(45));label("$E$",Ep,W);label("$M$",M,W);'''
 b.add(1715899,1,r'''Let $AD$ be a median of triangle $ABC$ and let $S$ be the midpoint of $AD$. The line $CS$ meets $AB$ at $E$. Prove that $BE=2AE$.''',
 r'''Through $D$ draw the line parallel to $CE$; it meets $AB$ at $M$.
 '''+asy(fig,'5.5cm')+r'''
@@ -355,7 +356,7 @@ draw((-3.2,0)--(6,0),Arrow(TeXHead));draw((0,-2)--(0,7),Arrow(TeXHead));
 draw((-3,-2)--(5.6,6.6),blue+linewidth(0.8));
 draw(P--(5,0),dotted);
 dot(A);dot(B);dot(P);
-label("$A(0,1)$",A,W);label("$B(-2,-1)$",B,SE);label("$E(5,6)$",P,E);
+label("$A(0,1)$",A,NW);label("$B(-2,-1)$",B,NW);label("$E(5,6)$",P,E);
 label("$y=x+1$",(4,5),NW,blue);
 label("$x$",(6,0),N);label("$y$",(0,7),E);label("$5$",(5,0),S);'''
 b.add(1716607,1,r'''The point $E(5,h)$ lies on the line through $A(0,1)$ and $B(-2,-1)$. What is the value of $h$?''',
@@ -381,9 +382,9 @@ note='Checked numerically on a fine grid of the simplex (for comparison, a = b =
 # ---------------- 1716960 AHSME 1980 #21
 fig=r'''pair B=(0,0),C=(6,0),A=4*dir(72);
 pair D=(2,0),Ep=(A+C)/2,F=extension(A,D,B,Ep);
-fill(B--D--F--cycle,palegray);fill(F--D--C--Ep--cycle,lightblue);
+fill(B--D--F--cycle,palegray);fill(F--D--C--Ep--cycle,paleblue);
 draw(A--B--C--cycle,linewidth(0.9));draw(A--D,linewidth(0.7));draw(B--Ep,linewidth(0.7));
-draw(arc(B,0.6,0,72),linewidth(0.5));label("$72^\circ$",B+1.05*dir(36));
+draw(arc(B,0.6,0,72),linewidth(0.5));label("$72^\circ$",B+1.15*dir(55));
 label("$A$",A,N);label("$B$",B,SW);label("$C$",C,SE);label("$D$",D,S);label("$E$",Ep,NE);label("$F$",F,dir(150)*1.3);
 label("$1$",(1,0),dir(-90)*1.6);label("$2$",(4,0),dir(-90)*1.6);'''
 b.add(1716960,1,r'''In triangle $ABC$, $\angle CBA=72^\circ$, $E$ is the midpoint of side $AC$, and $D$ is a point on side $BC$ such that $2BD=DC$. The segments $AD$ and $BE$ intersect at $F$. Find the ratio of the area of triangle $BDF$ to the area of quadrilateral $FDCE$.''',
@@ -410,7 +411,7 @@ ra(D,B,C,0.12);ra(C,A,B,0.14);
 pair m1=(A+D)/2,m2=(B+C)/2,n2=unit(rotate(90)*(C-B));
 draw(m1+(0,-0.07)--m1+(0,0.07));draw(m2-0.07*n2--m2+0.07*n2);
 label("$A$",A,SW);label("$B$",B,SE);label("$C$",C,N);label("$D$",D,S);
-label("$3$",(1.5,-0.3),S);'''
+label("$3$",(1.5,-0.12),S);'''
 b.add(1715535,1,r'''In right triangle $ABC$ with the right angle at $C$, $CD$ is the altitude to the hypotenuse, and $AD=BC$. If $AB=3$ cm, find $AC$.''',
 r'''Let $AD=BC=x$. In a right triangle each leg is the geometric mean of the hypotenuse and its projection on the hypotenuse (triangles $CBD$ and $ABC$ are similar, as are $ACD$ and $ABC$):
 \[
