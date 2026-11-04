@@ -27,3 +27,4 @@
 - b231 figs reviewed (15). FIXED 1728894-q01: PQ=10 label sat under the left half only; now a dimension arrow P..Q.
 - b235 done: 75 rec, 11 al, 19 diag; 63/2/29/6. Check 1708235 reading (1699), 1707676-q05 (diagonal reading), 1710592 (official 6 from memory - proof given).
 - b235 figs reviewed (19): OK.
+- b234 done: 78 rec, 6 al, 19 diag; 68/0/26/6. 1712630 none of the choices right (16.92). Near miss 1715264-q03 vs prior 1759128-q04 kept (different coefficients).
