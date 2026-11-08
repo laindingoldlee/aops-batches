@@ -1,0 +1,467 @@
+from qb import *
+b=Bank('p224_01')
+
+# ---------------- 1772698 mini combo collection P1-P9
+b.add(1772698,1,r'''Six people stand in a row. Kevin must stand next to Xiaomin, and there are no other restrictions. How many arrangements of the six people are there?''',
+r'''Glue Kevin and Xiaomin into one block. The block and the other $4$ people are $5$ objects, which can be arranged in $5!=120$ ways, and inside the block the two can stand in $2$ orders. The number of arrangements is $2\cdot120=\boxed{240}$.''',
+'Permutations|Arrangements with restrictions',1)
+b.add(1772698,2,r'''Six people stand in a row. Kevin cannot stand next to Anuj, and there are no other restrictions. How many arrangements of the six people are there?''',
+r'''There are $6!=720$ arrangements in all. Gluing Kevin and Anuj into a block as in the previous count, exactly $2\cdot5!=240$ of them have the two side by side. So $720-240=\boxed{480}$ arrangements keep them apart.''',
+'Permutations|Arrangements with restrictions|Complementary counting',2)
+b.add(1772698,3,r'''Six people stand in a row. There must be at most $2$ people between Kevin and Xiaomin, and there are no other restrictions. How many arrangements of the six people are there?''',
+r'''Number the positions $1$ to $6$. At most $2$ people between them means that their positions differ by $1$, $2$ or $3$. The number of unordered pairs of positions at distance $d$ is $6-d$, so there are $5+4+3=12$ such pairs. For each pair, Kevin and Xiaomin can be placed in $2$ orders and the other $4$ people in $4!=24$ ways. The number of arrangements is $12\cdot2\cdot24=\boxed{576}$.
+
+(Check by the complement: positions differing by $4$ or $5$ give $2+1=3$ pairs, so $3\cdot2\cdot24=144$ arrangements fail, and $720-144=576$.)''',
+'Permutations|Arrangements with restrictions|Casework',2)
+b.add(1772698,4,r'''One thousand people, among them Daniel, Jeff and Max, stand in a row in a random order. What is the probability that Jeff is to the left of Max but to the right of Daniel?''',
+r'''The condition says that, from left to right, the three people appear in the order Daniel, Jeff, Max. In a random arrangement the relative order of these three people is equally likely to be any of the $3!=6$ orders (the other people do not matter). So the probability is $\boxed{\dfrac16}$.''',
+'Probability|Permutations|Symmetry',2,
+note='"Randomly ordered" is made explicit.')
+b.add(1772698,5,r'''One thousand people stand in a row. A bug starts at the $500$th person, and at each step it jumps to the neighbouring person on the left or on the right, each with probability $\dfrac12$. What is the probability that, after $99$ jumps, the bug is back at the person where it started?''',
+r'''Number the people $1$ to $1000$. Within $99$ jumps the bug stays between person $401$ and person $599$, so it never reaches an end of the row and every jump really changes its position by $\pm1$. Each jump changes the parity of the bug's position, so after an odd number of jumps the position has the opposite parity to $500$ and cannot be $500$. The probability is $\boxed{0}$.''',
+'Probability|Parity|Random walks',1,
+note='The post labels this problem a troll; the answer 0 follows from parity.')
+b.add(1772698,6,r'''One thousand people stand in a row. Exactly one of them, equally likely to be any of the $1000$, is volcano-proof. Luke is chosen at random. A guard who knows who is volcano-proof then throws $998$ of the other $999$ people into a volcano, choosing them so that the volcano-proof person is never thrown in (if Luke himself is the volcano-proof person, the guard spares one of the other $999$ chosen at random). None of the $998$ survives. What is the probability that the one remaining person other than Luke is volcano-proof?''',
+r'''The volcano-proof person is Luke with probability $\dfrac{1}{1000}$; in that case the person spared by the guard is an ordinary person. With probability $\dfrac{999}{1000}$ the volcano-proof person is one of the other $999$, and then the guard must spare exactly that person, so the remaining person is volcano-proof. The guard's choice gives no further information, so the probability is $\boxed{\dfrac{999}{1000}}$.
+
+(This is the Monty Hall effect. If instead the $998$ people were chosen at random from the other $999$ and happened all to be ordinary, the answer would be $\dfrac12$: Luke and the spared person would then be equally likely to be the volcano-proof one, since $\dfrac{1}{1000}\cdot1=\dfrac{999}{1000}\cdot\dfrac{1}{999}$.)''',
+'Conditional probability|Probability',3,
+note='The joke post does not say how the 998 people are chosen, which decides the answer. The record makes the intended Monty Hall reading explicit (a guard who knows and never throws in the volcano-proof person), answer 999/1000, and mentions that random selection gives 1/2.')
+b.add(1772698,7,r'''A monkey types a random sequence of $9$ distinct letters, all such sequences being equally likely. What is the probability that the letters in the odd-numbered positions ($1$st, $3$rd, $5$th, $7$th, $9$th) are in alphabetical order and the letters in the even-numbered positions ($2$nd, $4$th, $6$th, $8$th) are also in alphabetical order? (For example, awbxcydze works: abcde and wxyz are both in alphabetical order.)''',
+r'''Fix the set of $9$ letters; every one of its $9!$ orderings is equally likely. To get a good ordering, choose which $5$ letters go into the odd positions, in $\dbinom95$ ways; then both groups must be written in increasing order, which can be done in exactly one way. Hence the probability is
+\[
+\dfrac{\dbinom95}{9!}=\dfrac{1}{5!\,4!}=\boxed{\dfrac{1}{2880}} .
+\]''',
+'Probability|Permutations|Combinations',3,
+note='The post says "odd and even digits"; it means the letters in odd and even positions, as its example shows.')
+b.add(1772698,8,r'''A monkey types a random sequence of $9$ distinct letters, all such sequences being equally likely. What is the probability that the first $5$ letters are in alphabetical order and the last $5$ letters are in reverse alphabetical order?''',
+r'''The $5$th letter belongs to both groups. It must be the largest of letters $1$ to $5$ and also the largest of letters $5$ to $9$, so it must be the alphabetically last of all $9$ letters. Fix the set of $9$ letters. A good ordering is determined by choosing which $4$ of the other $8$ letters come first (written in increasing order), the remaining $4$ coming last in decreasing order. So there are $\dbinom84=70$ good orderings among $9!=362880$, and the probability is
+\[
+\dfrac{70}{362880}=\boxed{\dfrac{1}{5184}} .
+\]''',
+'Probability|Permutations|Combinations',4)
+b.add(1772698,9,r'''A monkey types a random sequence of $9$ distinct letters chosen from the $26$ letters of the alphabet, all such sequences being equally likely. What is the probability that the sequence contains the word bash as four consecutive letters?''',
+r'''There are $26\cdot25\cdots18$ equally likely sequences. In a good sequence the block bash starts in one of positions $1$ to $6$, and the other $5$ positions hold $5$ distinct letters from the remaining $22$, in $22\cdot21\cdot20\cdot19\cdot18$ ways. The block cannot occur twice, since its letters are used once. So the probability is
+\[
+\dfrac{6\cdot22\cdot21\cdot20\cdot19\cdot18}{26\cdot25\cdot24\cdot23\cdot22\cdot21\cdot20\cdot19\cdot18}=\dfrac{6}{26\cdot25\cdot24\cdot23}=\boxed{\dfrac{1}{59800}} .
+\]''',
+'Probability|Permutations|Arrangements with restrictions',3,
+note='"Contains the world bash" is read as the four letters b, a, s, h appearing consecutively in that order.')
+
+# ---------------- 1772054 2018 MATHCOUNTS School Sprint 30
+fig=r'''for(int i=0;i<3;++i) for(int j=0;j<3;++j) dot((i,j));
+draw((0,0)--(2,2),blue+linewidth(1));draw((2,0)--(0,2),blue+linewidth(1));
+draw((1,0)--(2,1)--(1,2)--(0,1)--cycle,red+linewidth(1));
+label("$(0,0)$",(0,0),SW);label("$(2,2)$",(2,2),NE);'''
+b.add(1772054,1,r'''The rows and columns of lattice points in a three-by-three square array are evenly spaced one unit apart. How many distinct triangles with at least one side of length $\sqrt2$ units can be drawn using three lattice points for the vertices?''',
+r'''Use the points $(x,y)$ with $x,y\in\{0,1,2\}$. A segment of length $\sqrt2$ joins two points differing by $(\pm1,\pm1)$: it is a diagonal of one of the four unit squares, so there are $8$ such segments.
+'''+asy(fig,'5cm')+r'''
+Four of them (blue) lie on the two long diagonals $y=x$ and $y=2-x$ of the array; each of these has a third lattice point on its line, so it can be completed to a triangle by $9-2-1=6$ points. The other four (red) have no further lattice point on their lines, so each can be completed by $7$ points. This gives $4\cdot6+4\cdot7=52$ (segment, triangle) pairs.
+
+A triangle is counted once for each of its sides of length $\sqrt2$. No triangle has three such sides (no lattice triangle is equilateral). Two sides of length $\sqrt2$ meet at a common vertex in perpendicular directions (non-perpendicular directions $(1,1)$ and $(-1,-1)$ would be collinear), so such a triangle is a right isosceles triangle with apex $P$ and legs $P+(\pm1,\pm1)$. The apex can be the centre $(1,1)$, with $4$ choices of two perpendicular legs, or one of the four edge midpoints such as $(1,0)$, with one choice each (legs to $(0,1)$ and $(2,1)$); a corner has only one diagonal direction available. So $4+4=8$ triangles were counted twice, and the answer is $52-8=\boxed{44}$.''',
+'Counting shapes in figures|Lattice points|Sets and inclusion–exclusion|Casework',4,source=src('MATHCOUNTS',2018,'School',30,rnd='Sprint'),
+note='The poster also asks for advice on casework problems (dropped). Checked by brute force over all triples of points.')
+
+# ---------------- 1772017 keystrokes for 2019
+b.add(1772017,1,r'''Maria's calculator is broken, and only the $1$, $2$ and $+$ buttons work. For example, to obtain the number $27$, Maria keys in $22+2+2+1$, which requires eight keystrokes. What is the fewest number of keystrokes Maria needs in order to obtain the number $2019$?''',
+r'''Maria writes $2019$ as a sum of $k$ numbers whose digits are all $1$ or $2$; the number of keystrokes is the total number of digits plus $k-1$ plus signs.
+
+\textbf{$23$ keystrokes suffice:} $1222+222+222+221+121+11=2019$ uses $4+3+3+3+3+2=18$ digits and $5$ plus signs.
+
+\textbf{Fewer is impossible.} A four-digit summand is at least $1111$, so there is at most one, and it is at most $1222$ (the next possible values are $2111>2019$). Let the other summands be $a$ three-digit numbers (each at most $222$), $b$ two-digit numbers (at most $22$) and $c$ one-digit numbers (at most $2$).
+\begin{itemize}
+\item With no four-digit summand, $222a+22b+2c\ge2019$, and the keystroke count is $4a+3b+2c-1$. Since $222\div4$, $22\div3$ and $2\div2$ are all less than $56$, the count is more than $\dfrac{2019}{56}-1>34$.
+\item With one four-digit summand, the others add to at least $2019-1222=797$, and the count is $4+4a+3b+2c$. If $a\le3$ then $22b+2c\ge797-666=131$, so $b\ge6$ or $c$ is large, and the count is at least $4+12+18=34$ (one checks that $3b+2c\ge18$ whenever $22b+2c\ge131$). If $a\ge5$ the count is at least $24$. So a count of at most $22$ needs $a=4$ and $3b+2c\le2$, i.e.\ $b=0$ and $c\le1$.
+\end{itemize}
+In the remaining case there are one four-digit summand, four three-digit summands and at most one one-digit summand. Add them column by column. The units column has $5$ or $6$ digits, each $1$ or $2$, with sum between $5$ and $12$; since $2019$ ends in $9$, this sum is $9$ and there is no carry. The tens column then has exactly $5$ digits, with sum between $5$ and $10$, which must end in the tens digit $1$ of $2019$. That is impossible. Hence at least $23$ keystrokes are needed, and the answer is $\boxed{23}$.''',
+'Digits and bases|Bounding and extremal cases|Casework|Construction',5,
+note='From the poster\'s mock MATHCOUNTS State test. The bonus question (a general method for every n) is open-ended and dropped. The minimum was confirmed by dynamic programming over all n up to 2019.')
+
+# ---------------- 1771914 hexagon slope
+fig=r'''real s3=sqrt(3);
+pair V1=(0,1),V2=(0,3),V3=(s3,4),V4=(2*s3,3),V5=(2*s3,1),V6=(s3,0),O=(0,0),C=(s3,2);
+draw((-0.6,0)--(4.4,0),Arrow(TeXHead));draw((0,-0.6)--(0,5),Arrow(TeXHead));
+draw(V1--V2--V3--V4--V5--V6--cycle,linewidth(0.9));
+draw(O--(2.2*s3,4.4),blue+linewidth(0.9));
+dot(C,blue);dot(V1);dot(V2);dot(V6);
+label("$C$",C,dir(-20),blue);
+label("$(0,1)$",V1,W);label("$(0,3)$",V2,W);label("$(\sqrt3,0)$",V6,SE);
+label("$O$",O,SW);label("$x$",(4.4,0),E);label("$y$",(0,5),N);'''
+b.add(1771914,1,r'''A regular hexagon has one vertex on the positive $x$-axis and one side on the positive $y$-axis. A line passing through the origin divides the hexagon into two regions of equal area. What is the slope of the line? Express your answer as a common fraction in simplest radical form.''',
+r'''The slope does not depend on the size of the hexagon, so let its side be $2$. Its side on the $y$-axis runs from $(0,t)$ to $(0,t+2)$, and the hexagon lies to the right of the axis. Going round from $(0,t)$, the next vertex below is $(0,t)+2(\cos(-30^\circ),\sin(-30^\circ))=(\sqrt3,t-1)$, the lowest vertex; it lies on the $x$-axis, so $t=1$. The vertices are
+\[
+(0,1),\ (0,3),\ (\sqrt3,4),\ (2\sqrt3,3),\ (2\sqrt3,1),\ (\sqrt3,0),
+\]
+and the centre is $C=(\sqrt3,2)$ (the midpoint of $(0,1)$ and $(2\sqrt3,3)$).
+'''+asy(fig,'5cm')+r'''
+A regular hexagon is symmetric under the half-turn about its centre, so every line through $C$ cuts it into two congruent halves of equal area. A line through the origin not passing through $C$ is a translate of the line through $C$ parallel to it, moved off the centre, so one side gains area and the halves are unequal. Hence the required line is $OC$, with slope
+\[
+\dfrac{2}{\sqrt3}=\boxed{\dfrac{2\sqrt3}{3}} .
+\]''',
+'Regular polygons|Coordinate geometry|Slope|Symmetry',3,
+note='From the poster\'s mock MATHCOUNTS State test (the linked PDF is not needed; the text determines the figure).')
+
+# ---------------- 1772385 max integer value of 5y-x
+b.add(1772385,1,r'''Real numbers $x$ and $y$ satisfy $2x+3y>12$ and $y<6$. What is the maximum possible integer value of $5y-x$?''',
+r'''From $2x+3y>12$ we get $x>\dfrac{12-3y}{2}$, so
+\[
+5y-x<5y-\dfrac{12-3y}{2}=\dfrac{13y-12}{2}<\dfrac{13\cdot6-12}{2}=33 .
+\]
+So $5y-x<33$, and the value $33$ cannot be reached. The value $32$ can: take $y=5.9$ and $x=-2.5$. Then $y<6$, $2x+3y=-5+17.7=12.7>12$, and $5y-x=29.5+2.5=32$. The maximum possible integer value is $\boxed{32}$.''',
+'Inequalities|Linear equations|Maxima and minima',3,
+note='x and y are taken to be real numbers (the post does not say).')
+
+# ---------------- 1772376 factorial number system
+b.add(1772376,1,r'''Let $N$ be the largest integer that can be written as
+\[
+n=a\cdot1!+b\cdot2!+c\cdot3!+d\cdot4!,
+\]
+where $a,b,c,d$ are integers with $0\le a\le1$, $0\le b\le2$, $0\le c\le3$, $0\le d\le4$. Find $N$, and prove that every integer $n$ with $0\le n\le N$ can be written in this form.''',
+r'''The largest value is $N=1\cdot1+2\cdot2+3\cdot6+4\cdot24=1+4+18+96=\boxed{119}$.
+
+\textbf{Distinct choices give distinct values.} Note that $k\cdot k!=(k+1)!-k!$, so
+\[
+1\cdot1!+2\cdot2!+\cdots+k\cdot k!=(k+1)!-1 .
+\]
+Suppose two different choices $(a,b,c,d)$ and $(a',b',c',d')$ give the same value, and let the highest position where they differ be $j$, say with the larger digit in the first choice. Subtracting, the difference in position $j$ contributes at least $j!$, while the lower positions contribute at most $1\cdot1!+\cdots+(j-1)(j-1)!=j!-1$ in the other direction. So the first value is larger, a contradiction.
+
+\textbf{Counting.} There are $2\cdot3\cdot4\cdot5=120$ choices of $(a,b,c,d)$, and each gives an integer from $0$ to $119$. By the previous paragraph the $120$ values are all different, so they are exactly the $120$ integers $0,1,\dots,119$. Hence every integer $n$ with $0\le n\le N=119$ can be written in the given form (and in exactly one way). $\blacksquare$''',
+'Factorials|Digits and bases|Counting principles|Bijections',4,
+note='The post writes "some positive cam be written"; the record asks for N and the proof, adding that the representation is unique.')
+
+# ---------------- 1770315 n^2+2n mod 4 and mod 10
+b.add(1770315,1,r'''An integer $n$ satisfies $n^2+2n\equiv4\pmod4$, that is, $4\mid n^2+2n$. Find all possible remainders of $n^2+2n$ when divided by $10$.''',
+r'''If $n$ is odd, $n^2+2n=n(n+2)$ is odd and not divisible by $4$. If $n$ is even, $n=2m$, then $n^2+2n=4m(m+1)$ is divisible by $4$ (in fact by $8$). So the condition says exactly that $n$ is even.
+
+For $n=2m$, write $m(m+1)=5q+r$ with $0\le r\le4$. Then $n^2+2n=20q+4r\equiv4r\pmod{10}$. Modulo $5$, $m\equiv0,1,2,3,4$ gives $m(m+1)\equiv0,2,6,12,20\equiv0,2,1,2,0$, so $r\in\{0,1,2\}$ and $4r\in\{0,4,8\}$. All three occur: $n=0,4,2$ give $n^2+2n=0,24,8$.
+
+So the remainder is not determined uniquely: it can be $\boxed{0,\ 4\text{ or }8}$.''',
+'Remainders and congruences|Parity|Casework',3,
+note='The post asks for "the" value x of n^2+2n mod 10 given n^2+2n = 4 (mod 4), but the value is not unique; the record asks for all possible remainders (0, 4, 8).')
+
+# ---------------- 1772315 explicit formula from table
+b.add(1772315,1,r'''Find an explicit formula for $y$ in terms of $x$ that fits the table
+\[
+\begin{array}{c|ccccc}
+x&1&2&3&4&5\\\hline
+y&40&20&10&5&2.5
+\end{array}
+\]''',
+r'''Each $y$-value is half of the previous one, so the values form a geometric sequence with common ratio $\dfrac12$. Going back one step from $x=1$ gives the value $80$ at $x=0$, so
+\[
+\boxed{y=80\left(\dfrac12\right)^{x}=\dfrac{80}{2^{x}}} .
+\]
+Check: $x=1,2,3,4,5$ give $40,20,10,5,2.5$.''',
+'Geometric sequences|Exponents|Functions',1)
+
+# ---------------- 1772119 mangoes
+b.add(1772119,1,r'''Dad passed a man at the market selling mangoes. When asked the price of a dozen, the man replied, ``If they were two more for $\$12$, it would make them a dollar per dozen less.'' Dad said he would take $\$12$ worth. How many mangoes should the man have given him?''',
+r'''Let the price be $p$ dollars per dozen. Then $\$12$ buys $\dfrac{12}{p}$ dozen, that is, $\dfrac{144}{p}$ mangoes.
+
+``Two more for $\$12$'' means that $\$12$ would buy $\dfrac{144}{p}+2$ mangoes, and then a dozen would cost $p-1$ dollars. A dozen at that price costs $12\cdot\dfrac{12}{\dfrac{144}{p}+2}$ dollars, so
+\[
+\dfrac{144}{\dfrac{144}{p}+2}=p-1\ \Longrightarrow\ 144p=(p-1)(144+2p)\ \Longrightarrow\ 2p^2-2p-144=0\ \Longrightarrow\ p^2-p-72=0 .
+\]
+So $(p-9)(p+8)=0$ and $p=9$. Then $\$12$ buys $\dfrac{144}{9}=\boxed{16}$ mangoes.
+
+Check: $16$ mangoes for $\$12$ is $\$9$ a dozen; $18$ mangoes for $\$12$ would be $\dfrac{144}{18}=\$8$ a dozen, one dollar less.''',
+'Rational equations|Quadratic equations|Money and currency',3)
+
+# ---------------- 1771773 George random walk
+b.add(1771773,1,r'''George stands on a number line labelled with the integers from $0$ to $5$. Whenever he is at $n$ (with $1\le n\le4$), he moves one unit to the right with probability $\dfrac{1}{n+1}$ and one unit to the left with probability $\dfrac{n}{n+1}$. If he reaches $5$ he wins, and if he reaches $0$ he loses. Given that he starts at $2$, what is the probability that he wins?''',
+r'''Let $p_n$ be the probability of winning from $n$, so $p_0=0$ and $p_5=1$. For $1\le n\le4$,
+\[
+p_n=\dfrac{1}{n+1}p_{n+1}+\dfrac{n}{n+1}p_{n-1}\quad\Longleftrightarrow\quad p_{n+1}-p_n=n\,(p_n-p_{n-1}).
+\]
+Let $d_n=p_n-p_{n-1}$. Then $d_1=p_1$, $d_2=1\cdot d_1$, $d_3=2d_2=2d_1$, $d_4=3d_3=6d_1$, $d_5=4d_4=24d_1$. Adding,
+\[
+1=p_5-p_0=d_1+d_2+d_3+d_4+d_5=(1+1+2+6+24)d_1=34d_1 ,
+\]
+so $d_1=\dfrac{1}{34}$ and $p_2=d_1+d_2=\dfrac{2}{34}=\boxed{\dfrac{1}{17}}$.''',
+'Recursive probability|Random walks|Recurrence relations|Probability',4,
+note='"At each value of n" is read as the positions 1 to 4 (0 and 5 end the game).')
+
+# ---------------- 1772123 factorial base digit 0
+b.add(1772123,1,r'''Define the base factorial representation of a positive integer $n$ as $n=(d_kd_{k-1}\ldots d_1)$, where
+\begin{itemize}
+\item $0\le d_i\le i$ for all $i$ from $1$ to $k$,
+\item the leading digit $d_k$ is at least $1$, and
+\item $n=d_k\cdot k!+d_{k-1}\cdot(k-1)!+\cdots+d_2\cdot2!+d_1\cdot1!$.
+\end{itemize}
+For example, $46=1\cdot4!+3\cdot3!+2\cdot2!+0\cdot1!$, so the base factorial representation of $46$ is $(1320)$. Let $N$ be the sum of all positive integers less than or equal to $720$ whose base factorial representation contains the digit $0$ at least once. What is the remainder when $N$ is divided by $720$?''',
+r'''Every positive integer has exactly one base factorial representation (the factorial number system). Since $1\cdot1!+2\cdot2!+\cdots+k\cdot k!=(k+1)!-1$, the numbers with exactly $k$ digits are those from $k!$ to $(k+1)!-1$. So the numbers $1$ to $719$ have at most $5$ digits, and $720=6!$ is $(1000000)$, which contains a $0$.
+
+Work with the complement: the numbers whose digits are all nonzero. For a $k$-digit such number, each digit $d_i$ ranges over $1,2,\dots,i$ independently, giving $k!$ numbers, and over these numbers each $d_i$ takes each value equally often, with average $\dfrac{i+1}{2}$. So their sum is
+\[
+k!\sum_{i=1}^{k}\dfrac{i+1}{2}\,i!=\dfrac{k!}{2}\sum_{i=1}^{k}(i+1)! .
+\]
+For $k=1,\dots,5$ this gives $1$, $8$, $3\cdot32=96$, $12\cdot152=1824$ and $60\cdot872=52320$, a total of $54249$. Hence
+\[
+N=\dfrac{720\cdot721}{2}-54249=259560-54249=205311 .
+\]
+Since $205311=285\cdot720+111$, the remainder is $\boxed{111}$.''',
+'Factorials|Digits and bases|Complementary counting|Summation|Remainders and congruences',5,
+note='From the poster\'s mock MATHCOUNTS State test. Checked by computing every representation up to 720.')
+
+# ---------------- 1772214 cheating shopkeeper
+b.add(1772214,1,r'''A shopkeeper uses a defective balance and cheats by $10\%$ both when buying and when selling: when buying, he receives $10\%$ more goods than he pays for, and when selling, he charges for $10\%$ more goods than he actually hands over. What is his percentage profit?''',
+r'''Suppose the true price of the goods is $1$ dollar per kilogram. When buying, he pays for $1$ kg but receives $1.1$ kg, so $1.1$ kg cost him $1$ dollar.
+
+When selling, each time he hands over $1$ kg he charges for $1.1$ kg, i.e.\ $1.1$ dollars. So the $1.1$ kg he bought for $1$ dollar sell for $1.1\cdot1.1=1.21$ dollars. His profit is $0.21$ dollars on a cost of $1$ dollar, that is, $\boxed{21\%}$.
+
+(If the cheating when selling is read instead as handing over $10\%$ less than the buyer pays for, $0.9$ kg for the price of $1$ kg, the profit is $\dfrac{1.1}{0.9}-1=\dfrac29=22\dfrac29\%$. The statement above fixes the first reading.)''',
+'Percentages|Ratios, proportions, and variation|Money and currency',3,
+note='"Cheats 10% both while buying and while selling" has two common readings (21% and 22 2/9%); the record states the reading (charges for 10% more than he gives), answer 21%, and mentions the other.')
+
+# ---------------- 1771928 Alfred and Brendan tokens (alias)
+b.add(1771928,1,r'''Alfred and Brendan each have two tokens. They play the following game: taking turns, starting with Alfred, the player to move flips a fair coin. If the coin lands heads, he does nothing; if it lands tails, he gives one of his tokens to the other player. The first player to get rid of all his tokens wins. What is the probability that Alfred wins the game? Express your answer as a common fraction.''',
+r'''Let $A_k$ be Alfred's winning probability when he holds $k$ tokens and it is his turn; by symmetry, when Brendan is to move and Alfred holds $k$ tokens, Alfred wins with probability $1-A_{4-k}$. Then $A_1=\dfrac12(1-A_3)+\dfrac12$, $A_2=\dfrac12(1-A_2)+\dfrac12(1-A_3)$, $A_3=\dfrac12(1-A_1)+\dfrac12(1-A_2)$, which give $A_3=\dfrac27$ and $A_2=\boxed{\dfrac47}$.''',
+'Recursive probability|Probability|Symmetry|Systems of linear equations',4,
+note='Scrabbler94 mock MATHCOUNTS State Sprint #29; repeat of an earlier record (aliased).')
+
+# ---------------- 1772188 ELECTRICITY 5-letter strings
+b.add(1772188,1,r'''How many distinct $5$-letter strings can be made from the letters of the word ELECTRICITY (each letter used at most as many times as it appears in the word)?''',
+r'''The letters are E, C, T, I (twice each) and L, R, Y (once each): $7$ different letters, $4$ of them available twice. Split by how many letters are used twice in the string.
+\begin{itemize}
+\item \textbf{All five letters different:} $7\cdot6\cdot5\cdot4\cdot3=2520$ strings.
+\item \textbf{One letter twice:} choose it in $4$ ways and three other different letters from the remaining $6$ in $\dbinom63=20$ ways; arrange in $\dfrac{5!}{2!}=60$ ways: $4\cdot20\cdot60=4800$.
+\item \textbf{Two letters twice:} choose them in $\dbinom42=6$ ways and one more letter from the remaining $5$ in $5$ ways; arrange in $\dfrac{5!}{2!\,2!}=30$ ways: $6\cdot5\cdot30=900$.
+\end{itemize}
+No letter appears three times. The total is $2520+4800+900=\boxed{8220}$.''',
+'Multiset permutations|Casework|Permutations|Combinations',4,
+note='"From the word ELECTRICITY" is read as using each letter at most as often as it occurs in the word. Checked by brute force.')
+
+# ---------------- 1772117 barrel of wine
+b.add(1772117,1,r'''A barrel was exactly $\dfrac23$ full of wine. The publican took out $1$ litre less than half of its contents. Then he returned and took out $1$ litre less than $\dfrac13$ of what remained. He had $15$ litres left. How many litres did the barrel hold?''',
+r'''Let the barrel hold $V$ litres, so it contained $\dfrac{2V}{3}$ litres. Working backwards is easiest.
+
+\textbf{Second draw.} Taking out $1$ litre less than a third of the amount $R$ leaves $\dfrac23R+1$ litres. So $\dfrac23R+1=15$, $\dfrac23R=14$ and $R=21$.
+
+\textbf{First draw.} Taking out $1$ litre less than half of the contents $\dfrac{2V}{3}$ leaves half of it plus $1$: $\dfrac{V}{3}+1=21$, so $V=60$.
+
+The barrel held $\boxed{60}$ litres. Check: $40$ litres of wine; he took $20-1=19$, leaving $21$; then $7-1=6$, leaving $15$.''',
+'Working backwards|Linear equations|Fractions',2)
+
+# ---------------- 1772122 six-letter strings with product 32032
+b.add(1772122,1,r'''Let $A=1$, $B=2$, $\ldots$, $Z=26$. The product of a string of letters is the product of the numbers of its letters; for example, the product of the four-letter string MATH is $13\cdot1\cdot20\cdot8=2080$. How many six-letter strings have a product of $32{,}032$?''',
+r'''Factor: $32032=2^5\cdot7\cdot11\cdot13$. Each of the primes $7$, $11$, $13$ divides exactly one letter. A letter divisible by $13$ is $13$ or $26$; by $11$, it is $11$ or $22$; by $7$, it is $7$ or $14$ ($21$ would bring a factor $3$). No letter is divisible by two of these primes ($7\cdot11>26$), so they lie in three different letters, each of which may or may not carry one factor $2$. The other three letters are powers of $2$: $1,2,4,8,16$, with exponents from $0$ to $4$.
+
+Choose the positions of the $13$-letter, the $11$-letter and the $7$-letter: $6\cdot5\cdot4=120$ ways. If $e$ of these three letters carry a factor $2$ ($\dbinom3e$ ways), the other three letters have exponents of $2$ adding to $5-e$, each between $0$ and $4$. The number of ordered triples of nonnegative integers with sum $s$ is $\dbinom{s+2}{2}$; for $s=5$ we must remove the $3$ triples with an entry $5$. So the counts are $21-3=18$ for $s=5$, $15$ for $s=4$, $10$ for $s=3$ and $6$ for $s=2$. Hence the number of strings is
+\[
+120\left(1\cdot18+3\cdot15+3\cdot10+1\cdot6\right)=120\cdot99=\boxed{11880} .
+\]''',
+'Prime factorisation|Stars and bars|Casework|Multiplication principle',5,
+note='From the poster\'s mock MATHCOUNTS State test. Checked by brute force.')
+
+# ---------------- 1771925 Xavier's sequence (Fermi-Dirac primes)
+b.add(1771925,1,r'''Xavier writes a sequence of positive integers on a blackboard, beginning with $1$. Each term thereafter equals the smallest positive integer that cannot be expressed as the product of one or more distinct terms already on the blackboard. The first several terms of Xavier's sequence are $1$, $2$, $3$, $4$, $5$, $7$ and $9$. He stops writing when he first writes a number greater than $1000$. At this point, how many composite numbers will Xavier have written?''',
+r'''Call a number of the form $p^{2^j}$ ($p$ prime, $j\ge0$) a \emph{special} number: $2,3,4,5,7,9,11,13,16,\dots$. Writing each exponent in a prime factorisation in binary shows that every integer $n>1$ is a product of distinct special numbers in exactly one way (for example $2^5\cdot3=2\cdot16\cdot3$).
+
+\textbf{Claim: after $1$, Xavier writes exactly the special numbers in increasing order.} Suppose the terms so far are $1$ and all special numbers less than $m$. The products of distinct terms are exactly the numbers whose special factors are all less than $m$. A number not of this kind has a special factor $q\ge m$, so it is at least $q$, and the smallest such number is therefore the smallest special number $\ge m$. So the next term is the next special number, which proves the claim by induction.
+
+The composite special numbers up to $1000$ are $p^2$ for the primes $p\le31$ ($11$ numbers: $4,9,25,49,121,169,289,361,529,841,961$), $p^4$ for $p=2,3,5$ ($16,81,625$) and $2^8=256$; $2^{16}$ and $3^8$ are too large. The first term above $1000$ is the prime $1009$ (no square, fourth power or eighth power lies in $1001$ to $1008$). So Xavier writes $11+3+1=\boxed{15}$ composite numbers.''',
+'Prime factorisation|Perfect powers|Mathematical induction|Pattern recognition',6,
+note='From the poster\'s mock MATHCOUNTS State test. Checked by simulating the process.')
+
+# ---------------- 1772052 nested radical
+b.add(1772052,1,r'''Find the value of
+\[
+\sqrt{2-\sqrt{2-\sqrt{2-\cdots}}},
+\]
+where each radical sign covers everything after it and the pattern continues forever.''',
+r'''Interpret the expression as the limit of $x_1=\sqrt2$, $x_{n+1}=\sqrt{2-x_n}$. All terms lie between $0$ and $\sqrt2$, and
+\[
+|x_{n+1}-1|=\left|\sqrt{2-x_n}-1\right|=\dfrac{|1-x_n|}{\sqrt{2-x_n}+1}\le|x_n-1| \cdot\dfrac{1}{1+\sqrt{2-\sqrt2}}<0.7\,|x_n-1| ,
+\]
+so the terms approach $1$. Equivalently, the value $x\ge0$ must satisfy $x=\sqrt{2-x}$, so $x^2+x-2=0$, $(x+2)(x-1)=0$, and since $x\ge0$, $x=\boxed{1}$.''',
+'Radicals|Radical equations|Quadratic equations|Sequences and series',3,
+note='A short convergence argument is added to the usual self-similarity solution.')
+
+# ---------------- 1771980 sums or differences of squares divisible by 5
+b.add(1771980,1,r'''Prove that among any $4$ natural numbers there are two whose squares have a sum or a difference divisible by $5$.''',
+r'''A square leaves remainder $0$, $1$ or $4$ when divided by $5$: $0^2\equiv0$, $(\pm1)^2\equiv1$, $(\pm2)^2\equiv4\pmod5$.
+
+Among $4$ numbers there are only $3$ possible remainders of their squares, so by the pigeonhole principle two of the numbers, say $a$ and $b$, have $a^2\equiv b^2\pmod5$. Then $5\mid a^2-b^2$. $\blacksquare$
+
+(In fact $3$ numbers are enough: put the remainders in the boxes $\{0\}$ and $\{1,4\}$. Two of three numbers share a box; if their remainders are equal the difference works, and if they are $1$ and $4$ the sum works.)''',
+'Pigeonhole principle|Quadratic residues|Remainders and congruences',3)
+
+# ---------------- 1771791 ant on a frustum
+qfig=r'''real h=sqrt(5)*1.0, k=0.35;
+real ph=degrees(asin(2/(h/k)));
+path earc(pair c,real a,real t0,real t1){ path p=c+(a*Cos(t0),k*a*Sin(t0)); for(int j=1;j<=60;++j){ real t=t0+(t1-t0)*j/60; p=p--(c+(a*Cos(t),k*a*Sin(t))); } return p; }
+pair P(pair c,real a,real t){ return c+(a*Cos(t),k*a*Sin(t)); }
+pair c0=(0,0),c1=(0,h);
+draw(earc(c0,4,180-ph,360+ph),linewidth(0.9));
+draw(earc(c0,4,ph,180-ph),dashed);
+draw(earc(c1,2,0,360),linewidth(0.9));
+draw(P(c0,4,ph)--P(c1,2,ph),linewidth(0.9));draw(P(c0,4,180-ph)--P(c1,2,180-ph),linewidth(0.9));
+pair A=P(c0,4,270),B=P(c1,2,90);
+dot(A);dot(B);label("$A$",A,S);label("$B$",B,N);
+label("$4$",(2,0),N);draw((0,0)--(4,0),dotted);
+label("$2$",(1,h),N);draw((0,h)--(2,h),dotted);
+label("$3$",(P(c0,4,ph)+P(c1,2,ph))/2,E);'''
+sfig=r'''pair O=(0,0);
+draw(arc(O,3,0,240),linewidth(0.9));draw(arc(O,6,0,240),linewidth(0.9));
+draw(3*dir(0)--6*dir(0),linewidth(0.9));draw(3*dir(240)--6*dir(240),linewidth(0.9));
+draw(O--3*dir(0),dotted);draw(O--3*dir(240),dotted);
+pair A=3*dir(60),B=6*dir(180),T=3*dir(120);
+draw(B--A,gray+dashed);
+draw(B--T,red+linewidth(1.1));draw(arc(O,3,60,120),red+linewidth(1.1));
+draw(O--T,dashed);draw(O--B,dashed);
+pair u=unit(B-T),v=unit(O-T);
+draw(T+0.35*u--T+0.35*u+0.35*v--T+0.35*v);
+dot(O);dot(A);dot(B);dot(T,red);
+label("$O$",O,dir(-60));label("$A$",A,NE);label("$B$",B,W);label("$T$",T,NW,red);
+label("$3$",O+1.5*dir(120)+0.25*dir(210),dir(210));
+label("$6$",(-4.3,0),S);'''
+b.add(1771791,1,r'''The frustum shown below has two parallel circular bases of radii $2$ cm and $4$ cm, and a slant height of $3$ cm. An ant starts at point $A$ on the larger base and crawls along the lateral surface to reach point $B$ on the other base, diametrically opposite point $A$. The ant does not crawl on either base of the frustum. What is the minimum distance that the ant must crawl to reach point $B$? Express your answer in simplest radical form and in terms of $\pi$.
+'''+asy(qfig,'5cm'),
+r'''\textbf{Unroll the surface.} Complete the frustum to a cone with apex $O$. The slant heights to the two base circles are in the ratio of the radii, $2:4$, and differ by $3$, so they are $3$ and $6$. Cutting along a generator and unrolling, the lateral surface becomes the part of a sector of radius $6$ outside radius $3$. The arc of radius $6$ has length $2\pi\cdot4=8\pi$, so the sector angle is $\dfrac{8\pi}{6}=\dfrac{4\pi}{3}=240^\circ$.
+
+$A$ lies on the arc of radius $3$ and $B$ on the arc of radius $6$, half-way round the cone, so in the unrolled picture $\angle AOB=\dfrac12\cdot240^\circ=120^\circ$ (either way round).
+'''+asy(sfig,'6.5cm')+r'''
+\textbf{The straight segment is not allowed.} The segment $AB$ (gray, dashed) has its closest point to $O$ strictly between $A$ and $B$: with $OA=3$, $OB=6$ and $\angle AOB=120^\circ$, $AB^2=9+36+18=63$, and the distance from $O$ to line $AB$ is $\dfrac{2[OAB]}{AB}=\dfrac{3\cdot6\sin120^\circ}{\sqrt{63}}=\dfrac{9\sqrt3}{3\sqrt7}<3$. So that segment passes through radii less than $3$, i.e.\ over the small base, which the ant may not use.
+
+\textbf{The shortest allowed path.} Since the path must stay outside the circle of radius $3$, the shortest path from $B$ goes along the tangent from $B$ to that circle and then along the circle to $A$ (the shortest path around a convex obstacle hugs it). The tangent $BT$ has length $\sqrt{6^2-3^2}=3\sqrt3$, and $\angle BOT=\arccos\dfrac36=60^\circ$, so the remaining arc $TA$ subtends $120^\circ-60^\circ=60^\circ$ and has length $3\cdot\dfrac{\pi}{3}=\pi$. On the frustum this arc runs along the rim of the small base.
+
+The minimum distance is $\boxed{3\sqrt3+\pi}$ cm. (Without the restriction, the answer would have been $\sqrt{63}=3\sqrt7$, which is shorter but crosses the top base.)''',
+'Cones|Nets|Surface area|Solid geometry|Tangents|Arcs and chords',6,
+note='From the poster\'s mock MATHCOUNTS State test; the attached figure is redrawn from the text (B on the smaller base, diametrically opposite A). The answer was checked numerically by minimising over paths that run along a tangent and the inner rim.')
+
+# ---------------- 1771889 bridge deals
+b.add(1771889,1,r'''Bridge is played by four players with an ordinary deck of $52$ cards. Each player begins with a hand of $13$ cards. In how many ways can a bridge game start, that is, in how many ways can the $52$ cards be dealt into hands of $13$ cards for the four (distinguishable) players? (Ignore partnerships; the order of the cards within a hand does not matter.)''',
+r'''Choose the first player's hand in $\dbinom{52}{13}$ ways, then the second player's from the remaining $39$ cards in $\dbinom{39}{13}$ ways, the third's in $\dbinom{26}{13}$ ways, and the last player gets the remaining $13$ cards. The number of deals is
+\[
+\dbinom{52}{13}\dbinom{39}{13}\dbinom{26}{13}=\boxed{\dfrac{52!}{(13!)^4}}=53{,}644{,}737{,}765{,}488{,}792{,}839{,}237{,}440{,}000\approx5.36\times10^{28}.
+\]''',
+'Combinations|Multiplication principle|Factorials',2)
+
+# ---------------- 1771651 two problems
+b.add(1771651,1,r'''The graph of $f(x)=|x-1|$ is translated one unit down and two units to the right. What is the equation of the transformed graph?''',
+r'''Translating a graph $c$ units to the right replaces $x$ by $x-c$, and translating it $d$ units down subtracts $d$ from the function. So the new graph is
+\[
+y=|(x-2)-1|-1,\qquad\text{that is,}\qquad \boxed{y=|x-3|-1}.
+\]
+Check: the vertex moves from $(1,0)$ to $(1+2,0-1)=(3,-1)$.''',
+'Functions|Absolute value',1,
+note='The post writes the result as f\'(x); it is the equation of the translated graph (not a derivative).')
+fig=r'''real c=3*cos(40*pi/180), s=3*sin(40*pi/180);
+pair Cc=(0,0),B=(c,0),A=(c,s);
+draw(Cc--B--A--cycle,linewidth(0.9));
+draw((c-0.2,0)--(c-0.2,0.2)--(c,0.2));
+draw(arc(Cc,0.55,0,40));label("$40^\circ$",Cc+0.95*dir(20));
+draw(arc(A,0.45,-90,-140));label("$50^\circ$",A+0.8*dir(-115));
+label("$A$",A,NE);label("$B$",B,SE);label("$C$",Cc,SW);
+label("$3$",(A+Cc)/2,NW);label("$a$",(A+B)/2,E);'''
+b.add(1771651,2,r'''The hypotenuse of a right triangle measures $3$ units, and the other two angles of the triangle measure $40^\circ$ and $50^\circ$. What is the length, in units rounded to the nearest tenth, of the shortest side of the triangle?''',
+r'''The shortest side is opposite the smallest angle, $40^\circ$. In the figure, $\angle C=40^\circ$, the right angle is at $B$, and the shortest side is $AB=a$.
+'''+asy(fig,'4.5cm')+r'''
+Since $\sin C=\dfrac{\text{opposite}}{\text{hypotenuse}}$,
+\[
+a=3\sin40^\circ\approx3\cdot0.6428=1.928\ldots ,
+\]
+so the shortest side is about $\boxed{1.9}$ units.''',
+'Right triangles|Trigonometry',2)
+
+# ---------------- 1771487 sum of coefficients
+b.add(1771487,1,r'''What is the sum of the coefficients of the expansion of $(2x^2+8y^7)^5$?''',
+r'''For any polynomial in $x$ and $y$, the sum of its coefficients is its value at $x=y=1$. So the sum is
+\[
+(2\cdot1+8\cdot1)^5=10^5=\boxed{100000} .
+\]
+(Term by term, the coefficients are $\dbinom5k2^{5-k}8^k$, and by the binomial theorem they add up to $(2+8)^5$.)''',
+'Binomial theorem|Polynomials',1)
+
+# ---------------- 1771314 colouring maps on a torus
+fig=r'''real s3=sqrt(3);
+pair u=(s3,0), v=(s3/2,1.5);
+path hexa(pair c){ return c+dir(90)--c+dir(150)--c+dir(210)--c+dir(270)--c+dir(330)--c+dir(30)--cycle; }
+pen[] col={rgb(1,0.85,0.85),rgb(1,0.93,0.75),rgb(1,1,0.75),rgb(0.82,0.95,0.82),rgb(0.8,0.92,1),rgb(0.88,0.85,1),rgb(0.95,0.85,0.95)};
+for(int a=-2;a<=2;++a) for(int bb=-2;bb<=2;++bb){
+  if(abs(a+bb)>2) continue;
+  pair c=a*u+bb*v;
+  int k=((a+3*bb)%7+7)%7;
+  filldraw(hexa(c),col[k],black+linewidth(0.7));
+  label("$"+string(k)+"$",c);
+}'''
+b.add(1771314,1,r'''What is the fewest number of colours that is enough to colour \emph{every} map drawn on the surface of a torus (a doughnut), so that any two regions sharing a boundary segment receive different colours? Prove your answer.
+
+$\textbf{(A)}\ 3\qquad\textbf{(B)}\ 4\qquad\textbf{(C)}\ 5\qquad\textbf{(D)}\ 6\qquad\textbf{(E)}\ 7$''',
+r'''The answer is $\boxed{\textbf{(E)}\ 7}$. (Regions are assumed connected; regions meeting only at a point may share a colour.)
+
+\textbf{Seven colours are sometimes needed.} Tile the plane with regular hexagons centred at the points $a\mathbf u+b\mathbf v$ ($a,b$ integers) of a triangular lattice, and give the hexagon at $a\mathbf u+b\mathbf v$ the label $a+3b \bmod 7$. The six neighbours of a hexagon are at $\pm\mathbf u$, $\pm\mathbf v$, $\pm(\mathbf u-\mathbf v)$, so their labels differ from its own by $\pm1$, $\pm3$, $\pm2$: they carry all six other labels.
+'''+asy(fig,'6cm')+r'''
+The labelling is unchanged by the translations $a\mathbf u+b\mathbf v$ with $a+3b\equiv0\pmod7$, for example $7\mathbf u$ and $-3\mathbf u+\mathbf v$; these form a lattice, and identifying points of the plane that differ by such a translation turns the plane into a torus (a parallelogram with opposite sides glued). On this torus there are exactly $7$ hexagons, one with each label, and each touches the other six along an edge. So this map needs $7$ colours.
+
+\textbf{Seven colours always suffice.} Put a vertex in each region and join two vertices by an edge, drawn across their common boundary, when the regions are adjacent. This gives a simple graph $G$ drawn on the torus without crossings, and the same is true for every subgraph of $G$. For a graph with $V\ge3$ vertices, $E$ edges and $F$ faces drawn on the torus, Euler's formula for the torus gives $V-E+F\ge0$, and every face is bounded by at least $3$ edges, each edge lying on at most $2$ faces, so $3F\le2E$. Hence $E\le3V$, and the average degree $\dfrac{2E}{V}$ is at most $6$: some vertex has degree at most $6$.
+
+Now colour by induction on the number of vertices. Remove a vertex $x$ of degree at most $6$, colour the rest with $7$ colours (the smaller graph is again drawn on the torus), and give $x$ a colour not used by its at most $6$ neighbours. Graphs with at most $7$ vertices are trivially $7$-colourable. Hence every map on the torus can be coloured with $7$ colours, and $7$ is the minimum. $\blacksquare$''',
+'Graph colouring|Graph theory|Euler\'s polyhedron formula|Construction|Mathematical induction',6,
+note='The post asks a multiple-choice question; the record keeps the choices and asks for a proof (Heawood\'s bound for the torus and the seven-hexagon map). "Uniquely colour" is read as the usual map-colouring condition.')
+
+# ---------------- 1771480 2017 National Countdown 24
+b.add(1771480,1,r'''How many solutions in nonnegative integers $a,b,c,x,y,z$, all six less than or equal to $4$, does the equation
+\[
+(a-x)^2+(b-y)^2+(c-z)^2=1
+\]
+have?''',
+r'''A sum of three squares of integers equals $1$ exactly when one of the squares is $1$ and the other two are $0$. So exactly one of the differences $a-x$, $b-y$, $c-z$ is $\pm1$ and the other two are $0$.
+
+Choose which coordinate differs: $3$ ways. For that coordinate, the ordered pairs from $\{0,1,2,3,4\}$ differing by $1$ are $(0,1),(1,2),(2,3),(3,4)$ and their reverses: $8$ ways. Each of the other two coordinates has its two equal values chosen in $5$ ways. The number of solutions is $3\cdot8\cdot5\cdot5=\boxed{600}$.
+
+(Geometrically: ordered pairs of points of a $5\times5\times5$ cubic grid at distance $1$.)''',
+'Systematic counting|Multiplication principle|Diophantine equations',3,source=src('MATHCOUNTS',2017,'National',24,rnd='Countdown'))
+
+# ---------------- 1771161 product of two-digit numbers coprime to 10
+b.add(1771161,1,r'''Let $N$ be the product of all two-digit positive integers that are divisible by neither $2$ nor $5$. Find the remainder when $N$ is divided by $100$.''',
+r'''The numbers are $10a+1$, $10a+3$, $10a+7$, $10a+9$ for $a=1,2,\dots,9$. Group them by decades. Modulo $100$,
+\[
+(10a+1)(10a+9)=100a^2+100a+9\equiv9,\qquad(10a+3)(10a+7)=100a^2+100a+21\equiv21 ,
+\]
+so each decade contributes $9\cdot21=189\equiv89\equiv-11\pmod{100}$, and
+\[
+N\equiv(-11)^9=-11^9\pmod{100}.
+\]
+By the binomial theorem, $11^9=(1+10)^9\equiv1+9\cdot10=91\pmod{100}$. Hence $N\equiv-91\equiv\boxed{9}\pmod{100}$.''',
+'Remainders and congruences|Binomial theorem|Pairing and grouping',4,
+note='Scrabbler94 mock MATHCOUNTS 2017 Sprint #29.')
+
+# ---------------- 1770283 eagle and snake
+fig=r'''pair Bt=(0,0),T=(0,9),Sn=(27,0),G=(12,0);
+draw(Bt--T,linewidth(1.6));draw((-2,0)--(29,0));
+draw(T--G,blue+linewidth(0.9));
+draw((0.8,0)--(0.8,0.8)--(0,0.8));
+dot(T);dot(Sn);dot(G,blue);
+label("$P$",T,NW);label("$H$",Bt,SW);label("$S$",Sn,S);label("$G$",G,S,blue);
+label("$9$",(0,4.5),W);
+label("$x$",(6,0),S);label("$27-x$",(19.5,0),S);
+label("$27-x$",(T+G)/2,NE,blue);'''
+b.add(1770283,1,r'''An eagle perched on top of a $9$ ft high pillar sees a snake on the ground $27$ ft from the bottom of the pillar. The snake slides in a straight line towards its hole at the bottom of the pillar. At that moment the eagle flies in a straight line to grab the snake. If the eagle and the snake move at equal speeds, at what distance from the bottom of the pillar does the eagle grab the snake?''',
+r'''Let the eagle start at the top $P$ of the pillar $PH$, and let it catch the snake at $G$, $x$ ft from the bottom $H$. The snake slides from $S$ to $G$, a distance $27-x$, and in the same time the eagle flies the same distance, so $PG=27-x$.
+'''+asy(fig,'7cm')+r'''
+Triangle $PHG$ has a right angle at $H$, so by the Pythagorean theorem
+\[
+x^2+9^2=(27-x)^2\ \Longrightarrow\ x^2+81=729-54x+x^2\ \Longrightarrow\ 54x=648\ \Longrightarrow\ x=12 .
+\]
+The eagle grabs the snake $\boxed{12}$ ft from the bottom of the pillar. Check: the eagle flies $\sqrt{144+81}=15$ ft and the snake slides $27-12=15$ ft.''',
+'Right triangles|Pythagorean theorem|Distance, rate, and time',2)
+
+# ---------------- 1771063 quartic roots
+b.add(1771063,1,r'''Find all solutions of the equation $3x^4-5x^3-19x^2+59x-30=0$.''',
+r'''By the rational root theorem, try $x=\dfrac pq$ with $p\mid30$, $q\mid3$. We find
+\[
+3\left(\dfrac23\right)^4-5\left(\dfrac23\right)^3-19\left(\dfrac23\right)^2+59\cdot\dfrac23-30=\dfrac{16}{27}-\dfrac{40}{27}-\dfrac{76}{9}+\dfrac{118}{3}-30=0
+\]
+and $3\cdot81+5\cdot27-19\cdot9-59\cdot3-30=243+135-171-177-30=0$, so $x=\dfrac23$ and $x=-3$ are roots. Dividing by $(3x-2)(x+3)=3x^2+7x-6$,
+\[
+3x^4-5x^3-19x^2+59x-30=(3x^2+7x-6)(x^2-4x+5).
+\]
+The quadratic $x^2-4x+5=(x-2)^2+1$ has roots $2\pm i$. The solutions are
+\[
+\boxed{x=-3,\quad x=\dfrac23,\quad x=2+i,\quad x=2-i} .
+\]''',
+'Polynomials|Polynomial roots|Factoring|Complex numbers',3,
+note='"Find all solutions for the polynomial y = ..." is read as finding the roots (y = 0).')
+
+b.save()

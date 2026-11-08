@@ -1,0 +1,659 @@
+[
+ {
+  "topic_id": "1716692",
+  "part": 1,
+  "question": "In how many ways can $10$ identical one-dollar bills be given out to $4$ different children if each child must receive at least one bill (and bills cannot be split)?",
+  "solution": "Give each child one bill first. The remaining $6$ identical bills are then distributed freely among the $4$ children, which is the number of nonnegative integer solutions of $x_1+x_2+x_3+x_4=6$. By stars and bars this is\n\\[\n\\dbinom{6+3}{3}=\\dbinom{9}{3}=\\boxed{84}.\n\\]\n(Equivalently, choose $3$ of the $9$ gaps between $10$ bills in a row to place dividers.)",
+  "tags": [
+   "Distributions and integer solutions",
+   "Stars and bars",
+   "Combinations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "P1 of a general maths marathon; the marathon rules are not part of the record."
+ },
+ {
+  "topic_id": "1716751",
+  "part": 1,
+  "question": "A student wants to find $n$ from the equation $5\\cdot6=n$. The student argues: ``Whatever we do to one side we may do to the other, so raise both sides to the power $0$. This gives $(5\\cdot6)^0=n^0$, that is, $1=1$, which is true for every $n$. Hence $n$ can be any number.'' But clearly $n=30$ only. Explain exactly where the argument goes wrong.",
+  "solution": "Doing the same thing to both sides of a true equation produces a true equation: if $5\\cdot6=n$, then certainly $(5\\cdot6)^0=n^0$. This step is an implication in one direction only,\n\\[\n5\\cdot6=n\\ \\Longrightarrow\\ 1=1 ,\n\\]\nand it can be reversed only when the operation applied is one-to-one, so that equal outputs come from equal inputs (for example adding $3$, multiplying by a nonzero number, or taking a cube).\n\nThe map $t\\mapsto t^0$ sends every nonzero number to $1$, so it is not one-to-one; it throws away all information about $t$. From $n^0=1$ we learn only that $n\\ne0$ (as $0^0$ is usually left undefined), not that $n=30$. The final statement ``$1=1$ for every $n$'' says nothing about which $n$ satisfy the \\emph{original} equation; the set of solutions of the new equation is larger than that of the old one.\n\nConcretely, $n=7$ satisfies $1=1$ but not $5\\cdot6=n$. The only solution of the original equation is $n=\\boxed{30}$. (The same mistake appears when both sides are squared: $x=3$ leads to $x^2=9$, which also has the extra solution $x=-3$.)",
+  "tags": [
+   "Exponents",
+   "Logical deduction",
+   "Counterexamples"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks whether some law prohibits raising both sides to the power 0; posed as \"find the error\". 0^0 is treated as undefined."
+ },
+ {
+  "topic_id": "1715695",
+  "part": 1,
+  "question": "An algebra course can be scheduled in three ways during the five-day school week:\n\\begin{itemize}\n\\item it meets every one of the five days from 10:00 to 11:00 am;\n\\item it meets from 10:00 to 11:15 am on four of the five days;\n\\item it meets from 10:00 to 11:40 am on three of the five days.\n\\end{itemize}\nIn how many different ways could the course be scheduled?",
+  "solution": "The three options are mutually exclusive, so we add the counts.\n\\begin{itemize}\n\\item Five days of one hour: all five days are used, $\\dbinom55=1$ way.\n\\item Four days of $75$ minutes: choose the four days, $\\dbinom54=5$ ways.\n\\item Three days of $100$ minutes: choose the three days, $\\dbinom53=10$ ways.\n\\end{itemize}\n(Each option gives $300$ minutes per week.) The total is $1+5+10=\\boxed{16}$.",
+  "tags": [
+   "Combinations",
+   "Addition principle"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Problem 1 of the post. The garbled \"each of the four days\" is read as \"on four of the five days\"."
+ },
+ {
+  "topic_id": "1715695",
+  "part": 2,
+  "question": "What is the sum of all positive integers $n$ such that $n+\\dfrac{18}{n}$ is an integer?",
+  "solution": "Since $n$ is an integer, $n+\\dfrac{18}{n}$ is an integer exactly when $\\dfrac{18}{n}$ is an integer, that is, when $n$ is a positive divisor of $18$. These are $1,2,3,6,9,18$, with sum\n\\[\n1+2+3+6+9+18=\\boxed{39}.\n\\]\n(If the expression is read as $\\dfrac{n+18}{n}=1+\\dfrac{18}{n}$, the condition is the same and the answer is again $39$.)",
+  "tags": [
+   "Factors and multiples",
+   "Divisibility"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post writes n+18/n; both readings n + 18/n and (n+18)/n give the same answer 39."
+ },
+ {
+  "topic_id": "1715695",
+  "part": 3,
+  "question": "What percent of the volume of a $10\\times10\\times10$ box can be filled with solid $4\\times4\\times4$ cubes (placed inside the box without overlapping, with faces parallel to the faces of the box)? Express your answer as a decimal to the nearest tenth.",
+  "solution": "\\textbf{At most $8$ cubes fit.} A cube placed in the box occupies $[a,a+4]\\times[b,b+4]\\times[c,c+4]$ with $0\\le a,b,c\\le6$. The open interval $(a,a+4)$ contains $3.5$ when $a<3.5$ and contains $6.5$ when $a>2.5$, so it always contains $3.5$ or $6.5$. Hence the interior of every cube contains one of the $8$ points whose coordinates are all $3.5$ or $6.5$. Non-overlapping cubes have disjoint interiors, so each of these points lies inside at most one cube, and there are at most $8$ cubes.\n\n\\textbf{Eight cubes fit}, in a $2\\times2\\times2$ block filling an $8\\times8\\times8$ corner of the box:\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5.5cm);\ndefaultpen(fontsize(10pt));\npair P(real x,real y,real z){return (x+0.42*z,y+0.32*z);}\npen blk=linewidth(0.9);\ndraw(P(0,0,10)--P(10,0,10),dashed+gray);draw(P(0,0,10)--P(0,10,10),dashed+gray);draw(P(0,0,10)--P(0,0,0),dashed+gray);\n// block of eight 4-cubes, front, top and right faces\nfill(P(0,0,0)--P(8,0,0)--P(8,8,0)--P(0,8,0)--cycle,rgb(0.80,0.88,1));\nfill(P(0,8,0)--P(8,8,0)--P(8,8,8)--P(0,8,8)--cycle,rgb(0.70,0.80,0.98));\nfill(P(8,0,0)--P(8,0,8)--P(8,8,8)--P(8,8,0)--cycle,rgb(0.62,0.74,0.95));\npen bl=blue+linewidth(0.7);\ndraw(P(0,0,0)--P(8,0,0)--P(8,8,0)--P(0,8,0)--cycle,bl);\ndraw(P(0,8,0)--P(0,8,8)--P(8,8,8)--P(8,0,8)--P(8,0,0),bl);draw(P(8,8,0)--P(8,8,8),bl);\ndraw(P(4,0,0)--P(4,8,0)--P(4,8,8),bl);draw(P(0,4,0)--P(8,4,0)--P(8,4,8),bl);\ndraw(P(0,8,4)--P(8,8,4)--P(8,0,4),bl);\n// box 10 x 10 x 10\ndraw(P(0,0,0)--P(10,0,0)--P(10,10,0)--P(0,10,0)--cycle,blk);\ndraw(P(0,10,0)--P(0,10,10)--P(10,10,10)--P(10,0,10)--P(10,0,0),blk);draw(P(10,10,0)--P(10,10,10),blk);\nlabel(\"$10$\",P(5,10,10),N);label(\"$10$\",P(0,5,0),W);label(\"$10$\",P(10,0,5),SE);\nlabel(\"$4$\",P(2,0,0),S);label(\"$4$\",P(6,0,0),S);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nThey occupy $8\\cdot64=512$ of the $1000$ cubic units, so the fraction filled is $\\dfrac{512}{1000}=\\boxed{51.2\\%}$.",
+  "tags": [
+   "Volume",
+   "Cubes and rectangular prisms",
+   "Percentages"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Problem 3 of the post. The cubes are taken to be placed with faces parallel to the faces of the box, as intended; the solution proves that at most 8 fit."
+ },
+ {
+  "topic_id": "1716645",
+  "part": 1,
+  "question": "A truncated octahedron is a solid with $14$ faces: $6$ congruent squares and $8$ congruent regular hexagons. At each corner (vertex) exactly $2$ hexagons and $1$ square meet. How many corners does the solid have?",
+  "solution": "Count pairs (face, corner of that face) in two ways. The faces have\n\\[\n6\\cdot4+8\\cdot6=24+48=72\n\\]\ncorners in total, counted face by face. Each corner of the solid belongs to exactly $3$ faces ($2$ hexagons and $1$ square), so it has been counted $3$ times. Hence the solid has $\\dfrac{72}{3}=\\boxed{24}$ corners.\n\nCheck: the faces have $\\dfrac{6\\cdot4+8\\cdot6}{2}=36$ edges (each edge lies on two faces), and Euler's formula $V-E+F=24-36+14=2$ holds. The sketch shows the solid with the squares in blue and the hexagons in yellow; the red corner is where one square and two hexagons meet.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5cm);\ndefaultpen(fontsize(10pt));\nfilldraw((-1.2000,-0.0555)--(-0.4000,-1.2203)--(-1.2000,-1.7196)--(-2.0000,-0.5547)--cycle,rgb(0.80,0.88,1),linewidth(0.8));\nfilldraw((1.6000,0.1664)--(2.2000,-0.2219)--(1.6000,-1.4977)--(1.0000,-1.1094)--cycle,rgb(0.80,0.88,1),linewidth(0.8));\nfilldraw((-0.8000,1.9969)--(0.6000,2.1079)--(0.8000,1.3313)--(-0.6000,1.2203)--cycle,rgb(0.80,0.88,1),linewidth(0.8));\nfilldraw((-2.2000,0.2219)--(-1.6000,1.4977)--(-0.8000,1.9969)--(-0.6000,1.2203)--(-1.2000,-0.0555)--(-2.0000,-0.5547)--cycle,rgb(1,0.93,0.75),linewidth(0.8));\nfilldraw((-0.6000,1.2203)--(0.8000,1.3313)--(1.6000,0.1664)--(1.0000,-1.1094)--(-0.4000,-1.2203)--(-1.2000,-0.0555)--cycle,rgb(1,0.93,0.75),linewidth(0.8));\nfilldraw((-0.4000,-1.2203)--(1.0000,-1.1094)--(1.6000,-1.4977)--(0.8000,-1.9969)--(-0.6000,-2.1079)--(-1.2000,-1.7196)--cycle,rgb(1,0.93,0.75),linewidth(0.8));\nfilldraw((0.6000,2.1079)--(1.2000,1.7196)--(2.0000,0.5547)--(2.2000,-0.2219)--(1.6000,0.1664)--(0.8000,1.3313)--cycle,rgb(1,0.93,0.75),linewidth(0.8));\ndot((-1.2000,-0.0555),red+3.5bp);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}",
+  "tags": [
+   "Polyhedra",
+   "Double counting",
+   "Euler's polyhedron formula"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Counted by double counting; the vertex count 24 is confirmed from the coordinates (all permutations of (0, +-1, +-2))."
+ },
+ {
+  "topic_id": "1715055",
+  "part": 1,
+  "question": "What positive number is twice as far from $10$ as it is from $1$?",
+  "solution": "We need $|x-10|=2|x-1|$ with $x>0$.\n\\begin{itemize}\n\\item If $x\\ge10$: $x-10=2x-2$ gives $x=-8$, not in this range.\n\\item If $1\\le x<10$: $10-x=2x-2$ gives $x=4$, which is in the range.\n\\item If $x<1$: $10-x=2-2x$ gives $x=-8$, which is not positive.\n\\end{itemize}\nSo the only positive number is $\\boxed{4}$: it is $6$ from $10$ and $3$ from $1$. (The other solution, $-8$, is $18$ from $10$ and $9$ from $1$.)",
+  "tags": [
+   "Absolute value",
+   "Linear equations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1715902",
+  "part": 1,
+  "question": "The fraction $\\dfrac{\\overline{28a3}}{7276}$ has a four-digit numerator whose hundreds digit is the unknown digit $a$. Find the digit $a$ and the whole number $x$ such that subtracting $x$ from the numerator and adding $x$ to the denominator gives a fraction equal to $\\dfrac{2}{7}$.",
+  "solution": "The numerator is $N=2803+10a$. We need\n\\[\n\\dfrac{N-x}{7276+x}=\\dfrac{2}{7}\\iff 7N-7x=14552+2x\\iff 9x=7N-14552=19621+70a-14552=5069+70a .\n\\]\nSo $5069+70a$ must be divisible by $9$. Since $5069\\equiv5+0+6+9=20\\equiv2\\pmod 9$ and $70\\equiv7\\pmod9$, we need $2+7a\\equiv0$, i.e.\\ $7a\\equiv7\\pmod9$, so $a\\equiv1\\pmod9$. As $a$ is a digit with $28a3$ a four-digit number, $a=1$ (the value $a=10$ is not a digit). Then $9x=5139$ and $x=571$.\n\nCheck: $\\dfrac{2813-571}{7276+571}=\\dfrac{2242}{7847}$ and $7\\cdot2242=15694=2\\cdot7847$. So $\\boxed{a=1,\\ x=571}$.",
+  "tags": [
+   "Fractions",
+   "Divisibility rules",
+   "Linear equations",
+   "Digits and bases"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2015,
+   "division": "Grade 6",
+   "paper": null,
+   "round": null,
+   "question_number": "4"
+  },
+  "note": "The number to be subtracted and added is taken to be a whole number (otherwise every digit a works with a fractional x); this is what makes a unique."
+ },
+ {
+  "topic_id": "1715910",
+  "part": 1,
+  "question": "A seller has watermelons, melons and young corn cobs, $239$ pieces in total, with at least one of each kind. One buyer bought $\\dfrac{2}{3}$ of all the watermelons, $\\dfrac{3}{5}$ of all the melons and $\\dfrac{5}{7}$ of all the corn cobs. A second buyer bought $\\dfrac{1}{13}$ of all the watermelons, $\\dfrac{1}{4}$ of all the melons and $\\dfrac{1}{5}$ of all the corn cobs. How many watermelons, melons and corn cobs did the seller have at the beginning, and how many pieces in total did the second buyer buy?",
+  "solution": "Let the seller have $w$ watermelons, $m$ melons and $c$ corn cobs. The buyers' fractions must give whole numbers, so $w$ is divisible by $3$ and by $13$, $m$ by $5$ and by $4$, and $c$ by $7$ and by $5$:\n\\[\nw=39i,\\qquad m=20j,\\qquad c=35k,\\qquad i,j,k\\ge1,\\qquad 39i+20j+35k=239 .\n\\]\nReducing modulo $5$: $39i\\equiv239$, i.e.\\ $4i\\equiv4\\pmod5$, so $i\\equiv1\\pmod5$. Since $39\\cdot6>239$, $i=1$ and $w=39$. Then $20j+35k=200$, i.e.\\ $4j+7k=40$. So $4\\mid7k$, $k$ is a multiple of $4$, and $k\\ge1$ with $35k\\le200$ forces $k=4$; then $4j=12$, $j=3$.\n\nHence the seller had $\\boxed{39\\text{ watermelons},\\ 60\\text{ melons and }140\\text{ corn cobs}}$. The second buyer bought\n\\[\n\\dfrac{39}{13}+\\dfrac{60}{4}+\\dfrac{140}{5}=3+15+28=\\boxed{46}\\text{ pieces.}\n\\]\n(The first buyer bought $26+36+100=162$ pieces, so together they bought $208\\le239$, as they must.)",
+  "tags": [
+   "Fractions",
+   "HCF and LCM",
+   "Linear Diophantine equations",
+   "Remainders and congruences"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2015,
+   "division": "Grade 7",
+   "paper": null,
+   "round": null,
+   "question_number": "4"
+  },
+  "note": "\"At least one of each kind\" is stated explicitly: without it, w=39, m=200, c=0 would also fit. Checked by exhaustive search."
+ },
+ {
+  "topic_id": "1715897",
+  "part": 1,
+  "question": "At a school fruit exchange the rates are: $11$ strawberries for $14$ raspberries, $22$ cherries for $21$ raspberries, $10$ cherries for $3$ bananas, and $5$ pears for $2$ bananas. How many pears does Amila have to give to get $7$ strawberries?",
+  "solution": "Convert step by step, using the rates as proportions.\n\\[\n7\\text{ strawberries}=7\\cdot\\dfrac{14}{11}=\\dfrac{98}{11}\\text{ raspberries}=\\dfrac{98}{11}\\cdot\\dfrac{22}{21}=\\dfrac{28}{3}\\text{ cherries},\n\\]\n\\[\n\\dfrac{28}{3}\\text{ cherries}=\\dfrac{28}{3}\\cdot\\dfrac{3}{10}=\\dfrac{14}{5}\\text{ bananas}=\\dfrac{14}{5}\\cdot\\dfrac{5}{2}=7\\text{ pears}.\n\\]\nAmila has to give $\\boxed{7}$ pears.",
+  "tags": [
+   "Ratios, proportions, and variation",
+   "Fractions"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2015,
+   "division": "Grade 6",
+   "paper": null,
+   "round": null,
+   "question_number": "2"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1715918",
+  "part": 1,
+  "question": "The set $X=\\{1,2,\\dots,9\\}$ is split into two disjoint sets. Prove that at least one of the two sets contains three distinct elements such that one of them is the sum of the other two.",
+  "solution": "Colour the elements of one set red and of the other blue, and suppose, for a contradiction, that there are no distinct $x<y$ of the same colour with $x+y$ also of that colour (call such $x,y,x+y$ a \\emph{monochromatic sum}). Swapping the colours if necessary, $1$ is red.\n\n\\textbf{Case 1: $2$ is red.} Then $3=1+2$ is blue.\n\\begin{itemize}\n\\item If $4$ is red, then $5=1+4$ and $6=2+4$ are blue; then $8=3+5$ and $9=3+6$ are red, and $1+8=9$ is a red monochromatic sum. Contradiction.\n\\item If $4$ is blue, then $7=3+4$ is red, so $8=1+7$ and $9=2+7$ are blue. Now $5$ cannot be blue ($4+5=9$) and cannot be red ($2+5=7$). Contradiction.\n\\end{itemize}\n\n\\textbf{Case 2: $2$ is blue.}\n\\begin{itemize}\n\\item If $3$ is red, then $4=1+3$ is blue, so $6=2+4$ is red; then $7=1+6$ and $9=3+6$ are blue, and $2+7=9$ is a blue monochromatic sum. Contradiction.\n\\item If $3$ is blue, then $5=2+3$ is red, so $4$ is blue (as $1+4=5$) and $6$ is blue (as $1+5=6$). Then $2+4=6$ is a blue monochromatic sum. Contradiction.\n\\end{itemize}\nEvery case leads to a contradiction, so one of the two sets contains distinct $x,y$ and $x+y$. $\\blacksquare$\n\n(The number $9$ cannot be lowered: $\\{1,2,4,8\\}$ and $\\{3,5,6,7\\}$ split $\\{1,\\dots,8\\}$ with no such triple.)",
+  "tags": [
+   "Proof by cases",
+   "Proof by contradiction",
+   "Colourings, tilings, and coverings"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2015,
+   "division": "Grade 8",
+   "paper": null,
+   "round": null,
+   "question_number": "5"
+  },
+  "note": "\"Three elements\" is read as three distinct elements x, y, x+y. Checked by testing all 512 splittings; the remark that 8 does not suffice is also checked."
+ },
+ {
+  "topic_id": "1715894",
+  "part": 1,
+  "question": "Find two angles whose sum is $180^\\circ$ and whose difference is $1'$ (one minute of arc).",
+  "solution": "Let the angles be $\\alpha>\\beta$ with $\\alpha+\\beta=180^\\circ$ and $\\alpha-\\beta=1'$. Adding and halving,\n\\[\n\\alpha=\\dfrac{180^\\circ+1'}{2}=90^\\circ+30''=90^\\circ0'30'',\\qquad \\beta=180^\\circ-\\alpha=89^\\circ59'30'' ,\n\\]\nsince $1'=60''$ and half of it is $30''$. So the angles are $\\boxed{90^\\circ0'30''\\text{ and }89^\\circ59'30''}$. Check: $90^\\circ0'30''-89^\\circ59'30''=1'$.",
+  "tags": [
+   "Unit conversion",
+   "Systems of linear equations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2015,
+   "division": "Grade 6",
+   "paper": null,
+   "round": null,
+   "question_number": "1"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1715905",
+  "part": 1,
+  "question": "Each of the six trucks of a construction company drove for $8$ hours, and together they used $720$ litres of fuel. How many litres would $9$ such trucks use if each of them drives for $6$ hours?",
+  "solution": "The six trucks drove $6\\cdot8=48$ truck-hours, so one truck uses $\\dfrac{720}{48}=15$ litres per hour. Nine trucks driving $6$ hours each make $54$ truck-hours and use $54\\cdot15=\\boxed{810}$ litres.",
+  "tags": [
+   "Ratios, proportions, and variation",
+   "Work and rates"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2015,
+   "division": "Grade 7",
+   "paper": null,
+   "round": null,
+   "question_number": "1"
+  },
+  "note": "\"Oil\" in the translation is fuel; fuel use is assumed proportional to driving time."
+ },
+ {
+  "topic_id": "1715914",
+  "part": 1,
+  "question": "Let $a,b,c$ be pairwise distinct numbers. Show that the value of\n\\[\nA=\\dfrac{(b-c)^2}{(a-b)(a-c)}+\\dfrac{(c-a)^2}{(b-c)(b-a)}+\\dfrac{(a-b)^2}{(c-a)(c-b)}\n\\]\ndoes not depend on $a$, $b$ and $c$, and find it.",
+  "solution": "Put $x=a-b$, $y=b-c$, $z=c-a$; these are nonzero and $x+y+z=0$. Then $a-c=-z$, $b-a=-x$, $c-b=-y$, so\n\\[\nA=\\dfrac{y^2}{x(-z)}+\\dfrac{z^2}{y(-x)}+\\dfrac{x^2}{z(-y)}=-\\dfrac{x^3+y^3+z^3}{xyz}.\n\\]\nBy the identity\n\\[\nx^3+y^3+z^3-3xyz=(x+y+z)(x^2+y^2+z^2-xy-yz-zx)\n\\]\nand $x+y+z=0$ we get $x^3+y^3+z^3=3xyz$. Hence\n\\[\nA=-\\dfrac{3xyz}{xyz}=\\boxed{-3}\n\\]\nfor all pairwise distinct $a,b,c$. (For example $a=0$, $b=1$, $c=2$ gives $\\dfrac{1}{2}-4+\\dfrac{1}{2}=-3$.)",
+  "tags": [
+   "Algebraic expressions and identities",
+   "Substitution",
+   "Factoring"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2015,
+   "division": "Grade 8",
+   "paper": null,
+   "round": null,
+   "question_number": "2"
+  },
+  "note": "The condition that a, b, c are pairwise distinct (needed for A to be defined) is stated; the constant value -3 is asked for. Verified symbolically."
+ },
+ {
+  "topic_id": "1715917",
+  "part": 1,
+  "question": "Let $n$ be a positive integer, $a=2^n\\cdot7^{n+1}+11$ and $b=2^{n+1}\\cdot7^n+3$.\n\\begin{enumerate}\n\\item[(a)] Prove that the fraction $\\dfrac {a}{b}$ is in lowest terms.\n\\item[(b)] Prove that $a+b-7$ is not a perfect square for any positive integer $n$.\n\\end{enumerate}",
+  "solution": "Write $t=14^n=2^n7^n$. Then $a=7t+11$ and $b=2t+3$.\n\n\\textbf{(a)} We have\n\\[\n2a-7b=(14t+22)-(14t+21)=1 .\n\\]\nAny common divisor of $a$ and $b$ divides $2a-7b=1$, so $\\gcd(a,b)=1$ and $\\dfrac {a}{b}$ is in lowest terms.\n\n\\textbf{(b)} Here $a+b-7=9t+7=9\\cdot14^n+7$.\n\\begin{itemize}\n\\item For $n=1$: $9\\cdot14+7=133$, which lies strictly between $11^2=121$ and $12^2=144$.\n\\item For $n\\ge2$: $14^n$ is divisible by $7^2=49$, so $9\\cdot14^n+7\\equiv7\\pmod{49}$. The number is divisible by $7$ but not by $49$. A perfect square divisible by the prime $7$ is divisible by $49$, so it is not a square.\n\\end{itemize}\nHence $a+b-7$ is never a perfect square. $\\blacksquare$",
+  "tags": [
+   "HCF and LCM",
+   "Divisibility",
+   "Perfect squares",
+   "Remainders and congruences"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2015,
+   "division": "Grade 8",
+   "paper": null,
+   "round": null,
+   "question_number": "4"
+  },
+  "note": "Both parts kept in one record. Checked numerically for n up to 60."
+ },
+ {
+  "topic_id": "1715915",
+  "part": 1,
+  "question": "Let $D$ be the midpoint of side $BC$ of triangle $ABC$. Points $E$ and $F$ lie on sides $AB$ and $AC$ respectively (not at the vertices), such that $\\angle EDF=90^\\circ$. Prove that $BE+CF>EF$.",
+  "solution": "Let $E'$ be the reflection of $E$ in $D$, so that $D$ is the midpoint of $EE'$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\npair A=(1.5,4),B=(0,0),C=(6,0),D=(B+C)/2;\npair Ep=B+0.5*(A-B);\npair F=extension(D,D+rotate(90)*(Ep-D),A,C);\npair Ep2=2*D-Ep;\nvoid ra(pair P,pair U,pair V,real s){draw(P+s*unit(U-P)--P+s*unit(U-P)+s*unit(V-P)--P+s*unit(V-P),linewidth(0.5));}\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(Ep--D--F,linewidth(0.8));draw(Ep--F,linewidth(0.8));\ndraw(D--Ep2,blue+dashed);draw(C--Ep2,blue+dashed);draw(F--Ep2,blue+dashed);\nra(D,Ep,F,0.3);\ndot(D);dot(Ep);dot(F);dot(Ep2,blue);\nlabel(\"$A$\",A,N);label(\"$B$\",B,SW);label(\"$C$\",C,E);label(\"$D$\",D,dir(-100));\nlabel(\"$E$\",Ep,W);label(\"$F$\",F,NE);label(\"$E'$\",Ep2,SE,blue);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n\\textbf{$CE'=BE$.} The segments $BC$ and $EE'$ bisect each other at $D$, so $EBE'C$ is a parallelogram (or, directly, triangles $DBE$ and $DCE'$ are congruent by SAS with the vertical angles at $D$). Hence $CE'=BE$.\n\n\\textbf{$FE'=FE$.} Since $\\angle EDF=90^\\circ$ and $D$ is the midpoint of $EE'$, the line $DF$ is the perpendicular bisector of $EE'$, so $FE'=FE$.\n\n\\textbf{Triangle inequality.} In triangle $FCE'$,\n\\[\nCF+CE'\\ge FE',\\qquad\\text{that is,}\\qquad CF+BE\\ge EF ,\n\\]\nwith equality only if $C$ lies on segment $FE'$. That would put $E'$ on line $AC$. But $CE'\\parallel BE$, i.e.\\ $CE'$ is parallel to $AB$, and the line through $C$ parallel to $AB$ meets line $AC$ only at $C$; so $E'=C$ and $E=B$, which is excluded. Therefore $BE+CF>EF$. $\\blacksquare$",
+  "tags": [
+   "Triangles",
+   "Triangle inequality",
+   "Reflections",
+   "Midpoints",
+   "Perpendicular bisectors",
+   "Parallelograms"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2015,
+   "division": "Grade 8",
+   "paper": null,
+   "round": null,
+   "question_number": "3"
+  },
+  "note": "E and F are taken strictly inside the sides (if E = B the inequality becomes an equality). Checked numerically on random configurations."
+ },
+ {
+  "topic_id": "1715908",
+  "part": 1,
+  "question": "In quadrilateral $ABCD$ the angles at $A$ and $C$ are right angles, $AB=AD$, and $BC+CD=10$. Find the area of $ABCD$.",
+  "solution": "Let $AB=AD=a$, $BC=x$, $CD=y$, so $x+y=10$. The diagonal $BD$ is the hypotenuse of both right triangles $BAD$ and $BCD$:\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5.5cm);\ndefaultpen(fontsize(10pt));\nreal r=sqrt(58)/2;\npair B=(-r,0),D=(r,0),A=(0,r);\nreal x=10/r; pair C=(x,-sqrt(r^2-x^2));\nvoid ra(pair P,pair U,pair V,real s){draw(P+s*unit(U-P)--P+s*unit(U-P)+s*unit(V-P)--P+s*unit(V-P),linewidth(0.5));}\ndraw(A--B--C--D--cycle,linewidth(0.9));\ndraw(B--D,dashed+gray);\nra(A,B,D,0.45);ra(C,B,D,0.45);\n// equal-length ticks on AB and AD\npair m1=(A+B)/2,m2=(A+D)/2;\ndraw(m1+0.22*unit(rotate(90)*(B-A))--m1-0.22*unit(rotate(90)*(B-A)));\ndraw(m2+0.22*unit(rotate(90)*(D-A))--m2-0.22*unit(rotate(90)*(D-A)));\nlabel(\"$A$\",A,N);label(\"$B$\",B,W);label(\"$C$\",C,S);label(\"$D$\",D,E);\nlabel(\"$a$\",m1+0.6*unit(rotate(-90)*(B-A)));label(\"$a$\",m2+0.6*unit(rotate(90)*(D-A)));\nlabel(\"$x$\",(B+C)/2,SW);label(\"$y$\",(C+D)/2,SE);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n\\[\nBD^2=a^2+a^2=2a^2\\qquad\\text{and}\\qquad BD^2=x^2+y^2 .\n\\]\nThe area is the sum of the areas of the two right triangles:\n\\[\n[ABCD]=\\dfrac{a^2}{2}+\\dfrac{xy}{2}=\\dfrac{2a^2+2xy}{4}=\\dfrac{x^2+y^2+2xy}{4}=\\dfrac{(x+y)^2}{4}=\\dfrac{100}{4}=\\boxed{25}.\n\\]\n(The answer does not depend on how the sum $10$ is split between $x$ and $y$; the figure shows $x=7$, $y=3$.)",
+  "tags": [
+   "Quadrilaterals and polygons",
+   "Right triangles",
+   "Pythagorean theorem",
+   "Lengths, perimeter, and area",
+   "Isosceles triangles"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2015,
+   "division": "Grade 7",
+   "paper": null,
+   "round": null,
+   "question_number": "3"
+  },
+  "note": "\"Two opposite angles are right; two sides which form a right angle are equal\" is read as: the angles at A and C are right, the sides AB = AD at the right angle A are equal, and BC + CD = 10. Checked numerically for several splits."
+ },
+ {
+  "topic_id": "1715903",
+  "part": 1,
+  "question": "In how many ways can you pay exactly $\\$2015$ using bills of $\\$1$, $\\$10$, $\\$100$ and $\\$200$ (any number of each kind, including none)?",
+  "solution": "Let the payment use $p$ bills of $\\$200$ and $q$ bills of $\\$100$, and put $m=2p+q$, so these bills make $100m$ dollars with $0\\le m\\le20$. For a given $m$ there are $\\left\\lfloor\\dfrac {m}{2}\\right\\rfloor+1$ pairs $(p,q)$ (namely $p=0,1,\\dots,\\lfloor\\dfrac {m}{2}\\rfloor$).\n\nThe remaining $R=2015-100m$ dollars are paid with tens and ones; the number of tens can be any of $0,1,\\dots,\\left\\lfloor\\dfrac {R}{10}\\right\\rfloor=201-10m$, and the ones make up the rest, so there are $202-10m$ ways. Hence the total is\n\\[\n\\sum_{m=0}^{20}\\left(\\left\\lfloor\\dfrac {m}{2}\\right\\rfloor+1\\right)(202-10m).\n\\]\nGrouping $m=2k$ and $m=2k+1$ (both with $\\lfloor\\dfrac {m}{2}\\rfloor+1=k+1$) for $k=0,\\dots,9$, plus $m=20$:\n\\[\n\\sum_{k=0}^{9}(k+1)\\bigl[(202-20k)+(192-20k)\\bigr]+11\\cdot2=\\sum_{k=0}^{9}(k+1)(394-40k)+22 .\n\\]\nWith $j=k+1$ running from $1$ to $10$, $(k+1)(394-40k)=j(434-40j)=434j-40j^2$, so the sum is\n\\[\n434\\cdot55-40\\cdot385+22=23870-15400+22=\\boxed{8492}.\n\\]",
+  "tags": [
+   "Money and currency",
+   "Systematic counting",
+   "Linear Diophantine equations",
+   "Summation"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2015,
+   "division": "Grade 6",
+   "paper": null,
+   "round": null,
+   "question_number": "5"
+  },
+  "note": "Count checked by direct enumeration."
+ },
+ {
+  "topic_id": "1715912",
+  "part": 1,
+  "question": "A father is $42$ years old and his son is $14$. In how many years will the father be twice as old as his son?",
+  "solution": "In $x$ years the father will be $42+x$ and the son $14+x$. We need $42+x=2(14+x)=28+2x$, so $x=\\boxed{14}$. Then the father is $56$ and the son $28$.",
+  "tags": [
+   "Age problems",
+   "Linear equations"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2015,
+   "division": "Grade 8",
+   "paper": null,
+   "round": null,
+   "question_number": "1"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1715911",
+  "part": 1,
+  "question": "There are $2015$ numbers written on a board. If every number is replaced by the sum of the other $2014$ numbers, the board shows the same $2015$ numbers as before (possibly in a different order). Prove that the product of the $2015$ numbers is $0$.",
+  "solution": "Let the numbers be $a_1,\\dots,a_{2015}$ and $S=a_1+\\dots+a_{2015}$. The new numbers are $S-a_1,\\dots,S-a_{2015}$, and they form the same collection (with multiplicities) as the old ones.\n\n\\textbf{The sum is $0$.} The two collections have the same sum:\n\\[\n\\sum_{i}(S-a_i)=2015S-S=2014S=S ,\n\\]\nso $2013S=0$ and $S=0$.\n\n\\textbf{The collection is symmetric.} With $S=0$ the new numbers are $-a_1,\\dots,-a_{2015}$. So the collection is unchanged when every number is replaced by its negative: for every $x\\ne0$ the number $x$ occurs exactly as often as $-x$.\n\n\\textbf{A zero exists.} Pair each occurrence of a nonzero $x>0$ with an occurrence of $-x$. This pairs up all the nonzero numbers, so their count is even. Since $2015$ is odd, at least one of the numbers is $0$, and the product of all the numbers is $0$. $\\blacksquare$",
+  "tags": [
+   "Pairing and grouping",
+   "Parity",
+   "Summation"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2015,
+   "division": "Grade 7",
+   "paper": null,
+   "round": null,
+   "question_number": "5"
+  },
+  "note": "\"We get the same 2015 numbers\" is read as the same multiset of numbers."
+ },
+ {
+  "topic_id": "1715907",
+  "part": 1,
+  "question": "A seller reduced the price of a shirt by $20\\%$ and then raised the new price by $10\\%$. Should he now reduce or raise the price, and by what percent of the current price, so that the final price is $10\\%$ lower than the original price?",
+  "solution": "Let the original price be $P$. After the two changes the price is\n\\[\nP\\cdot0.8\\cdot1.1=0.88P .\n\\]\nThe target is $0.9P$, which is higher, so the seller must \\emph{raise} the price, by\n\\[\n\\dfrac{0.9P-0.88P}{0.88P}=\\dfrac{0.02}{0.88}=\\dfrac{1}{44}=\\dfrac{100}{44}\\%=\\boxed{2\\dfrac{3}{11}\\%}\\approx2.27\\% .\n\\]",
+  "tags": [
+   "Percentages"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2015,
+   "division": "Grade 7",
+   "paper": null,
+   "round": null,
+   "question_number": "2"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1715031",
+  "part": 1,
+  "question": "There are three boys and three girls. Every boy knows exactly two of the girls, and every girl knows exactly two of the boys. Prove that they can be split into three boy-girl pairs such that in every pair the two people know each other.",
+  "solution": "Each boy does \\emph{not} know exactly one girl, and each girl does not know exactly one boy. So ``does not know'' pairs each boy with exactly one girl and each girl with exactly one boy: it is a one-to-one correspondence. Name the boys $B_1,B_2,B_3$ and let $G_i$ be the girl whom $B_i$ does not know; then $G_1,G_2,G_3$ are the three girls, each appearing once, and $B_i$ knows every girl except $G_i$.\n\nNow form the pairs\n\\[\n(B_1,G_2),\\qquad(B_2,G_3),\\qquad(B_3,G_1).\n\\]\nEvery boy and every girl appears exactly once, and in each pair $(B_i,G_j)$ we have $j\\ne i$, so $B_i$ knows $G_j$. This is the required pairing. $\\blacksquare$\n\n(In fact the ``knows'' relation is a $6$-cycle $B_1G_2B_3G_1B_2G_3B_1$, which has two such pairings.)",
+  "tags": [
+   "Graph theory",
+   "Logical deduction",
+   "Construction"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2016,
+   "division": "Grade 6",
+   "paper": null,
+   "round": null,
+   "question_number": "3"
+  },
+  "note": "Knowing is assumed mutual (if a boy knows a girl, she knows him)."
+ },
+ {
+  "topic_id": "1715644",
+  "part": 1,
+  "question": "Without a calculator or paper, estimate $\\pi^7$ to within $5\\%$ of its true value. Justify that your estimate is accurate enough.",
+  "solution": "Use $\\pi^2\\approx9.87$ (from $\\pi\\approx3.1416$), which is close to $10$:\n\\[\n\\pi^7=\\pi\\cdot\\left(\\pi^2\\right)^3\\approx\\pi\\cdot10^3=1000\\pi\\approx3142 .\n\\]\n\\textbf{How good is this?} $\\pi^7=1000\\pi\\left(\\dfrac{\\pi^2}{10}\\right)^3$ and $0.986<\\dfrac{\\pi^2}{10}<0.988$, so $\\left(\\dfrac{\\pi^2}{10}\\right)^3$ lies between $0.986^3>1-3(0.014)=0.958$ and $0.988^3<1$. Hence $1000\\pi$ overestimates $\\pi^7$ by less than about $4.4\\%$, which is within $5\\%$. A better estimate uses $0.987^3\\approx1-0.039=0.961$:\n\\[\n\\pi^7\\approx3142\\cdot0.961\\approx\\boxed{3020}.\n\\]\n(The true value is $\\pi^7=3020.29\\ldots$; the quick estimate $1000\\pi\\approx3142$ is $4.0\\%$ too large.)\n\nAnother mental route: $\\pi=3(1.0472)$, so $\\pi^7=2187\\cdot1.0472^7$ and $1.0472^7\\approx1+7(0.0472)+21(0.0472)^2+35(0.0472)^3\\approx1.381$, giving about $3020$.",
+  "tags": [
+   "Estimation",
+   "Exponents",
+   "Binomial theorem"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Number-sense question: the post asks how to approximate pi^7 within 5% mentally; the record asks for such an estimate with justification. Any value between about 2870 and 3170 is acceptable."
+ },
+ {
+  "topic_id": "1715047",
+  "part": 1,
+  "question": "Prove that when a prime number is divided by $30$, the remainder is never a composite number.",
+  "solution": "Let $p$ be a prime and $p=30q+r$ with $0\\le r\\le29$. Suppose $r$ is composite. A composite number $r\\le29$ has a prime factor $s$ with $s^2\\le r<49$, so $s\\in\\{2,3,5\\}$; in particular $s\\mid30$. Then $s$ divides $30q+r=p$. Since $p$ is prime, $p=s\\le5$. But a prime $p\\le5<30$ leaves remainder $r=p$ on division by $30$, and $p$ is prime, not composite. This contradiction shows that $r$ is not composite: the remainder is $1$ or a prime (for example $31\\to1$, $37\\to7$, $59\\to29$). $\\blacksquare$",
+  "tags": [
+   "Prime numbers",
+   "Remainders and congruences",
+   "Divisibility",
+   "Proof by contradiction"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "Junior Regional Olympiad FBH",
+   "year": 2016,
+   "division": "Grade 7",
+   "paper": null,
+   "round": null,
+   "question_number": "3"
+  },
+  "note": "Repeat of an earlier record (aliased). Checked for all primes below 10^6."
+ },
+ {
+  "topic_id": "1715602",
+  "part": 1,
+  "question": "If $f(x)=4x^2-1$, what is the value of\n\\[\n\\dfrac{1}{f(1)}+\\dfrac{1}{f(2)}+\\dfrac{1}{f(3)}+\\cdots+\\dfrac{1}{f(84)}\\,?\n\\]",
+  "solution": "Since $4x^2-1=(2x-1)(2x+1)$,\n\\[\n\\dfrac{1}{f(x)}=\\dfrac{1}{(2x-1)(2x+1)}=\\dfrac{1}{2}\\left(\\dfrac{1}{2x-1}-\\dfrac{1}{2x+1}\\right).\n\\]\nThe sum telescopes:\n\\[\n\\sum_{x=1}^{84}\\dfrac{1}{f(x)}=\\dfrac{1}{2}\\left(\\dfrac{1}{1}-\\dfrac{1}{3}+\\dfrac{1}{3}-\\dfrac{1}{5}+\\cdots+\\dfrac{1}{167}-\\dfrac{1}{169}\\right)=\\dfrac{1}{2}\\left(1-\\dfrac{1}{169}\\right)=\\boxed{\\dfrac{84}{169}}.\n\\]",
+  "tags": [
+   "Telescoping sums",
+   "Partial fractions",
+   "Summation",
+   "Difference of squares"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1713845",
+  "part": 1,
+  "question": "$x$ varies directly with $z^2$. When $z$ doubles, by what factor does $x$ change? Does $x$ increase or decrease?",
+  "solution": "Direct variation means $x=kz^2$ for a constant $k$. Replacing $z$ by $2z$ gives\n\\[\nk(2z)^2=4kz^2=4x .\n\\]\nSo $x$ is multiplied by $\\boxed{4}$: it \\emph{increases} (for $k\\ne0$), it does not decrease. (Saying that $x$ ``decreases by a factor of $4$'' would be wrong; it is the quantity $\\dfrac{1}{x}$ that is divided by $4$.)",
+  "tags": [
+   "Ratios, proportions, and variation"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The original asks \"by what factor does x decrease?\" (the poster says \"decrease\" is not a typo, i.e. a trick question); the record asks for the factor and the direction."
+ },
+ {
+  "topic_id": "1713845",
+  "part": 2,
+  "question": "The kinetic energy $K$ of a body of mass $m$ moving with speed $v$ is $K=\\dfrac{mv^2}{2}$. Describe this relation in words as a variation, and state what happens to $K$ when (a) $v$ is doubled with $m$ fixed, (b) $m$ is doubled with $v$ fixed.",
+  "solution": "$K$ varies jointly as the mass $m$ and the square of the speed $v$, with constant of variation $\\dfrac{1}{2}$: $K$ is directly proportional to $m$ when $v$ is fixed, and directly proportional to $v^2$ when $m$ is fixed.\n\n(a) Doubling $v$ multiplies $v^2$ by $4$, so $K$ is multiplied by $\\boxed{4}$.\n\n(b) Doubling $m$ multiplies $K$ by $\\boxed{2}$.",
+  "tags": [
+   "Ratios, proportions, and variation"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks to \"describe this relation in words\"; two concrete follow-up questions were added so the record has checkable answers."
+ },
+ {
+  "topic_id": "1713845",
+  "part": 3,
+  "question": "The variable $y$ varies directly with $x$, and $z$ varies inversely with $y$. When $x=3$, we have $y=18$ and $z=5$. What is $y+z$ when $x=15$?",
+  "solution": "Write $y=kx$ and $z=\\dfrac{c}{y}$. From $x=3$, $y=18$: $k=6$. From $y=18$, $z=5$: $c=90$. When $x=15$: $y=6\\cdot15=90$ and $z=\\dfrac{90}{90}=1$, so $y+z=\\boxed{91}$.",
+  "tags": [
+   "Ratios, proportions, and variation"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "From a MathCounts team selection test (as stated in the post)."
+ },
+ {
+  "topic_id": "1715429",
+  "part": 1,
+  "question": "A triangular prism has height $1$, and its two bases are isosceles triangles with side lengths $10,10,6$. Let $T$ be the apex (the vertex between the two sides of length $10$) of one base, and let $M'$ be the midpoint of the side of length $6$ of the \\emph{other} base. Find the distance $TM'$.",
+  "solution": "Let $M$ be the midpoint of the side of length $6$ in the base containing $T$; then $M'$ is the image of $M$ in the other base, and $MM'=1$ is a lateral edge direction perpendicular to the base.\n\nIn the isosceles base, the median $TM$ to the side of length $6$ is also an altitude, so\n\\[\nTM=\\sqrt{10^2-3^2}=\\sqrt{91}.\n\\]\nSince $MM'$ is perpendicular to the plane of the base, it is perpendicular to $TM$, and triangle $TMM'$ has a right angle at $M$:\n\\[\nTM'=\\sqrt{TM^2+MM'^2}=\\sqrt{91+1}=\\sqrt{92}=\\boxed{2\\sqrt{23}}.\n\\]\nThe sketch is not to scale (the height $1$ is drawn larger so the back face is visible).\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5cm);\ndefaultpen(fontsize(10pt));\npair d=(3.6,1.4); // drawn depth for the height 1 (not to scale)\nreal h=sqrt(91);\npair B1=(-3,0),B2=(3,0),T=(0,h),M=(0,0);\npair B1b=B1+d,B2b=B2+d,Tb=T+d,Mb=M+d;\ndraw(B1b--B2b,dashed+gray);draw(B1b--B1,dashed+gray);draw(B1b--Tb,dashed+gray);\ndraw(B1--B2--T--cycle,linewidth(0.9));\ndraw(T--Tb--B2b--B2,linewidth(0.9));\ndraw(T--M,blue+dashed);draw(M--Mb,blue+dashed);\ndraw(T--Mb,red+linewidth(0.9));\nvoid ra(pair P,pair U,pair V,real s){draw(P+s*unit(U-P)--P+s*unit(U-P)+s*unit(V-P)--P+s*unit(V-P),linewidth(0.5));}\nra(M,T,B2,0.4);\ndot(T);dot(Mb,red);\nlabel(\"$T$\",T,N);label(\"$M$\",M,S);label(\"$M'$\",Mb,NE);\nlabel(\"$3$\",(B1+M)/2,S);label(\"$3$\",(M+B2)/2,S);\nlabel(\"$10$\",(B1+T)/2,W);\nlabel(\"$1$\",(B2+B2b)/2,SE);\nlabel(\"$\\sqrt{91}$\",(-1.1,2.1),blue);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}",
+  "tags": [
+   "Solid geometry",
+   "Pythagorean theorem",
+   "Isosceles triangles",
+   "Right triangles"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks for the distance from \"the upper tip of the prism\" to the point dividing \"the lower back edge\" (of length 6) into two equal parts; read as the apex of one base and the midpoint of the side of length 6 of the other base, with the prism a right prism of height 1."
+ },
+ {
+  "topic_id": "1715432",
+  "part": 1,
+  "question": "There are $12$ students at a party, $5$ of whom are girls and $7$ boys. In how many ways can the $12$ students be arranged in a row if\n\\begin{enumerate}\n\\item[(i)] the $5$ girls must be together;\n\\item[(ii)] no two girls are adjacent;\n\\item[(iii)] between two particular boys $A$ and $B$ there are no boys but exactly $3$ girls?\n\\end{enumerate}",
+  "solution": "\\textbf{(i)} Glue the girls into one block. The block and the $7$ boys can be arranged in $8!$ ways, and the girls inside the block in $5!$ ways:\n\\[\n8!\\cdot5!=40320\\cdot120=\\boxed{4838400}.\n\\]\n\n\\textbf{(ii)} Arrange the $7$ boys in $7!$ ways. They create $8$ gaps (including both ends); the girls go into $5$ different gaps, in order, in $8\\cdot7\\cdot6\\cdot5\\cdot4=6720$ ways:\n\\[\n7!\\cdot6720=5040\\cdot6720=\\boxed{33868800}.\n\\]\n\n\\textbf{(iii)} The block is $A$, three girls, $B$ (or $B$, three girls, $A$): $2$ orders of $A,B$, and $5\\cdot4\\cdot3=60$ ordered choices of the three girls. Treat the block of $5$ people as one unit; with the remaining $7$ students ($5$ boys and $2$ girls) there are $8$ units, arranged in $8!$ ways:\n\\[\n2\\cdot60\\cdot8!=120\\cdot40320=\\boxed{4838400}.\n\\]",
+  "tags": [
+   "Permutations",
+   "Arrangements with restrictions",
+   "Multiplication principle"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "All three counts checked by direct computation over gender patterns and position pairs."
+ }
+]

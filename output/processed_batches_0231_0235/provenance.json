@@ -1,0 +1,3026 @@
+[
+  {
+    "id": "aops-topic-1734046-q01",
+    "topic_id": "1734046",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1734046_amc_8_prep_problem_2",
+    "title": "AMC 8 Prep Problem 2",
+    "editorial_note": "Answer confirmed by computing every tower modulo 10 with the generalised Euler theorem."
+  },
+  {
+    "id": "aops-topic-1734624-q01",
+    "topic_id": "1734624",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1734624_2019_mathcounts_handbook_warmup_3_8_and_10",
+    "title": "2019 MATHCOUNTS Handbook Warm-Up 3 #8 and #10",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1734624-q02",
+    "topic_id": "1734624",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1734624_2019_mathcounts_handbook_warmup_3_8_and_10",
+    "title": "2019 MATHCOUNTS Handbook Warm-Up 3 #8 and #10",
+    "editorial_note": "The poster thought the answer was 14; that is the number of diagonals from one vertex. Corrected to 119."
+  },
+  {
+    "id": "aops-topic-1734398-q01",
+    "topic_id": "1734398",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1734398_degenerate_triangle",
+    "title": "Degenerate Triangle",
+    "editorial_note": "The post asks whether the area of a degenerate triangle is 0 or undefined; turned into a computation with Heron's formula and base times height (answer 0)."
+  },
+  {
+    "id": "aops-topic-1734291-q01",
+    "topic_id": "1734291",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1734291_base_number_problem",
+    "title": "Base number problem",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1444972-q01",
+    "topic_id": "1444972",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1444972_ending_with_2011",
+    "title": "k Ending with 2011",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1733869-q01",
+    "topic_id": "1733869",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1733869_random_cube_probabilities",
+    "title": "Random cube probabilities",
+    "editorial_note": "Answer checked by testing every pair of disjoint vertex pairs of a unit cube for intersection."
+  },
+  {
+    "id": "aops-topic-1734077-q01",
+    "topic_id": "1734077",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1734077_counting_triangles",
+    "title": "Counting Triangles",
+    "editorial_note": "The poster could not attach the figure and described it: a square with a square on each side, every square split into four triangles by its diagonals; the figure is rebuilt from this description. The count was confirmed by a computer enumeration of all triples of points whose connecting segments lie along drawn lines."
+  },
+  {
+    "id": "aops-topic-1734047-q01",
+    "topic_id": "1734047",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1734047_2014_mathcounts_chapter_sprint_round_28",
+    "title": "2014 MathCounts Chapter Sprint Round #28",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1734032-q01",
+    "topic_id": "1734032",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1734032_amc_8_prep_problem_1",
+    "title": "AMC 8 Prep Problem 1",
+    "editorial_note": "Read as: the first year in which two adjacent digits on the board differ by at least 4; this already happens in the second year."
+  },
+  {
+    "id": "aops-topic-1607327-q01",
+    "topic_id": "1607327",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1607327_sticks_and_stones_and_balls_and_stars_and_bars_and_bowls_and_cups_and_dividers",
+    "title": "Sticks and Stones and Balls and Stars and Bars and Bowls and Cups and Dividers",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1733566-q01",
+    "topic_id": "1733566",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1733566_fun_quick_problem",
+    "title": "Fun Quick Problem",
+    "editorial_note": "The post claims a single best position n; in fact every position has expected payoff 1 dollar. The record asks to show this and, from the post's extensions, handles a fee paid only by those who play (then the last position is best). Checked by exact computation."
+  },
+  {
+    "id": "aops-topic-1076780-q01",
+    "topic_id": "1076780",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1076780_max_and_min",
+    "title": "Max and Min",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1732030-q01",
+    "topic_id": "1732030",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1732030_paradox_marathon",
+    "title": "Paradox Marathon",
+    "editorial_note": "Paradox 1 of a paradox marathon; posed as \"find the error\"."
+  },
+  {
+    "id": "aops-topic-1701662-q01",
+    "topic_id": "1701662",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1701662_interesting_question",
+    "title": "Interesting Question",
+    "editorial_note": "\"Share equally with his two friends\" read as dividing the stones equally among three people. Checked over all 3^10 choices."
+  },
+  {
+    "id": "aops-topic-1711870-q01",
+    "topic_id": "1711870",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1711870_math_problems",
+    "title": "k Math Problems",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1731674-q01",
+    "topic_id": "1731674",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1731674_simple_math_problem",
+    "title": "simple math problem?",
+    "editorial_note": "Checked by listing all 3a + 5b."
+  },
+  {
+    "id": "aops-topic-1732087-q01",
+    "topic_id": "1732087",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1732087_a_few_geo_questions",
+    "title": "A few geo questions",
+    "editorial_note": "\"The distance between the two circles\" is read as the distance between their centres. The post asks for \"the\" radius, but two configurations fit the data (centres on opposite sides of the chord or on the same side); the record asks for all possible values and gives both."
+  },
+  {
+    "id": "aops-topic-1732087-q02",
+    "topic_id": "1732087",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1732087_a_few_geo_questions",
+    "title": "A few geo questions",
+    "editorial_note": "The figure is drawn from the computed sides 4, 2, 7, 1, 5, 4 and closes up exactly."
+  },
+  {
+    "id": "aops-topic-1732678-q01",
+    "topic_id": "1732678",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1732678_number_of_digits",
+    "title": "Number of Digits",
+    "editorial_note": "Checked by computing both numbers exactly."
+  },
+  {
+    "id": "aops-topic-1543814-q01",
+    "topic_id": "1543814",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1543814_nice_inequality",
+    "title": "nice inequality",
+    "editorial_note": "Checked numerically on random triples with a + b + c = 3."
+  },
+  {
+    "id": "aops-topic-1732887-q01",
+    "topic_id": "1732887",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1732887_bad_math_problem_maryland_mathalon_2018",
+    "title": "Bad Math Problem Maryland Mathalon 2018",
+    "editorial_note": "The poster objects that the question (12th term of 2, 9, 28, ...) is ambiguous. The record proves this with a one-parameter family of cubics and keeps the intended rule n^3 + 1 (1729) as part (a)."
+  },
+  {
+    "id": "aops-topic-1627894-q01",
+    "topic_id": "1627894",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1627894_fun_problems_",
+    "title": "k Fun Problems :)",
+    "editorial_note": "The post is a \"use one stroke to make it true\" puzzle with no stated rules; the record asks for the intended mathematical fact (x + 1 = 1/x for x = (sqrt5 - 1)/2)."
+  },
+  {
+    "id": "aops-topic-526580-q01",
+    "topic_id": "526580",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h526580_how_many_ways_to_score_21_to_17_in_american_football",
+    "title": "k How many ways to score 21 to 17 in American Football",
+    "editorial_note": "The post does not say whether order matters or whether the two teams are counted together; the record counts unordered combinations of scoring plays (2, 3, 6, 7) for each team and multiplies. Checked by enumeration."
+  },
+  {
+    "id": "aops-topic-1732939-q01",
+    "topic_id": "1732939",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1732939_find_the_cube_of_n",
+    "title": "Find the cube of N",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1732841-q01",
+    "topic_id": "1732841",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1732841_need_help",
+    "title": "Need help",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1732752-q01",
+    "topic_id": "1732752",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1732752_coloring_a_heptagon",
+    "title": "Coloring a Heptagon",
+    "editorial_note": "\"Golden heptagon\" read as a regular heptagon."
+  },
+  {
+    "id": "aops-topic-1732647-q01",
+    "topic_id": "1732647",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1732647_divisibility",
+    "title": "Divisibility",
+    "editorial_note": "\"Come up with a way to find the divisibility of any number\" turned into part (b): the general rule for any m coprime to 10 (with a remark on other m)."
+  },
+  {
+    "id": "aops-topic-1731770-q01",
+    "topic_id": "1731770",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1731770_hard_questions",
+    "title": "Hard Questions",
+    "editorial_note": "Checked by verifying the construction."
+  },
+  {
+    "id": "aops-topic-1732639-q01",
+    "topic_id": "1732639",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1732639_a_problem",
+    "title": "A problem",
+    "editorial_note": "The post's wording \"difference by the positive difference\" is read as dividing by it."
+  },
+  {
+    "id": "aops-topic-1732287-q01",
+    "topic_id": "1732287",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1732287_combinatorics",
+    "title": "Combinatorics",
+    "editorial_note": "Checked by enumerating all 3^8 colourings."
+  },
+  {
+    "id": "aops-topic-1147571-q01",
+    "topic_id": "1147571",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1147571_basic_stars_and_bars",
+    "title": "Basic Stars And Bars",
+    "editorial_note": "The post says \"ordered pairs\" for a quadruple, and the poster's answer 969 = C(19,3) is wrong (later acknowledged); the correct count is 560."
+  },
+  {
+    "id": "aops-topic-1731721-q01",
+    "topic_id": "1731721",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1731721_2006_mathcounts_national_sprint_round_21",
+    "title": "2006 MATHCOUNTS National Sprint Round #21",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1731866-q01",
+    "topic_id": "1731866",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1731866_variable_expression_problem__whats_the_error_n28",
+    "title": "Variable Expression Problem - What's the error n.28",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1731843-q02",
+    "topic_id": "1731843",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1731843_mathcounts_warmup_problem_help",
+    "title": "Mathcounts warmup problem help!",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1731843-q03",
+    "topic_id": "1731843",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1731843_mathcounts_warmup_problem_help",
+    "title": "Mathcounts warmup problem help!",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-336615-q01",
+    "topic_id": "336615",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h336615_amc_8_2006_problem_22",
+    "title": "AMC 8 2006 Problem 22",
+    "editorial_note": "The figure (a three-row triangular array of cells) is described in words."
+  },
+  {
+    "id": "aops-topic-1731288-q01",
+    "topic_id": "1731288",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1731288_combinations_with_repetition",
+    "title": "combinations with repetition",
+    "editorial_note": "The post asks whether 5^2 works for \"combinations of 2 flavours from 5\"; the record fixes the reading (repetition allowed, order irrelevant: 15) and explains 25 and 10."
+  },
+  {
+    "id": "aops-topic-1657695-q01",
+    "topic_id": "1657695",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1657695-q02",
+    "topic_id": "1657695",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1657695-q03",
+    "topic_id": "1657695",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1657695-q04",
+    "topic_id": "1657695",
+    "part": 4,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1657695-q05",
+    "topic_id": "1657695",
+    "part": 5,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": "The original says f has an inverse g with g(0) = 3. But f(x) = (x - 3)(2x - 9)^2 has f'(x) = (2x - 9)(6x - 21), so f is not one-to-one and has no inverse; the condition is replaced by its intended content f(3) = 0."
+  },
+  {
+    "id": "aops-topic-1657695-q06",
+    "topic_id": "1657695",
+    "part": 6,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": "As posted, p is determined only up to sign (sum of coefficients 23 or -23); the condition p(0) < 0 is added to fix the intended answer 23."
+  },
+  {
+    "id": "aops-topic-1657695-q07",
+    "topic_id": "1657695",
+    "part": 7,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": "\"Three integers chosen from [-1,1]\" read as three independent uniform choices from {-1,0,1} (27 ordered outcomes). Checked by enumeration."
+  },
+  {
+    "id": "aops-topic-1657695-q08",
+    "topic_id": "1657695",
+    "part": 8,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1657695-q09",
+    "topic_id": "1657695",
+    "part": 9,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1657695-q10",
+    "topic_id": "1657695",
+    "part": 10,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": "Integer side lengths are assumed (otherwise there are infinitely many pairs); the volume is that of the closed box, base (x-4)(y-4) and height 2."
+  },
+  {
+    "id": "aops-topic-1657695-q11",
+    "topic_id": "1657695",
+    "part": 11,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": "Ill-posed as stated: the roots have sum -20, so they cannot all be side lengths (the problem title itself asks \"is this prism even possible?\"). The record asks for the formal value 1009/18 and for the proof that the prism does not exist."
+  },
+  {
+    "id": "aops-topic-1657695-q12",
+    "topic_id": "1657695",
+    "part": 12,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1657695-q13",
+    "topic_id": "1657695",
+    "part": 13,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": "The notation \"G(1) = P(x), G(2) = P(P(x)), ...\" is written as G_n(x); roots are counted with multiplicity."
+  },
+  {
+    "id": "aops-topic-1657695-q14",
+    "topic_id": "1657695",
+    "part": 14,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1657695-q15",
+    "topic_id": "1657695",
+    "part": 15,
+    "url": "https://artofproblemsolving.com/community/c3h1657695_2018_ms_mte_theme_round_all",
+    "title": "2018 MS MTE Theme Round (All)",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1731212-q01",
+    "topic_id": "1731212",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1731212_help_me_to_find_x__y__xy",
+    "title": "help me to find x + y + xy",
+    "editorial_note": "The post does not say that x and y are rational; without that, x + y + xy is not determined, so the condition is added (intended reading)."
+  },
+  {
+    "id": "aops-topic-1111533-q01",
+    "topic_id": "1111533",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1111533_fractions",
+    "title": "Fractions",
+    "editorial_note": "The post says \"solve for x\" but gives no equation, and its LaTeX has a \\frac with a missing argument; read as the continued fraction 1 - 1/(1 - 1/(1 - 1/(x-1))) to be simplified. Checked symbolically."
+  },
+  {
+    "id": "aops-topic-1730732-q01",
+    "topic_id": "1730732",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1730732_multiplication_where_letters_are_digits",
+    "title": "Multiplication where Letters are Digits",
+    "editorial_note": "Checked by trying all digit assignments; the solution is unique."
+  },
+  {
+    "id": "aops-topic-1730463-q01",
+    "topic_id": "1730463",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1730463_cow_problem_marathon",
+    "title": "k Cow problem marathon",
+    "editorial_note": "Problem 1 of a cow-problem marathon (only P1 is in the post)."
+  },
+  {
+    "id": "aops-topic-1730101-q01",
+    "topic_id": "1730101",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1730101_parabola",
+    "title": "Parabola",
+    "editorial_note": "The post asks in general what the equation of a tilted parabola is and whether there are several; turned into a concrete example and a proof that every parabola is a conic with B^2 = 4AC."
+  },
+  {
+    "id": "aops-topic-1730306-q01",
+    "topic_id": "1730306",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1730306_help_with_this_problem",
+    "title": "help with this problem",
+    "editorial_note": "Checked by enumerating all bracketings for up to 12 ones (n ones give n - 1 values)."
+  },
+  {
+    "id": "aops-topic-1729694-q01",
+    "topic_id": "1729694",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1729694_this_problem_is_ruining_my_life",
+    "title": "This Problem is ruining my life.",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1730054-q01",
+    "topic_id": "1730054",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1730054_standard_deviation_stuuff",
+    "title": "Standard Deviation StuUfF",
+    "editorial_note": "Population standard deviation is used (with the sample standard deviation, sum of squared deviations 16, the maximum would be 60 + 8/sqrt5, about 63.58). The answer 64 matches the post's key."
+  },
+  {
+    "id": "aops-topic-1729919-q01",
+    "topic_id": "1729919",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1729919_decimal_parts",
+    "title": "Decimal parts",
+    "editorial_note": "Checked with 50-digit arithmetic: the fractional part is 0.1110605555..."
+  },
+  {
+    "id": "aops-topic-1729780-q01",
+    "topic_id": "1729780",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1729780_very_ez_problem",
+    "title": "Very ez problem",
+    "editorial_note": "\"n in N\" read as positive integers (with n = 0 included the count would be 57). The post calls [x] the \"closest positive integer\"; read as the nearest integer."
+  },
+  {
+    "id": "aops-topic-1729473-q01",
+    "topic_id": "1729473",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1729473_need_help",
+    "title": "Need help",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1729478-q01",
+    "topic_id": "1729478",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1729478_find_it_for_me",
+    "title": "Find it for me",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1729495-q01",
+    "topic_id": "1729495",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1729495_counting_and_probability_math_problem",
+    "title": "Counting and probability Math Problem.",
+    "editorial_note": "\"Arrange the numbers 0-9 in groups of seven\" is ambiguous; the record asks for both ordered arrangements and unordered groups (digits not repeated)."
+  },
+  {
+    "id": "aops-topic-1728894-q01",
+    "topic_id": "1728894",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1728894_help_in_geometry",
+    "title": "Help in geometry",
+    "editorial_note": "The poster could not draw the figure; it is rebuilt from the text, with L and M read as the points of tangency (the usual reading; the large semicircle then has radius 10 and is not needed for LM)."
+  },
+  {
+    "id": "aops-topic-1726523-q01",
+    "topic_id": "1726523",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1726523_spooky_remainders_halloween_edition",
+    "title": "Spooky Remainders: Halloween Edition",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1729010-q01",
+    "topic_id": "1729010",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1729010_sum_of_digits",
+    "title": "Sum of digits",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1728999-q01",
+    "topic_id": "1728999",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1728999_2018th_post_problem",
+    "title": "2018th Post Problem",
+    "editorial_note": "The equation 12(Y - 2018) = Y has no integer solution; read as the year during which the count of completed months equals the year number (start at the beginning of 2018)."
+  },
+  {
+    "id": "aops-topic-1728477-q01",
+    "topic_id": "1728477",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1728477_nice_exercices",
+    "title": "Nice exercices",
+    "editorial_note": "The post (in mixed language: \"prove existe i,j\") is read with i different from j and n at least 2."
+  },
+  {
+    "id": "aops-topic-1727878-q01",
+    "topic_id": "1727878",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1727878_hellooooo",
+    "title": "Hellooooo",
+    "editorial_note": "The poster asks whether the question is wrong because mass points give EF:FD = 15:4; it is not (G is defined by F, not by concurrent cevians). Answer 17:7 checked with coordinates."
+  },
+  {
+    "id": "aops-topic-1728427-q01",
+    "topic_id": "1728427",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1728427_factorization",
+    "title": "Factorization",
+    "editorial_note": "The post asks how to factorise a^2 + b^2 + ab; it does not factor over the reals, so the record asks to prove this and to factor over C."
+  },
+  {
+    "id": "aops-topic-1727717-q02",
+    "topic_id": "1727717",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1727717_aops_edition_problems",
+    "title": "AoPS edition problems",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1727717-q03",
+    "topic_id": "1727717",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1727717_aops_edition_problems",
+    "title": "AoPS edition problems",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1727717-q04",
+    "topic_id": "1727717",
+    "part": 4,
+    "url": "https://artofproblemsolving.com/community/c3h1727717_aops_edition_problems",
+    "title": "AoPS edition problems",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1727717-q05",
+    "topic_id": "1727717",
+    "part": 5,
+    "url": "https://artofproblemsolving.com/community/c3h1727717_aops_edition_problems",
+    "title": "AoPS edition problems",
+    "editorial_note": "Checked by computing orbits under the 24 rotations."
+  },
+  {
+    "id": "aops-topic-1727717-q06",
+    "topic_id": "1727717",
+    "part": 6,
+    "url": "https://artofproblemsolving.com/community/c3h1727717_aops_edition_problems",
+    "title": "AoPS edition problems",
+    "editorial_note": "Checked by Monte Carlo simulation."
+  },
+  {
+    "id": "aops-topic-1728425-q01",
+    "topic_id": "1728425",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1728425_induction",
+    "title": "Induction",
+    "editorial_note": "The post titled \"Induction\" asks how to prove it; the record gives the Fermat argument and mentions induction. Checked for k up to 200."
+  },
+  {
+    "id": "aops-topic-1728070-q01",
+    "topic_id": "1728070",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1728070_rsm_geometry_homework",
+    "title": "RSM Geometry Homework",
+    "editorial_note": "The post gives only \"AC = AB, CD = DE, angle ABC = 70, angle ECB = 35, prove DE || BC\" (RSM homework, no figure). The positions of D and E are not stated; the record takes D on side AC and E on side AB, the reading in which the data make sense (then CE bisects angle C)."
+  },
+  {
+    "id": "aops-topic-1727888-q01",
+    "topic_id": "1727888",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1727888_2000th_post_problem",
+    "title": "k 2000th Post Problem",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1727959-q01",
+    "topic_id": "1727959",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1727959_combinatorics",
+    "title": "Combinatorics",
+    "editorial_note": "\"Each cell is completed with an integer in [1,16]\" is read as using each of 1 to 16 exactly once (needed for the totals; the given entries are distinct). Both completions were confirmed by trying all 5040 fillings."
+  },
+  {
+    "id": "aops-topic-1101383-q01",
+    "topic_id": "1101383",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1101383_mock_mc_1_sprint_problem_7_vietas_formula",
+    "title": "k Mock MC #1 Sprint Problem 7: Vieta's Formula",
+    "editorial_note": "From a mock MATHCOUNTS Sprint round (problem 7)."
+  },
+  {
+    "id": "aops-topic-1726492-q01",
+    "topic_id": "1726492",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1726492_unfair_coins",
+    "title": "Unfair coins",
+    "editorial_note": "The post asks for the answer \"in simplest radical form\", but the condition leads to a linear equation and the answer 9/13 is rational; the record drops the radical-form request."
+  },
+  {
+    "id": "aops-topic-1723444-q01",
+    "topic_id": "1723444",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1723444_clock_marathon",
+    "title": "k Clock marathon!",
+    "editorial_note": "Problem 1 of a \"clock marathon\" thread; the other problems were never posted in the opening post."
+  },
+  {
+    "id": "aops-topic-1727520-q01",
+    "topic_id": "1727520",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1727520_christmas_edition_math_problems_1_counting_with_restrictions",
+    "title": "Christmas Edition Math Problems #1: Counting with Restrictions",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1727026-q01",
+    "topic_id": "1727026",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1727026_400th_post_nt_problems",
+    "title": "400th Post NT Problems",
+    "editorial_note": "Problem 1 of the post. The digit count and leading digit of 5^2018 (1411 digits, leading digit 3) are supplied in the question, as the count cannot be found by hand otherwise; both and the answer 607 were checked exactly. Problems 2 and 3 (a general formula for 1^k + ... + n^k, for integer and for rational k) ask for formulas with no definite answer and are dropped."
+  },
+  {
+    "id": "aops-topic-1727049-q01",
+    "topic_id": "1727049",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1727049_math_problem",
+    "title": "Math problem",
+    "editorial_note": "\"Within one of each other\" read as a distance less than 1 (the boundary has probability 0). Checked by simulation."
+  },
+  {
+    "id": "aops-topic-1726968-q01",
+    "topic_id": "1726968",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1726968_question",
+    "title": "Question",
+    "editorial_note": "The post only asks \"Can a function be its own inverse?\"; the record makes it a question with examples and a classification of self-inverse linear functions."
+  },
+  {
+    "id": "aops-topic-1727169-q01",
+    "topic_id": "1727169",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1727169_algebra_problem",
+    "title": "Algebra problem",
+    "editorial_note": "\"Sum of two squares\" read with 0 allowed (squares of nonnegative integers), which is the usual convention; the solution also gives 35 for two positive squares. Both counts checked by computer."
+  },
+  {
+    "id": "aops-topic-1726318-q01",
+    "topic_id": "1726318",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1726318_prove_consecutive_integers",
+    "title": "Prove consecutive integers",
+    "editorial_note": "Checked for every N up to 3000 by direct enumeration."
+  },
+  {
+    "id": "aops-topic-1726274-q01",
+    "topic_id": "1726274",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1726274_coordinate_geometryparabola",
+    "title": "Coordinate geometry(parabola)",
+    "editorial_note": "The post is garbled (\"the locus of a point on the variable parabola y^2 = 4ax whose distance from the focus is always equal to k ... a is parameter\"); the record states the intended question. The answer y^2 = 4k x - 4x^2 (an ellipse) was checked numerically."
+  },
+  {
+    "id": "aops-topic-1726527-q01",
+    "topic_id": "1726527",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1726527_spooky_logic_halloween_edition",
+    "title": "Spooky Logic: Halloween Edition",
+    "editorial_note": "Halloween logic puzzle; the post gives no answer. Checked by enumerating all truth assignments of the nine atomic statements."
+  },
+  {
+    "id": "aops-topic-1726526-q01",
+    "topic_id": "1726526",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1726526_fibonacci_period",
+    "title": "Fibonacci Period",
+    "editorial_note": "The post asks for a proof of the observed period 60 (the problem that led to it was redacted). The minimal periods 3, 20 and 60 were checked by computer."
+  },
+  {
+    "id": "aops-topic-1726675-q01",
+    "topic_id": "1726675",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1726675_tetrahedron",
+    "title": "k Tetrahedron",
+    "editorial_note": "The poster asks why a regular tetrahedron has six edges."
+  },
+  {
+    "id": "aops-topic-1726581-q01",
+    "topic_id": "1726581",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1726581_11_proved_with_functions",
+    "title": "\\(1=-1\\) \"proved\" with functions",
+    "editorial_note": "The post asks what is wrong with the \"proof\"; its hint suggests a hidden division by zero, but there is none. The real flaw is that the hypotheses are inconsistent (n = 0 gives f = 0)."
+  },
+  {
+    "id": "aops-topic-1726370-q24",
+    "topic_id": "1726370",
+    "part": 24,
+    "url": "https://artofproblemsolving.com/community/c3h1726370_mathcounts_school_round_questions_24_and_27",
+    "title": "Mathcounts School Round Questions 24 and 27",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1725794-q01",
+    "topic_id": "1725794",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1725794_geometric_probability",
+    "title": "Geometric Probability",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1722695-q01",
+    "topic_id": "1722695",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1722695_need_help",
+    "title": "k Need help",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1726398-q01",
+    "topic_id": "1726398",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1726398_functions",
+    "title": "Functions",
+    "editorial_note": "The post asks only whether x^2 has an inverse; the record adds the restriction to x >= 0."
+  },
+  {
+    "id": "aops-topic-11090-q01",
+    "topic_id": "11090",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h11090_0_a_perfect_square",
+    "title": "k 0 a perfect square?",
+    "editorial_note": "The poster answered 25 (0 + 25 = 9 + 16) while the given answer was 65 and asked whether 0 counts as a perfect square. The record asks both versions: 65 for positive squares, 25 with 0 allowed."
+  },
+  {
+    "id": "aops-topic-1726387-q01",
+    "topic_id": "1726387",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1726387_log_equations",
+    "title": "Log Equations",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1726281-q01",
+    "topic_id": "1726281",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1726281_a_few_geo_questions",
+    "title": "A few GEO questions",
+    "editorial_note": "Problem 1 of four geometry questions in the post. The figure is not to scale."
+  },
+  {
+    "id": "aops-topic-1726281-q02",
+    "topic_id": "1726281",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1726281_a_few_geo_questions",
+    "title": "A few GEO questions",
+    "editorial_note": "Problem 2 of the post; the existence of such a box was checked numerically."
+  },
+  {
+    "id": "aops-topic-1726281-q03",
+    "topic_id": "1726281",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1726281_a_few_geo_questions",
+    "title": "A few GEO questions",
+    "editorial_note": "Problem 3 of the post says \"circle w is constructed such that w is tangent to Z, and G\", which is garbled; the record reads it as the standard problem: w passes through Z and G and is tangent to EN at its midpoint M (the only role M can play)."
+  },
+  {
+    "id": "aops-topic-1726281-q04",
+    "topic_id": "1726281",
+    "part": 4,
+    "url": "https://artofproblemsolving.com/community/c3h1726281_a_few_geo_questions",
+    "title": "A few GEO questions",
+    "editorial_note": "Problem 4 of the post."
+  },
+  {
+    "id": "aops-topic-1725452-q01",
+    "topic_id": "1725452",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1725452_geometry",
+    "title": "Geometry!!!",
+    "editorial_note": "The post asks for the maximum area of a square inscribed in the triangle. The record asks for the square with a side on a side of the triangle, which is the configuration meant (it is the largest square that fits, a known fact not proved here)."
+  },
+  {
+    "id": "aops-topic-1723237-q01",
+    "topic_id": "1723237",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1723237_2019_mathcounts_handbook_transformations_and_measurement_stretch",
+    "title": "2019 MATHCOUNTS Handbook Transformations and Measurement Stretch",
+    "editorial_note": "The poster also asks what rotating \"about the point F\" means; the question now explains it."
+  },
+  {
+    "id": "aops-topic-1723237-q02",
+    "topic_id": "1723237",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1723237_2019_mathcounts_handbook_transformations_and_measurement_stretch",
+    "title": "2019 MATHCOUNTS Handbook Transformations and Measurement Stretch",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1723237-q03",
+    "topic_id": "1723237",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1723237_2019_mathcounts_handbook_transformations_and_measurement_stretch",
+    "title": "2019 MATHCOUNTS Handbook Transformations and Measurement Stretch",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1723237-q04",
+    "topic_id": "1723237",
+    "part": 4,
+    "url": "https://artofproblemsolving.com/community/c3h1723237_2019_mathcounts_handbook_transformations_and_measurement_stretch",
+    "title": "2019 MATHCOUNTS Handbook Transformations and Measurement Stretch",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1725457-q01",
+    "topic_id": "1725457",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1725457_basic_algebra",
+    "title": "Basic Algebra!:>",
+    "editorial_note": "The post does not say whether the common root may be complex; the record allows complex roots with a real, and the answer a = -2 is the same as for a real common root."
+  },
+  {
+    "id": "aops-topic-1724568-q01",
+    "topic_id": "1724568",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1724568_a_question",
+    "title": "A question",
+    "editorial_note": "The poster suspected 5 mph was wrong; the correct average is 4.92 mph."
+  },
+  {
+    "id": "aops-topic-1725609-q01",
+    "topic_id": "1725609",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1725609_number_problem",
+    "title": "number problem.",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1724520-q01",
+    "topic_id": "1724520",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1724520_mathcounts_hw",
+    "title": "Mathcounts HW",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1725821-q01",
+    "topic_id": "1725821",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1725821_moore_geometric_probablilty",
+    "title": "Moore Geometric Probablilty",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1725653-q01",
+    "topic_id": "1725653",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1725653_2018_mathcounts_national_target_2",
+    "title": "2018 MathCounts National Target #2",
+    "editorial_note": "The poster asks for a more elegant solution than replacing terms by trial; the record bounds the number of doubled terms directly. Answer 16 as given."
+  },
+  {
+    "id": "aops-topic-1725566-q01",
+    "topic_id": "1725566",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1725566_easy_dice_problem",
+    "title": "Easy dice problem",
+    "editorial_note": "The post writes the sum as sum_{i=3}^{70} P_n; the index typo is corrected to n. Answer (A) 181 checked by computer."
+  },
+  {
+    "id": "aops-topic-1725606-q01",
+    "topic_id": "1725606",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1725606_texas_am_math_contest_help",
+    "title": "Texas A&M Math Contest Help",
+    "editorial_note": "Problem 1 of the post; the exponents, lost in copying (\"(2013)0+ (2013)1+...\"), are restored."
+  },
+  {
+    "id": "aops-topic-1725606-q02",
+    "topic_id": "1725606",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1725606_texas_am_math_contest_help",
+    "title": "Texas A&M Math Contest Help",
+    "editorial_note": "Problem 2 of the post. Y is not in the word, so there is no question about whether it is a vowel."
+  },
+  {
+    "id": "aops-topic-1724620-q01",
+    "topic_id": "1724620",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1724620_question_from_a_local_math_competition",
+    "title": "Question from a local math competition",
+    "editorial_note": "First problem of the post (marked solved, no answer given). The question \"how do you find the circumradius of a cyclic hexagon\" has no data and is dropped. The two \"other questions\" (LMNO and the box) repeat problems 1 and 2 of topic 1726281 in this batch and are aliased to them (q03, q04)."
+  },
+  {
+    "id": "aops-topic-1725436-q01",
+    "topic_id": "1725436",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1725436_counting_and_probability",
+    "title": "k Counting and Probability",
+    "editorial_note": "Problem 1 of a counting thread; \"by way of C\" is made explicit (no other paths from A to D are described)."
+  },
+  {
+    "id": "aops-topic-1723304-q01",
+    "topic_id": "1723304",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1723304_algebra_problem",
+    "title": "Algebra problem",
+    "editorial_note": "\"a, b, c, d are integers and the expression is in simplest form\" is made precise. The minimum was confirmed numerically."
+  },
+  {
+    "id": "aops-topic-1725176-q01",
+    "topic_id": "1725176",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1725176_easy_equation",
+    "title": "easy equation",
+    "editorial_note": "The post asks how to \"find\" a with a 2^a = 3, which has no elementary closed form. The record asks to show there is exactly one solution and to locate it; the numerical value 1.256 is given."
+  },
+  {
+    "id": "aops-topic-1724972-q01",
+    "topic_id": "1724972",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1724972_geometry_problem",
+    "title": "Geometry problem",
+    "editorial_note": "The posted data are inconsistent: with a + b = 33 and c = 15, cos C is at least 71/121 = 0.587, so cos C = 13/27 is impossible. The record asks for a proof that no such triangle exists instead of the circumradius."
+  },
+  {
+    "id": "aops-topic-1724982-q01",
+    "topic_id": "1724982",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1724982_geometry_proof",
+    "title": "Geometry proof",
+    "editorial_note": "The post asks to prove (s - c)/R = cot c + csc c with R the circumradius; this is false (equilateral counterexample). With R replaced by the inradius r the identity is true, which was surely intended; the record asks for both. Checked numerically on random triangles."
+  },
+  {
+    "id": "aops-topic-1724486-q01",
+    "topic_id": "1724486",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1724486_some_problems",
+    "title": "Some problems",
+    "editorial_note": "Problem 1 of the post (\"c and f can be varied but don't change the asymptotes\") is restated: the constant term is written k and the coefficients a, b, d, e are required to have gcd 1, which makes the answer 13 unique."
+  },
+  {
+    "id": "aops-topic-1724486-q03",
+    "topic_id": "1724486",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1724486_some_problems",
+    "title": "Some problems",
+    "editorial_note": "Problem 3 of the post also gives AE = 9, which contradicts CD = 5 and DE = 1: the angle bisector theorem in triangle AEC would give AC = 45 > AE + EC = 15. In fact CD and DE alone force AE = sqrt(5)/2. The record drops AE = 9 and asks for AC = 5 sqrt(5)/2."
+  },
+  {
+    "id": "aops-topic-1723400-q01",
+    "topic_id": "1723400",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1723400_outside_hexagon",
+    "title": "Outside hexagon",
+    "editorial_note": "The post asks for \"the correlation between the areas\" with every point at the same distance x from the vertex; the record asks for the hexagon area in terms of the triangle's sides, area and x, with the hexagon named explicitly. Checked with the shoelace formula on random triangles."
+  },
+  {
+    "id": "aops-topic-1724670-q01",
+    "topic_id": "1724670",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1724670_numbering_problem_from_2011_test",
+    "title": "numbering problem from 2011 test",
+    "editorial_note": "\"Between 20 and 50\" gives the same answer whether or not 20 and 50 are allowed."
+  },
+  {
+    "id": "aops-topic-1724416-q01",
+    "topic_id": "1724416",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1724416_angles_in_polygon",
+    "title": "Angles in polygon",
+    "editorial_note": "The poster asks why a polygon with n > 3 sides has at most two 60 degree angles; the claim is stated for convex polygons, where it holds."
+  },
+  {
+    "id": "aops-topic-1724261-q01",
+    "topic_id": "1724261",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1724261_prime_number",
+    "title": "Prime number",
+    "editorial_note": "\"Natural numbers\" is ambiguous about 0; the only solution has n = 0, so the record allows n >= 0 and notes that there is none with n >= 1. Near-miss of aops-topic-1972985-q01 (n^4 + 4 prime)."
+  },
+  {
+    "id": "aops-topic-1724256-q01",
+    "topic_id": "1724256",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1724256_find_interger_number_x",
+    "title": "Find interger number x",
+    "editorial_note": "The notation (x^2+x+2) \\vdots (x^2+1) means \"is divisible by\"."
+  },
+  {
+    "id": "aops-topic-1722309-q01",
+    "topic_id": "1722309",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1722309_geometry_problem",
+    "title": "Geometry problem",
+    "editorial_note": "The post asks to prove that the ratio is always 1/5 for any quadrilateral; this is false (for the trapezoid in part (b) it is 151/756). The record proves it for parallelograms, where it is true, and asks for the counterexample. The segments are taken as A to the midpoint of CD, B to DA, C to AB, D to BC (each vertex to a non-adjacent side, no two sharing an endpoint)."
+  },
+  {
+    "id": "aops-topic-1721154-q01",
+    "topic_id": "1721154",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1721154_some_notsoquick_counting_problems",
+    "title": "Some not-so-quick counting problems",
+    "editorial_note": "Five questions about one setup, kept as one record. \"Removes the one with the lowest value\" means one die of the lowest value. All probabilities computed exactly by enumerating the 1296 rolls."
+  },
+  {
+    "id": "aops-topic-1724087-q01",
+    "topic_id": "1724087",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1724087_bogus_solutions_marathon",
+    "title": "k Bogus Solutions Marathon",
+    "editorial_note": "First problem of a \"bogus solutions\" marathon; the record asks for the error."
+  },
+  {
+    "id": "aops-topic-1724204-q01",
+    "topic_id": "1724204",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1724204_counting_question",
+    "title": "Counting Question",
+    "editorial_note": "The post asks for the largest N for 3 (and 4, 5) colours, with a conjectured 23 for 3 colours, and whether the numbers can go on for ever with enough colours. The exact maxima (the weak Schur numbers) are only known by computer search and are dropped. The record proves part (b): the process always stops (a weak form of Schur's theorem, via a Ramsey-type argument). The poster's colouring allows a + a = 2a in one colour, so a and b are taken distinct."
+  },
+  {
+    "id": "aops-topic-1723619-q01",
+    "topic_id": "1723619",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1723619_sequences_and_series",
+    "title": "Sequences and Series",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1723583-q01",
+    "topic_id": "1723583",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1723583_linear_equations_problems",
+    "title": "Linear Equations Problems",
+    "editorial_note": "Question 1 of the post. Questions 2-4 (an \"optimal algorithm\", graphing 4-variable systems, dimensions of the universe) are not definite maths questions and are dropped. Question 1 is split: false for nonlinear equations, true for linear systems (with proof)."
+  },
+  {
+    "id": "aops-topic-1723548-q01",
+    "topic_id": "1723548",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1723548_tessellating_a_plane",
+    "title": "Tessellating a plane",
+    "editorial_note": "The post says 5, 5 and 12 meet at a vertex; they do not (108 + 108 + 150 = 366). The intended configuration is two pentagons and a decagon (5.5.10), which fits around a point but cannot tile the plane; the record corrects the polygon and asks for the proof. The general question \"a way to tell if a vertex type tiles\" is answered only by the parity remark."
+  },
+  {
+    "id": "aops-topic-1717425-q01",
+    "topic_id": "1717425",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717425_junior_regional_olympiad__fbh_2014_grade_8_problem_4",
+    "title": "Junior Regional Olympiad - FBH 2014 Grade 8 Problem 4",
+    "editorial_note": "Federation of Bosnia and Herzegovina Junior Regional Olympiad 2014, Grade 8, Problem 4. Checked by search over primes below 2000."
+  },
+  {
+    "id": "aops-topic-1722827-q01",
+    "topic_id": "1722827",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1722827_algebra_problem",
+    "title": "Algebra problem",
+    "editorial_note": "The answer 1 (only x^5) was checked by expanding the polynomial."
+  },
+  {
+    "id": "aops-topic-1723123-q01",
+    "topic_id": "1723123",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1723123_sequences",
+    "title": "Sequences",
+    "editorial_note": "The poster asks for the general term and a general method; the sequence is read as continuing with constant second difference 4."
+  },
+  {
+    "id": "aops-topic-1722852-q01",
+    "topic_id": "1722852",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1722852_combo_ez__",
+    "title": "Combo ez -_-",
+    "editorial_note": "\"A 6x6 grid\" is read as a 6 by 6 array of points (if it meant 6 by 6 unit squares, i.e. 7 by 7 points, the answer would be 156/1176 = 13/98)."
+  },
+  {
+    "id": "aops-topic-1721400-q01",
+    "topic_id": "1721400",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1721400_145__1__4__5",
+    "title": "145 = 1! + 4! + 5!",
+    "editorial_note": "The post asks whether there are numbers other than 1, 2 and 145 equal to the sum of the factorials of their digits. The complete list (1, 2, 145, 40585) needs a computer search; the record asks to verify 40585 and to prove the digit bound that makes the search finite."
+  },
+  {
+    "id": "aops-topic-1723186-q01",
+    "topic_id": "1723186",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1723186_wwpmt_2017_problem_11",
+    "title": "WWPMT 2017 Problem #11",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1722616-q01",
+    "topic_id": "1722616",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1722616_squaring_both_sides",
+    "title": "Squaring both sides",
+    "editorial_note": "The post asks whether squaring both sides is \"valid\" and about cubing; the record makes this a worked question. Near-miss of aops-topic-3361787-q01 (sqrt(x+2) = x), with a different equation and the cubing part."
+  },
+  {
+    "id": "aops-topic-1722825-q01",
+    "topic_id": "1722825",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1722825_domain_problem",
+    "title": "Domain problem",
+    "editorial_note": "\"Domain of the equation\" is read as the set of x for which some real y satisfies it."
+  },
+  {
+    "id": "aops-topic-1722491-q01",
+    "topic_id": "1722491",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1722491_square_and_add",
+    "title": "Square and add",
+    "editorial_note": "\"Does not diverge\" is read as \"stays bounded\" (the real slice of the Mandelbrot set); with \"converges\" the answer would be different (k = -1 gives an oscillating bounded sequence). Checked numerically for many k."
+  },
+  {
+    "id": "aops-topic-1722841-q01",
+    "topic_id": "1722841",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1722841_modulo_problem",
+    "title": "Modulo problem",
+    "editorial_note": "Checked by expanding the product and reducing the coefficients modulo 13."
+  },
+  {
+    "id": "aops-topic-1721070-q75",
+    "topic_id": "1721070",
+    "part": 75,
+    "url": "https://artofproblemsolving.com/community/c3h1721070_mathcounts_warmup_help_please",
+    "title": "MathCounts warmup help. Please",
+    "editorial_note": "Two problems (75 and 79) from a MATHCOUNTS warm-up, kept with their numbers."
+  },
+  {
+    "id": "aops-topic-1721070-q79",
+    "topic_id": "1721070",
+    "part": 79,
+    "url": "https://artofproblemsolving.com/community/c3h1721070_mathcounts_warmup_help_please",
+    "title": "MathCounts warmup help. Please",
+    "editorial_note": "The post writes a = 2+3/4+(5/6) and b = 6/4+(3/2); the slashes are read as fractions."
+  },
+  {
+    "id": "aops-topic-1722465-q01",
+    "topic_id": "1722465",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1722465_500th_post_problem",
+    "title": "500th post problem",
+    "editorial_note": "Posted as an unsolved AMC 8 prep problem with no answer. The 15 dishes are read as 5 + 4 + 3 + 2 + 1 (the ice cream is one dish); Coke is one of the drinks and Mentos one of the snacks. Answer checked by brute force over all subsets."
+  },
+  {
+    "id": "aops-topic-1710142-q01",
+    "topic_id": "1710142",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710142_junior_regional_olympiad__fbh_2017_grade_7_problem_5",
+    "title": "Junior Regional Olympiad - FBH 2017 Grade 7 Problem 5",
+    "editorial_note": "The necessary condition ab = 6 is not sufficient; each of the four cases is checked."
+  },
+  {
+    "id": "aops-topic-1710127-q01",
+    "topic_id": "1710127",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710127_junior_regional_olympiad__fbh_2017_grade_6_problem_4",
+    "title": "Junior Regional Olympiad - FBH 2017 Grade 6 Problem 4",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1721702-q01",
+    "topic_id": "1721702",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1721702_just_wondering",
+    "title": "Just wondering",
+    "editorial_note": "The post asks in general for the maximum product of positive reals with sum x; the record states the general answer as parts (a) and (b) and adds the concrete case x = 10 so that there is a definite answer. Values checked numerically."
+  },
+  {
+    "id": "aops-topic-1721820-q01",
+    "topic_id": "1721820",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1721820_modular_arithmetic_bonanza",
+    "title": "Modular Arithmetic Bonanza",
+    "editorial_note": "Modular Arithmetic Bonanza, round 1, problem 1. Checked by computing every term modulo 10."
+  },
+  {
+    "id": "aops-topic-1721820-q02",
+    "topic_id": "1721820",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1721820_modular_arithmetic_bonanza",
+    "title": "Modular Arithmetic Bonanza",
+    "editorial_note": "Bonanza round 1, problem 2. Checked by computing N mod 36 exactly."
+  },
+  {
+    "id": "aops-topic-1721820-q03",
+    "topic_id": "1721820",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1721820_modular_arithmetic_bonanza",
+    "title": "Modular Arithmetic Bonanza",
+    "editorial_note": "Bonanza round 1, problem 3. Checked with Python modular exponentiation."
+  },
+  {
+    "id": "aops-topic-1721820-q04",
+    "topic_id": "1721820",
+    "part": 4,
+    "url": "https://artofproblemsolving.com/community/c3h1721820_modular_arithmetic_bonanza",
+    "title": "Modular Arithmetic Bonanza",
+    "editorial_note": "Bonanza round 1, problem 4 (Mock AMC 8 scores), restated without the story; the scoring \"all standard rules apply\" is read as 25 questions, 1 point each, as in the AMC 8, so scores are 0-25. Checked by brute force."
+  },
+  {
+    "id": "aops-topic-1722305-q01",
+    "topic_id": "1722305",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1722305_geometry_problem",
+    "title": "Geometry problem",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1709579-q01",
+    "topic_id": "1709579",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1709579_junior_regional_olympiad__fbh_2018_grade_8_problem_2",
+    "title": "Junior Regional Olympiad - FBH 2018 Grade 8 Problem 2",
+    "editorial_note": "Checked by search over |m| <= 1000."
+  },
+  {
+    "id": "aops-topic-1709572-q01",
+    "topic_id": "1709572",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1709572_junior_regional_olympiad__fbh_2018_grade_7_problem_3",
+    "title": "Junior Regional Olympiad - FBH 2018 Grade 7 Problem 3",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1709564-q01",
+    "topic_id": "1709564",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1709564_junior_regional_olympiad__fbh_2018_grade_6_problem_5",
+    "title": "Junior Regional Olympiad - FBH 2018 Grade 6 Problem 5",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1709557-q01",
+    "topic_id": "1709557",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1709557_junior_regional_olympiad__fbh_2018_grade_6_problem_4",
+    "title": "Junior Regional Olympiad - FBH 2018 Grade 6 Problem 4",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1720902-q01",
+    "topic_id": "1720902",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1720902_combi_help3",
+    "title": "combi help3",
+    "editorial_note": "\"Words\" means arbitrary strings; letters may repeat."
+  },
+  {
+    "id": "aops-topic-1721937-q01",
+    "topic_id": "1721937",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1721937_geometry_problem",
+    "title": "Geometry problem",
+    "editorial_note": "Checked numerically: the circle of radius 4.5 centred at (4.5, 4.5) is tangent to CD in the right trapezoid with AB = 9, AD = 5, BC = 45."
+  },
+  {
+    "id": "aops-topic-1721792-q01",
+    "topic_id": "1721792",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1721792_homework_help",
+    "title": "Homework Help",
+    "editorial_note": "The post asks to \"solve and graph\"; the graph is described as a number line."
+  },
+  {
+    "id": "aops-topic-1719666-q01",
+    "topic_id": "1719666",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1719666_geometry",
+    "title": "Geometry",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1721676-q01",
+    "topic_id": "1721676",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1721676_clarification_function_question",
+    "title": "clarification function question",
+    "editorial_note": "The post asks whether f(f(x)) and g(g(x)) are the same function given the domain restriction; made into a question with the answer."
+  },
+  {
+    "id": "aops-topic-1721671-q01",
+    "topic_id": "1721671",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1721671_1995_aime_5",
+    "title": "1995 AIME #5",
+    "editorial_note": "The poster asks why the product of the other two roots is 13 - i and not a multiple of it; the record asks for that explanation too. Official answer 51."
+  },
+  {
+    "id": "aops-topic-1721580-q01",
+    "topic_id": "1721580",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1721580_probability_help",
+    "title": "Probability Help",
+    "editorial_note": "\"A multiple of 2,3,5\" is ambiguous; the record asks for both readings (at least one; all three)."
+  },
+  {
+    "id": "aops-topic-1721577-q01",
+    "topic_id": "1721577",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1721577_induction",
+    "title": "induction",
+    "editorial_note": "Checked numerically for n <= 15."
+  },
+  {
+    "id": "aops-topic-1721429-q01",
+    "topic_id": "1721429",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1721429_algebra",
+    "title": "k Algebra.",
+    "editorial_note": "Checked for n <= 50."
+  },
+  {
+    "id": "aops-topic-1721378-q01",
+    "topic_id": "1721378",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1721378_magic_circle_triangle",
+    "title": "Magic Circle triangle",
+    "editorial_note": "The figure (four circles per side of a triangle) is described in the text and redrawn. The possible sums 17, 19, 20, 21, 23 were found by brute force; only the extremes matter."
+  },
+  {
+    "id": "aops-topic-1721021-q01",
+    "topic_id": "1721021",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1721021_need_help_on_problem",
+    "title": "need help on problem",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1720900-q01",
+    "topic_id": "1720900",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1720900_combi_help1",
+    "title": "combi help1",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1720835-q01",
+    "topic_id": "1720835",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1720835_2019_mathcounts_handbook_transformations_stretch_2",
+    "title": "2019 MATHCOUNTS Handbook Transformations Stretch #2",
+    "editorial_note": "The poster found C = (0, -6), which is wrong; C = (-6, 0). Answer 16 as given."
+  },
+  {
+    "id": "aops-topic-1720781-q01",
+    "topic_id": "1720781",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1720781_geometrycounting_problem",
+    "title": "Geometry/Counting Problem",
+    "editorial_note": "This is the Ramsey number R(4,4) = 18. The poster knew the triangle case (6) and a bound of at least 13. The colouring of 17 points (Paley graph) was also checked by computer to have no monochromatic K4."
+  },
+  {
+    "id": "aops-topic-1720756-q02",
+    "topic_id": "1720756",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1720756_couple_of_problems_that_tripped_me_up_v2",
+    "title": "Couple of Problems that tripped me up V2",
+    "editorial_note": "Problem 2 of the post (answer 18% as given). Problem 1 (ellipse with foci (0,0) and (-8,8) through (3,4); ratio of y-intercepts m/n with |m+n| = 8) is dropped: with these data the y-intercepts are about -3.057 and 8.676, whose ratio is irrational, so the stated data or answer are wrong and the intended data cannot be recovered."
+  },
+  {
+    "id": "aops-topic-1719974-q01",
+    "topic_id": "1719974",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1719974_need_help",
+    "title": "Need help",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1719663-q01",
+    "topic_id": "1719663",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1719663_counting_numbers",
+    "title": "Counting numbers",
+    "editorial_note": "Checked by searching the actual string."
+  },
+  {
+    "id": "aops-topic-1640117-q01",
+    "topic_id": "1640117",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1640117_counting_principles_and_permutations",
+    "title": "Counting principles and permutations",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1640117-q02",
+    "topic_id": "1640117",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1640117_counting_principles_and_permutations",
+    "title": "Counting principles and permutations",
+    "editorial_note": "Part (b) of the post does not say whether digits may repeat; the record asks for both readings."
+  },
+  {
+    "id": "aops-topic-1603119-q01",
+    "topic_id": "1603119",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1603119_counting_marathon",
+    "title": "Counting Marathon",
+    "editorial_note": "P1 of a counting marathon (only P1 is in the post)."
+  },
+  {
+    "id": "aops-topic-1707844-q01",
+    "topic_id": "1707844",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1707844_problem_about_counting",
+    "title": "Problem about Counting",
+    "editorial_note": "Checked by brute force over all 252 sets of 5 points."
+  },
+  {
+    "id": "aops-topic-1601848-q01",
+    "topic_id": "1601848",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1601848_factorial_problem",
+    "title": "Factorial Problem",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1630167-q01",
+    "topic_id": "1630167",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1630167_sets_of_digits",
+    "title": "Sets of Digits",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1719574-q01",
+    "topic_id": "1719574",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1719574_mistake_in_amc_solutions",
+    "title": "k Mistake in AMC Solutions??",
+    "editorial_note": "The poster believed the official solution was wrong and the answer is 5 sqrt 2; it is not, because PQ = 10 is rational. The record asks for the answer (D) 7 and for the error. Checked by brute force over all lattice-point pairs."
+  },
+  {
+    "id": "aops-topic-1719242-q01",
+    "topic_id": "1719242",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1719242_help_in_transformations",
+    "title": "Help in Transformations",
+    "editorial_note": "The post asks to show that l and l' \"intersect in an angle with measure a\"; the record restricts to 0 < a < 180 degrees (for a = 180 the lines are parallel or equal) and reads the claim as: one of the angles formed is a."
+  },
+  {
+    "id": "aops-topic-1719384-q01",
+    "topic_id": "1719384",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1719384_need_help",
+    "title": "Need help",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1719274-q01",
+    "topic_id": "1719274",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1719274_geometric_series",
+    "title": "Geometric Series",
+    "editorial_note": "The title says \"geometric series\" but the sum is telescoping. Checked with exact fractions."
+  },
+  {
+    "id": "aops-topic-1718720-q01",
+    "topic_id": "1718720",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1718720_combinatorics",
+    "title": "Combinatorics",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1718086-q01",
+    "topic_id": "1718086",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1718086_interesting_ratedistance_problem",
+    "title": "Interesting Rate-Distance Problem",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1711163-q01",
+    "topic_id": "1711163",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1711163_mathcounts",
+    "title": "Mathcounts",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1717423-q01",
+    "topic_id": "1717423",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717423_junior_regional_olympiad__fbh_2014_grade_8_problem_2",
+    "title": "Junior Regional Olympiad - FBH 2014 Grade 8 Problem 2",
+    "editorial_note": "Checked numerically for random x, y with z = 1/(xy)."
+  },
+  {
+    "id": "aops-topic-1717407-q01",
+    "topic_id": "1717407",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717407_junior_regional_olympiad__fbh_2014_grade_6_problem_5",
+    "title": "Junior Regional Olympiad - FBH 2014 Grade 6 Problem 5",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1717974-q01",
+    "topic_id": "1717974",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717974_proving_the_euclidean_algorithm",
+    "title": "Proving the Euclidean Algorithm",
+    "editorial_note": "The post asks for a proof of the Euclidean algorithm; the record states the algorithm and asks for the proof."
+  },
+  {
+    "id": "aops-topic-1717400-q01",
+    "topic_id": "1717400",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717400_junior_regional_olympiad__fbh_2014_grade_6_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2014 Grade 6 Problem 1",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1717405-q01",
+    "topic_id": "1717405",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717405_junior_regional_olympiad__fbh_2014_grade_6_problem_4",
+    "title": "Junior Regional Olympiad - FBH 2014 Grade 6 Problem 4",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1717720-q01",
+    "topic_id": "1717720",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717720_probability",
+    "title": "Probability!",
+    "editorial_note": "Checked by enumerating all 216 outcomes."
+  },
+  {
+    "id": "aops-topic-1717424-q01",
+    "topic_id": "1717424",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717424_junior_regional_olympiad__fbh_2014_grade_8_problem_3",
+    "title": "Junior Regional Olympiad - FBH 2014 Grade 8 Problem 3",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1716595-q01",
+    "topic_id": "1716595",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1716595_similar_triangles",
+    "title": "Similar Triangles",
+    "editorial_note": "The post does not say where the shadows end; the standard reading (the man stands between the tree and the common tip of the two shadows) is stated in the question."
+  },
+  {
+    "id": "aops-topic-1717421-q01",
+    "topic_id": "1717421",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717421_junior_regional_olympiad__fbh_2014_grade_8_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2014 Grade 8 Problem 1",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1717426-q01",
+    "topic_id": "1717426",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717426_junior_regional_olympiad__fbh_2014_grade_8_problem_5",
+    "title": "Junior Regional Olympiad - FBH 2014 Grade 8 Problem 5",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1717419-q01",
+    "topic_id": "1717419",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717419_junior_regional_olympiad__fbh_2014_grade_7_problem_5",
+    "title": "Junior Regional Olympiad - FBH 2014 Grade 7 Problem 5",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1717412-q01",
+    "topic_id": "1717412",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717412_junior_regional_olympiad__fbh_2014_grade_7_problem_3",
+    "title": "Junior Regional Olympiad - FBH 2014 Grade 7 Problem 3",
+    "editorial_note": "The assumption AB != CD is stated (for a rhombus, a = c and ac = bd). The identity in (b) was checked symbolically and the claims numerically."
+  },
+  {
+    "id": "aops-topic-1717410-q01",
+    "topic_id": "1717410",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717410_junior_regional_olympiad__fbh_2014_grade_7_problem_2",
+    "title": "Junior Regional Olympiad - FBH 2014 Grade 7 Problem 2",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1717408-q01",
+    "topic_id": "1717408",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717408_junior_regional_olympiad__fbh_2014_grade_7_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2014 Grade 7 Problem 1",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1717403-q01",
+    "topic_id": "1717403",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717403_junior_regional_olympiad__fbh_2014_grade_6_problem_2",
+    "title": "Junior Regional Olympiad - FBH 2014 Grade 6 Problem 2",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1717404-q01",
+    "topic_id": "1717404",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717404_junior_regional_olympiad__fbh_2014_grade_6_problem_3",
+    "title": "Junior Regional Olympiad - FBH 2014 Grade 6 Problem 3",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1717359-q03",
+    "topic_id": "1717359",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1717359_kootrapalis_easy_problems",
+    "title": "k Kootrapali's Easy Problems",
+    "editorial_note": "KEP round 8, problem 3; answer 101 as in the posted solution."
+  },
+  {
+    "id": "aops-topic-1717359-q05",
+    "topic_id": "1717359",
+    "part": 5,
+    "url": "https://artofproblemsolving.com/community/c3h1717359_kootrapalis_easy_problems",
+    "title": "k Kootrapali's Easy Problems",
+    "editorial_note": "KEP round 8, problem 5 (proposed by kvedula2004); no solution was posted. The position of D was found from the cyclic condition and confirmed numerically (unique D on AC)."
+  },
+  {
+    "id": "aops-topic-1710109-q01",
+    "topic_id": "1710109",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710109_kootrapalis_easy_problems_kep",
+    "title": "k Kootrapali's Easy Problems (KEP)",
+    "editorial_note": "KEP round 7, problem 1."
+  },
+  {
+    "id": "aops-topic-1710109-q02",
+    "topic_id": "1710109",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1710109_kootrapalis_easy_problems_kep",
+    "title": "k Kootrapali's Easy Problems (KEP)",
+    "editorial_note": "KEP round 7, problem 2; answer 3 as posted."
+  },
+  {
+    "id": "aops-topic-1710109-q03",
+    "topic_id": "1710109",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1710109_kootrapalis_easy_problems_kep",
+    "title": "k Kootrapali's Easy Problems (KEP)",
+    "editorial_note": "KEP round 7, problem 3. As posted it asks for the \"minimum and maximum possible values\" of AE, but the bounds 12/7 and 4 are attained only by degenerate triangles (the posted solution uses 3 <= BC <= 15); the record asks for the greatest lower bound and least upper bound. Answer 47 as posted."
+  },
+  {
+    "id": "aops-topic-1710109-q05",
+    "topic_id": "1710109",
+    "part": 5,
+    "url": "https://artofproblemsolving.com/community/c3h1710109_kootrapalis_easy_problems_kep",
+    "title": "k Kootrapali's Easy Problems (KEP)",
+    "editorial_note": "KEP round 7, problem 5; answer 272 as posted. Checked by computing phi(phi(N)) for all N < 1000."
+  },
+  {
+    "id": "aops-topic-1717292-q01",
+    "topic_id": "1717292",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1717292_math_madness_question",
+    "title": "Math Madness Question",
+    "editorial_note": "Checked by brute force."
+  },
+  {
+    "id": "aops-topic-1715899-q01",
+    "topic_id": "1715899",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715899_junior_regional_olympiad__fbh_2015_grade_6_problem_3",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 6 Problem 3",
+    "editorial_note": "Checked with coordinates for random triangles."
+  },
+  {
+    "id": "aops-topic-1715029-q01",
+    "topic_id": "1715029",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715029_junior_regional_olympiad__fbh_2016_grade_6_problem_2",
+    "title": "Junior Regional Olympiad - FBH 2016 Grade 6 Problem 2",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1715574-q01",
+    "topic_id": "1715574",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715574_math_hw_help",
+    "title": "k Math HW Help!",
+    "editorial_note": "The posted problem asks to compute N; it is unique. Checked by search."
+  },
+  {
+    "id": "aops-topic-1716607-q01",
+    "topic_id": "1716607",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1716607_algebra_hearth",
+    "title": "Algebra Hearth",
+    "editorial_note": "The opening word \"Iftar\" in the post is a typo and is dropped."
+  },
+  {
+    "id": "aops-topic-1716924-q01",
+    "topic_id": "1716924",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1716924_inequality",
+    "title": "Inequality",
+    "editorial_note": "Checked numerically on a fine grid of the simplex (for comparison, a = b = c = 1/3 gives only 2/9)."
+  },
+  {
+    "id": "aops-topic-1716960-q01",
+    "topic_id": "1716960",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1716960_ahsme_1980_21",
+    "title": "AHSME 1980 #21",
+    "editorial_note": "Official answer 1/5. The answer choices are not in the post, so the record is free-response. Checked with coordinates."
+  },
+  {
+    "id": "aops-topic-1715535-q01",
+    "topic_id": "1715535",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715535_need_help",
+    "title": "Need help",
+    "editorial_note": "The posted data (AB = 3, CD = sqrt 2, AD = BC) are inconsistent, as shown in the solution; the record keeps AD = BC and AB = 3 and drops CD = sqrt 2. The right angle is taken at C (CD is the altitude to the hypotenuse)."
+  },
+  {
+    "id": "aops-topic-1716692-q01",
+    "topic_id": "1716692",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1716692_math_marathon",
+    "title": "k Math Marathon",
+    "editorial_note": "P1 of a general maths marathon; the marathon rules are not part of the record."
+  },
+  {
+    "id": "aops-topic-1716751-q01",
+    "topic_id": "1716751",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1716751_algebra_problems_with_n0",
+    "title": "algebra problems with n^0",
+    "editorial_note": "The post asks whether some law prohibits raising both sides to the power 0; posed as \"find the error\". 0^0 is treated as undefined."
+  },
+  {
+    "id": "aops-topic-1715695-q01",
+    "topic_id": "1715695",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715695_i_need_help_with_some_pretty_moderate_math_counts_questions",
+    "title": "I Need Help with some pretty moderate Math counts questions",
+    "editorial_note": "Problem 1 of the post. The garbled \"each of the four days\" is read as \"on four of the five days\"."
+  },
+  {
+    "id": "aops-topic-1715695-q02",
+    "topic_id": "1715695",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1715695_i_need_help_with_some_pretty_moderate_math_counts_questions",
+    "title": "I Need Help with some pretty moderate Math counts questions",
+    "editorial_note": "The post writes n+18/n; both readings n + 18/n and (n+18)/n give the same answer 39."
+  },
+  {
+    "id": "aops-topic-1715695-q03",
+    "topic_id": "1715695",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1715695_i_need_help_with_some_pretty_moderate_math_counts_questions",
+    "title": "I Need Help with some pretty moderate Math counts questions",
+    "editorial_note": "Problem 3 of the post. The cubes are taken to be placed with faces parallel to the faces of the box, as intended; the solution proves that at most 8 fit."
+  },
+  {
+    "id": "aops-topic-1716645-q01",
+    "topic_id": "1716645",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1716645_help_needed",
+    "title": "Help needed",
+    "editorial_note": "Counted by double counting; the vertex count 24 is confirmed from the coordinates (all permutations of (0, +-1, +-2))."
+  },
+  {
+    "id": "aops-topic-1715055-q01",
+    "topic_id": "1715055",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715055_algebra_hearth",
+    "title": "Algebra Hearth",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1715902-q01",
+    "topic_id": "1715902",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715902_junior_regional_olympiad__fbh_2015_grade_6_problem_4",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 6 Problem 4",
+    "editorial_note": "The number to be subtracted and added is taken to be a whole number (otherwise every digit a works with a fractional x); this is what makes a unique."
+  },
+  {
+    "id": "aops-topic-1715910-q01",
+    "topic_id": "1715910",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715910_junior_regional_olympiad__fbh_2015_grade_7_problem_4",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 7 Problem 4",
+    "editorial_note": "\"At least one of each kind\" is stated explicitly: without it, w=39, m=200, c=0 would also fit. Checked by exhaustive search."
+  },
+  {
+    "id": "aops-topic-1715897-q01",
+    "topic_id": "1715897",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715897_junior_regional_olympiad__fbh_2015_grade_6_problem_2",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 6 Problem 2",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1715918-q01",
+    "topic_id": "1715918",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715918_junior_regional_olympiad__fbh_2015_grade_8_problem_5",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 8 Problem 5",
+    "editorial_note": "\"Three elements\" is read as three distinct elements x, y, x+y. Checked by testing all 512 splittings; the remark that 8 does not suffice is also checked."
+  },
+  {
+    "id": "aops-topic-1715894-q01",
+    "topic_id": "1715894",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715894_junior_regional_olympiad__fbh_2015_grade_6_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 6 Problem 1",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1715905-q01",
+    "topic_id": "1715905",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715905_junior_regional_olympiad__fbh_2015_grade_7_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 7 Problem 1",
+    "editorial_note": "\"Oil\" in the translation is fuel; fuel use is assumed proportional to driving time."
+  },
+  {
+    "id": "aops-topic-1715914-q01",
+    "topic_id": "1715914",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715914_junior_regional_olympiad__fbh_2015_grade_8_problem_2",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 8 Problem 2",
+    "editorial_note": "The condition that a, b, c are pairwise distinct (needed for A to be defined) is stated; the constant value -3 is asked for. Verified symbolically."
+  },
+  {
+    "id": "aops-topic-1715917-q01",
+    "topic_id": "1715917",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715917_junior_regional_olympiad__fbh_2015_grade_8_problem_4",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 8 Problem 4",
+    "editorial_note": "Both parts kept in one record. Checked numerically for n up to 60."
+  },
+  {
+    "id": "aops-topic-1715915-q01",
+    "topic_id": "1715915",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715915_junior_regional_olympiad__fbh_2015_grade_8_problem_3",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 8 Problem 3",
+    "editorial_note": "E and F are taken strictly inside the sides (if E = B the inequality becomes an equality). Checked numerically on random configurations."
+  },
+  {
+    "id": "aops-topic-1715908-q01",
+    "topic_id": "1715908",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715908_junior_regional_olympiad__fbh_2015_grade_7_problem_3",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 7 Problem 3",
+    "editorial_note": "\"Two opposite angles are right; two sides which form a right angle are equal\" is read as: the angles at A and C are right, the sides AB = AD at the right angle A are equal, and BC + CD = 10. Checked numerically for several splits."
+  },
+  {
+    "id": "aops-topic-1715903-q01",
+    "topic_id": "1715903",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715903_junior_regional_olympiad__fbh_2015_grade_6_problem_5",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 6 Problem 5",
+    "editorial_note": "Count checked by direct enumeration."
+  },
+  {
+    "id": "aops-topic-1715912-q01",
+    "topic_id": "1715912",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715912_junior_regional_olympiad__fbh_2015_grade_8_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 8 Problem 1",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1715911-q01",
+    "topic_id": "1715911",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715911_junior_regional_olympiad__fbh_2015_grade_7_problem_5",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 7 Problem 5",
+    "editorial_note": "\"We get the same 2015 numbers\" is read as the same multiset of numbers."
+  },
+  {
+    "id": "aops-topic-1715907-q01",
+    "topic_id": "1715907",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715907_junior_regional_olympiad__fbh_2015_grade_7_problem_2",
+    "title": "Junior Regional Olympiad - FBH 2015 Grade 7 Problem 2",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1715031-q01",
+    "topic_id": "1715031",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715031_junior_regional_olympiad__fbh_2016_grade_6_problem_3",
+    "title": "Junior Regional Olympiad - FBH 2016 Grade 6 Problem 3",
+    "editorial_note": "Knowing is assumed mutual (if a boy knows a girl, she knows him)."
+  },
+  {
+    "id": "aops-topic-1715644-q01",
+    "topic_id": "1715644",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715644_approximating_powers_of_pi",
+    "title": "Approximating Powers of Pi",
+    "editorial_note": "Number-sense question: the post asks how to approximate pi^7 within 5% mentally; the record asks for such an estimate with justification. Any value between about 2870 and 3170 is acceptable."
+  },
+  {
+    "id": "aops-topic-1715602-q01",
+    "topic_id": "1715602",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715602_sequences_problem",
+    "title": "Sequences Problem",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1713845-q01",
+    "topic_id": "1713845",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1713845_variable_variation_varying_variabley",
+    "title": "Variable Variation Varying Variabley",
+    "editorial_note": "The original asks \"by what factor does x decrease?\" (the poster says \"decrease\" is not a typo, i.e. a trick question); the record asks for the factor and the direction."
+  },
+  {
+    "id": "aops-topic-1713845-q02",
+    "topic_id": "1713845",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1713845_variable_variation_varying_variabley",
+    "title": "Variable Variation Varying Variabley",
+    "editorial_note": "The post asks to \"describe this relation in words\"; two concrete follow-up questions were added so the record has checkable answers."
+  },
+  {
+    "id": "aops-topic-1713845-q03",
+    "topic_id": "1713845",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1713845_variable_variation_varying_variabley",
+    "title": "Variable Variation Varying Variabley",
+    "editorial_note": "From a MathCounts team selection test (as stated in the post)."
+  },
+  {
+    "id": "aops-topic-1715429-q01",
+    "topic_id": "1715429",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715429_distance_between_the_two_points",
+    "title": "Distance between the two points",
+    "editorial_note": "The post asks for the distance from \"the upper tip of the prism\" to the point dividing \"the lower back edge\" (of length 6) into two equal parts; read as the apex of one base and the midpoint of the side of length 6 of the other base, with the prism a right prism of height 1."
+  },
+  {
+    "id": "aops-topic-1715432-q01",
+    "topic_id": "1715432",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715432_combinatorics",
+    "title": "Combinatorics",
+    "editorial_note": "All three counts checked by direct computation over gender patterns and position pairs."
+  },
+  {
+    "id": "aops-topic-1715264-q01",
+    "topic_id": "1715264",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715264_some_problems_that_tripped_me_up",
+    "title": "Some problems that tripped me up.",
+    "editorial_note": "Problem 1 of the post; the posted answer 2 is correct."
+  },
+  {
+    "id": "aops-topic-1715264-q02",
+    "topic_id": "1715264",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1715264_some_problems_that_tripped_me_up",
+    "title": "Some problems that tripped me up.",
+    "editorial_note": "Problem 2 of the post; the posted answer 5 is correct."
+  },
+  {
+    "id": "aops-topic-1715264-q03",
+    "topic_id": "1715264",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1715264_some_problems_that_tripped_me_up",
+    "title": "Some problems that tripped me up.",
+    "editorial_note": "Problem 3 of the post; the posted answer 84 is correct."
+  },
+  {
+    "id": "aops-topic-1715061-q01",
+    "topic_id": "1715061",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715061_junior_regional_olympiad__fbh_2016_grade_8_problem_3",
+    "title": "Junior Regional Olympiad - FBH 2016 Grade 8 Problem 3",
+    "editorial_note": "AD is the shorter base (forced by the angles: with these angles AD = 7 - 2s < 7 for the leg CD = s). Checked with coordinates."
+  },
+  {
+    "id": "aops-topic-1714787-q01",
+    "topic_id": "1714787",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1714787_hellojoe_math_test_and_mathcounts_feelings",
+    "title": "Hellojoe Math test and mathcounts feelings",
+    "editorial_note": "The post says \"numbers\"; read as integers, and both the positive and the negative pair are given."
+  },
+  {
+    "id": "aops-topic-1715130-q01",
+    "topic_id": "1715130",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715130_sequence_question_help",
+    "title": "Sequence question help",
+    "editorial_note": "The wording \"the 2018th term, minus the 2017th term, plus the 2017th term, minus the 2016th term, and so on\" is written as the bracketed telescoping sum. The same problem was also posted (topic 1713859) with first term 1; that copy is aliased here."
+  },
+  {
+    "id": "aops-topic-1715046-q01",
+    "topic_id": "1715046",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715046_junior_regional_olympiad__fbh_2016_grade_7_problem_2",
+    "title": "Junior Regional Olympiad - FBH 2016 Grade 7 Problem 2",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1715043-q01",
+    "topic_id": "1715043",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715043_junior_regional_olympiad__fbh_2016_grade_7_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2016 Grade 7 Problem 1",
+    "editorial_note": "The company is from Tesanj in the original; the place name is omitted."
+  },
+  {
+    "id": "aops-topic-1715049-q01",
+    "topic_id": "1715049",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715049_junior_regional_olympiad__fbh_2016_grade_7_problem_4",
+    "title": "Junior Regional Olympiad - FBH 2016 Grade 7 Problem 4",
+    "editorial_note": "\"Shorter sides\" means the legs. Checked numerically for random positions of E."
+  },
+  {
+    "id": "aops-topic-1715033-q01",
+    "topic_id": "1715033",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715033_junior_regional_olympiad__fbh_2016_grade_6_problem_4",
+    "title": "Junior Regional Olympiad - FBH 2016 Grade 6 Problem 4",
+    "editorial_note": "The original does not state the order of the rays; the order OA, OC, OD, OB is stated (the other order OA, OD, OC, OB would give 60 degrees, which is mentioned in the solution)."
+  },
+  {
+    "id": "aops-topic-1715057-q01",
+    "topic_id": "1715057",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715057_junior_regional_olympiad__fbh_2016_grade_8_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2016 Grade 8 Problem 1",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1715070-q01",
+    "topic_id": "1715070",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715070_junior_regional_olympiad__fbh_2016_grade_8_problem_5",
+    "title": "Junior Regional Olympiad - FBH 2016 Grade 8 Problem 5",
+    "editorial_note": "\"Equal numbers of sphere rows\" is read as the same number of layers."
+  },
+  {
+    "id": "aops-topic-1715059-q01",
+    "topic_id": "1715059",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715059_junior_regional_olympiad__fbh_2016_grade_8_problem_2",
+    "title": "Junior Regional Olympiad - FBH 2016 Grade 8 Problem 2",
+    "editorial_note": "Checked by searching all numbers below 10^7."
+  },
+  {
+    "id": "aops-topic-1715027-q01",
+    "topic_id": "1715027",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715027_junior_regional_olympiad__fbh_2016_grade_6_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2016 Grade 6 Problem 1",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1715038-q01",
+    "topic_id": "1715038",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1715038_junior_regional_olympiad__fbh_2016_grade_6_problem_5",
+    "title": "Junior Regional Olympiad - FBH 2016 Grade 6 Problem 5",
+    "editorial_note": "\"Double pages\" is read as sheets (leaves) carrying pages 2k-1 and 2k, and the sum 4949 as the sum of the torn-out pages, as written. (If 4949 were the sum of the remaining pages, the same argument would give 3 sheets torn out.) Checked by exhaustive search over the number of sheets."
+  },
+  {
+    "id": "aops-topic-1714156-q01",
+    "topic_id": "1714156",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1714156_algebra_hearth",
+    "title": "Algebra Hearth",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1714863-q01",
+    "topic_id": "1714863",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1714863_math_is_cool",
+    "title": "Math Is Cool",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1570243-q01",
+    "topic_id": "1570243",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1570243_combinatorics_question",
+    "title": "Combinatorics Question!",
+    "editorial_note": "The general-position wording is kept; the identity C(C(n,2),2) - n C(n-1,2) = 3 C(n,4) is checked for n up to 40 and the count by explicit random point sets for small n."
+  },
+  {
+    "id": "aops-topic-1711485-q01",
+    "topic_id": "1711485",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1711485_geometry_question",
+    "title": "Geometry Question",
+    "editorial_note": "\"Exactly 6 inches away from the sides\" is read as distance 6 from the triangle (outside it)."
+  },
+  {
+    "id": "aops-topic-1714155-q01",
+    "topic_id": "1714155",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1714155_algebra__heath",
+    "title": "Algebra  Heath",
+    "editorial_note": "The doubled word in \"Three three years ago\" is a typo."
+  },
+  {
+    "id": "aops-topic-1712630-q01",
+    "topic_id": "1712630",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1712630_kinda_bashy_problem",
+    "title": "Kinda bashy problem",
+    "editorial_note": "The post gives five answer choices (3125 sqrt1653/8057, 25 sqrt1653/49, 343 sqrt1653/625, 7 sqrt551/5, 2147 sqrt3306/3500) and no key; none of them equals the area, which is 103 sqrt3306/350 (about 16.92; the choices are about 15.77, 20.74, 22.31, 32.86, 35.27). The record is free response. Checked with exact and floating-point coordinates."
+  },
+  {
+    "id": "aops-topic-1713813-q01",
+    "topic_id": "1713813",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1713813_a_math_problem",
+    "title": "A math Problem",
+    "editorial_note": "The post asks to prove y >= 0; the record also asks for the sharper bound y >= 1. x is taken to be real."
+  },
+  {
+    "id": "aops-topic-1713423-q01",
+    "topic_id": "1713423",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1713423_number_theory",
+    "title": "Number theory",
+    "editorial_note": "The post asks to prove the claim as stated, which is false for real a (counterexample 2^(1/5)); the record asks for the counterexample and proves the corrected claim for rational a."
+  },
+  {
+    "id": "aops-topic-1712750-q01",
+    "topic_id": "1712750",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1712750_how_to_find_remainder_of_2200_divided_by_13",
+    "title": "how to find remainder of 2^200 divided by 13?",
+    "editorial_note": "Near miss (different exponent) with aops-topic-2796272-q10 (2^2000 mod 13)."
+  },
+  {
+    "id": "aops-topic-1713347-q01",
+    "topic_id": "1713347",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1713347_rmo_mock_test_question",
+    "title": "RMO mock test question",
+    "editorial_note": "RMO mock test problem. The statement is tidied (\"DE intersects\" read like the other two as \"the line DE meets the circle\"); the proof shows that AP = BQ = CR whichever intersection point is chosen on each line. Checked numerically for random acute triangles and radii."
+  },
+  {
+    "id": "aops-topic-1713302-q01",
+    "topic_id": "1713302",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1713302_pythagorus_triple",
+    "title": "Pythagorus Triple",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1713055-q01",
+    "topic_id": "1713055",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1713055_need_help",
+    "title": "Need help",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1711204-q01",
+    "topic_id": "1711204",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1711204_420th_post_problem",
+    "title": "420th post problem",
+    "editorial_note": "Near miss with aops-topic-1872176-q01 (zeros at the end of 420! only)."
+  },
+  {
+    "id": "aops-topic-1698023-q01",
+    "topic_id": "1698023",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1698023_2013_mathcounts_school_sprint_30",
+    "title": "2013 MATHCOUNTS School Sprint #30",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1712659-q01",
+    "topic_id": "1712659",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1712659_math_problem",
+    "title": "math problem",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1712621-q01",
+    "topic_id": "1712621",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1712621_need_help",
+    "title": "Need help",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1711916-q01",
+    "topic_id": "1711916",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1711916_fun_mathcounts_problems",
+    "title": "Fun MATHCOUNTS Problems!",
+    "editorial_note": "Problem 1 of the post (a set of practice problems)."
+  },
+  {
+    "id": "aops-topic-1711916-q02",
+    "topic_id": "1711916",
+    "part": 2,
+    "url": "https://artofproblemsolving.com/community/c3h1711916_fun_mathcounts_problems",
+    "title": "Fun MATHCOUNTS Problems!",
+    "editorial_note": "Problem 2 of the post."
+  },
+  {
+    "id": "aops-topic-1711916-q03",
+    "topic_id": "1711916",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1711916_fun_mathcounts_problems",
+    "title": "Fun MATHCOUNTS Problems!",
+    "editorial_note": "Problem 3 of the post."
+  },
+  {
+    "id": "aops-topic-1711916-q04",
+    "topic_id": "1711916",
+    "part": 4,
+    "url": "https://artofproblemsolving.com/community/c3h1711916_fun_mathcounts_problems",
+    "title": "Fun MATHCOUNTS Problems!",
+    "editorial_note": "Problem 4 of the post. Checked by enumerating all runs."
+  },
+  {
+    "id": "aops-topic-1711916-q05",
+    "topic_id": "1711916",
+    "part": 5,
+    "url": "https://artofproblemsolving.com/community/c3h1711916_fun_mathcounts_problems",
+    "title": "Fun MATHCOUNTS Problems!",
+    "editorial_note": "Problem 5 of the post. The picture was not provided; the post describes it (all three chords on the same side of the centre, the chord of length k in the middle)."
+  },
+  {
+    "id": "aops-topic-1712099-q01",
+    "topic_id": "1712099",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1712099_divisibility_problem",
+    "title": "Divisibility Problem",
+    "editorial_note": "Source given only as \"BC Exam\"; not recorded as a contest source. Checked by search over |N| <= 10^5."
+  },
+  {
+    "id": "aops-topic-1712340-q01",
+    "topic_id": "1712340",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1712340_100th_post_problem",
+    "title": "100th post problem",
+    "editorial_note": "The ten integers are taken to be distinct. The factorisation and the uniqueness of the set were checked by searching all 10-element subsets of {1,...,20}."
+  },
+  {
+    "id": "aops-topic-1690790-q01",
+    "topic_id": "1690790",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1690790_300th_post_problem",
+    "title": "300th post problem",
+    "editorial_note": "Near miss with aops-topic-1787633-q01 (last two nonzero digits of 1^100 2^200 3^300 4^400 5^500)."
+  },
+  {
+    "id": "aops-topic-1711274-q01",
+    "topic_id": "1711274",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1711274_number_theory_problem",
+    "title": "Number Theory Problem",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1711594-q01",
+    "topic_id": "1711594",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1711594_digits_and_sums",
+    "title": "Digits and sums",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1711919-q01",
+    "topic_id": "1711919",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1711919_centroids_incenters_and_orthocenters",
+    "title": "Centroids, Incenters, and Orthocenters",
+    "editorial_note": "The post asks what the difference between centroids, incenters and orthocenters is; turned into definitions plus a computation for a specific obtuse triangle."
+  },
+  {
+    "id": "aops-topic-1712197-q01",
+    "topic_id": "1712197",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1712197_interesting_number_theory_problem",
+    "title": "Interesting number theory problem",
+    "editorial_note": "Checked by search for e, f, g <= 60: the solutions are exactly the triples with e^2 + f^2 = g^2."
+  },
+  {
+    "id": "aops-topic-1648327-q01",
+    "topic_id": "1648327",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1648327_fun_problem",
+    "title": "Fun Problem.",
+    "editorial_note": "Joke-style self-similar expression; the reading that each numerator and denominator is a copy of the whole expression, with a positive value, is stated."
+  },
+  {
+    "id": "aops-topic-1712010-q01",
+    "topic_id": "1712010",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1712010_how_to_graph_circles",
+    "title": "How to graph circles",
+    "editorial_note": "The post asks how to shift the centre of an ellipse ax^2+by^2=c; part (b) was added as a concrete exercise."
+  },
+  {
+    "id": "aops-topic-1711366-q01",
+    "topic_id": "1711366",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1711366_word_problems_and_1_step_problems",
+    "title": "Word problems and 1 step problems",
+    "editorial_note": "The post only says \"a mile race ... in opposite directions\"; read as a one-mile circular track with a common start (equivalently, the two ends of a one-mile course running towards each other)."
+  },
+  {
+    "id": "aops-topic-1711063-q01",
+    "topic_id": "1711063",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1711063_easy_summation_problem",
+    "title": "Easy summation problem",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1711299-q01",
+    "topic_id": "1711299",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1711299_i_am_stuck",
+    "title": "I am stuck",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1710875-q01",
+    "topic_id": "1710875",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710875_sum_and_difference_of_cubes",
+    "title": "Sum and Difference of cubes",
+    "editorial_note": "The post lists the second formula as x^3 + y^3 = (x - y)(x^2 + xy + y^2), a typo for x^3 - y^3; the record states both formulas correctly."
+  },
+  {
+    "id": "aops-topic-1710811-q01",
+    "topic_id": "1710811",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710811_math",
+    "title": "MATH!!!!!",
+    "editorial_note": "As posted (\"what is the value of a?\") the conditions do not determine a; the record asks for a in terms of b (a = 32b) and whether a is determined."
+  },
+  {
+    "id": "aops-topic-1711180-q01",
+    "topic_id": "1711180",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1711180_perfect_square",
+    "title": "k perfect square",
+    "editorial_note": "Pell equation m^2 - 48k^2 = 1; infinitely many k, described by the recurrence. Checked by brute force up to k = 10^5."
+  },
+  {
+    "id": "aops-topic-1711161-q01",
+    "topic_id": "1711161",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1711161_mathcounts",
+    "title": "Mathcounts",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1710748-q01",
+    "topic_id": "1710748",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710748_nice_sketchy_problem",
+    "title": "Nice \"sketchy\" problem",
+    "editorial_note": "The poster correctly reads the meeting as Maria 770 m, Tony 630 m; the record completes the computation (300 m)."
+  },
+  {
+    "id": "aops-topic-1710592-q01",
+    "topic_id": "1710592",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710592_2018_national_sprint_12",
+    "title": "2018 National Sprint #12",
+    "editorial_note": "The poster found a split with a 6-cookie group and asks why 5 is impossible; the record proves the bound. The poster's first group (9,9,9,4,1,1,1,1) weighs 35, not 34; the record uses a corrected split (6, 7 and 9 cookies). Official answer 6."
+  },
+  {
+    "id": "aops-topic-1710182-q01",
+    "topic_id": "1710182",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710182_junior_regional_olympiad__fbh_2017_grade_8_problem_4",
+    "title": "Junior Regional Olympiad - FBH 2017 Grade 8 Problem 4",
+    "editorial_note": "Checked by brute force over n, k < 2000."
+  },
+  {
+    "id": "aops-topic-1709573-q01",
+    "topic_id": "1709573",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1709573_junior_regional_olympiad__fbh_2018_grade_7_problem_4",
+    "title": "Junior Regional Olympiad - FBH 2018 Grade 7 Problem 4",
+    "editorial_note": "The figure was an image in the post; the text determines it (two radius-1 circles inside the radius-2 circle, touching at its centre). The question figure is redrawn from the text."
+  },
+  {
+    "id": "aops-topic-1710480-q01",
+    "topic_id": "1710480",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710480_number_of_matches_in_football_world_cup",
+    "title": "Number of matches in football world cup",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1709513-q05",
+    "topic_id": "1709513",
+    "part": 5,
+    "url": "https://artofproblemsolving.com/community/c3h1709513_arithmetic_progressions",
+    "title": "Arithmetic Progressions",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1709513-q06",
+    "topic_id": "1709513",
+    "part": 6,
+    "url": "https://artofproblemsolving.com/community/c3h1709513_arithmetic_progressions",
+    "title": "Arithmetic Progressions",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1709513-q07",
+    "topic_id": "1709513",
+    "part": 7,
+    "url": "https://artofproblemsolving.com/community/c3h1709513_arithmetic_progressions",
+    "title": "Arithmetic Progressions",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1709513-q08",
+    "topic_id": "1709513",
+    "part": 8,
+    "url": "https://artofproblemsolving.com/community/c3h1709513_arithmetic_progressions",
+    "title": "Arithmetic Progressions",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1709513-q09",
+    "topic_id": "1709513",
+    "part": 9,
+    "url": "https://artofproblemsolving.com/community/c3h1709513_arithmetic_progressions",
+    "title": "Arithmetic Progressions",
+    "editorial_note": "The post writes \"S3 = S(S2-S1)\"; the intended (and true) identity is S3 = 3(S2 - S1)."
+  },
+  {
+    "id": "aops-topic-1709513-q10",
+    "topic_id": "1709513",
+    "part": 10,
+    "url": "https://artofproblemsolving.com/community/c3h1709513_arithmetic_progressions",
+    "title": "Arithmetic Progressions",
+    "editorial_note": "The post asks for \"the middle term\"; the sequence has 180 terms, so the record asks for both middle terms (546 and 551)."
+  },
+  {
+    "id": "aops-topic-1709513-q11",
+    "topic_id": "1709513",
+    "part": 11,
+    "url": "https://artofproblemsolving.com/community/c3h1709513_arithmetic_progressions",
+    "title": "Arithmetic Progressions",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1709513-q12",
+    "topic_id": "1709513",
+    "part": 12,
+    "url": "https://artofproblemsolving.com/community/c3h1709513_arithmetic_progressions",
+    "title": "Arithmetic Progressions",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1709513-q13",
+    "topic_id": "1709513",
+    "part": 13,
+    "url": "https://artofproblemsolving.com/community/c3h1709513_arithmetic_progressions",
+    "title": "Arithmetic Progressions",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1710170-q01",
+    "topic_id": "1710170",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710170_junior_regional_olympiad__fbh_2017_grade_8_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2017 Grade 8 Problem 1",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1710139-q01",
+    "topic_id": "1710139",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710139_junior_regional_olympiad__fbh_2017_grade_7_problem_3",
+    "title": "Junior Regional Olympiad - FBH 2017 Grade 7 Problem 3",
+    "editorial_note": "Checked by enumerating all sets of ten distinct positive integers with sum 62."
+  },
+  {
+    "id": "aops-topic-1710185-q01",
+    "topic_id": "1710185",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710185_junior_regional_olympiad__fbh_2017_grade_8_problem_5",
+    "title": "Junior Regional Olympiad - FBH 2017 Grade 8 Problem 5",
+    "editorial_note": "Checked numerically for random triangles."
+  },
+  {
+    "id": "aops-topic-1710178-q01",
+    "topic_id": "1710178",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710178_junior_regional_olympiad__fbh_2017_grade_8_problem_3",
+    "title": "Junior Regional Olympiad - FBH 2017 Grade 8 Problem 3",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1710138-q01",
+    "topic_id": "1710138",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710138_junior_regional_olympiad__fbh_2017_grade_7_problem_2",
+    "title": "Junior Regional Olympiad - FBH 2017 Grade 7 Problem 2",
+    "editorial_note": "Checked with coordinates A(0,0), B(6,0), C(5,sqrt3), D(2,2sqrt3) and the shoelace formula."
+  },
+  {
+    "id": "aops-topic-1710140-q01",
+    "topic_id": "1710140",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710140_junior_regional_olympiad__fbh_2017_grade_7_problem_4",
+    "title": "Junior Regional Olympiad - FBH 2017 Grade 7 Problem 4",
+    "editorial_note": "The post asks for \"how many men, women and children\"; the data allow two answers with at least one of each (and a third with no men). The record states the at-least-one assumption and asks for all possibilities."
+  },
+  {
+    "id": "aops-topic-1710133-q01",
+    "topic_id": "1710133",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710133_junior_regional_olympiad__fbh_2017_grade_6_problem_5",
+    "title": "Junior Regional Olympiad - FBH 2017 Grade 6 Problem 5",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1710124-q01",
+    "topic_id": "1710124",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710124_junior_regional_olympiad__fbh_2017_grade_6_problem_2",
+    "title": "Junior Regional Olympiad - FBH 2017 Grade 6 Problem 2",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1710125-q01",
+    "topic_id": "1710125",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710125_junior_regional_olympiad__fbh_2017_grade_6_problem_3",
+    "title": "Junior Regional Olympiad - FBH 2017 Grade 6 Problem 3",
+    "editorial_note": "\"Altitudes h_a and h_b\" read as the altitudes from A and B. The figure is drawn with the actual angles 80, 46, 54 degrees."
+  },
+  {
+    "id": "aops-topic-1710135-q01",
+    "topic_id": "1710135",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710135_junior_regional_olympiad__fbh_2017_grade_7_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2017 Grade 7 Problem 1",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1710118-q01",
+    "topic_id": "1710118",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1710118_junior_regional_olympiad__fbh_2017_grade_6_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2017 Grade 6 Problem 1",
+    "editorial_note": "\"Every 7th card\" read as the cards whose numbers are multiples of 7. Checked by direct simulation."
+  },
+  {
+    "id": "aops-topic-1709775-q01",
+    "topic_id": "1709775",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1709775_squares_and_square_roots",
+    "title": "Squares and Square Roots",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1709576-q01",
+    "topic_id": "1709576",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1709576_junior_regional_olympiad__fbh_2018_grade_8_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2018 Grade 8 Problem 1",
+    "editorial_note": "Times are measured over a 24-hour day from midnight, the standard reading of this classic."
+  },
+  {
+    "id": "aops-topic-1709625-q01",
+    "topic_id": "1709625",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1709625_junior_regional_olympiad__fbh_2018_grade_8_problem_5",
+    "title": "Junior Regional Olympiad - FBH 2018 Grade 8 Problem 5",
+    "editorial_note": "\"E and F lie on side ABCD\" read as side AB; G and H on the minor arc AB. The figure uses the true size s = 2/5."
+  },
+  {
+    "id": "aops-topic-1709552-q01",
+    "topic_id": "1709552",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1709552_junior_regional_olympiad__fbh_2018_grade_6_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2018 Grade 6 Problem 1",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1708983-q01",
+    "topic_id": "1708983",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1708983_need_help",
+    "title": "Need help",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1709567-q01",
+    "topic_id": "1709567",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1709567_junior_regional_olympiad__fbh_2018_grade_7_problem_1",
+    "title": "Junior Regional Olympiad - FBH 2018 Grade 7 Problem 1",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1709580-q01",
+    "topic_id": "1709580",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1709580_junior_regional_olympiad__fbh_2018_grade_8_problem_3",
+    "title": "Junior Regional Olympiad - FBH 2018 Grade 8 Problem 3",
+    "editorial_note": "Checked by brute force over all four-digit numbers."
+  },
+  {
+    "id": "aops-topic-1709569-q01",
+    "topic_id": "1709569",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1709569_junior_regional_olympiad__fbh_2018_grade_7_problem_2",
+    "title": "Junior Regional Olympiad - FBH 2018 Grade 7 Problem 2",
+    "editorial_note": "The translation \"all three digits are distinct than zero\" means \"different from zero\" (nonzero); with distinct digits the problem has no solution, which the solution remarks. Answer 997 checked by brute force."
+  },
+  {
+    "id": "aops-topic-1709312-q01",
+    "topic_id": "1709312",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1709312_average_speed_problem",
+    "title": "Average Speed Problem",
+    "editorial_note": "The poster used the harmonic mean and asks for confirmation; both methods give 1200/19 mph."
+  },
+  {
+    "id": "aops-topic-1705943-q01",
+    "topic_id": "1705943",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1705943_mixed_subject",
+    "title": "Mixed subject",
+    "editorial_note": "As posted (\"express as a power of 2\") the problem is impossible: the value is 3584 = 7 * 2^9. The record asks for the form m * 2^k and whether it is a power of 2."
+  },
+  {
+    "id": "aops-topic-1702869-q01",
+    "topic_id": "1702869",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1702869_3digit_cyclics",
+    "title": "3-digit cyclics",
+    "editorial_note": "Checked by brute force over all three-digit numbers."
+  },
+  {
+    "id": "aops-topic-1708628-q01",
+    "topic_id": "1708628",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1708628_geometry_help",
+    "title": "Geometry Help",
+    "editorial_note": "The poster asks why triangles BCD and DOF are similar; the solution explains it."
+  },
+  {
+    "id": "aops-topic-1708605-q01",
+    "topic_id": "1708605",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1708605_tree_planting_permutation",
+    "title": "Tree planting permutation",
+    "editorial_note": "Trees of the same kind are taken as indistinguishable (the usual reading). Checked by brute force over all 160160 arrangements."
+  },
+  {
+    "id": "aops-topic-1708235-q01",
+    "topic_id": "1708235",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1708235_help_problem_from_hk_contest",
+    "title": "Help!! Problem from HK contest",
+    "editorial_note": "Hong Kong contest problem in translation. \"Different sums can be obtained\" is read as: the nine numbers are different positive integers (the pairwise sums need not all be distinct)."
+  },
+  {
+    "id": "aops-topic-1708041-q01",
+    "topic_id": "1708041",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1708041_2018_national_sprint_21",
+    "title": "2018 National Sprint #21",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1708456-q01",
+    "topic_id": "1708456",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1708456_geometry_help",
+    "title": "Geometry Help",
+    "editorial_note": "Conceptual question turned into a short proof."
+  },
+  {
+    "id": "aops-topic-1708333-q03",
+    "topic_id": "1708333",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1708333_300th_post",
+    "title": "300th post!",
+    "editorial_note": "Problem 3 of the post. Problem 1 (Bernie's canning factory) is dropped: (x+1)(x-5)=300 and (y-2)(y+1)=200 have irrational solutions (x = 2+sqrt309, y = (1+sqrt809)/2), so the \"number of things canned\" is not a sensible value. Problem 2 (the wallet thief) is dropped: the statements are contradictory (William's statements force Fred and William innocent; then Jenny's first statement is her lie, so \"Jenny does not know where the wallet was\" is true, but Al's statements force \"Jenny knows where the wallet was\" to be true as well)."
+  },
+  {
+    "id": "aops-topic-1708321-q01",
+    "topic_id": "1708321",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1708321_sides_and_perimeter_of_triangle",
+    "title": "Sides and perimeter of triangle",
+    "editorial_note": "Checked by brute force."
+  },
+  {
+    "id": "aops-topic-1294839-q01",
+    "topic_id": "1294839",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1294839_infinite_series",
+    "title": "Infinite Series",
+    "editorial_note": "Conceptual \"what is wrong\" post kept as an error-finding question."
+  },
+  {
+    "id": "aops-topic-1707812-q01",
+    "topic_id": "1707812",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1707812_lcm_hcf_problem",
+    "title": "LCM HCF problem",
+    "editorial_note": "The post does not say the number of friends is the same in the three cases (it cannot be); read in the usual way: N - 7 is a positive multiple of 4, 5 and 6."
+  },
+  {
+    "id": "aops-topic-1706974-q01",
+    "topic_id": "1706974",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1706974_simplifying_in_modular_arithmetic",
+    "title": "Simplifying in modular arithmetic",
+    "editorial_note": "The poster proposes b = 4 (mod 20) for 9 = b + 4 (mod 20); corrected to b = 5. The textbook system (x = 1 mod 3, x = 2 mod 4) itself is already in the bank, so the record asks only about the two simplifications."
+  },
+  {
+    "id": "aops-topic-1707260-q01",
+    "topic_id": "1707260",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1707260_partition_function",
+    "title": "Partition function",
+    "editorial_note": "The poster asks for a general formula for the number of partitions of N into r parts; none is known in closed form. The record proves the poster's property F(N,2) = floor(N/2), the standard recurrence, and the formula for r = 3. All checked by brute force for N <= 60."
+  },
+  {
+    "id": "aops-topic-1707676-q01",
+    "topic_id": "1707676",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1707676_some_geometry_questions",
+    "title": "Some geometry questions",
+    "editorial_note": "Question 1 of the post. Questions 2 (\"how do you find the internal tangent of a circle\") and 3 (\"is there a formula for the goat-grazing problem\") give no specific problem and are dropped."
+  },
+  {
+    "id": "aops-topic-1707676-q04",
+    "topic_id": "1707676",
+    "part": 4,
+    "url": "https://artofproblemsolving.com/community/c3h1707676_some_geometry_questions",
+    "title": "Some geometry questions",
+    "editorial_note": "Question 4 of the post; \"they both a smaller radius\" read as each frustum having these dimensions."
+  },
+  {
+    "id": "aops-topic-1707676-q05",
+    "topic_id": "1707676",
+    "part": 5,
+    "url": "https://artofproblemsolving.com/community/c3h1707676_some_geometry_questions",
+    "title": "Some geometry questions",
+    "editorial_note": "Question 5 of the post asks for \"the length of a regular pentagon with side lengths 2\"; read as the length of a diagonal."
+  },
+  {
+    "id": "aops-topic-1706187-q01",
+    "topic_id": "1706187",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1706187_ez_algebra",
+    "title": "ez algebra",
+    "editorial_note": "From a school math team selection test."
+  },
+  {
+    "id": "aops-topic-1707744-q01",
+    "topic_id": "1707744",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1707744_restricted_distribution_problem",
+    "title": "Restricted distribution problem",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1707054-q01",
+    "topic_id": "1707054",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1707054_cmms_2051_stars_and_bars_problem_help",
+    "title": "CMMS 2.051 Stars and Bars Problem Help",
+    "editorial_note": "The repetition of items (implied by the posted answer 126) is stated explicitly."
+  },
+  {
+    "id": "aops-topic-1704985-q01",
+    "topic_id": "1704985",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1704985_2005_national_mathcounts_sprint_14",
+    "title": "2005 national mathcounts sprint #14",
+    "editorial_note": "The figure was an image in the post; it is redrawn from the text (2 rows, 9 rods, 6 connectors). The poster asks what \"Newton's little formula\" is; the solution explains finite differences."
+  },
+  {
+    "id": "aops-topic-1707222-q03",
+    "topic_id": "1707222",
+    "part": 3,
+    "url": "https://artofproblemsolving.com/community/c3h1707222_mathcounts_problems",
+    "title": "MATHCOUNTS Problems",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1707437-q01",
+    "topic_id": "1707437",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1707437_infinite_series",
+    "title": "Infinite Series",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1706861-q01",
+    "topic_id": "1706861",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1706861_arithmetic",
+    "title": "Arithmetic",
+    "editorial_note": "\"Between 5000 and 6000\" read as strictly between, which rules out 5000 (digits 0, 0, 0 also fit the conditions)."
+  },
+  {
+    "id": "aops-topic-1692181-q01",
+    "topic_id": "1692181",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1692181_blue_card_problem_easy",
+    "title": "Blue card problem (easy)",
+    "editorial_note": "From the course The Power of Mathematical Visualization. The random choice of the face shown is stated explicitly."
+  },
+  {
+    "id": "aops-topic-1706924-q01",
+    "topic_id": "1706924",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1706924_probability_of_guessing",
+    "title": "Probability of Guessing",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1706395-q01",
+    "topic_id": "1706395",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1706395_ioanas_numbers",
+    "title": "Ioana's Numbers",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1705401-q01",
+    "topic_id": "1705401",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1705401_random_problem_1",
+    "title": "Random Problem #1",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1706122-q01",
+    "topic_id": "1706122",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1706122_geometry_question_please_help",
+    "title": "Geometry question. Please Help.",
+    "editorial_note": "Asked on a state-round test according to the poster (contest not named)."
+  },
+  {
+    "id": "aops-topic-1705963-q01",
+    "topic_id": "1705963",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1705963_interesting_but_difficult_algebra_problem",
+    "title": "Interesting but Difficult Algebra Problem",
+    "editorial_note": "Brute force over all positive integer solutions confirms that (20, 19, 3) is the only one, so the maximum is 42."
+  },
+  {
+    "id": "aops-topic-1705567-q01",
+    "topic_id": "1705567",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1705567_infinite_sequence_help",
+    "title": "Infinite sequence help",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1705590-q01",
+    "topic_id": "1705590",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1705590_penniesnickels_dimes_quarters",
+    "title": "Pennies,Nickels, Dimes, Quarters",
+    "editorial_note": "The post asks how to solve \"equal numbers of quarters, nickels and dimes add up to x\" problems in general; the record asks for the general answer and a sample total ($6.00) chosen for the record."
+  },
+  {
+    "id": "aops-topic-1705202-q01",
+    "topic_id": "1705202",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1705202_geometry",
+    "title": "geometry",
+    "editorial_note": "The figure is drawn for k = 1."
+  },
+  {
+    "id": "aops-topic-1704691-q01",
+    "topic_id": "1704691",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1704691_incorrect_answers_on_mathcounts_handbook",
+    "title": "Incorrect Answers on MATHCOUNTS Handbook?",
+    "editorial_note": "The poster got 1395 and doubted the handbook answer 555; 555 is correct (the poster converted in the wrong direction)."
+  },
+  {
+    "id": "aops-topic-1704482-q01",
+    "topic_id": "1704482",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1704482_n_factorial_and_100_zeros",
+    "title": "N factorial and 100 zeros",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-252019-q01",
+    "topic_id": "252019",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h252019_super_easy_exponents",
+    "title": "k Super Easy Exponents",
+    "editorial_note": ""
+  },
+  {
+    "id": "aops-topic-1704105-q01",
+    "topic_id": "1704105",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1704105_weird_circle_questions",
+    "title": "Weird Circle Questions",
+    "editorial_note": "The post asks for a fast general method; the record states the general problem and proves the formulas geometrically."
+  },
+  {
+    "id": "aops-topic-1704033-q01",
+    "topic_id": "1704033",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1704033_star_and_bar_combination_problem",
+    "title": "Star and bar combination problem",
+    "editorial_note": "The poster's expression is right but evaluates to 216, not the posted 346. Checked by brute force."
+  },
+  {
+    "id": "aops-topic-1703725-q01",
+    "topic_id": "1703725",
+    "part": 1,
+    "url": "https://artofproblemsolving.com/community/c3h1703725_mod_arith",
+    "title": "Mod Arith.",
+    "editorial_note": ""
+  }
+]

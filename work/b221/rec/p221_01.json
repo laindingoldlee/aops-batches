@@ -1,0 +1,556 @@
+[
+ {
+  "topic_id": "1789388",
+  "part": 1,
+  "question": "Five positive integers $a,b,c,d,e$ have sum $2009$, and the sum of three of them is $1000$. Prove that the product $abcde$ is divisible by $4$.",
+  "solution": "Name the numbers so that $a+b+c=1000$; then $d+e=2009-1000=1009$.\n\n\\textbf{Among $d,e$.} The sum $d+e=1009$ is odd, so exactly one of $d,e$ is even.\n\n\\textbf{Among $a,b,c$.} The sum $a+b+c=1000$ is even, so the number of odd numbers among $a,b,c$ is even, that is $0$ or $2$. Hence at least one of $a,b,c$ is even.\n\nSo at least two of the five factors are even, each contributing a factor $2$, and therefore $4\\mid abcde$. $\\blacksquare$",
+  "tags": [
+   "Parity",
+   "Divisibility"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1789275",
+  "part": 1,
+  "question": "Triangle $ABC$ is equilateral with side length $6$, and $D$ is the point of $BC$ with $AD\\perp BC$. Find the radius of the circumcircle of triangle $ABC$.",
+  "solution": "In an equilateral triangle the altitude $AD$ is also a median and a perpendicular bisector, so the circumcentre $O$ lies on $AD$, and it coincides with the centroid. Hence $AO=\\dfrac{2}{3}AD$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5.5cm);\ndefaultpen(fontsize(10pt));\npair B=(0,0),C=(6,0),A=(3,3*sqrt(3)),D=(3,0),O=(3,sqrt(3));\ndraw(circle(O,2*sqrt(3)),gray+linewidth(0.7));\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(A--D,dashed);\ndraw(O--C,blue+linewidth(0.8));\ndraw((3,0)--(3,0.35)--(3.35,0.35)--(3.35,0),linewidth(0.5));\ndot(O);\nlabel(\"$A$\",A,N);label(\"$B$\",B,SW);label(\"$C$\",C,SE);label(\"$D$\",D,S);label(\"$O$\",O,W);\nlabel(\"$6$\",(A+B)/2,NW);\nlabel(\"$R$\",(O+C)/2,N,blue);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nSince $D$ is the midpoint of $BC$, $BD=3$ and by Pythagoras $AD=\\sqrt{6^2-3^2}=3\\sqrt3$. Therefore\n\\[\nR=AO=\\dfrac{2}{3}\\cdot3\\sqrt3=\\boxed{2\\sqrt3}.\n\\]\n(Check: $OD=\\sqrt3$ and $OC=\\sqrt{OD^2+DC^2}=\\sqrt{3+9}=2\\sqrt3$.)",
+  "tags": [
+   "Equilateral triangles",
+   "Circumcircles and circumcentres",
+   "Medians and centroids",
+   "Altitudes",
+   "Pythagorean theorem"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1683277",
+  "part": 1,
+  "question": "The first round of the 2010 FIFA World Cup consisted of several groups of four teams each. Within each group, each of the four teams played each other team exactly once. How many matches were there in each group?",
+  "solution": "Each match corresponds to a pair of teams, so the number of matches is the number of ways to choose $2$ of the $4$ teams:\n\\[\n\\dbinom42=\\dfrac{4\\cdot3}{2}=\\boxed{6}.\n\\]\n(Each team plays $3$ matches; $4\\cdot3=12$ counts every match twice.)",
+  "tags": [
+   "Combinations"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1789230",
+  "part": 1,
+  "question": "A clock face is a circle of radius $20$ cm. A circular disk of radius $10$ cm is externally tangent to the clock face at $12$ o'clock, and an arrow painted on the disk initially points vertically upward. The disk rolls without slipping clockwise around the outside of the clock face. At what point on the clock face will the disk be tangent when the arrow is next pointing vertically upward?\n\n$\\textbf{(A) }\\text{2 o'clock}\\qquad\\textbf{(B) }\\text{3 o'clock}\\qquad\\textbf{(C) }\\text{4 o'clock}\\qquad\\textbf{(D) }\\text{6 o'clock}\\qquad\\textbf{(E) }\\text{8 o'clock}$",
+  "solution": "When the point of tangency has moved through an angle $\\theta$ around the clock, the centre of the disk has turned through $\\theta$ about the clock's centre and the disk has rolled an arc $20\\theta$, so the disk has turned through $\\theta+\\dfrac{20\\theta}{10}=3\\theta$. The arrow points up again when $3\\theta=360^\\circ$, i.e.\\ $\\theta=120^\\circ$: $\\boxed{\\textbf{(C)}\\ \\text{4 o'clock}}$.",
+  "tags": [
+   "Circles",
+   "Tangent circles",
+   "Rotations"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "P1 of an AMC 10 marathon; repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1789026",
+  "part": 1,
+  "question": "Let $n$ be a positive integer, and let the last $n$ digits of a positive integer $N$ be $a_1a_2\\ldots a_n$ (so $a_1$ is the digit in the $10^{n-1}$ place and $a_n$ is the units digit). A student proposes the following test:\n\\begin{quote}\n$N$ is divisible by $2^n$ exactly when $n a_1+(n-1)a_2+(n-2)a_3+\\dots+2a_{n-1}+a_n$ is divisible by $2^n$; and the same holds with $5^n$ in place of $2^n$.\n\\end{quote}\nProve or disprove the test. For which of the cases $2^1,2^2,5^1,5^2,2^3$ is it correct?",
+  "solution": "\\textbf{The correct test.} Since $10^n=2^n5^n$, every digit of $N$ beyond the last $n$ contributes a multiple of $10^n$. So\n\\[\nN\\equiv\\overline{a_1a_2\\ldots a_n}=10^{n-1}a_1+10^{n-2}a_2+\\dots+10a_{n-1}+a_n \\pmod{2^n}\\ \\text{and}\\pmod{5^n},\n\\]\nand $N$ is divisible by $2^n$ (or $5^n$) exactly when the number formed by its last $n$ digits is. The proposed test replaces the place values $10^{n-k}$ by the weights $n-k+1$; it is correct only when these agree modulo $2^n$ (or $5^n$) closely enough.\n\n\\textbf{$n=1$.} The weighted sum is $a_1$, the last digit, so the test is the usual test for $2$ and for $5$: correct.\n\n\\textbf{$2^2=4$.} The weighted sum is $2a_1+a_2$, and $10a_1+a_2-(2a_1+a_2)=8a_1\\equiv0\\pmod4$. So the two numbers have the same remainder modulo $4$ and the test is correct for $4$ (this is the familiar ``twice the tens digit plus the units digit'' rule).\n\n\\textbf{$5^2=25$: false.} $N=25$ is divisible by $25$, but $2\\cdot2+5=9$ is not.\n\n\\textbf{$2^3=8$: false.} $N=104=8\\cdot13$ is divisible by $8$, but $3\\cdot1+2\\cdot0+4=7$ is not.\n\nSo the test is $\\boxed{\\text{false in general}}$: it is correct for $2$, $5$ and $4$, and fails for $25$ (counterexample $25$) and for $8$ (counterexample $104$). The reliable test uses the number formed by the last $n$ digits.",
+  "tags": [
+   "Divisibility rules",
+   "Counterexamples",
+   "Remainders and congruences"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post's statement is garbled (\"if the number a1*n+...+an is divisible by 2, then the original number is divisible by 2\"); it is read as the claim that N is divisible by 2^n (or 5^n) exactly when the weighted sum is. The record asks to prove or disprove it: true for 2, 4, 5, false for 25 and 8."
+ },
+ {
+  "topic_id": "1789002",
+  "part": 1,
+  "question": "Find the sum of the digits of the number\n\\[\n3+33+333+3333+\\dots+\\underbrace{33\\ldots3}_{49\\text{ digits}} .\n\\]",
+  "solution": "The number with $k$ threes is $\\dfrac{3\\left(10^k-1\\right)}{9}=\\dfrac{10^k-1}{3}$. Hence\n\\[\nS=\\sum_{k=1}^{49}\\dfrac{10^k-1}{3}=\\dfrac{1}{3}\\left(\\dfrac{10^{50}-10}{9}-49\\right)=\\dfrac{10^{50}-451}{27}.\n\\]\nWrite $10^{50}-451=100\\left(10^{48}-1\\right)-351$. Since $999=27\\cdot37$, the number $10^{48}-1$ (forty-eight nines, i.e.\\ sixteen blocks $999$) divided by $27$ is sixteen blocks $037$:\n\\[\n\\dfrac{10^{48}-1}{27}=\\underbrace{037\\,037\\ldots037}_{16\\text{ blocks}} .\n\\]\nTherefore\n\\[\nS=100\\cdot\\dfrac{10^{48}-1}{27}-13=37\\,\\underbrace{037\\ldots037}_{14\\text{ blocks}}\\,03700-13=37\\,\\underbrace{037\\ldots037}_{14\\text{ blocks}}\\,03687 .\n\\]\nThe digit sum is $(3+7)+14\\cdot(0+3+7)+(0+3+6+8+7)=10+140+24=\\boxed{174}$.",
+  "tags": [
+   "Place value",
+   "Summation",
+   "Geometric sequences",
+   "Digit problems"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1789143",
+  "part": 1,
+  "question": "In a race with $30$ runners, $8$ distinct trophies (first place, second place, \\ldots, eighth place) are given to the top $8$ runners. In how many ways can the trophies be awarded?",
+  "solution": "The first-place trophy can go to any of the $30$ runners, second place to any of the remaining $29$, and so on down to eighth place, which has $23$ choices. So the number of ways is\n\\[\n30\\cdot29\\cdot28\\cdot27\\cdot26\\cdot25\\cdot24\\cdot23=\\dfrac{30!}{22!}=\\boxed{235989936000}.\n\\]",
+  "tags": [
+   "Permutations",
+   "Multiplication principle"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "P1 of a combinatorics marathon (later posts not included)."
+ },
+ {
+  "topic_id": "1789170",
+  "part": 1,
+  "question": "Prove that the number of ways to choose $r$ objects from $n$ distinct objects ($0\\le r\\le n$) is\n\\[\n\\dbinom nr=\\dfrac{n!}{r!\\,(n-r)!}.\n\\]",
+  "solution": "Count the arrangements of $r$ of the $n$ objects in a row in two ways. Directly, there are $n(n-1)\\cdots(n-r+1)=\\dfrac{n!}{(n-r)!}$. Alternatively, first choose the set of $r$ objects ($\\dbinom nr$ ways) and then order it ($r!$ ways). Hence $\\dbinom nr\\,r!=\\dfrac{n!}{(n-r)!}$, which gives the formula. $\\blacksquare$",
+  "tags": [
+   "Combinations",
+   "Permutations",
+   "Double counting"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post writes the formula as nCr=n!/r!*n-r!; read as n!/(r!(n-r)!). Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1789162",
+  "part": 1,
+  "question": "Insert operation signs from $+,-,\\times,\\div$ between the numbers below (keeping them in this order, and with the usual order of operations) to make a true equation:\n\\[\n10\\quad 8\\quad 7\\quad 6\\quad 2\\;=\\;63 .\n\\]",
+  "solution": "Multiplication and division are done before addition and subtraction. Since $63$ is close to $8\\times7=56$, try $10+8\\times7$, which is $66$; it then remains to subtract $3=6\\div2$:\n\\[\n\\boxed{10+8\\times7-6\\div2=63},\n\\]\nbecause $10+56-3=63$. (Other solutions with parentheses may exist; one is enough.)",
+  "tags": [
+   "Order of operations",
+   "Construction"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "P1 of an \"operators marathon\"; the rules allow any operations, and the record asks for one valid expression."
+ },
+ {
+  "topic_id": "1789101",
+  "part": 1,
+  "question": "To weigh an object with a balance scale, Brady places the object on one pan and places some of his weights on either pan (or both) until the two pans balance. Brady's set of weights contains the minimum number of weights needed to be able to measure every whole-number weight from $1$ to $40$ pounds, inclusive. What is the greatest weight, in pounds, in Brady's set?",
+  "solution": "\\textbf{At least four weights.} Each weight is on the object's pan, on the other pan, or unused, so $k$ weights give at most $3^k$ arrangements. One arrangement is ``all unused'', and the others come in pairs (swap the pans) giving opposite net amounts, so at most $\\dfrac{3^k-1}{2}$ positive amounts can be measured. For $k=3$ this is $13<40$, so at least $4$ weights are needed.\n\n\\textbf{Four weights suffice: $1,3,9,27$.} Every integer from $1$ to $40$ can be written as $\\sum c_i3^i$ ($i=0,1,2,3$) with $c_i\\in\\{-1,0,1\\}$ (balanced ternary); for example $40=27+9+3+1$, $20=27-9+3-1$ and $14=27-9-3-1$. A weight with $c_i=1$ goes on the pan opposite the object and one with $c_i=-1$ goes beside the object.\n\n\\textbf{The set is forced.} With four weights there are exactly $\\dfrac{3^4-1}{2}=40$ positive arrangements, so every amount $1,\\dots,40$ is obtained by exactly one arrangement (up to swapping pans), and the total $T$ of the weights is the largest amount, so $T=40$. Measure an arrangement by its \\emph{deficit} $40-(\\text{amount})$: an unused weight $w$ lowers the amount by $w$ and a weight beside the object lowers it by $2w$. So the deficits are exactly the numbers $\\sum c_iw_i$ with $c_i\\in\\{0,1,2\\}$, and they must be the $81$ numbers $0,1,\\dots,80$, each obtained once. Now build up from the smallest weight:\n\\begin{itemize}\n\\item Deficit $1$ needs a weight $1$. With it, deficits $0,1,2$ are made; a weight $2$ would make deficit $2$ twice, so the next weight is at least $3$, and deficit $3$ forces a weight $3$.\n\\item With $1$ and $3$, the deficits $0,\\dots,8$ are each made once; a weight between $4$ and $8$ would repeat one, and deficit $9$ forces a weight $9$.\n\\item With $1,3,9$, the deficits $0,\\dots,26$ are made; likewise the last weight is $27$ (and indeed $1+3+9+27=40$).\n\\end{itemize}\nSo Brady's set is $\\{1,3,9,27\\}$, and the greatest weight is $\\boxed{27}$ pounds.",
+  "tags": [
+   "Digits and bases",
+   "Bounding and extremal cases",
+   "Logical deduction"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "MATHCOUNTS problem (year not given); posted answer 27 confirmed. The solution also proves that the minimal set is unique."
+ },
+ {
+  "topic_id": "1788776",
+  "part": 1,
+  "question": "\\begin{enumerate}\n\\item[(a)] Prove the identities\n\\[\na^2-b^2=(a-b)(a+b),\\qquad a^3-b^3=(a-b)(a^2+ab+b^2),\\qquad a^3+b^3=(a+b)(a^2-ab+b^2).\n\\]\n\\item[(b)] Explain why one would expect $a-b$ to be a factor of $a^3-b^3$ and $a+b$ to be a factor of $a^3+b^3$ before multiplying anything out.\n\\item[(c)] Prove that $a^2+b^2$ cannot be written as a product $(pa+qb)(ra+sb)$ with real numbers $p,q,r,s$.\n\\end{enumerate}",
+  "solution": "\\textbf{(a)} Expand the right-hand sides:\n\\[\n(a-b)(a+b)=a^2+ab-ab-b^2=a^2-b^2,\n\\]\n\\[\n(a-b)(a^2+ab+b^2)=a^3+a^2b+ab^2-a^2b-ab^2-b^3=a^3-b^3,\n\\]\n\\[\n(a+b)(a^2-ab+b^2)=a^3-a^2b+ab^2+a^2b-ab^2+b^3=a^3+b^3 .\n\\]\nIn each product the middle terms cancel in pairs.\n\n\\textbf{(b)} Think of $a^3-b^3$ as a polynomial in $a$. It is $0$ when $a=b$, so by the factor theorem $a-b$ divides it. Likewise $a^3+b^3$ is $0$ when $a=-b$, so $a-(-b)=a+b$ divides it. The other factor is then found by division, and its form is forced: it must be a quadratic whose leading term is $a^2$ and whose last term is $\\pm b^2$.\n\n\\textbf{(c)} Suppose $a^2+b^2=(pa+qb)(ra+sb)$ for all real $a,b$. Put $b=1$: then $a^2+1=(pa+q)(ra+s)$ for all $a$. Comparing the coefficients of $a^2$ gives $pr=1$, so $p\\ne0$, and then $a=-\\dfrac {q}{p}$ is a real number at which the right side is $0$. But $a^2+1\\ge1>0$ for every real $a$, a contradiction. So $\\boxed{a^2+b^2\\text{ has no factorisation into real linear factors}}$. $\\blacksquare$",
+  "tags": [
+   "Factoring",
+   "Difference of squares",
+   "Sum and difference of cubes",
+   "Algebraic expressions and identities",
+   "Remainder theorem and factor theorem"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks how the special factorisations work (whether to memorise them); turned into proofs of the identities, the factor-theorem reason behind them, and a proof that a^2+b^2 does not factor over the reals."
+ },
+ {
+  "topic_id": "1788416",
+  "part": 1,
+  "question": "What is the remainder when $11^{12}$ is divided by $13$?",
+  "solution": "Since $11\\equiv-2\\pmod{13}$,\n\\[\n11^{12}\\equiv(-2)^{12}=2^{12}=\\left(2^6\\right)^2=64^2\\pmod{13}.\n\\]\nNow $64=5\\cdot13-1\\equiv-1\\pmod{13}$, so $11^{12}\\equiv(-1)^2=1\\pmod{13}$. The remainder is $\\boxed{1}$.\n\n(This is also Fermat's little theorem: $13$ is prime and $13\\nmid11$, so $11^{12}\\equiv1\\pmod{13}$.)",
+  "tags": [
+   "Remainders and congruences",
+   "Modular exponentiation",
+   "Fermat's little theorem"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1788191",
+  "part": 1,
+  "question": "A point $(x,y)$ is chosen uniformly at random from the rectangle with vertices $(0,0)$, $(0,3)$, $(5,0)$ and $(5,3)$. What is the probability that $4\\le x^2+y^2\\le15$?",
+  "solution": "The probability is the area of the region of the rectangle between the circles $x^2+y^2=4$ and $x^2+y^2=15$, divided by the rectangle's area $15$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(7.5cm);\ndefaultpen(fontsize(10pt));\nimport graph;\nreal r1=2, r2=sqrt(15);\npair O=(0,0), Q=(sqrt(6),3);\nreal th=degrees(atan(3/sqrt(6)));\npath reg=arc(O,r2,0,th)--(0,3)--(0,r1)--arc(O,r1,90,0)--cycle;\nfill(reg,lightgray);\ndraw((0,0)--(5,0)--(5,3)--(0,3)--cycle,linewidth(0.9));\ndraw(arc(O,r1,0,90),linewidth(0.8));\ndraw(arc(O,r2,0,th),linewidth(0.8));\ndraw(O--Q,dashed);\ndot(Q);\nlabel(\"$O$\",O,SW);label(\"$(5,0)$\",(5,0),S);label(\"$(5,3)$\",(5,3),NE);label(\"$(0,3)$\",(0,3),W);\nlabel(\"$Q(\\sqrt6,3)$\",Q,N);\nlabel(\"$2$\",(2,0),S);label(\"$\\sqrt{15}$\",(sqrt(15),0),S);\ndraw(arc(O,0.75,0,th),linewidth(0.5));\nlabel(\"$\\theta$\",1.05*dir(th/2));\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n\\textbf{Inside the larger circle.} Since $\\sqrt{15}<5$, the circle of radius $\\sqrt{15}$ does not reach the side $x=5$, but it crosses the top side $y=3$ at $Q=(\\sqrt6,3)$, because $6+9=15$. The part of the rectangle inside this circle is the right triangle with vertices $O$, $(0,3)$, $Q$, of area $\\dfrac{1}{2}\\cdot3\\cdot\\sqrt6=\\dfrac{3\\sqrt6}{2}$, together with the circular sector between the $x$-axis and $OQ$, of angle $\\theta=\\arctan\\dfrac{3}{\\sqrt6}=\\arctan\\dfrac{\\sqrt6}{2}$ and area $\\dfrac{1}{2}\\cdot15\\,\\theta$.\n\n\\textbf{Inside the smaller circle.} The quarter disc of radius $2$ lies inside the rectangle (as $2<3$) and has area $\\dfrac{1}{4}\\cdot4\\pi=\\pi$.\n\nSo the shaded region has area $\\dfrac{3\\sqrt6}{2}+\\dfrac{15}{2}\\arctan\\dfrac{\\sqrt6}{2}-\\pi$, and the probability is\n\\[\n\\boxed{\\dfrac{\\sqrt6}{10}+\\dfrac{1}{2}\\arctan\\dfrac{\\sqrt6}{2}-\\dfrac{\\pi}{15}}\\approx0.479 .\n\\]",
+  "tags": [
+   "Geometric probability",
+   "Circles",
+   "Lengths, perimeter, and area",
+   "Area decomposition",
+   "Trigonometry"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Exact answer involves an inverse tangent; the value was checked by numerical integration and Monte Carlo."
+ },
+ {
+  "topic_id": "1788440",
+  "part": 1,
+  "question": "The game of Connex contains one $4$-unit piece, two identical $3$-unit pieces, three identical $2$-unit pieces and four identical $1$-unit pieces. How many different arrangements of pieces (in a row) will make a $10$-unit segment? The $10$-unit segments made of the pieces $4$-$3$-$2$-$1$ and $1$-$2$-$3$-$4$ count as two different arrangements.",
+  "solution": "First choose how many pieces of each size are used, say $a$ fours, $b$ threes, $c$ twos and $d$ ones, with $a\\le1$, $b\\le2$, $c\\le3$, $d\\le4$ and $4a+3b+2c+d=10$. Since pieces of the same size are identical, such a choice can be put in a row in $\\dfrac{(a+b+c+d)!}{a!\\,b!\\,c!\\,d!}$ ways. The possible choices are:\n\\[\n\\begin{array}{c|c|c}\n\\text{pieces used} & \\text{number of pieces} & \\text{arrangements}\\\\ \\hline\n2,2,2,1,1,1,1 & 7 & \\dfrac{7!}{3!\\,4!}=35\\\\\n3,2,2,1,1,1 & 6 & \\dfrac{6!}{2!\\,3!}=60\\\\\n3,2,2,2,1 & 5 & \\dfrac{5!}{3!}=20\\\\\n3,3,1,1,1,1 & 6 & \\dfrac{6!}{2!\\,4!}=15\\\\\n3,3,2,1,1 & 5 & \\dfrac{5!}{2!\\,2!}=30\\\\\n3,3,2,2 & 4 & \\dfrac{4!}{2!\\,2!}=6\\\\\n4,2,1,1,1,1 & 6 & \\dfrac{6!}{4!}=30\\\\\n4,2,2,1,1 & 5 & \\dfrac{5!}{2!\\,2!}=30\\\\\n4,2,2,2 & 4 & \\dfrac{4!}{3!}=4\\\\\n4,3,1,1,1 & 5 & \\dfrac{5!}{3!}=20\\\\\n4,3,2,1 & 4 & 4!=24\\\\\n4,3,3 & 3 & \\dfrac{3!}{2!}=3\n\\end{array}\n\\]\n(Without the $4$-piece: with no $3$s we need $2c+d=10$, only $c=3,d=4$; with one $3$, $2c+d=7$ gives $(c,d)=(2,3),(3,1)$; with two $3$s, $2c+d=4$ gives $(0,4),(1,2),(2,0)$. With the $4$-piece: no $3$s, $2c+d=6$ gives $(1,4),(2,2),(3,0)$; one $3$, $2c+d=3$ gives $(0,3),(1,1)$; two $3$s, $2c+d=0$.)\n\nThe total is $35+60+20+15+30+6+30+30+4+20+24+3=\\boxed{277}$.",
+  "tags": [
+   "Multiset permutations",
+   "Casework",
+   "Partitions and compositions"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2013,
+   "division": "State",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": null
+  },
+  "note": "2013 MATHCOUNTS State Sprint (number not given). Counted by brute force as well."
+ },
+ {
+  "topic_id": "1787416",
+  "part": 1,
+  "question": "Triangle $ABC$ is acute-angled with $AB=15$ and $AC=13$. The point $D$ is the foot of the perpendicular from $A$ to $BC$, and the area of triangle $ADC$ is $30$. If the area of triangle $ABC$ is an integer, what is it?",
+  "solution": "Triangle $ADC$ has a right angle at $D$, so\n\\[\nAD^2+DC^2=13^2=169,\\qquad \\dfrac{1}{2}\\,AD\\cdot DC=30\\ \\Longrightarrow\\ AD\\cdot DC=60 .\n\\]\nThen $(AD+DC)^2=169+120=289$ and $(AD-DC)^2=169-120=49$, so $AD+DC=17$, $|AD-DC|=7$, and $\\{AD,DC\\}=\\{12,5\\}$.\n\n\\textbf{Case $AD=12$, $DC=5$.} In right triangle $ADB$, $BD=\\sqrt{15^2-12^2}=9$. In an acute triangle the foot of an altitude lies between the other two vertices, so $BC=BD+DC=14$ and\n\\[\n[ABC]=\\dfrac{1}{2}\\cdot14\\cdot12=84 .\n\\]\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(7cm);\ndefaultpen(fontsize(10pt));\npair B=(0,0),C=(14,0),A=(9,12),D=(9,0);\ndraw(A--B--C--cycle,linewidth(0.9));\ndraw(A--D,linewidth(0.8));\ndraw((9,0)--(9,0.7)--(8.3,0.7)--(8.3,0),linewidth(0.5));\nfill(A--D--C--cycle,lightgray+opacity(0.5));\ndraw(A--B--C--cycle,linewidth(0.9));draw(A--D,linewidth(0.8));\nlabel(\"$A$\",A,N);label(\"$B$\",B,SW);label(\"$C$\",C,SE);label(\"$D$\",D,S);\nlabel(\"$15$\",(A+B)/2,NW);label(\"$13$\",(A+C)/2,NE);\nlabel(\"$12$\",(9,6),W);\nlabel(\"$9$\",(4.5,0),S);label(\"$5$\",(11.5,0),S);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n\\textbf{Case $AD=5$, $DC=12$.} Then $BD=\\sqrt{225-25}=10\\sqrt2$, and the area $\\dfrac{1}{2}\\cdot5\\,(10\\sqrt2+12)=30+25\\sqrt2$ is not an integer. (This triangle, with $BC=10\\sqrt2+12$, is not even acute: $15^2+13^2=394<BC^2$.)\n\nHence the area of triangle $ABC$ is $\\boxed{84}$; it is the $13$-$14$-$15$ triangle.",
+  "tags": [
+   "Triangles",
+   "Right triangles",
+   "Pythagorean theorem",
+   "Altitudes",
+   "Lengths, perimeter, and area"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post says the triangle is \"right-angled\", which is impossible: with the right angle at B or C the foot D is a vertex (area ADC = 0), and with the right angle at A the area of ADC would be 169*195/788, not 30. Replaced by \"acute-angled\", which puts D between B and C. (Without that condition D could also lie outside BC, giving BC = 4 and area 24.)"
+ },
+ {
+  "topic_id": "1788621",
+  "part": 1,
+  "question": "How many positive integers have the same number of digits when written in base $5$ and in base $8$?",
+  "solution": "A positive integer $m$ has $d$ digits in base $5$ exactly when $5^{d-1}\\le m<5^d$, and $d$ digits in base $8$ exactly when $8^{d-1}\\le m<8^d$. Both hold when $8^{d-1}\\le m<5^d$ (since $8^{d-1}\\ge5^{d-1}$ and $5^d<8^d$). The number of such $m$ is $5^d-8^{d-1}$ when this is positive:\n\\[\nd=1:\\ 5-1=4,\\qquad d=2:\\ 25-8=17,\\qquad d=3:\\ 125-64=61,\\qquad d=4:\\ 625-512=113 .\n\\]\nFor $d=5$, $8^4=4096>5^5=3125$, and for larger $d$ the gap only grows, since $\\dfrac{8^{d}}{5^{d+1}}=\\dfrac{8}{5}\\cdot\\dfrac{8^{d-1}}{5^{d}}$. So the total is $4+17+61+113=\\boxed{195}$.",
+  "tags": [
+   "Digits and bases",
+   "Exponents",
+   "Systematic counting"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1788511",
+  "part": 1,
+  "question": "A divisor of a natural number is called \\emph{proper} if it is greater than $1$ and smaller than the number. For how many natural numbers is the largest proper divisor $45$ times the smallest proper divisor?\n\n$\\textbf{(A)}\\ 0\\qquad\\textbf{(B)}\\ 1\\qquad\\textbf{(C)}\\ 2\\qquad\\textbf{(D)}\\ 3\\qquad\\textbf{(E)}\\ \\text{more than }3$",
+  "solution": "Let $n$ have a proper divisor, and let $p$ be its smallest prime factor. Then the smallest proper divisor is $p$ and the largest is $\\dfrac {n}{p}$. The condition $\\dfrac {n}{p}=45p$ gives $n=45p^2=3^2\\cdot5\\cdot p^2$.\n\nFor $p$ to be the smallest prime factor of $n$ we need $p\\le3$, since $3\\mid n$. Both values work:\n\\begin{itemize}\n\\item $p=2$: $n=180$, smallest proper divisor $2$, largest $90=45\\cdot2$;\n\\item $p=3$: $n=405$, smallest proper divisor $3$, largest $135=45\\cdot3$.\n\\end{itemize}\nSo there are exactly two such numbers: $\\boxed{\\textbf{(C)}\\ 2}$.",
+  "tags": [
+   "Factors and multiples",
+   "Prime factorisation",
+   "Divisibility"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "Math Kangaroo",
+   "year": 2009,
+   "division": "Grade 7-8",
+   "paper": null,
+   "round": null,
+   "question_number": "25"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1788057",
+  "part": 1,
+  "question": "How many sets of four consecutive positive integers are there such that the product of the four integers is less than $100{,}000$?",
+  "solution": "Let the integers be $n,n+1,n+2,n+3$ with $n\\ge1$. Pair the outer and the inner terms:\n\\[\nn(n+3)\\cdot(n+1)(n+2)=(n^2+3n)(n^2+3n+2)=(n^2+3n+1)^2-1 .\n\\]\nSo the product is less than $100000$ exactly when $(n^2+3n+1)^2\\le100000$, i.e.\\ $n^2+3n+1\\le316$, because $316^2=99856\\le100000<317^2=100489$. The left side increases with $n$; for $n=16$ it is $256+48+1=305\\le316$, and for $n=17$ it is $289+51+1=341>316$. Hence $n=1,2,\\dots,16$ work, giving $\\boxed{16}$ sets. (Check: $16\\cdot17\\cdot18\\cdot19=93024$ and $17\\cdot18\\cdot19\\cdot20=116280$.)",
+  "tags": [
+   "Algebraic expressions and identities",
+   "Inequalities",
+   "Perfect squares"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1787875",
+  "part": 1,
+  "question": "Alice and Bill hope to meet at the park. Each arrives at a random time (uniformly and independently) between 11{:}00 AM and 6{:}30 PM, stays for exactly $45$ minutes and then leaves. What is the probability that they are at the park together for at least $10$ minutes?",
+  "solution": "Measure arrival times $x$ (Alice) and $y$ (Bill) in minutes after 11{:}00; the pair $(x,y)$ is uniform on the square $[0,450]^2$. If $|x-y|<45$ the two visits overlap for $45-|x-y|$ minutes, and otherwise not at all. So they are together for at least $10$ minutes exactly when $|x-y|\\le35$.\n\nThe complement $|x-y|>35$ consists of two right isosceles triangles with legs $450-35=415$, of total area $415^2$. Hence\n\\[\nP=1-\\left(\\dfrac{415}{450}\\right)^2=1-\\left(\\dfrac{83}{90}\\right)^2=1-\\dfrac{6889}{8100}=\\boxed{\\dfrac{1211}{8100}}\\approx0.150 .\n\\]",
+  "tags": [
+   "Geometric probability",
+   "Complementary probability"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1788156",
+  "part": 1,
+  "question": "Complete the $3\\times3$ magic square below, in which every row, every column and both main diagonals have the same sum.\n\\[\n\\begin{array}{|c|c|c|}\\hline 25 & b & 10\\\\ \\hline d & 14 & f\\\\ \\hline g & h & i\\\\ \\hline\\end{array}\n\\]",
+  "solution": "\\textbf{The magic sum.} Let the common sum be $s$. Add the middle row, the middle column and the two diagonals: every entry is counted once except the centre, which is counted four times. So $4s=(\\text{sum of all entries})+3\\cdot14=3s+42$, and $s=42$; in general the centre is one third of the magic sum.\n\n\\textbf{The entries.} The diagonals through the centre give $25+14+i=42$ and $10+14+g=42$, so $i=3$ and $g=18$. Then:\n\\[\nb=42-25-10=7,\\quad h=42-7-14=21,\\quad d=42-25-18=-1,\\quad f=42-10-3=29 .\n\\]\n\\[\n\\boxed{\\begin{array}{|c|c|c|}\\hline 25 & 7 & 10\\\\ \\hline -1 & 14 & 29\\\\ \\hline 18 & 21 & 3\\\\ \\hline\\end{array}}\n\\]\nCheck: rows $42,42,42$; columns $25-1+18=42$, $7+14+21=42$, $10+29+3=42$; diagonals $25+14+3=42$, $10+14+18=42$. (The solution is forced, and it contains the negative entry $-1$; with only positive entries the square would be impossible.)",
+  "tags": [
+   "Magic squares",
+   "Systems of linear equations"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The entries are all forced; the square necessarily contains the negative number -1, which the post does not forbid."
+ },
+ {
+  "topic_id": "1786814",
+  "part": 1,
+  "question": "The product of two of the four roots of the quartic equation\n\\[\nx^4-18x^3+kx^2+200x-1984=0\n\\]\nis $-32$. Find $k$.",
+  "solution": "The product of all four roots is $-1984$, so the other two roots have product $\\dfrac{-1984}{-32}=62$. Group the roots into these two pairs; then the quartic factors as\n\\[\n(x^2+ax-32)(x^2+bx+62)\n\\]\nfor some numbers $a,b$ (minus the sums of the pairs). Expanding,\n\\[\nx^4+(a+b)x^3+(30+ab)x^2+(62a-32b)x-1984 .\n\\]\nComparing coefficients: $a+b=-18$ and $62a-32b=200$. Substituting $b=-18-a$ gives $94a+576=200$, so $a=-4$ and $b=-14$. Therefore\n\\[\nk=30+ab=30+56=\\boxed{86}.\n\\]",
+  "tags": [
+   "Polynomials",
+   "Polynomial roots",
+   "Vieta's formulas",
+   "Factoring"
+  ],
+  "difficulty": 5,
+  "rationale": "A meaningful insight or a moderately demanding combination of familiar ideas.",
+  "source": {
+   "competition": "USAMO",
+   "year": 1984,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": "1"
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1787435",
+  "part": 1,
+  "question": "A square of side length $1$ inch is drawn with its centre $A$ on a circle with centre $O$ and radius $1$ inch, such that a side of the square is perpendicular to $OA$. What is the area of the region inside both the square and the circle? Express your answer as a decimal to the nearest hundredth.",
+  "solution": "Put $O$ at the origin and $A=(1,0)$; the square is $\\dfrac{1}{2}\\le x\\le\\dfrac{3}{2}$, $|y|\\le\\dfrac{1}{2}$. The region is the circular segment cut off by $x=\\dfrac{1}{2}$ (area $\\dfrac{\\pi}{3}-\\dfrac{\\sqrt3}{4}$) minus the two caps outside $|y|\\le\\dfrac{1}{2}$, which gives $\\dfrac{\\pi}{6}+\\dfrac{\\sqrt3}{4}-\\dfrac{1}{2}\\approx\\boxed{0.46}$.",
+  "tags": [
+   "Circles",
+   "Squares",
+   "Lengths, perimeter, and area"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2013,
+   "division": "State",
+   "paper": null,
+   "round": "Team",
+   "question_number": "10"
+  },
+  "note": "The shaded region is only in the missing figure; the reading \"inside both the square and the circle\" matches the official answer 0.46. Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1787556",
+  "part": 1,
+  "question": "The points $A\\left(\\ ?\\ ,\\ \\dfrac{1}{3}\\right)$ and $B\\left(\\dfrac{2}{3},\\ ?\\ \\right)$ lie on the line $3x+9y=2$. Find the missing coordinates, and then find the slope of the line.",
+  "solution": "\\textbf{$A$.} With $y=\\dfrac{1}{3}$: $3x+3=2$, so $x=-\\dfrac{1}{3}$ and $A=\\left(-\\dfrac{1}{3},\\dfrac{1}{3}\\right)$.\n\n\\textbf{$B$.} With $x=\\dfrac{2}{3}$: $2+9y=2$, so $y=0$ and $B=\\left(\\dfrac{2}{3},0\\right)$.\n\n\\textbf{Slope.} Through $A$ and $B$,\n\\[\nm=\\dfrac{0-\\dfrac{1}{3}}{\\dfrac{2}{3}-\\left(-\\dfrac{1}{3}\\right)}=\\dfrac{-\\dfrac{1}{3}}{1}=\\boxed{-\\dfrac{1}{3}}.\n\\]\n(Equivalently, $y=-\\dfrac{1}{3}x+\\dfrac{2}{9}$.)\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(7cm);\ndefaultpen(fontsize(10pt));\nimport graph;\nreal f(real x){return (2-3x)/9;}\ndraw((-1.7,0)--(1.4,0),Arrow(6));draw((0,-0.45)--(0,0.8),Arrow(6));\nlabel(\"$x$\",(1.4,0),E);label(\"$y$\",(0,0.8),N);\ndraw(graph(f,-1.6,1.3),blue+linewidth(0.9));\npair A=(-1/3,1/3),B=(2/3,0);\ndot(A);dot(B);\ndraw((-1/3,0)--A--(0,1/3),dashed+gray);\nlabel(\"$A$\",A,2*dir(215));label(\"$-\\dfrac{1}{3}$\",(-1/3,0),S);draw((0,1/3)--(0.04,1/3));label(\"$\\dfrac{1}{3}$\",(0.03,1/3),dir(20),fontsize(9pt));\nlabel(\"$B$\",B,SW);label(\"$\\dfrac{2}{3}$\",(2/3,0),2*N);\nlabel(\"$3x+9y=2$\",(1.3,f(1.3)),SE,blue);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}",
+  "tags": [
+   "Linear equations",
+   "Slope",
+   "Coordinate geometry"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post reads \"6.3x+9y=2\"; the \"6.\" is read as the exercise number, so the line is 3x+9y=2 (with x = 6.3 the y-coordinate of A would give no tidy answer)."
+ },
+ {
+  "topic_id": "1787527",
+  "part": 1,
+  "question": "What is the least number of standard six-sided dice that must be rolled so that there is at least an $80\\%$ chance of getting at least $2$ prime numbers?",
+  "solution": "The primes on a die are $2,3,5$, so each die shows a prime with probability $\\dfrac{1}{2}$, independently. With $n$ dice, the probability of fewer than two primes is\n\\[\n\\left(\\dfrac{1}{2}\\right)^n+n\\left(\\dfrac{1}{2}\\right)^n=\\dfrac{n+1}{2^n}.\n\\]\nWe need $\\dfrac{n+1}{2^n}\\le\\dfrac{1}{5}$. For $n=4$, $\\dfrac{5}{16}=0.3125$ is too large; for $n=5$, $\\dfrac{6}{32}=0.1875\\le0.2$. Since $\\dfrac{n+1}{2^n}$ decreases for $n\\ge1$, the least number is $\\boxed{5}$ (probability $\\dfrac{13}{16}=81.25\\%$).",
+  "tags": [
+   "Binomial probability",
+   "Complementary probability",
+   "Dice probability"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1787633",
+  "part": 1,
+  "question": "What are the last two nonzero digits of $1^{100}\\cdot2^{200}\\cdot3^{300}\\cdot4^{400}\\cdot5^{500}$?",
+  "solution": "Since $4^{400}=2^{800}$, the product is\n\\[\n2^{1000}\\cdot3^{300}\\cdot5^{500}=10^{500}\\cdot2^{500}\\cdot3^{300}.\n\\]\nThe number $M=2^{500}\\cdot3^{300}$ is not divisible by $5$, so it does not end in $0$, and the last two nonzero digits of the product are the last two digits of $M$, i.e.\\ $M\\bmod100$.\n\n\\textbf{$2^{500}\\bmod100$.} It is $0\\pmod4$. Modulo $25$: $2^{10}=1024\\equiv-1$, so $2^{20}\\equiv1$ and $2^{500}=\\left(2^{20}\\right)^{25}\\equiv1\\pmod{25}$. The number in $0,\\dots,99$ that is $0\\pmod4$ and $1\\pmod{25}$ is $76$.\n\n\\textbf{$3^{300}\\bmod100$.} $3^{10}=59049\\equiv49$ and $3^{20}\\equiv49^2=2401\\equiv1\\pmod{100}$, so $3^{300}=\\left(3^{20}\\right)^{15}\\equiv1$.\n\nTherefore $M\\equiv76\\cdot1=76\\pmod{100}$, and the last two nonzero digits are $\\boxed{76}$.",
+  "tags": [
+   "Units digits and last digits",
+   "Modular exponentiation",
+   "Chinese remainder theorem",
+   "Remainders and congruences"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ }
+]

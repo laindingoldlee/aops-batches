@@ -1,0 +1,607 @@
+[
+ {
+  "topic_id": "1785447",
+  "part": 1,
+  "question": "Timmy goes fishing from $3$ PM to $7{:}30$ PM. Assume that fish are caught at random so that the probability of catching no fish during any period of $t$ hours is $(0.8)^t$, independently for non-overlapping periods; in particular, the chance of catching at least one fish in any given hour is $20\\%$. What is the probability that Timmy catches at least one fish? Give the exact value and a decimal approximation.",
+  "solution": "Timmy fishes for $4.5=\\dfrac{9}{2}$ hours. The probability of catching no fish in that time is\n\\[\n(0.8)^{\\dfrac{9}{2}}=\\left(\\dfrac{4}{5}\\right)^{4}\\left(\\dfrac{4}{5}\\right)^{\\dfrac{1}{2}}=\\dfrac{256}{625}\\cdot\\dfrac{2}{\\sqrt5}=\\dfrac{512\\sqrt5}{3125}\\approx0.3664 .\n\\]\nSo the probability of catching at least one fish is\n\\[\n\\boxed{1-\\dfrac{512\\sqrt5}{3125}}\\approx0.634 .\n\\]\n(For comparison: if only the four complete hours counted, the answer would be $1-0.8^4=0.5904$; the half hour raises it.)",
+  "tags": [
+   "Complementary probability",
+   "Independent events",
+   "Exponents"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post gives a 20% chance \"every hour\" but a fishing time of 4.5 hours, so the half hour is ambiguous. The record states the natural continuous-time model (no fish in t hours with probability 0.8^t), which gives 1 - 0.8^4.5."
+ },
+ {
+  "topic_id": "1786990",
+  "part": 1,
+  "question": "In right pyramid $PABCD$, $ABCD$ is a square of side $2$, and the distance from $P$ to the centre $O$ of the square is $1$. A plane through $A$ meets edges $PB$, $PC$, $PD$ at $B'$, $C'$, $D'$. If $\\dfrac{B'B}{PB}=\\dfrac{1}{4}$ and $\\dfrac{D'D}{PD}=\\dfrac{1}{5}$, find $\\dfrac{C'C}{PC}$.",
+  "solution": "For a plane through $A$ cutting the edges of a pyramid over a parallelogram, $\\dfrac{PA}{PA'}+\\dfrac{PC}{PC'}=\\dfrac{PB}{PB'}+\\dfrac{PD}{PD'}$. Here $A'=A$, $\\dfrac{PB}{PB'}=\\dfrac{4}{3}$ and $\\dfrac{PD}{PD'}=\\dfrac{5}{4}$, so $\\dfrac{PC}{PC'}=\\dfrac{4}{3}+\\dfrac{5}{4}-1=\\dfrac{19}{12}$ and $\\dfrac{C'C}{PC}=1-\\dfrac{12}{19}=\\boxed{\\dfrac{7}{19}}$.",
+  "tags": [
+   "Pyramids",
+   "Solid geometry",
+   "Ratios, proportions, and variation"
+  ],
+  "difficulty": 5,
+  "rationale": "A meaningful insight or a moderately demanding combination of familiar ideas.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"O\" in the post is the apex P. Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1787427",
+  "part": 1,
+  "question": "On a test whose scores are normally distributed, a score of $58$ is two standard deviations below the mean, and a score of $85$ is one standard deviation above the mean. What is the mean score?",
+  "solution": "Let the mean be $\\mu$ and the standard deviation $\\sigma$. Then\n\\[\n\\mu-2\\sigma=58,\\qquad \\mu+\\sigma=85 .\n\\]\nSubtracting, $3\\sigma=27$, so $\\sigma=9$ and $\\mu=85-9=\\boxed{76}$. (Check: $76-18=58$.)",
+  "tags": [
+   "Systems of linear equations",
+   "Mean"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1787424",
+  "part": 1,
+  "question": "What is the area of the circle whose radius is the average of the radii of two circles with areas $16\\pi$ and $100\\pi$?",
+  "solution": "A circle of area $\\pi r^2$ has radius $r$, so the two circles have radii $4$ (since $\\pi\\cdot4^2=16\\pi$) and $10$ (since $\\pi\\cdot10^2=100\\pi$). Their average is $\\dfrac{4+10}{2}=7$, and the circle of radius $7$ has area $\\pi\\cdot7^2=\\boxed{49\\pi}$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5cm);\ndefaultpen(fontsize(10pt));\npair O=(0,0);\ndraw(circle(O,10),linewidth(0.8));\ndraw(circle(O,7),blue+linewidth(0.9));\ndraw(circle(O,4),linewidth(0.8));\ndot(O);\ndraw(O--4*dir(200),linewidth(0.6));draw(O--7*dir(90),blue+linewidth(0.6));draw(O--10*dir(-30),linewidth(0.6));\nlabel(\"$4$\",2*dir(200),dir(110));\nlabel(\"$7$\",(0,4.6),E,blue);\nlabel(\"$10$\",8.5*dir(-30),dir(60));\nlabel(\"$O$\",O,dir(-115));\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n(Note that this is not the average of the two areas, $58\\pi$.)",
+  "tags": [
+   "Circles",
+   "Lengths, perimeter, and area",
+   "Averages and weighted averages"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1787422",
+  "part": 1,
+  "question": "The arithmetic mean of a set of $20$ test scores is $x$. If each score is increased by $y$ points, which expression represents the arithmetic mean of the revised set of test scores?\n\n$\\textbf{(A)}\\ x+y\\qquad\\textbf{(B)}\\ x+20y\\qquad\\textbf{(C)}\\ x+\\dfrac{y}{20}\\qquad\\textbf{(D)}\\ \\dfrac{x+y}{20}$",
+  "solution": "The original scores have total $20x$. Adding $y$ to each of the $20$ scores adds $20y$ to the total, so the new total is $20x+20y$ and the new mean is\n\\[\n\\dfrac{20x+20y}{20}=x+y .\n\\]\nThe answer is $\\boxed{\\textbf{(A)}\\ x+y}$.",
+  "tags": [
+   "Mean",
+   "Algebraic expressions and identities"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Choices C and D, typed \"x + y/20\" and \"x+y /20\", are read as x + y/20 and (x+y)/20."
+ },
+ {
+  "topic_id": "1787280",
+  "part": 1,
+  "question": "What is the probability of rolling a sum of $9$ with two fair six-sided dice?",
+  "solution": "There are $6\\cdot6=36$ equally likely ordered outcomes. The sum $9$ arises from $(3,6),(4,5),(5,4),(6,3)$, which is $4$ outcomes. So the probability is $\\dfrac{4}{36}=\\boxed{\\dfrac{1}{9}}$.",
+  "tags": [
+   "Dice probability",
+   "Probability"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "P1 of a counting and probability marathon."
+ },
+ {
+  "topic_id": "1787277",
+  "part": 1,
+  "question": "In a pile of $25$ tiles, each tile has one of the letters A through E and one of the integers from $1$ through $5$. Each possible combination of a letter and a number appears on exactly one of the tiles. Jessica selects three tiles at random, without replacement, from the pile. What is the probability that each of the three tiles Jessica chooses has a letter or a number in common with at least one of the other chosen tiles? Express your answer as a common fraction.",
+  "solution": "Of the $\\dbinom{25}{3}=2300$ equally likely triples, the good ones are: three tiles sharing a letter or sharing a number ($10\\dbinom53=100$), and ``L-shapes'', in which one tile shares its letter with a second tile and its number with the third ($25\\cdot4\\cdot4=400$: choose the corner tile, then the second and third tiles). So the probability is $\\dfrac{500}{2300}=\\boxed{\\dfrac{5}{23}}$.",
+  "tags": [
+   "Probability",
+   "Casework"
+  ],
+  "difficulty": 5,
+  "rationale": "A meaningful insight or a moderately demanding combination of familiar ideas.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2017,
+   "division": "National",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": "26"
+  },
+  "note": "Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1787262",
+  "part": 1,
+  "question": "Find the value of $b$ if the graph of $y=-3x+b$ passes through the given point.\n\\begin{enumerate}\n\\item[(a)] $A(-2,4)$\n\\item[(b)] $B(5,2)$\n\\end{enumerate}",
+  "solution": "Substitute the coordinates of the point into $y=-3x+b$ and solve for $b$.\n\n\\textbf{(a)} $4=-3(-2)+b=6+b$, so $\\boxed{b=-2}$.\n\n\\textbf{(b)} $2=-3(5)+b=-15+b$, so $\\boxed{b=17}$.",
+  "tags": [
+   "Linear equations",
+   "Substitution"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1787120",
+  "part": 1,
+  "question": "Circle $\\omega$ with centre $O$ has diameter $AB$. Point $C$ lies on the circle and point $P$ lies on chord $\\overline{AC}$ such that $\\angle POB=90^\\circ$. If the radius of $\\omega$ is $2$ and $OP=\\dfrac{3}{2}$, what is the length of segment $\\overline{AC}$?",
+  "solution": "Triangle $AOP$ has a right angle at $O$, with $AO=2$ and $OP=\\dfrac{3}{2}$, so\n\\[\nAP=\\sqrt{4+\\dfrac{9}{4}}=\\dfrac{5}{2} .\n\\]\nSince $AB$ is a diameter, $\\angle ACB=90^\\circ$. Triangles $AOP$ and $ACB$ are right-angled (at $O$ and at $C$) and share the angle at $A$, so they are similar, and\n\\[\n\\dfrac{AC}{AB}=\\dfrac{AO}{AP}\\ \\Longrightarrow\\ AC=4\\cdot\\dfrac{2}{\\dfrac{5}{2}}=\\boxed{\\dfrac{16}{5}}.\n\\]\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(6cm);\ndefaultpen(fontsize(10pt));\npair O=(0,0),A=(-2,0),B=(2,0),P=(0,1.5),C=(14/25,48/25);\ndraw(circle(O,2),linewidth(0.8));\ndraw(A--B,linewidth(0.8));\ndraw(A--C,linewidth(0.9));\ndraw(O--P,linewidth(0.8));\ndraw(C--B,dashed);\ndraw((0,0)--(0.22,0)--(0.22,0.22)--(0,0.22),linewidth(0.5));\npair u=unit(A-C),v=unit(B-C);\ndraw(C+0.22*u--C+0.22*(u+v)--C+0.22*v,linewidth(0.5)+gray);\ndot(O);dot(P);\nlabel(\"$A$\",A,W);label(\"$B$\",B,E);label(\"$C$\",C,NE);label(\"$O$\",O,S);label(\"$P$\",P,NW);\nlabel(\"$\\dfrac{3}{2}$\",(0,0.75),E);\nlabel(\"$2$\",(-1,0),S);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\n(Check with coordinates: $O=(0,0)$, $A=(-2,0)$, $P=\\left(0,\\dfrac{3}{2}\\right)$; line $AP$ meets the circle again at $C=\\left(\\dfrac{14}{25},\\dfrac{48}{25}\\right)$, and $AC=\\sqrt{\\left(\\dfrac{64}{25}\\right)^2+\\left(\\dfrac{48}{25}\\right)^2}=\\dfrac{80}{25}=\\dfrac{16}{5}$.)",
+  "tags": [
+   "Circles",
+   "Inscribed angles",
+   "Similarity",
+   "Right triangles",
+   "Pythagorean theorem"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1786975",
+  "part": 1,
+  "question": "$K$ is the set of positive integers that are divisible neither by $4$ nor by $7$. Find the $79$th smallest member of $K$.",
+  "solution": "Whether a number lies in $K$ depends only on its remainder modulo $28=\\operatorname{lcm}(4,7)$. Among $1,\\dots,28$ there are $7$ multiples of $4$, $4$ multiples of $7$ and $1$ multiple of both, so by inclusion--exclusion $28-7-4+1=18$ numbers lie in $K$. Each block of $28$ consecutive integers therefore contains $18$ members of $K$.\n\nSince $79=4\\cdot18+7$, the first $4$ blocks ($1$ to $112$) contain $72$ members, and we need the $7$th member after $112$. Skipping $116$, $119$ and $120$, the members are\n\\[\n113,\\ 114,\\ 115,\\ 117,\\ 118,\\ 121,\\ 122,\\ \\dots\n\\]\nso the $79$th member is $\\boxed{122}$.",
+  "tags": [
+   "Sets and inclusion–exclusion",
+   "Divisibility",
+   "Remainders and congruences"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1785652",
+  "part": 1,
+  "question": "To finish an order on time, a factory was supposed to produce $70$ items per day. After hiring three more workers, it produced $10$ more items per day than planned and completed the order $5$ days ahead of schedule. How many days was the order originally supposed to take?",
+  "solution": "Let the planned number of days be $d$. The order consists of $70d$ items, and at $80$ items per day it took $d-5$ days:\n\\[\n70d=80(d-5)\\ \\Longrightarrow\\ 10d=400\\ \\Longrightarrow\\ d=\\boxed{40}.\n\\]\n(Check: the order is $2800$ items; $2800\\div80=35=40-5$.)",
+  "tags": [
+   "Work and rates",
+   "Linear equations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Read as: the higher rate held for the whole order (\"details\" in the post means items)."
+ },
+ {
+  "topic_id": "1786099",
+  "part": 1,
+  "question": "The expression ``$\\dfrac{4}{9}\\pmod{25}$'' means the residue $x$ modulo $25$ with $9x\\equiv4\\pmod{25}$. Explain why such an $x$ exists and is unique modulo $25$, and find it with $0\\le x\\le24$.",
+  "solution": "\\textbf{Existence and uniqueness.} Since $\\gcd(9,25)=1$, multiplication by $9$ permutes the residues modulo $25$: if $9x\\equiv9x'$, then $25\\mid9(x-x')$, and so $25\\mid x-x'$. So exactly one residue $x$ satisfies $9x\\equiv4$.\n\n\\textbf{Inverse of $9$.} We need $9y\\equiv1\\pmod{25}$: $9\\cdot14=126=5\\cdot25+1$, so $9^{-1}\\equiv14$.\n\n\\textbf{The fraction.} $x\\equiv4\\cdot14=56\\equiv\\boxed{6}\\pmod{25}$. Check: $9\\cdot6=54=2\\cdot25+4$.",
+  "tags": [
+   "Remainders and congruences",
+   "Linear Diophantine equations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post asks how to take a fraction modulo 25 (example 4/9 mod 25); the record defines it via the modular inverse and computes it."
+ },
+ {
+  "topic_id": "1786616",
+  "part": 1,
+  "question": "Five people sit at a round table with $6$ identical seats; seatings that differ only by a rotation of the table are considered the same. In how many ways can they sit? More generally, in how many ways can $k$ people sit at a round table with $n$ seats ($k\\le n$)?",
+  "solution": "Treat each empty seat as a placeholder. Seat the people in a row of $n$ labelled seats first: there are $n(n-1)\\cdots(n-k+1)=\\dfrac{n!}{(n-k)!}$ ways. Each seating around the table corresponds to exactly $n$ labelled seatings (one for each rotation), and these are all different, because a rotation by $1,2,\\dots,n-1$ places moves at least one person to a different seat. Hence the number of seatings is\n\\[\n\\dfrac{1}{n}\\cdot\\dfrac{n!}{(n-k)!}=\\boxed{\\dfrac{(n-1)!}{(n-k)!}} .\n\\]\nFor $k=5$, $n=6$ this is $\\dfrac{5!}{1!}=\\boxed{120}$. (Equivalently: fix the first person's seat to remove the rotations; the other four people can then be placed in $5\\cdot4\\cdot3\\cdot2=120$ ways in the remaining five seats.)",
+  "tags": [
+   "Circular arrangements",
+   "Permutations"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Read with rotations of the table identified and the empty seats indistinguishable."
+ },
+ {
+  "topic_id": "1765739",
+  "part": 1,
+  "question": "Let $a,b,c$ be positive real numbers. Prove that\n\\[\na^3+b^3+c^3\\ge a^2b+b^2c+c^2a .\n\\]",
+  "solution": "By AM-GM for the three positive numbers $a^3,a^3,b^3$,\n\\[\n\\dfrac{a^3+a^3+b^3}{3}\\ge\\sqrt[3]{a^6b^3}=a^2b .\n\\]\nIn the same way $\\dfrac{2b^3+c^3}{3}\\ge b^2c$ and $\\dfrac{2c^3+a^3}{3}\\ge c^2a$. Adding the three inequalities,\n\\[\n\\dfrac{3a^3+3b^3+3c^3}{3}\\ge a^2b+b^2c+c^2a,\n\\]\nwhich is the claim. Equality requires $a=b$, $b=c$ and $c=a$, i.e.\\ $a=b=c$. $\\blacksquare$",
+  "tags": [
+   "AM-GM inequality",
+   "Inequalities"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post also asks for a general explanation of AM-GM and practice problems; only the stated inequality is used."
+ },
+ {
+  "topic_id": "1785946",
+  "part": 1,
+  "question": "Square $ABCD$ has side length $1$. Point $X$ lies on $BC$ and point $Y$ lies on $CD$ so that $AX=AY$, and the area of triangle $AXY$ is $\\dfrac{1}{4}$ of the area of $ABCD$. What is the length of $XY$? Express your answer in simplest radical form.",
+  "solution": "Right triangles $ABX$ and $ADY$ have $AB=AD$ and $AX=AY$, so they are congruent (hypotenuse-leg) and $BX=DY=t$, say. Then $CX=CY=1-t$.\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5cm);\ndefaultpen(fontsize(10pt));\nreal t=sqrt(2)/2;\npair A=(0,0),B=(1,0),C=(1,1),D=(0,1),X=(1,t),Y=(t,1);\nfill(A--X--Y--cycle,lightgray);\ndraw(A--B--C--D--cycle,linewidth(0.9));\ndraw(A--X--Y--cycle,linewidth(0.8));\nlabel(\"$A$\",A,SW);label(\"$B$\",B,SE);label(\"$C$\",C,NE);label(\"$D$\",D,NW);\nlabel(\"$X$\",X,E);label(\"$Y$\",Y,NW);\nlabel(\"$t$\",(1,t/2),E);label(\"$t$\",(t/2,1),N);\nlabel(\"$1-t$\",(1,(1+t)/2),E,fontsize(8pt));label(\"$1-t$\",((1+t)/2,1),N,fontsize(8pt));\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nThe triangle $AXY$ is the square minus three right triangles:\n\\[\n[AXY]=1-\\dfrac {t}{2}-\\dfrac {t}{2}-\\dfrac{(1-t)^2}{2}.\n\\]\nWith $u=1-t$ this is $u-\\dfrac{u^2}{2}$, and setting it equal to $\\dfrac{1}{4}$ gives $2u^2-4u+1=0$, so $u=1\\pm\\dfrac{\\sqrt2}{2}$. Since $0\\le u\\le1$, $u=1-\\dfrac{\\sqrt2}{2}$. Finally $XY$ is the hypotenuse of the isosceles right triangle $XCY$:\n\\[\nXY=u\\sqrt2=\\sqrt2-1 .\n\\]\nSo $XY=\\boxed{\\sqrt2-1}$. (Check: $t=\\dfrac{\\sqrt2}{2}$ and $[AXY]=1-\\dfrac{\\sqrt2}{2}-\\dfrac{\\left(1-\\dfrac{\\sqrt2}{2}\\right)^2}{2}=\\dfrac{1}{4}$.)",
+  "tags": [
+   "Squares",
+   "Congruence",
+   "Lengths, perimeter, and area",
+   "Area decomposition",
+   "Quadratic equations"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1786360",
+  "part": 1,
+  "question": "The numerators $2,5,9,14,\\dots$ of the series\n\\[\n2+\\dfrac{5}{11}+\\dfrac{9}{11^2}+\\dfrac{14}{11^3}+\\cdots\n\\]\ncontinue so that their consecutive differences are $3,4,5,6,\\dots$ (so the next numerators are $20,27,\\dots$). Find the exact value of the series.",
+  "solution": "Let $x=\\dfrac{1}{11}$ and $S=\\sum_{n\\ge0}a_nx^n$ with $a_0=2$ and $a_n-a_{n-1}=n+2$ for $n\\ge1$. All series below converge absolutely since $|x|<1$ and $a_n$ grows only quadratically.\n\nMultiply by $1-x$:\n\\[\n(1-x)S=a_0+\\sum_{n\\ge1}(a_n-a_{n-1})x^n=2+3x+4x^2+5x^3+\\cdots=\\sum_{n\\ge0}(n+2)x^n .\n\\]\nMultiply by $1-x$ again:\n\\[\n(1-x)^2S=2+\\sum_{n\\ge1}\\bigl((n+2)-(n+1)\\bigr)x^n=2+\\dfrac{x}{1-x}.\n\\]\nWith $x=\\dfrac{1}{11}$: $\\dfrac{x}{1-x}=\\dfrac{1}{10}$ and $(1-x)^2=\\dfrac{100}{121}$, so\n\\[\nS=\\dfrac{21}{10}\\cdot\\dfrac{121}{100}=\\boxed{\\dfrac{2541}{1000}}=2.541 .\n\\]",
+  "tags": [
+   "Sequences and series",
+   "Summation",
+   "Geometric sequences",
+   "Pattern recognition"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "The post gives only four terms; the rule for the numerators (differences 3, 4, 5, ..., i.e. a_n = (n+2)(n+3)/2 - 1) is stated in the record."
+ },
+ {
+  "topic_id": "1606524",
+  "part": 1,
+  "question": "Evaluate the infinite expression\n\\[\n\\dfrac{40}{3+\\dfrac{40}{3+\\dfrac{40}{3+\\cdots}}},\n\\]\nunderstood as the limit of the finite expressions $x_1=\\dfrac{40}{3}$, $x_{k+1}=\\dfrac{40}{3+x_k}$.",
+  "solution": "\\textbf{The value must satisfy an equation.} If the limit is $x$, then $x\\ge0$ and the expression repeats itself inside: $x=\\dfrac{40}{3+x}$. So $x^2+3x-40=0$, i.e.\\ $(x+8)(x-5)=0$, and since $x\\ge0$, $x=5$.\n\n\\textbf{The limit exists.} Every $x_k$ is positive, so $x_{k+1}=\\dfrac{40}{3+x_k}<\\dfrac{40}{3}$ for all $k$, and hence $x_{k+2}=\\dfrac{40}{3+x_{k+1}}>\\dfrac{40}{3+\\dfrac{40}{3}}=\\dfrac{120}{49}>2$. So for $k\\ge2$ we have $3+x_k>5$ and\n\\[\n|x_{k+1}-5|=\\left|\\dfrac{40}{3+x_k}-\\dfrac{40}{8}\\right|=\\dfrac{5\\,|x_k-5|}{3+x_k}\\le\\dfrac{5}{3+\\dfrac{120}{49}}\\,|x_k-5|=\\dfrac{245}{267}\\,|x_k-5| .\n\\]\nThe distance to $5$ shrinks at least by the fixed factor $\\dfrac{245}{267}<1$ at every step, so $x_k\\to5$.\n\nThe value is $\\boxed{5}$.",
+  "tags": [
+   "Continued fractions",
+   "Quadratic equations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1786041",
+  "part": 1,
+  "question": "Let $D_n$ be the number of derangements of $n$ objects (arrangements in which no object is in its original place), with $D_1=0$ and $D_2=1$.\n\\begin{enumerate}\n\\item[(a)] Prove that $D_{n+2}=(n+1)\\left(D_{n+1}+D_n\\right)$ for every positive integer $n$. So in the recurrence $D_{n+2}=aD_{n+1}+bD_n$ given by this argument, $a=b=n+1$; what is $\\dfrac {b}{a}$?\n\\item[(b)] Show that there are no constants $a,b$ (independent of $n$) with $D_{n+2}=aD_{n+1}+bD_n$ for all $n$.\n\\end{enumerate}",
+  "solution": "\\textbf{(a)} Consider derangements of $1,2,\\dots,n+2$ (object $i$ must not be in place $i$). Object $1$ goes to some place $k\\ne1$: $n+1$ choices, each giving the same count. Fix $k$ and look at object $k$.\n\\begin{itemize}\n\\item If object $k$ goes to place $1$, objects $1$ and $k$ simply swap, and the other $n$ objects form a derangement of their own places: $D_n$ ways.\n\\item If object $k$ does not go to place $1$, then the remaining $n+1$ objects (all except object $1$) must fill places $\\{1,\\dots,n+2\\}\\setminus\\{k\\}$ with each object $j\\ne k$ avoiding place $j$ and object $k$ avoiding place $1$. Treating place $1$ as object $k$'s ``forbidden'' place, these are exactly derangements of $n+1$ objects: $D_{n+1}$ ways.\n\\end{itemize}\nHence $D_{n+2}=(n+1)\\left(D_{n+1}+D_n\\right)$, so $a=b=n+1$ and $\\dfrac {b}{a}=\\boxed{1}$.\n\n\\textbf{(b)} The first values are $D_1=0$, $D_2=1$, $D_3=2$, $D_4=9$, $D_5=44$. Constants $a,b$ would need $D_3=aD_2+bD_1$, so $a=2$; then $D_4=aD_3+bD_2$ gives $9=4+b$, so $b=5$; but then $aD_4+bD_3=18+10=28\\ne44=D_5$. So no constant coefficients work, and $a$, $b$ must be read as depending on $n$. $\\blacksquare$",
+  "tags": [
+   "Derangements",
+   "Recurrence relations",
+   "Recursive counting"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "As posed (constants a, b with D_{n+2} = a D_{n+1} + b D_n for all n), the problem has no solution, as part (b) shows; the intended recurrence is the standard D_{n+2} = (n+1)(D_{n+1} + D_n), giving b/a = 1. The record proves it and explains the issue."
+ },
+ {
+  "topic_id": "1785634",
+  "part": 1,
+  "question": "What is $\\dfrac{\\dfrac{1}{2}}{\\dfrac{1}{3}}-\\dfrac{2}{3}$?",
+  "solution": "Dividing by $\\dfrac{1}{3}$ is multiplying by $3$, so $\\dfrac{\\dfrac{1}{2}}{\\dfrac{1}{3}}=\\dfrac{3}{2}$, and $\\dfrac{3}{2}-\\dfrac{2}{3}=\\dfrac{9-4}{6}=\\boxed{\\dfrac{5}{6}}$.",
+  "tags": [
+   "Fractions"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1785634",
+  "part": 2,
+  "question": "How many times does the digit $0$ appear in the sum $555{,}555{,}555{,}555+555{,}555{,}555{,}555$?",
+  "solution": "Add column by column: the units column gives $5+5=10$, so write $0$ and carry $1$; each of the other eleven columns gives $5+5+1=11$, so write $1$ and carry $1$; the final carry gives a leading $1$. The sum is $1{,}111{,}111{,}111{,}110$. So the digit $0$ appears $\\boxed{1}$ time.",
+  "tags": [
+   "Whole-number operations",
+   "Place value"
+  ],
+  "difficulty": 1,
+  "rationale": "Immediate application of a definition or basic fact.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": ""
+ },
+ {
+  "topic_id": "1785634",
+  "part": 3,
+  "question": "For a positive integer $n$, let $n\\bigotimes$ be the number of ways to arrange $n+1$ distinct objects in a row, divided by one less than the number of objects. How many times does the digit $1$ appear in the decimal representation of $10\\bigotimes$?",
+  "solution": "With $n+1$ objects there are $(n+1)!$ arrangements, and one less than the number of objects is $n$, so $n\\bigotimes=\\dfrac{(n+1)!}{n}$. Hence\n\\[\n10\\bigotimes=\\dfrac{11!}{10}=\\dfrac{39916800}{10}=3991680 ,\n\\]\nwhose digits are $3,9,9,1,6,8,0$. The digit $1$ appears $\\boxed{1}$ time.",
+  "tags": [
+   "Factorials",
+   "Permutations"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"the number of ones in the representation\" is read as the number of digits 1 in the decimal representation."
+ },
+ {
+  "topic_id": "1785634",
+  "part": 4,
+  "question": "A fly is at the centre of a cubical room whose walls (edges) have length $3$ feet. The fly travels $8$ inches up, then $6$ inches to its left (horizontally, parallel to two of the walls), then $2\\sqrt2$ inches down. It never hits a wall. After it moves, the distance from the fly to each of the six faces of the room (four walls, floor and ceiling) is measured. What is the average of these six distances?",
+  "solution": "The room is $36$ inches on each side, so for any point inside it the distances to two opposite faces add up to $36$ inches. The six faces form three opposite pairs, so the six distances add up to $3\\cdot36=108$ inches wherever the fly is, and their average is $\\dfrac{108}{6}=\\boxed{18\\text{ inches}}$.\n\n(Explicitly: the fly ends $8-2\\sqrt2$ inches above the centre and $6$ inches to the left, so the distances are $18+8-2\\sqrt2$ and $18-8+2\\sqrt2$ to floor and ceiling, $12$ and $24$ to the left and right walls, and $18$ and $18$ to the front and back walls.)",
+  "tags": [
+   "Unit conversion",
+   "Averages and weighted averages",
+   "Symmetry"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "\"the center cubical room\" is read as the centre of a cubical room; the faces include floor and ceiling."
+ },
+ {
+  "topic_id": "1785634",
+  "part": 5,
+  "question": "The distances from a point inside a square to the vertices of the square are, in clockwise order, $1$, $5$, $7$, $5$. Find the area of the square.",
+  "solution": "Let the square be $ABCD$ (clockwise) and the point $P$, with $PA=1$, $PB=5$, $PC=7$, $PD=5$.\n\nSince $PB=PD$, $P$ lies on the perpendicular bisector of the diagonal $BD$, which is the other diagonal $AC$. As $P$ is inside the square, it lies on segment $AC$, so\n\\[\nAC=PA+PC=1+7=8 .\n\\]\n\n\\begin{asy}\nusepackage(\"amsmath\");\nsize(5.5cm);\ndefaultpen(fontsize(10pt));\nreal s=4*sqrt(2);\npair A=(0,0),B=(0,s),C=(s,s),D=(s,0),P=(1/sqrt(2),1/sqrt(2));\ndraw(A--B--C--D--cycle,linewidth(0.9));\ndraw(A--C,dashed+gray);\ndraw(P--A,blue+linewidth(0.8));draw(P--B,blue+linewidth(0.8));draw(P--C,blue+linewidth(0.8));draw(P--D,blue+linewidth(0.8));\ndot(P);\nlabel(\"$A$\",A,SW);label(\"$B$\",B,NW);label(\"$C$\",C,NE);label(\"$D$\",D,SE);label(\"$P$\",P,2*dir(16));\nlabel(\"$1$\",(P+A)/2,NW,fontsize(9pt));\nlabel(\"$5$\",(P+B)/2,E);label(\"$7$\",(P+C)/2+(0.15,-0.15),SE);label(\"$5$\",(P+D)/2,N);\nlabel(\"\\mbox{}\",(min(currentpicture,user=true)+max(currentpicture,user=true))/2,black); // keeps the text after the figure black when LaTeX typesets the labels inline\n\\end{asy}\n\nA square with diagonal $8$ has area $\\dfrac{8^2}{2}=\\boxed{32}$.\n\nCheck: the side is $4\\sqrt2$, and with $A=(0,0)$, $B=(0,4\\sqrt2)$, $P=\\left(\\dfrac{1}{\\sqrt2},\\dfrac{1}{\\sqrt2}\\right)$ one gets $PB^2=\\dfrac{1}{2}+\\dfrac{49}{2}=25$, as required.",
+  "tags": [
+   "Squares",
+   "Diagonals",
+   "Perpendicular bisectors",
+   "Lengths, perimeter, and area"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Problem 6 of the post is not given (\"I do have a problem 6, but it is quite bad\"), so only problems 1-5 are used."
+ },
+ {
+  "topic_id": "1786654",
+  "part": 1,
+  "question": "What is the probability that three real numbers chosen independently and uniformly at random between $0$ and $1$ have a sum less than $1$? Express your answer as a common fraction.",
+  "solution": "The region $x,y,z\\ge0$, $x+y+z<1$ is a tetrahedron of volume $\\dfrac{1}{6}$ inside the unit cube, so the probability is $\\boxed{\\dfrac{1}{6}}$.",
+  "tags": [
+   "Geometric probability",
+   "Volume"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2018,
+   "division": "State",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": "25"
+  },
+  "note": "Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1786839",
+  "part": 1,
+  "question": "Ivory writes down three two-digit numbers, each with units digit $7$. The tens digit of the product of these three numbers is $5$. What is the tens digit of the sum of the three numbers?",
+  "solution": "With tens digits $a,b,c$, the product is $\\equiv90(a+b+c)+43\\pmod{100}$, so its tens digit is the last digit of $9(a+b+c)+4$; this is $5$ exactly when $a+b+c\\equiv9\\pmod{10}$. The sum of the numbers is $10(a+b+c)+21$, whose tens digit is the last digit of $a+b+c+2$, namely $\\boxed{1}$.",
+  "tags": [
+   "Units digits and last digits",
+   "Remainders and congruences"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2018,
+   "division": "State",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": "24"
+  },
+  "note": "Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1786904",
+  "part": 1,
+  "question": "If $x$ and $y$ satisfy $(x-3)^2+(y-4)^2=49$, what is the minimum possible value of $x^2+y^2$?",
+  "solution": "The origin is at distance $5$ from the centre $(3,4)$ of the circle of radius $7$, so the nearest point of the circle is at distance $2$ from the origin and the minimum is $\\boxed{4}$.",
+  "tags": [
+   "Circles",
+   "Distance formula",
+   "Maxima and minima"
+  ],
+  "difficulty": 3,
+  "rationale": "One accessible observation or a short chain of familiar deductions.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Same problem as 2012 MATHCOUNTS National Sprint #29. Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1786656",
+  "part": 1,
+  "question": "Oliver rolls three fair standard six-sided dice. What is the probability that there is at least one pair of dice whose top faces sum to $6$? Express your answer as a common fraction.",
+  "solution": "Counting the $216$ outcomes directly (pairs summing to $6$ are $\\{1,5\\},\\{2,4\\},\\{3,3\\}$) gives $\\boxed{\\dfrac{19}{54}}$.",
+  "tags": [
+   "Dice probability",
+   "Casework",
+   "Complementary counting"
+  ],
+  "difficulty": 4,
+  "rationale": "An unstated approach requiring some exploration and a few connected steps.",
+  "source": {
+   "competition": "MATHCOUNTS",
+   "year": 2018,
+   "division": "State",
+   "paper": null,
+   "round": "Sprint",
+   "question_number": "27"
+  },
+  "note": "Repeat of an earlier record (aliased)."
+ },
+ {
+  "topic_id": "1654926",
+  "part": 1,
+  "question": "Find the missing term of the sequence $1,\\ 11,\\ 21,\\ 1211,\\ \\_\\_\\_,\\ 312211$.",
+  "solution": "This is the look-and-say sequence: each term reads off the runs of digits of the previous one. $1211$ is ``one $1$, one $2$, two $1$s'', so the missing term is $\\boxed{111221}$, and indeed $111221$ reads ``three $1$s, two $2$s, one $1$'' $=312211$.",
+  "tags": [
+   "Pattern recognition",
+   "Sequences and series"
+  ],
+  "difficulty": 2,
+  "rationale": "A routine procedure with a little reasoning.",
+  "source": {
+   "competition": null,
+   "year": null,
+   "division": null,
+   "paper": null,
+   "round": null,
+   "question_number": null
+  },
+  "note": "Repeat of an earlier record (aliased)."
+ }
+]
